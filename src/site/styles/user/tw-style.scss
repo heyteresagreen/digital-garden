@@ -17,7 +17,9 @@ body {
   line-height: 1.55;
   color: $color-text !important;
   font-size: 1.12rem;
-  background: $color-background url(../img/user/assets/bg.png);
+  background: $color-background url(/img/user/assets/bg.png);
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 .content {
@@ -81,7 +83,7 @@ h6 {
  }
 
  h1 {
-  font-size: 1.8em;
+  font-size: 1.8em !important;
   letter-spacing: -0.03em;
   font-family: $font-family;
  }
