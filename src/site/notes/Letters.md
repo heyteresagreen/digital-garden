@@ -1,16 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/letters/","created":"2023-11-01T12:31:49.154+08:00","updated":"2023-11-01T19:42:25.399+08:00"}
+{"dg-publish":true,"permalink":"/letters/","created":"2023-11-01T12:31:49.154+08:00","updated":"2023-11-01T19:44:05.543+08:00"}
 ---
 
 
 ![Letters.png](/img/user/assets/Letters.png)
-```
 <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="embeddable-buttondown-form">
 <label for="bd-email">Your email</label>
 <input type="email" name="email" id="bd-email" />
 <input type="submit" value="Subscribe" class="btn" />
 </form>
-```
+
 ## Old letters
 - [[letters/letters 1\|letters 1]]: Writing letters, drawing mangoes & attempting to craft a harmonious life
 - [[letters/letters 2\|letters 2]]: Identity, using what you've got and the never-ending to-read pile
