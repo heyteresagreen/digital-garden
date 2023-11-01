@@ -1,13 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/home/","contentClasses":"homepage","tags":["gardenEntry"],"created":"2023-11-01T09:57:06.372+08:00","updated":"2023-11-01T20:00:04.300+08:00"}
+{"dg-publish":true,"permalink":"/home/","contentClasses":"homepage","tags":["gardenEntry"],"created":"2023-11-01T09:57:06.372+08:00","updated":"2023-11-01T21:28:10.544+08:00"}
 ---
 
 
+![portraitofme.png|195](/img/user/assets/portraitofme.png)
 ## Hi there!  
   
-## I’m a UX designer & artist, who sometimes [[[writes](https://teresawatts.com/writing), \|[writes](https://teresawatts.com/writing), ]]makes [[Art\|Art]], [sketches](https://teresawatts.com/tags/sketching) and makes fun things. You might be interested in what I'm up to [[Now\|Now]].
+## I’m a UX designer & artist, who sometimes [[Writing\|writes]], makes [[Art\|art]], [[Sketching\|sketches]] and makes fun things. You might be interested in what I'm up to [[Now\|Now]].
 
-![portraitofme.png|300](/img/user/assets/portraitofme.png)
+
 ## Recently updated
 - [[About this site\|About this site]]
 - [[Art\|Art]]
