@@ -139,9 +139,9 @@ nav.filetree-sidebar, nav.navbar {
     width: 100%;
   }
   .search-button, .folder, span, h1 {
-        display: none;
+        display: none !important;
     }
-  h1 {
+  a#logo {
     display: block;
     text-decoration: none;
     border: 0;
@@ -177,6 +177,7 @@ nav.filetree-sidebar, nav.navbar {
         font-weight: bold;
         border-bottom: 0;
         color: $color-text;
+        text-decoration: none;
         &:hover {
           background-color: transparent;
           color: $color-secondary;
@@ -354,7 +355,7 @@ q {
 HOMEPAGE
 ---------------------- */
 
-.home {
+.homepage {
   max-width: 670px;
   margin: 0 auto;
   h2 {
