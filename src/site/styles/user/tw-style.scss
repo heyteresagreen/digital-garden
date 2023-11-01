@@ -90,14 +90,12 @@ h6 {
   font-size: 1em;
  }
 
-.content a {
+.content a, .sidebar a {
   transition: background-color 300ms;
   color: $color-secondary !important;
-  text-decoration: none;
   &:hover {
     color: white  !important;
     background-color: $color-secondary;
-    text-decoration: none;
   }
   &.internal-link:after,
   &.footnote:after,
@@ -129,7 +127,7 @@ LAYOUT
 ---------------------- */
 
 nav.filetree-sidebar, nav.navbar {
-  max-width: 580px;
+  max-width: 600px;
   margin: 1rem auto 3rem;
   position: relative !important;
   background: transparent;
