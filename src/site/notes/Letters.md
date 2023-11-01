@@ -1,9 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/letters/","created":"2023-11-01T12:31:49.154+08:00","updated":"2023-11-01T19:44:05.543+08:00"}
+{"dg-publish":true,"permalink":"/letters/","created":"2023-11-01T12:31:49.154+08:00","updated":"2023-11-01T21:13:49.609+08:00"}
 ---
 
 
 ![Letters.png](/img/user/assets/Letters.png)
+Letters from me to you, delivered to your email inbox very infrequently. Some rambling thoughts, things I’ve made, interesting links etc.
+
 <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="embeddable-buttondown-form">
 <label for="bd-email">Your email</label>
 <input type="email" name="email" id="bd-email" />
