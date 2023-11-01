@@ -1,7 +1,6 @@
 ---
-{"dg-publish":true,"permalink":"/the-ugly-stage/","title":"The \"Ugly Stage\"","tags":["process","seedling"],"created":"2023-01-11T08:50:58.159+08:00","updated":"2023-11-01T15:05:13.875+08:00"}
+{"dg-publish":true,"permalink":"/the-ugly-stage/","title":"The \"Ugly Stage\"","tags":["process","seedling"],"created":"2023-01-11T08:50:58.159+08:00","updated":"2023-11-01T21:28:38.306+08:00"}
 ---
-
 
 When creating a piece of art, there's often an "ugly stage" where it hasn't all come together yet and it doesn't make sense as a whole. I feel like I get this a lot when I'm painting and haven't gotten to the detail or shading that really makes it, especially in a portrait where this stage can look particularly horrifying.
 
