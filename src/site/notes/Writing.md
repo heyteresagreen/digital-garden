@@ -25,5 +25,6 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Home\|Home]]
 - [[Letters\|Letters]]
 - [[Writing\|Writing]]
+- [[Sketching\|Sketching]]
 
 { .block-language-dataview}
