@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-7/","title":"Back to making big plans","tags":["letters"],"updated":"31 October, 2023"}
+{"dg-publish":true,"permalink":"/letters/letters-7/","title":"Back to making big plans","tags":["letters"]}
 ---
 
 Hello! 
