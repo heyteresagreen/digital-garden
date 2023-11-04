@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/home/","contentClasses":"homepage","tags":["gardenEntry"],"created":"2023-11-01T09:57:06.372+08:00","updated":"2023-11-01T21:28:10.544+08:00"}
+{"dg-publish":true,"permalink":"/home/","contentClasses":"homepage","tags":["gardenEntry"]}
 ---
 
 
@@ -10,15 +10,15 @@
 
 
 ## Recently updated
-- [[About this site\|About this site]]
 - [[Art\|Art]]
+- [[About this site\|About this site]]
 - [[ChiGarden\|ChiGarden]]
+- [[Home\|Home]]
+- [[Letters\|Letters]]
 - [[My Obsidian workflow\|My Obsidian workflow]]
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]]
 - [[My planning, writing and sketching tools\|My planning, writing and sketching tools]]
 - [[Now\|Now]]
 - [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]]
-- [[Procrastination through process\|Procrastination through process]]
-- [[Start here\|Start here]]
 
 { .block-language-dataview}
