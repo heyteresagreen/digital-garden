@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2023/","title":"Books I've read in 2023","tags":["reading"],"created":"2023-09-21T21:31:31.000+08:00","updated":"2023-11-01T15:05:13.934+08:00"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2023/","title":"Books I've read in 2023","tags":["reading"],"updated":"20 October, 2023"}
 ---
 
 
