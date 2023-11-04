@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-5/","title":"Making the most of right now","tags":["letters"],"created":"2023-09-21T21:56:16.948+08:00","updated":"2023-11-01T15:14:58.258+08:00"}
+{"dg-publish":true,"permalink":"/letters/letters-5/","title":"Making the most of right now","tags":["letters"],"updated":"28 April, 2023"}
 ---
 
 ![dining-table.jpeg](/img/user/assets/dining-table.jpeg)
