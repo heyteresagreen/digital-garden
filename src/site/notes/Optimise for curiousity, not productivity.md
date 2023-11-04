@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/optimise-for-curiousity-not-productivity/","title":"Optimise for curiousity, not productivity","tags":["systems"],"created":"2023-01-03T16:20:37.276+08:00","updated":"2023-11-01T15:05:13.894+08:00"}
+{"dg-publish":true,"permalink":"/optimise-for-curiousity-not-productivity/","title":"Optimise for curiousity, not productivity","tags":["systems"],"updated":"3 January, 2023"}
 ---
 
 
