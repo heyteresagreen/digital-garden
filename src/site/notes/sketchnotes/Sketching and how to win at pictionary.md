@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/sketching-and-how-to-win-at-pictionary/","title":"Sketching & How to Win at Pictionary (and DDD Perth 2018 sketchnotes)","tags":["sketching","sketchnotes"],"created":"2022-12-21T21:23:11.517+08:00","updated":"2023-11-01T15:18:15.747+08:00"}
+{"dg-publish":true,"permalink":"/sketchnotes/sketching-and-how-to-win-at-pictionary/","title":"Sketching & How to Win at Pictionary (and DDD Perth 2018 sketchnotes)","tags":["sketching","sketchnotes"],"updated":"18 December, 2019"}
 ---
 
 
