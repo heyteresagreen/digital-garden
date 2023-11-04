@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","seedling"],"updated":"13 January, 2023"}
+{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","seedling"],"created":"2023-01-13"}
 ---
 
 
