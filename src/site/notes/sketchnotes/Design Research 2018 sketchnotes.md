@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/design-research-2018-sketchnotes/","title":"Design Research conference 2018, in sketchnotes","tags":["sketching","sketchnotes"],"created":"2022-12-28T21:04:08.955+08:00","updated":"2023-11-01T15:18:32.686+08:00"}
+{"dg-publish":true,"permalink":"/sketchnotes/design-research-2018-sketchnotes/","title":"Design Research conference 2018, in sketchnotes","tags":["sketching","sketchnotes"],"updated":"18 December, 2018"}
 ---
 
 
