@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/my-obsidian-workflow/","title":"My Obsidian workflow","tags":["systems"],"updated":"12 December, 2022"}
+{"dg-publish":true,"permalink":"/my-obsidian-workflow/","title":"My Obsidian workflow","tags":["systems"],"created":"2022-12-12"}
 ---
 
 
