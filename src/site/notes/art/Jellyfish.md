@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/jellyfish/","title":"Jellyfish","tags":["art"],"created":"2023-01-24T15:44:06.235+08:00","updated":"2023-11-01T13:25:24.361+08:00"}
+{"dg-publish":true,"permalink":"/art/jellyfish/","title":"Jellyfish","tags":["art"],"updated":"24 January, 2023"}
 ---
 
 
