@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/illustrating-nature-course/","title":"Illustrating Nature course","tags":["art"],"created":"2023-09-21T21:31:31.552+08:00","updated":"2023-11-01T13:19:13.626+08:00"}
+{"dg-publish":true,"permalink":"/art/illustrating-nature-course/","title":"Illustrating Nature course","tags":["art"],"created":"7 March, 2023","updated":"28 April, 2023"}
 ---
 
 
