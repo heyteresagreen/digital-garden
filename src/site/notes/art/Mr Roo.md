@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/mr-roo/","title":"Mr Roo","tags":["art"],"created":"2022-12-06T14:17:33.499+08:00","updated":"2023-11-01T13:25:46.573+08:00"}
+{"dg-publish":true,"permalink":"/art/mr-roo/","title":"Mr Roo","tags":["art"],"updated":"6 December, 2022"}
 ---
 
 
