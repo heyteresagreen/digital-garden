@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/","created":"2023-11-01T12:31:49.154+08:00","updated":"2023-11-01T21:13:49.609+08:00"}
+{"dg-publish":true,"permalink":"/letters/"}
 ---
 
 
