@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/chi-garden/","title":"ChiGarden - archiving this chapter of my life","updated":"18 December, 2022"}
+{"dg-publish":true,"permalink":"/chi-garden/","title":"ChiGarden - archiving this chapter of my life"}
 ---
 
 
