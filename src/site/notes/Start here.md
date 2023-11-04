@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/start-here/","title":"Start here","created":"2022-12-06T14:17:33.499+08:00","updated":"2023-11-01T15:05:13.875+08:00"}
+{"dg-publish":true,"permalink":"/start-here/","title":"Start here","updated":"18 December, 2022"}
 ---
 
 
