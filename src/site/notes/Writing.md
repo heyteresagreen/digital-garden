@@ -25,6 +25,7 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Home\|Home]]
 - [[Letters\|Letters]]
 - [[Sketching\|Sketching]]
+- [[Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Writing\|Writing]]
 
 { .block-language-dataview}
