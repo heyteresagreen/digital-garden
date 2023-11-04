@@ -389,7 +389,7 @@ HOMEPAGE
 }
 
 .simple {
-  .header-meta, aside {
+  .header-meta, +aside {
     display: none;
   }
 }
