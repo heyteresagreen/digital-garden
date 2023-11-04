@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/perth-web-accessibility-camp-2023/","title":"Perth Web Accessibility Camp 2023","tags":["sketching","sketchnotes"],"created":"2023-02-23T08:08:36.150+08:00","updated":"2023-11-01T15:18:21.822+08:00"}
+{"dg-publish":true,"permalink":"/sketchnotes/perth-web-accessibility-camp-2023/","title":"Perth Web Accessibility Camp 2023","tags":["sketching","sketchnotes"],"updated":"21 February 2023"}
 ---
 
 
