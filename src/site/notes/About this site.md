@@ -3,9 +3,7 @@
 ---
 
 
-This site is a little experiment into writing, Indieweb and digital gardening. You might want to [[Start here\|Start here]].
+This site is a little experiment into writing, Indieweb and digital gardening.
 
 ## Just the facts
-This site is made with Jekyll, specifically the [Jekyll digital garden theme](https://maximevaillancourt.com/blog/setting-up-your-own-digital-garden-with-jekyll) (with some slight adjustments). It's published with GitHub and Netlify, don't ask me how it all works. Fonts are Georgia + Helvetica Neue (if you have it installed, Arial if you don't). I write notes in [Obsidian](https://obsidian.md/) and use [this plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher) to publish to my Github. Here's a bit about [[My Obsidian workflow\|My Obsidian workflow]].
-
-I'm starting again with the Digital Garden plugin for Obsidian.
+The content of this site is written in  [Obsidian](https://obsidian.md/) and uses the [Obsidian Digital Garden plugin](https://dg-docs.ole.dev/) to publish to Github + Netlify (I have only a vague understanding of how that part works). Fonts are Georgia + Helvetica Neue (if you have it installed, Arial if you don't). Here's a bit about [[My Obsidian workflow\|My Obsidian workflow]] which I need to update now that I'm using a different template and plugin.
