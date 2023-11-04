@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/thoughts-on-mending/","title":"Thoughts on mending","tags":["sustainability"],"created":"2023-02-23T08:08:36.151+08:00","updated":"2023-11-01T15:05:13.875+08:00"}
+{"dg-publish":true,"permalink":"/thoughts-on-mending/","title":"Thoughts on mending","tags":["sustainability"],"updated":"19 February, 2023"}
 ---
 
 
