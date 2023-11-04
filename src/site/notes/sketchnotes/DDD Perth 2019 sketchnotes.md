@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/ddd-perth-2019-sketchnotes/","title":"DDD Perth 2019 in sketchnotes","tags":["sketching","sketchnotes"],"created":"2022-12-21T21:23:11.517+08:00","updated":"2023-11-01T15:18:39.666+08:00"}
+{"dg-publish":true,"permalink":"/sketchnotes/ddd-perth-2019-sketchnotes/","title":"DDD Perth 2019 in sketchnotes","tags":["sketching","sketchnotes"],"updated":"18 December, 2019"}
 ---
 
 
