@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/procrastination-through-process/","title":"Procrastination through process","tags":["systems"],"created":"2022-11-29T14:03:55.214+08:00","updated":"2023-11-01T15:05:13.875+08:00"}
+{"dg-publish":true,"permalink":"/procrastination-through-process/","title":"Procrastination through process","tags":["systems"],"updated":"29 November, 2022"}
 ---
 
 
