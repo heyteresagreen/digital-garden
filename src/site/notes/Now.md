@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/now/","title":"Now","created":"2023-10-31T21:50:19.591+08:00","updated":"2023-11-01T10:18:43.665+08:00"}
+{"dg-publish":true,"permalink":"/now/","title":"Now","updated":"29 October, 2023"}
 ---
 
 
