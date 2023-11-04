@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/writing/","contentClasses":"simple"}
 ---
 
-I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densley linked, for exploring non-linearly. Let’s see how all that goes.
+I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
 - [[Using an iPad as a second screen\|Using an iPad as a second screen]]
