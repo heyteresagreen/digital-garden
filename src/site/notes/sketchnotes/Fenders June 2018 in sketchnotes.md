@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/fenders-june-2018-in-sketchnotes/","title":"Fenders June 2018, in sketchnotes","tags":["sketching","sketchnotes"],"updated":"18 June, 2018"}
+{"dg-publish":true,"permalink":"/sketchnotes/fenders-june-2018-in-sketchnotes/","title":"Fenders June 2018, in sketchnotes","tags":["sketching","sketchnotes"],"created":"2018-06-18"}
 ---
 
 
