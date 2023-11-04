@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/ux-camp-perth-2022/","title":"UX Camp Perth 2022","tags":["sketching","sketchnotes"],"created":"2023-01-24T20:11:42.376+08:00","updated":"2023-11-01T15:18:07.950+08:00"}
+{"dg-publish":true,"permalink":"/sketchnotes/ux-camp-perth-2022/","title":"UX Camp Perth 2022","tags":["sketching","sketchnotes"],"updated":"21 October 2022"}
 ---
 
 I’ve had a long time between sketchnotes at conferences (although I have still been sketching!). Having two toddlers and a global pandemic can do that! But I was really determined to make the most of [UX Camp Perth](https://www.uxcamp.co/) this year, as an awesome local conference that I was lucky enough to get a last minute ticket to attend.
