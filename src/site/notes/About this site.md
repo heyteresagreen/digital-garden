@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/about-this-site/","title":"About this site","tags":["design"],"updated":"29 November, 2022"}
+{"dg-publish":true,"permalink":"/about-this-site/","title":"About this site","tags":["design"],"created":"2022-11-29"}
 ---
 
 
