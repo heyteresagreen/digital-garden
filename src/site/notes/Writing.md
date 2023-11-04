@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/writing/"}
+{"dg-publish":true,"permalink":"/writing/","contentClasses":"simple"}
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densley linked, for exploring non-linearly. Let’s see how all that goes.
@@ -25,7 +25,6 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Home\|Home]]
 - [[Letters\|Letters]]
 - [[Sketching\|Sketching]]
-- [[Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Writing\|Writing]]
 
 { .block-language-dataview}
