@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-1/","title":"Writing letters, drawing mangoes & attempting to craft a harmonious life","tags":["letters"],"updated":"28 March, 2023"}
+{"dg-publish":true,"permalink":"/letters/letters-1/","title":"Writing letters, drawing mangoes & attempting to craft a harmonious life","tags":["letters"],"created":"2023-03-28"}
 ---
 
 
