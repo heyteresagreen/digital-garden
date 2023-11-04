@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-2/","title":"Sketchbook 2","tags":["sketchbooks","art"],"updated":"19 August, 2023"}
+{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-2/","title":"Sketchbook 2","tags":["sketchbooks","art"],"created":"2023-08-19"}
 ---
 
 
