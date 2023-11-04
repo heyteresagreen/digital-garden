@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/magpie/","title":"Ms Magpie","tags":["art"],"created":"2022-12-02T21:25:51.000+08:00","updated":"2023-11-01T21:08:15.790+08:00"}
+{"dg-publish":true,"permalink":"/art/magpie/","title":"Ms Magpie","tags":["art"],"updated":"2 December, 2022"}
 ---
 
 
