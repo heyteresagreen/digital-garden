@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketching/ux-camp-perth-2023-sketchnotes/","tags":["sketching","sketchnotes"],"created":"2023-11-06"}
+{"dg-publish":true,"permalink":"/sketching/ux-camp-perth-2023-sketchnotes/","tags":["sketching","sketchnotes"],"noteIcon":"","created":"2023-11-06"}
 ---
 
 ![ux-camp-23 - 4.jpeg|sketchnotes for the intro and welcome to country of UX Camp Perth 2023, as well as my to do list for the night before and the badge for speaking at UX Camp](/img/user/assets/sketching/ux-camp-23%20-%204.jpeg)
