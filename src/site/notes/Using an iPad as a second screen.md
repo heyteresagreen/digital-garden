@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/using-an-i-pad-as-a-second-screen/","title":"Using an iPad as a second screen","tags":["tools"],"created":"2023-08-11"}
+{"dg-publish":true,"permalink":"/using-an-i-pad-as-a-second-screen/","title":"Using an iPad as a second screen","tags":["tools"],"noteIcon":"","created":"2023-08-11"}
 ---
 
 
