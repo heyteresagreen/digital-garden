@@ -1,11 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/writing/","contentClasses":"simple"}
+{"dg-publish":true,"permalink":"/writing/","contentClasses":"simple","noteIcon":""}
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
-- [[templates/New note template\|New note template]]
 - [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
-- [[Sketchnotes\|Sketchnotes]]
 - [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
@@ -29,12 +27,7 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[sketching/Sketching and how to win at pictionary\|Sketching and how to win at pictionary]]
 - [[sketching/Design Research 2018 sketchnotes\|Design Research 2018 sketchnotes]]
 - [[sketching/Fenders June 2018 in sketchnotes\|Fenders June 2018 in sketchnotes]]
-- [[Art\|Art]]
 - [[ChiGarden\|ChiGarden]]
-- [[Home\|Home]]
-- [[Letters\|Letters]]
-- [[Sketching\|Sketching]]
-- [[Writing\|Writing]]
 - [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
 
 { .block-language-dataview}
