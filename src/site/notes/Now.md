@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/now/","title":"Now","created":"2022-12-18"}
+{"dg-publish":true,"permalink":"/now/","title":"Now","noteIcon":"","created":"2022-12-18"}
 ---
 
 
