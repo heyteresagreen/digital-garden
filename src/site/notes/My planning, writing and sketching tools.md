@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","seedling"],"noteIcon":"","created":"2023-01-13","updated":"2023-11-06"}
+{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","tools"],"noteIcon":"","created":"2023-01-13","updated":"2023-11-06"}
 ---
 
 
@@ -21,7 +21,7 @@ I've switched from A5 notebooks to Pocket (just a little smaller than A6) size o
 
 I mostly use digital tools for work, but also have a Rhodia A5 notebook for work doodles, wireframes and mind maps.
 ### Previously
-I started [[sketchbooks/Sketchbook 1\|Sketchbook 1]] at the beginning of 2023 intending it to be notes, journalling and sketching. I finished it in June 2023 becoming almost entirely a sketchbook, and have used dedicated [[sketchbooks\|sketchbooks]] since then.
+I started [[sketchbooks/Sketchbook 1\|Sketchbook 1]] at the beginning of 2023 intending it to be notes, journalling and sketching. I finished it in June 2023 becoming almost entirely a sketchbook, and have used dedicated [[Sketchbooks\|Sketchbooks]] since then.
 
 Before this I was solidly Bullet Journalling in Leuchtturm1917 notebooks for years, but dropped right off after having kids and pretty much not having any spare time to plan for. I'm still following some Bullet Journal ideas but not rigidly or as any kind of planner.
 
