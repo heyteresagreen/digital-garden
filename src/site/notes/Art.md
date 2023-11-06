@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple"}
+{"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple","noteIcon":""}
 ---
 
 - [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
