@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-5/","title":"Making the most of right now","tags":["letters"]}
+{"dg-publish":true,"permalink":"/letters/letters-5/","title":"Making the most of right now","tags":["letters"],"noteIcon":""}
 ---
 
 ![dining-table.jpeg](/img/user/assets/dining-table.jpeg)
