@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/","contentClasses":"simple"}
+{"dg-publish":true,"permalink":"/letters/","contentClasses":"simple","noteIcon":""}
 ---
 
 
