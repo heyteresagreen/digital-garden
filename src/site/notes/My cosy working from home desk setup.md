@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/my-cosy-working-from-home-desk-setup/","title":"My cosy working from home desk setup","tags":["home","wfh"],"created":"2022-05-29","updated":"2023-01-30"}
+{"dg-publish":true,"permalink":"/my-cosy-working-from-home-desk-setup/","title":"My cosy working from home desk setup","tags":["home","wfh"],"noteIcon":"","created":"2022-05-29","updated":"2023-01-30"}
 ---
 
 
