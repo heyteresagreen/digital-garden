@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/start-here/","title":"Start here","created":"2022-12-18"}
+{"dg-publish":true,"permalink":"/start-here/","title":"Start here","noteIcon":"","created":"2022-12-18"}
 ---
 
 
