@@ -2,9 +2,11 @@
 {"dg-publish":true,"permalink":"/sketching/starting-with-sketchnotes/","tags":["sketchnotes","sketching","speaking"],"created":"2023-11-04"}
 ---
 
+This post is essentially a talk I gave at [UX Camp Perth 2023](http://uxcamp.co). It doesn't have quite the same effect when it's not live, but I wanted to share it with anyone who couldn't be there for it.
+
+Here are my own [[sketching/UX Camp Perth 2023 - sketchnotes\|sketchnotes from UX Camp Perth 2023]] for the other excellent talks/workshops from the day!
 
 ![IMG_4492.jpeg|Starting with Sketchnotes, a talk by Teresa Watts](/img/user/assets/sketching/IMG_4492.jpeg)
-> This post is essentially a talk I gave at UX Camp Perth 2023. It doesn't have quite the same effect when it's not live, but I wanted to share it with anyone who couldn't be there for it.
 
 One thing I like to point out before I get started - you don't have to be an artist. People can be scared of drawing because they think they won't be any good at it. But you don't have to be an expert at drawing to make sketchnotes.
 
