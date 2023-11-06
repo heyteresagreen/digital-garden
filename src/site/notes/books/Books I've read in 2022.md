@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2022/","title":"Books I've read in 2022","tags":["reading"],"created":"2022-12-29","updated":"2023-01-12"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2022/","title":"Books I've read in 2022","tags":["reading"],"noteIcon":"","created":"2022-12-29","updated":"2023-01-12"}
 ---
 
 
