@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/tiny-watercolour-kit-v2/","title":"Tiny watercolour kit v2","tags":["tools"],"created":"2023-09-21"}
+{"dg-publish":true,"permalink":"/tiny-watercolour-kit-v2/","title":"Tiny watercolour kit v2","tags":["tools"],"noteIcon":"","created":"2023-09-21"}
 ---
 
 
