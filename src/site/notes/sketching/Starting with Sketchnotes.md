@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketching/starting-with-sketchnotes/","tags":["sketchnotes","sketching","speaking"],"created":"2023-11-04"}
+{"dg-publish":true,"permalink":"/sketching/starting-with-sketchnotes/","tags":["sketchnotes","sketching","speaking"],"noteIcon":"","created":"2023-11-04"}
 ---
 
 This post is essentially a talk I gave at [UX Camp Perth 2023](http://uxcamp.co). It doesn't have quite the same effect when it's not live, but I wanted to share it with anyone who couldn't be there for it.
