@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","seedling"],"noteIcon":"","created":"2023-01-13"}
+{"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","seedling"],"noteIcon":"","created":"2023-01-13","updated":"2023-11-06"}
 ---
 
 
@@ -8,18 +8,26 @@ The other day I was trying to explain the various tools I use for various purpos
 So here's what's in my stack currently:
 
 ## Analog writing and sketching
-After solidly Bullet Journalling for years, I dropped right off after having kids and pretty much not having any spare time to plan for. This year (2023) I'm picking up the physical notebook again, with a few tweaks.
 
-A **plain notebook** for personal daily-ish journalling, sketches and thoughts. I haven't put any constraints of what it is or isn't, to [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]]. It's a fairly cheap Clairefontaine A5 clothbound notebook, which has paper that is really lovely for fountain pens and brush pens, and sort of tolerates watercolour and coloured pencils. Going full plain pages is new for me (dot grid was my go-to) and I love how unconstrained it feels, even if my writing gets a little wonky. I'm not going back to BuJo at this stage, still just following my energy for how I use my spare time. See my [[sketchbooks/Sketchbook 1\|sketchbooks/Sketchbook 1]].
+![../../assets/IMG_2365.jpeg|my notebook cover with 3 notebooks inside](/img/user/assets/IMG_2365.jpeg)
 
-A **lined notebook** for work notes and meeting doodles. I use Notion for most of my work notes and planning (see below), but I sometimes get the urge to draw things out or hand write things. It's usually things like wireframes or mind maps, which for me are more satisfying to begin on paper. I think a dot grid or plain notebook would be better for this purpose, but I had this lovely Rhodia A5 notebook lying around waiting to be used.
+I've switched from A5 notebooks to Pocket (just a little smaller than A6) size ones with soft covers and fewer pages to keep lightweight. At the moment I have my Pocket notebooks together inside a [leather cover by Paper Republic](https://www.paper-republic.com/products/grand-voyageur-leather-journal?variant=46708728856917), so altogether it feels like one book. Inside I have:
 
-A **Lamy Joy fountain pen** with a fine nib. I bought this pen years ago, and have barely used it. Somehow it's become my go-to pen for writing and sketching. It's not the fanciest, but for me it is a lovely writing experience. I'm currently using it with blue Quink.
+* A plain notebook for **personal projects, diagrams, [[Sketchnotes\|sketchnotes]], to-dos and thoughts**. Currently using the [Paper Republic plain refill](https://www.paper-republic.com/collections/write/products/notebook-refills) in the Pocket size.
+* A loose folded sheet to log notable **moments from the week**, which I'm planning to bind together into a little book at the end of the year. It's just a loose sheet to avoid adding extra bulk and because it's a new thing I'm not sure I'll continue.
+* A notebook for **Morning Pages**. Currently using up my stash of Field Notes and Moleskine Cahiers, as I'm getting through a couple each month. 
+* A sketchbook with smooth mixed media paper nice for **sketching and painting**. Currently using [Paper Republic drawing book](https://www.paper-republic.com/products/drawing-book) in the Pocket size.
+* A cream coloured Lamy Safari **fountain pen** with blue ink for writing (I also use various other art materials but this is the one always with the notebook)
+
+I mostly use digital tools for work, but also have a Rhodia A5 notebook for work doodles, wireframes and mind maps.
+### Previously
+I started [[sketchbooks/Sketchbook 1\|Sketchbook 1]] at the beginning of 2023 intending it to be notes, journalling and sketching. I finished it in June 2023 becoming almost entirely a sketchbook, and have used dedicated [[sketchbooks\|sketchbooks]] since then.
+
+Before this I was solidly Bullet Journalling in Leuchtturm1917 notebooks for years, but dropped right off after having kids and pretty much not having any spare time to plan for. I'm still following some Bullet Journal ideas but not rigidly or as any kind of planner.
 
 ## Digital writing
 ### Notion
-**Work notes, journal and to-dos**. I don't go as hardcore with this as some - I have a page to house notes for each of my work projects, plus a page for each week's to-do list. My work journal is a database as per [this article on keeping a design journal](https://www.tannerchristensen.com/blog/using-a-work-journal-to-create-design-case-studies)
-but I'm still figuring out if it's overkill. At work we use Jira for task management, so the tasks I keep in my Notion are more granular.
+**Work notes, journal and to-dos**. I don't go as hardcore with this as some - I have a page to house notes for each of my work projects, plus a page for each week's to-do list. At work we use Jira for task management, so the tasks I keep in my Notion are more granular.
 
 **Personal notes.** Currently this includes an exercise log, and sourdough baking log, and a list of to-dos for this site.
 
