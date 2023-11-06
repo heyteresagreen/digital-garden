@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-3/","title":"Am I doing self-care right?","tags":["letters"],"created":"2023-04-11"}
+{"dg-publish":true,"permalink":"/letters/letters-3/","title":"Am I doing self-care right?","tags":["letters"],"noteIcon":"","created":"2023-04-11"}
 ---
 
 ![sketchbook25.jpeg](/img/user/assets/sketchbook25.jpeg)
