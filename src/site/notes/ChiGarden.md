@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/chi-garden/","title":"ChiGarden - archiving this chapter of my life"}
+{"dg-publish":true,"permalink":"/chi-garden/","title":"ChiGarden - archiving this chapter of my life","noteIcon":""}
 ---
 
 
