@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/our-home/","title":"Our home","tags":["watercolour","art"],"created":"2023-09-22"}
+{"dg-publish":true,"permalink":"/art/our-home/","title":"Our home","tags":["watercolour","art"],"noteIcon":"","created":"2023-09-22"}
 ---
 
 
