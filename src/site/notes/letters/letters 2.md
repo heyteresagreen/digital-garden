@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-2/","title":"Identity, using what you've got and the never-ending to-read pile","tags":["letters"],"created":"2023-04-05"}
+{"dg-publish":true,"permalink":"/letters/letters-2/","title":"Identity, using what you've got and the never-ending to-read pile","tags":["letters"],"noteIcon":"","created":"2023-04-05"}
 ---
 
 
