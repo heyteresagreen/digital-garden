@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-7/","title":"Back to making big plans","tags":["letters"]}
+{"dg-publish":true,"permalink":"/letters/letters-7/","title":"Back to making big plans","tags":["letters"],"noteIcon":""}
 ---
 
 Hello! 
