@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/revisiting-ceramics/","title":"Revisiting ceramics","tags":["art","ceramics"],"created":"2023-01-29"}
+{"dg-publish":true,"permalink":"/art/revisiting-ceramics/","title":"Revisiting ceramics","tags":["art","ceramics"],"noteIcon":"","created":"2023-01-29"}
 ---
 
 
