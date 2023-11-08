@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchnotes/","contentClasses":"","noteIcon":"","created":"2023-11-06"}
+{"dg-publish":true,"permalink":"/sketchnotes/","contentClasses":"gallery","noteIcon":"","created":"2023-11-06"}
 ---
 
 One practice I’ve found especially useful is creating sketchnotes during talks and meetings – I find it helps me listen more deeply in the moment, and to remember the most important points afterwards.
