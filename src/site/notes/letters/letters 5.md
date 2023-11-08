@@ -11,14 +11,10 @@ I don’t feel like it was a bad thing to indulge in aesthetic escapism, especia
 So it looks like I’ll be writing and drawing and painting from my dining table for some time to come (which I knew from the beginning anyway), and making the most of right now.
 
 ## I've been creating
+![sketchbook30.jpeg|Photo of my sketchbook, showing highlighter sketches of banksias and birds on power lines](/img/user/assets/sketchbook30.jpeg)
+![sketchbook31.jpeg|Photo of my sketchbook, showing highlighter sketches of things I saw in a cafe](/img/user/assets/sketchbook31.jpeg)
 
-<img src="/assets/sketchbook30.jpeg" alt="Photo of my sketchbook, showing highlighter sketches of banksias and birds on power lines">
-
-<img src="/assets/sketchbook31.jpeg" alt="Photo of my sketchbook, showing highlighter sketches of things I saw in a cafe">
-
-<img src="/assets/sketchbook32.jpeg" alt="Photo of my sketchbook, showing coloured pencil sketches of my weekend">
-
-![sketchbook30.jpeg](/img/user/assets/sketchbook30.jpeg)![sketchbook31.jpeg](/img/user/assets/sketchbook31.jpeg)![sketchbook32.jpeg](/img/user/assets/sketchbook32.jpeg)
+![sketchbook32.jpeg|Photo of my sketchbook, showing coloured pencil sketches of my weekend](/img/user/assets/sketchbook32.jpeg)
 
 1. **Sketchbook pages** - this week has been big on socialising and less on sketching, which is nice every once in a while.
 2. **Space in the pantry** for my baking adventures. Limited storage in our house definitely puts a cap on any mindless consumption - anything new requires some rationalisation or reduction of what we already have. I'm pretty happy with the way we've been able to shuffle things around for our shifting needs.
