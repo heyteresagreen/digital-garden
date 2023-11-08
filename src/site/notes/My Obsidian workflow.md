@@ -15,8 +15,7 @@ My other cross-platform note-taking tools, Bear and Notion, aren't great at open
 
 The solution I've found is [Obsidian](https://obsidian.md/), a note-taking app that's really built around a knowledge management system workflow and is also very extendable through community plugins. It's not quite as slick a writing experience as Bear, and not quite as powerful as Notion, but it does allow me to open my website files (stored in iCloud) as a "vault" of notes that I can edit and publish using a plugin.
 
-![Screenshot of Obsidian interface, showing this post](/img/user/assets/screenshot-of-obsidian.png)
-*A screenshot of this post in Obsidian. How meta!
+![obsidian-screenshot.png|Screenshot of Obsidian interface, showing this post](/img/user/assets/obsidian-screenshot.png)*A screenshot of this post in Obsidian. How meta!*
 
 ## Here's my workflow for adding a new notes at the moment:
 
