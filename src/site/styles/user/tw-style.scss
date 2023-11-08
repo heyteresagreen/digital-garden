@@ -291,6 +291,9 @@ NOTE AND POST ELEMENTS
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
+  column-count: 3;
+  column-gap: 1em;
+  /*
   li {
     margin: 0;
     margin-bottom: 2%;
@@ -303,13 +306,14 @@ NOTE AND POST ELEMENTS
         padding-right: 0;
     }
   }
+  */
   a:hover img {
     outline: 2px solid $color-secondary;
     transition: outline 0.2s;
   }
 }
 
-.two-col {
+img.two-col {
   
   @media (min-width: 720px) {
     width: 49%;
