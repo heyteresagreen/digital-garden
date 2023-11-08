@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/","contentClasses":"","noteIcon":"","created":"2023-11-06"}
+{"dg-publish":true,"permalink":"/sketchbooks/","contentClasses":"gallery","noteIcon":"","created":"2023-11-06"}
 ---
 
 There's something kind of cool about having all your artwork together in a book. Even if individually each page is not amazing, collectively they tell a story and show skills evolving over time.
