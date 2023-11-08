@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketching/","contentClasses":"simple","noteIcon":""}
+{"dg-publish":true,"permalink":"/sketching/","contentClasses":"simple gallery","noteIcon":""}
 ---
 
 I love the way that translating complex ideas into a visual format can make it more understandable and interesting to look at! I try to use sketches, diagrams and drawings both to figure things out for myself, and to explain things to others.
