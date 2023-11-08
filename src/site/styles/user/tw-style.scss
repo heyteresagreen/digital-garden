@@ -291,8 +291,12 @@ NOTE AND POST ELEMENTS
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
-  column-count: 3;
-  column-gap: 1em;
+  column-count: 2;
+  column-gap: 0.5em;
+    @media (min-width: 720px) {
+    column-count: 3;
+    column-gap: 1em;
+    }
 
   /* super wide */
 
