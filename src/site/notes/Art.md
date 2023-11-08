@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple","noteIcon":""}
 ---
 
-<div class="masonry" markdown="1">
 
 - [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]: ![assets/IMG_0157.jpeg|IMG_0157.jpeg](/img/user/assets/IMG_0157.jpeg)
@@ -14,5 +13,3 @@
 - [[art/Magpie\|Magpie]]: ![assets/Magpie.jpeg|Magpie.jpeg](/img/user/assets/Magpie.jpeg)
 
 { .block-language-dataview}
-
-</div>
