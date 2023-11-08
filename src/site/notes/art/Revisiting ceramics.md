@@ -12,4 +12,5 @@ Finally got around to taking photos of the pieces I made in a 1:1 workshop with 
 
 ![assets/ceramics3.jpeg|Photo of a ceramic vase with a light on top](/img/user/assets/ceramics3.jpeg){.two-col}
 ![assets/ceramics4.jpeg|Photo of a ceramic vase](/img/user/assets/ceramics4.jpeg){.two-col}
+
 ![Photo of white ceramic bowls and vases](/img/user/assets/ceramics5.jpeg)
