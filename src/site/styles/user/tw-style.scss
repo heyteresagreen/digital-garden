@@ -301,9 +301,8 @@ NOTE AND POST ELEMENTS
   /* super wide */
 
   @media (min-width: 720px) {
-    width: 720px;
+    width: 100%;
     max-width: none;
-    margin-left: -35px;
   }
   @media (min-width: 1050px) {
     width: 1050px;
@@ -338,9 +337,10 @@ NOTE AND POST ELEMENTS
 img.two-col {
   
   @media (min-width: 720px) {
-    width: 49%;
+    width: 50%;
     float: left;
-    padding-right: 1%;
+    margin-bottom: 1em;
+    border-right: 2px solid $color-background;
   }
 }
 
