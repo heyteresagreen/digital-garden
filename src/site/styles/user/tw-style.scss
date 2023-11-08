@@ -293,23 +293,41 @@ NOTE AND POST ELEMENTS
   margin-bottom: 1em;
   column-count: 3;
   column-gap: 1em;
-  /*
-  li {
-    margin: 0;
-    margin-bottom: 2%;
-    @media (min-width: 720px) {
-      width: 49%;
-      float: left;
-      padding-right: 2%;
-    }
-   &:nth-child(even) {
-        padding-right: 0;
-    }
+
+  /* super wide */
+
+  @media (min-width: 720px) {
+    width: 720px;
+    max-width: none;
+    margin-left: -35px;
   }
-  */
-  a:hover img {
-    outline: 2px solid $color-secondary;
-    transition: outline 0.2s;
+  @media (min-width: 1050px) {
+    width: 1050px;
+    max-width: none;
+    margin-left: -200px;
+  }
+
+  li {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    font-size: 0;
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 4px;
+      &:hover {
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        padding: 2em;
+        text-decoration: none !important;
+        background: rgba(0,0,0,0.7);
+      }
+    }
   }
 }
 
