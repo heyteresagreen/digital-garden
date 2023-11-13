@@ -3,7 +3,7 @@
 ---
 
 ![IMG_2372.png|illustration of a woman sitting in a chair writing in a notebook](/img/user/IMG_2372.png)
-
+![IMG_2373.gif](/img/user/IMG_2373.gif)
 Each day, I make some time to write three pages of stream of consciousness thoughts, by hand, in a little pocket notebook. It's rarely anything good or profound, most of the time it's barely legible or coherent at all. There's a lot of waffling about who in my family is sick at the moment, stationery, imposter feelings, "I should..." and "I want...". For me they are *morning* pages in the same sense as *morning sickness*, which is to say that it's often not in the morning at all.
 
 This daily practice has been popularised by Julia Cameron in her book The Artist's Way, which I intensely disliked reading but did admittedly get a lot out of. Technically the Morning Pages is one tool to be used across the 12 week program, which I have read but not done, but it seems to be one that has had much further reach outside readers of the book. 
