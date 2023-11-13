@@ -6,6 +6,7 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Sketchbooks\|Sketchbooks]]
 - [[Sketchnotes\|Sketchnotes]]
 - [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
+- [[Morning Pages\|Morning Pages]]
 - [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
