@@ -13,12 +13,12 @@ Letters from me to you, delivered to your email inbox very infrequently. Some ra
 </form>
 
 ## Old letters
-- [[letters/letters 1\|letters 1]]: Writing letters, drawing mangoes & attempting to craft a harmonious life
+- [[letters/letters 6\|letters 6]]: Finishing a sketchbook
 - [[letters/letters 2\|letters 2]]: Identity, using what you've got and the never-ending to-read pile
 - [[letters/letters 3\|letters 3]]: Am I doing self-care right?
+- [[letters/letters 7\|letters 7]]: Back to making big plans
 - [[letters/letters 4\|letters 4]]: Bendy like a tent pole
 - [[letters/letters 5\|letters 5]]: Making the most of right now
-- [[letters/letters 6\|letters 6]]: Finishing a sketchbook
-- [[letters/letters 7\|letters 7]]: Back to making big plans
+- [[letters/letters 1\|letters 1]]: Writing letters, drawing mangoes & attempting to craft a harmonious life
 
 { .block-language-dataview}
