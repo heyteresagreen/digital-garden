@@ -16,8 +16,8 @@ I've switched from A5 notebooks to Pocket (just a little smaller than A6) size o
 * A plain notebook for **personal projects, diagrams, [[Sketchnotes\|sketchnotes]], to-dos and thoughts**. Currently using the [Paper Republic plain refill](https://www.paper-republic.com/collections/write/products/notebook-refills) in the Pocket size.
 * A loose folded sheet to log notable **moments from the week**, which I'm planning to bind together into a little book at the end of the year. It's just a loose sheet to avoid adding extra bulk and because it's a new thing I'm not sure I'll continue.
 * A notebook for **[[Morning Pages\|Morning Pages]]**. Currently using up my stash of Field Notes and Moleskine Cahiers, as I'm getting through a couple each month. 
-* A sketchbook with smooth mixed media paper nice for **sketching and painting**. Currently using [Paper Republic drawing book](https://www.paper-republic.com/products/drawing-book) in the Pocket size.
-* A cream coloured Lamy Safari **fountain pen** with blue ink for writing (I also use various other art materials but this is the one always with the notebook)
+* A [[Sketchbooks\|sketchbook]] with smooth mixed media paper nice for **sketching and painting**. Currently using [Paper Republic drawing book](https://www.paper-republic.com/products/drawing-book) in the Pocket size.
+* A cream coloured Lamy Safari **[[Fountain pens\|fountain pen]]** with blue ink for writing (I also use various other art materials but this is the one always with the notebook)
 
 I mostly use digital tools for work, but also have a Rhodia A5 notebook for work doodles, wireframes and mind maps.
 ### Previously
