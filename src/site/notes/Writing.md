@@ -4,10 +4,10 @@
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
 - [[Morning Pages\|Morning Pages]]
+- [[Fountain pens\|Fountain pens]]
 - [[Sketchnotes\|Sketchnotes]]
 - [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
 - [[Sketchbooks\|Sketchbooks]]
-- [[Fountain pens\|Fountain pens]]
 - [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
