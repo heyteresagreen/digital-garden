@@ -6,8 +6,10 @@ In the days of in-office collaboration, sketching ideas with others was a tangib
 
 As a UX designer navigating this shift, I've encountered practical challenges in adapting traditional sketching collaboration methods to the virtual workspace. This article doesn't promise a silver bullet; instead, it delves into the real-world pros and cons of various approaches, offering insights for fellow designers looking for practical solutions for remote collaboration. If, like me, you've missed the simplicity of pen-and-paper ideation, come along as we delve into the practical aspects of sketching in the era of virtual teamwork.
 
+
+
 ![IMG_2388.jpeg](/img/user/assets/IMG_2388.jpeg)
-## Use a sketching app
+## Use a sketching app on a tablet
 [Procreate](https://procreate.com/) on the iPad is my go-to for sketching digitally, so it's where I have the most muscle memory in sketching ideas. I plug in my iPad and use Quicktime with "New Movie recording" of the iPad screen so that it's displaying on my computer, which I can then screen share in Meet or Teams. I'm sure there are similar Android and Windows tablet options that will work too.
 
 **Pros:**
@@ -39,8 +41,10 @@ Getting your phone or camera pointing directly down whilst still allowing you sp
 * Some messing around if you don't have continuity camera
 * Extra equipment to hold the phone or camera in position
 
-## Use a white boarding tool
+## Use a white boarding tool on a tablet
 As a user experience designer, these days I spend more of my time in whiteboarding tools like Miro more than I do in drawing or UI design tools. When I'm working with others, often it's in Miro with all of us contributing.
+
+![IMG_2392.jpeg](/img/user/assets/IMG_2392.jpeg)
 
 The simplest way I've found to use these tools with a stylus is by [[Using an iPad as a second screen\|using my tablet as a second screen]]. I can drag Miro over to that screen and use my stylus to draw, touch for gestures, and still use my keyboard and mouse when those make more sense, such as pasting in a screenshot or typing a comment. Others in the board can of course see what you're doing and also edit the board too in real-time. This should work with any white boarding tool such as Figjam or Jamboard. 
 
