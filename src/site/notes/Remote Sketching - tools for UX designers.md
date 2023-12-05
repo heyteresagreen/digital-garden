@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/remote-sketching-tools-for-ux-designers/","title":"Remote Sketching: Tools and Tips for UX Designers","tags":["tools","ux","sketching"],"noteIcon":"","created":"2023-11-28"}
 ---
 
+![IMG_2396.jpeg](/img/user/assets/IMG_2396.jpeg)
 Back when I worked alongside my team in an office, we'd grab some paper or use a whiteboard to sketch ideas and designs together. It always stretched my brain and rarely looked pretty, but it was a useful method to get alignment quickly without getting bogged down in detail or technology.
 
 These days I’m working from home and sketching together isn't as straightforward as it used to be. I've fallen out of the practice in favour of diagramming in white boarding tools or sketching on my own to share later. I still think there's value in real-time drawing alongside these methods, it just needs to be adapted for remote work.
@@ -63,6 +64,7 @@ I've also started to add illustrations to boards that I'm preparing before a mee
 * Sometimes laggy when sharing over a video call, which can be disorienting when working quickly
 * I've found [[Using an iPad as a second screen\|Using an iPad as a second screen]] sometimes struggles a bit with the connection, which is a risk when presenting
 
+![IMG_2395.jpeg](/img/user/assets/IMG_2395.jpeg)
 ## Sketch and share
 Sometimes it makes more sense to sketch ideas separately, then come together to talk through them. Although this won't show drawings happening in real-time, it does give space for everyone to get a chance to draw and come up with ideas independently without any one person dominating the discussion.
 
