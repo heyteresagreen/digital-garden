@@ -12,13 +12,11 @@ If like me you're the type to do some reflecting and journaling at the end of th
 
 Something I keep relearning is to push down my inner critic and just give things a go, even if it's only because otherwise my brain will just keep thinking about it. Even if it's unlikely to earn me money or praise, only the joy of making cool stuff. This newsletter is one of those things, where I had to quiet down the voice telling me no one cares what you have to say, who are you to take up space in people's inboxes? But I know that if I didn't try it, I would have been endlessly mentally cycling through all the cool things I could write but found excuses not to. If you are actually reading this then you are part of a very exclusive group, and I thank you for sticking with me!
 
-![sketchbook4 2 1.jpeg|Page of heads drawn with a marker](/img/user/assets/sketchbook4%202%201.jpeg)
-*This is more the style I was aiming for*
+![sketchbook4 2 1.jpeg|Page of heads drawn with a marker](/img/user/assets/sketchbook4%202%201.jpeg)*This is more the style I was aiming for*
 
 I’m trying to remember to not put expectations on myself over this holiday period. Whilst I’ll have a couple of weeks off of work, the work of a parent of young kids never really ends. There will be some quiet moments whilst they play with new toys or watch too much tv (“quiet” is relative) for me to scribble some thoughts or sneak in some painting before they notice and come to investigate. I do really want to finish my [100 heads challenge](https://www.youtube.com/watch?v=0A_kQsxeeTE) because I’m just so temptingly close, and also kind of over drawing heads (I've taken much longer than the suggested 10 days).
 
-![sketchbook4 4 1.jpeg|watercolour portraits](/img/user/assets/sketchbook4%204%201.jpeg)
-*I wasn't planning on doing watercolour portraits but these were fun*
+![sketchbook4 4 1.jpeg|watercolour portraits](/img/user/assets/sketchbook4%204%201.jpeg)*I wasn't planning on doing watercolour portraits but these were fun*
 
 How has your year been? Do you get much of a break over this season? I hope you get what you need from this strange time of year. Please let me know if you have any particular end of year journaling rituals!
 
