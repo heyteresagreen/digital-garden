@@ -23,12 +23,14 @@ Here's what I've read so far:
 14. The Book of Koli, M.R. Carey
 15. All Systems Red, Martha Wells
 16. Artificial Condition, Martha Wells
+17. Bewilderment, Richard Powers
+18. Marvel 1602, Neil Gaiman
 
 
 In progress:
 
 16. The Neuroscience of You (2022), Chantel Prat
-18. Bewilderment, Richard Powers
+18. Yet We Sleep, We Dream, JL Periodot
 
 
 
