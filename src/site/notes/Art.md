@@ -5,6 +5,7 @@
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
+- [[art/Learning sketching foundations\|Learning sketching foundations]]: \-
 - [[art/Fountain pens and ink\|Fountain pens and ink]]: ![IMG_4426.jpeg|IMG_4426.jpeg](/img/user/IMG_4426.jpeg)
 - [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]: ![assets/IMG_0157.jpeg|IMG_0157.jpeg](/img/user/assets/IMG_0157.jpeg)
