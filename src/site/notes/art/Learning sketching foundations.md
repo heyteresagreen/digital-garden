@@ -14,10 +14,10 @@ It was a great course and I'm looking forward to starting the watercolour one ne
 
 Here are some of my favourite assignments from this course:
 
-![sketchbook2 2.jpeg](/img/user/assets/sketchbook2%202.jpeg)
+![sketchbook2 2.jpeg|sketching objects in my house](/img/user/assets/sketchbook2%202.jpeg)
 
-![sketchbook2 1.jpeg](/img/user/assets/sketchbook2%201.jpeg)
-![sketchbook2 6.jpeg](/img/user/assets/sketchbook2%206.jpeg)![sketchbook2 10.jpeg](/img/user/assets/sketchbook2%2010.jpeg)
-![sketchbook3 8.jpeg](/img/user/assets/sketchbook3%208.jpeg)
-![sketchbook3 10.jpeg](/img/user/assets/sketchbook3%2010.jpeg)![sketchbook3 7.jpeg](/img/user/assets/sketchbook3%207.jpeg)
-![sketchbook2 11.jpeg](/img/user/assets/sketchbook2%2011.jpeg)
+![sketchbook2 1.jpeg|3 ways of visual thinking](/img/user/assets/sketchbook2%201.jpeg)
+![sketchbook2 6.jpeg|sketch of a pile of 3 books](/img/user/assets/sketchbook2%206.jpeg)![sketchbook2 10.jpeg|sketch of a cherry blossom tree](/img/user/assets/sketchbook2%2010.jpeg)
+![sketchbook2 11.jpeg|sketches of my gumboots](/img/user/assets/sketchbook2%2011.jpeg)
+![sketchbook3 8.jpeg|watercolour sketch of a view down the street](/img/user/assets/sketchbook3%208.jpeg)
+![sketchbook3 10.jpeg|sketch of my living room](/img/user/assets/sketchbook3%2010.jpeg)![sketchbook3 7.jpeg|sketch of a forest path and some thumbnails](/img/user/assets/sketchbook3%207.jpeg)
