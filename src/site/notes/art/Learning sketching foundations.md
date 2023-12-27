@@ -14,3 +14,10 @@ It was a great course and I'm looking forward to starting the watercolour one ne
 
 Here are some of my favourite assignments from this course:
 
+![sketchbook2 2.jpeg](/img/user/assets/sketchbook2%202.jpeg)
+
+![sketchbook2 1.jpeg](/img/user/assets/sketchbook2%201.jpeg)
+![sketchbook2 6.jpeg](/img/user/assets/sketchbook2%206.jpeg)![sketchbook2 10.jpeg](/img/user/assets/sketchbook2%2010.jpeg)
+![sketchbook3 8.jpeg](/img/user/assets/sketchbook3%208.jpeg)
+![sketchbook3 10.jpeg](/img/user/assets/sketchbook3%2010.jpeg)![sketchbook3 7.jpeg](/img/user/assets/sketchbook3%207.jpeg)
+![sketchbook2 11.jpeg](/img/user/assets/sketchbook2%2011.jpeg)
