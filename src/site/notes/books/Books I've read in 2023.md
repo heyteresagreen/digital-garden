@@ -25,14 +25,12 @@ Here's what I've read so far:
 16. Artificial Condition, Martha Wells
 17. Bewilderment, Richard Powers
 18. Marvel 1602, Neil Gaiman
+19. Yet We Sleep, We Dream, JL Periodot
+20. Rogue Protocol, Martha Wells
 
 
 In progress:
 
 16. The Neuroscience of You (2022), Chantel Prat
-18. Yet We Sleep, We Dream, JL Periodot
-
-
-
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md).
