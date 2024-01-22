@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/voice-chats-with-my-chat-gpt-ux-mentor/","noteIcon":"","created":"2024-01-19"}
+{"dg-publish":true,"permalink":"/voice-chats-with-my-chat-gpt-ux-mentor/","tags":["ux","AI"],"noteIcon":"","created":"2024-01-19"}
 ---
 
 
@@ -7,6 +7,9 @@
 I love the idea of having a mentor or coach for my UX work. I've worked with wonderful colleagues and friends who have given me ad hoc advice, but never in a formal relationship. Something about not wanting to take up people's time, and a lack of self-knowledge about what I even want to work on, has always stopped me from seeking this out. So when I read about people using AI for coaching, I thought this was worth trying out. A mentor with unlimited time, patience, and availability I can ask all my dumb questions? Sounds too good to be true (*spoiler: it kind of is, but it's still pretty cool*).
 ## Setting up a custom GPT
 It's worth noting that you don't actually need to set up a custom GPT to try this - I believe you can get a similar result by giving similar instructions at the start of a chat or using custom instructions. You can even get a decent result using the currently free GPT 3.5 if you haven't paid for a plan. 
+
+![Pasted image 20240122145428.png|Screenshot of configuring my custom GPT, "UX Mentor"](/img/user/assets/Pasted%20image%2020240122145428.png)
+*"Create" mode steps you through the process using ChatGPT, which then generates the instructions shown in "Configure" mode*
 
 However custom GPTs are included in the Plus plan and are extremely easy to set up - you are walked through the process in a series of chat prompts, taking just a few minutes - so I gave it a try. I didn't have any particular texts that I wanted to train it with, so just gave it some prompts around the areas of expertise and the types of responses I was hoping for.
 
@@ -40,4 +43,6 @@ There is currently a limit of 50 GPT4 responses in a 3 hour window, which I was 
 At the end of the day, although Max does a decent job of mimicking a person, I don't believe she is a meaningful replacement for a real mentor. I'm not sure that would be possible in any field, because mentorship is a human relationship which goes beyond regurgitating common advice or even asking pointed questions. A good relationship goes two ways, and this isn't something we should necessarily seek to replace.
 
 Still, I think that AI has a role to play as a collaborator, a tool for getting unstuck, and coming up with things you might not have thought of. Used with care and many, many grains of salt, there’s definitely value and potential there. As we move from the phase of using AI for entertainment to actually improving workflows, I’m curious to see what kind of role it plays in the UX design field.
+
+*If you want to give it a go and have ChatGPT Plus, [you can find Max here](https://chat.openai.com/g/g-77AqlWseP-ux-mentor), along with many other UX mentor GPTs created by others.*
 
