@@ -27,5 +27,15 @@ Here's some of my favourite spreads:
 
 ![sketches using my water brushes, one with ink and one with water](/img/user/assets/IMG_0162.jpeg)
 
-![watercolor paintings of verge flowers](/img/user/assets/IMG_0163.jpeg)
+![sketchbook2 2 1.jpeg|thumbnail sketches and watercolour sketch of Osaka Castle](/img/user/assets/sketchbook2%202%201.jpeg)
 
+
+![sketchbook2 9.jpeg|watercolour sketches of two of my bags](/img/user/assets/sketchbook2%209.jpeg)
+
+![sketchbook2 6 1.jpeg|watercolour sketch of 3 stacked books](/img/user/assets/sketchbook2%206%201.jpeg)
+
+![sketchbook2 10 1.jpeg|watercolour sketch of cherry blossoms at my son's school](/img/user/assets/sketchbook2%2010%201.jpeg)
+
+![sketchbook2 11 1.jpeg|watercolour sketches of my gumboots](/img/user/assets/sketchbook2%2011%201.jpeg)
+
+![sketchbook2 12.jpeg|watercolour sketch of my house](/img/user/assets/sketchbook2%2012.jpeg)
