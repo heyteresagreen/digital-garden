@@ -3,7 +3,7 @@
 ---
 
 
-![IMG_0050.jpeg](/img/user/assets/IMG_0050.jpeg)
+![IMG_0050.jpeg|Illustration of me talking to my phone](/img/user/assets/IMG_0050.jpeg)
 I love the idea of having a mentor or coach for my UX work. I've worked with wonderful colleagues and friends who have given me ad hoc advice, but never in a formal relationship. Something about not wanting to take up people's time, and a lack of self-knowledge about what I even want to work on, has always stopped me from seeking this out. So when I read about people using AI for coaching, I thought this was worth trying out. A mentor with unlimited time, patience, and availability I can ask all my dumb questions? Sounds too good to be true (*spoiler: it kind of is, but it's still pretty cool*).
 ## Setting up a custom GPT
 It's worth noting that you don't actually need to set up a custom GPT to try this - I believe you can get a similar result by giving similar instructions at the start of a chat or using custom instructions. You can even get a decent result using the currently free GPT 3.5 if you haven't paid for a plan. 
