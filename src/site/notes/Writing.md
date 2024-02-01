@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
 - [[End of year journaling\|End of year journaling]]
 - [[My notebook system\|My notebook system]]
@@ -10,8 +11,8 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Fountain pens\|Fountain pens]]
 - [[Morning Pages\|Morning Pages]]
 - [[Sketchbooks\|Sketchbooks]]
-- [[Sketchnotes\|Sketchnotes]]
 - [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
+- [[Sketchnotes\|Sketchnotes]]
 - [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
