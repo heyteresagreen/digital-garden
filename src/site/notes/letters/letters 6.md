@@ -3,7 +3,7 @@
 ---
 
 
-![Photo of my sketchbook with gold foiled cover](/img/user/assets/IMG_2319 4.jpeg)
+![Photo of my sketchbook with gold foiled cover](/img/user/assets/IMG_2319_4.jpeg)
 
 Hello! It's been a while. Safe to say that the weekly newsletter thing has (unsurprisingly) not worked out. But I felt compelled to write to you again because of something that doesn't happen very often: I finished a sketchbook!
 
