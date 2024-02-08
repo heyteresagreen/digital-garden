@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-4/","title":"Bendy like a tent pole","tags":["letters"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/letters/letters-4/","title":"Bendy like a tent pole","tags":["letters"],"noteIcon":"","created":"2023-04-18"}
 ---
 
 ![sketchbook27.jpeg](/img/user/assets/sketchbook27.jpeg)
