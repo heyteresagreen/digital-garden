@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[books/Books I've read in 2024\|Books I've read in 2024]]
 - [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
 - [[End of year journaling\|End of year journaling]]
