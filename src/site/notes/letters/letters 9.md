@@ -23,8 +23,7 @@ This year I’ve been focusing on watercolour with a [Sketching Now course](http
 ![IMG_4823.jpeg|photo of a sketchbook with black and white sketches of scenes in Japan](/img/user/assets/IMG_4823.jpeg)
 
 **Fude fountain pen**, which has a bent nib that can achieve incredible line weight variation. There's a definite learning curve but it feels like my calligraphy and lettering days with dip pens and brush pens.
-
-![trim.3E326693-B747-4E37-A783-D9CC90FDC868.gif|animated gif closeup of paintbrush painting watercolour landscape](/img/user/assets/trim.3E326693-B747-4E37-A783-D9CC90FDC868.gif)
+![trim.3E326693-B747-4E37-A783-D9CC90FDC868 1.gif|animated gif closeup of paintbrush painting watercolour landscape](/img/user/assets/trim.3E326693-B747-4E37-A783-D9CC90FDC868%201.gif)
 
 **Making little videos** - don't worry, I have no ambition to become a content creator, I just think some things work better in video format. It's fun being a complete beginner at something. I have a couple of short videos up on [YouTube](https://www.youtube.com/channel/UCrD1CxGbhS7vYtaRJVCz98w).
 
