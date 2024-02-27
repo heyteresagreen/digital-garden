@@ -13,6 +13,8 @@ Letters from me to you, delivered to your email inbox very infrequently. Some ra
 </form>
 
 ## Old letters
+- [[letters/letters 9\|letters 9]]: Trust your gut
+- [[letters/letters 8\|letters 8]]: End of the year and 100 heads
 - [[letters/letters 7\|letters 7]]: Back to making big plans
 - [[letters/letters 6\|letters 6]]: Finishing a sketchbook
 - [[letters/letters 5\|letters 5]]: Making the most of right now
