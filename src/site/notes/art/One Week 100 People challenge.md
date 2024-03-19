@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/one-week-100-people-challenge/","noteIcon":"","created":"2024-03-19"}
+{"dg-publish":true,"permalink":"/art/one-week-100-people-challenge/","tags":["art"],"noteIcon":"","created":"2024-03-19"}
 ---
 
 This year I participated in OneWeek100People, a challenge organised by urban sketchers [Liz Steel](https://www.lizsteel.com/) and [Marc Taro Holmes](https://citizensketcher.com/) for the first week of every March. The idea is to sketch roughly 20 people a day for 5 days, or to at least sketch more people than you would otherwise. I don't usually sketch many people, so this low bar option felt achievable.
