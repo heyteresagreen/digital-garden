@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/fountain-pens/","tags":["Stationery"],"noteIcon":"","created":"2023-11-13"}
+{"dg-publish":true,"permalink":"/fountain-pens/","tags":["Stationery"],"noteIcon":"","created":"2023-11-13","updated":"2024-03-22"}
 ---
 
 ![IMG_2375.jpeg|watercolour painting of 2 fountain pens and a bottle of ink](/img/user/assets/IMG_2375.jpeg)
