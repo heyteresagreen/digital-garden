@@ -5,6 +5,7 @@
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
+- [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]: ![assets/IMG_5184.jpeg|IMG_5184.jpeg](/img/user/assets/IMG_5184.jpeg)
 - [[art/One Week 100 People challenge\|One Week 100 People challenge]]: ![assets/sketchbook 6 23 1.jpeg|sketchbook 6 23 1.jpeg](/img/user/assets/sketchbook%206%2023%201.jpeg)
 - [[art/Life drawing in different media\|Life drawing in different media]]: ![assets/IMG_5098.jpeg|IMG_5098.jpeg](/img/user/assets/IMG_5098.jpeg)
