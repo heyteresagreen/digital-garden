@@ -7,8 +7,8 @@ Some things I've made, sketched or painted. I like to dabble in different media 
 
 - [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]: ![assets/IMG_5184.jpeg|IMG_5184.jpeg](/img/user/assets/IMG_5184.jpeg)
-- [[art/One Week 100 People challenge\|One Week 100 People challenge]]: ![assets/sketchbook 6 23 1.jpeg|sketchbook 6 23 1.jpeg](/img/user/assets/sketchbook%206%2023%201.jpeg)
 - [[art/Life drawing in different media\|Life drawing in different media]]: ![assets/IMG_5098.jpeg|IMG_5098.jpeg](/img/user/assets/IMG_5098.jpeg)
+- [[art/One Week 100 People challenge\|One Week 100 People challenge]]: ![assets/sketchbook 6 23 1.jpeg|sketchbook 6 23 1.jpeg](/img/user/assets/sketchbook%206%2023%201.jpeg)
 - [[art/Learning sketching foundations\|Learning sketching foundations]]: ![assets/sketchbook2 2.jpeg|sketching objects in my house](/img/user/assets/sketchbook2%202.jpeg)
 - [[art/Fountain pens and ink\|Fountain pens and ink]]: ![IMG_4426.jpeg|IMG_4426.jpeg](/img/user/IMG_4426.jpeg)
 - [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
