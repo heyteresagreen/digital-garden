@@ -8,9 +8,11 @@ Here's what I've read so far:
 3. City of Brass, Shannon Chakraborty
 4. Exit Strategy, Martha Wells
 5. Reminders of him, Colleen Hoover (book club pick)
+6. The God of Small Things, Arundhati Roy
 
 In progress:
 1. The Kingdom of Copper, Shannon Chakrborty
+2. Co-intelligence, Ethan Mollick (2024)
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
 
