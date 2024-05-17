@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-04-03"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-05-17"}
 ---
 
 Here's what I've read so far:
@@ -9,10 +9,11 @@ Here's what I've read so far:
 4. Exit Strategy, Martha Wells
 5. Reminders of him, Colleen Hoover (book club pick)
 6. The God of Small Things, Arundhati Roy
+7. The Kingdom of Copper, Shannon Chakrborty
+8. Co-intelligence  (2024), Ethan Mollick
 
 In progress:
-1. The Kingdom of Copper, Shannon Chakrborty
-2. Co-intelligence, Ethan Mollick (2024)
+1. 
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
 
