@@ -1,25 +1,25 @@
 ---
-{"dg-publish":true,"permalink":"/tiny-watercolour-kit-v2/","title":"Tiny watercolour kit v2","tags":["tools"],"noteIcon":"","created":"2023-09-21"}
+{"dg-publish":true,"permalink":"/tiny-watercolour-kit-v2/","title":"Tiny watercolour kit v2","tags":["tools"],"noteIcon":"","created":"2024-05-18"}
 ---
 
 
 I've had a few false starts with my first  [[Tiny watercolor kit\|Tiny watercolor kit]], and I felt it was time to make some improvements to help it be more useful.
 
-![](/img/user/assets/IMG_4181.jpeg)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iYU0hEQ-jn8?si=4t3IlsL1gsz3nN6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-### Better colours and paints
+
+
+![IMG_5205.jpeg|Photo of my tiny watercolour palette attached to business card holder, with a painting of gum tree flowers](/img/user/assets/IMG_5205.jpeg)
+## Better colours and paints
 I was frustrated with the 4 Cotman watercolour pans that I chose initially from what I had available. The blue and the red mixed a muddy brown, it was hard to get any decent darks and I've since discovered that student grade watercolours ironically need a lot more skill and effort to get working nicely - not ideal for a palette that needs to be convenient for quick painting on location with limited mixing space.
 
 My little tin only fits 4 half pans, 5 if they're a bit tilted, and they jangled around a bit despite my efforts with magnets and blu-tack.
 
 I've now bought some artist quality tube watercolour paints to make my own palettes, and cut down an empty pill blister pack to hold up to 6 colours. They only fit quite a small amount of paint, but enough for many tiny paintings. It's also super light!
-
-![](/img/user/assets/IMG_4186.jpeg)
-
-### Tiny paper
+## Tiny paper
 I have a stack of old business cards, left over from my calligraphy workshop days, which I've had difficulty letting go of as they were quite the splurge! They are 300gsm and whilst they're not exactly ideal watercolour paper they do hold up okay if I don't overwork it. I also had a slim metal card case that is the perfect size to hold a few at a time and fits into my little kit pouch.
 
-### Holding it all together
+## Holding it all together
 I'm using a fridge magnet clip from an old playgroup craft project which holds the card case flat for a nicer working surface, and the metal tin stays nicely on the magnet. Although I prefer to work on a surface where I can, this clip makes it possible to sketch standing up with everything held in one hand whilst the other paints.
 
 ![](/img/user/assets/IMG_4180.jpeg)
