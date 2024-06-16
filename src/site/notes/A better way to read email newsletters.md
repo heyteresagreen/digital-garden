@@ -12,7 +12,7 @@ With many writers now using email newsletters to publish, I’ve been finding my
 
 So I wanted to keep these emails, which are more like articles or blog posts really, with other long articles that I save. I was doing this manually, but I wanted to skip the step of them coming into my email inbox entirely. I couldn’t figure out how to make this happen in Pocket, so shifted to open source alternative [Omnivore](https://omnivore.app/). Here’s how my setup looks now:
 
-![[IMG_2478 1.png \| Screenshot of the Omnivore app on my phone]]
+![[IMG_2478.png \| Screenshot of the Omnivore app on my phone]]
 *Huge improvement in reading experience compared to Mail*
 
 * Where available, I’ll use an RSS feed to subscribe. For Substack newsletters, you can find this by going to the writer’s page and adding “/feed” to the end of the URL.
