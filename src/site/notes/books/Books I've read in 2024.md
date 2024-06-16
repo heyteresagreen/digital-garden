@@ -11,6 +11,7 @@ Here's what I've read so far:
 6. The God of Small Things, Arundhati Roy
 7. The Kingdom of Copper, Shannon Chakrborty
 8. Co-intelligence  (2024), Ethan Mollick
+9. In praise of shadows ()
 
 In progress:
 1. 
