@@ -5,6 +5,6 @@
 
 Here's what I'm up to right now:
 
-I'm still deciding on my next book after recently finishing 3 I had going at the same time (here's the [[books/Books I've read in 2024\|Books I've read in 2024]] so far). Working in [[Sketchbooks\|sketchbooks]] #5 (watercolour, A5) and #6 (mixed media, A6) concurrently. Playing around with making [videos](https://www.youtube.com/@Teresa_Watts), just for fun. Messing around with [[Voice chats with my ChatGPT UX mentor\|AI]] because I feel like I should be keeping up with these things. Doing a little [[letters/Letters 10\|sewing]] to fill some gaps in my wardrobe and some occasional [[art/Life drawing in watercolour\|Life drawing in watercolour]].
+I've joined my first ever book club, and it feels like such a wholesome and appealing-to-me way to connect with people that I’m not sure why I didn’t try it before (here's the [[books/Books I've read in 2024\|Books I've read in 2024]] so far). Working in a couple of different [[Sketchbooks\|sketchbooks]] concurrently and attending monthly life drawing sessions. Experimenting with binding my own sketchbooks. Making small updates to my home to make it cosy for winter. Making small changes to my digital devices to (gently) nudge myself into better habits, such as [[A better way to read email newsletters\|A better way to read email newsletters]].
 
 This "Now" page was inspired by the [/Now page movement](https://nownownow.com/about) , and also [sanlive](http://sanlive.com) where I saw it first. I update it every few weeks or so.
