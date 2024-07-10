@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-05-17"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-07-09"}
 ---
 
 Here's what I've read so far:
@@ -13,10 +13,10 @@ Here's what I've read so far:
 8. Co-intelligence (2024), Ethan Mollick
 9. In Praise of Shadows (1933), Jun’ichiro Tanizaki
 10. The Empire of Gold, S. A. Chakraborty
+11. Kingdom of the Wicked, Kerri Maniscalo (book club)
 
 In progress:
-1. Kingdom of the Wicked, Kerri Maniscalo (book club)
-2. Network Effect, Martha Wells
+1. Exhalation, Ted Chiang
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
 
