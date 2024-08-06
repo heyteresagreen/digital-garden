@@ -14,9 +14,13 @@ Here's what I've read so far:
 9. In Praise of Shadows (1933), Jun’ichiro Tanizaki
 10. The Empire of Gold, S. A. Chakraborty
 11. Kingdom of the Wicked, Kerri Maniscalo (book club)
+12. Exhalation, Ted Chiang
+13. A Psalm for the Wild-Built, Becky Chambers
+14. A Prayer for the Crown-Shy, Becky Chambers
 
 In progress:
-1. Exhalation, Ted Chiang
+1. This Much is True, Miriam Margolyes (book club)
+2. The Art of Frugal Hedonism (2017), Annie Raser-Rowland & Adam Grubb (reread)
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
 
