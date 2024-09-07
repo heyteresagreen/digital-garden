@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-07-09"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-09-07"}
 ---
 
 Here's what I've read so far:
@@ -17,10 +17,13 @@ Here's what I've read so far:
 12. Exhalation, Ted Chiang
 13. A Psalm for the Wild-Built, Becky Chambers
 14. A Prayer for the Crown-Shy, Becky Chambers
+15. Sun of Blood and Ruin, Mariely Lares
+16. This Much is True, Miriam Margolyes (book club)
+17. The Art of Frugal Hedonism (2017), Annie Raser-Rowland & Adam Grubb (reread)
+18. The Accident, Fiona Lowe (book club)
 
 In progress:
-1. This Much is True, Miriam Margolyes (book club)
-2. The Art of Frugal Hedonism (2017), Annie Raser-Rowland & Adam Grubb (reread)
+1. Filterworld, (2024), Kyle Chayka
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
 
