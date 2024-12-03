@@ -5,6 +5,7 @@
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
+- [[art/Playing with soft pastels\|Playing with soft pastels]]: ![assets/IMG_3473.jpeg|IMG_3473.jpeg](/img/user/assets/IMG_3473.jpeg)
 - [[art/More life drawing in watercolour\|More life drawing in watercolour]]: ![assets/life drawing 2.jpeg|life drawing 2.jpeg](/img/user/assets/life%20drawing%202.jpeg)
 - [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]: ![assets/IMG_5184.jpeg|IMG_5184.jpeg](/img/user/assets/IMG_5184.jpeg)
