@@ -3,6 +3,9 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[drafts\|drafts]]
+- [[drafts 1\|drafts 1]]
+- [[templates/Art\|Art]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]
