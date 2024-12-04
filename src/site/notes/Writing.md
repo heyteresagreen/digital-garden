@@ -3,9 +3,6 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
-- [[drafts\|drafts]]
-- [[drafts 1\|drafts 1]]
-- [[templates/Art\|Art]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]
@@ -17,9 +14,9 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]]
 - [[Fountain pens\|Fountain pens]]
 - [[Morning Pages\|Morning Pages]]
+- [[Sketchbooks\|Sketchbooks]]
 - [[Sketchnotes\|Sketchnotes]]
 - [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
-- [[Sketchbooks\|Sketchbooks]]
 - [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
 - [[Using an iPad as a second screen\|Using an iPad as a second screen]]
@@ -31,17 +28,17 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[books/Books I've read in 2023\|Books I've read in 2023]]
 - [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]]
 - [[books/Books I've read in 2022\|Books I've read in 2022]]
-- [[Start here\|Start here]]
 - [[Now\|Now]]
+- [[Start here\|Start here]]
 - [[My Obsidian workflow\|My Obsidian workflow]]
-- [[Procrastination through process\|Procrastination through process]]
 - [[About this site\|About this site]]
+- [[Procrastination through process\|Procrastination through process]]
 - [[sketching/UX Camp Perth 2022\|UX Camp Perth 2022]]
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]]
 - [[sketching/DDD Perth 2019 sketchnotes\|DDD Perth 2019 sketchnotes]]
 - [[sketching/Sketching and how to win at pictionary\|Sketching and how to win at pictionary]]
 - [[sketching/Fenders June 2018 in sketchnotes\|Fenders June 2018 in sketchnotes]]
-- [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
 - [[ChiGarden\|ChiGarden]]
+- [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
 
 { .block-language-dataview}
