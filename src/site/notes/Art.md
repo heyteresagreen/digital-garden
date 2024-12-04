@@ -6,14 +6,9 @@
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
 - [[drafts\|drafts]]: ![[assets/IMG_3485-61a5e3ad.heic|IMG_3485-61a5e3ad.heic]]
-- [[drafts/Test\|Test]]: ![assets/sketchbook7 4-7af779c9.jpeg|sketchbook7 4-7af779c9.jpeg](/img/user/assets/sketchbook7%204-7af779c9.jpeg)
-- [[drafts/Test 1\|Test 1]]: ![[assets/IMG_3485.heic|IMG_3485.heic]]
-- [[drafts/Hands\|Hands]]: ![[assets/IMG_3327.heic|IMG_3327.heic]]
 - [[drafts 1\|drafts 1]]: ![assets/IMG_3398.jpeg|IMG_3398.jpeg](/img/user/assets/IMG_3398.jpeg)
 - [[templates/Art\|Art]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
 - [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]: ![assets/life drawing 20-f319b092.jpeg|life drawing 20-f319b092.jpeg](/img/user/assets/life%20drawing%2020-f319b092.jpeg)
-- [[drafts/Life drawing in charcoal\|Life drawing in charcoal]]: ![assets/life drawing 20.jpeg|life drawing 20.jpeg](/img/user/assets/life%20drawing%2020.jpeg)
-- [[drafts/Charcoal portrait\|Charcoal portrait]]: ![assets/steph-art-sessions.jpeg|steph-art-sessions.jpeg](/img/user/assets/steph-art-sessions.jpeg)
 - [[art/Playing with soft pastels\|Playing with soft pastels]]: ![assets/IMG_3473.jpeg|IMG_3473.jpeg](/img/user/assets/IMG_3473.jpeg)
 - [[art/More life drawing in watercolour\|More life drawing in watercolour]]: ![assets/life drawing 2.jpeg|life drawing 2.jpeg](/img/user/assets/life%20drawing%202.jpeg)
 - [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
@@ -22,9 +17,7 @@ Some things I've made, sketched or painted. I like to dabble in different media 
 - [[art/Life drawing in different media\|Life drawing in different media]]: ![assets/IMG_5098.jpeg|IMG_5098.jpeg](/img/user/assets/IMG_5098.jpeg)
 - [[art/Learning sketching foundations\|Learning sketching foundations]]: ![assets/sketchbook2 2.jpeg|sketching objects in my house](/img/user/assets/sketchbook2%202.jpeg)
 - [[art/Fountain pens and ink\|Fountain pens and ink]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
-- [[drafts/Animals\|Animals]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
 - [[drafts/Jury duty sketches\|Jury duty sketches]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
-- [[drafts/Test\|test]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
 - [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
 - [[sketchbooks/Sketchbook 2\|Sketchbook 2]]: ![assets/IMG_0157.jpeg|IMG_0157.jpeg](/img/user/assets/IMG_0157.jpeg)
 - [[sketchbooks/Sketchbook 1\|Sketchbook 1]]: ![assets/sketchbook-square.jpeg|photo of my sketchbook, with highlighter sketches](/img/user/assets/sketchbook-square.jpeg)
