@@ -49,16 +49,18 @@ img {
   border-radius: $border-radius;
 }
 
-main:not(.gallery) {
   .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]),
   .content img {
     @media (min-width:850px) {
       max-width: 130%;
-      outline: none;
       margin-left: -15%;
     }
-  }
-}
+    .gallery img {
+      @media (min-width:850px) {
+        margin-left: 0;
+      }
+    }
+
 
 blockquote {
   padding: 1.5em;
