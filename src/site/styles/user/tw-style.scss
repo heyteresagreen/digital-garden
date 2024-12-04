@@ -346,6 +346,12 @@ NOTE AND POST ELEMENTS
       }
     }
   }
+
+  &.four-three-ratio {
+    li {
+      aspect-ratio: 3 / 2;
+    }
+  }
 }
 
 img.two-col {
