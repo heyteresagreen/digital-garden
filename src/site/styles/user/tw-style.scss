@@ -49,12 +49,14 @@ img {
   border-radius: $border-radius;
 }
 
-.markdown-preview-view img:not([width]), .markdown-rendered img:not([width]),
-.content img {
-  @media (min-width:850px) {
-    max-width: 130%;
-    outline: none;
-    margin-left: -15%;
+main:not(.gallery) {
+  .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]),
+  .content img {
+    @media (min-width:850px) {
+      max-width: 130%;
+      outline: none;
+      margin-left: -15%;
+    }
   }
 }
 
