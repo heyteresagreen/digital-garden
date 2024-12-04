@@ -55,11 +55,15 @@ img {
       max-width: 130%;
       margin-left: -15%;
     }
-    .gallery img {
+  }
+  
+  .gallery {
+    .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]), img {
       @media (min-width:850px) {
         margin-left: 0;
       }
     }
+  }
 
 
 blockquote {
