@@ -49,21 +49,22 @@ img {
   border-radius: $border-radius;
 }
 
-  .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]),
-  .content img {
-    @media (min-width:850px) {
-      max-width: 130%;
-      margin-left: -15%;
-    }
-  }
+  // .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]),
+  // .content img {
+  //   @media (min-width:850px) {
+  //     max-width: 130%;
+  //     margin-left: -15%;
+  //   }
+  // }
   
-  .gallery {
-    .markdown-preview-view img:not([width]), .markdown-rendered img:not([width]), img {
-      @media (min-width:850px) {
-        margin-left: 0;
-      }
-    }
-  }
+  // .gallery {
+  //   .markdown-preview-view .img:not([width]), .markdown-rendered img:not([width]), .content img {
+  //     @media (min-width:850px) {
+  //       margin-left: 0;
+  //       max-width: 100%;
+  //     }
+  //   }
+  // }
 
 
 blockquote {
