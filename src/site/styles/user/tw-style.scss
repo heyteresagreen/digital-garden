@@ -291,12 +291,12 @@ NOTE AND POST ELEMENTS
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
-  column-count: 2;
-  column-gap: 0.5em;
-    @media (min-width: 720px) {
-    column-count: 3;
-    column-gap: 1em;
-    }
+
+  width: 100%;
+  max-width: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0.5em;
 
   /* super wide */
 
@@ -311,10 +311,12 @@ NOTE AND POST ELEMENTS
   }
 
   li {
-    position: relative;
     width: 100%;
     background: #fff;
     font-size: 0;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
     a {
       display: block;
       position: absolute;
@@ -322,6 +324,7 @@ NOTE AND POST ELEMENTS
       width: 100%;
       height: 100%;
       border-radius: 4px;
+      z-index: 1;
       &:hover {
         font-size: 1rem;
         text-align: center;
@@ -329,6 +332,16 @@ NOTE AND POST ELEMENTS
         padding: 2em;
         text-decoration: none !important;
         background: rgba(0,0,0,0.7);
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left center;
       }
     }
   }
