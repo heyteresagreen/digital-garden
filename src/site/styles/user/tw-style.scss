@@ -49,6 +49,14 @@ img {
   border-radius: $border-radius;
 }
 
+.content img {
+  @media (min-width:850px) {
+    max-width: 130%;
+    outline: none;
+    margin-left: -15%;
+  }
+}
+
 blockquote {
   padding: 1.5em;
   margin: 0;
