@@ -310,6 +310,17 @@ NOTE AND POST ELEMENTS
     margin-left: -200px;
   }
 
+  img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+  }
+
   li {
     width: 100%;
     background: #fff;
@@ -332,16 +343,6 @@ NOTE AND POST ELEMENTS
         padding: 2em;
         text-decoration: none !important;
         background: rgba(0,0,0,0.7);
-      }
-      img {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: left center;
       }
     }
   }
