@@ -8,7 +8,6 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]
 - [[books/Books I've read in 2024\|Books I've read in 2024]]
-- [[templates/Sketchbook\|Sketchbook]]
 - [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
 - [[End of year journaling\|End of year journaling]]
