@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-6/","tags":["sketchbooks"],"noteIcon":"","created":"2024-12-08"}
+{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-6/","tags":["sketchbooks","art"],"noteIcon":"","created":"2024-05-09"}
 ---
 
 I started this sketchbook in January and completed it in May 2024.

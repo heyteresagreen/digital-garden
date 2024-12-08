@@ -9,6 +9,7 @@ Some things I've made, sketched or painted. I like to dabble in different media 
 - [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]: ![assets/life drawing 20-f319b092.jpeg|life drawing 20-f319b092.jpeg](/img/user/assets/life%20drawing%2020-f319b092.jpeg)
 - [[art/Playing with soft pastels\|Playing with soft pastels]]: ![assets/IMG_3473.jpeg|IMG_3473.jpeg](/img/user/assets/IMG_3473.jpeg)
 - [[art/More life drawing in watercolour\|More life drawing in watercolour]]: ![assets/life drawing 2.jpeg|life drawing 2.jpeg](/img/user/assets/life%20drawing%202.jpeg)
+- [[sketchbooks/Sketchbook 6\|Sketchbook 6]]: ![assets/IMG_5667.jpeg|IMG_5667.jpeg](/img/user/assets/IMG_5667.jpeg)
 - [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]: ![assets/IMG_5184.jpeg|IMG_5184.jpeg](/img/user/assets/IMG_5184.jpeg)
 - [[art/One Week 100 People challenge\|One Week 100 People challenge]]: ![assets/sketchbook 6 23 1.jpeg|sketchbook 6 23 1.jpeg](/img/user/assets/sketchbook%206%2023%201.jpeg)

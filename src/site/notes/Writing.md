@@ -3,10 +3,11 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
-- [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
+- [[sketchbooks/Sketchbook 6\|Sketchbook 6]]
 - [[sketchbooks/Sketchbook 3\|Sketchbook 3]]
+- [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
 - [[books/Books I've read in 2024\|Books I've read in 2024]]
 - [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]

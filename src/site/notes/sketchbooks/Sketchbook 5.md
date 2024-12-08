@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-5/","tags":["sketchbooks"],"noteIcon":"","created":"2024-12-06"}
+{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-5/","tags":["sketchbooks"],"noteIcon":"","created":"2024-03-30"}
 ---
 
 I started this sketchbook in January 2024 and completed it in January 2024. In this sketchbook I completed the Sketching Now Watercolour course, so there’s a lot of colour mixing and swatching in here.
