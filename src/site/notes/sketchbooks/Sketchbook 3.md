@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-3/","tags":["sketchbooks","art"],"noteIcon":"","created":"2024-04-03"}
+{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-3/","tags":["sketchbooks","art"],"noteIcon":"","created":"2023-10-30"}
 ---
 
 Started August 2023
-Completed October 2024 
+Completed October 2023
 
 📖 Born Visual Art Diary, A5 
 🎨 Daniel Smith, White Nights, , Micador watercolours 
