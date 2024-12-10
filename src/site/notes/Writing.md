@@ -3,7 +3,11 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[sketchbooks/Sketchbook 10\|Sketchbook 10]]
+- [[sketchbooks/Sketchbook 9\|Sketchbook 9]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
+- [[sketchbooks/Sketchbook 8\|Sketchbook 8]]
+- [[sketchbooks/Sketchbook 7\|Sketchbook 7]]
 - [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
 - [[sketchbooks/Sketchbook 6\|Sketchbook 6]]
 - [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
