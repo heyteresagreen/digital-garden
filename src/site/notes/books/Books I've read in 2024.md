@@ -30,10 +30,12 @@ Here's what I've read so far:
 25.  The Skeleton House, Katherine Allum (book club)
 26.  Feel Good Productivity (2024), Ali Abdaal
 27. Remarkably Bright Creatures, Shelby Van Pelt
+28. The Dictionary of Lost Words, Pip Williams
+
 
 In progress:
 1. Exercising Influence (2015), B. Kim Barnes
-2. The Dictionary of Lost Words, Pip Williams
+2. Some Desperate Glory, Emily Tesh
 
 
 See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
