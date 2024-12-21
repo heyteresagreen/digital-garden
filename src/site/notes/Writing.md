@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[Getting the best out of Focus modes\|Getting the best out of Focus modes]]
 - [[sketchbooks/Sketchbook 10\|Sketchbook 10]]
 - [[sketchbooks/Sketchbook 9\|Sketchbook 9]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
