@@ -8,6 +8,7 @@ Some things I've made, sketched or painted. I like to dabble in different media 
 - [[art/Portrait - Sabrina\|Portrait - Sabrina]]: ![assets/steph-art-sessions 3-0cf7a37d.jpeg|steph-art-sessions 3-0cf7a37d.jpeg](/img/user/assets/steph-art-sessions%203-0cf7a37d.jpeg)
 - [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]: ![assets/life drawing 20-f319b092.jpeg|life drawing 20-f319b092.jpeg](/img/user/assets/life%20drawing%2020-f319b092.jpeg)
 - [[art/Playing with soft pastels\|Playing with soft pastels]]: ![assets/IMG_3473.jpeg|IMG_3473.jpeg](/img/user/assets/IMG_3473.jpeg)
+- [[art/Jury duty sketches\|Jury duty sketches]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
 - [[art/More life drawing in watercolour\|More life drawing in watercolour]]: ![assets/life drawing 2.jpeg|life drawing 2.jpeg](/img/user/assets/life%20drawing%202.jpeg)
 - [[sketchbooks/Sketchbook 6\|Sketchbook 6]]: ![assets/IMG_5667.jpeg|IMG_5667.jpeg](/img/user/assets/IMG_5667.jpeg)
 - [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
