@@ -14,6 +14,7 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
 - [[books/Books I've read in 2024\|Books I've read in 2024]]
 - [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
+- [[sketchbooks/Sketchbook 11\|Sketchbook 11]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
 - [[End of year journaling\|End of year journaling]]
 - [[My notebook system\|My notebook system]]
