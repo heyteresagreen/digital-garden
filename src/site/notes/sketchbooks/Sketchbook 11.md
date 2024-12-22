@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-11/","tags":["sketchbooks"],"noteIcon":"","created":"2024-02-01"}
+{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-11/","tags":["sketchbooks"],"noteIcon":"","created":"2024-12-22"}
 ---
 
 I started this sketchbook in September 2024 and it’s currently in progress. I cut this into 2 halves to better fit into [[My notebook system\|My notebook system]].

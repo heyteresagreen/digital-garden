@@ -4,6 +4,7 @@
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
 - [[Getting the best out of Focus modes\|Getting the best out of Focus modes]]
+- [[sketchbooks/Sketchbook 11\|Sketchbook 11]]
 - [[sketchbooks/Sketchbook 10\|Sketchbook 10]]
 - [[sketchbooks/Sketchbook 9\|Sketchbook 9]]
 - [[A better way to read email newsletters\|A better way to read email newsletters]]
@@ -14,7 +15,6 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
 - [[books/Books I've read in 2024\|Books I've read in 2024]]
 - [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
-- [[sketchbooks/Sketchbook 11\|Sketchbook 11]]
 - [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
 - [[End of year journaling\|End of year journaling]]
 - [[My notebook system\|My notebook system]]
