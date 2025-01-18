@@ -1,8 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2024-09-07"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2025-01-16"}
 ---
 
-Here's what I've read so far:
+Here's what I read in 2024:
+
 1. The Neuroscience of You (2022), Chantel Prat
 2. Shards of Earth, Adrian Tchaikovsky
 3. City of Brass, S. A. Chakraborty
@@ -32,12 +33,14 @@ Here's what I've read so far:
 27. Remarkably Bright Creatures, Shelby Van Pelt
 28. The Dictionary of Lost Words, Pip Williams
 29. Some Desperate Glory, Emily Tesh
+30. Fugitive Telemetry, Martha Wells
 
 
 In progress:
 1. Exercising Influence (2015), B. Kim Barnes
-2. 
+2. Orwell’s Roses (2021), Rebecca Solnit
 
 
-See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md) and [[books/Books I've read in 2023\|Books I've read in 2023]].
+
+See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md), [[books/Books I've read in 2023\|Books I've read in 2023]] and [[books/Books I've read in 2025\|Books I've read in 2025]].
 

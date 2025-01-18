@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[books/Books I've read in 2025\|Books I've read in 2025]]
 - [[Getting the best out of Focus modes\|Getting the best out of Focus modes]]
 - [[sketchbooks/Sketchbook 11\|Sketchbook 11]]
 - [[sketchbooks/Sketchbook 10\|Sketchbook 10]]
@@ -36,17 +37,17 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[books/Books I've read in 2023\|Books I've read in 2023]]
 - [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]]
 - [[books/Books I've read in 2022\|Books I've read in 2022]]
-- [[Start here\|Start here]]
 - [[Now\|Now]]
+- [[Start here\|Start here]]
 - [[My Obsidian workflow\|My Obsidian workflow]]
-- [[Procrastination through process\|Procrastination through process]]
 - [[About this site\|About this site]]
+- [[Procrastination through process\|Procrastination through process]]
 - [[sketching/UX Camp Perth 2022\|UX Camp Perth 2022]]
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]]
 - [[sketching/DDD Perth 2019 sketchnotes\|DDD Perth 2019 sketchnotes]]
 - [[sketching/Sketching and how to win at pictionary\|Sketching and how to win at pictionary]]
 - [[sketching/Fenders June 2018 in sketchnotes\|Fenders June 2018 in sketchnotes]]
-- [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
 - [[ChiGarden\|ChiGarden]]
+- [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
 
 { .block-language-dataview}
