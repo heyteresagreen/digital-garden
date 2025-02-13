@@ -1,17 +1,38 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18","updated":"2025-02-13"}
 ---
 
-
-
+This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
 ## In progress
 
-* The Name of the Wind, Patrick Rothfuss
+![Pasted image 20250213205234.png|book cover|150](/img/user/assets/Pasted%20image%2020250213205234.png)
+
+### This is How You Lose the Time War, Amal El-Mohtar and Max Gladstone
 
 ---
 
 ## Completed
+
+![Pasted image 20250213210556.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210556.png)   ![Pasted image 20250213210623.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210623.png)
+### Spider-Man: Animals Assemble! and Spider-Man: Quantum Quest!, Mike Maihack
+
+I don't usually put the books I read to my kids in here, but this made-for-kids graphic novel series is actually really good! The stories are silly and fun, and the art style is cute but still has its recognisable Western comic roots. It's clear a lot of thought was put into how to make it easy for an adult to read to a child, not an easy thing with a graphic novel. I'll always appreciate the way Spider-Man's mask eyes make expressions as if they were actual eyes, a comic effect that just doesn't make sense in a live action movie. More comics for me this year I think!
+
+![Pasted image 20250213205105.png|book cover of The Nightingale|150](/img/user/assets/Pasted%20image%2020250213205105.png)
+
+### The Nightingale, Kristin Hannah (book club)
+
+This historical fiction story follows a pair of estranged sisters living in occupied France during World War II. I don't often read books about war, but when I do it's usually stories about the people left behind rather than the ones on the frontlines. There's some romance threads in this one but they're outshined by the beautifully complicated family relationships. I think all the characters started out unlikeable but grow over the course of the book. Starts slow but the second half escalates quickly!
+
+![IMG_0228 1.jpeg|The Name of the Wind book cover|150](/img/user/assets/IMG_0228%201.jpeg)
+
+### The Name of the Wind, Patrick Rothfuss
+
+This epic fantasy novel started out strong for me with its premise of the main character, Kvothe, telling the story of his start in learning magic and music to a collector of stories. The magic system is unique and there are some intriguing characters, but towards the end it dragged on and did not make me feel up to tackling the next book in the series anytime soon.
+
+
+
 
 ![assets/orwellsroses_rebeccasolnit.png|150](/img/user/assets/orwellsroses_rebeccasolnit.png) 
 <div class="transclusion internal-embed is-loaded"><a class="markdown-embed-link" href="/books/2025/orwell-s-roses-2021-rebecca-solnit/#df72d7" aria-label="Open link"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a><div class="markdown-embed">
