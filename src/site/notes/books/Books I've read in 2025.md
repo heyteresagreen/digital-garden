@@ -18,16 +18,20 @@ This year I'm trying something a little different - writing a few notes for each
 
 ### Spider-Man: Animals Assemble! and Spider-Man: Quantum Quest!, Mike Maihack
 <div>
+
 ![Pasted image 20250213210556.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210556.png)   ![Pasted image 20250213210623.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210623.png)
 
 I don't usually put the books I read to my kids in here, but this made-for-kids graphic novel series is actually really good! The stories are silly and fun, and the art style is cute but still has its recognisable Western comic roots. It's clear a lot of thought was put into how to make it easy for an adult to read to a child, not an easy thing with a graphic novel. I'll always appreciate the way Spider-Man's mask eyes make expressions as if they were actual eyes, a comic effect that just doesn't make sense in a live action movie. More comics for me this year I think!
 </div>
+
 ### The Nightingale, Kristin Hannah (book club)
 <div>
+
 ![Pasted image 20250213205105.png|book cover of The Nightingale|150](/img/user/assets/Pasted%20image%2020250213205105.png)
 
 This historical fiction story follows a pair of estranged sisters living in occupied France during World War II. I don't often read books about war, but when I do it's usually stories about the people left behind rather than the ones on the frontlines. There's some romance threads in this one but they're outshined by the beautifully complicated family relationships. I think all the characters started out unlikeable but grow over the course of the book. Starts slow but the second half escalates quickly!
 </div>
+
 ### The Name of the Wind, Patrick Rothfuss
 
 ![IMG_0228 1.jpeg|The Name of the Wind book cover|150](/img/user/assets/IMG_0228%201.jpeg)
