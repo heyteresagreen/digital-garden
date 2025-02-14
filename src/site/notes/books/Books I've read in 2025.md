@@ -51,6 +51,7 @@ This epic fantasy novel started out strong for me with its premise of the main c
 
 </div>
 </div>
+<div>
 
 ![assets/orwellsroses_rebeccasolnit.png|150](/img/user/assets/orwellsroses_rebeccasolnit.png)
 
@@ -60,7 +61,7 @@ This epic fantasy novel started out strong for me with its premise of the main c
 
 For some reason I was expecting fiction rather than a collection of meandering essays following George Orwell's interest in gardening and how it relates to his writing, his politics, and the state of the world then and now. Beautifully written with each chapter weaving in from the previous ones. Makes me want to revisit Orwell's novels and pay some more attention to my poor garden.
 </div>
-
+</div>
 </div>
 
 
