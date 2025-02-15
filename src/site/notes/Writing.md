@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[Reading things later\|Reading things later]]
 - [[Photographing artwork with a phone\|Photographing artwork with a phone]]
 - [[books/Books I've read in 2025\|Books I've read in 2025]]
 - [[Getting the best out of Focus modes\|Getting the best out of Focus modes]]

@@ -2,6 +2,8 @@
 {"dg-publish":true,"permalink":"/a-better-way-to-read-email-newsletters/","tags":["reading"],"noteIcon":"","created":"2024-06-16"}
 ---
 
+*Edit: since Omnivore shut down, I've switched to [[Reading things later\|Instapaper]]. I have to pay for the premium subscription and use some workarounds to get the same functionality, but hopefully it'll stick around.*
+
 With many writers now using email newsletters to publish, I’ve been finding myself spending more and more time reading long and interesting content in Mail rather than a browser. This has a few drawbacks for me:
 
 * I like to include a link to the original source when I save highlights to my notes in [Bear](https://bear.app/), and this requires hunting around for a link to a web version in the email.
