@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/writing/","contentClasses":"simple","noteIcon":""}
+{"dg-publish":true,"permalink":"/writing/","contentClasses":"simple writing-list","noteIcon":""}
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
