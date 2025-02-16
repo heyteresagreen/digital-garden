@@ -18,7 +18,7 @@ I did some experimenting with different media as well as continuing with my wate
 
 The drawing book paper was lovely with pens and pencils, and not bad with watercolour. Although it wasn't designed for watercolour I think that those sketches are some of my favourites.
 
-![IMG_0657.jpeg|watercolour sketch of a bottle of ink and 2 fountain pens](/img/user/IMG_0657.jpeg)
+![[IMG_0657.jpeg\|watercolour sketch of a bottle of ink and 2 fountain pens]]
 
 ![IMG_4737.jpeg|watercolour sketch of an old house](/img/user/assets/IMG_4737.jpeg)
 

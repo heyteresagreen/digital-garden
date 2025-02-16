@@ -3,53 +3,26 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
-- [[Reading things later\|Reading things later]]
-- [[Photographing artwork with a phone\|Photographing artwork with a phone]]
-- [[books/Books I've read in 2025\|Books I've read in 2025]]
-- [[Getting the best out of Focus modes\|Getting the best out of Focus modes]]
-- [[sketchbooks/Sketchbook 11\|Sketchbook 11]]
-- [[sketchbooks/Sketchbook 10\|Sketchbook 10]]
-- [[sketchbooks/Sketchbook 9\|Sketchbook 9]]
-- [[A better way to read email newsletters\|A better way to read email newsletters]]
-- [[sketchbooks/Sketchbook 8\|Sketchbook 8]]
-- [[sketchbooks/Sketchbook 7\|Sketchbook 7]]
-- [[Tiny watercolour kit v2\|Tiny watercolour kit v2]]
-- [[sketchbooks/Sketchbook 6\|Sketchbook 6]]
-- [[sketchbooks/Sketchbook 5\|Sketchbook 5]]
-- [[books/Books I've read in 2024\|Books I've read in 2024]]
-- [[sketchbooks/Sketchbook 4\|Sketchbook 4]]
-- [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]]
-- [[End of year journaling\|End of year journaling]]
-- [[My notebook system\|My notebook system]]
-- [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]]
-- [[Fountain pens\|Fountain pens]]
-- [[Morning Pages\|Morning Pages]]
-- [[Sketchnotes\|Sketchnotes]]
-- [[sketching/UX Camp Perth 2023 - sketchnotes\|UX Camp Perth 2023 - sketchnotes]]
-- [[Sketchbooks\|Sketchbooks]]
-- [[sketching/Starting with Sketchnotes\|Starting with Sketchnotes]]
-- [[sketchbooks/Sketchbook 3\|Sketchbook 3]]
-- [[sketchbooks/Sketchbook 2\|Sketchbook 2]]
-- [[Using an iPad as a second screen\|Using an iPad as a second screen]]
-- [[sketchbooks/Sketchbook 1\|Sketchbook 1]]
-- [[Tiny watercolor kit\|Tiny watercolor kit]]
-- [[Thoughts on mending\|Thoughts on mending]]
-- [[My planning, writing and sketching tools\|My planning, writing and sketching tools]]
-- [[The Ugly Stage\|The Ugly Stage]]
-- [[books/Books I've read in 2023\|Books I've read in 2023]]
-- [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]]
-- [[books/Books I've read in 2022\|Books I've read in 2022]]
-- [[Now\|Now]]
-- [[Start here\|Start here]]
-- [[My Obsidian workflow\|My Obsidian workflow]]
-- [[About this site\|About this site]]
-- [[Procrastination through process\|Procrastination through process]]
-- [[sketching/UX Camp Perth 2022\|UX Camp Perth 2022]]
-- [[My cosy working from home desk setup\|My cosy working from home desk setup]]
-- [[sketching/DDD Perth 2019 sketchnotes\|DDD Perth 2019 sketchnotes]]
-- [[sketching/Sketching and how to win at pictionary\|Sketching and how to win at pictionary]]
-- [[sketching/Fenders June 2018 in sketchnotes\|Fenders June 2018 in sketchnotes]]
-- [[ChiGarden\|ChiGarden]]
-- [[sketching/Perth Web Accessibility Camp 2023\|Perth Web Accessibility Camp 2023]]
+- [[Reading things later\|Reading things later]] 15 February 2025
+- [[Photographing artwork with a phone\|Photographing artwork with a phone]] 1 February 2025
+- [[Getting the best out of Focus modes\|Getting the best out of Focus modes]] 22 December 2024
+- [[A better way to read email newsletters\|A better way to read email newsletters]] 16 June 2024
+- [[Tiny watercolour kit v2\|Tiny watercolour kit v2]] 18 May 2024
+- [[Voice chats with my ChatGPT UX mentor\|Voice chats with my ChatGPT UX mentor]] 19 January 2024
+- [[End of year journaling\|End of year journaling]] 11 December 2023
+- [[My notebook system\|My notebook system]] 6 December 2023
+- [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]] 28 November 2023
+- [[Fountain pens\|Fountain pens]] 13 November 2023
+- [[Morning Pages\|Morning Pages]] 13 November 2023
+- [[Using an iPad as a second screen\|Using an iPad as a second screen]] 11 August 2023
+- [[Tiny watercolor kit\|Tiny watercolor kit]] 3 April 2023
+- [[Thoughts on mending\|Thoughts on mending]] 19 February 2023
+- [[My planning, writing and sketching tools\|My planning, writing and sketching tools]] 13 January 2023
+- [[The Ugly Stage\|The Ugly Stage]] 11 January 2023
+- [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]] 3 January 2023
+- [[My Obsidian workflow\|My Obsidian workflow]] 12 December 2022
+- [[About this site\|About this site]] 29 November 2022
+- [[Procrastination through process\|Procrastination through process]] 29 November 2022
+- [[My cosy working from home desk setup\|My cosy working from home desk setup]] 29 May 2022
 
 { .block-language-dataview}
