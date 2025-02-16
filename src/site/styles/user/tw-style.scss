@@ -524,3 +524,22 @@ input.btn {
   border-radius: 2px !important;
   box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
 }
+
+
+.writing-list ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+writing-list li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+.writing-list a {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.writing-list .posted {
+  font-size: 0.9rem;
+  clear: both;
+  display: block;
+}
