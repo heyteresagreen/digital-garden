@@ -6,7 +6,7 @@ Hello!
 
 For several years I was very into [Bullet Journaling](https://bulletjournal.com/). Not so much the extravagant spreads with colour coded everything, but the basic logging and pages of ideas, collections and plans. I used to teach lettering workshops, do a little freelance, run a zine with friends, regularly blog, and I always had at least a few creative projects on the go. That all kind of fell apart after having kids and finding myself having very little spare time or personal projects to manage. A planner gets a little depressing when so much of it is empty. 
 
-I felt like looking after my family, working at my job, and maybe squeezing in a little art here and there was about all I could handle. With my limited spare time I tried to [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]] and just see where that led. I'm proud of what I did! But now I think I'm ready to dream a little bigger again. I've been keeping notes in random apps and bits of paper but nothing like my old journals.
+I felt like looking after my family, working at my job, and maybe squeezing in a little art here and there was about all I could handle. With my limited spare time I tried to [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] and just see where that led. I'm proud of what I did! But now I think I'm ready to dream a little bigger again. I've been keeping notes in random apps and bits of paper but nothing like my old journals.
 
 ![../../assets/IMG_2365.jpeg](/img/user/assets/IMG_2365.jpeg)
 
