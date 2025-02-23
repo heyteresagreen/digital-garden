@@ -2,19 +2,33 @@
 {"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18","updated":"2025-02-13"}
 ---
 
+# Books I've read in 2025
 This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
 ## In progress
 
-![Pasted image 20250213205234.png|book cover|150](/img/user/assets/Pasted%20image%2020250213205234.png)
+### Animal Farm, George Orwell
 
-### This is How You Lose the Time War, Amal El-Mohtar and Max Gladstone
+### Designing You Life (2016), Bill Burnett & Dave Evans
 
 ---
 
 <div class="book-list">
 
 ## Completed
+
+<div>
+
+![Pasted image 20250213205234.png|book cover|150](/img/user/assets/Pasted%20image%2020250213205234.png)
+
+<div>
+
+### This is How You Lose the Time War, Amal El-Mohtar and Max Gladstone
+
+Two combatants on opposite sides in a war amongst time travellers slowly build up a relationship over cleverly hidden letters they leave for each other. Incredibly poetic, I felt like rather than trying to make sense of every sentence I should just let it wash over me. I’ve never read prose anything like it before. Thank you for lending it to me Sandy!
+</div>
+</div>
+
 <div>
 
 ![Pasted image 20250213210556.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210556.png)   ![Pasted image 20250213210623.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210623.png)
