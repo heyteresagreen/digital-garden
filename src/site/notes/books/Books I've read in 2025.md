@@ -44,8 +44,6 @@ The authors, both from Stanford, apply design thinking techniques to planning yo
 
 <div>
 
-<div>
-
 ![Pasted image 20250213205234.png|book cover|150](/img/user/assets/Pasted%20image%2020250213205234.png)
 
 <div>
