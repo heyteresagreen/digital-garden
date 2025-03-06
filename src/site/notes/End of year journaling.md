@@ -16,4 +16,4 @@ Since I no longer have one notebook for the year (here's my current [[My noteboo
 
 ![IMG_0663.jpeg|test run of binding a booklet](/img/user/assets/IMG_0663.jpeg)
 
-I've pretty much stopped New Years Resolutions or settings goals for the year - I find that I'm terrible at estimating what I can achieve in 12 months and guessing at what my priorities will look like so far from today. I'll just continue [[Optimise for curiousity, not productivity\|Optimise for curiousity, not productivity]] and see where the year takes me.
+I've pretty much stopped New Years Resolutions or settings goals for the year - I find that I'm terrible at estimating what I can achieve in 12 months and guessing at what my priorities will look like so far from today. I'll just continue [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] and see where the year takes me.

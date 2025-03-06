@@ -7,15 +7,42 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### Animal Farm, George Orwell
+### System Collapse, Martha Wells
 
-### Designing You Life (2016), Bill Burnett & Dave Evans
 
 ---
 
 <div class="book-list">
 
 ## Completed
+
+<div>
+
+![Pasted image 20250306092538.png|book cover|150](/img/user/assets/Pasted%20image%2020250306092538.png)
+
+<div>
+
+### Animal Farm, George Orwell
+
+Revisiting a classic "fairy story" that lives on my shelf. It's a lot more brutal than I remembered. Something that stood out to me this time was the inspiring power of rituals and [song](https://en.wikipedia.org/wiki/Anthems_in_Animal_Farm).
+
+</div>
+</div>
+
+<div>
+
+![Pasted image 20250306092054.png|book cover|150](/img/user/assets/Pasted%20image%2020250306092054.png)
+
+<div>
+
+### Designing Your Life (2016), Bill Burnett &amp; Dave Evans
+
+The authors, both from Stanford, apply design thinking techniques to planning your own life and career. Prototyping and iteration play a big part in this process, as it does when applying design thinking to any problem. Useful frameworks for living an intentional life. 
+[[books/2025/Designing Your Life (2016), Bill Burnett & Dave Evans\|my book notes]]
+</div>
+</div>
+
+<div>
 
 <div>
 
