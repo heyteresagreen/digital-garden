@@ -7,7 +7,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### System Collapse, Martha Wells
+### How To Take Smart Notes, Sönke Ahrens
 
 
 ---
@@ -15,6 +15,33 @@ This year I'm trying something a little different - writing a few notes for each
 <div class="book-list">
 
 ## Completed
+
+<div>
+
+![IMG_0281.jpeg|book cover|150](/img/user/assets/IMG_0281.jpeg)
+
+<div>
+
+### The Invisible Life of Addie Larue, V.E. Schwab
+
+A book club pick. My favourite so far! A young woman makes a deal with the darkness, who twists her wish so that she is always forgotten, unable to leave a mark. Some unexpected turns and interesting characters. 
+
+</div>
+</div>
+
+
+<div>
+
+![IMG_0280.jpeg|book cover|150](/img/user/assets/IMG_0280.jpeg)
+
+<div>
+
+### [[books/book notes/Meditations for Mortals (2024), Oliver Burkeman\|Meditations for Mortals (2024), Oliver Burkeman]]
+
+I’ve been a fan of Oliver Burkeman’s Imperfectionist newsletter for some time, and there were a lot of familiar ideas here about time and the futility of trying to control it or optimise it. It’s a lot more digestible and practical than *Four Thousand Weeks*, written in short chapters intended to be read one a day over 12 weeks.
+
+</div>
+</div>
 
 <div>
 
@@ -38,7 +65,7 @@ Revisiting a classic "fairy story" that lives on my shelf. It's a lot more bruta
 ### Designing Your Life (2016), Bill Burnett &amp; Dave Evans
 
 The authors, both from Stanford, apply design thinking techniques to planning your own life and career. Prototyping and iteration play a big part in this process, as it does when applying design thinking to any problem. Useful frameworks for living an intentional life. 
-[[books/2025/Designing Your Life (2016), Bill Burnett & Dave Evans\|my book notes]]
+[[books/book notes/Designing Your Life (2016), Bill Burnett & Dave Evans\|my book notes]]
 </div>
 </div>
 
