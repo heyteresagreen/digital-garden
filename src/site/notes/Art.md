@@ -5,6 +5,7 @@
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
+- [[art/Life drawing the male figure\|Life drawing the male figure]]: ![assets/IMG_4498-5bbf1280.jpeg|IMG_4498-5bbf1280.jpeg](/img/user/assets/IMG_4498-5bbf1280.jpeg)
 - [[art/Charcoal portrait\|Charcoal portrait]]: ![assets/IMG_3782-5c80235a.jpeg|IMG_3782-5c80235a.jpeg](/img/user/assets/IMG_3782-5c80235a.jpeg)
 - [[art/Portrait - Sabrina\|Portrait - Sabrina]]: ![assets/steph-art-sessions 3-0cf7a37d.jpeg|steph-art-sessions 3-0cf7a37d.jpeg](/img/user/assets/steph-art-sessions%203-0cf7a37d.jpeg)
 - [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]: ![assets/life drawing 20-f319b092.jpeg|life drawing 20-f319b092.jpeg](/img/user/assets/life%20drawing%2020-f319b092.jpeg)

@@ -8,7 +8,7 @@ The authors, both from Stanford, apply design thinking techniques to planning yo
 They draw a distinction between engineering problems, which have a specific desired outcome and lots of data, and design problems, where what you’re working towards is a problem in itself.
 >There’s a difference between design problems and engineering problems. […] engineering is a good approach to solving a problem when you can get a great deal of data and you’re sure there is one best solution. (5.2%)
 
-Related: [[raw/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
+Related: [[notes/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
 >Designers don’t *think* their way forward. Designers *build* their way forward… It means you are not just going to be dreaming up a lot of fun fantasies that have no relationship to the real world—or the real you. You are going to build things (we call them prototypes), try stuff, and have a lot of fun in the process. (9.7%)
 
 Most people don’t have *one thing* they are passionate about, so this process is not about simply following your passion.
@@ -76,7 +76,7 @@ Anchor problems - a problem we get anchored on and have trouble moving on from. 
 >(41.3%)
 
 Prototyping reduces risk and helps you learn and iterate
-[[raw/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
+[[notes/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
 > The way forward is to reduce the risk (and the fear) of failure by designing a series of small prototypes to test the waters. It is okay for prototypes to fail—they’re supposed to—but well-designed prototypes teach you something about the future.
 > (41.3%)
 

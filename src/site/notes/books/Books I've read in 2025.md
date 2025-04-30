@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18","updated":"2025-04-13"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18","updated":"2025-04-30"}
 ---
 
 
@@ -8,6 +8,7 @@ This year I'm trying something a little different - writing a few notes for each
 ## In progress
 
 ### How To Take Smart Notes, Sönke Ahrens
+### The Long Way to a Small, Angry Planet, Becky Chambers
 
 
 ---
@@ -15,6 +16,19 @@ This year I'm trying something a little different - writing a few notes for each
 <div class="book-list">
 
 ## Completed
+
+<div>
+
+![book.jpeg|book cover|150](/img/user/assets/book.jpeg)
+
+<div>
+
+### The Galaxy, and the Ground Within, Becky Chambers
+
+A sweet sci-fi story centering on a group of aliens unexpectedly stranded in transit. I kept waiting for a humanoid character to appear, but all of the main characters are completely alien and creatively imagined. Not a whole lot *happens* but the developing characters and relationships are worth the read. Everyone is so *nice*, which feels unrealistic, but also the kind of galaxy I'd like to live in. I only realised after this is the last in a 4 part series, which I'm going to have to read the start of. 
+
+</div>
+</div>
 
 <div>
 
