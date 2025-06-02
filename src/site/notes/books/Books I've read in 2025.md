@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading"],"noteIcon":"","created":"2025-01-18","updated":"2025-04-30"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-04-30"}
 ---
 
 
@@ -7,8 +7,8 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### How To Take Smart Notes, Sönke Ahrens
-### The Long Way to a Small, Angry Planet, Becky Chambers
+### The Making of a Manager (2019), Julie Zhuo
+### A Closed and Common Orbit, Becky Chambers
 
 
 ---
@@ -16,6 +16,31 @@ This year I'm trying something a little different - writing a few notes for each
 <div class="book-list">
 
 ## Completed
+
+
+<div>
+
+![book.jpeg|book cover|150](/img/user/assets/book.jpeg)
+
+<div>
+
+### The Long Way to a Small, Angry Planet, Becky Chambers
+
+A human woman joins a long-haul space mission with a multi-species crew. After reading the last book in this series, *The Galaxy, and the Ground Within*, this first book makes a lot more sense - the main character, Rosemary, lived a sheltered life on the almost completely human populated Mars, and learns about the different species she's working with alongside the reader. There's some interesting exploration of gender, sexuality, family structures and acceptance as human norms don't make sense when applied to, for example, a scaled species that can change sex as needed. It’s thought-provoking and I love it.
+</div>
+</div>
+<div>
+
+![IMG_0282.jpeg|book cover|150](/img/user/assets/IMG_0282.jpeg)
+
+<div>
+
+### [[books/book notes/How to Take Smart Notes (2017), Sönke Ahrens\|How to Take Smart Notes (2017), Sönke Ahrens]]
+
+A reread of this book that got me started actually taking notes on things that I consume, almost 3 years ago. The high-level *how* to start a personal knowledge management system is outlined in the first chapter, and the rest of the book gets into the details and the *why*. I don't follow it exactly as I'm not a writer, student or academic, but my hacky version has enough value for me.
+
+</div>
+</div>
 
 <div>
 
