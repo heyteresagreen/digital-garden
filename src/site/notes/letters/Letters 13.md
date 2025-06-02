@@ -15,13 +15,13 @@ I save quotes from things that resonate, but have fallen out of the habit of the
 ![IMG_6207.jpeg|sketchbook with 4 gouache portraits](/img/user/assets/IMG_6207.jpeg)
 ![IMG_6202 1.jpeg|photo of a sketchbook on a drawing board, on a table](/img/user/assets/IMG_6202%201.jpeg)
 
-I wanted to "use up" some dried gouache on an old palette, and was surprised by how far it went. Gouache is still mostly a mystery to me, but I'm enjoying messing around with it like this when I have no expectation of making anything good. It helped that I now have a [[drafts/To the drawing board\|drawing board]], my Christmas present to myself, so there's less distortion when doing the initial sketch.
+I wanted to "use up" some dried gouache on an old palette, and was surprised by how far it went. Gouache is still mostly a mystery to me, but I'm enjoying messing around with it like this when I have no expectation of making anything good. It helped that I now have a [[To the drawing board\|drawing board]], my Christmas present to myself, so there's less distortion when doing the initial sketch.
 
 Some things I added to the site recently:
 * [[Reading things later\|Reading things later]] - on how read later apps make the internet more friendly as a reader
 * [[Photographing artwork with a phone\|Photographing artwork with a phone]] - an app to circumvent the aggressive processing done in iPhone photos
 * [[Getting the best out of Focus modes\|Getting the best out of Focus modes]] - making my phone what I need at the time that I reach for it
-* [[drafts/To the drawing board\|To the drawing board]] - the difference drawing upright makes!
+* [[To the drawing board\|To the drawing board]] - the difference drawing upright makes!
 * [[art/Charcoal portrait\|Charcoal portrait]] - probably the best portrait I've ever done
 * [[sketching/Perth Web Accessibility Camp 2025 in sketchnotes\|Perth Web Accessibility Camp 2025 in sketchnotes]] - sketchnotes from a recent conference
 * [[books/Books I've read in 2025\|Books I've read in 2025]] - now with cover images and short summaries

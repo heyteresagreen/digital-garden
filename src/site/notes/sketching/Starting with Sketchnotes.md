@@ -18,7 +18,7 @@ We're all familiar with traditional notes. They tend to be in a linear format, w
 
 In contrast, sketchnotes are a visual way of taking notes. Instead of a linear structure, it can be loose - it doesn't have to follow top to bottom, left to right - it can zoom around. The meaning is conveyed through the structure, illustrations, lettering and words layered together into something that is more alive. It has to be created by hand and is highly personal to the creator. It also takes a lot more work!
 
-![IMG_4497.jpeg|hand drawn lettering but why?](/img/user/assets/sketching/IMG_4497.jpeg)
+![IMG_4497.jpeg|hand drawn lettering but why?](/img/user/assets/IMG_4497.jpeg)
 ## But why?
 It helps you to learn by engaging different parts of your brain. If you're just passively listening to a presentation, you're receiving that input through your ears and eyes, but might not be actively engaging with it. It's easy to get distracted. Even if you're typing notes, because of the speed of typing you can capture a lot more of what the speaker is saying, without necessarily thinking about it.
 
@@ -33,7 +33,7 @@ Visual thinking skills are also relevant for just sketching to ideate or figure 
 The first question I get asked when people see my sketchnotes is "Do you use an iPad, and what app do you use?" 
 
 I use an app called Procreate on my iPad, and it's great (and affordable). There are a lot of cool things you can do with it - different brushes, colours, erase, select and resize and move things around.
-![IMG_4498.jpeg|sketch of an ipad and Apple Pencil with the text don't think you need an iPad, they are $](/img/user/assets/sketching/IMG_4498.jpeg)
+![IMG_4498.jpeg|sketch of an ipad and Apple Pencil with the text don't think you need an iPad, they are $](/img/user/assets/IMG_4498.jpeg)
 
 > Tip: it won't magically make you good at drawing! If you don't get great results drawing on paper then it will be the same working digitally.
 
