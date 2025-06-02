@@ -20,7 +20,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-![book.jpeg|book cover|150](/img/user/assets/book.jpeg)
+![IMG_0292 1.jpeg|book cover|150](/img/user/assets/IMG_0292%201.jpeg)
 
 <div>
 
