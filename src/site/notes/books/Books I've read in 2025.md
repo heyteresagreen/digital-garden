@@ -7,9 +7,8 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### The Making of a Manager (2019), Julie Zhuo
-### A Closed and Common Orbit, Becky Chambers
-
+### Record of a spaceborn few, Becky Chambers
+### Understanding Comics, Scott McCloud
 
 ---
 
@@ -17,6 +16,38 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## Completed
 
+<div>
+
+![Pasted image 20250701212556.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212556.png)
+
+<div>
+### [[books/book notes/The Making of a Manager (2019), Julie Zhuo\|The Making of a Manager (2019), Julie Zhuo]]
+
+Julie Zhuo pulls together advice from her newsletter about her experiences as a design leader at Facebook. She writes about her transition from star designer to manager, and the lessons she learned along the way.
+</div>
+</div>
+
+<div>
+![Pasted image 20250701212741.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212741.png)
+
+<div>
+
+### Juice, Tim Winton
+
+A man travels through a desolate landscape with a young girl who doesn't speak, and ends up in a situation where he has to tell his story to save their lives. My first thought was it's The Last of Us without zombies, then Max Max without the costumes and gangs, but it quickly evolved into its own flavour of a dystopian future. It's long but gripping in its story of survival and righting wrongs in a future severely impacted by the actions and decisions we're making today. I hope climate fiction like this takes off and reaches people's imaginations in ways that pure data can't.
+</div>
+</div>
+
+<div>
+![Pasted image 20250701212831.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212831.png)
+
+<div>
+
+### A Closed and Common Orbit, Becky Chambers
+
+The second in this series, focused on characters briefly mentioned in the first. This one considers the messy ethics of cloning and sentient AI, through flashbacks of the experiences of a young clone girl and the "current" timeline where the girl, now grown up, cares for an AI illegally housed in a humanoid body. The characters were less interesting to me than the first in this series, but it does a lot more world building and continues on the themes around a found family.
+</div>
+</div>
 
 <div>
 
@@ -29,6 +60,7 @@ This year I'm trying something a little different - writing a few notes for each
 A human woman joins a long-haul space mission with a multi-species crew. After reading the last book in this series, *The Galaxy, and the Ground Within*, this first book makes a lot more sense - the main character, Rosemary, lived a sheltered life on the almost completely human populated Mars, and learns about the different species she's working with alongside the reader. There's some interesting exploration of gender, sexuality, family structures and acceptance as human norms don't make sense when applied to, for example, a scaled species that can change sex as needed. It’s thought-provoking and I love it.
 </div>
 </div>
+
 <div>
 
 ![IMG_0282.jpeg|book cover|150](/img/user/assets/IMG_0282.jpeg)
