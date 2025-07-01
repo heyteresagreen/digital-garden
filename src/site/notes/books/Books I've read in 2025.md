@@ -26,8 +26,8 @@ This year I'm trying something a little different - writing a few notes for each
 Julie Zhuo pulls together advice from her newsletter about her experiences as a design leader at Facebook. She writes about her transition from star designer to manager, and the lessons she learned along the way.
 </div>
 </div>
-
 <div>
+
 ![Pasted image 20250701212741.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212741.png)
 
 <div>
@@ -37,8 +37,8 @@ Julie Zhuo pulls together advice from her newsletter about her experiences as a 
 A man travels through a desolate landscape with a young girl who doesn't speak, and ends up in a situation where he has to tell his story to save their lives. My first thought was it's The Last of Us without zombies, then Max Max without the costumes and gangs, but it quickly evolved into its own flavour of a dystopian future. It's long but gripping in its story of survival and righting wrongs in a future severely impacted by the actions and decisions we're making today. I hope climate fiction like this takes off and reaches people's imaginations in ways that pure data can't.
 </div>
 </div>
-
 <div>
+
 ![Pasted image 20250701212831.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212831.png)
 
 <div>
