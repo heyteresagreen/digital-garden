@@ -21,7 +21,7 @@ This year I'm trying something a little different - writing a few notes for each
 ![Pasted image 20250701212556.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212556.png)
 
 <div>
-### [[books/book notes/The Making of a Manager (2019), Julie Zhuo\|The Making of a Manager (2019), Julie Zhuo]]
+###[[books/book notes/The Making of a Manager (2019), Julie Zhuo\|The Making of a Manager (2019), Julie Zhuo]]
 
 Julie Zhuo pulls together advice from her newsletter about her experiences as a design leader at Facebook. She writes about her transition from star designer to manager, and the lessons she learned along the way.
 </div>
