@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-04-30"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-07-29"}
 ---
 
 
@@ -7,14 +7,75 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### Record of a spaceborn few, Becky Chambers
-### Understanding Comics, Scott McCloud
+### The Farthest Shore, Ursula K. Le Guin
+### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
 
 <div class="book-list">
 
 ## Completed
+<div>
+
+
+<div>
+
+### The Tombs of Atuan, Ursula K. Le Guin
+
+</div>
+</div>
+
+<div>
+
+
+<div>
+
+### Everyday Permaculture (2025), Anna Matilda
+
+</div>
+</div>
+<div>
+
+<div>
+
+### The Wizard of Earthsea, Ursula K. Le Guin
+
+Diving into some classic fantasy, I can see how this story of a boy wizard (allegedly) inspired another boy wizard at another wizarding school. It was interesting following up a book about shadow selves with one where the main character chases and is chased by what he calls his shadow.
+
+</div>
+</div>
+
+<div>
+
+
+<div>
+
+### The City and It’s Uncertain Walls, Haruki Murakami
+
+Strange and dream-like, which is what I expect of Murakami. There’s a tension throughout the book between the real and the not-real, the self and the shadow self. In the afterword he mentions that he first wrote The City as a short story decades ago, and the idea stayed with him until he could revisit it as an older man and more experienced writer.
+</div>
+</div>
+
+<div>
+
+
+<div>
+
+### Understanding Comics, Scott McCloud
+
+I bought this book because I saw it mentioned in a few different contexts, and I thought it might be interesting since my kids are getting into graphic novels and I’ve had to explain the different patterns to them. But even though this is a comic book about comics, it’s also literary critique, and is more intellectual than I’d assumed. There’s so many interesting ideas in here for anyone who loves comics, literature, art, design and how we communicate.
+</div>
+</div>
+<div>
+
+
+<div>
+
+### Record of a Spaceborn Few, Becky Chambers
+
+The third book in this series. Again there’s not a whole lot that actually happens in this book, but each of the characters is grappling with place and purpose. Unlike the other books, all of the narrating characters are human and living on huge fleet ships that fled Earth with most of what was left of the human race. What fascinated me about this one was the culture and economic system that had to be adopted by the Fleet to have any chance of surviving without everyone destroying each other. In a lot of ways it was almost easier for me to believe in the dystopian wasteland in Juice, which I read earlier this year, than in humans working together, ensuring everyone has food, shelter and air, living in commune-style arrangements, where everyone goes in the lottery for “sanitation” duty to make sure the shit jobs are taken on by all. But I want to believe it, and whilst it isn’t a utopia for everyone I think this book raises interesting ideas of how humans can live together more kindly and sustainably. Hopefully it doesn’t take the literal end of the world to get there.
+</div>
+</div>
 
 <div>
 
