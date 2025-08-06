@@ -20,8 +20,9 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-### The Tombs of Atuan, Ursula K. Le Guin
+### The Tombs of Atuan (Books of Earthsea #2), Ursula K. Le Guin
 
+I wasn’t expecting the series to shift focus to a completely different character living a very different life in the fringes of Earthsea, although the stories do eventually connect up. Where *The Wizard of Earthsea* went wide with the main character travelling all over the map, this one is intensely focused on a young priestess bound to a crumbling temple and the labyrinths beneath it.
 </div>
 </div>
 
@@ -32,13 +33,14 @@ This year I'm trying something a little different - writing a few notes for each
 
 ### Everyday Permaculture (2025), Anna Matilda
 
+I spotted this one at the library and was intrigued. I thought I sort of knew what permaculture was, but this book was a nice, illustrated introduction to the main principles and practical real-world applications.
 </div>
 </div>
 <div>
 
 <div>
 
-### The Wizard of Earthsea, Ursula K. Le Guin
+### The Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
 
 Diving into some classic fantasy, I can see how this story of a boy wizard (allegedly) inspired another boy wizard at another wizarding school. It was interesting following up a book about shadow selves with one where the main character chases and is chased by what he calls his shadow.
 
@@ -71,9 +73,9 @@ I bought this book because I saw it mentioned in a few different contexts, and I
 
 <div>
 
-### Record of a Spaceborn Few, Becky Chambers
+### Record of a Spaceborn Few (Wayfarers #3), Becky Chambers
 
-The third book in this series. Again there’s not a whole lot that actually happens in this book, but each of the characters is grappling with place and purpose. Unlike the other books, all of the narrating characters are human and living on huge fleet ships that fled Earth with most of what was left of the human race. What fascinated me about this one was the culture and economic system that had to be adopted by the Fleet to have any chance of surviving without everyone destroying each other. In a lot of ways it was almost easier for me to believe in the dystopian wasteland in Juice, which I read earlier this year, than in humans working together, ensuring everyone has food, shelter and air, living in commune-style arrangements, where everyone goes in the lottery for “sanitation” duty to make sure the shit jobs are taken on by all. But I want to believe it, and whilst it isn’t a utopia for everyone I think this book raises interesting ideas of how humans can live together more kindly and sustainably. Hopefully it doesn’t take the literal end of the world to get there.
+Again there’s not a whole lot that actually happens in this book, but each of the characters is grappling with place and purpose. Unlike the other books, all of the narrating characters are human and living on huge fleet ships that fled Earth with most of what was left of the human race. What fascinated me about this one was the culture and economic system that had to be adopted by the Fleet to have any chance of surviving without everyone destroying each other. In a lot of ways it was almost easier for me to believe in the dystopian wasteland in Juice, which I read earlier this year, than in humans working together, ensuring everyone has food, shelter and air, living in commune-style arrangements, where everyone goes in the lottery for “sanitation” duty to make sure the shit jobs are taken on by all. But I want to believe it, and whilst it isn’t a utopia for everyone I think this book raises interesting ideas of how humans can live together more kindly and sustainably. Hopefully it doesn’t take the literal end of the world to get there.
 </div>
 </div>
 
@@ -105,7 +107,7 @@ A man travels through a desolate landscape with a young girl who doesn't speak, 
 
 <div>
 
-### A Closed and Common Orbit, Becky Chambers
+### A Closed and Common Orbit (Wayfarers #2), Becky Chambers
 
 The second in this series, focused on characters briefly mentioned in the first. This one considers the messy ethics of cloning and sentient AI, through flashbacks of the experiences of a young clone girl and the "current" timeline where the girl, now grown up, cares for an AI illegally housed in a humanoid body. The characters were less interesting to me than the first in this series, but it does a lot more world building and continues on the themes around a found family.
 </div>
@@ -117,7 +119,7 @@ The second in this series, focused on characters briefly mentioned in the first.
 
 <div>
 
-### The Long Way to a Small, Angry Planet, Becky Chambers
+### The Long Way to a Small, Angry Planet (Wayfarers #1), Becky Chambers
 
 A human woman joins a long-haul space mission with a multi-species crew. After reading the last book in this series, *The Galaxy, and the Ground Within*, this first book makes a lot more sense - the main character, Rosemary, lived a sheltered life on the almost completely human populated Mars, and learns about the different species she's working with alongside the reader. There's some interesting exploration of gender, sexuality, family structures and acceptance as human norms don't make sense when applied to, for example, a scaled species that can change sex as needed. It’s thought-provoking and I love it.
 </div>
@@ -142,7 +144,7 @@ A reread of this book that got me started actually taking notes on things that I
 
 <div>
 
-### The Galaxy, and the Ground Within, Becky Chambers
+### The Galaxy, and the Ground Within (Wayfarers #4), Becky Chambers
 
 A sweet sci-fi story centering on a group of aliens unexpectedly stranded in transit. I kept waiting for a humanoid character to appear, but all of the main characters are completely alien and creatively imagined. Not a whole lot *happens* but the developing characters and relationships are worth the read. Everyone is so *nice*, which feels unrealistic, but also the kind of galaxy I'd like to live in. I only realised after this is the last in a 4 part series, which I'm going to have to read the start of. 
 

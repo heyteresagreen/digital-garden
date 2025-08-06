@@ -5,6 +5,7 @@
 There's something kind of cool about having all your artwork together in a book. Even if individually each page is not amazing, collectively they tell a story and show skills evolving over time.
 
 I've gone back to keeping physical sketchbooks since the start of 2023, and I'll be numbering them on a rolling basis rather than tied to the year.
+- [[sketchbooks/Sketchbook 12\|Sketchbook 12]]: ![assets/IMG_7443-8f01a31c.jpeg|IMG_7443-8f01a31c.jpeg](/img/user/assets/IMG_7443-8f01a31c.jpeg)
 - [[sketchbooks/Sketchbook 11\|Sketchbook 11]]: ![assets/IMG_3210-a2bde539.jpeg|IMG_3210-a2bde539.jpeg](/img/user/assets/IMG_3210-a2bde539.jpeg)
 - [[sketchbooks/Sketchbook 10\|Sketchbook 10]]: ![assets/sketchbook10 4.jpeg|sketchbook10 4.jpeg](/img/user/assets/sketchbook10%204.jpeg)
 - [[sketchbooks/Sketchbook 9\|Sketchbook 9]]: ![assets/IMG_2700.jpeg|IMG_2700.jpeg](/img/user/assets/IMG_2700.jpeg)
