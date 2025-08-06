@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/travel-sketching-kit/","noteIcon":"","created":"2025-08-06"}
 ---
 
-This 4 night birthday trip to Bali is the most prolific trip I have been on in terms of sketching! It’s in part because I went with friends and without kids, but it also helped to have a paired down travel sketching kit.
+This 4 night birthday trip to Bali is the most prolific trip I have been on in terms of sketching! It’s in part because I went with friends and without kids, but it also helped to have a pared down travel sketching kit.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eNvkIDlL-qg?si=3IYNVkkLXLOggSIV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
