@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/travel-sketching-kit/","tags":["writing"],"noteIcon":"","created":"2025-08-06"}
+{"dg-publish":true,"permalink":"/travel-sketching-kit/","noteIcon":"","created":"2025-08-06"}
 ---
 
 This 4 night birthday trip to Bali is the most prolific trip I have been on in terms of sketching! It’s in part because I went with friends and without kids, but it also helped to have a paired down travel sketching kit.

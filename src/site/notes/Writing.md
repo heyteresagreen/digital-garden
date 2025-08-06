@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[Travel sketching kit\|Travel sketching kit]] <span class="posted">6 August 2025</span>
 - [[Reading things later\|Reading things later]] <span class="posted">15 February 2025</span>
 - [[Photographing artwork with a phone\|Photographing artwork with a phone]] <span class="posted">1 February 2025</span>
 - [[Getting the best out of Focus modes\|Getting the best out of Focus modes]] <span class="posted">22 December 2024</span>
