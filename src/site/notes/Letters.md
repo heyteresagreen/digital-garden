@@ -13,6 +13,7 @@ Letters from me to you, delivered to your email inbox very infrequently. Some ra
 </form>
 
 ## Old letters
+- [[letters/Letters 14\|Letters 14]]: I’m wise now, apparently
 - [[letters/Letters 13\|Letters 13]]: Reading less, but better
 - [[letters/Letters 12\|Letters 12]]: Choosing from the pile of unread books
 - [[letters/Letters 11\|Letters 11]]: Book surgery and non-linear progress
