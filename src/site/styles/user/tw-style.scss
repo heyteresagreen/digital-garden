@@ -186,10 +186,10 @@ nav.filetree-sidebar, nav.navbar {
     margin-top: 0.5em;
     @media (min-width: 720px) {
       float: left;
-      padding-left: 1.3em;
+      padding-left: 0.95em;
     }
     li {
-      padding: 0.75em 1.2em 0.75em 0;
+      padding: 0.75em 0.9em 0.75em 0;
       float: left;
       @media (min-width: 720px) {
         padding: 1em;
@@ -289,19 +289,19 @@ NOTE AND POST ELEMENTS
   border-radius: $border-radius;
 }
 
-.tag a {
-  background: saturate(darken($color-background,10%),20%) ;
-  border-bottom: 0;
-  padding: 4px 6px;
-  font-family: $font-family-sans-serif;
-  margin-right: 2px;
-  color: saturate(darken($color-background,70%),10%) ;
-  font-size: 0.9rem;
-    &:hover {
-    color: white;
-    background-color: $highlight;
-  }
-}
+// .tag a {
+//   background: saturate(darken($color-background,10%),20%) ;
+//   border-bottom: 0;
+//   padding: 4px 6px;
+//   font-family: $font-family-sans-serif;
+//   margin-right: 2px;
+//   color: saturate(darken($color-background,70%),10%) ;
+//   font-size: 0.9rem;
+//     &:hover {
+//     color: white;
+//     background-color: $highlight;
+//   }
+// }
 
 /* gallery pages */
 
