@@ -76,7 +76,7 @@ I spotted this one at the library and was intrigued. I thought I sort of knew wh
 ![IMG_0308.jpeg|book cover|150](/img/user/assets/IMG_0308.jpeg)
 <div>
 
-###A Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
+### A Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
 
 Diving into some classic fantasy, I can see how this story of a boy wizard (allegedly) inspired another boy wizard at another wizarding school. It was interesting following up a book about shadow selves with one where the main character chases and is chased by what he calls his shadow.
 
