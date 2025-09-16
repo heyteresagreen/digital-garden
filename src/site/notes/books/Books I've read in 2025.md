@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-07-29"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-09-16"}
 ---
 
 
@@ -7,7 +7,8 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## In progress
 
-### The Farthest Shore, Ursula K. Le Guin
+### Tehanu (Books of Earthsea #4), Ursula K. Le Guin
+### American Dirt, Jeanine Cummins (book club)
 ### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
@@ -16,8 +17,37 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## Completed
 <div>
+![IMG_0314.jpeg|book cover|150](/img/user/assets/IMG_0314.jpeg)
+<div>
 
+### Ranma 1/2 (Volumes 1 and 2), Rumiko Takahashi
 
+Ranma was the first manga I ever read, found in the local library in my early teens. I’ve read the entire series at least twice since then, but I’ve lost my bootleg copy so am slowly rebuilding my (ebook) collection more legitimately. This wacky harem/reverse-harem martial arts story definitely has elements that are of its time, but I’m just as impressed with Takahashi’s artwork and fun characters as the first time I read it.
+</div>
+</div>
+
+<div>
+![IMG_0312.jpeg|book cover|150](/img/user/assets/IMG_0312.jpeg)
+<div>
+
+### The Paper Menagerie, Ken Liu
+
+These sci-fi short stories hit hard. All have elements, characters or settings from East Asia, which makes it a nice change from the usual US focus in most science fiction. There are stories involving space, time travel, AI and cyborgs, but also ones that lean more towards fantasy. I don’t know that I could pick a favourite.
+</div>
+</div>
+
+<div>
+![IMG_0311.jpeg|book cover|150](/img/user/assets/IMG_0311.jpeg)
+<div>
+
+### The Farthest Shore (Books of Earthsea #3), Ursula K. Le Guin
+
+Another time skip and more sailing around the ends of the world for the hero of *The Wizard of Earthsea*, this time seen through the eyes of his young companion. Like *The Tombs of Atuan* this book felt much more dark than the start of the series.
+</div>
+</div>
+
+<div>
+![IMG_0310.jpeg|book cover|150](/img/user/assets/IMG_0310.jpeg)
 <div>
 
 ### The Tombs of Atuan (Books of Earthsea #2), Ursula K. Le Guin
@@ -28,7 +58,7 @@ I wasn’t expecting the series to shift focus to a completely different charact
 
 <div>
 
-
+![IMG_0309.jpeg|book cover|150](/img/user/assets/IMG_0309.jpeg)
 <div>
 
 ### Everyday Permaculture (2025), Anna Matilda
@@ -37,10 +67,10 @@ I spotted this one at the library and was intrigued. I thought I sort of knew wh
 </div>
 </div>
 <div>
-
+![IMG_0308.jpeg|book cover|150](/img/user/assets/IMG_0308.jpeg)
 <div>
 
-### The Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
+###A Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
 
 Diving into some classic fantasy, I can see how this story of a boy wizard (allegedly) inspired another boy wizard at another wizarding school. It was interesting following up a book about shadow selves with one where the main character chases and is chased by what he calls his shadow.
 
@@ -48,7 +78,7 @@ Diving into some classic fantasy, I can see how this story of a boy wizard (alle
 </div>
 
 <div>
-
+![IMG_0307.jpeg|book cover|150](/img/user/assets/IMG_0307.jpeg)
 
 <div>
 
@@ -60,7 +90,7 @@ Strange and dream-like, which is what I expect of Murakami. There’s a tension 
 
 <div>
 
-
+![IMG_0306.jpeg|book cover|150](/img/user/assets/IMG_0306.jpeg)
 <div>
 
 ### Understanding Comics, Scott McCloud
@@ -70,7 +100,7 @@ I bought this book because I saw it mentioned in a few different contexts, and I
 </div>
 <div>
 
-
+![IMG_0305.jpeg|book cover|150](/img/user/assets/IMG_0305.jpeg)
 <div>
 
 ### Record of a Spaceborn Few (Wayfarers #3), Becky Chambers
