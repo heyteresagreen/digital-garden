@@ -17,6 +17,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## Completed
 <div>
+
 ![IMG_0314.jpeg|book cover|150](/img/user/assets/IMG_0314.jpeg)
 <div>
 
@@ -27,6 +28,7 @@ Ranma was the first manga I ever read, found in the local library in my early te
 </div>
 
 <div>
+
 ![IMG_0312.jpeg|book cover|150](/img/user/assets/IMG_0312.jpeg)
 <div>
 
@@ -37,6 +39,7 @@ These sci-fi short stories hit hard. All have elements, characters or settings f
 </div>
 
 <div>
+
 ![IMG_0311.jpeg|book cover|150](/img/user/assets/IMG_0311.jpeg)
 <div>
 
@@ -47,6 +50,7 @@ Another time skip and more sailing around the ends of the world for the hero of 
 </div>
 
 <div>
+
 ![IMG_0310.jpeg|book cover|150](/img/user/assets/IMG_0310.jpeg)
 <div>
 
@@ -66,7 +70,9 @@ I wasn’t expecting the series to shift focus to a completely different charact
 I spotted this one at the library and was intrigued. I thought I sort of knew what permaculture was, but this book was a nice, illustrated introduction to the main principles and practical real-world applications.
 </div>
 </div>
+
 <div>
+
 ![IMG_0308.jpeg|book cover|150](/img/user/assets/IMG_0308.jpeg)
 <div>
 
@@ -78,8 +84,8 @@ Diving into some classic fantasy, I can see how this story of a boy wizard (alle
 </div>
 
 <div>
-![IMG_0307.jpeg|book cover|150](/img/user/assets/IMG_0307.jpeg)
 
+![IMG_0307.jpeg|book cover|150](/img/user/assets/IMG_0307.jpeg)
 <div>
 
 ### The City and It’s Uncertain Walls, Haruki Murakami
