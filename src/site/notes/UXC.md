@@ -16,6 +16,7 @@ Upside down version:
 
 
 
+Version with guide lines that you can toggle:
 
 <div style="max-width: 100%; width: 100%; margin: 0 auto;">
     <button onclick="var img = document.getElementById('beforeImg'); img.style.opacity = img.style.opacity == '1' ? '0' : '1';" style="margin: 10px auto; display: block;">Toggle Guides</button>
@@ -24,10 +25,12 @@ Upside down version:
     <img id="beforeImg" src="/img/user/assets/IMG_0386.jpeg" alt="With Guides" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; opacity: 1; transition: opacity 0.3s ease;">
   </div>
 </div>
-## If you want to learn more
+
+
+If you want to learn more:
 
 * [Anya Brock](https://www.anyabrock.com/pages/workshops-in-person) - I did her botanical painting workshop recently and it inspired me to do more blind contour drawing!
 * [Sketching Now](https://sketchingnow.com/foundations2025/) - Liz Steel's Foundations course goes into detail of different ways of seeing, and how to capture a reference with and without guide lines. Amazing sketchbook work drawing from life and on location.
 * [Stephanie Sheppard](https://www.stephaniesheppard.net.au/) - I learned the comparative measurement stuff from her, she sometimes runs workshops.
-* [Drewscape](https://www.youtube.com/watch?v=j0Bx_VGn0yo) (Youtube) - a quick primer on contour drawing, also a great channel with chill vibes.
+* [Drewscape](https://www.youtube.com/watch?v=j0Bx_VGn0yo) (Youtube) - a quick primer on contour drawing, also a great sketching channel with chill vibes.
 
