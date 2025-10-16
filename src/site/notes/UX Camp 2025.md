@@ -18,4 +18,4 @@ This version with measurement lines will be used for a later activity:
 
 
 Toggle version
-<div class="container"> <div class="image-container"> <img id="afterImg" src="assets/IMG_0386.jpeg" alt="With Guides"> <img id="beforeImg" src="assets/IMG_0384.jpeg" alt="Without Guides" style="opacity: 1; transition: opacity 0.3s ease;"> </div> <button onclick="var img = document.getElementById('beforeImg'); img.style.opacity = img.style.opacity == '1' ? '0' : '1';">Toggle Guides</button> </div>
+<div class="container"> <div class="image-container"> <img id="afterImg" src="/img/user/assets/IMG_0386.jpeg" alt="With Guides"> <img id="beforeImg" src="/img/user/assets/IMG_0384.jpeg" alt="Without Guides" style="opacity: 1; transition: opacity 0.3s ease;"> </div> <button onclick="var img = document.getElementById('beforeImg'); img.style.opacity = img.style.opacity == '1' ? '0' : '1';">Toggle Guides</button> </div>
