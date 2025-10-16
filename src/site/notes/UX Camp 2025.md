@@ -16,3 +16,5 @@ Upside down version:
 
 This version with measurement lines will be used for a later activity:
 ![IMG_0383.jpeg](/img/user/assets/IMG_0383.jpeg)
+
+<iframe src="subfolder/comparison.html" width="100%" height="800" frameborder="0"></iframe> 
