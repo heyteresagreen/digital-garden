@@ -15,6 +15,7 @@ Upside down version:
 
 
 This version with measurement lines will be used for a later activity:
+![IMG_0386.jpeg](/img/user/assets/IMG_0386.jpeg)
 
 
 Toggle version
