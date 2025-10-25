@@ -33,4 +33,6 @@ If you want to learn more:
 * [Sketching Now](https://sketchingnow.com/foundations2025/) - Liz Steel's Foundations course goes into detail of different ways of seeing, and how to capture a reference with and without guide lines. Amazing sketchbook work drawing from life and on location.
 * [Stephanie Sheppard](https://www.stephaniesheppard.net.au/) - I learned the comparative measurement stuff from her, she sometimes runs workshops.
 * [Drewscape](https://www.youtube.com/watch?v=j0Bx_VGn0yo) (Youtube) - a quick primer on contour drawing, also a great sketching channel with chill vibes.
+* [Sticc and Thicc life drawing](https://www.instagram.com/sticcandthiccsocialclub/) - drawing from life is the best, and if you liked the chill vibes my class you might like this one. Runs twice a month.
 
+Warning if you go to look at my art - there is some (illustrated) nudity from the above life drawing sessions with a nude model!
