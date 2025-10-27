@@ -5,6 +5,7 @@
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
 
+- [[art/Painting botanicals with Anya Brock\|Painting botanicals with Anya Brock]]: ![assets/IMG_7601-f2dcb9fb.jpeg|IMG_7601-f2dcb9fb.jpeg](/img/user/assets/IMG_7601-f2dcb9fb.jpeg)
 - [[art/Peachtober digital sketches\|Peachtober digital sketches]]: ![assets/IMG_0366.jpeg|IMG_0366.jpeg](/img/user/assets/IMG_0366.jpeg)
 - [[art/Life drawing the male figure\|Life drawing the male figure]]: ![assets/IMG_4498-5bbf1280.jpeg|IMG_4498-5bbf1280.jpeg](/img/user/assets/IMG_4498-5bbf1280.jpeg)
 - [[art/Charcoal portrait\|Charcoal portrait]]: ![assets/IMG_3782-5c80235a.jpeg|IMG_3782-5c80235a.jpeg](/img/user/assets/IMG_3782-5c80235a.jpeg)
