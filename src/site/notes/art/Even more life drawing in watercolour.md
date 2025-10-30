@@ -34,7 +34,7 @@ I feel like a combination of more confidence with watercolour, diving in rather 
 *Model: Sabrina + Kiki the dog*
 
 ![assets/IMG_7475.jpeg|Watercolour life drawing](/img/user/assets/IMG_7475.jpeg)
-*Model: Sabrina 
+*Model: Sabrina*
 
 ![assets/IMG_7489.jpeg|Watercolour life drawing](/img/user/assets/IMG_7489.jpeg)
 *Model: Gila*
@@ -44,7 +44,7 @@ I feel like a combination of more confidence with watercolour, diving in rather 
 
 
 ![assets/IMG_5669.jpeg|Watercolour life drawing](/img/user/assets/IMG_5669.jpeg)
-*One time all the painters were sitting together (most of the group uses charcoal or pencils)
+*One time all the painters were sitting together (most of the group uses charcoal or pencils)*
 
 More life drawing:
 [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]
