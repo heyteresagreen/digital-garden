@@ -17,7 +17,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-![IMG_0395.jpeg|book cover|150](/img/user/assets/IMG_0395.jpeg)
+![IMG_5986.jpeg|book cover|150](/img/user/assets/IMG_5986.jpeg)
 <div>
 
 ### It Lasts Forever and Then It’s Over, Ann de Marcken

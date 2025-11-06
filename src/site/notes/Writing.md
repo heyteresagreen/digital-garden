@@ -15,7 +15,6 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]] <span class="posted">28 November 2023</span>
 - [[Fountain pens\|Fountain pens]] <span class="posted">13 November 2023</span>
 - [[Morning Pages\|Morning Pages]] <span class="posted">13 November 2023</span>
-- [[Using an iPad as a second screen\|Using an iPad as a second screen]] <span class="posted">11 August 2023</span>
 - [[Tiny watercolor kit\|Tiny watercolor kit]] <span class="posted">3 April 2023</span>
 - [[Thoughts on mending\|Thoughts on mending]] <span class="posted">19 February 2023</span>
 - [[My planning, writing and sketching tools\|My planning, writing and sketching tools]] <span class="posted">13 January 2023</span>
