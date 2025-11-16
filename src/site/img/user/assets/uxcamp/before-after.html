@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Before & After Comparison</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 100%;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .image-container {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 2/3;
+      overflow: hidden;
+    }
+    
+    .image-container img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    
+    #beforeImg {
+      transition: opacity 0.3s ease;
+    }
+    
+    button {
+      margin: 10px auto;
+      display:block;
+      padding: 12px 20px;
+      background: #0a2399;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 16px;
+    }
+    
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <button id="toggleBtn">Toggle guides</button>
+
+    <div class="image-container">
+      <img id="afterImg" src="2.jpeg" alt="With Guides">
+      <img id="beforeImg" src="1.jpeg" alt="Without Guides" style="opacity: 1">
+    </div>
+
+  </div>
+
+  <script>
+    const beforeImg = document.getElementById('beforeImg');
+    const toggleBtn = document.getElementById('toggleBtn');
+    
+    let showGuides = false;
+
+    toggleBtn.addEventListener('click', () => {
+      showGuides = !showGuides;
+      beforeImg.style.opacity = showGuides ? 0 : 1;
+    });
+  </script>
+</body>
+</html>
