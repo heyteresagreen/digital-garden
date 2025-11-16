@@ -1,14 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-09-16"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-10-25"}
 ---
 
 
 This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
 ## In progress
-
-### Tehanu (Books of Earthsea #4), Ursula K. Le Guin
-### American Dirt, Jeanine Cummins (book club)
+### The Husbands, Holly Gramazio (book club)
 ### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
@@ -16,6 +14,62 @@ This year I'm trying something a little different - writing a few notes for each
 <div class="book-list">
 
 ## Completed
+
+<div>
+
+![IMG_5986.jpeg|book cover|150](/img/user/assets/IMG_5986.jpeg)
+<div>
+
+### It Lasts Forever and Then It’s Over, Ann de Marcken
+
+</div>
+</div>
+
+<div>
+
+![IMG_0394.jpeg|book cover|150](/img/user/assets/IMG_0394.jpeg)
+<div>
+
+### The Other Wind (Books of Earthsea #6), Ursula K. Le Guin
+
+</div>
+</div>
+
+<div>
+
+![IMG_0393.jpeg|book cover|150](/img/user/assets/IMG_0393.jpeg)
+<div>
+
+### Tales from Earthsea (Books of Earthsea #5), Ursula K. Le Guin
+
+</div>
+</div>
+
+
+<div>
+
+![IMG_0391.jpeg|book cover|150](/img/user/assets/IMG_0391.jpeg)
+<div>
+
+### Tehanu (Books of Earthsea #4), Ursula K. Le Guin
+
+I was surprised to read reviews of this book afterwards that pointed out nothing happened, there was no magic, it was “too feminist”. To me the focus on the life of Tenar and her adopted daughter felt so alive and magical through the descriptions of the everyday routines and fears. But then again I do apparently like books where nothing much really happens (see the *Wayfarers* series that I read earlier in the year). Personally I found it more captivating than the earlier stories in this series of powerful magic and more of what you’d expect of this genre. In my minds eye I picture the story as if it were a Ghibli film with all the quirky detail and magic in a domestic setting. I felt Tenar’s pain at realising she’d raised her son to be an entitled jerk who won’t put away his dishes!
+</div>
+</div>
+
+
+<div>
+
+![IMG_0392.jpeg|book cover|150](/img/user/assets/IMG_0392.jpeg)
+<div>
+
+### American Dirt, Jeanine Cummins (book club)
+
+A thriller (or crime?) story about a mother and son on the run from a cartel, fleeing across Mexico to the supposed safety of the United States. The book starts with a bullet in the wall and a massacre, and doesn’t really let up the whole way. Engaging and entertaining, although I think it falls short of the author’s aim to help readers empathise with immigrants coming from South and Central America into the US. More than anything I think it makes Mexico out to be a dangerous place full of dangerous people, full of the usual stereotypes of how Mexico might appear to a white American woman with little real experience of the place. I don’t think authors should only write about what they’ve personally experienced, but I do think that it’s important to be aware of how you’re representing a group of people who don’t typically get the same access to tell their own stories, especially before getting all white saviour-y. 
+</div>
+</div>
+
+
 <div>
 
 ![IMG_0314.jpeg|book cover|150](/img/user/assets/IMG_0314.jpeg)
