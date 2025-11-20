@@ -6,7 +6,7 @@
 This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
 ## In progress
-### The Husbands, Holly Gramazio (book club)
+### Norwegian Wood, Haruki Murakami
 ### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
@@ -15,12 +15,37 @@ This year I'm trying something a little different - writing a few notes for each
 
 ## Completed
 
+
 <div>
 
 ![IMG_5986.jpeg|book cover|150](/img/user/assets/IMG_5986.jpeg)
 <div>
 
+### The Husbands, Holly Gramazio (book club)
+
+The premise of having an attic that keeps spawning new husbands (one at a time, no bigamy here) was intriguing and hilarious. If you can sort-of reset the world and get a new husband by sending the old one up into the attic, where does it end? I enjoyed how this book and the things the protagonist did grew steadily more unhinged as it got towards the end.
+
+</div>
+</div>
+<div>
+
+![IMG_6049.jpeg|book cover|150](/img/user/assets/IMG_6049.jpeg)
+<div>
+
+### Bindi, Kirli Sanders
+
+My first ever verse novel! Apparently its intended audience is mid to upper primary school kids, a similar age to the narrator Bindi, but the themes around connection to land and community are beautiful in the simple language. The illustrations and glossary of Gundungurra words used throughout bring it to life. 
+
+</div>
+</div>
+<div>
+
+![IMG_0395 1.jpeg|book cover|150](/img/user/assets/IMG_0395%201.jpeg)
+<div>
+
 ### It Lasts Forever and Then It’s Over, Ann de Marcken
+
+It's been a while since I've read a book about zombies! I found this one via [Celine Nguyen](https://www.personalcanon.com/i/174916830/life-after-life), who found it via [a review by Jon Repetti](https://fivegoodhours.substack.com/p/the-space-between-me-and-me-is-you). The story is told from the perspective of an unnamed zombie holding onto memories from her life, in between the killing and eating and her arm falling off. It's weird and beautiful.
 
 </div>
 </div>
@@ -31,7 +56,7 @@ This year I'm trying something a little different - writing a few notes for each
 <div>
 
 ### The Other Wind (Books of Earthsea #6), Ursula K. Le Guin
-
+A satisfying end to these trilogies, with dragons, the dead, wizards, a king, a princess, Tenar still trying to talk sense into everyone, and Ged still wanting to stay out of it and have a peaceful retirement.
 </div>
 </div>
 
@@ -41,6 +66,8 @@ This year I'm trying something a little different - writing a few notes for each
 <div>
 
 ### Tales from Earthsea (Books of Earthsea #5), Ursula K. Le Guin
+
+I'm finding myself really enjoying short stories and novellas lately. The ones in this book expand on the world and history of Earthsea, and explain how the school on Roke became a place only for men.
 
 </div>
 </div>

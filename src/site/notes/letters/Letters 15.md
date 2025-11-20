@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-15/","tags":["letters"],"noteIcon":"","created":"2025-11-06"}
+{"dg-publish":true,"permalink":"/letters/letters-15/","title":"What is “real” art anyway","tags":["letters"],"noteIcon":"","created":"2025-11-06"}
 ---
 
 Hi there,
@@ -29,4 +29,5 @@ Things since my last newsletter:
 * [[sketchbooks/Sketchbook 12\|Sketchbook 12]] aka my Bali travel sketchbook
 * [[art/Painting botanicals with Anya Brock\|Painting botanicals with Anya Brock]], the next best thing to getting an actual Anya Brock painting
 * [[art/Even more life drawing in watercolour\|Even more life drawing in watercolour]] (warning: contains illustrated nudity)
-* Many additions to [[books/Books I've read in 2025\|Books I've read in 2025]]
+* Many additions to [[books/Books I've read in 2025\|Books I've read in 2025]] (I now have an e-reader that can read library books!)
+

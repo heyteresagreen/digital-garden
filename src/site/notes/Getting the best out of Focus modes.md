@@ -18,7 +18,7 @@ When I’m working, I have app notifications turned off and only my calendar wid
 ## Fitness
 I go to a gym at my local shops, so in this mode I have a Home Screen that has a widget to open up my exercise plan in Notion but also one to display my grocery shopping list and library app. This one is location based, so it triggers when I enter the area and off when I exit it.
 
-**Swimming**
+## Swimming
 This is literally because I need to scan a QR code when arriving at my kids swimming lessons, and it’s easier to have a location based focus mode to have it on my Home Screen than remember to bring the card.
 ## Evening
 After the kids are in bed, I have a precious hour or so to myself. I’m trying to gently nudge myself to paint or draw during this time, so my Lock Screen background is a painting I did, and I don’t have any widgets displaying upcoming calendar events so I’m not pulled into thinking about work. 

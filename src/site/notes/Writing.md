@@ -15,14 +15,15 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]] <span class="posted">28 November 2023</span>
 - [[Fountain pens\|Fountain pens]] <span class="posted">13 November 2023</span>
 - [[Morning Pages\|Morning Pages]] <span class="posted">13 November 2023</span>
+- [[Using an iPad as a second screen\|Using an iPad as a second screen]] <span class="posted">11 August 2023</span>
 - [[Tiny watercolor kit\|Tiny watercolor kit]] <span class="posted">3 April 2023</span>
 - [[Thoughts on mending\|Thoughts on mending]] <span class="posted">19 February 2023</span>
 - [[My planning, writing and sketching tools\|My planning, writing and sketching tools]] <span class="posted">13 January 2023</span>
 - [[The Ugly Stage\|The Ugly Stage]] <span class="posted">11 January 2023</span>
 - [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] <span class="posted">3 January 2023</span>
 - [[My Obsidian workflow\|My Obsidian workflow]] <span class="posted">12 December 2022</span>
-- [[Procrastination through process\|Procrastination through process]] <span class="posted">29 November 2022</span>
 - [[About this site\|About this site]] <span class="posted">29 November 2022</span>
+- [[Procrastination through process\|Procrastination through process]] <span class="posted">29 November 2022</span>
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]] <span class="posted">29 May 2022</span>
 
 { .block-language-dataview}
