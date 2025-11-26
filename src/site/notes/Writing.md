@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[My planning, writing and sketching tools - 2025\|My planning, writing and sketching tools - 2025]] <span class="posted">23 November 2025</span>
 - [[Travel sketching kit\|Travel sketching kit]] <span class="posted">6 August 2025</span>
 - [[Reading things later\|Reading things later]] <span class="posted">15 February 2025</span>
 - [[Photographing artwork with a phone\|Photographing artwork with a phone]] <span class="posted">1 February 2025</span>
@@ -22,8 +23,8 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[The Ugly Stage\|The Ugly Stage]] <span class="posted">11 January 2023</span>
 - [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] <span class="posted">3 January 2023</span>
 - [[My Obsidian workflow\|My Obsidian workflow]] <span class="posted">12 December 2022</span>
-- [[About this site\|About this site]] <span class="posted">29 November 2022</span>
 - [[Procrastination through process\|Procrastination through process]] <span class="posted">29 November 2022</span>
+- [[About this site\|About this site]] <span class="posted">29 November 2022</span>
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]] <span class="posted">29 May 2022</span>
 
 { .block-language-dataview}

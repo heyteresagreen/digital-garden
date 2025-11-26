@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/my-planning-writing-and-sketching-tools/","title":"My planning, writing and sketching tools","tags":["systems","tools"],"noteIcon":"","created":"2023-01-13","updated":"2023-11-06"}
 ---
 
+I've made an updated version of this: [[My planning, writing and sketching tools - 2025\|My planning, writing and sketching tools - 2025]]
 
 The other day I was trying to explain the various tools I use for various purposes to a friend, and one thing became clear: I use a *lot* of different things. I like to tinker with productivity tools, and it's maybe complicating things more than necessary.
 
