@@ -32,7 +32,5 @@ I used to use Notion for work and personal notes, and Bear my reading notes, fle
 ## Large Language Models (AI)
 Strange that this one now has a place in my planning and writing stack. I still prefer to use AI as a [[books/book notes/Co-Intelligence Living and Working with AI\|co-intelligence]] as opposed to something I outsource writing to. I don't currently have any loyalty to a particular model other than using Gemini for work-related queries as we are given pro-level access to it. I don't usually have subscriptions to other LLM services unless I have something I particularly want to do with it; otherwise the free versions is enough to answer my needs.
 
-
-
 ## Digital sketching
 **iPad Air + Apple Pencil + Procreate.** These are my tools of choice for digital painting, and I'm so used to Procreate that I've struggled to use anything else for sketching. 
