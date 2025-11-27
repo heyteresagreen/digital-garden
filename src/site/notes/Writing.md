@@ -3,6 +3,7 @@
 ---
 
 I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+- [[Switching from Kindle to a Boox Go 7 e-ink reader\|Switching from Kindle to a Boox Go 7 e-ink reader]] <span class="posted">26 November 2025</span>
 - [[My planning, writing and sketching tools - 2025\|My planning, writing and sketching tools - 2025]] <span class="posted">23 November 2025</span>
 - [[Travel sketching kit\|Travel sketching kit]] <span class="posted">6 August 2025</span>
 - [[Reading things later\|Reading things later]] <span class="posted">15 February 2025</span>
