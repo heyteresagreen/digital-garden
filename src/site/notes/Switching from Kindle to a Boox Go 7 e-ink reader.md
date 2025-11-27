@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/switching-from-kindle-to-a-boox-go-7-e-ink-reader/","tags":["tools","reading"],"noteIcon":"","created":"2025-11-26"}
+{"dg-publish":true,"permalink":"/switching-from-kindle-to-a-boox-go-7-e-ink-reader/","tags":["tools"],"noteIcon":"","created":"2025-11-26"}
 ---
 
 I like to [[books/Books I've read in 2025\|read a lot]]. I especially like to read fiction to wind down before sleep, usually whilst lying down and with dim lighting, so I prefer the ease and ergonomics of ebooks over paper books. Kindle ebook readers have served me pretty well over the years, but  I’ve grown to resent being locked into the Amazon ecosystem and don’t want to continue buying books in it.
