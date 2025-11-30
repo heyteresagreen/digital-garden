@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notes/do-one-thing-at-a-time/","noteIcon":"","created":"2025-02-16"}
+{"dg-publish":true,"permalink":"/notes/do-one-thing-at-a-time/","tags":["productivity"],"noteIcon":"","created":"2025-02-16","updated":"2025-11-29"}
 ---
+
 
 Based on time and accuracy (e.g. comprehension of text read), multitasking is not as efficient as you think it is. Even with evolving expectations in our busy society, the human brain is limited in how much it can process at the same time, especially if it requires the same parts of the brain.
 

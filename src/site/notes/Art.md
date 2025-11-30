@@ -30,5 +30,6 @@ Some things I've made, sketched or painted. I like to dabble in different media 
 - [[art/Jellyfish\|Jellyfish]]: ![assets/jellyfish.jpeg|jellyfish.jpeg](/img/user/assets/jellyfish.jpeg)
 - [[art/Mr Roo\|Mr Roo]]: ![assets/roo.jpeg|roo.jpeg](/img/user/assets/roo.jpeg)
 - [[art/Magpie\|Magpie]]: ![assets/Magpie.jpeg|Magpie.jpeg](/img/user/assets/Magpie.jpeg)
+- [[notes/Painting\|Painting]]: \-
 
 { .block-language-dataview}

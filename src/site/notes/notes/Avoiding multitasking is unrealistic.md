@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notes/avoiding-multitasking-is-unrealistic/","tags":["productivity"],"noteIcon":"","created":"2025-02-16"}
+{"dg-publish":true,"permalink":"/notes/avoiding-multitasking-is-unrealistic/","tags":["productivity"],"noteIcon":"","created":"2025-02-16","updated":"2025-11-29"}
 ---
+
 
 We multitask because we get bored easily, and require a certain level of stimulation to remain interested. If that isn’t coming from the task at hand (e.g. jogging which I find very boring), we supplement it with something else.
 

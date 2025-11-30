@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notes/sewing-patterns-for-a-chill-wardrobe/","tags":["sewing","making"],"noteIcon":"","created":"2025-07-30"}
+{"dg-publish":true,"permalink":"/notes/sewing-patterns-for-a-chill-wardrobe/","tags":["sewing","making"],"noteIcon":"","created":"2025-07-30","updated":"2025-11-29"}
 ---
+
 
 I’ve been making some simple clothing that I haven’t been able to find easily in shops. So far I’ve been sticking to linen and trying to make some matching sets that can also be mixed in with my other clothes. It’s so satisfying to make something to fill a gap in my wardrobe, even if the construction is a little on the dodgy side as I’m learning.
 

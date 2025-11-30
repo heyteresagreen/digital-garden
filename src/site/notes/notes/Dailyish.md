@@ -1,6 +1,7 @@
 ---
-{"dg-publish":true,"permalink":"/notes/dailyish/","tags":["productivity"],"noteIcon":"","created":"2025-02-17"}
+{"dg-publish":true,"permalink":"/notes/dailyish/","tags":["productivity"],"noteIcon":"","created":"2025-02-17","updated":"2025-11-29"}
 ---
+
 
 Rather than a rigid commitment to doing something every single day without fail - a commitment that is destined to fail at some point - "dailyish" adds the light pressure of intending to do create a daily habit whilst acknowledging the reality that there will be times when this isn't possible. The focus is then not on getting an unbroken streak, but on doing the thing.
 
