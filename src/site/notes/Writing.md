@@ -24,8 +24,8 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[The Ugly Stage\|The Ugly Stage]] <span class="posted">11 January 2023</span>
 - [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] <span class="posted">3 January 2023</span>
 - [[My Obsidian workflow\|My Obsidian workflow]] <span class="posted">12 December 2022</span>
-- [[About this site\|About this site]] <span class="posted">29 November 2022</span>
 - [[Procrastination through process\|Procrastination through process]] <span class="posted">29 November 2022</span>
+- [[About this site\|About this site]] <span class="posted">29 November 2022</span>
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]] <span class="posted">29 May 2022</span>
 
 { .block-language-dataview}
