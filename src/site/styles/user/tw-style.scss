@@ -1,5 +1,5 @@
 $color-primary: hsl(0, 0%, 10%);
-$color-secondary: #0a2399;
+$color-secondary: #314399;
 $color-text: #53515d;
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: $color-primary;
@@ -24,6 +24,7 @@ body {
 
 .content {
     font-family: $font-family !important;
+    font-size:21px;
 }
 
 p {
@@ -98,6 +99,8 @@ h6 {
   //font-family: $font-family-sans-serif  !important;
   line-height: 1;
   letter-spacing: -0.01em;
+  color: $highlight !important;
+  font-weight: 500 !important;
  }
 
  h1 {
