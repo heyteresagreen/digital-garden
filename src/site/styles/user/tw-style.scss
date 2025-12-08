@@ -1,6 +1,6 @@
 $color-primary: hsl(0, 0%, 10%);
 $color-secondary: #314399;
-$color-text: #53515d;
+$color-text: #383741;
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: $color-primary;
 $color-box-background: white;
@@ -20,6 +20,10 @@ body {
   background: $color-background url(/img/user/assets/bg.png);
   padding-left: 1.7rem !important;
   padding-right: 1.7rem !important;
+}
+
+.header-meta {
+    font-family: $font-family-sans-serif;
 }
 
 .content {
@@ -153,7 +157,7 @@ LAYOUT
 ---------------------- */
 
 nav.filetree-sidebar, nav.navbar {
-  max-width: 650px;
+  max-width: 700px;
   margin: 1rem auto 3rem;
   position: relative !important;
   background: transparent;
@@ -221,7 +225,7 @@ nav.filetree-sidebar, nav.navbar {
 }
 
 .content {
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -235,7 +239,7 @@ aside .sidebar {
     right: auto;
     display: block !important;
     width: 100%;
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
