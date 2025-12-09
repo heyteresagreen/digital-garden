@@ -291,10 +291,20 @@ footer {
 /* ----------------------
 NOTE AND POST ELEMENTS
 ---------------------- */
+
+header {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
 .backlink-box {
   background: $color-box-background;
   padding: 1em;
   border-radius: $border-radius;
+}
+
+.timestamps {
+  justify-content: center;
 }
 
 .timestamps div{
