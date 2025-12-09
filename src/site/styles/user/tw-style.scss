@@ -299,15 +299,17 @@ NOTE AND POST ELEMENTS
 
 .timestamps div{
   clear: left;
+  font-size: 0.85rem;
 }
 
 a.tag {
   background: $color-accent;
   border-color: $color-accent;
-  padding: 4px 8px;
+  padding: 4px 6px;
   font-family: $font-family-sans-serif;
   margin-right: 5px;
   font-size: 0.85rem;
+  border-radius: $border-radius;
     &:hover {
     color: white;
     background-color: $highlight;
