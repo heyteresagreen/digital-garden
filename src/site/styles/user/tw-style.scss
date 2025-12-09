@@ -314,9 +314,17 @@ a.tag {
   }
 }
 
+/* wide images in articles */
+.content img {
+  @media (min-width: 1000px) {
+    max-width: 130%;
+    margin-left: -15%;
+  }
+}
+
 /* gallery pages */
 
-.gallery .block-language-dataview {
+.content.gallery .block-language-dataview {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
