@@ -306,7 +306,7 @@ a.tag {
   border-color: $color-accent;
   padding: 4px 8px;
   font-family: $font-family-sans-serif;
-  margin-right: 2px;
+  margin-right: 5px;
   font-size: 0.85rem;
     &:hover {
     color: white;
@@ -315,7 +315,7 @@ a.tag {
 }
 
 /* wide images in articles */
-.content img {
+.markdown-preview-view .content img:not([width] {
   @media (min-width: 1000px) {
     max-width: 130%;
     margin-left: -15%;
@@ -324,7 +324,7 @@ a.tag {
 
 /* gallery pages */
 
-.content.gallery .block-language-dataview {
+.markdown-preview-view .content.gallery .block-language-dataview {
   list-style-type: none;
   padding-left: 0;
   margin-bottom: 1em;
@@ -356,6 +356,7 @@ a.tag {
     height: 100%;
     object-fit: cover;
     object-position: left center;
+    margin-left: 0;
   }
 
   li {
