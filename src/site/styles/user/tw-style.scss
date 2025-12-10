@@ -20,8 +20,8 @@ body {
   color: $color-text !important;
   font-size: 1.12rem;
   background: $color-background url(/img/user/assets/bg.png);
-  padding-left: 1.7rem !important;
-  padding-right: 1.7rem !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
 .header-meta {
@@ -110,8 +110,14 @@ h6 {
  }
 
  h1 {
-  font-size: 2.2em !important;
+  font-size: 2em !important;
   letter-spacing: -0.03em;
+  line-height: 1.1 !important;
+
+  @media (min-width: 780px) { 
+    font-size: 2.2em !important;
+  } 
+    
  }
 
  h2 {
@@ -258,6 +264,12 @@ side {
   }
 }
 
+.backlink-box {
+  background: $color-box-background;
+  padding: 1em;
+  border-radius: $border-radius;
+}
+
 .sidebar .backlinks {
     border-radius: 4px;
     background-color: rgb(102 122 247 / 10%);
@@ -271,6 +283,7 @@ side {
     }
     .backlink-list {
       border: 0;
+      max-height: none;
       .backlink-card {
         margin-left: 0;
         a {
@@ -328,11 +341,7 @@ header {
   line-height: 1.1;
 }
 
-.backlink-box {
-  background: $color-box-background;
-  padding: 1em;
-  border-radius: $border-radius;
-}
+
 
 .timestamps {
   justify-content: center;
