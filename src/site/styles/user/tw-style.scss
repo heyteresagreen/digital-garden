@@ -262,8 +262,9 @@ side {
     border-radius: 4px;
     background-color: rgb(102 122 247 / 10%);
     font-family: $font-family-sans-serif;
-    padding: 1.5em 3em;
+    padding: 1.5em 2em;
     margin-bottom: 3em;
+    margin-top: 3em;
     .backlink-title {
       margin: 4px 0 8px;
       font-size: 16px !important;
@@ -272,6 +273,9 @@ side {
       border: 0;
       .backlink-card {
         margin-left: 0;
+        a {
+            text-decoration: none;
+        }
       }
     }
 
@@ -321,6 +325,7 @@ header {
 
 .content .markdown-rendered h1 {
   margin: 15px 0 5px;
+  line-height: 1.1;
 }
 
 .backlink-box {
