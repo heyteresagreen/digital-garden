@@ -327,7 +327,7 @@ a.tag {
 }
 
 /* wide images in articles */
-.markdown-preview-view .content img:not([width] {
+.markdown-preview-view .content img:not([width]) {
   @media (min-width: 1000px) {
     max-width: 130%;
     margin-left: -15%;
