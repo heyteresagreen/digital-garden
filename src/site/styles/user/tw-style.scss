@@ -258,6 +258,28 @@ side {
   }
 }
 
+.sidebar .backlinks {
+    border-radius: 4px;
+    background-color: rgb(102 122 247 / 10%);
+    font-family: $font-family-sans-serif;
+    padding: 1.5em 3em;
+    margin-bottom: 3em;
+    .backlink-title {
+      margin: 4px 0 8px;
+      font-size: 16px !important;
+    }
+    .backlink-list {
+      border: 0;
+      .backlink-card {
+        margin-left: 0;
+      }
+    }
+
+    .backlink[data-note-icon]::before {
+      margin-right: 5px;
+    }
+}
+
 footer {
   margin: 2em 0;
   font-size: 0.8em;
@@ -297,6 +319,10 @@ header {
     padding-bottom: 2em;
 }
 
+.content .markdown-rendered h1 {
+  margin: 15px 0 5px;
+}
+
 .backlink-box {
   background: $color-box-background;
   padding: 1em;
@@ -305,6 +331,7 @@ header {
 
 .timestamps {
   justify-content: center;
+  margin-top: 0;
 }
 
 .timestamps div{
@@ -315,7 +342,7 @@ header {
 a.tag {
   background: $color-accent;
   border-color: $color-accent;
-  padding: 4px 6px;
+  padding: 2px 6px;
   font-family: $font-family-sans-serif;
   margin-right: 5px;
   font-size: 0.85rem;
