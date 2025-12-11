@@ -55,7 +55,7 @@ It's been a while since I've read a book about zombies! I found this one via [Ce
 ![IMG_0394.jpeg|book cover|150](/img/user/assets/IMG_0394.jpeg)
 <div>
 
-### The Other Wind (Books of Earthsea #6), Ursula K. Le Guin
+### The Other Wind (Books of Earthsea \#6), Ursula K. Le Guin
 A satisfying end to these trilogies, with dragons, the dead, wizards, a king, a princess, Tenar still trying to talk sense into everyone, and Ged still wanting to stay out of it and have a peaceful retirement.
 </div>
 </div>
