@@ -1,12 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-11-20"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-12-11"}
 ---
 
 
 This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
+---
 ## In progress
-### Norwegian Wood, Haruki Murakami
+### A fisherman on the inland sea, Ursula K. Le Guin
 ### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
@@ -16,6 +17,16 @@ This year I'm trying something a little different - writing a few notes for each
 ## Completed
 
 
+<div>
+
+
+<div>
+
+### Norwegian Wood, Haruki Murakami
+
+The book that made Murakami famous in Japan, but in my opinion not one of his better ones. The story follows a 19 year old man studying at university, sorting out his feelings following the suicide of his best friend and interest from female characters that didn't really make sense to me. It deals with grief, mental illness and sexuality but not particularly sensitively.
+</div>
+</div>
 <div>
 
 ![IMG_5986.jpeg|book cover|150](/img/user/assets/IMG_5986.jpeg)
