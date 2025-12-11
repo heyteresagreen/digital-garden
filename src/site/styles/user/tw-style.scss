@@ -107,18 +107,17 @@ blockquote {
 // }
 
 // icons hr
-hr {
+.markdown-rendered hr {
   height: auto;
   color: $color-accent;
   text-align: center;
+
   &:after {
-    content: "★";
-    font-size: 2em;
-    text-shadow:
-      -2em 0,
-      -1em 0,
-       1em 0,
-       2em 0;
+    content: "✀ ✀ ✀";
+    content: "✐ ✎ ✐ ✎ ✐ ✎";
+    content: "◐ ◒ ◑ ◓ ◐ ◒ ◑ ◓ ◐ ◒ ◑ ◓ ◐ ◒ ◑ ◓";
+    content: "◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡";
+    font-size: 0.5em;
   }
 }
 
