@@ -337,19 +337,23 @@ side {
 }
 
 .sidebar .backlinks {
-    border-radius: 4px;
-    background-color: rgb(102 122 247 / 10%);
+    //border-radius: 4px;
+    //background-color: rgb(102 122 247 / 10%);
     font-family: $font-family-sans-serif;
     padding: 1.5em 2em;
-    margin-bottom: 3em;
-    margin-top: 3em;
+    //margin-bottom: 3em;
+    //margin-top: 3em;
     .backlink-title {
       margin: 4px 0 8px;
       font-size: 16px !important;
+      position: relative;
+      z-index:1;
     }
     .backlink-list {
       border: 0;
       max-height: none;
+      position: relative;
+      z-index:1;
       .backlink-card {
         margin-left: 0;
         a {
@@ -361,6 +365,16 @@ side {
     .backlink[data-note-icon]::before {
       margin-right: 5px;
     }
+}
+
+.sidebar .backlinks::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    filter: url(#visible-displace);
+    z-index: 0;
+    box-shadow: 1px 0px 3px rgb(185 140 129 / 20%);
 }
 
 footer {
