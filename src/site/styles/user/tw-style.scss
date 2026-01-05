@@ -737,53 +737,79 @@ input.btn {
 //     padding: 4px 0;
 // }
 
-/* Container for the Dataview Table/List */
-.dataview.table-view-table {
-    display: block; /* Override default table display */
+.mosaic {
+  max-width: none;
+
+  /* Container for the Dataview Table/List */
+  .dataview.table-view-table {
+      display: block; /* Override default table display */
+  }
+
+  .dataview.table-view-table tbody {
+      column-count: 2; /* Adjust number of columns here */
+      column-gap: 0.5rem;
+      display: block;
+      width: 100%;
+  }
+
+  /* Individual Cards (the rows) */
+  .dataview.table-view-table tr {
+      display: inline-block; /* Required for column-break logic */
+      width: 100%;
+      margin-bottom: 0.5rem;
+      break-inside: avoid; /* Prevents card from splitting across columns */
+      background: none; /* Matches your image background */
+      padding: 1rem;
+  }
+
+  /* Hide table headers and cells that aren't needed in card view */
+  .dataview.table-view-table thead {
+      display: none;
+  }
+
+  .dataview.table-view-table td {
+      display: block;
+      padding: 0.25rem 0;
+      border: none;
+  }
+
+  /* Styling the content inside cards */
+  .dataview.table-view-table td:first-child a {
+      font-size: 1.5rem;
+      text-decoration: none;
+  }
+
+  .dataview.table-view-table img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-top: 10px;
+  }
+
+
+
+  
+
 }
 
-.dataview.table-view-table tbody {
-    column-count: 2; /* Adjust number of columns here */
-    column-gap: 0.5rem;
-    display: block;
-    width: 100%;
+.markdown-preview-view:not(.cards) .table-view-table>tbody>tr>td, .markdown-source-view.mod-cm6:not(.cards) .table-view-table>tbody>tr>td {
+      max-width: none !important;
+  }
+
+  .markdown-rendered td {
+    font-size: 1rem;
+  }
+
+  /* Category */
+.dataview.table-view-table tbody td:nth-child(1) {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: $font-family-sans-serif;
 }
 
-/* Individual Cards (the rows) */
-.dataview.table-view-table tr {
-    display: inline-block; /* Required for column-break logic */
-    width: 100%;
-    margin-bottom: 1.5rem;
-    break-inside: avoid; /* Prevents card from splitting across columns */
-    background: #fdfaf5; /* Matches your image background */
-    border: 1px solid #e0ddd5;
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-/* Hide table headers and cells that aren't needed in card view */
-.dataview.table-view-table thead {
-    display: none;
-}
-
-.dataview.table-view-table td {
-    display: block;
-    padding: 0.25rem 0;
-    border: none;
-}
-
-/* Styling the content inside cards */
-.dataview.table-view-table td:first-child a {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #1a3a82; /* Matches your blue header */
-    text-decoration: none;
-}
-
-.dataview.table-view-table img {
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-top: 10px;
+/* Style the cells in the Date Posted column */
+.dataview.table-view-table tbody td:nth-child(5) {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-family: $font-family-sans-serif;
 }
