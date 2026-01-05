@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/writing-1/","contentClasses":"cards","noteIcon":""}
+{"dg-publish":true,"permalink":"/writing-1/","contentClasses":"mosaic","noteIcon":""}
 ---
 
 
