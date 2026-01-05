@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/even-more-life-drawing-in-watercolour/","tags":["art","not-writing","life-drawing","watercolour"],"noteIcon":"","created":"2025-10-30"}
+{"dg-publish":true,"permalink":"/art/even-more-life-drawing-in-watercolour/","tags":["#art","#not-writing","#life-drawing","#watercolour"],"noteIcon":"","created":"2025-10-30"}
 ---
 
 ![assets/IMG_7514-e9068564.jpeg|watercolour sketch of nude woman reclining](/img/user/assets/IMG_7514-e9068564.jpeg)
