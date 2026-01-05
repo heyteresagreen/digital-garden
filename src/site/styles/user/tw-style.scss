@@ -1,6 +1,6 @@
 $color-primary: hsl(0, 0%, 10%);
 $color-secondary: #314399;
-$color-text: #383741;
+$color-text: #4e4c5e;
 $color-subtext: hsl(0, 0%, 30%);
 $color-border: $color-primary;
 $color-box-background: white;
@@ -66,7 +66,7 @@ body::before {
 
 .content {
     font-family: $font-family !important;
-    font-size:21px;
+    font-size:20px;
 }
 
 p {
@@ -110,12 +110,10 @@ img {
   // }
 
 
-blockquote {
-  padding: 1.5em;
-  margin: 0;
-  font-size: 0.88em;
-  background: $color-box-background;
-  border-radius: $border-radius;
+.content blockquote {
+  font-size: 0.8em;
+  border-left: 3px solid $color-accent;
+  font-family: $font-family-sans-serif;
   p {
     margin: 0;
   }
@@ -197,9 +195,11 @@ h6 {
 .content a, .sidebar a {
   transition: background-color 300ms;
   color: $color-secondary !important;
+  text-decoration-thickness: .05em;
+  text-underline-offset: 0.15em;
   &:hover {
-    color: white  !important;
-    background-color: $color-secondary;
+    text-decoration-thickness: .1em;
+    background: #ffe3dc;
   }
   &.internal-link:after,
   &.footnote:after,
@@ -708,4 +708,82 @@ input.btn {
   font-size: 0.9rem;
   clear: both;
   display: block;
+}
+
+
+/* This targets the table when the .cards class is present */
+// .cards table tbody {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+//     gap: 1rem;
+//     border: none;
+// }
+
+// .cards table tr {
+//     display: flex;
+//     flex-direction: column;
+//     border: 1px solid var(--background-modifier-border);
+//     border-radius: 8px;
+//     padding: 1rem;
+//     background: var(--background-secondary);
+// }
+
+// .cards table thead {
+//     display: none; /* Hide table headers */
+// }
+
+// .cards table td {
+//     border: none;
+//     padding: 4px 0;
+// }
+
+/* Container for the Dataview Table/List */
+.dataview.table-view-table {
+    display: block; /* Override default table display */
+}
+
+.dataview.table-view-table tbody {
+    column-count: 3; /* Adjust number of columns here */
+    column-gap: 1.5rem;
+    display: block;
+    width: 100%;
+}
+
+/* Individual Cards (the rows) */
+.dataview.table-view-table tr {
+    display: inline-block; /* Required for column-break logic */
+    width: 100%;
+    margin-bottom: 1.5rem;
+    break-inside: avoid; /* Prevents card from splitting across columns */
+    background: #fdfaf5; /* Matches your image background */
+    border: 1px solid #e0ddd5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Hide table headers and cells that aren't needed in card view */
+.dataview.table-view-table thead {
+    display: none;
+}
+
+.dataview.table-view-table td {
+    display: block;
+    padding: 0.25rem 0;
+    border: none;
+}
+
+/* Styling the content inside cards */
+.dataview.table-view-table td:first-child a {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a3a82; /* Matches your blue header */
+    text-decoration: none;
+}
+
+.dataview.table-view-table img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
 }
