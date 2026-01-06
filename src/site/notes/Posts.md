@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/posts/","contentClasses":"mosaic posts-index","noteIcon":""}
 ---
 
-You can see some recent posts below, or browse by category.
 
 * [[Art\|Art]]
 * [[Books\|Books]]
