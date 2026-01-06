@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/posts/","contentClasses":"mosaic","noteIcon":""}
+{"dg-publish":true,"permalink":"/posts/","contentClasses":"mosaic posts-index","noteIcon":""}
 ---
 
 You can see some recent posts below, or browse by category.
@@ -12,7 +12,7 @@ You can see some recent posts below, or browse by category.
 * [[Sketchnotes\|Sketchnotes]]
 * [[Writing\|Writing]]
 
-## Recently added
+## Recently
 
 | Category                        | Title                                                                                                                                | Image (Local)                                              | Image (Web)                                         | Summary                                                                                                                                                                                                                                 | Date Posted      |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
