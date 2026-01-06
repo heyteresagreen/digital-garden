@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/notes/digital-gardening/","tags":["#writing","#reading","#learning"],"noteIcon":"","created":"2025-12-07","updated":"2025-12-07"}
+{"dg-publish":true,"permalink":"/notes/digital-gardening/","tags":["writing","reading","learning"],"noteIcon":"","created":"2022-12-11","updated":"2025-12-07"}
 ---
 
 # Digital Gardening
