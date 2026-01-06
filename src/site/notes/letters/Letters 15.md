@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-15/","title":"What is “real” art anyway","tags":["letters"],"noteIcon":"","created":"2025-11-06"}
+{"dg-publish":true,"permalink":"/letters/letters-15/","title":"What is “real” art anyway","tags":["#letters"],"noteIcon":"","created":"2025-11-06"}
 ---
 
 Hi there,
