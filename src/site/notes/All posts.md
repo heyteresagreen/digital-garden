@@ -2,15 +2,7 @@
 {"dg-publish":true,"permalink":"/all-posts/","contentClasses":"mosaic","noteIcon":""}
 ---
 
-You can see some recent posts below, or browse by category.
 
-* [[Art\|Art]]
-* [[Articles\|Articles]]
-* [[Books\|Books]]
-* [[Letters\|Letters]]
-* [[notes/Notes\|Notes]]
-* [[Sketchbooks\|Sketchbooks]]
-* [[Sketchnotes\|Sketchnotes]]
 | Category                        | Title                                                                                                                                | Image (Local)                                              | Image (Web)                                         | Summary                                                                                                                                                                                                                                 | Date Posted      |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------- |
 | [[notes/Notes\|Notes]]       | [[notes/Digital Gardening\|Digital Gardening]]                                                                                    |                                                            |                                                     | A digital garden is an alternative to blogs or essays, in that they aren’t organised linearly by time. Posts or notes might start as incomplete ideas that will be added to or evolved over time, growing more connected to each other. | 7 December 2025  |
