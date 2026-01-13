@@ -31,7 +31,7 @@ body {
   padding-right: 1rem !important;
   margin: 0;
   min-height: 100vh;
-  background-color: white;
+  background-color: #fbf4f3;
 }
 
 body::before {
@@ -42,9 +42,11 @@ body::before {
   pointer-events: none;
 
   /* 2. THE GRAIN (Top Layer) */
+  /* 
   background-image: 
     url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='1.5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"),
     radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
+    */
 
   /* 3. THE BLEND SETTINGS */
   /* This tells the browser how to mix the two background-images above */
@@ -547,8 +549,7 @@ HOMEPAGE
     font-size: 1.5em;
     font-family: $font-family !important;
     @media (min-width: 600px) {
-      width: 70%;
-      float: left; 
+      width: 70%; 
       max-width: 550px;
     }
   }
