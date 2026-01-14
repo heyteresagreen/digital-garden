@@ -704,6 +704,9 @@ input.btn {
 
   /*-- Posts page --*/
 
+  
+
+
   .posts-index {
     ul{
       padding-left: 0;
@@ -739,6 +742,7 @@ input.btn {
         }
     }
 
+    
     /* title */
     .dataview.table-view-table td:nth-child(2) {
       font-size: 1.5rem;
@@ -760,6 +764,8 @@ input.btn {
         margin-top: 0.3rem;
     }
   }
+
+  
 
     /*-- Notes page --*/
 
@@ -786,6 +792,31 @@ input.btn {
         max-width: 100%;
         margin-left: 0;
     }
+}
+
+.art-index.mosaic {
+
+  .dataview.table-view-table tbody {
+    column-gap: 2.5rem;
+  }
+
+  .dataview.table-view-table td:nth-child(1) { 
+      display:none;
+    }
+
+  .dataview.table-view-table tr {
+      padding: 1rem 0;
+      border-bottom: 0
+  }    
+  .dataview.table-view-table img {
+    margin-top: 0;
+    border: 2px solid $color-bright;
+    transition: 300ms;
+  }
+  .dataview.table-view-table a:hover img {
+    border: 2px solid $color-accent;
+    transition: 200ms;
+  }
 }
 
 .table-view-table>thead>tr, .table-view-table>tbody>tr {
