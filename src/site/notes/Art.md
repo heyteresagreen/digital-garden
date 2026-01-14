@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple mosaic art-index","noteIcon":""}
+{"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple mosaic art-index posts-index","noteIcon":""}
 ---
 
 Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
