@@ -31,38 +31,25 @@ body {
   padding-right: 1rem !important;
   margin: 0;
   min-height: 100vh;
-  background-color: white;
+  background-color: #fbf4f3;
+  background-image: radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
 }
 
-body::before {
-  content: "";
+@media (hover: hover) {
+  body::before {
+    content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-
-  /* 2. THE GRAIN (Top Layer) */
-   
   background-image: 
     url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='1' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
-    
-
-  /* 3. THE BLEND SETTINGS */
-  /* This tells the browser how to mix the two background-images above */
   background-blend-mode: color-burn; 
   background-size: 900px 900px, auto;
-  
-  /* Reset opacity to 1 because color-burn handles the transparency/intensity */
   opacity: 1; 
-}
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
-  body::before {
-    /* 1. Make the frequency lower to create larger clumps for mobile */
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='1.5' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 25 -10'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"), radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
   }
 }
+
 
 .header-meta {
     font-family: $font-family-sans-serif;
