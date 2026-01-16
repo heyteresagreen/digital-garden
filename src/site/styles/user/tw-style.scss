@@ -7,18 +7,16 @@
 $pink: #ffb4a3;
 $pink-light: #ffe3dc;
 $pink-lightest: #fcf4f2;
+$blue: #314399;
+$grey: #4e4c5e;
 
-$color-primary: hsl(0, 0%, 10%);
-$color-secondary: #314399;
-$color-text: #4e4c5e;
-$color-subtext: hsl(0, 0%, 30%);
-$color-border: $color-primary;
-$color-box-background: white;
-$color-background: #faf3f1;
-$color-bright: #fcf4f2;
-$color-accent: #ffb4a3;
-$highlight: #314399;
+$color-primary: $pink;
+$color-secondary: $blue;
+$color-text: $grey;
+$color-background: $pink-lightest;
+$color-accent: $pink-light;
 $border-radius: 4px;
+
 $font-family: Newsreader, Georgia, -apple-system, BlinkMacSystemFont, Segoe UI, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $font-family-sans-serif: Avenir, Helvetica, Arial, sans-serif;
 
@@ -31,10 +29,11 @@ body {
   padding-right: 1rem !important;
   margin: 0;
   min-height: 100vh;
-  background-color: #fbf4f3;
+  background-color: $color-background;
   background-image: radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
 }
 
+/* background texture doesn't work well on ipads or mobile, so only applying to non-touch devices*/
 @media (hover: hover) {
   body::before {
     content: "";
@@ -50,16 +49,6 @@ body {
   }
 }
 
-
-.header-meta {
-    font-family: $font-family-sans-serif;
-}
-
-.content {
-    font-family: $font-family !important;
-    font-size:20px;
-}
-
 p {
   margin-bottom: 1.5rem;
 }
@@ -71,7 +60,7 @@ li {
 
 time {
   display: block;
-  color: $color-subtext;
+  color: $color-text;
   margin: 0.5em 0 1em;
 }
 
@@ -83,20 +72,19 @@ img {
   border-radius: $border-radius;
 }
 
-
 .content blockquote {
   font-size: 0.8em;
-  border-left: 3px solid $color-accent;
+  border-left: 3px solid $color-primary;
   font-family: $font-family-sans-serif;
   p {
     margin: 0;
   }
 }
 
-// icons hr
+// icons horizontal rule
 .markdown-rendered hr {
   height: auto;
-  color: $color-accent;
+  color: $color-primary;
   text-align: center;
   border-top: 0;
 
@@ -120,7 +108,7 @@ h6 {
   padding-bottom: 0;
   line-height: 1;
   letter-spacing: -0.01em;
-  color: $highlight !important;
+  color: $color-secondary !important;
   font-weight: 500 !important;
  }
 
@@ -151,7 +139,7 @@ h6 {
   text-underline-offset: 0.15em;
   &:hover {
     text-decoration-thickness: .1em;
-    background: #ffe3dc;
+    background: $color-accent;
   }
   &.internal-link:after,
   &.footnote:after,
@@ -161,7 +149,7 @@ h6 {
 }
 
 code {
-  background: #f5f5f5;
+  background: white;
   padding: 0.1em 0.2em;
   border-radius: 4px;
 }
@@ -181,6 +169,7 @@ code {
 /* ----------------------
 LAYOUT
 ---------------------- */
+
 
 nav.filetree-sidebar, nav.navbar {
   max-width: 490px;
@@ -230,14 +219,14 @@ nav.filetree-sidebar, nav.navbar {
         display: block;
         padding: 0;
         font-family: $font-family-sans-serif;
-        font-weight: bold;
+        //font-weight: bold;
         border-bottom: 0;
         color: $color-text;
         text-decoration: none;
         &:hover {
           background-color: transparent;
           color: $color-secondary;
-          box-shadow: inset 0px -0.25em 0px #ffb4a3;
+          box-shadow: inset 0px -0.25em 0px $color-primary;
           transition: box-shadow 0.2s;
         }
       }
@@ -253,6 +242,8 @@ nav.filetree-sidebar, nav.navbar {
 .content {
   max-width: 700px;
   margin: 0 auto;
+  font-family: $font-family !important;
+  font-size:20px;
 }
 
 content {
@@ -269,6 +260,10 @@ aside .sidebar {
     margin: 0 auto;
 }
 
+.header-meta {
+    font-family: $font-family-sans-serif;
+}
+
 side, time {
   font-family: $font-family-sans-serif;
 }
@@ -283,18 +278,14 @@ side {
 }
 
 .backlink-box {
-  background: $color-box-background;
+  background: white;
   padding: 1em;
   border-radius: $border-radius;
 }
 
 .sidebar .backlinks {
-    //border-radius: 4px;
-    //background-color: rgb(102 122 247 / 10%);
     font-family: $font-family-sans-serif;
     padding: 1.5em 2em;
-    //margin-bottom: 3em;
-    //margin-top: 3em;
     .backlink-title {
       margin: 4px 0 8px;
       font-size: 16px !important;
@@ -361,20 +352,19 @@ header {
 .timestamps {
   justify-content: center;
   margin-top: 0;
+  div {
+  clear: left;
+  font-size: 0.85rem;
+}
 }
 
 @media (max-width: 700px) {
-.timestamps {
-  display: block;
-  div {
+  .timestamps {
     display: block;
+    div {
+      display: block;
+    }
   }
-}
-}
-
-.timestamps div{
-  clear: left;
-  font-size: 0.85rem;
 }
 
 .header-tags {
@@ -390,8 +380,8 @@ a.tag {
   font-size: 0.85rem;
   border-radius: $border-radius;
     &:hover {
-    color: white;
-    background-color: $highlight;
+    color: white !important;
+    background-color: $color-secondary;
   }
 }
 
@@ -519,7 +509,7 @@ figure {
 }
 
 q {
-  background: #f9cdc28f;
+  background: $color-background;
 }
 
 /* ----------------------
@@ -594,17 +584,17 @@ input#bd-email {
 }
 
 input.btn {
-  background: #ffb4a3;
-  border: 1px solid #ffb4a3;
+  background: $color-primary;
+  border: 1px solid $color-primary;
   color: $color-secondary;
   padding: 0.25em 0.5em;
   font-family: $font-family;
   transition:  0.2s;
 
   &:hover {
-    background: $color-primary;
-    color: #ffb4a3;
-    border-color: #ffb4a3;
+    background: $color-text;
+    color: $color-primary;
+    border-color: $color-primary;
     cursor: pointer;
     
   }
@@ -674,7 +664,7 @@ input.btn {
       break-inside: avoid;
       background: none; 
       padding: 1.5rem 0;
-      border-bottom: 1px solid #ffe2df;
+      border-bottom: 1px solid $color-accent;
   }
 
   /* Hide table headers and cells that aren't needed in card view */
@@ -704,9 +694,6 @@ input.btn {
 
   /*-- Posts page --*/
 
-  
-
-
   .posts-index {
     ul{
       padding-left: 0;
@@ -717,14 +704,15 @@ input.btn {
         
         a {
           font-size: 0.85rem;
-          font-family: Avenir, Helvetica, Arial, sans-serif;
+          font-family: $font-family-sans-serif;
           text-decoration: none !important;
           text-transform: uppercase;
           padding: 0.25em 0.6em;
           font-weight:bold;
           background: $pink-light;
           border: 1px solid  $pink-light;
-          margin: 0 5px;
+          margin: 5px;
+          display: inline-block;
           &:hover {
             border: 1px solid lighten($color-secondary,20%);
           }
@@ -753,6 +741,7 @@ input.btn {
         }
     }
 
+    /* hide image that's just for Obsidian viewing */
     .dataview.table-view-table td:nth-child(3) {
       display:none;
     }
@@ -794,6 +783,7 @@ input.btn {
     }
 }
 
+/* index of thumbnail images, gallery */
 .art-index.mosaic {
 
   .dataview.table-view-table tbody {
@@ -810,11 +800,11 @@ input.btn {
   }    
   .dataview.table-view-table img {
     margin-top: 0;
-    border: 2px solid $color-bright;
+    border: 2px solid $color-background;
     transition: 300ms;
   }
   .dataview.table-view-table a:hover img {
-    border: 2px solid $color-accent;
+    border: 2px solid $color-primary;
     transition: 200ms;
   }
 }
