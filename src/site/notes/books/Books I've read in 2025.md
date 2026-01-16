@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["reading","books"],"noteIcon":"","created":"2025-01-18","updated":"2025-12-11"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["#reading","#books"],"noteIcon":"","created":"2025-01-18","updated":"2026-01-16"}
 ---
 
 
@@ -19,35 +19,46 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-
+![IMG_7652.jpeg|book cover|150](/img/user/assets/IMG_7652.jpeg)
 <div>
 
 ### Babel, or the Necessity of Violence, R F Kuang
+
+When I started this very long audio book in the last couple weeks of 2025 I didn’t expect to finish it. But I was quickly hooked (and also forced to rest a back injury) so managed to end it on the last day of the year. 
+
+Set in an alternate universe Oxford University in the 1830s, Babel felt to me like a classic magic school book, with the added twist of centering non-white characters in a very white, male, colonialist environment. The half-Chinese main character, Robin, struggles with both racism and the guilt that comes with being sometimes-white-passing and a model minority. There’s the internal conflict in enjoying the privilege that comes with being aligned with the colonisers, versus the reality of what that means for the main character's homelands. The magic system, based around silver and translation, is unique. 
+
+This was interesting to read after other books featuring magic schools (albeit more typical ones), *A Wizard of Earthsea* and *The Name of the Wind*. I was also playing a *Professor Layton* game at the time and initially wanted to compare the two professors, but it quickly became clear that gentle Professor Layton and c Professor Lovell are two very different sorts of guardians.reality of what that means for the main character's homelands. The magic system, based around silver and translation, is unique. 
+
+This was interesting to read after other books featuring magic schools (albeit more typical ones), *A Wizard of Earthsea* and *The Name of the Wind*. I was also playing a *Professor Layton* game at the time and initially wanted to compare the two professors, but it quickly became clear that gentle Professor Layton and cruel Professor Lovell are two very different sorts of guardians.
+
 </div>
 </div>
+<div>
+
+![IMG_7651.jpeg|book cover|150](/img/user/assets/IMG_7651.jpeg)
 
 <div>
 
+### A fisherman of the inland sea, Ursula K. Le Guin
 
-<div>
+Short stories have such a small amount of time to hit you hard, and this is what Le Guin’s do here. These are the first of her science fiction stories I’ve read, having completed the Earthsea fantasy cycles this year. The book introduced some ideas that she uses in other books, like the ansible for communication during space travel, and the Nearly As Fast As Light (NAFAL) speed. The final story that gives the collection its title was the most interesting to me, getting mind bendy on the time dilution effects of space travel paired with complex family structures. It was interesting reading it just after *To be taught, if fortunate*, which feels almost like it could be in an adjacent world.
 
-### A fisherman on the inland sea, Ursula K. Le Guin
 </div>
 </div>
-
 <div>
 
+![IMG_7649.jpeg|book cover|150](/img/user/assets/IMG_7649.jpeg)
 
 <div>
-
 ### To be taught, if fortunate, Becky Chambers
+
+I rounded out all my Becky Chambers books with this novella about four explorers visiting planets to learn and study, rather than conquer. As usual for Chambers it’s less about plot, more about the characters, their relationships and internal struggles, and just a refreshingly humble perspective on humans encountering other worlds. 
 </div>
 </div>
-
-
 <div>
 
-
+![IMG_7648.jpeg|book cover|150](/img/user/assets/IMG_7648.jpeg)
 <div>
 
 ### Norwegian Wood, Haruki Murakami
