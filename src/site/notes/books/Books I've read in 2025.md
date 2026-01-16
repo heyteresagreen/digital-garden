@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","tags":["#reading","#books"],"noteIcon":"","created":"2025-01-18","updated":"2026-01-16"}
+{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","noteIcon":"","created":"2025-01-18","updated":"2026-01-16"}
 ---
 
 
