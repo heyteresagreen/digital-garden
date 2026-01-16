@@ -28,9 +28,7 @@ When I started this very long audio book in the last couple weeks of 2025 I didn
 
 Set in an alternate universe Oxford University in the 1830s, Babel felt to me like a classic magic school book, with the added twist of centering non-white characters in a very white, male, colonialist environment. The half-Chinese main character, Robin, struggles with both racism and the guilt that comes with being sometimes-white-passing and a model minority. There’s the internal conflict in enjoying the privilege that comes with being aligned with the colonisers, versus the reality of what that means for the main character's homelands. The magic system, based around silver and translation, is unique. 
 
-This was interesting to read after other books featuring magic schools (albeit more typical ones), *A Wizard of Earthsea* and *The Name of the Wind*. I was also playing a *Professor Layton* game at the time and initially wanted to compare the two professors, but it quickly became clear that gentle Professor Layton and c Professor Lovell are two very different sorts of guardians.reality of what that means for the main character's homelands. The magic system, based around silver and translation, is unique. 
-
-This was interesting to read after other books featuring magic schools (albeit more typical ones), *A Wizard of Earthsea* and *The Name of the Wind*. I was also playing a *Professor Layton* game at the time and initially wanted to compare the two professors, but it quickly became clear that gentle Professor Layton and cruel Professor Lovell are two very different sorts of guardians.
+This was interesting to read after other books featuring magic schools (albeit more typical ones), *A Wizard of Earthsea* and *The Name of the Wind*. I was also playing a *Professor Layton* game at the time and initially wanted to compare the two professors, but it quickly became clear that gentle Professor Layton and Professor Lovell are two very different sorts of guardians.
 
 </div>
 </div>
@@ -51,6 +49,7 @@ Short stories have such a small amount of time to hit you hard, and this is what
 ![IMG_7649.jpeg|book cover|150](/img/user/assets/IMG_7649.jpeg)
 
 <div>
+
 ### To be taught, if fortunate, Becky Chambers
 
 I rounded out all my Becky Chambers books with this novella about four explorers visiting planets to learn and study, rather than conquer. As usual for Chambers it’s less about plot, more about the characters, their relationships and internal struggles, and just a refreshingly humble perspective on humans encountering other worlds. 
