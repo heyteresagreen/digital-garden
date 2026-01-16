@@ -7,7 +7,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 ---
 ## In progress
-### A fisherman on the inland sea, Ursula K. Le Guin
+
 ### Agile Experience Design (2012), Lindsay Radcliffe and Marc McNeill
 
 ---
@@ -15,6 +15,34 @@ This year I'm trying something a little different - writing a few notes for each
 <div class="book-list">
 
 ## Completed
+
+
+<div>
+
+
+<div>
+
+### Babel, or the Necessity of Violence, R F Kuang
+</div>
+</div>
+
+<div>
+
+
+<div>
+
+### A fisherman on the inland sea, Ursula K. Le Guin
+</div>
+</div>
+
+<div>
+
+
+<div>
+
+### To be taught, if fortunate, Becky Chambers
+</div>
+</div>
 
 
 <div>
