@@ -1,36 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/art/","contentClasses":"gallery simple","tags":["not-writing"],"noteIcon":""}
+{"dg-publish":true,"permalink":"/art/","contentClasses":"mosaic art-index posts-index books","noteIcon":""}
 ---
 
+Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]]..
 
-Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety! You might also like to see my [[Sketchbooks\|sketchbooks]].
-
-- [[art/Self portrait in gouache\|Self portrait in gouache]]: ![assets/IMG_8771.jpeg|IMG_8771.jpeg](/img/user/assets/IMG_8771.jpeg)
-- [[art/Even more life drawing in watercolour\|Even more life drawing in watercolour]]: ![assets/IMG_7514-e9068564.jpeg|IMG_7514-e9068564.jpeg](/img/user/assets/IMG_7514-e9068564.jpeg)
-- [[art/Painting botanicals with Anya Brock\|Painting botanicals with Anya Brock]]: ![assets/IMG_7601-f2dcb9fb.jpeg|IMG_7601-f2dcb9fb.jpeg](/img/user/assets/IMG_7601-f2dcb9fb.jpeg)
-- [[art/Peachtober digital sketches\|Peachtober digital sketches]]: ![assets/IMG_0366.jpeg|IMG_0366.jpeg](/img/user/assets/IMG_0366.jpeg)
-- [[art/Life drawing the male figure\|Life drawing the male figure]]: ![assets/IMG_4498-5bbf1280.jpeg|IMG_4498-5bbf1280.jpeg](/img/user/assets/IMG_4498-5bbf1280.jpeg)
-- [[art/Charcoal portrait\|Charcoal portrait]]: ![assets/IMG_3782-5c80235a.jpeg|IMG_3782-5c80235a.jpeg](/img/user/assets/IMG_3782-5c80235a.jpeg)
-- [[art/Portrait - Sabrina\|Portrait - Sabrina]]: ![assets/steph-art-sessions 3-0cf7a37d.jpeg|steph-art-sessions 3-0cf7a37d.jpeg](/img/user/assets/steph-art-sessions%203-0cf7a37d.jpeg)
-- [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]: ![assets/life drawing 20-f319b092.jpeg|life drawing 20-f319b092.jpeg](/img/user/assets/life%20drawing%2020-f319b092.jpeg)
-- [[art/Playing with soft pastels\|Playing with soft pastels]]: ![assets/IMG_3473.jpeg|IMG_3473.jpeg](/img/user/assets/IMG_3473.jpeg)
-- [[art/Jury duty sketches\|Jury duty sketches]]: ![assets/sketchbook11 2-225c1279.jpeg|sketchbook11 2-225c1279.jpeg](/img/user/assets/sketchbook11%202-225c1279.jpeg)
-- [[art/More life drawing in watercolour\|More life drawing in watercolour]]: ![assets/life drawing 2.jpeg|life drawing 2.jpeg](/img/user/assets/life%20drawing%202.jpeg)
-- [[sketchbooks/Sketchbook 6\|Sketchbook 6]]: ![assets/IMG_5667.jpeg|IMG_5667.jpeg](/img/user/assets/IMG_5667.jpeg)
-- [[art/Life drawing in watercolour\|Life drawing in watercolour]]: ![assets/IMG_5618.jpeg|IMG_5618.jpeg](/img/user/assets/IMG_5618.jpeg)
-- [[art/One Week 100 People challenge\|One Week 100 People challenge]]: ![assets/sketchbook 6 23 1.jpeg|sketchbook 6 23 1.jpeg](/img/user/assets/sketchbook%206%2023%201.jpeg)
-- [[art/Life drawing in different media\|Life drawing in different media]]: ![assets/IMG_5098.jpeg|IMG_5098.jpeg](/img/user/assets/IMG_5098.jpeg)
-- [[art/Learning sketching foundations\|Learning sketching foundations]]: ![assets/sketchbook2 2.jpeg|sketching objects in my house](/img/user/assets/sketchbook2%202.jpeg)
-- [[art/Fountain pens and ink\|Fountain pens and ink]]: ![assets/IMG_4426.jpeg|IMG_4426.jpeg](/img/user/assets/IMG_4426.jpeg)
-- [[sketchbooks/Sketchbook 3\|Sketchbook 3]]: ![assets/IMG_5184.jpeg|IMG_5184.jpeg](/img/user/assets/IMG_5184.jpeg)
-- [[art/Our home\|Our home]]: ![assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg|D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg](/img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
-- [[sketchbooks/Sketchbook 2\|Sketchbook 2]]: ![assets/IMG_0157.jpeg|IMG_0157.jpeg](/img/user/assets/IMG_0157.jpeg)
-- [[sketchbooks/Sketchbook 1\|Sketchbook 1]]: ![assets/sketchbook-square.jpeg|photo of my sketchbook, with highlighter sketches](/img/user/assets/sketchbook-square.jpeg)
-- [[art/Illustrating Nature course\|Illustrating Nature course]]: ![assets/sketchbook.jpeg|sketchbook.jpeg](/img/user/assets/sketchbook.jpeg)
-- [[art/Revisiting ceramics\|Revisiting ceramics]]: ![assets/ceramics.jpeg|ceramics.jpeg](/img/user/assets/ceramics.jpeg)
-- [[art/Jellyfish\|Jellyfish]]: ![assets/jellyfish.jpeg|jellyfish.jpeg](/img/user/assets/jellyfish.jpeg)
-- [[art/Mr Roo\|Mr Roo]]: ![assets/roo.jpeg|roo.jpeg](/img/user/assets/roo.jpeg)
-- [[art/Magpie\|Magpie]]: ![assets/Magpie.jpeg|Magpie.jpeg](/img/user/assets/Magpie.jpeg)
-- [[notes/Painting\|Painting]]: \-
+| Category        | Title                                                                                   | Image (Local)                                                                      | Image (Web)                                                                                                                                            | Summary |
+| --------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------- |
+| [[Art\|Art]] | [[art/Self portrait in gouache\|Self portrait in gouache]]                           | ![[assets/self portrait - 1.jpeg\|self portrait - 1.jpeg]]                         | [[art/Self portrait in gouache\|<img src='/img/user/assets/self portrait - 1.jpeg' alt='Self portrait in gouache'>]]                                |         |
+| [[Art\|Art]] | [[art/Even more life drawing in watercolour\|Even more life drawing in watercolour]] | ![[assets/IMG_7514-e9068564.jpeg\|IMG_7514-e9068564.jpeg]]                         | [[art/Even more life drawing in watercolour\|<img src='/img/user/assets/IMG_7514-e9068564.jpeg' alt='watercolour sketch of nude woman reclining'>]] |         |
+| [[Art\|Art]] | [[art/Painting botanicals with Anya Brock\|Painting botanicals with Anya Brock]]     | ![[assets/IMG_7601-f2dcb9fb.jpeg\|IMG_7601-f2dcb9fb.jpeg]]                         | [[art/Painting botanicals with Anya Brock\|<img src='/img/user/assets/IMG_7601-f2dcb9fb.jpeg' alt='Painting botanicals with Anya Brock'>]]          |         |
+| [[Art\|Art]] | [[art/Peachtober digital sketches\|Peachtober digital sketches]]                     | ![[assets/IMG_0366.jpeg\|IMG_0366.jpeg]]                                           | [[art/Peachtober digital sketches\|<img src='/img/user/assets/IMG_0366.jpeg' alt='Peachtober digital sketches'>]]                                   |         |
+| [[Art\|Art]] | [[art/Life drawing the male figure\|Life drawing the male figure]]                   | ![[assets/IMG_4498-5bbf1280.jpeg\|IMG_4498-5bbf1280.jpeg]]                         | [[art/Life drawing the male figure\|<img src='/img/user/assets/IMG_4498-5bbf1280.jpeg' alt='Male life drawing'>]]                                   |         |
+| [[Art\|Art]] | [[art/Charcoal portrait\|Charcoal portrait]]                                         | ![[assets/IMG_3782-5c80235a.jpeg\|IMG_3782-5c80235a.jpeg]]                         | [[art/Charcoal portrait\|<img src='/img/user/assets/IMG_3782-5c80235a.jpeg' alt='Charcoal portrait of a woman'>]]                                   |         |
+| [[Art\|Art]] | [[art/Portrait - Sabrina\|Portrait - Sabrina]]                                       | ![[assets/steph-art-sessions 3-0cf7a37d.jpeg\|steph-art-sessions 3-0cf7a37d.jpeg]] | [[art/Portrait - Sabrina\|<img src='/img/user/assets/steph-art-sessions 3-0cf7a37d.jpeg' alt='Portrait in pencil of woman’s face'>]]                |         |
+| [[Art\|Art]] | [[art/Life drawing in Charcoal\|Life drawing in Charcoal]]                           | ![[assets/life drawing 20-f319b092.jpeg\|life drawing 20-f319b092.jpeg]]           | [[art/Life drawing in Charcoal\|<img src='/img/user/assets/life drawing 20-f319b092.jpeg' alt=' Charcoal sketch of nude woman'>]]                   |         |
+| [[Art\|Art]] | [[art/Playing with soft pastels\|Playing with soft pastels]]                         | ![[assets/IMG_3473.jpeg\|IMG_3473.jpeg]]                                           | [[art/Playing with soft pastels\|<img src='/img/user/assets/IMG_3473.jpeg' alt='\-'>]]                                                              |         |
+| [[Art\|Art]] | [[art/Jury duty sketches\|Jury duty sketches]]                                       | ![[assets/sketchbook11 2-225c1279.jpeg\|sketchbook11 2-225c1279.jpeg]]             | [[art/Jury duty sketches\|<img src='/img/user/assets/sketchbook11 2-225c1279.jpeg' alt='Watercolor sketch of St Mary’s Cathedral'>]]                |         |
 
 { .block-language-dataview}
