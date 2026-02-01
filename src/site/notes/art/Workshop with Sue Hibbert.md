@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/art/workshop-with-sue-hibbert/","tags":["#art"],"noteIcon":"","created":"2026-02-01"}
+{"dg-publish":true,"permalink":"/art/workshop-with-sue-hibbert/","title":"Watercolour workshop with Sue Hibbert","tags":["art"],"noteIcon":"","created":"2026-02-01"}
 ---
 
 ![IMG_8824.jpeg|Watercolour painting of pathway to the beach](/img/user/assets/IMG_8824.jpeg)
