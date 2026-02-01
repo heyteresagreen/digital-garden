@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/writing/","contentClasses":"simple writing-list","noteIcon":""}
 ---
 
-I’m taking a digital gardening approach to writing. That is, posts will evolve over time and will be densely linked, for exploring non-linearly. Let’s see how all that goes.
+
 - [[Switching from Kindle to a Boox Go 7 e-ink reader\|Switching from Kindle to a Boox Go 7 e-ink reader]] <span class="posted">26 November 2025</span>
 - [[My planning, writing and sketching tools - 2025\|My planning, writing and sketching tools - 2025]] <span class="posted">23 November 2025</span>
 - [[Travel sketching kit\|Travel sketching kit]] <span class="posted">6 August 2025</span>
@@ -22,10 +22,9 @@ I’m taking a digital gardening approach to writing. That is, posts will evolve
 - [[Thoughts on mending\|Thoughts on mending]] <span class="posted">19 February 2023</span>
 - [[My planning, writing and sketching tools\|My planning, writing and sketching tools]] <span class="posted">13 January 2023</span>
 - [[The Ugly Stage\|The Ugly Stage]] <span class="posted">11 January 2023</span>
-- [[Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] <span class="posted">3 January 2023</span>
+- [[notes/Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]] <span class="posted">3 January 2023</span>
 - [[My Obsidian workflow\|My Obsidian workflow]] <span class="posted">12 December 2022</span>
 - [[Procrastination through process\|Procrastination through process]] <span class="posted">29 November 2022</span>
-- [[About this site\|About this site]] <span class="posted">29 November 2022</span>
 - [[My cosy working from home desk setup\|My cosy working from home desk setup]] <span class="posted">29 May 2022</span>
 
 { .block-language-dataview}

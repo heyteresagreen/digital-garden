@@ -11,6 +11,12 @@
 
 ## Completed
 
+| Category | Title | Image (Local) | Image (Web) | Summary | Date Posted |
+| -------- | ----- | ------------- | ----------- | ------- | ----------- |
+
+{ .block-language-dataview}
+
+
 
 [[books/Books I've read in 2025\|Books I've read in 2025]]
 [[books/Books I've read in 2024\|Books I've read in 2024]]

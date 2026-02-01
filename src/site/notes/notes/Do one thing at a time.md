@@ -11,4 +11,11 @@ Based on time and accuracy (e.g. comprehension of text read), multitasking is no
 
 > Despite perceptions that multitasking is efficient, studies generally show that doing one task at a time is more efficient (based on the time and accuracy) than doing two tasks at the same time. That’s because the human brain is limited in terms of how much information it can process at a given time. 
 
+[The EdTech Revolution Has Failed](https://www.afterbabel.com/p/the-edtech-revolution-has-failed)
+> Whenever we engage with a task, the relevant ruleset must be loaded into a small area of the brain called the Lateral Prefrontal Cortex (LatPFC). Whatever ruleset is being held within this part of the brain will ultimately determine what the attentional filter deems relevant or irrelevant.
+> 
+> Here's the problem: the LatPFC can only hold onto one ruleset at a time.
+> 
+> This means anytime we attempt to consciously undertake two tasks simultaneously, the brain simply cannot handle this; the best it can do is quickly jump back-and-forth between tasks, swapping out the ruleset within the LatPFC each time.
+
 #productivity

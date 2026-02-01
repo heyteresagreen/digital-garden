@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-14/","title":"I’m wise now, apparently","tags":["#letters"],"noteIcon":"","created":"2025-08-07"}
+{"dg-publish":true,"permalink":"/letters/letters-14/","title":"I’m wise now, apparently","tags":["letters"],"noteIcon":"","created":"2025-08-07"}
 ---
 
 Hey stranger!
