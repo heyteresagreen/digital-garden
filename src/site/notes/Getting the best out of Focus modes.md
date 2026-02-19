@@ -23,7 +23,7 @@ This is literally because I need to scan a QR code when arriving at my kids swim
 ## Evening
 After the kids are in bed, I have a precious hour or so to myself. I’m trying to gently nudge myself to paint or draw during this time, so my Lock Screen background is a painting I did, and I don’t have any widgets displaying upcoming calendar events so I’m not pulled into thinking about work. 
 
-![IMG_3288.png](/img/user/assets/IMG_3288.png)
+![[IMG_3288.png\|IMG_3288.png]]
 ## Do not disturb
 Pretty straightforward, I used this default focus mode long before trying any other ones. Notifications are silenced and phone calls blocked aside from immediate family members. There are no apps on my Home Screen at all. The wallpaper is a photo of a sunset to remind me that it’s time to sleep. I know there’s a default sleep mode but this works for me.
 

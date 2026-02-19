@@ -3,13 +3,13 @@
 ---
 
 Here is the reference image we’ll be using for this workshop (photo by [Jassir Jonis](https://unsplash.com/@jassirjonis) via [Unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-hSKBleRfj5A))
-![IMG_0384.jpeg](/img/user/assets/IMG_0384.jpeg)
+![[IMG_0384.jpeg\|IMG_0384.jpeg]]
 
 
 
 
 Upside down version:
-![IMG_0384 1.jpeg](/img/user/assets/IMG_0384%201.jpeg)
+![[IMG_0384 1.jpeg\|IMG_0384 1.jpeg]]
 
 
 

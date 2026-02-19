@@ -13,6 +13,7 @@ Letters from me to you, delivered to your email inbox very infrequently. Some ra
 </form>
 
 ## Old letters
+- [[letters/Letters 16\|Letters 16]]: (Lunar) New Year resolutions
 - [[letters/Letters 15\|Letters 15]]: What is “real” art anyway
 - [[letters/Letters 14\|Letters 14]]: I’m wise now, apparently
 - [[letters/Letters 13\|Letters 13]]: Reading less, but better

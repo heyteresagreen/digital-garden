@@ -4,6 +4,17 @@
 
 Here's what I'm up to right now:
 
+
+### 19 February 2026
+Still messing around with the styling of this website. I spent a few gleeful hours exploring different styles of horizontal rules before settling on this squiggly line made up of Unicode characters. 
+
+Trying to prompt myself to create art by leaving my [[To the drawing board\|drawing board]] out and working on things in spurts throughout the day. Also trying to make sure I have mental energy left at the end of a work day to create. It’s all a work in progress.
+
+Still playing my Nintendo 2DS, which it turns out the kids are less interested in than modern gaming consoles. I started with Animal Crossing: A New Leaf, and now onto Pokémon Platinum.
+
+Still both fascinated and repulsed by AI. Still not convinced it’s a net positive for humanity.
+
+---
 ### December 2025
 Doing some [[notes/Digital Gardening\|Digital Gardening]] maintenance - I have over a hundred random thoughts and quotes in my digital note taking system, which I'm trying to process into a more [[notes/Evergreen notes\|Evergreen notes]] form and better integrate into my existing collection of notes. I'm slowly starting to post a collection of these here on this site, although as they are personal notes they might not make much sense to anyone else!
 

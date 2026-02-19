@@ -19,8 +19,8 @@ There is very little that is original here - it is mostly based on various sourc
 | [[books/book notes/Orwell's Roses (2021), Rebecca Solnit\|Orwell's Roses (2021), Rebecca Solnit]]                                 |                                                                                                                                                                                                                                         | 20 January 2025  |
 | [[notes/Optimise for curiosity, not productivity\|Optimise for curiosity, not productivity]]                                      |                                                                                                                                                                                                                                         | 3 January 2023   |
 | [[notes/Digital Gardening\|Digital Gardening]]                                                                                    | A digital garden is an alternative to blogs or essays, in that they aren’t organised linearly by time. Posts or notes might start as incomplete ideas that will be added to or evolved over time, growing more connected to each other. | 11 December 2022 |
-| [[notes/Evergreen notes\|Evergreen notes]]                                                                                        |                                                                                                                                                                                                                                         | \-               |
 | [[notes/Keep a project journal\|Keep a project journal]]                                                                          |                                                                                                                                                                                                                                         | \-               |
+| [[notes/Evergreen notes\|Evergreen notes]]                                                                                        |                                                                                                                                                                                                                                         | \-               |
 | [[notes/Notes\|Notes]]                                                                                                            |                                                                                                                                                                                                                                         | \-               |
 
 { .block-language-dataview}
@@ -28,9 +28,9 @@ There is very little that is original here - it is mostly based on various sourc
 
 
 I've tried to put these into a few broad themes, which can be handy for navigation when I finish putting this together.
-- [[notes/Artificial Intelligence (AI)\|Artificial Intelligence (AI)]]
-- [[notes/Creativity\|Creativity]]
 - [[notes/Productivity\|Productivity]]
+- [[notes/Creativity\|Creativity]]
+- [[notes/Artificial Intelligence (AI)\|Artificial Intelligence (AI)]]
 - [[notes/User Experience (UX)\|User Experience (UX)]]
 
 { .block-language-dataview}
