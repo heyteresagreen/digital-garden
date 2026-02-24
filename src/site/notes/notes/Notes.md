@@ -28,9 +28,9 @@ There is very little that is original here - it is mostly based on various sourc
 
 
 I've tried to put these into a few broad themes, which can be handy for navigation when I finish putting this together.
-- [[notes/Productivity\|Productivity]]
-- [[notes/Creativity\|Creativity]]
 - [[notes/Artificial Intelligence (AI)\|Artificial Intelligence (AI)]]
+- [[notes/Creativity\|Creativity]]
+- [[notes/Productivity\|Productivity]]
 - [[notes/User Experience (UX)\|User Experience (UX)]]
 
 { .block-language-dataview}
