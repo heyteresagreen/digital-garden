@@ -2,13 +2,30 @@
 {"dg-publish":true,"permalink":"/sketchbooks/sketchbook-7/","tags":["sketchbooks"],"noteIcon":"","created":"2024-05-31"}
 ---
 
-I started this sketchbook in March and it’s still in progress. I’m using pocket sized sketchbooks at the same time, so not getting to this one as much. Still love the Alpha paper though.
+I started this sketchbook in March 2024 and it’s still in progress. I’m using pocket sized sketchbooks at the same time, so not getting to this one as much. Still love the Alpha paper though.
 
 📖 Stillman & Birn Alpha A5
 🎨 Daniel Smith watercolours 
 ✏️ Prismacolor Premier pencils, Derwent Rebel watercolour pencils
 ✒️ Lamy Safari, Kaweco Sport, Sailor Fude de Manen 
 ...plus other random materials
+
+
+![assets/sketchbook7 12.jpeg|Sketchbook pages ](/img/user/assets/sketchbook7%2012.jpeg)
+
+![assets/sketchbook7 11.jpeg|Sketchbook pages ](/img/user/assets/sketchbook7%2011.jpeg)
+
+![assets/sketchbook7 10.jpeg|Sketchbook pages ](/img/user/assets/sketchbook7%2010.jpeg)
+
+![assets/sketching now watercolour course Review week.jpeg|Sketchbook pages ](/img/user/assets/sketching%20now%20watercolour%20course%20Review%20week.jpeg)
+
+![assets/sketching now watercolour course lesson 1 1.jpeg|Sketchbook pages ](/img/user/assets/sketching%20now%20watercolour%20course%20lesson%201%201.jpeg)
+
+![assets/IMG_8787.jpeg|Sketchbook pages ](/img/user/assets/IMG_8787.jpeg)
+
+![assets/IMG_8767.jpeg|Sketchbook pages ](/img/user/assets/IMG_8767.jpeg)
+
+![assets/IMG_8766.jpeg|Sketchbook pages ](/img/user/assets/IMG_8766.jpeg)
 
 ![assets/sketchbook7 1-8c0bd6ed.jpeg|Pencil sketch of my dog](/img/user/assets/sketchbook7%201-8c0bd6ed.jpeg)
 
