@@ -7,7 +7,11 @@ Here's what I'm up to right now:
 ### 22 April 2026
 I've recently returned from a family trip to Singapore, and although I didn't manage any sketching there (the humidity is FULL ON) I took a million reference photos to draw from.
 
-Painting is a higher priority than writing or gaming at the moment, and I don't think that's a bad thing.
+Painting is a higher priority than writing or gaming at the moment, and I don't think that's a bad thing. I'm currently working a little bigger and deciding what to submit to a community gallery exhibition.
+
+I've recently returned from a family holiday to Singapore, and sorting through my millions of photos for good sketching references.
+
+Trying to not think about AI when I'm not at work, but it's feeling a bit inescapable at the moment.
 
 ---
 
