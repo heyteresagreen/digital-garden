@@ -4,6 +4,12 @@
 
 Here's what I'm up to right now:
 
+### 22 April 2026
+I've recently returned from a family trip to Singapore, and although I didn't manage any sketching there (the humidity is FULL ON) I took a million reference photos to draw from.
+
+Painting is a higher priority than writing or gaming at the moment, and I don't think that's a bad thing.
+
+---
 
 ### 19 February 2026
 Still messing around with the styling of this website. I spent a few gleeful hours exploring different styles of horizontal rules before settling on this squiggly line made up of Unicode characters. 
