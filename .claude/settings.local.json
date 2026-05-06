@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git rm *)",
+      "Bash(rm -rf src/site/calendar/.git)",
+      "Bash(git add *)"
+    ]
+  }
+}
