@@ -3,7 +3,8 @@
     "allow": [
       "Bash(git rm *)",
       "Bash(rm -rf src/site/calendar/.git)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git mv *)"
     ]
   }
 }
