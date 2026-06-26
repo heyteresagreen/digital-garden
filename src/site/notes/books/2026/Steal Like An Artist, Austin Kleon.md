@@ -1,9 +1,9 @@
 ---
-{"dg-publish":true,"permalink":"/books/2026/steal-like-an-artist-austin-kleon/","tags":["fiction"],"noteIcon":"","created":"2026-04-22"}
+{"dg-publish":true,"permalink":"/books/2026/steal-like-an-artist-austin-kleon/","tags":["non-fiction"],"noteIcon":"","created":"2026-04-22"}
 ---
 
-![Pasted image 20260422212255.png|200](/img/user/assets/Pasted%20image%2020260422212255.png)
+![Pasted image 20260422215327.png|200](/img/user/assets/Pasted%20image%2020260422215327.png)
 
-A young and idealistic American nurse signs up for the Vietnam War and discovers things aren't as rosy as the reports they get back home. The war that was supposed to just last a few weeks stretches out for years.
+Just a classic, still as relevant today as it was when originally published.
 
-I didn't know much about the Vietnam War, so it was interesting to read about in this historical fiction novel. The main character's experiences as a surgical nurse are horrifying, but of course they include some good times, close friendships and romance too. Things got interesting after her return home, trying to fit back into a society that doesn't respect women's expertise and vilified the veterans of a drawn out war.
+>In this age of information abundance and overload, those who get ahead will be the folks who figure out what to leave out, so they can concentrate on what’s really important to them. Nothing is more paralyzing than the idea of limitless possibilities. The idea that you can do anything is absolutely terrifying.
