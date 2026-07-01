@@ -3,6 +3,7 @@
 ---
 
 
+- [[I'm not using AI for personal writing or art, here's why\|I'm not using AI for personal writing or art, here's why]] <span class="posted">24 June 2026</span>
 - [[Switching from Kindle to a Boox Go 7 e-ink reader\|Switching from Kindle to a Boox Go 7 e-ink reader]] <span class="posted">26 November 2025</span>
 - [[My planning, writing and sketching tools - 2025\|My planning, writing and sketching tools - 2025]] <span class="posted">23 November 2025</span>
 - [[Travel sketching kit\|Travel sketching kit]] <span class="posted">6 August 2025</span>

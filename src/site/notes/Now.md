@@ -1,15 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/now/","title":"Now","noteIcon":"","created":"2022-12-18","updated":"2025-11-02"}
+{"dg-publish":true,"permalink":"/now/","title":"Now","noteIcon":"","created":"2022-12-18","updated":"2026-06-28"}
 ---
 
 Here's what I'm up to right now:
+
+## 28 June 2026
+I've been painting less, knitting more (although I'm still not really consistent enough to make anything I can actually wear). I do need to get back to my watercolours, as the longer I spend away the more daunting they start to feel again. I have only one spread left to complete of my Singapore trip sketchbook.
+
+On my days off from work, whilst the kids are at school, I've gotten better at making sure I get what I'm missing from my work life - connecting with people in-person, and movement, preferably outdoors. I'm feeling a greater need to 
+
+--- 
 
 ### 22 April 2026
 I've recently returned from a family trip to Singapore, and although I didn't manage any sketching there (the humidity is FULL ON) I took a million reference photos to draw from.
 
 Painting is a higher priority than writing or gaming at the moment, and I don't think that's a bad thing. I'm currently working a little bigger and deciding what to submit to a community gallery exhibition.
-
-I've recently returned from a family holiday to Singapore, and sorting through my millions of photos for good sketching references.
 
 Trying to not think about AI when I'm not at work, but it's feeling a bit inescapable at the moment.
 
