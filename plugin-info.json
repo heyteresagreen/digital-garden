@@ -19,7 +19,7 @@
         "src/site/favicon.png",
         "src/site/img/default-note-icon.svg",
         "src/site/img/tree-1.svg",
-        "src/site/img/tree-2.svg",
+        "src/site/img/tree-2.svg", 
         "src/site/img/tree-3.svg",
         "src/helpers/userUtils.js",
         "src/helpers/userSetup.js",
