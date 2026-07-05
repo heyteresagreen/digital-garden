@@ -4,10 +4,12 @@
 
 Here's what I'm up to right now:
 
-## 28 June 2026
+## 1 July 2026
 I've been painting less, knitting more (although I'm still not really consistent enough to make anything I can actually wear). I do need to get back to my watercolours, as the longer I spend away the more daunting they start to feel again. I have only one spread left to complete of my Singapore trip sketchbook.
 
-On my days off from work, whilst the kids are at school, I've gotten better at making sure I get what I'm missing from my work life - connecting with people in-person, and movement, preferably outdoors. I'm feeling a greater need to 
+On my days off from work, whilst the kids are at school, I've gotten better at making sure I get what I'm missing from my work life - connecting with people in-person, and movement, preferably outdoors. I'm feeling a greater need to do analog things to balance out the very digital nature of my work, and these are keeping me sane.
+
+Right now the [[Books\|books]] I’m reading are The Staff Designer by Catt Small, and rereading Children of Time by Adrian Tchaikovsky.
 
 --- 
 
