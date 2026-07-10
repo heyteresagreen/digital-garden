@@ -1,9 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/art/magpie/","title":"Ms Magpie","tags":["art"],"noteIcon":"","created":"2022-12-02"}
+title: "Ms Magpie"
+publish: true
+section: art
+date: 2022-12-02
+tags:
+  - art
+image: "[[Magpie.jpeg]]"
+imageUrl: /img/user/assets/Magpie.jpeg
+imageAlt: "digital painting of a magpie"
+slug: magpie
 ---
 
-
-![Magpie](/img/user/assets/Magpie.jpeg)
+![Magpie](assets/Magpie.jpeg)
 
 Getting back into the swing of digital painting after spending the last week or so messing around with code for this website! This magpie was eyeing my son's snacks at the park the other day.
 

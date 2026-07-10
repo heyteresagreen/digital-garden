@@ -12,13 +12,328 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-[[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+# ------------------------------------------------------------
+# Redirects: old Digital Garden URLs -> new section URLs (301)
+# Generated during the v2 migration, July 2026.
+# ------------------------------------------------------------
 
 [[redirects]]
-  from = "/*"
-  to = "/404"
-  status = 404
+  from = "/a-better-way-to-read-email-newsletters/"
+  to = "/writing/a-better-way-to-read-email-newsletters/"
+  status = 301
+
+[[redirects]]
+  from = "/about-this-site/"
+  to = "/posts/about-this-site/"
+  status = 301
+
+[[redirects]]
+  from = "/chi-garden/"
+  to = "/posts/chi-garden/"
+  status = 301
+
+[[redirects]]
+  from = "/do-one-thing-at-a-time/"
+  to = "/writing/do-one-thing-at-a-time/"
+  status = 301
+
+[[redirects]]
+  from = "/end-of-year-journaling/"
+  to = "/writing/end-of-year-journaling/"
+  status = 301
+
+[[redirects]]
+  from = "/fountain-pens/"
+  to = "/writing/fountain-pens/"
+  status = 301
+
+[[redirects]]
+  from = "/getting-the-best-out-of-focus-modes/"
+  to = "/writing/getting-the-best-out-of-focus-modes/"
+  status = 301
+
+[[redirects]]
+  from = "/i-m-not-using-ai-for-personal-writing-or-art-here-s-why/"
+  to = "/writing/i-m-not-using-ai-for-personal-writing-or-art-here-s-why/"
+  status = 301
+
+[[redirects]]
+  from = "/little-automations-for-a-calmer-week/"
+  to = "/writing/little-automations-for-a-calmer-week/"
+  status = 301
+
+[[redirects]]
+  from = "/morning-pages/"
+  to = "/writing/morning-pages/"
+  status = 301
+
+[[redirects]]
+  from = "/my-obsidian-workflow/"
+  to = "/writing/my-obsidian-workflow/"
+  status = 301
+
+[[redirects]]
+  from = "/my-cosy-working-from-home-desk-setup/"
+  to = "/writing/my-cosy-working-from-home-desk-setup/"
+  status = 301
+
+[[redirects]]
+  from = "/my-notebook-system/"
+  to = "/writing/my-notebook-system/"
+  status = 301
+
+[[redirects]]
+  from = "/my-planning-writing-and-sketching-tools-2025/"
+  to = "/writing/my-planning-writing-and-sketching-tools-2025/"
+  status = 301
+
+[[redirects]]
+  from = "/my-planning-writing-and-sketching-tools/"
+  to = "/writing/my-planning-writing-and-sketching-tools/"
+  status = 301
+
+[[redirects]]
+  from = "/optimise-for-curiosity-not-productivity/"
+  to = "/writing/optimise-for-curiosity-not-productivity/"
+  status = 301
+
+[[redirects]]
+  from = "/photographing-artwork-with-a-phone/"
+  to = "/writing/photographing-artwork-with-a-phone/"
+  status = 301
+
+[[redirects]]
+  from = "/procrastination-through-process/"
+  to = "/writing/procrastination-through-process/"
+  status = 301
+
+[[redirects]]
+  from = "/reading-things-later/"
+  to = "/writing/reading-things-later/"
+  status = 301
+
+[[redirects]]
+  from = "/remote-sketching-tools-for-ux-designers/"
+  to = "/writing/remote-sketching-tools-for-ux-designers/"
+  status = 301
+
+[[redirects]]
+  from = "/remote-sketching/"
+  to = "/writing/remote-sketching-tools-for-ux-designers/"
+  status = 301
+
+[[redirects]]
+  from = "/start-here/"
+  to = "/posts/start-here/"
+  status = 301
+
+[[redirects]]
+  from = "/switching-from-kindle-to-a-boox-go-7-e-ink-reader/"
+  to = "/writing/switching-from-kindle-to-a-boox-go-7-e-ink-reader/"
+  status = 301
+
+[[redirects]]
+  from = "/the-ugly-stage/"
+  to = "/writing/the-ugly-stage/"
+  status = 301
+
+[[redirects]]
+  from = "/thoughts-on-mending/"
+  to = "/writing/thoughts-on-mending/"
+  status = 301
+
+[[redirects]]
+  from = "/tiny-watercolor-kit/"
+  to = "/writing/tiny-watercolor-kit/"
+  status = 301
+
+[[redirects]]
+  from = "/tiny-watercolour-kit-v2/"
+  to = "/writing/tiny-watercolour-kit-v2/"
+  status = 301
+
+[[redirects]]
+  from = "/to-the-drawing-board/"
+  to = "/posts/to-the-drawing-board/"
+  status = 301
+
+[[redirects]]
+  from = "/travel-sketching-kit/"
+  to = "/writing/travel-sketching-kit/"
+  status = 301
+
+[[redirects]]
+  from = "/uxc/"
+  to = "/posts/uxc/"
+  status = 301
+
+[[redirects]]
+  from = "/using-an-i-pad-as-a-second-screen/"
+  to = "/writing/using-an-i-pad-as-a-second-screen/"
+  status = 301
+
+[[redirects]]
+  from = "/voice-chats-with-my-chat-gpt-ux-mentor/"
+  to = "/writing/voice-chats-with-my-chat-gpt-ux-mentor/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2025/designing-your-life-2016-bill-burnett-and-dave-evans/"
+  to = "/books/designing-your-life-2016-bill-burnett-and-dave-evans/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2025/orwell-s-roses-2021-rebecca-solnit/"
+  to = "/books/orwell-s-roses-2021-rebecca-solnit/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/atmosphere-taylor-jenkins-reid-book-club/"
+  to = "/books/atmosphere-taylor-jenkins-reid-book-club/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/cezanne-2010-parkstone-international/"
+  to = "/books/cezanne-2010-parkstone-international/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/dark-emu-2014-bruce-pascoe/"
+  to = "/books/dark-emu-2014-bruce-pascoe/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/hitchhiker-s-guide-to-the-galaxy-douglas-adams/"
+  to = "/books/hitchhiker-s-guide-to-the-galaxy-douglas-adams/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/i-who-have-never-known-men-jacqueline-harpman/"
+  to = "/books/i-who-have-never-known-men-jacqueline-harpman/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/my-husband-s-wife-alice-feeney-book-club/"
+  to = "/books/my-husband-s-wife-alice-feeney-book-club/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/practicing-simplicity-2022-jodi-wilson/"
+  to = "/books/practicing-simplicity-2022-jodi-wilson/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/project-hail-mary-andy-weir-audiobook-relisten/"
+  to = "/books/project-hail-mary-andy-weir-audiobook-relisten/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/steal-like-an-artist-austin-kleon/"
+  to = "/books/steal-like-an-artist-austin-kleon/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/the-women-kristin-hannah-book-club/"
+  to = "/books/the-women-kristin-hannah-book-club/"
+  status = 301
+
+[[redirects]]
+  from = "/books/2026/the-word-for-world-is-forest-ursula-k-le-guin/"
+  to = "/books/the-word-for-world-is-forest-ursula-k-le-guin/"
+  status = 301
+
+[[redirects]]
+  from = "/books/book-notes/designing-your-life-2016-bill-burnett-and-dave-evans/"
+  to = "/books/designing-your-life-2016-bill-burnett-and-dave-evans/"
+  status = 301
+
+[[redirects]]
+  from = "/books/book-notes/how-to-take-smart-notes-2017-soenke-ahrens/"
+  to = "/books/how-to-take-smart-notes-2017-soenke-ahrens/"
+  status = 301
+
+[[redirects]]
+  from = "/books/book-notes/orwell-s-roses-2021-rebecca-solnit/"
+  to = "/books/orwell-s-roses-2021-rebecca-solnit/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/avoiding-multitasking-is-unrealistic/"
+  to = "/writing/avoiding-multitasking-is-unrealistic/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/build-tools-using-ai/"
+  to = "/writing/build-tools-using-ai/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/dailyish/"
+  to = "/writing/dailyish/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/digital-gardening/"
+  to = "/writing/digital-gardening/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/do-one-thing-at-a-time/"
+  to = "/writing/do-one-thing-at-a-time/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/evergreen-notes/"
+  to = "/writing/evergreen-notes/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/keep-a-project-journal/"
+  to = "/writing/keep-a-project-journal/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/notes/"
+  to = "/writing/notes/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/optimise-for-curiosity-not-productivity/"
+  to = "/writing/optimise-for-curiosity-not-productivity/"
+  status = 301
+
+[[redirects]]
+  from = "/notes/sewing-patterns-for-a-chill-wardrobe/"
+  to = "/writing/sewing-patterns-for-a-chill-wardrobe/"
+  status = 301
+
+[[redirects]]
+  from = "/sketchnotes/ddd-perth-2019-sketchnotes/"
+  to = "/sketching/ddd-perth-2019-sketchnotes/"
+  status = 301
+
+[[redirects]]
+  from = "/sketchnotes/design-research-2018-sketchnotes/"
+  to = "/sketching/design-research-2018-sketchnotes/"
+  status = 301
+
+[[redirects]]
+  from = "/sketchnotes/perth-web-accessibility-camp-2023/"
+  to = "/sketching/perth-web-accessibility-camp-2023/"
+  status = 301
+
+[[redirects]]
+  from = "/sketchnotes/sketching-and-how-to-win-at-pictionary/"
+  to = "/sketching/sketching-and-how-to-win-at-pictionary/"
+  status = 301
+
+[[redirects]]
+  from = "/sketchnotes/ux-camp-perth-2022/"
+  to = "/sketching/ux-camp-perth-2022/"
+  status = 301
+
+[[redirects]]
+  from = "/home/"
+  to = "/"
+  status = 301
 

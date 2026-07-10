@@ -1,7 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/art/learning-sketching-foundations/","tags":["art","learning"],"noteIcon":"","created":"2023-12-27"}
+title: "Learning sketching foundations"
+publish: true
+section: art
+date: 2023-12-27
+tags:
+  - art
+  - learning
+image: "[[sketchbook2 2.jpeg|sketching objects in my house]]"
+imageUrl: "/img/user/assets/sketchbook2 2.jpeg"
+slug: learning-sketching-foundations
 ---
-
 I'm just completing Liz Steel's [Foundations course](https://sketchingnow.com/foundations2023/), having taken twice as long as intended to finish it! Even then, by "finished" I mean that I've watched the main videos and attempted each of the assignments. There's a whole lot of bonus material and livestream recordings for each lesson that I have barely scratched yet. Liz says this course is intended to be done multiple times, and now I can see why - there's far too much content to properly absorb in a single run through.
 
 The final lesson is reviewing your work and reflecting on three big takeaways from the course. Here's mine:
@@ -14,10 +22,10 @@ It was a great course and I'm looking forward to starting the watercolour one ne
 
 Here are some of my favourite assignments from this course:
 
-![sketchbook2 2.jpeg|sketching objects in my house](/img/user/assets/sketchbook2%202.jpeg)
+![[sketchbook2 2.jpeg|sketching objects in my house]]
 
-![sketchbook2 1.jpeg|3 ways of visual thinking](/img/user/assets/sketchbook2%201.jpeg)
-![sketchbook2 6.jpeg|sketch of a pile of 3 books](/img/user/assets/sketchbook2%206.jpeg)![sketchbook2 10.jpeg|sketch of a cherry blossom tree](/img/user/assets/sketchbook2%2010.jpeg)
-![sketchbook2 11.jpeg|sketches of my gumboots](/img/user/assets/sketchbook2%2011.jpeg)
-![sketchbook3 8.jpeg|watercolour sketch of a view down the street](/img/user/assets/sketchbook3%208.jpeg)
-![sketchbook3 10.jpeg|sketch of my living room](/img/user/assets/sketchbook3%2010.jpeg)![sketchbook3 7.jpeg|sketch of a forest path and some thumbnails](/img/user/assets/sketchbook3%207.jpeg)
+![[sketchbook2 1.jpeg|3 ways of visual thinking]]
+![[sketchbook2 6.jpeg|sketch of a pile of 3 books]]![[sketchbook2 10.jpeg|sketch of a cherry blossom tree]]
+![[sketchbook2 11.jpeg|sketches of my gumboots]]
+![[sketchbook3 8.jpeg|watercolour sketch of a view down the street]]
+![[sketchbook3 10.jpeg|sketch of my living room]]![[sketchbook3 7.jpeg|sketch of a forest path and some thumbnails]]

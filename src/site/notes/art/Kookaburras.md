@@ -1,6 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/art/kookaburras/","tags":["art"],"noteIcon":"","created":"2026-02-21"}
+title: Kookaburras
+publish: true
+section: art
+date: 2026-02-21
+tags:
+  - art
+image: "[[assets/watercolor 3-e0d45f8c.jpeg]]"
+imageUrl: "/img/user/assets/watercolor 3-e0d45f8c.jpeg"
+imageAlt: Kookaburras
+slug: kookaburras
 ---
-
-![assets/watercolor 3-e0d45f8c.jpeg|Kookaburras](/img/user/assets/watercolor%203-e0d45f8c.jpeg)
+![[assets/watercolor 3-e0d45f8c.jpeg|Kookaburras]]
 

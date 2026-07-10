@@ -1,15 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/tiny-watercolour-kit-v2/","title":"Tiny watercolour kit v2","tags":["tools"],"noteIcon":"","created":"2024-05-18"}
+title: "Tiny watercolour kit v2"
+publish: true
+section: writing
+date: 2024-05-18
+tags:
+  - tools
+slug: tiny-watercolour-kit-v2
 ---
 
-
-I've had a few false starts with my first  [[Tiny watercolor kit\|Tiny watercolor kit]], and I felt it was time to make some improvements to help it be more useful.
+I've had a few false starts with my first  [[Tiny watercolor kit]], and I felt it was time to make some improvements to help it be more useful.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iYU0hEQ-jn8?si=4t3IlsL1gsz3nN6J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
-![IMG_5205.jpeg|Photo of my tiny watercolour palette attached to business card holder, with a painting of gum tree flowers](/img/user/assets/IMG_5205.jpeg)
+![[IMG_5205.jpeg|Photo of my tiny watercolour palette attached to business card holder, with a painting of gum tree flowers]]
 ## Better colours and paints
 I was frustrated with the 4 Cotman watercolour pans that I chose initially from what I had available. The blue and the red mixed a muddy brown, it was hard to get any decent darks and I've since discovered that student grade watercolours ironically need a lot more skill and effort to get working nicely - not ideal for a palette that needs to be convenient for quick painting on location with limited mixing space.
 
@@ -22,7 +27,7 @@ I have a stack of old business cards, left over from my calligraphy workshop day
 ## Holding it all together
 I'm using a fridge magnet clip from an old playgroup craft project which holds the card case flat for a nicer working surface, and the metal tin stays nicely on the magnet. Although I prefer to work on a surface where I can, this clip makes it possible to sketch standing up with everything held in one hand whilst the other paints.
 
-![](/img/user/assets/IMG_4180.jpeg)
+![](../assets/IMG_4180.jpeg)
 
 So now altogether my little kit contains:
 * Tin with 6 watercolour paints on an old blister pack, propped up on a small sponge
@@ -34,6 +39,6 @@ So now altogether my little kit contains:
 
 Overall I'm feeling very happy and also justified in holding on to all these random things "just in case". I have looked into tiny watercolour kits that you can buy, but it's so satisfying that aside from the paint, this one is made from reusing stuff I had lying around. 
 
-![](/img/user/assets/IMG_4178.jpeg)
+![](../assets/IMG_4178.jpeg)
 
 And having everything fit into one little pouch has meant that I really can take with me everywhere, and have gotten in some sketching when I otherwise wouldn't have.

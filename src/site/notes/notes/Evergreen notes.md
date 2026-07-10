@@ -1,7 +1,16 @@
 ---
-{"dg-publish":true,"permalink":"/notes/evergreen-notes/","tags":["reading","learning","productivity"],"noteIcon":"","updated":"2025-11-29"}
+title: "Evergreen notes"
+publish: true
+section: writing
+date: 2025-11-29
+tags:
+  - reading
+  - learning
+  - productivity
+slug: evergreen-notes
+created: 2022-07-28
+updated: 2025-11-29
 ---
-
 https://notes.andymatuschak.org/
 
 A note-writing practice and system inspired by Zettelkasten but with some [key differences](https://notes.andymatuschak.org/z4AX7pHAu5uUfmrq4K4zig9x8jmmF62XgaMXm). It’s detailed in Andy Matuschak’s own public collection of notes online, which is a great example of ideas mingling.

@@ -1,12 +1,22 @@
 ---
-{"dg-publish":true,"permalink":"/notes/digital-gardening/","tags":["writing","reading","learning"],"noteIcon":"","created":"2022-12-11","updated":"2025-12-07"}
+title: "Digital Gardening"
+publish: true
+section: writing
+date: 2022-12-11
+tags:
+  - writing
+  - reading
+  - learning
+description: "A digital garden is an alternative to blogs or essays, in that they aren’t organised linearly by time. Posts or notes might start as incomplete ideas that will be added to or evolved over time, growing more connected to each other."
+slug: digital-gardening
+created: 2022-12-11
+updated: 2025-12-07
 ---
-
 # Digital Gardening
 
 A digital garden is an alternative to blogs or essays, in that they aren’t organised linearly by time. Posts or notes might start as incomplete ideas that will be added to or evolved over time, growing more connected to each other. They’re intended to be explored through rich inter-linking. They’re usually more personal and less performative than other written content published online. Reading a digital garden feels a bit like peeking into someone’s brain.
 
-This is similar to [[books/book notes/How to Take Smart Notes (2017), Sönke Ahrens\|How to Take Smart Notes (2017), Sönke Ahrens]] and [[notes/Evergreen notes\|Evergreen notes]], although published on a website instead of a private knowledge base. Many digital gardeners have their own private notes, and then publish ideas on their sites as they start bringing ideas together.
+This is similar to [[How to Take Smart Notes (2017), Sönke Ahrens]] and [[Evergreen notes]], although published on a website instead of a private knowledge base. Many digital gardeners have their own private notes, and then publish ideas on their sites as they start bringing ideas together.
 
 There is some connection to Indie Web and the ideas of publishing on your own site first, as an antidote to the fickle algorithms of social media.
 ## References

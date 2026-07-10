@@ -1,15 +1,19 @@
 ---
-{"dg-publish":true,"permalink":"/uxc/","title":"UX Camp 2025","tags":["not-writing"],"noteIcon":"","created":"2025-10-15"}
+title: "UX Camp 2025"
+publish: true
+date: 2025-10-15
+tags:
+  - not-writing
+slug: uxc
 ---
-
 Here is the reference image we’ll be using for this workshop (photo by [Jassir Jonis](https://unsplash.com/@jassirjonis) via [Unsplash](https://unsplash.com/photos/woman-in-black-crew-neck-shirt-hSKBleRfj5A))
-![IMG_0384.jpeg](/img/user/assets/IMG_0384.jpeg)
+![[IMG_0384.jpeg]]
 
 
 
 
 Upside down version:
-![IMG_0384 1.jpeg](/img/user/assets/IMG_0384%201.jpeg)
+![[IMG_0384 1.jpeg]]
 
 
 

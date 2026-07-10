@@ -1,0 +1,12 @@
+---
+layout: layouts/index.njk
+title: Writing
+intro: Longer-form posts about design, art, tools and process.
+pagination:
+  data: collections.writing
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/writing/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+listClass: writing-list
+eleventyExcludeFromCollections: true
+---

@@ -1,6 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/books/2026/my-husband-s-wife-alice-feeney-book-club/","tags":["fiction"],"noteIcon":"","created":"2026-05-22"}
+title: "My Husband's Wife, Alice Feeney (book club)"
+publish: true
+section: books
+date: 2026-05-22
+tags:
+  - fiction
+image: "[[assets/Pasted image 20260522213252.png]]"
+imageUrl: "/img/user/assets/Pasted image 20260522213252.png"
+imageAlt: "Book cover of My Husbands Wife, Alice Feeney"
+slug: my-husband-s-wife-alice-feeney-book-club
+created: 2026-04-22
 ---
-
-![Pasted image 20260522213252.png|200](/img/user/assets/Pasted%20image%2020260522213252.png)
+![[Pasted image 20260522213252.png|200]]
 

@@ -1,7 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/i-m-not-using-ai-for-personal-writing-or-art-here-s-why/","tags":["ai"],"noteIcon":"","created":"2026-06-24"}
+title: "I'm not using AI for personal writing or art, here's why"
+publish: true
+section: writing
+date: 2026-06-24
+tags:
+  - ai
+description: "Every painting, illustration, page, blog post or letter you see or read on this site is written or made by me personally, without the assistance of AI"
+slug: i-m-not-using-ai-for-personal-writing-or-art-here-s-why
+created: 2026-06-24
 ---
-
 First, a disclaimer. I work as a Lead UX Designer, and do use LLMs and AI assisted features extensively in my day to day work. So if you're engaging with me professionally or are considering doing so - don't worry, I *am* keeping up with these tools.
 
 I'm just choosing to not use them for personal writing (such as this site), personal communication, imagery or art. **Every painting, illustration, page, blog post or letter you see or read on this site is written or made by me personally, without the assistance of AI.**

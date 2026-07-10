@@ -1,8 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/books/2026/atmosphere-taylor-jenkins-reid-book-club/","tags":["fiction"],"noteIcon":"","created":"2026-02-24"}
+title: "Atmosphere, Taylor Jenkins Reid (book club)"
+publish: true
+section: books
+date: 2026-02-24
+tags:
+  - fiction
+description: "Set in the 1980s, a cohort of astronauts in training includes some of the first women to go into space. Also there's a love story. Does it all work together? Sort-of. But not my favourite."
+image: "[[assets/Pasted image 20260224210702.png]]"
+imageUrl: "/img/user/assets/Pasted image 20260224210702.png"
+imageAlt: "Book cover of Atmosphere by Taylor Jenkins Reid"
+slug: atmosphere-taylor-jenkins-reid-book-club
+created: 2026-02-24
 ---
-
-![Pasted image 20260224210702.png|Book cover of Atmosphere by Taylor Jenkins Reid|200](/img/user/assets/Pasted%20image%2020260224210702.png)
+![[Pasted image 20260224210702.png|Book cover of Atmosphere by Taylor Jenkins Reid|200]]
 
 Set in the 1980s, a cohort of astronauts in training includes some of the first women to go into space. Also there's a love story.
 

@@ -1,9 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/art/mr-roo/","title":"Mr Roo","tags":["art"],"noteIcon":"","created":"2022-12-06"}
+title: "Mr Roo"
+publish: true
+section: art
+date: 2022-12-06
+tags:
+  - art
+image: "[[roo.jpeg]]"
+imageUrl: /img/user/assets/roo.jpeg
+imageAlt: "digital painting of a kangaroo"
+slug: mr-roo
 ---
 
-
-![painting of a kangaroo with bright pinks and purples](/img/user/assets/roo.jpeg)
+![painting of a kangaroo with bright pinks and purples](assets/roo.jpeg)
 
 Trying to push towards high key colours, helped by the reference pic of a white kangaroo I took a photo of at Caversham Park.
 

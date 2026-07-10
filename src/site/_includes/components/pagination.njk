@@ -1,0 +1,13 @@
+{% macro pager(pagination) %}
+{%- if pagination.pages.length > 1 %}
+<nav class="pagination" aria-label="Pagination">
+  {%- if pagination.href.previous %}
+  <a class="pagination-prev" href="{{ pagination.href.previous }}">&larr; Newer</a>
+  {%- else %}<span class="pagination-prev is-disabled">&larr; Newer</span>{% endif %}
+  <span class="pagination-status">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages.length }}</span>
+  {%- if pagination.href.next %}
+  <a class="pagination-next" href="{{ pagination.href.next }}">Older &rarr;</a>
+  {%- else %}<span class="pagination-next is-disabled">Older &rarr;</span>{% endif %}
+</nav>
+{%- endif %}
+{% endmacro %}

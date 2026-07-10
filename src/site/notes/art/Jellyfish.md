@@ -1,9 +1,17 @@
 ---
-{"dg-publish":true,"permalink":"/art/jellyfish/","title":"Jellyfish","tags":["art"],"noteIcon":"","created":"2023-01-24"}
+title: Jellyfish
+publish: true
+section: art
+date: 2023-01-24
+tags:
+  - art
+image: "[[jellyfish.jpeg]]"
+imageUrl: /img/user/assets/jellyfish.jpeg
+imageAlt: "digital painting of two jellyfish"
+slug: jellyfish
 ---
 
-
-![digital painting of two jellyfish](/img/user/assets/jellyfish.jpeg)
+![digital painting of two jellyfish](assets/jellyfish.jpeg)
 
 I've been mostly sketching traditionally lately, so here's my first go back at digital painting for 2023.
 

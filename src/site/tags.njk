@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag | tagUrl | replace('/tags/', '') }}"
+eleventyComputed:
+  title: "Tagged “{{ tag }}”"
+eleventyExcludeFromCollections: true
+---
+{% from "components/post-card.njk" import postCard %}
+<header class="index-header">
+  <h1>Tagged “{{ tag }}”</h1>
+  <p class="index-intro"><a href="/posts/">&larr; All posts</a></p>
+</header>
+<ul class="post-list posts-list">
+  {%- for post in collections.allPosts | withTag(tag) %}
+  {{ postCard(post, { showSection: true }) }}
+  {%- endfor %}
+</ul>

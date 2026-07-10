@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/thoughts-on-mending/","title":"Thoughts on mending","tags":["sustainability"],"noteIcon":"","created":"2023-02-19"}
+title: "Thoughts on mending"
+publish: true
+section: writing
+date: 2023-02-19
+tags:
+  - sustainability
+slug: thoughts-on-mending
 ---
-
 
 Several years ago, I brought a cardigan with me to work to mend on my lunch break. It had been on my to do list for ages, and I thought that sitting on the office balcony with a needle and thread would be a nice enough way to spend my break from work. A colleague asked me what I was doing, and when I told them they replied "OR you could just buy a new one?".
 

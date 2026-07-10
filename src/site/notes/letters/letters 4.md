@@ -1,8 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-4/","title":"Bendy like a tent pole","tags":["letters"],"noteIcon":"","created":"2023-04-18"}
+title: "letters 4"
+publish: true
+section: letters
+date: 2023-04-18
+tags:
+  - letters
+description: "Bendy like a tent pole"
+slug: letters-4
 ---
-
-![sketchbook27.jpeg](/img/user/assets/sketchbook27.jpeg)
+![[sketchbook27.jpeg]]
 
 Hey there,
 
@@ -15,14 +21,14 @@ Whilst I kind of wish I'd followed my instinct to cancel or delay our trip for b
 Mr 4 was not at all keen on sleeping in tents. After a lot of convincing he eventually laid down in his sleeping bag next to me. "Did you know," he whispered, big eyes looking at me and then the tent shaking around us in the wind and rain, "when things wobble like this, it means they're about to fall down." I told him: "Some things, yes. But some things, like this tent, are made from stuff that is strong, but also bendy. So they might wobble or flex but they don't break or fall over. And when the wind stops blowing they stand straight again." That seemed to satisfy him because he curled up next to me and drifted off to sleep.
 
 ## I've been creating
-![sketchbook26.jpeg](/img/user/assets/sketchbook26.jpeg)
-![sketchbook28.jpeg](/img/user/assets/sketchbook28.jpeg)
-![sketchbook29.jpeg](/img/user/assets/sketchbook29.jpeg)
+![[sketchbook26.jpeg]]
+![[sketchbook28.jpeg]]
+![[sketchbook29.jpeg]]
 
 1. **Sketchbook pages**, doing some more exploring with watercolours and highlighters.
 2. **[A Notion template](https://teresawatts.notion.site/2023-Weekly-tasks-template-c72c03f322494fd6b8fad0c4f38960ca)** for planning out my week - not sure if it will be useful for anyone else, but it's working nicely for me so I thought I'd share.
 3. **Blind contour sketches**. I have a confession: I often doodle during remote work meetings, but don't want people to feel like I'm not paying attention (keeping my hands busy actually helps me keep focus). So I've started drawing portraits from the little squares in Google Meet without looking at the paper. The results are awful and funny and completely unrecognisable. 
-![contour.jpeg](/img/user/assets/contour.jpeg)
+![[contour.jpeg]]
 
 ## I've been consuming
 1. [Letter of Recommdendation: Blind Contour Drawing](https://www.nytimes.com/2015/05/17/magazine/letter-of-recommendation-blind-contour-drawing.html) Looking more into the drawing exercise led me to this gem: <q>Our brains are designed to simplify — to reduce the tumult of the world into order. Blind drawing trains us to stare at the chaos, to honor it. It is an act of meditation, as much as it is an artistic practice — a gateway to pure being. It forces us to study the world as it actually is.</q>

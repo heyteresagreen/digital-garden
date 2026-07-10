@@ -1,12 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/about/","noteIcon":"","created":"2025-11-20"}
+title: About
+publish: true
+standalone: true
+permalink: /about/
+layout: layouts/page.njk
 ---
-
 I'm an artist and designer interested in exploring how technology can help rather than harm, thinking through writing, and the power of observation expressed through traditional art media. 
 
 I have over 20 years of experience working on digital products, websites, apps and brands, and am currently a Lead UX Designer at [Moodle HQ](http://moodle.com). 
 
-[[Art\|Art]] has been part of my life pretty much forever in one form or another, and my drawing skills and creative approach inform my UX design work through [[Sketching\|sketchnotes]], little illustrations and workshops.
+[[Art]] has been part of my life pretty much forever in one form or another, and my drawing skills and creative approach inform my UX design work through [[Sketching|sketchnotes]], little illustrations and workshops.
 
 From 2026 I’ll have a little availability for interesting projects outside of my usual work and art. If you have something super exciting in mind, [let’s chat](mailto:teresawatts@gmail.com)!
 ### Some cool things I’ve done:
@@ -18,4 +21,4 @@ From 2026 I’ll have a little availability for interesting projects outside of 
 * Reinvented our Experience Design team sharing/critique sessions for higher engagement, better quality feedback, and all-round good team culture vibes.
 * Painted a huge mural on the wall of an ice-cream shop. It was a long time ago and it’s gone now, but I will hold onto that experience forever.
 
-You might also be interested to read more [[About this site\|About this site]].
+You might also be interested to read more [[About this site]].

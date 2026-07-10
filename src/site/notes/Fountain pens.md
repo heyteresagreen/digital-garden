@@ -1,10 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/fountain-pens/","tags":["Stationery"],"noteIcon":"","created":"2023-11-13","updated":"2024-03-22"}
+title: "Fountain pens"
+publish: true
+section: writing
+date: 2023-11-13
+tags:
+  - Stationery
+image: "[[IMG_2375.jpeg|watercolour painting of 2 fountain pens and a bottle of ink]]"
+imageUrl: /img/user/assets/IMG_2375.jpeg
+slug: fountain-pens
+updated: 2024-03-22
 ---
+![[IMG_2375.jpeg|watercolour painting of 2 fountain pens and a bottle of ink]]
 
-![IMG_2375.jpeg|watercolour painting of 2 fountain pens and a bottle of ink](/img/user/assets/IMG_2375.jpeg)
-
-![IMG_4820 1.jpeg|Photo of a sketchbook with sketches of my Sailor Fude de Mannen fountain pen, with the real pen next to it](/img/user/assets/IMG_4820%201.jpeg)
+![[IMG_4820 1.jpeg|Photo of a sketchbook with sketches of my Sailor Fude de Mannen fountain pen, with the real pen next to it]]
 
 I bought my first fountain pen in 2017 after getting a new job. It wasn’t immediate love, in fact after playing around with it for a bit it sat sadly unused for the next few years. I was a big fan of gel pens and brush pens for journaling, and as a calligrapher I was disappointed with the lack of flex in the steel nib. I liked the *idea* of fountain pens, but didn’t have a great use for it.
 

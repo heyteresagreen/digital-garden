@@ -1,0 +1,13 @@
+---
+layout: layouts/index.njk
+title: Books
+intro: What I've been reading, with occasional notes.
+pagination:
+  data: collections.books
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/books/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+listClass: book-list
+eleventyExcludeFromCollections: true
+---

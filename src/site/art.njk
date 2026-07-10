@@ -1,0 +1,14 @@
+---
+layout: layouts/index.njk
+title: Art
+intro: Some things I've made, sketched or painted. I like to dabble in different media so expect a lot of variety!
+pagination:
+  data: collections.art
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/art/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+hideExcerpts: true
+listClass: art-grid
+eleventyExcludeFromCollections: true
+---

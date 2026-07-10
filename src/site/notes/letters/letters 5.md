@@ -1,8 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-5/","title":"Making the most of right now","tags":["letters"],"noteIcon":"","created":"2023-04-28"}
+title: "letters 5"
+publish: true
+section: letters
+date: 2023-04-28
+tags:
+  - letters
+description: "Making the most of right now"
+slug: letters-5
 ---
-
-![dining-table.jpeg](/img/user/assets/dining-table.jpeg)
+![[dining-table.jpeg]]
 
 A couple of years ago, I decided to indulge in a daydream. The dream was a house, a big and beautiful and very designed house, with a little studio in the garden for creating. I love daydreams, but this one quickly turned into more of an obsession as I decided to add a little more realistic detail to my imagining. Besides the scrolling through social media for inspiration, I started researching house prices, builders, materials, mortgages, and started thinking that just maybe, if we worked and saved really hard (and took on a ton of debt), it could become a reality. And then our real lives could begin, and I could start properly creating.
 
@@ -11,15 +17,15 @@ I don’t feel like it was a bad thing to indulge in aesthetic escapism, especia
 So it looks like I’ll be writing and drawing and painting from my dining table for some time to come (which I knew from the beginning anyway), and making the most of right now.
 
 ## I've been creating
-![sketchbook30.jpeg|Photo of my sketchbook, showing highlighter sketches of banksias and birds on power lines](/img/user/assets/sketchbook30.jpeg)
-![sketchbook31.jpeg|Photo of my sketchbook, showing highlighter sketches of things I saw in a cafe](/img/user/assets/sketchbook31.jpeg)
+![[sketchbook30.jpeg|Photo of my sketchbook, showing highlighter sketches of banksias and birds on power lines]]
+![[sketchbook31.jpeg|Photo of my sketchbook, showing highlighter sketches of things I saw in a cafe]]
 
-![sketchbook32.jpeg|Photo of my sketchbook, showing coloured pencil sketches of my weekend](/img/user/assets/sketchbook32.jpeg)
+![[sketchbook32.jpeg|Photo of my sketchbook, showing coloured pencil sketches of my weekend]]
 
 1. **Sketchbook pages** - this week has been big on socialising and less on sketching, which is nice every once in a while.
 2. **Space in the pantry** for my baking adventures. Limited storage in our house definitely puts a cap on any mindless consumption - anything new requires some rationalisation or reduction of what we already have. I'm pretty happy with the way we've been able to shuffle things around for our shifting needs.
 3. **Drawings for the kids** - I've been doing my best to fulfil requests, including fire trucks, dinosaurs, volcanos, and their new pet fish.
-![fishy.jpeg](/img/user/assets/fishy.jpeg)
+![[fishy.jpeg]]
 <small>Their names are Orangey (not pictured) and Bingo</small>
 
 ## I've been consuming

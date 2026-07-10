@@ -1,33 +1,16 @@
-require("dotenv").config();
-const settings = require("../../helpers/constants");
-
-const allSettings = settings.ALL_NOTE_SETTINGS;
+const slugify = require("@sindresorhus/slugify");
 
 module.exports = {
+  layout: "layouts/post.njk",
   eleventyComputed: {
-    layout: (data) => {
-      if (data.tags.indexOf("gardenEntry") != -1) {
-        return "layouts/index.njk";
-      }
-      return "layouts/note.njk";
-    },
     permalink: (data) => {
-      if (data.tags.indexOf("gardenEntry") != -1) {
-        return "/";
-      }
-      return data.permalink || undefined;
+      if (!data.publish) return false;
+      if (data.permalink) return data.permalink; // pages like About/Now set their own
+      const slug = data.slug || slugify(data.page.fileSlug);
+      const sections = ["writing", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
+      const section = sections.includes(data.section) ? data.section : "posts";
+      return `/${section}/${slug}/`;
     },
-    settings: (data) => {
-      const noteSettings = {};
-      allSettings.forEach((setting) => {
-        let noteSetting = data[setting];
-        let globalSetting = process.env[setting];
-
-        let settingValue =
-          noteSetting || (globalSetting === "true" && noteSetting !== false);
-        noteSettings[setting] = settingValue;
-      });
-      return noteSettings;
-    },
-  },
+    eleventyExcludeFromCollections: (data) => !data.publish
+  }
 };

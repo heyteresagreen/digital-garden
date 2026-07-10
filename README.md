@@ -1,9 +1,14 @@
-# Digital Obsidian Garden
-This is the template to be used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden). 
-See the README in the plugin repo for information on how to set it up.
+# teresawatts.com
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
+Custom Eleventy (v3) build — replaced the Obsidian Digital Garden plugin in July 2026.
 
----
-## Docs
-Docs are available at [dg-docs.ole.dev](https://dg-docs.ole.dev/)
+- Content: `src/site/notes/` (published from Obsidian via Enveloppe — see ENVELOPPE-SETUP.md)
+- Templates: `src/site/_includes/` (Nunjucks, fully owned — no plugin)
+- Styles: `src/site/styles/tw-style.scss` (single file)
+- Build: `npm install` once, then `npm start` for local dev at http://localhost:8080, Netlify runs `npm run build`
+
+URL structure: `/writing/`, `/art/`, `/sketching/`, `/books/`, `/letters/`,
+`/projects/` section indexes; `/posts/` mixed feed; `/tags/tag-name/` archives.
+Old Digital Garden URLs 301-redirect via `netlify.toml`.
+
+See MIGRATION-NOTES.md for the content migration log.

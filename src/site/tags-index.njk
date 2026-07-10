@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+title: Tags
+permalink: /tags/
+eleventyExcludeFromCollections: true
+eleventyImport:
+  collections: ["tagList", "allPosts"]
+---
+<header class="index-header">
+  <h1>Tags</h1>
+</header>
+<ul class="tag-links">
+  {%- for tag in collections.tagList %}
+  {%- set count = collections.allPosts | withTag(tag) | length %}
+  <li><a href="{{ tag | tagUrl }}">{{ tag }} ({{ count }})</a></li>
+  {%- endfor %}
+</ul>

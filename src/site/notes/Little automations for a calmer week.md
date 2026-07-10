@@ -1,7 +1,12 @@
 ---
-{"dg-publish":true,"permalink":"/little-automations-for-a-calmer-week/","noteIcon":"","created":"2026-02-19"}
+title: "Little automations for a calmer week"
+publish: true
+section: writing
+date: 2026-02-19
+description: "Weekly meeting summaries to help my plan my week"
+slug: little-automations-for-a-calmer-week
+created: 2026-02-19
 ---
-
 Lately I've been trying to notice when small, recurring things annoy me and see if I can improve them or avoid them entirely. Usually these things are small enough that the effort required to address them is disproportionately large, but now with Large Language Models available there's suddenly a lot more possible. 
 
 Here are a couple of scripts I've written to help me have a calmer week, where AI did most of the actual coding. These all use Google Apps Script as we use Google Workplace at my work.
@@ -13,7 +18,7 @@ To help me remember this, every Thursday (the end of my work week), I would go t
 
 Now I have a script that looks through my calendar for the next week, puts it into an email in list form, and totals up the number of hours I'll be spending in meetings for each day and for the whole week. It also shows when I have a non-working day, so I don't accidentally plan anything for it.
 
-![Pasted image 20260219123814.png|500](/img/user/assets/Pasted%20image%2020260219123814.png)
+![[Pasted image 20260219123814.png|500]]
 
 Creating this script was more difficult than I originally thought, especially using a free version of ChatGPT. Some things I had to account for:
 

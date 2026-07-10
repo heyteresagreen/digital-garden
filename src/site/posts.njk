@@ -1,0 +1,26 @@
+---
+layout: layouts/index.njk
+title: Posts
+intro: Everything on this site, newest first.
+pagination:
+  data: collections.allPosts
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/posts/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showSections: true
+showImages: true
+listClass: posts-mosaic
+eleventyExcludeFromCollections: true
+---
+<ul class="tag-links">
+  {%- for s in [
+    { label: "Writing", url: "/writing/" },
+    { label: "Art", url: "/art/" },
+    { label: "Sketching", url: "/sketching/" },
+    { label: "Sketchbooks", url: "/sketchbooks/" },
+    { label: "Books", url: "/books/" },
+    { label: "Letters", url: "/letters/" }
+  ] %}
+  <li><a href="{{ s.url }}">{{ s.label }}</a></li>
+  {%- endfor %}
+</ul>

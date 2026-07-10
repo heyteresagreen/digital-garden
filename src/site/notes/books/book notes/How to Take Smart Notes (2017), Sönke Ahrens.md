@@ -1,11 +1,16 @@
 ---
-{"dg-publish":true,"permalink":"/books/book-notes/how-to-take-smart-notes-2017-soenke-ahrens/","tags":["books"],"noteIcon":"","created":"2025-06-02"}
+title: "How to Take Smart Notes (2017), Sönke Ahrens"
+publish: true
+section: books
+date: 2025-06-02
+tags:
+  - books
+slug: how-to-take-smart-notes-2017-soenke-ahrens
 ---
 
 
-
 Audiobook listened in 2022
-Paperback version [[books/Books I've read in 2025\|read in 2025]]
+Paperback version [[Books I've read in 2025|read in 2025]]
 
 Description of how to use the Zettelkasten system created by prolific German sociologist Niklas Luhmann in the 60's, and how and why it can be set up as a productive writing workflow.
 
@@ -16,7 +21,7 @@ The target audience is students, academics, and non-fiction writers whose aim is
 ## Fleeting notes
 For capturing ideas in the moment, intended to be the basis of permanent notes and to then be discarded. Capture every idea in one place, like an inbox.
 
-“[[notes/Don’t let good ideas go to waste\|Don’t let good ideas go to waste]]”
+“[[Don’t let good ideas go to waste]]”
 “Read with a pen in hand”
 
 ## Literature notes
@@ -45,7 +50,7 @@ For capturing ideas in the moment, intended to be the basis of permanent notes a
   > Under what circumstances would I want to stumble across this note, even if I forget about it
 > In which context will I want to stumble upon it again? p38
 * This becomes an external scaffold to think within
-* [[notes/Connect ideas to generate insight\|Connect ideas to generate insight]]
+* [[Connect ideas to generate insight]]
   * “Critical mass of inter-connected ideas”
   * “Generating insight by letting ideas mingle”
   * Notice clusters
@@ -57,8 +62,8 @@ For capturing ideas in the moment, intended to be the basis of permanent notes a
 ## Project notes
 Notes for a particular project, which might draw from existing permanent notes. Should be archived after the project is complete.
 
-[[notes/Read with a pen in hand\|Read with a pen in hand]]
-Take smart, intentional notes when reading, and [[notes/Don’t let good ideas go to waste\|Don’t let good ideas go to waste]]. Memory is fallible and ideas from reading can stretch beyond their original context.
+[[Read with a pen in hand]]
+Take smart, intentional notes when reading, and [[Don’t let good ideas go to waste]]. Memory is fallible and ideas from reading can stretch beyond their original context.
 
 >Read with a pen in your hand.
 Take smart notes.
@@ -68,7 +73,7 @@ Develop connections between them.
 
 ## Psychology
 
-**[[notes/Dunning-Kruger effect\|Dunning-Kruger effect]]**
+**[[Dunning-Kruger effect]]**
 Where you don't know enough to know that you actually don't know much at all, and so overestimate what you know. You know.
 
 > Poor students lack insight into their own limitations - as they would have to know the vast amount of knowledge out there to be able to see how little they know in comparison. That means that those who are not very good at something tend to be overly confident, while those who have made an effort tend to underestimate their abilities. p7

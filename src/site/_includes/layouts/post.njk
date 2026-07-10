@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+---
+<article>
+  <header>
+    {%- if section %}
+    <p class="section-label"><a href="/{{ section }}/">&larr; {{ section | title }}</a></p>
+    {%- endif %}
+    <h1>{{ title }}</h1>
+    {%- if page.date %}
+    <time datetime="{{ page.date | isoDate }}">{{ page.date | dateFormat }}</time>
+    {%- endif %}
+    {%- if tags and tags.length %}
+    <div class="header-tags">
+      {%- for tag in tags %}
+      <a class="tag" href="{{ tag | tagUrl }}">{{ tag }}</a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </header>
+{{ content | safe }}
+  {%- if section %}
+  {%- set sectionPosts = collections[section] %}
+  {%- set newerPost = sectionPosts | getPreviousCollectionItem %}
+  {%- set olderPost = sectionPosts | getNextCollectionItem %}
+  {%- if newerPost or olderPost %}
+  <nav class="post-nav" aria-label="More in {{ section }}">
+    {%- if newerPost %}<a class="post-nav-prev" href="{{ newerPost.url }}">&larr; {{ newerPost.data.title }}</a>{% endif %}
+    {%- if olderPost %}<a class="post-nav-next" href="{{ olderPost.url }}">{{ olderPost.data.title }} &rarr;</a>{% endif %}
+  </nav>
+  {%- endif %}
+  {%- endif %}
+</article>

@@ -1,9 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/sketching/perth-web-accessibility-camp-2025-in-sketchnotes/","tags":["sketching","sketchnotes"],"noteIcon":"","created":"2025-02-18"}
+title: "Perth Web Accessibility Camp 2025 in sketchnotes"
+publish: true
+section: sketching
+date: 2025-02-18
+tags:
+  - sketching
+  - sketchnotes
+image: "[[assets/IMG_0231 1.jpeg]]"
+imageUrl: "/img/user/assets/IMG_0231 1.jpeg"
+imageAlt: "PWAC 2025 sketchnote"
+slug: perth-web-accessibility-camp-2025-in-sketchnotes
 ---
 
-
-![IMG_0231 1.jpeg|Sketchnote from PWAC 2025](/img/user/assets/IMG_0231%201.jpeg)
+![[IMG_0231 1.jpeg|Sketchnote from PWAC 2025]]
 
 Another great [Perth Web Accessibility Camp](http://www.a11yperth.com/events/perth-web-accessibility-camp-2025.php)!
 

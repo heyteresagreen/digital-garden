@@ -1,14 +1,19 @@
 ---
-{"dg-publish":true,"permalink":"/books/book-notes/designing-your-life-2016-bill-burnett-and-dave-evans/","tags":["books"],"noteIcon":"","created":"2025-03-06"}
+title: "Designing Your Life (2016), Bill Burnett & Dave Evans"
+publish: true
+section: books
+date: 2025-03-06
+tags:
+  - books
+slug: designing-your-life-2016-bill-burnett-and-dave-evans
 ---
-
 
 The authors, both from Stanford, apply design thinking techniques to planning your own life. 
 
 They draw a distinction between engineering problems, which have a specific desired outcome and lots of data, and design problems, where what you’re working towards is a problem in itself.
 >There’s a difference between design problems and engineering problems. […] engineering is a good approach to solving a problem when you can get a great deal of data and you’re sure there is one best solution. (5.2%)
 
-Related: [[notes/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
+Related: [[Experiment, measure and iterate rapidly to validate ideas]]
 >Designers don’t *think* their way forward. Designers *build* their way forward… It means you are not just going to be dreaming up a lot of fun fantasies that have no relationship to the real world—or the real you. You are going to build things (we call them prototypes), try stuff, and have a lot of fun in the process. (9.7%)
 
 Most people don’t have *one thing* they are passionate about, so this process is not about simply following your passion.
@@ -26,7 +31,7 @@ Finding the *right* problem is essential. E.g. some people will stick with a car
 Gravity problems - problems which you cannot solve for and need to accept, such as the effect of gravity. Other examples might include lamenting that being an artist does not pay much or that being out of the workforce for a few years can make you difficult to hire.
 >The key is not to get stuck on something that you have effectively no chance of succeeding at. (17.1%)
 
-[[private/Workview\|Workview]] - what work is and what it means to you, a general statement of your view of work and what good work deserves to be. A work manifesto. Not *what* work but *why* you work. Can and will change over time. Questions such as:
+[[Workview]] - what work is and what it means to you, a general statement of your view of work and what good work deserves to be. A work manifesto. Not *what* work but *why* you work. Can and will change over time. Questions such as:
 >* Why work?
 >* What’s work for?
 >* What does it mean?
@@ -36,7 +41,7 @@ Gravity problems - problems which you cannot solve for and need to accept, such 
 >* What do experience, growth and fulfilment have to do with it?
 >  (24%)
 
-[[private/Lifeview\|Lifeview]] - defining values and perspectives that inform your understanding of life. What matters most to you. Questions such as:
+[[Lifeview]] - defining values and perspectives that inform your understanding of life. What matters most to you. Questions such as:
 > * Why are we here?
 > * What is the meaning or purpose of life?
 > * What is the relationship between the individual and others?
@@ -76,7 +81,7 @@ Anchor problems - a problem we get anchored on and have trouble moving on from. 
 >(41.3%)
 
 Prototyping reduces risk and helps you learn and iterate
-[[notes/Experiment, measure and iterate rapidly to validate ideas\|Experiment, measure and iterate rapidly to validate ideas]]
+[[Experiment, measure and iterate rapidly to validate ideas]]
 > The way forward is to reduce the risk (and the fear) of failure by designing a series of small prototypes to test the waters. It is okay for prototypes to fail—they’re supposed to—but well-designed prototypes teach you something about the future.
 > (41.3%)
 

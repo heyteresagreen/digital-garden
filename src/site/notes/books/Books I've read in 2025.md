@@ -1,7 +1,11 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2025/","contentClasses":"books","noteIcon":"","created":"2025-01-18","updated":"2026-01-16"}
+title: "Books I've read in 2025"
+publish: true
+section: books
+date: 2025-01-18
+slug: books-i-ve-read-in-2025
+updated: 2026-01-16
 ---
-
 
 This year I'm trying something a little different - writing a few notes for each book I finish, in an effort to try and remember things better.
 
@@ -19,7 +23,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-![IMG_7652.jpeg|book cover|150](/img/user/assets/IMG_7652.jpeg)
+![[IMG_7652.jpeg|book cover|150]]
 <div>
 
 ### Babel, or the Necessity of Violence, R F Kuang
@@ -34,7 +38,7 @@ This was interesting to read after other books featuring magic schools (albeit m
 </div>
 <div>
 
-![IMG_7651.jpeg|book cover|150](/img/user/assets/IMG_7651.jpeg)
+![[IMG_7651.jpeg|book cover|150]]
 
 <div>
 
@@ -46,7 +50,7 @@ Short stories have such a small amount of time to hit you hard, and this is what
 </div>
 <div>
 
-![IMG_7649.jpeg|book cover|150](/img/user/assets/IMG_7649.jpeg)
+![[IMG_7649.jpeg|book cover|150]]
 
 <div>
 
@@ -57,7 +61,7 @@ I rounded out all my Becky Chambers books with this novella about four explorers
 </div>
 <div>
 
-![IMG_7648.jpeg|book cover|150](/img/user/assets/IMG_7648.jpeg)
+![[IMG_7648.jpeg|book cover|150]]
 <div>
 
 ### Norwegian Wood, Haruki Murakami
@@ -67,7 +71,7 @@ The book that made Murakami famous in Japan, but in my opinion not one of his be
 </div>
 <div>
 
-![IMG_5986.jpeg|book cover|150](/img/user/assets/IMG_5986.jpeg)
+![[IMG_5986.jpeg|book cover|150]]
 <div>
 
 ### The Husbands, Holly Gramazio (book club)
@@ -78,7 +82,7 @@ The premise of having an attic that keeps spawning new husbands (one at a time, 
 </div>
 <div>
 
-![IMG_6049.jpeg|book cover|150](/img/user/assets/IMG_6049.jpeg)
+![[IMG_6049.jpeg|book cover|150]]
 <div>
 
 ### Bindi, Kirli Sanders
@@ -89,7 +93,7 @@ My first ever verse novel! Apparently its intended audience is mid to upper prim
 </div>
 <div>
 
-![IMG_0395 1.jpeg|book cover|150](/img/user/assets/IMG_0395%201.jpeg)
+![[IMG_0395 1.jpeg|book cover|150]]
 <div>
 
 ### It Lasts Forever and Then It’s Over, Ann de Marcken
@@ -101,7 +105,7 @@ It's been a while since I've read a book about zombies! I found this one via [Ce
 
 <div>
 
-![IMG_0394.jpeg|book cover|150](/img/user/assets/IMG_0394.jpeg)
+![[IMG_0394.jpeg|book cover|150]]
 <div>
 
 ### The Other Wind (Books of Earthsea \#6), Ursula K. Le Guin
@@ -111,7 +115,7 @@ A satisfying end to these trilogies, with dragons, the dead, wizards, a king, a 
 
 <div>
 
-![IMG_0393.jpeg|book cover|150](/img/user/assets/IMG_0393.jpeg)
+![[IMG_0393.jpeg|book cover|150]]
 <div>
 
 ### Tales from Earthsea (Books of Earthsea #5), Ursula K. Le Guin
@@ -124,7 +128,7 @@ I'm finding myself really enjoying short stories and novellas lately. The ones i
 
 <div>
 
-![IMG_0391.jpeg|book cover|150](/img/user/assets/IMG_0391.jpeg)
+![[IMG_0391.jpeg|book cover|150]]
 <div>
 
 ### Tehanu (Books of Earthsea #4), Ursula K. Le Guin
@@ -136,7 +140,7 @@ I was surprised to read reviews of this book afterwards that pointed out nothing
 
 <div>
 
-![IMG_0392.jpeg|book cover|150](/img/user/assets/IMG_0392.jpeg)
+![[IMG_0392.jpeg|book cover|150]]
 <div>
 
 ### American Dirt, Jeanine Cummins (book club)
@@ -148,7 +152,7 @@ A thriller (or crime?) story about a mother and son on the run from a cartel, fl
 
 <div>
 
-![IMG_0314.jpeg|book cover|150](/img/user/assets/IMG_0314.jpeg)
+![[IMG_0314.jpeg|book cover|150]]
 <div>
 
 ### Ranma 1/2 (Volumes 1 and 2), Rumiko Takahashi
@@ -159,7 +163,7 @@ Ranma was the first manga I ever read, found in the local library in my early te
 
 <div>
 
-![IMG_0312.jpeg|book cover|150](/img/user/assets/IMG_0312.jpeg)
+![[IMG_0312.jpeg|book cover|150]]
 <div>
 
 ### The Paper Menagerie, Ken Liu
@@ -170,7 +174,7 @@ These sci-fi short stories hit hard. All have elements, characters or settings f
 
 <div>
 
-![IMG_0311.jpeg|book cover|150](/img/user/assets/IMG_0311.jpeg)
+![[IMG_0311.jpeg|book cover|150]]
 <div>
 
 ### The Farthest Shore (Books of Earthsea #3), Ursula K. Le Guin
@@ -181,7 +185,7 @@ Another time skip and more sailing around the ends of the world for the hero of 
 
 <div>
 
-![IMG_0310.jpeg|book cover|150](/img/user/assets/IMG_0310.jpeg)
+![[IMG_0310.jpeg|book cover|150]]
 <div>
 
 ### The Tombs of Atuan (Books of Earthsea #2), Ursula K. Le Guin
@@ -192,7 +196,7 @@ I wasn’t expecting the series to shift focus to a completely different charact
 
 <div>
 
-![IMG_0309.jpeg|book cover|150](/img/user/assets/IMG_0309.jpeg)
+![[IMG_0309.jpeg|book cover|150]]
 <div>
 
 ### Everyday Permaculture (2025), Anna Matilda
@@ -203,7 +207,7 @@ I spotted this one at the library and was intrigued. I thought I sort of knew wh
 
 <div>
 
-![IMG_0308.jpeg|book cover|150](/img/user/assets/IMG_0308.jpeg)
+![[IMG_0308.jpeg|book cover|150]]
 <div>
 
 ### A Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
@@ -215,7 +219,7 @@ Diving into some classic fantasy, I can see how this story of a boy wizard (alle
 
 <div>
 
-![IMG_0307.jpeg|book cover|150](/img/user/assets/IMG_0307.jpeg)
+![[IMG_0307.jpeg|book cover|150]]
 <div>
 
 ### The City and It’s Uncertain Walls, Haruki Murakami
@@ -226,7 +230,7 @@ Strange and dream-like, which is what I expect of Murakami. There’s a tension 
 
 <div>
 
-![IMG_0306.jpeg|book cover|150](/img/user/assets/IMG_0306.jpeg)
+![[IMG_0306.jpeg|book cover|150]]
 <div>
 
 ### Understanding Comics, Scott McCloud
@@ -236,7 +240,7 @@ I bought this book because I saw it mentioned in a few different contexts, and I
 </div>
 <div>
 
-![IMG_0305.jpeg|book cover|150](/img/user/assets/IMG_0305.jpeg)
+![[IMG_0305.jpeg|book cover|150]]
 <div>
 
 ### Record of a Spaceborn Few (Wayfarers #3), Becky Chambers
@@ -247,18 +251,18 @@ Again there’s not a whole lot that actually happens in this book, but each of 
 
 <div>
 
-![Pasted image 20250701212556.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212556.png)
+![[Pasted image 20250701212556.png|book cover|150]]
 
 <div>
 
-### [[books/book notes/The Making of a Manager (2019), Julie Zhuo\|The Making of a Manager (2019), Julie Zhuo]]
+### [[The Making of a Manager (2019), Julie Zhuo]]
 
 Julie Zhuo pulls together advice from her newsletter about her experiences as a design leader at Facebook. She writes about her transition from star designer to manager, and the lessons she learned along the way.
 </div>
 </div>
 <div>
 
-![Pasted image 20250701212741.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212741.png)
+![[Pasted image 20250701212741.png|book cover|150]]
 
 <div>
 
@@ -269,7 +273,7 @@ A man travels through a desolate landscape with a young girl who doesn't speak, 
 </div>
 <div>
 
-![Pasted image 20250701212831.png|book cover|150](/img/user/assets/Pasted%20image%2020250701212831.png)
+![[Pasted image 20250701212831.png|book cover|150]]
 
 <div>
 
@@ -281,7 +285,7 @@ The second in this series, focused on characters briefly mentioned in the first.
 
 <div>
 
-![IMG_0292 1.jpeg|book cover|150](/img/user/assets/IMG_0292%201.jpeg)
+![[IMG_0292 1.jpeg|book cover|150]]
 
 <div>
 
@@ -293,11 +297,11 @@ A human woman joins a long-haul space mission with a multi-species crew. After r
 
 <div>
 
-![IMG_0282.jpeg|book cover|150](/img/user/assets/IMG_0282.jpeg)
+![[IMG_0282.jpeg|book cover|150]]
 
 <div>
 
-### [[books/book notes/How to Take Smart Notes (2017), Sönke Ahrens\|How to Take Smart Notes (2017), Sönke Ahrens]]
+### [[How to Take Smart Notes (2017), Sönke Ahrens]]
 
 A reread of this book that got me started actually taking notes on things that I consume, almost 3 years ago. The high-level *how* to start a personal knowledge management system is outlined in the first chapter, and the rest of the book gets into the details and the *why*. I don't follow it exactly as I'm not a writer, student or academic, but my hacky version has enough value for me.
 
@@ -306,7 +310,7 @@ A reread of this book that got me started actually taking notes on things that I
 
 <div>
 
-![book.jpeg|book cover|150](/img/user/assets/book.jpeg)
+![[book.jpeg|book cover|150]]
 
 <div>
 
@@ -319,7 +323,7 @@ A sweet sci-fi story centering on a group of aliens unexpectedly stranded in tra
 
 <div>
 
-![IMG_0281.jpeg|book cover|150](/img/user/assets/IMG_0281.jpeg)
+![[IMG_0281.jpeg|book cover|150]]
 
 <div>
 
@@ -333,11 +337,11 @@ A book club pick. My favourite so far! A young woman makes a deal with the darkn
 
 <div>
 
-![IMG_0280.jpeg|book cover|150](/img/user/assets/IMG_0280.jpeg)
+![[IMG_0280.jpeg|book cover|150]]
 
 <div>
 
-### [[books/book notes/Meditations for Mortals (2024), Oliver Burkeman\|Meditations for Mortals (2024), Oliver Burkeman]]
+### [[Meditations for Mortals (2024), Oliver Burkeman]]
 
 I’ve been a fan of Oliver Burkeman’s Imperfectionist newsletter for some time, and there were a lot of familiar ideas here about time and the futility of trying to control it or optimise it. It’s a lot more digestible and practical than *Four Thousand Weeks*, written in short chapters intended to be read one a day over 12 weeks.
 
@@ -346,7 +350,7 @@ I’ve been a fan of Oliver Burkeman’s Imperfectionist newsletter for some tim
 
 <div>
 
-![Pasted image 20250306092538.png|book cover|150](/img/user/assets/Pasted%20image%2020250306092538.png)
+![[Pasted image 20250306092538.png|book cover|150]]
 
 <div>
 
@@ -359,20 +363,20 @@ Revisiting a classic "fairy story" that lives on my shelf. It's a lot more bruta
 
 <div>
 
-![Pasted image 20250306092054.png|book cover|150](/img/user/assets/Pasted%20image%2020250306092054.png)
+![[Pasted image 20250306092054.png|book cover|150]]
 
 <div>
 
 ### Designing Your Life (2016), Bill Burnett &amp; Dave Evans
 
 The authors, both from Stanford, apply design thinking techniques to planning your own life and career. Prototyping and iteration play a big part in this process, as it does when applying design thinking to any problem. Useful frameworks for living an intentional life. 
-[[books/book notes/Designing Your Life (2016), Bill Burnett & Dave Evans\|my book notes]]
+[[Designing Your Life (2016), Bill Burnett & Dave Evans|my book notes]]
 </div>
 </div>
 
 <div>
 
-![Pasted image 20250213205234.png|book cover|150](/img/user/assets/Pasted%20image%2020250213205234.png)
+![[Pasted image 20250213205234.png|book cover|150]]
 
 <div>
 
@@ -384,7 +388,7 @@ Two combatants on opposite sides in a war amongst time travellers slowly build u
 
 <div>
 
-![Pasted image 20250213210556.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210556.png)   ![Pasted image 20250213210623.png|book cover|150](/img/user/assets/Pasted%20image%2020250213210623.png)
+![[Pasted image 20250213210556.png|book cover|150]]   ![[Pasted image 20250213210623.png|book cover|150]]
 
 <div>
 
@@ -396,7 +400,7 @@ I don't usually put the books I read to my kids in here, but this made-for-kids 
 
 <div>
 
-![Pasted image 20250213205105.png|book cover of The Nightingale|150](/img/user/assets/Pasted%20image%2020250213205105.png)
+![[Pasted image 20250213205105.png|book cover of The Nightingale|150]]
 
 <div>
 
@@ -408,7 +412,7 @@ This historical fiction story follows a pair of estranged sisters living in occu
 </div>
 <div>
 
-![IMG_0228 1.jpeg|The Name of the Wind book cover|150](/img/user/assets/IMG_0228%201.jpeg)
+![[IMG_0228 1.jpeg|The Name of the Wind book cover|150]]
 
 <div>
 
@@ -420,7 +424,7 @@ This epic fantasy novel started out strong for me with its premise of the main c
 </div>
 <div>
 
-![assets/orwellsroses_rebeccasolnit.png|150](/img/user/assets/orwellsroses_rebeccasolnit.png)
+![[assets/orwellsroses_rebeccasolnit.png|150]]
 
 <div>
 
@@ -432,5 +436,5 @@ For some reason I was expecting fiction rather than a collection of meandering e
 </div>
 
 
-See [[books/Books I've read in 2022\|Books I've read in 2022]], [[books/Books I've read in 2023\|Books I've read in 2023]] and [[books/Books I've read in 2024\|Books I've read in 2024]].
+See [[Books I've read in 2022]], [[Books I've read in 2023]] and [[Books I've read in 2024]].
 

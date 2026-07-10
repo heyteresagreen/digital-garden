@@ -1,8 +1,10 @@
 ---
-{"dg-publish":true,"permalink":"/to-the-drawing-board/","noteIcon":"","created":"2025-02-01"}
+title: "To the drawing board"
+publish: true
+date: 2025-02-01
+slug: to-the-drawing-board
 ---
-
-![IMG_6202.jpeg|photo of my dining table with an A3 sized drawing board on it holding a sketchbook](/img/user/assets/IMG_6202.jpeg)
+![[IMG_6202.jpeg|photo of my dining table with an A3 sized drawing board on it holding a sketchbook]]
 
 I struggle a lot with capturing correct proportions, especially when it comes to portraits. Mostly I put this down to a lack of experience, but lately I’ve wondered if it’s due to the fact that I draw and paint with my sketchbook flat on my dining room table. Since I usually work fairly small I thought that this perspective wouldn’t be much of an issue, especially as my reference is usually on a phone or tablet right next to it.
 

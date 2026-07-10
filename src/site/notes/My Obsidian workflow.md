@@ -1,9 +1,15 @@
 ---
-{"dg-publish":true,"permalink":"/my-obsidian-workflow/","title":"My Obsidian workflow","tags":["systems"],"noteIcon":"","created":"2022-12-12","updated":"2023-11-06"}
+title: "My Obsidian workflow"
+publish: true
+section: writing
+date: 2022-12-12
+tags:
+  - systems
+slug: my-obsidian-workflow
+updated: 2023-11-06
 ---
 
-
-I try to hold myself back from going too far down the rabbit hole of trying out too many different apps in search of the "perfect" one, to avoid [[Procrastination through process\|Procrastination through process]]. But I had a few specific things I wanted for this website: 
+I try to hold myself back from going too far down the rabbit hole of trying out too many different apps in search of the "perfect" one, to avoid [[Procrastination through process]]. But I had a few specific things I wanted for this website: 
 
 1. A markdown editor to write and edit notes
 2. To be able to push what I've written live to my site
@@ -15,7 +21,7 @@ My other cross-platform note-taking tools, Bear and Notion, aren't great at open
 
 The solution I've found is [Obsidian](https://obsidian.md/), a note-taking app that's really built around a knowledge management system workflow and is also very extendable through community plugins. It's not quite as slick a writing experience as Bear, and not quite as powerful as Notion, but it does allow me to open my website files (stored in iCloud) as a "vault" of notes that I can edit and publish using a plugin.
 
-![obsidian-screenshot.png|Screenshot of Obsidian interface, showing this post](/img/user/assets/obsidian-screenshot.png)*A screenshot of this post in Obsidian. How meta!*
+![[obsidian-screenshot.png|Screenshot of Obsidian interface, showing this post]]*A screenshot of this post in Obsidian. How meta!*
 
 ## Here's my workflow for adding a new notes at the moment:
 

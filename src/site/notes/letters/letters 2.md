@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-2/","title":"Identity, using what you've got and the never-ending to-read pile","tags":["letters"],"noteIcon":"","created":"2023-04-05"}
+title: "letters 2"
+publish: true
+section: letters
+date: 2023-04-05
+tags:
+  - letters
+description: "Identity, using what you've got and the never-ending to-read pile"
+slug: letters-2
 ---
-
 
 Hey there,
 
@@ -19,10 +25,10 @@ It doesn’t sound like much of a shift, but let me tell you it’s quite terrif
 
 ## I've been creating
 
-* This [[Tiny watercolor kit\|Tiny watercolor kit]] for sketching on the go. It made me very happy to not have to buy anything new for it!
-  ![watercolor-corellas.jpeg](/img/user/assets/watercolor-corellas.jpeg)
+* This [[Tiny watercolor kit]] for sketching on the go. It made me very happy to not have to buy anything new for it!
+  ![[watercolor-corellas.jpeg]]
   * Sketches using pastel highlighters, again trying to use what I have already instead of jumping on the temptation to buy new markers. I’ve found it’s a nice base for layering watercolours or coloured pencils over the top, especially for my sketchbook which doesn’t love super wet media.
-    ![sketchbook18.jpeg](/img/user/assets/sketchbook18.jpeg)
+    ![[sketchbook18.jpeg]]
     * The header image on this email. I really wanted it to look 👌 whether you’re reading this email in light mode or dark mode, which meant a lot of messing around with accessibility colour contrast checkers to find just the right colour. Let me know if this shade isn’t working for you.
 
 ## I've been consuming

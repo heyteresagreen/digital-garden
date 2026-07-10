@@ -1,8 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/a-better-way-to-read-email-newsletters/","tags":["reading"],"noteIcon":"","created":"2024-06-16"}
+title: "A better way to read email newsletters"
+publish: true
+section: writing
+date: 2024-06-16
+tags:
+  - reading
+slug: a-better-way-to-read-email-newsletters
 ---
-
-*Edit: since Omnivore shut down, I've switched to [[Reading things later\|Instapaper]]. I have to pay for the premium subscription and use some workarounds to get the same functionality, but hopefully it'll stick around.*
+*Edit: since Omnivore shut down, I've switched to [[Reading things later|Instapaper]]. I have to pay for the premium subscription and use some workarounds to get the same functionality, but hopefully it'll stick around.*
 
 With many writers now using email newsletters to publish, I’ve been finding myself spending more and more time reading long and interesting content in Mail rather than a browser. This has a few drawbacks for me:
 
@@ -14,7 +19,7 @@ With many writers now using email newsletters to publish, I’ve been finding my
 
 So I wanted to keep these emails, which are more like articles or blog posts really, with other long articles that I save. I was doing this manually, but I wanted to skip the step of them coming into my email inbox entirely. I couldn’t figure out how to make this happen in Pocket, so shifted to open source alternative [Omnivore](https://omnivore.app/). Here’s how my setup looks now:
 
-![obsidian.png| Screenshot of the Omnivore app on my phone](/img/user/assets/obsidian.png)
+![[obsidian.png| Screenshot of the Omnivore app on my phone]]
 *Huge improvement in reading experience compared to Mail*
 
 * Where available, I’ll use an RSS feed to subscribe. For Substack newsletters, you can find this by going to the writer’s page and adding “/feed” to the end of the URL.

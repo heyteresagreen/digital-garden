@@ -1,14 +1,20 @@
 ---
-{"dg-publish":true,"permalink":"/voice-chats-with-my-chat-gpt-ux-mentor/","tags":["ux","AI"],"noteIcon":"","created":"2024-01-19"}
+title: "Voice chats with my ChatGPT UX mentor"
+publish: true
+section: writing
+date: 2024-01-19
+tags:
+  - ux
+  - ai
+slug: voice-chats-with-my-chat-gpt-ux-mentor
 ---
 
-
-![IMG_0050.jpeg|Illustration of me talking to my phone](/img/user/assets/IMG_0050.jpeg)
+![[IMG_0050.jpeg|Illustration of me talking to my phone]]
 I love the idea of having a mentor or coach for my UX work. I've worked with wonderful colleagues and friends who have given me ad hoc advice, but never in a formal relationship. Something about not wanting to take up people's time, and a lack of self-knowledge about what I even want to work on, has always stopped me from seeking this out. So when I read about people using AI for coaching, I thought this was worth trying out. A mentor with unlimited time, patience, and availability I can ask all my dumb questions? Sounds too good to be true (*spoiler: it kind of is, but it's still pretty cool*).
 ## Setting up a custom GPT
 It's worth noting that you don't actually need to set up a custom GPT to try this - I believe you can get a similar result by giving similar instructions at the start of a chat or using custom instructions. You can even get a decent result using the currently free GPT 3.5 if you haven't paid for a plan. 
 
-![Pasted image 20240122145428.png|Screenshot of configuring my custom GPT, "UX Mentor"](/img/user/assets/Pasted%20image%2020240122145428.png)
+![[Pasted image 20240122145428.png|Screenshot of configuring my custom GPT, "UX Mentor"]]
 *"Create" mode steps you through the process using ChatGPT, which then generates the instructions shown in "Configure" mode*
 
 However custom GPTs are included in the Plus plan and are extremely easy to set up - you are walked through the process in a series of chat prompts, taking just a few minutes - so I gave it a try. I didn't have any particular texts that I wanted to train it with, so just gave it some prompts around the areas of expertise and the types of responses I was hoping for.
@@ -27,7 +33,7 @@ What’s an AI UX mentor good for? Here’s a few things I’ve tried out so far
 * **Advising on me coaching or mentoring colleagues.** Yes I got the mentor to mentor me on mentoring. 
 * **Drafting a UX case study**. Building a portfolio has got to be the number one thing I procrastinate on. Answering a few questions and getting a draft is a decent starting point to get the ball rolling, and did make me reflect on the project in ways I hadn’t before. I also did it via voice chat whilst cleaning my bathroom!
 * **Refining copy I had drafted.** I feel like I’m an okay writer, but it helps to get another perspective.
-* **Feedback on an illustration.** This was more to test how well the AI can “see”, but based on my article on [[Remote Sketching - tools for UX designers\|Remote Sketching - tools for UX designers]] and one of the illustrations I did for it, it was able to note that there were two people collaborating on a whiteboard and that this looked like a good fit.
+* **Feedback on an illustration.** This was more to test how well the AI can “see”, but based on my article on [[Remote Sketching - tools for UX designers]] and one of the illustrations I did for it, it was able to note that there were two people collaborating on a whiteboard and that this looked like a good fit.
 * **Brainstorming the downsides of using an AI as a mentor.**
 * **Writing an article about our interactions so far.** I felt it was far too effusive in its praise of itself and didn’t end up using any of the material.
 * **Feedback on this article.** I ignored all of it.

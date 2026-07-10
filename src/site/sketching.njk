@@ -1,0 +1,14 @@
+---
+layout: layouts/index.njk
+title: Sketching
+intro: Sketchnotes, sketchbooks and drawings — translating complex ideas into a visual format, and figuring things out by drawing them.
+pagination:
+  data: collections.sketching
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/sketching/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+hideExcerpts: true
+listClass: art-grid
+eleventyExcludeFromCollections: true
+---

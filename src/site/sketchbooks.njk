@@ -1,0 +1,14 @@
+---
+layout: layouts/index.njk
+title: Sketchbooks
+intro: Finished sketchbooks, page by page.
+pagination:
+  data: collections.sketchbooks
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/sketchbooks/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+hideExcerpts: true
+listClass: art-grid
+eleventyExcludeFromCollections: true
+---

@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/the-ugly-stage/","title":"The \"Ugly Stage\"","tags":["process","seedling"],"noteIcon":"","created":"2023-01-11"}
+title: "The \"Ugly Stage\""
+publish: true
+section: writing
+date: 2023-01-11
+tags:
+  - process
+  - seedling
+slug: the-ugly-stage
 ---
-
 When creating a piece of art, there's often an "ugly stage" where it hasn't all come together yet and it doesn't make sense as a whole. I feel like I get this a lot when I'm painting and haven't gotten to the detail or shading that really makes it, especially in a portrait where this stage can look particularly horrifying.
 
 I often feel some panic in the ugly stage that I've bitten off more than I can chew, that the current state is proof that I don't have the skills to pull off what I had planned. I get the urge to give up and do something else, maybe something easier and more predictable. Sometimes I do abandon the piece and move on.

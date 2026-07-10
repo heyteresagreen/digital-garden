@@ -1,0 +1,23 @@
+{% macro postCard(post, opts = {}) %}
+{%- set thumb = post | cardImage if opts.showImage else null %}
+<li class="post-card{% if thumb %} has-thumb{% endif %}">
+  {%- if thumb %}
+  <a class="post-card-thumb" href="{{ post.url }}">
+    <img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy">
+  </a>
+  {%- endif %}
+  <div class="post-card-body">
+    {%- if opts.showSection and post.data.section %}
+    <span class="post-card-section">{{ post.data.section }}</span>
+    {%- endif %}
+    <a class="post-card-title" href="{{ post.url }}">{{ post.data.title }}</a>
+    {%- set summary = post | postExcerpt %}
+    {%- if summary and not opts.hideExcerpt %}
+    <p class="post-card-excerpt">{{ summary }}</p>
+    {%- endif %}
+    {%- if post.date %}
+    <time datetime="{{ post.date | isoDate }}" class="posted">{{ post.date | dateFormat }}</time>
+    {%- endif %}
+  </div>
+</li>
+{% endmacro %}

@@ -1,8 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/books/2026/the-women-kristin-hannah-book-club/","tags":["fiction"],"noteIcon":"","created":"2026-04-22"}
+title: "The Women, Kristin Hannah (book club)"
+publish: true
+section: books
+date: 2026-04-22
+tags:
+  - fiction
+description: "A young and idealistic American nurse signs up for the Vietnam War and discovers things aren't as rosy as the reports they get back home."
+image: "[[assets/Pasted image 20260422212255.png]]"
+imageUrl: "/img/user/assets/Pasted image 20260422212255.png"
+imageAlt: "Book cover of The Women by Kristin Hannah"
+slug: the-women-kristin-hannah-book-club
+created: 2026-04-22
 ---
-
-![Pasted image 20260422212255.png|200](/img/user/assets/Pasted%20image%2020260422212255.png)
+![[Pasted image 20260422212255.png|200]]
 
 A young and idealistic American nurse signs up for the Vietnam War and discovers things aren't as rosy as the reports they get back home. The war that was supposed to just last a few weeks stretches out for years.
 

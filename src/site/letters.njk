@@ -1,0 +1,19 @@
+---
+layout: layouts/index.njk
+title: Letters
+pagination:
+  data: collections.letters
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/letters/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+listClass: letters-list
+eleventyExcludeFromCollections: true
+---
+<img src="/img/user/assets/Letters.png" alt="Letters">
+<p>Letters from me to you, delivered to your email inbox very infrequently. Some rambling thoughts, things I’ve made, interesting links etc.</p>
+<form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="embeddable-buttondown-form">
+  <label for="bd-email">Your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" class="btn" />
+</form>
+<h2>Old letters</h2>

@@ -1,11 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/notes/do-one-thing-at-a-time/","tags":["productivity"],"noteIcon":"","created":"2025-02-16","updated":"2025-11-29"}
+title: "Do one thing at a time"
+publish: true
+section: writing
+date: 2025-02-16
+tags:
+  - productivity
+slug: do-one-thing-at-a-time
+created: 2022-09-15
+updated: 2025-11-29
 ---
-
 
 Based on time and accuracy (e.g. comprehension of text read), multitasking is not as efficient as you think it is. Even with evolving expectations in our busy society, the human brain is limited in how much it can process at the same time, especially if it requires the same parts of the brain.
 
-[[notes/Avoiding multitasking is unrealistic\|Avoiding multitasking is unrealistic]], but maybe we can [[notes/Multitask better\|Multitask better]]?
+[[Avoiding multitasking is unrealistic]], but maybe we can [[Multitask better]]?
 ## References
 [Go on, admit it. You’re multitasking. Here’s how to do it better | Psyche Ideas](https://psyche.co/ideas/go-on-admit-it-youre-multitasking-heres-how-to-do-it-better?utm_source=Psyche+Magazine&utm_campaign=5492a510c0-EMAIL_CAMPAIGN_2022_09_14_04_00&utm_medium=email&utm_term=0_76a303a90a-5492a510c0-72798768)
 

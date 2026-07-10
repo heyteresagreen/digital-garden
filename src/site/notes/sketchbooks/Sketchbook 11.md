@@ -1,8 +1,21 @@
 ---
-{"dg-publish":true,"permalink":"/sketchbooks/sketchbook-11/","tags":["sketchbooks"],"noteIcon":"","created":"2024-12-22"}
+title: "Sketchbook 11"
+publish: true
+section: sketchbooks
+date: 2024-12-22
+tags:
+  - sketchbooks
+image: "[[assets/IMG_3210-a2bde539.jpeg]]"
+imageUrl: /img/user/assets/IMG_3210-a2bde539.jpeg
+imageAlt: "Watercolour sketch of a cathedral "
+slug: sketchbook-11
+sketchbook: "Stillman & Birn Beta"
+size: Pocket
+type: "Mixed media"
+started: "September 2024"
+finished: "In progress"
 ---
-
-I started this sketchbook in September 2024 and it’s currently in progress. I cut this into 2 halves to better fit into [[My notebook system\|My notebook system]].
+I started this sketchbook in September 2024 and it’s currently in progress. I cut this into 2 halves to better fit into [[My notebook system]].
 
 📖 Stillman & Birn Beta
 🎨 Daniel Smith watercolours 
@@ -10,17 +23,17 @@ I started this sketchbook in September 2024 and it’s currently in progress. I 
 ✒️ Lamy Safari, Kaweco Sport 
 ...plus other random materials
 
-![assets/IMG_3210-a2bde539.jpeg|Watercolour sketch of a cathedral ](/img/user/assets/IMG_3210-a2bde539.jpeg)
+![[assets/IMG_3210-a2bde539.jpeg|Watercolour sketch of a cathedral ]]
 
 
-![assets/sketchbook11 4.jpeg|Watercolour sketch](/img/user/assets/sketchbook11%204.jpeg)
+![[assets/sketchbook11 4.jpeg|Watercolour sketch]]
 
-![assets/sketchbook11 3-9fc07e28.jpeg|Watercolour sketch](/img/user/assets/sketchbook11%203-9fc07e28.jpeg)
+![[assets/sketchbook11 3-9fc07e28.jpeg|Watercolour sketch]]
 
-![assets/sketchbook11 2-225c1279.jpeg|Watercolour sketch](/img/user/assets/sketchbook11%202-225c1279.jpeg)
+![[assets/sketchbook11 2-225c1279.jpeg|Watercolour sketch]]
 
-![assets/sketchbook11 1-931c71a3.jpeg|Watercolour sketch](/img/user/assets/sketchbook11%201-931c71a3.jpeg)
+![[assets/sketchbook11 1-931c71a3.jpeg|Watercolour sketch]]
 
-![assets/sketchbook11-58fe868d.jpeg|Watercolour sketch](/img/user/assets/sketchbook11-58fe868d.jpeg)
+![[assets/sketchbook11-58fe868d.jpeg|Watercolour sketch]]
 
-![assets/sketchbook-26b2529f.jpeg|Watercolour sketch](/img/user/assets/sketchbook-26b2529f.jpeg)
+![[assets/sketchbook-26b2529f.jpeg|Watercolour sketch]]

@@ -1,7 +1,16 @@
 ---
-{"dg-publish":true,"permalink":"/notes/build-tools-using-ai/","tags":["design","ai","tools"],"noteIcon":"","created":"2025-12-02","updated":"2025-11-29"}
+title: "Build tools using AI"
+publish: true
+section: writing
+date: 2025-12-02
+tags:
+  - design
+  - ai
+  - tools
+slug: build-tools-using-ai
+created: 2025-02-12
+updated: 2025-11-29
 ---
-
 I like the idea of building small, custom tools for my individual purpose (initially at least) using AI as an enabler. I know a little frontend code - CSS/SCSS, HTML, Javascript - but using AI means I can build things that I can dream up but couldn't easily build myself.
 
 I prefer this mindset over using AI to build the complete project, as it's reusable and creates a deterministic tool that can then produce predictable results. It's a high agency approach.
@@ -15,9 +24,9 @@ Home-cooked apps or software is:
 * Made with love and care
 * Probably not going to make millions of dollars or be motivated by that idea
 
-This is in contrast to professional software which is built for a larger user base, complex, is made by professional teams, and probably not specific to your needs. This is related to [[notes/The long-tail problem\|The long-tail problem]] and [[notes/Design for emergence\|Design for emergence]].
+This is in contrast to professional software which is built for a larger user base, complex, is made by professional teams, and probably not specific to your needs. This is related to [[The long-tail problem]] and [[Design for emergence]].
 
-[[notes/LLMs for non-developers\|LLMs for non-developers]] can help support [[notes/Barefoot developers\|Barefoot developers]] to be able to create home-cooked software without learning how to code.
+[[LLMs for non-developers]] can help support [[Barefoot developers]] to be able to create home-cooked software without learning how to code.
 
 ## References
 [Home-Cooked Software and Barefoot Developers](https://maggieappleton.com/home-cooked-software/)

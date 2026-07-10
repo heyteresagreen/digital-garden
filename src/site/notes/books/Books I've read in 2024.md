@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2024/","tags":["reading"],"noteIcon":"","created":"2024-02-08","updated":"2025-01-16"}
+title: "Books I've read in 2024"
+publish: true
+section: books
+date: 2024-02-08
+tags:
+  - reading
+slug: books-i-ve-read-in-2024
+updated: 2025-01-16
 ---
-
 Here's what I read in 2024:
 
 1. The Neuroscience of You (2022), Chantel Prat
@@ -42,5 +48,5 @@ In progress:
 
 
 
-See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md), [[books/Books I've read in 2023\|Books I've read in 2023]] and [[books/Books I've read in 2025\|Books I've read in 2025]].
+See [Books I've read in 2022](books/Books%20I've%20read%20in%202022.md), [[Books I've read in 2023]] and [[Books I've read in 2025]].
 

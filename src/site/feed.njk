@@ -1,30 +1,25 @@
----json
-{
-  "permalink": "/feed.xml",
-  "eleventyExcludeFromCollections": true
-}
 ---
-{%if meta.siteBaseUrl %}<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ meta.siteBaseUrl }}">
-    <title>{{ meta.siteName}}</title>
-    <link href="{{ meta.siteBaseUrl }}{{ permalink }}" rel="self" ////>
-    <link href="{{ meta.siteBaseUrl }}" ////>
-    <updated>{{ collections.notes | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-    <id>{{ meta.siteBaseUrl }}</id>
-    {%- for note in collections.note | reverse %}
-        <entry>
-            <title>
-                {% if note.title %}{{ note.title }}
-                {% else %}{{ note.fileSlug }}
-                {% endif %}
-            </title>
-            <updated>{%if note.data.updated %}{{ note.data.updated | dateToZulu }}{%else%}{{ note.date | dateToRfc3339 }}{%endif%}</updated>
-            <id>{{ meta.siteBaseUrl }}{{note.url | url }}</id>
-            <content type="html">
-                {{ note.templateContent | hideDataview | link | taggify | htmlToAbsoluteUrls(meta.siteBaseUrl) }}
-            </content>
-            <link href="{{ meta.siteBaseUrl }}{{note.url | url }}" ////>
-        </entry>
-    {%- endfor %}
+permalink: /feed.xml
+eleventyImport:
+  collections: ["allPosts"]
+eleventyExcludeFromCollections: true
+eleventyAllowMissingExtension: true
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ site.title }}</title>
+  <link href="{{ site.url }}/feed.xml" rel="self"/>
+  <link href="{{ site.url }}/"/>
+  <updated>{% if collections.allPosts.length %}{{ collections.allPosts[0].date | dateToRfc3339 }}{% endif %}</updated>
+  <id>{{ site.url }}/</id>
+  <author><name>{{ site.author }}</name></author>
+  {%- for post in collections.allPosts | head(20) %}
+  <entry>
+    <title>{{ post.data.title }}</title>
+    <link href="{{ site.url }}{{ post.url }}"/>
+    <updated>{{ post.date | dateToRfc3339 }}</updated>
+    <id>{{ site.url }}{{ post.url }}</id>
+    <content type="html">{{ post.templateContent | htmlToAbsoluteUrls(site.url + post.url) }}</content>
+  </entry>
+  {%- endfor %}
 </feed>
-{% endif %}

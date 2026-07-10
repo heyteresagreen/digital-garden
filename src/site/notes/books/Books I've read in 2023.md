@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2023/","title":"Books I've read in 2023","tags":["reading"],"noteIcon":"","created":"2023-01-04","updated":"2023-10-20"}
+title: "Books I've read in 2023"
+publish: true
+section: books
+date: 2023-01-04
+tags:
+  - reading
+slug: books-i-ve-read-in-2023
+updated: 2023-10-20
 ---
-
 
 I'm trying to be mindful of reading from a more diverse set of authors this year. I usually keep one non-fiction book and one fiction on the go.
 

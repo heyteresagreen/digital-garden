@@ -1,8 +1,18 @@
 ---
-{"dg-publish":true,"permalink":"/books/2026/project-hail-mary-andy-weir-audiobook-relisten/","tags":["fiction"],"noteIcon":"","created":"2026-04-22"}
+title: "Project Hail Mary, Andy Weir (audiobook relisten)"
+publish: true
+section: books
+date: 2026-04-22
+tags:
+  - fiction
+description: "Waking up on a space ship alone with no memories, a school teacher has to figure out who he is, how he got there, and how he's supposed to save Earth, with science. Also there's an alien. And a lot of science."
+image: "[[assets/Pasted image 20260422214456.png]]"
+imageUrl: "/img/user/assets/Pasted image 20260422214456.png"
+imageAlt: "Book cover of Project Hail Mary, Andy Weir"
+slug: project-hail-mary-andy-weir-audiobook-relisten
+created: 2026-04-22
 ---
-
-![Pasted image 20260422214456.png|200](/img/user/assets/Pasted%20image%2020260422214456.png)
+![[Pasted image 20260422214456.png|200]]
 
 Waking up on a space ship alone with no memories, a school teacher has to figure out who he is, how he got there, and how he's supposed to save Earth, with science. Also there's an alien. And a lot of science.
 

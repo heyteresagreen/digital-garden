@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/books/books-i-ve-read-in-2022/","title":"Books I've read in 2022","tags":["reading"],"noteIcon":"","created":"2022-12-29","updated":"2023-01-12"}
+title: "Books I've read in 2022"
+publish: true
+section: books
+date: 2022-12-29
+tags:
+  - reading
+slug: books-i-ve-read-in-2022
+updated: 2023-01-12
 ---
-
 
 This year, I've somehow gone from reading very few books to back up to pre-kid levels. I've put this down to actually getting consistently decent sleep, moving to a part-time job, and deliberately _not_ putting pressure on myself to read if I don't want to. 
 
@@ -34,4 +40,4 @@ In (roughly) the order they were read:
 1. Daughter of the Moon Goddess, Sue Lynn Tan 
 2.  Continuous Discovery Habits  (2021), Teresa Torres
 
-See [[books/Books I've read in 2023\|Books I've read in 2023]].
+See [[Books I've read in 2023]].

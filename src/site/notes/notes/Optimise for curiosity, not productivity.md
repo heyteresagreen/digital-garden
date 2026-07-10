@@ -1,7 +1,14 @@
 ---
-{"dg-publish":true,"permalink":"/notes/optimise-for-curiosity-not-productivity/","title":"Optimise for curiosity, not productivity","tags":["systems","productivity"],"noteIcon":"","created":"2023-01-03","updated":"2025-12-10"}
+title: "Optimise for curiosity, not productivity"
+publish: true
+section: writing
+date: 2023-01-03
+tags:
+  - systems
+  - productivity
+slug: optimise-for-curiosity-not-productivity
+updated: 2025-12-10
 ---
-
 
 The past few years (2019-2022) I've avoided setting goals - carrying, giving birth to and then caring for two children really doesn't leave a whole lot of energy for chasing big dreams, or at least not for me. I've been in survival mode, and very gentle with myself in terms of productivity. I gave myself permission to not worry about chipping away at big goals, but to instead follow my curiosity as my energy allows, without judgement of where I get to and whether I've reached any measure of success or value.
 

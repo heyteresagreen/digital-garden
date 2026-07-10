@@ -1,7 +1,13 @@
 ---
-{"dg-publish":true,"permalink":"/letters/letters-1/","title":"Writing letters, drawing mangoes & attempting to craft a harmonious life","tags":["letters"],"noteIcon":"","created":"2023-03-28"}
+title: "letters 1"
+publish: true
+section: letters
+date: 2023-03-28
+tags:
+  - letters
+description: "Writing letters, drawing mangoes & attempting to craft a harmonious life"
+slug: letters-1
 ---
-
 
 Hey there,
 
@@ -16,7 +22,7 @@ There are plenty of other ways to start a writing habit, that don't involve both
 1. My [new site](http://teresawatts.com), the result of getting fed up with Wordpress and deciding to fumble around with a static site generator (Jekyll in this case). The result is very simple, but I kind of like it.
 
 2. Many sketchbook drawings and paintings of mangoes. I'm trying to stick with a single subject and instead play with different media, styles and scale.
-   ![sketchbook_mangoes.jpeg](/img/user/assets/sketchbook_mangoes.jpeg)
+   ![[sketchbook_mangoes.jpeg]]
 3. Sourdough loaves using [tin loaf sourdough recipe](https://www.baked-theblog.com/basic-sourdough-pan-loaf/), which I've had more luck with than freeform loaves baked in a dutch oven (in a loaf tin the only way it can go is up!). 
 
 ## I've been consuming

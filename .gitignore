@@ -1,19 +1,5 @@
-node_modules
-dist
-netlify/functions/search/data.json
-netlify/functions/search/index.json
-src/site/styles/theme.*.css
-src/site/styles/_theme.*.css
-# Local Netlify folder
-.netlify
-.idea/
-.vercel
-.cache
-_site/
-**/.DS_Store
+node_modules/
+dist/
+.env
+.DS_Store
 CLAUDE.md
-src/site/calendar/archive/
-src/site/calendar/tests/
-src/site/calendar/explorations/
-src/site/calendar/dev-*.html
-src/site/calendar/projects-calendar

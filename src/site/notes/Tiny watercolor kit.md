@@ -1,11 +1,19 @@
 ---
-{"dg-publish":true,"permalink":"/tiny-watercolor-kit/","title":"Tiny watercolour kit","tags":["tools"],"noteIcon":"","created":"2023-04-03"}
+title: "Tiny watercolour kit"
+publish: true
+section: writing
+date: 2023-04-03
+tags:
+  - tools
+image: assets/watercolour2.jpeg
+imageUrl: /img/user/assets/watercolour2.jpeg
+imageAlt: "photo of my tiny watercolour kit"
+slug: tiny-watercolor-kit
 ---
-
 
 I've loved the idea of drawing and painting whilst out and about, especially as I start seeing artists posting for "[Plein Airpril](https://www.warriorpainters.com/pleinairpril)". I've also found it very easy to make excuses to not do this, one of them being just not having any drawing tools with me at the right time. Well not anymore!
 
-![Photo of my tiny watercolour kit](/img/user/assets/watercolor1.jpeg)
+![Photo of my tiny watercolour kit](assets/watercolor1.jpeg)
 
 Inspired by some [Youtube videos](https://www.youtube.com/watch?v=naRqyVMr8oE), I put together a pocket-sized watercolour kit using bits and pieces I had on hand. My kit includes:
 
@@ -17,11 +25,11 @@ Inspired by some [Youtube videos](https://www.youtube.com/watch?v=naRqyVMr8oE), 
 5. A purse that holds the tin, waterbrush, and pencil, but not the notebook
 
 
-![Photo of my tiny watercolour kit](/img/user/assets/watercolor2.jpeg)
+![Photo of my tiny watercolour kit](assets/watercolor2.jpeg)
 
 So far I've done a test painting at home, and started another whilst out at a playground with the kids (not so successful). I don't know that I'll necessarily be making any fabulous art, but this kit is small enough to take with me most places I go. I'm still learning how to mix colours with primaries and how to adjust to using a waterbrush. I think it's likely that if I do any painting whilst out and about, I'll be finishing it at home with more tools and more time. But I'm so pleased that I was able to put this together without having to buy anything new!
 
-![Photo of my tiny watercolour kit](/img/user/assets/watercolor.jpeg)
+![Photo of my tiny watercolour kit](assets/watercolor.jpeg)
 
 I do think that this could be improved, but who knows if I'll still have the urge to do plein air panting by then? I'm going to give this a go for a while and see how it goes.
 
