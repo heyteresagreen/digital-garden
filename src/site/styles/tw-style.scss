@@ -269,6 +269,7 @@ NOTE AND POST ELEMENTS
 
 article > header {
   text-align: center;
+  padding-top: 2em;
   padding-bottom: 2em;
 
   time {
@@ -281,8 +282,6 @@ article > header {
   margin-bottom: 0.5em;
   font-family: $font-family-sans-serif;
   font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   text-align: left;
   a {
     text-decoration: none;
