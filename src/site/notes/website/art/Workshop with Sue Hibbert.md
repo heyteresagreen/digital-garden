@@ -12,7 +12,7 @@ slug: workshop-with-sue-hibbert
 ---
 ![[IMG_8824.jpeg|Watercolour painting of pathway to the beach]]
 
-test2 I have been trying to get into one of artist [Sue Hibbert's](https://www.suehibbertwatercolour.com/) classes for ages, and I think I'm not the only one - they always seem to sell out faster than I can organise myself. But this 2 hour watercolour workshop came up at the right time for me and I managed to make it in. 
+I have been trying to get into one of artist [Sue Hibbert's](https://www.suehibbertwatercolour.com/) classes for ages, and I think I'm not the only one - they always seem to sell out faster than I can organise myself. But this 2 hour watercolour workshop came up at the right time for me and I managed to make it in. 
 
 Although I've been painting with watercolour for a while now, I'm mostly self-taught and somewhat chaotic (or intuitive maybe?). It was nice to work larger and in a more traditional style, whilst still embracing the unpredictability of watercolour and going where the painting wants to go. I could of course easily spot a bunch of things I admire about Sue's version that I didn't manage in mine, but looking at it on its own it doesn't feel so bad. The big round brush and fan brush were new to me and I struggled to get the lightness and restraint I'd like, something that will hopefully come with more practice working at this scale. 
 
