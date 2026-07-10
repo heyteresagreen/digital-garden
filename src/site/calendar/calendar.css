@@ -15,13 +15,21 @@
     --zoom-level: 1;
     --month-giant-size: 0pt;
 
-    --accent: #2d6147;
-    --accent-light: #e0ece6;
-    --accent-hover: #235038;
-    --input-bg: #eeebe4;
-    --border: #dad6cc;
-    --label: #8a8278;
-    --text: #282420;
+    --accent: #2f4299;
+    --accent-light: #fce8e4;
+    --accent-hover: #1d3087;
+    --input-bg: #ffffff;
+    --border: #ece6e4;
+    --label: #42404f;
+    --text: #2a264a;
+
+    /* Theme surfaces */
+    --canvas-bg: #fcf4f2;
+    --sidebar-bg: #fff9f8;
+    --surface: #ffffff;
+    --hover-bg: #f0ebe9;
+    --accent-text: #ffffff;
+    --placeholder: #b8b0c8;
 }
 
 * { box-sizing: border-box; }
@@ -29,7 +37,7 @@
 body {
     margin: 0;
     font-family: system-ui, -apple-system, sans-serif;
-    background: #e5e1d8;
+    background: var(--canvas-bg);
     user-select: none;
 }
 
@@ -43,7 +51,7 @@ body {
 /* ─── Sidebar ─── */
 .sidebar {
     width: 264px;
-    background: #f8f5f0;
+    background: var(--sidebar-bg);
     border-right: 1px solid var(--border);
     overflow-y: auto;
     overflow-x: hidden;
@@ -60,7 +68,7 @@ body {
 .prop-section-head {
     font-size: 11px;
     font-weight: 700;
-    color: #b0a898;
+    color: var(--label);
     text-transform: uppercase;
     letter-spacing: 0.7px;
     margin-bottom: 12px;
@@ -105,20 +113,11 @@ body {
 .sidebar select:focus {
     outline: none;
     border-color: var(--accent);
-    background: #fff;
+    background: var(--surface);
 }
 
 .sidebar select { cursor: pointer; }
 
-.sidebar input[type="checkbox"] {
-    width: 15px;
-    height: 15px;
-    accent-color: var(--accent);
-    cursor: pointer;
-    margin: 0;
-    justify-self: start;
-    border-radius: 4px;
-}
 
 .sidebar input[type="color"] {
     width: 40px;
@@ -162,7 +161,7 @@ body {
 }
 
 .seg-ctrl button.active {
-    background: #fff;
+    background: var(--surface);
     color: var(--text);
     box-shadow: 0 1px 4px rgba(0,0,0,0.12), 0 0 0 0.5px rgba(0,0,0,0.04);
 }
@@ -222,10 +221,10 @@ body {
 #dateInput:focus {
     outline: none;
     border-color: var(--accent);
-    background: #fff;
+    background: var(--surface);
 }
 
-#dateInput::placeholder { color: #c0b8ae; }
+#dateInput::placeholder { color: var(--placeholder); }
 #dateInput.has-errors { border-color: #dc2626; }
 
 /* ─── Highlighting section ─── */
@@ -245,9 +244,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #f9d76b 0%, #fd9e78 33%, #80d3f0 66%, #c9a4e8 100%);
-    border: 2px solid transparent;
+    background: var(--input-bg);
+    border: 2px solid var(--border);
     transition: transform 0.12s, border-color 0.12s, box-shadow 0.12s;
+}
+
+.swatch-picker.has-custom { border-color: transparent; }
+.swatch-picker.has-custom .picker-icon { display: none; }
+
+.picker-icon {
+    color: var(--label);
+    pointer-events: none;
+    flex-shrink: 0;
 }
 
 .swatch-picker:hover { transform: scale(1.1); }
@@ -268,6 +276,37 @@ body {
     border: none;
     padding: 0;
 }
+
+/* ─── Day grid toggle button ─── */
+.day-grid-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    border: 1.5px solid var(--border);
+    cursor: pointer;
+    background: var(--surface);
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    justify-self: start;
+    transition: border-color 0.12s;
+    flex-shrink: 0;
+}
+
+/* No-colour diagonal line when off */
+.day-grid-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), #e03131 calc(50% - 1px), #e03131 calc(50% + 1px), transparent calc(50% + 1px));
+}
+
+/* Grey fill when on */
+.day-grid-btn.active {
+    background: rgba(0, 0, 0, 0.13);
+    border-color: var(--border);
+}
+.day-grid-btn.active::before { display: none; }
 
 /* ─── Reset link ─── */
 .link-btn {
@@ -309,7 +348,7 @@ body {
 
 .action-btn--primary {
     background: var(--accent);
-    color: #fff;
+    color: var(--accent-text);
 }
 
 .action-btn--primary:hover { background: var(--accent-hover); }
@@ -320,7 +359,7 @@ body {
     font-weight: 500;
 }
 
-.action-btn--secondary:hover { background: #e4e0d8; }
+.action-btn--secondary:hover { background: var(--hover-bg); }
 
 /* ─── Mobile hamburger ─── */
 .hamburger {
@@ -337,7 +376,7 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    background: #e5e1d8;
+    background: var(--canvas-bg);
 }
 
 
@@ -357,7 +396,7 @@ body {
     height: var(--paper-height);
     min-width: var(--paper-width);
     min-height: var(--paper-height);
-    background: white;
+    background: var(--surface);
     padding: var(--paper-padding);
     box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.06);
     border-radius: 2px;
@@ -521,7 +560,7 @@ body[data-view="month"] #monthNavBar { display: flex; }
     padding: 0;
 }
 
-.month-nav-btn:hover { background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.month-nav-btn:hover { background: var(--surface); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 
 #currentMonthDisplay {
     font-size: 13px;
@@ -539,7 +578,7 @@ body[data-view="month"] #monthNavBar { display: flex; }
     display: flex;
     align-items: center;
     gap: 1px;
-    background: #f8f5f0;
+    background: var(--sidebar-bg);
     border: 1.5px solid var(--border);
     border-radius: 20px;
     padding: 2px 4px;
@@ -603,7 +642,7 @@ body[data-view="month"] #monthNavBar { display: flex; }
     padding: 0;
 }
 
-.eye-btn:hover { background: #e4e0d8; color: var(--text); }
+.eye-btn:hover { background: var(--hover-bg); color: var(--text); }
 .eye-btn.active { color: var(--accent); border-color: var(--accent-light); background: var(--accent-light); }
 
 .month h3 {
@@ -699,7 +738,7 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
         top: 12px;
         left: 12px;
         z-index: 999;
-        background: #f8f5f0;
+        background: var(--sidebar-bg);
         border: 1px solid var(--border);
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -728,7 +767,7 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
     z-index: 500;
     transition: background 0.12s, color 0.12s;
 }
-.about-btn:hover { background: #e4e0d8; color: var(--text); }
+.about-btn:hover { background: var(--hover-bg); color: var(--text); }
 
 /* ─── About modal ─── */
 .modal-overlay {
@@ -742,7 +781,7 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
 }
 .modal-overlay.open { display: flex; }
 .modal {
-    background: #f8f5f0;
+    background: var(--sidebar-bg);
     border-radius: 12px;
     padding: 28px 28px 24px;
     max-width: 340px;
@@ -769,7 +808,7 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
     height: 34px;
     border-radius: 8px;
     background: var(--accent);
-    color: #fff;
+    color: var(--accent-text);
     border: none;
     font-size: 13px;
     font-weight: 600;
@@ -777,6 +816,50 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
     font-family: inherit;
 }
 .modal-close:hover { background: var(--accent-hover); }
+
+/* ─── Dark mode ─── */
+body[data-theme="dark"] {
+    --accent: #ffdfd1;
+    --accent-light: #3a2c2a;
+    --accent-hover: #edcdbf;
+    --input-bg: #2e3448;
+    --border: #3a4060;
+    --label: #8090b8;
+    --text: #e8eaf2;
+    --canvas-bg: #1a1b29;
+    --sidebar-bg: #242838;
+    --surface: #3e4570;
+    --hover-bg: #3a4060;
+    --accent-text: #1a1b29;
+    --placeholder: #4a5580;
+}
+
+/* ─── Theme toggle button ─── */
+.theme-btn {
+    position: fixed;
+    bottom: 16px;
+    right: 96px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--sidebar-bg);
+    border: 1.5px solid var(--border);
+    color: var(--label);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    z-index: 500;
+    transition: background 0.12s, color 0.12s;
+    padding: 0;
+}
+.theme-btn:hover { background: var(--hover-bg); color: var(--text); }
+
+.theme-btn .icon-sun,
+.theme-btn .icon-moon { display: none; }
+body:not([data-theme="dark"]) .theme-btn .icon-sun { display: block; }
+body[data-theme="dark"] .theme-btn .icon-moon { display: block; }
 
 /* ─── Print ─── */
 @media print {

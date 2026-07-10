@@ -64,6 +64,18 @@ function initElements() {
     el.optFolded          = document.getElementById('optFolded');
     el.yearTitleToggle    = document.getElementById('yearTitleToggle');
     el.swatchPicker       = document.getElementById('swatchPicker');
+    el.dayGridBtn         = document.getElementById('dayGridBtn');
+    /* B6A: styling-grid controls */
+    el.adjYearColor  = document.getElementById('adjYearColor');
+    el.adjYearSize   = document.getElementById('adjYearSize');
+    el.adjDayColor   = document.getElementById('adjDayColor');
+    el.adjDateColor  = document.getElementById('adjDateColor');
+    el.dayGridColor  = document.getElementById('dayGridColor');
+    el.hexYear  = document.getElementById('hexYear');
+    el.hexMonth = document.getElementById('hexMonth');
+    el.hexDay   = document.getElementById('hexDay');
+    el.hexDate  = document.getElementById('hexDate');
+    el.hexGrid  = document.getElementById('hexGrid');
 }
 
 function hexToRgb(hex) {
@@ -82,11 +94,29 @@ function toggleSidebar() {
     document.querySelector('.sidebar').classList.toggle('open');
 }
 
+/* input-fields: measures the actual active button's box (not a %-of-N
+   guess) so the thumb lands exactly on it regardless of padding/gap —
+   robust if those ever change. Called wherever .active moves. */
+function syncSegThumb(container) {
+    if (!container) return;
+    const thumb = container.querySelector('.seg-thumb');
+    const active = container.querySelector('button.active');
+    if (!thumb || !active) return;
+    /* offsetLeft/offsetWidth are relative to the container's padding
+       edge — the exact coordinate space an absolutely-positioned child
+       (the thumb, with left:0) is placed in. Using getBoundingClientRect
+       here instead double-counts the container's border width and lands
+       the thumb ~1px off from the button it's supposed to match. */
+    thumb.style.width = active.offsetWidth + 'px';
+    thumb.style.transform = `translateX(${active.offsetLeft}px)`;
+}
+
 function setViewMode(mode) {
     viewMode = mode;
     document.body.setAttribute('data-view', mode);
     el.btnViewYear.classList.toggle('active', mode === 'year');
     el.btnViewMonth.classList.toggle('active', mode === 'month');
+    syncSegThumb(el.btnViewYear.closest('.seg-ctrl'));
     el.optFolded.disabled = (mode === 'month');
     if (mode === 'month' && el.layoutSelect.value === 'folded') el.layoutSelect.value = 'portrait';
     if (mode === 'month') el.showDayOutlines.checked = true;
@@ -116,6 +146,12 @@ function updateUrl() {
             ws:  weekStart,
             yt:  el.showYearTitle.checked,
             do:  el.showDayOutlines.checked,
+            /* B6A */
+            yc:  el.adjYearColor.value.slice(1),
+            ysz: el.adjYearSize.value,
+            dyc: el.adjDayColor.value.slice(1),
+            dtc: el.adjDateColor.value.slice(1),
+            gc:  el.dayGridColor.value.slice(1),
             mc:  el.adjMonthColor.value,
             ds:  el.adjDateSize.value,
             dns: el.adjDayNameSize.value,
@@ -138,6 +174,12 @@ function loadFromUrl() {
         if (params.has('ws'))  weekStart                   = +params.get('ws');
         if (params.has('yt'))  el.showYearTitle.checked    = params.get('yt') === 'true';
         if (params.has('do'))  el.showDayOutlines.checked  = params.get('do') === 'true';
+        /* B6A */
+        if (params.has('yc'))  el.adjYearColor.value  = '#' + params.get('yc');
+        if (params.has('ysz')) el.adjYearSize.value   = params.get('ysz');
+        if (params.has('dyc')) el.adjDayColor.value   = '#' + params.get('dyc');
+        if (params.has('dtc')) el.adjDateColor.value  = '#' + params.get('dtc');
+        if (params.has('gc'))  el.dayGridColor.value  = '#' + params.get('gc');
         if (params.has('mc'))  el.adjMonthColor.value      = params.get('mc');
         if (params.has('ds'))  el.adjDateSize.value        = params.get('ds');
         if (params.has('dns')) el.adjDayNameSize.value     = params.get('dns');
@@ -147,8 +189,10 @@ function loadFromUrl() {
         if (params.has('cm'))  currentMonth                = +params.get('cm');
         el.btnMon.classList.toggle('active', weekStart === 1);
         el.btnSun.classList.toggle('active', weekStart === 0);
+        syncSegThumb(el.btnMon.closest('.seg-ctrl'));
         el.btnViewYear.classList.toggle('active', viewMode === 'year');
         el.btnViewMonth.classList.toggle('active', viewMode === 'month');
+        syncSegThumb(el.btnViewYear.closest('.seg-ctrl'));
         document.body.setAttribute('data-view', viewMode);
         el.optFolded.disabled = (viewMode === 'month');
         if (params.has('yt')) {
@@ -158,6 +202,7 @@ function loadFromUrl() {
             if (el.layoutSelect.value === 'folded') el.layoutSelect.value = 'portrait';
             if (!params.has('do')) el.showDayOutlines.checked = true;
         }
+        updateDayGridBtn();
     } catch (e) {}
 }
 
@@ -169,7 +214,7 @@ function updateDimensions() {
         const preset = (monthDims[size] && monthDims[size][orient]) || monthDims[size]['portrait'];
         el.adjDateSize.value    = preset.dateSize;
         el.adjDayNameSize.value = preset.daySize;
-        el.adjTitleSize.value   = preset.titleSize;
+        el.adjTitleSize.value   = preset.giantTitleSize;
     } else {
         const base = dims[size];
         el.adjDateSize.value    = base.dateSize;
@@ -217,9 +262,10 @@ function applyAdvanced() {
     const unit   = dims[size].unit;
     el.yearTitleHeader.textContent = el.year.value;
     el.yearTitleHeader.style.display = (viewMode === 'month' || !el.showYearTitle.checked) ? 'none' : 'block';
-    const [cr, cg, cb] = hexToRgb(el.adjMonthColor.value);
+    updateDayGridBtn();
     const root = document.documentElement;
-    root.style.setProperty('--grid-color', `rgba(${cr},${cg},${cb},0.2)`);
+    /* B6A: grid colour comes from its own well, not the month colour */
+    root.style.setProperty('--grid-color', el.dayGridColor.value);
     root.style.setProperty('--grid-display',
         el.showDayOutlines.checked ? '0.3pt solid var(--grid-color)' : 'none');
     const base = dims[size];
@@ -240,10 +286,17 @@ function applyAdvanced() {
     root.style.setProperty('--cell-height',    spacing.cellHeight + unit);
     root.style.setProperty('--paper-padding',  spacing.margin    + 'mm');
     root.style.setProperty('--month-color',    el.adjMonthColor.value);
+    /* B6A: independent per-element colours + year title size */
+    root.style.setProperty('--year-color',      el.adjYearColor.value);
+    root.style.setProperty('--day-color',       el.adjDayColor.value);
+    root.style.setProperty('--date-color',      el.adjDateColor.value);
+    root.style.setProperty('--year-title-size', parseFloat(el.adjYearSize.value) + 'pt');
+    /* B6A: year styling row follows the year-title eye */
+    const yearRow = document.getElementById('styleRowYear');
+    if (yearRow) yearRow.style.display = (viewMode !== 'month' && el.showYearTitle.checked) ? '' : 'none';
+    syncAllHex();
     if (viewMode === 'month') {
-        const effectiveOrient = effectiveLayout === 'landscape' ? 'landscape' : 'portrait';
-        const mp = (monthDims[size] && monthDims[size][effectiveOrient]) || monthDims[size]['portrait'];
-        root.style.setProperty('--month-giant-size', mp.giantTitleSize + 'pt');
+        root.style.setProperty('--month-giant-size', titleSize + 'pt');
     } else {
         root.style.setProperty('--month-giant-size', '0pt');
     }
@@ -256,6 +309,7 @@ function setWeekStart(val) {
     weekStart = val;
     el.btnMon.classList.toggle('active', val === 1);
     el.btnSun.classList.toggle('active', val === 0);
+    syncSegThumb(el.btnMon.closest('.seg-ctrl'));
     render();
     updateUrl();
 }
@@ -384,7 +438,7 @@ function render() {
         monthDiv.appendChild(table);
         el.calendar.appendChild(monthDiv);
     }
-    if (viewMode === 'month') fitGiantTitle();
+    // fitGiantTitle removed — title size is now driven directly by adjTitleSize
 }
 
 function toggleCell(td, forceState, fullRender = true) {
@@ -427,6 +481,17 @@ function parseDateInput() {
         } else {
             activeHighlights[`${year}-${startMonth}-${parseInt(dayPart)}`] = color;
         }
+    }
+    /* B6A: month-first lines — "Jan 1 yellow", "Mar 10-15 pink" —
+       previously only day-first parsed, despite the placeholder */
+    const regexMF = /([a-z]{3,})\s+(\d+)(?:\s*-\s*(\d+))?\s+([a-z]+)/gi;
+    while ((match = regexMF.exec(input)) !== null) {
+        const [, monthName, startDay, endDay, color] = match;
+        const month = MONTH_NAMES_LOWER.indexOf(monthName.toLowerCase().substring(0, 3));
+        if (month === -1) continue;
+        const last = endDay ? parseInt(endDay) : parseInt(startDay);
+        for (let day = parseInt(startDay); day <= last; day++)
+            activeHighlights[`${year}-${month}-${day}`] = color;
     }
     render();
     updateUrl();
@@ -485,6 +550,16 @@ function toggleYearTitle() {
     el.showYearTitle.checked = !el.showYearTitle.checked;
     el.yearTitleToggle.classList.toggle('active', el.showYearTitle.checked);
     applyAdvanced();
+}
+
+function toggleDayGrid() {
+    el.showDayOutlines.checked = !el.showDayOutlines.checked;
+    applyAdvanced();
+}
+
+function updateDayGridBtn() {
+    if (!el.dayGridBtn) return;
+    el.dayGridBtn.classList.toggle('active', el.showDayOutlines.checked);
 }
 
 function setCustomColor(hex) {
@@ -570,8 +645,113 @@ window.addEventListener('pointerup', () => {
     }
 });
 
+// ─── Theme toggle ─────────────────────────────────────────────────────────
+function toggleTheme() {
+    const next = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.body.dataset.theme = next;
+    localStorage.setItem('calTheme', next);
+}
+
+function initTheme() {
+    const saved = localStorage.getItem('calTheme');
+    if (saved) {
+        document.body.dataset.theme = saved;
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.dataset.theme = 'dark';
+    }
+}
+
 initElements();
+initTheme();
 loadFromUrl();
 updateDimensions();
 updateTextareaFromHighlights();
 setDrawMode('highlight');
+
+
+/* ═══ B6A UI helpers (integrated from the prototype shim) ═══ */
+const HEX_RE = /^#[0-9a-fA-F]{6}$/;
+
+function syncAllHex() {
+    const pairs = [['hexYear','adjYearColor'], ['hexMonth','adjMonthColor'],
+                   ['hexDay','adjDayColor'], ['hexDate','adjDateColor'], ['hexGrid','dayGridColor']];
+    pairs.forEach(([h, c]) => {
+        if (el[h] && el[c] && document.activeElement !== el[h]) el[h].value = el[c].value.toUpperCase();
+    });
+}
+function pickColor(pickerId) {
+    applyAdvanced();
+}
+function typeColor(hexEl, pickerId) {
+    if (!HEX_RE.test(hexEl.value)) return;
+    el[pickerId].value = hexEl.value;
+    if (pickerId === 'dayGridColor' && !el.showDayOutlines.checked) el.showDayOutlines.checked = true;
+    applyAdvanced();
+}
+function pickGridColor() {
+    if (!el.showDayOutlines.checked) el.showDayOutlines.checked = true;
+    applyAdvanced();
+}
+
+/* orientation icon seg drives the hidden #layoutSelect */
+function syncLayoutIcons() {
+    const sel = el.layoutSelect;
+    document.querySelectorAll('.orient-icons button').forEach(b =>
+        b.classList.toggle('active', b.dataset.layout === sel.value));
+    const folded = document.getElementById('iconFolded');
+    if (folded) folded.disabled = el.optFolded.disabled;
+    syncSegThumb(document.querySelector('.orient-icons'));
+}
+function setLayoutIcon(v) {
+    if (el.optFolded.disabled && v === 'folded') return;
+    el.layoutSelect.value = v;
+    updateDimensions();
+    syncLayoutIcons();
+}
+
+/* month-label seg drives the hidden #monthFormat */
+function syncMonthFmt() {
+    document.querySelectorAll('.monthfmt-seg button').forEach(b =>
+        b.classList.toggle('active', b.dataset.fmt === el.monthFormat.value));
+    syncSegThumb(document.querySelector('.monthfmt-seg'));
+}
+function setMonthFormat(v) {
+    el.monthFormat.value = v;
+    applyAdvanced();
+    syncMonthFmt();
+}
+
+const _b6aSetViewMode = setViewMode;
+setViewMode = function (m) { _b6aSetViewMode(m); syncLayoutIcons(); applyAdvanced(); };
+
+/* highlighting section disclosure — state lives in activeHighlights/URL,
+   untouched by open/close */
+(function () {
+    const head = document.querySelector('.highlighting-head');
+    if (!head) return;
+    const section = head.closest('.prop-section');
+    section.classList.add('hl-section');
+    head.setAttribute('role', 'button');
+    head.setAttribute('tabindex', '0');
+    head.setAttribute('aria-expanded', 'false');
+    function toggleHl() {
+        const open = section.classList.toggle('open');
+        head.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+    head.addEventListener('click', e => { if (!e.target.closest('.link-btn')) toggleHl(); });
+    head.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleHl(); }
+    });
+    setTimeout(() => {
+        if (el.dateInput.value.trim()) {
+            section.classList.add('open');
+            head.setAttribute('aria-expanded', 'true');
+        }
+    }, 0);
+})();
+
+/* boot sync for the seg/icon/hex mirrors */
+syncLayoutIcons();
+syncMonthFmt();
+syncAllHex();
+applyAdvanced();

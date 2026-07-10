@@ -14,3 +14,6 @@ _site/
 CLAUDE.md
 src/site/calendar/archive/
 src/site/calendar/tests/
+src/site/calendar/explorations/
+src/site/calendar/dev-*.html
+src/site/calendar/projects-calendar

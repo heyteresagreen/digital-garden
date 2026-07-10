@@ -1,0 +1,500 @@
+/* ════════════════════════════════════════════════════════════════
+   B6a FINAL — consolidated stylesheet
+   Flattens the exploration stack (b6-soft-core → b6a-soft-avenir →
+   b6a2-stacked → b6a3-grouped → b6a4-review → b6a5-styling →
+   b6a6-hex) into one layer, plus Teresa's last tweak: styling grid
+   has no COLOUR/SIZE header and the Grid row sits in the same
+   columns with the eye in the size slot.
+
+   Loads AFTER ../calendar.css. UI chrome + the deliberate styling
+   controls for the printable page (year/day/date colour + year
+   size — defaults keep output identical). Companion JS shim lives
+   in b6a-final.html.
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── Tokens ── */
+:root {
+    --accent: #2a2f5b;
+    --accent-hover: #3c4276;
+    --accent-light: #f2a28c;      /* salmon commit plate */
+    --accent-text: #2a2f5b;
+
+    --canvas-bg: #f6e7e2;
+    --sidebar-bg: #fcf4f2;
+    --surface: #ffffff;
+    --hover-bg: #ffd9c8;          /* coral: transient */
+
+    --text: #2a2f5b;
+    --label: #4a4f7d;
+    --border: #7d81a4;            /* muted control boundary */
+    --input-bg: #ffffff;
+    --placeholder: #646a7c;
+
+    --rule: #eddcd6;              /* hairline dividers */
+    --shadow-ink: rgba(42, 47, 91, 0.55);
+    --r-ctrl: 5px;
+    --r-btn: 8px;
+}
+
+body[data-theme="dark"] {
+    --accent: #f2a28c;
+    --accent-hover: #f6b5a3;
+    --accent-light: #f2a28c;
+    --accent-text: #33130a;
+
+    --canvas-bg: #14172b;
+    --sidebar-bg: #1d2138;
+    --surface: #272c4e;
+    --hover-bg: #5c2331;
+
+    --text: #f6e7e2;
+    --label: #cbc1b8;
+    --border: #8b90b5;
+    --input-bg: #101325;
+    --placeholder: #b7a89e;
+
+    --rule: #313757;
+    --shadow-ink: rgba(246, 231, 226, 0.45);
+}
+
+/* ── Guardrail: printable output only changes via the Styling
+      controls below; base state is pixel-identical ── */
+.page {
+    background: #ffffff;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+#yearTitleHeader {
+    color: var(--year-color, #000000);
+    font-size: var(--year-title-size, 2rem);
+}
+th { color: var(--day-color, #000000); }
+td span { color: var(--date-color, #000000); }
+/* base-theme exceptions (.highlight-black span, .overflow-date span)
+   outrank td span and keep working */
+
+/* ── Desk ── */
+.preview-area {
+    background-image: radial-gradient(rgba(42,47,91,0.07) 1px, transparent 1px);
+    background-size: 7px 7px;
+}
+body[data-theme="dark"] .preview-area {
+    background-image: radial-gradient(rgba(246,231,226,0.05) 1px, transparent 1px);
+}
+
+/* ── Typography ── */
+body { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+.prop-section-head {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--text);
+    margin-bottom: 14px;
+    background: none;
+}
+
+.prop-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--label);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+}
+.prop-dates-label {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--label);
+    margin-bottom: 5px;
+}
+
+/* ── Structure: stacked rows in wrap-capable sections ── */
+.sidebar { border-right: 1px solid var(--rule); }
+.prop-section {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    align-items: flex-start;
+    padding: 16px 20px 18px;
+    border-bottom: 1px solid var(--rule);
+}
+.prop-section-head { width: 100%; }
+
+.prop-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 14px;
+}
+.prop-row:last-child { margin-bottom: 0; }
+.prop-row--view { gap: 0; }
+
+/* side-by-side pair (:has carries ID specificity — keep in mind
+   when overriding) */
+.prop-row:has(#sizeSelect),
+.prop-row:has(#layoutSelect) { width: calc(50% - 5px); }
+
+.prop-row .seg-ctrl,
+.prop-row select,
+.prop-row input[type="number"],
+.prop-row .year-input-group { width: 100%; }
+.prop-row input[type="color"] { align-self: flex-start; }
+
+/* ── Fields ── */
+/* input-fields: focus transition tuned live via dev-transition-c-tweak.html
+   ("variant C" — snappy spring), values are Teresa's final picks. */
+.sidebar input[type="number"],
+.sidebar select,
+#dateInput {
+    border: 1.5px solid var(--border);
+    border-radius: var(--r-ctrl);
+    background: var(--input-bg);
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        transform 160ms ease;
+}
+.sidebar input[type="number"]:focus,
+.sidebar select:focus,
+#dateInput:focus {
+    transition:
+        border-color 160ms cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 160ms cubic-bezier(0.34, 1.56, 0.64, 1),
+        transform 160ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    border-color: var(--text);
+    background: var(--input-bg);
+    box-shadow: 2px 2px 0 var(--shadow-ink);
+    transform: scale(1.006);
+}
+#dateInput.has-errors { border-color: #b3261e; box-shadow: 2px 2px 0 rgba(179,38,30,0.4); }
+
+/* input-fields: base calendar.css dims the stepper to 0.5 opacity always —
+   raise the resting state slightly and make hover/focus clearly visible,
+   same treatment on every number input regardless of context. */
+.sidebar input[type="number"]::-webkit-inner-spin-button,
+.sidebar input[type="number"]::-webkit-outer-spin-button { opacity: 0.65; }
+.sidebar input[type="number"]:hover::-webkit-inner-spin-button,
+.sidebar input[type="number"]:hover::-webkit-outer-spin-button,
+.sidebar input[type="number"]:focus::-webkit-inner-spin-button,
+.sidebar input[type="number"]:focus::-webkit-outer-spin-button { opacity: 1; }
+
+.sidebar select { /* hidden selects (#layoutSelect, #monthFormat) never render, chevron is moot there */
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="%232a2f5b" stroke-width="1.8"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 9px center;
+    padding-right: 26px;
+}
+body[data-theme="dark"] .sidebar select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="%23f6e7e2" stroke-width="1.8"/></svg>');
+}
+
+.sidebar input[type="color"] { border: 1.5px solid var(--border); border-radius: var(--r-ctrl); }
+
+.eye-btn {
+    border: 1.5px solid var(--border);
+    border-radius: var(--r-ctrl);
+    background: var(--input-bg);
+    color: var(--label);
+}
+.eye-btn:hover { background: var(--hover-bg); color: var(--text); }
+.eye-btn.active { background: var(--text); color: var(--sidebar-bg); border-color: var(--text); }
+
+/* ── Segmented controls (incl. orientation + month-format segs) ── */
+.seg-ctrl {
+    position: relative;
+    border: 1.5px solid var(--border);
+    border-radius: calc(var(--r-ctrl) + 2px);
+    background: var(--input-bg);
+    padding: 2px;
+    gap: 2px;
+    height: 34px;
+    display: flex;
+}
+/* input-fields: sliding thumb, option "B" from the seg-ctrl transition
+   round — plain slide, no overshoot/blob. Position/width are set in JS
+   (syncSegThumb in calendar.js) via getBoundingClientRect() measurement
+   rather than %-of-n math, since that stays correct regardless of this
+   gap/padding. */
+.seg-thumb {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: calc(100% - 4px);
+    width: 0;
+    background: var(--text);
+    border-radius: calc(var(--r-ctrl) - 1px);
+    z-index: 0;
+    transition: transform 220ms cubic-bezier(0.32, 1.3, 0.62, 1), width 220ms cubic-bezier(0.32, 1.3, 0.62, 1);
+}
+.seg-ctrl button {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    border: none;
+    border-radius: calc(var(--r-ctrl) - 1px);
+    /* input-fields: background:none alone doesn't reliably turn off the
+       browser's native <button> face (buttonface white) — the .seg-thumb
+       fill sitting at z-index:0 needs the button to be genuinely
+       transparent for it to show through. appearance:none + an explicit
+       transparent background-color removes native theming outright. */
+    appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    background-color: transparent;
+    color: var(--text);
+    font: inherit;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seg-ctrl button:hover:not(.active) { background: var(--hover-bg); color: var(--text); }
+.seg-ctrl button.active {
+    /* input-fields: explicit override — calendar.css's older
+       .seg-ctrl button.active still sets background:var(--surface),
+       and that rule's specificity (class+class+element) matches this
+       one exactly, so without redeclaring background here that legacy
+       white fill wins and hides the .seg-thumb sliding underneath. */
+    background: none;
+    background-color: transparent;
+    color: var(--sidebar-bg);
+    /* input-fields: fill now comes from .seg-thumb sliding underneath
+       (z-index:0) rather than a background here — lets the fill animate
+       as a single moving shape instead of an instant colour swap.
+       Was font-weight:700 — selection is already carried by the filled
+       background + inverted text colour; the weight jump (500->700)
+       can't be eased smoothly on this font stack anyway. */
+    box-shadow: none;
+}
+.orient-icons button svg { display: block; }
+.orient-icons button:disabled { opacity: 0.35; cursor: not-allowed; background: none; }
+.orient-icons button:disabled:hover { background: none; }
+
+/* ── Swatches: ring-only selection ── */
+.swatch, .swatch-picker {
+    border-radius: 6px;
+    border: 1.5px solid var(--border);
+    position: relative;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+.swatch:hover, .swatch-picker:hover { transform: translate(-1px,-1px); box-shadow: 2px 2px 0 var(--shadow-ink); }
+.swatch.active, .swatch-picker.active {
+    transform: none;
+    border-color: var(--border);
+    box-shadow: 0 0 0 2px var(--sidebar-bg), 0 0 0 3.5px var(--text);
+}
+.swatch-picker { background: var(--input-bg); }
+
+/* ── Styling grid: label | colour+hex combo | size — no header row.
+      The Grid row lives in the same grid; its eye takes the size
+      slot. ── */
+.style-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 42px 1fr 72px;
+    column-gap: 8px;
+    row-gap: 9px;
+    align-items: center;
+    margin-bottom: 0;
+}
+.style-grid-row { display: contents; }
+.style-grid-row .prop-label { font-size: 12px; }
+
+/* input-fields: the colour well used to sit in its own bordered box,
+   separated from the hex field by the grid gap — two controls for one
+   value. Now one bordered control, swatch nested inside like a Figma
+   colour input: [◼ #2A2F5B]. */
+.hex-combo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 30px;
+    padding: 0 6px;
+    border: 1.5px solid var(--border);
+    border-radius: var(--r-ctrl);
+    background: var(--input-bg);
+    transition:
+        border-color 160ms ease,
+        box-shadow 160ms ease,
+        transform 160ms ease;
+}
+.hex-combo:has(input:focus) {
+    transition:
+        border-color 160ms cubic-bezier(0.34, 1.56, 0.64, 1),
+        box-shadow 160ms cubic-bezier(0.34, 1.56, 0.64, 1),
+        transform 160ms cubic-bezier(0.34, 1.56, 0.64, 1);
+    border-color: var(--text);
+    box-shadow: 2px 2px 0 var(--shadow-ink);
+    transform: scale(1.006);
+}
+.hex-combo input[type="color"] {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    /* input-fields: no border here — it already sits inside the
+       hex-combo's own border, a second border made it look double-boxed */
+    border: none;
+    border-radius: 4px;
+    background: var(--input-bg);
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.hex-combo input[type="color"]::-webkit-color-swatch-wrapper { padding: 1px; }
+.hex-combo input[type="color"]::-webkit-color-swatch { border: none; border-radius: 2px; }
+
+.hexf {
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    min-width: 0;
+    flex: 1;
+    border: none;
+    background: none;
+    color: var(--text);
+}
+.hexf:focus { outline: none; }
+
+/* input-fields, round 4: my headless screenshot pipeline renders native
+   spin buttons differently (Linux Chromium) than Teresa's real browser,
+   so pixel offsets "confirmed" by screenshot weren't matching what she
+   actually saw — this round is her exact tested values, not mine. */
+.size-wrap { position: relative; display: flex; align-items: center; }
+.sidebar .size-wrap input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 0 2px 0 8px;
+    -moz-appearance: textfield;
+}
+.size-wrap::after {
+    content: 'pt';
+    position: absolute;
+    right: 28px;
+    font-size: 10px;
+    color: var(--label);
+    pointer-events: none;
+}
+
+/* the Grid row's eye occupies the size column.
+   input-fields: height 28px -> 30px to match .hexf/.size-wrap input.
+   Width was 48px (stretched to fill the old size-column width) — now
+   square like the standalone yearTitleToggle eye-btn, sized to its
+   icon rather than the column it happens to sit in. */
+.style-grid-row .eye-btn {
+    width: 30px;
+    height: 30px;
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* ── Highlighting disclosure ── */
+.hl-section .highlighting-head { cursor: pointer; user-select: none; display: flex; background: none; }
+.hl-section .highlighting-head::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    margin-left: auto;
+    border-right: 2px solid var(--label);
+    border-bottom: 2px solid var(--label);
+    transform: rotate(45deg) translateY(-2px);
+    transition: transform 0.15s;
+    flex-shrink: 0;
+}
+.hl-section.open .highlighting-head::after { transform: rotate(225deg) translateY(-2px); }
+.hl-section .highlighting-head .link-btn { margin-left: auto; margin-right: 10px; }
+.hl-section:not(.open) .highlighting-head .link-btn { display: none; }
+.hl-section:not(.open) .prop-swatches,
+.hl-section:not(.open) .prop-dates { display: none; }
+.hl-section .highlighting-head { margin-bottom: 0; }
+.hl-section.open .highlighting-head { margin-bottom: 12px; }
+
+/* ── Action buttons ── */
+.action-btn {
+    border: 1.5px solid var(--text);
+    border-radius: var(--r-btn);
+    box-shadow: 3px 3px 0 var(--shadow-ink);
+    font-weight: 600;
+    font-size: 13px;
+    transition: transform 0.08s, box-shadow 0.08s;
+}
+.action-btn:hover { transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--shadow-ink); }
+.action-btn:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--shadow-ink); }
+.action-btn--primary { background: var(--accent-light); color: var(--accent-text); font-weight: 700; }
+.action-btn--primary:hover { background: #eb9379; }
+body[data-theme="dark"] .action-btn--primary:hover { background: #f6b5a3; }
+.action-btn--secondary { background: var(--surface); color: var(--text); font-weight: 700; }
+.action-btn--secondary:hover { background: var(--hover-bg); }
+
+/* ── Link button ── */
+.link-btn {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-weight: 700;
+    padding: 2px 6px;
+    margin: -2px 0;
+    border-radius: var(--r-ctrl);
+}
+.link-btn:hover { color: var(--text); background: var(--hover-bg); }
+
+/* ── Floating chrome ── */
+.zoom-widget, .theme-btn, .about-btn, .month-nav-btn, .hamburger {
+    background: var(--sidebar-bg);
+    border: 1.5px solid var(--border);
+    box-shadow: 2px 2px 0 var(--shadow-ink);
+    color: var(--text);
+}
+.zoom-widget { border-radius: var(--r-btn); height: 34px; align-items: center; padding: 0 3px; }
+.zoom-widget button { color: var(--text); border-radius: var(--r-ctrl); }
+.zoom-widget span { color: var(--text); font-variant-numeric: tabular-nums; }
+.zoom-widget button:hover, .theme-btn:hover, .about-btn:hover, .month-nav-btn:hover { background: var(--hover-bg); color: var(--text); }
+.theme-btn, .about-btn, .month-nav-btn { border-radius: var(--r-btn); }
+
+/* ── Page frame ── */
+@media screen {
+    .page {
+        box-shadow: 0 0 0 1.5px var(--shadow-ink), 6px 6px 0 rgba(42,47,91,0.35);
+        border-radius: 2px;
+    }
+    body[data-theme="dark"] .page { box-shadow: 0 0 0 1.5px rgba(246,231,226,0.6), 6px 6px 0 rgba(246,231,226,0.3); }
+    body.is-capturing .page { box-shadow: none; border-radius: 0; }
+}
+
+/* ── Modal ── */
+.modal { border: 1.5px solid var(--border); border-radius: 10px; box-shadow: 5px 5px 0 var(--shadow-ink); }
+.modal-close {
+    border: 1.5px solid var(--text);
+    border-radius: var(--r-btn);
+    background: var(--surface);
+    color: var(--text);
+    font-weight: 700;
+}
+.modal-close:hover { background: var(--hover-bg); }
+
+/* ── Focus visibility (keyboard) ── */
+button:focus-visible, .swatch:focus-visible, .link-btn:focus-visible, .action-btn:focus-visible {
+    outline: 2.5px solid var(--text);
+    outline-offset: 2px;
+}
+
+/* Scrollbars: native */
+
+/* Pre-existing base bug fix: theme button used to sit inside the
+   zoom widget's span (calendar.css: zoom right:56 + ~94px wide,
+   theme right:96). Clear it. */
+.theme-btn { right: 160px; }

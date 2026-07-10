@@ -6,6 +6,7 @@
 <title>Calendar</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 <link rel="stylesheet" href="calendar.css">
+<link rel="stylesheet" href="calendar-theme.css">
 </head>
 <body data-paper="A6" data-layout="portrait" data-view="year">
 
@@ -16,24 +17,25 @@
         <!-- Layout -->
         <div class="prop-section">
             <div class="prop-section-head">Layout</div>
-            <div class="prop-row">
-                <span class="prop-label">View</span>
-                <div class="seg-ctrl">
+            <div class="prop-row prop-row--view">
+                <div class="seg-ctrl" style="--n:2">
+                    <span class="seg-thumb"></span>
                     <button onclick="setViewMode('year')" class="active" id="btnViewYear">Year</button>
                     <button onclick="setViewMode('month')" id="btnViewMonth">Month</button>
                 </div>
             </div>
             <div class="prop-row">
                 <span class="prop-label">Year</span>
-                <div class="year-input-group">
-                    <input type="number" id="year" value="2026" oninput="applyAdvanced()">
-                    <button class="eye-btn" id="yearTitleToggle" onclick="toggleYearTitle()" title="Show/hide year title">
-                        <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="eyeIcon">
-                            <path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/>
-                            <circle cx="8" cy="8" r="2"/>
-                        </svg>
-                    </button>
-                </div>
+                <input type="number" id="year" value="2026" oninput="applyAdvanced()">
+            </div>
+            <div class="prop-row">
+                <span class="prop-label">Year title</span>
+                <button class="eye-btn" id="yearTitleToggle" onclick="toggleYearTitle()" title="Show/hide printed year title">
+                    <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="eyeIcon">
+                        <path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/>
+                        <circle cx="8" cy="8" r="2"/>
+                    </svg>
+                </button>
             </div>
             <input type="checkbox" id="showYearTitle" style="display:none" onchange="applyAdvanced()">
             <div class="prop-row">
@@ -45,52 +47,91 @@
                     <option value="Square">Square</option>
                 </select>
             </div>
-            <div class="prop-row">
+            <div class="prop-row prop-row--orient">
                 <span class="prop-label">Orientation</span>
-                <select id="layoutSelect" onchange="updateDimensions()">
+                <select id="layoutSelect" onchange="updateDimensions()" style="display:none" aria-hidden="true" tabindex="-1">
                     <option value="portrait" selected>Portrait</option>
                     <option value="landscape">Landscape</option>
                     <option value="folded" id="optFolded">Folded</option>
                 </select>
+                <div class="seg-ctrl orient-icons" role="group" aria-label="Orientation" style="--n:3">
+                    <span class="seg-thumb"></span>
+                    <button type="button" data-layout="portrait" title="Portrait" aria-label="Portrait" onclick="setLayoutIcon('portrait')"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="2" width="8" height="12" rx="1"/></svg></button>
+                    <button type="button" data-layout="landscape" title="Landscape" aria-label="Landscape" onclick="setLayoutIcon('landscape')"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="4" width="12" height="8" rx="1"/></svg></button>
+                    <button type="button" data-layout="folded" id="iconFolded" title="Folded" aria-label="Folded" onclick="setLayoutIcon('folded')"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 3.5 8 2v12l-6 1.5zM8 2l6 1.5V15l-6-1"/></svg></button>
+                </div>
             </div>
             <div class="prop-row">
                 <span class="prop-label">Week starts</span>
-                <div class="seg-ctrl">
+                <div class="seg-ctrl" style="--n:2">
+                    <span class="seg-thumb"></span>
                     <button onclick="setWeekStart(1)" class="active" id="btnMon">Monday</button>
                     <button onclick="setWeekStart(0)" id="btnSun">Sunday</button>
                 </div>
             </div>
             <div class="prop-row">
                 <span class="prop-label">Month labels</span>
-                <select id="monthFormat" onchange="applyAdvanced()">
+                <select id="monthFormat" onchange="applyAdvanced()" style="display:none" aria-hidden="true" tabindex="-1">
                     <option value="short">3 letters (JAN)</option>
                     <option value="long">Full name</option>
                 </select>
+                <div class="seg-ctrl monthfmt-seg" role="group" aria-label="Month labels" style="--n:2">
+                    <span class="seg-thumb"></span>
+                    <button type="button" data-fmt="short" onclick="setMonthFormat('short')">JAN</button>
+                    <button type="button" data-fmt="long" onclick="setMonthFormat('long')">January</button>
+                </div>
             </div>
-            <div class="prop-row">
-                <span class="prop-label">Day grid</span>
-                <input type="checkbox" id="showDayOutlines" onchange="applyAdvanced()">
-            </div>
+
         </div>
 
         <!-- Styling -->
         <div class="prop-section">
-            <div class="prop-section-head">Styling</div>
-            <div class="prop-row">
-                <span class="prop-label">Calendar colour</span>
-                <input type="color" id="adjMonthColor" value="#000000" oninput="applyAdvanced()">
-            </div>
-            <div class="prop-row">
-                <span class="prop-label">Date / day pt</span>
-                <div class="prop-pair">
-                    <input type="number" id="adjDateSize"    step="0.5" oninput="applyAdvanced()" title="Date font">
-                    <input type="number" id="adjDayNameSize" step="0.5" oninput="applyAdvanced()" title="Day name font">
+            <div class="prop-section-head">Styling<span id="titleSizeLabel" style="display:none"></span></div>
+            <div class="style-grid">
+                <div class="style-grid-row" id="styleRowYear">
+                    <span class="prop-label">Year</span>
+                    <span class="hex-combo">
+                        <input type="color" id="adjYearColor" value="#000000" oninput="applyAdvanced()" title="Year title colour">
+                        <input type="text" class="hexf" id="hexYear" value="#000000" maxlength="7" spellcheck="false" oninput="typeColor(this, 'adjYearColor')" title="Year title colour (hex)">
+                    </span>
+                    <span class="size-wrap"><input type="number" id="adjYearSize" step="0.5" value="24" oninput="applyAdvanced()" title="Year title size (pt)"></span>
+                </div>
+                <div class="style-grid-row">
+                    <span class="prop-label">Month</span>
+                    <span class="hex-combo">
+                        <input type="color" id="adjMonthColor" value="#000000" oninput="applyAdvanced()" title="Month name colour">
+                        <input type="text" class="hexf" id="hexMonth" value="#000000" maxlength="7" spellcheck="false" oninput="typeColor(this, 'adjMonthColor')" title="Month name colour (hex)">
+                    </span>
+                    <span class="size-wrap"><input type="number" id="adjTitleSize" step="0.5" oninput="applyAdvanced()" title="Month name size (pt)"></span>
+                </div>
+                <div class="style-grid-row">
+                    <span class="prop-label">Day</span>
+                    <span class="hex-combo">
+                        <input type="color" id="adjDayColor" value="#000000" oninput="applyAdvanced()" title="Day-name colour">
+                        <input type="text" class="hexf" id="hexDay" value="#000000" maxlength="7" spellcheck="false" oninput="typeColor(this, 'adjDayColor')" title="Day-name colour (hex)">
+                    </span>
+                    <span class="size-wrap"><input type="number" id="adjDayNameSize" step="0.5" oninput="applyAdvanced()" title="Day-name size (pt)"></span>
+                </div>
+                <div class="style-grid-row">
+                    <span class="prop-label">Date</span>
+                    <span class="hex-combo">
+                        <input type="color" id="adjDateColor" value="#000000" oninput="applyAdvanced()" title="Date number colour">
+                        <input type="text" class="hexf" id="hexDate" value="#000000" maxlength="7" spellcheck="false" oninput="typeColor(this, 'adjDateColor')" title="Date number colour (hex)">
+                    </span>
+                    <span class="size-wrap"><input type="number" id="adjDateSize" step="0.5" oninput="applyAdvanced()" title="Date number size (pt)"></span>
+                </div>
+                <div class="style-grid-row" id="styleRowGrid">
+                    <span class="prop-label">Grid</span>
+                    <span class="hex-combo">
+                        <input type="color" id="dayGridColor" value="#c9c9c9" oninput="pickGridColor()" title="Day grid colour">
+                        <input type="text" class="hexf" id="hexGrid" value="#C9C9C9" maxlength="7" spellcheck="false" oninput="typeColor(this, 'dayGridColor')" title="Day grid colour (hex)">
+                    </span>
+                    <button class="eye-btn" id="dayGridBtn" onclick="toggleDayGrid()" title="Show/hide day grid lines">
+                        <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2"/></svg>
+                    </button>
                 </div>
             </div>
-            <div class="prop-row">
-                <span class="prop-label">Month title pt</span>
-                <input type="number" id="adjTitleSize" step="0.5" oninput="applyAdvanced()">
-            </div>
+            <input type="checkbox" id="showDayOutlines" style="display:none" onchange="applyAdvanced()">
         </div>
 
         <!-- Highlighting -->
@@ -105,11 +146,12 @@
                 <button class="swatch" style="background:#cde8ff"  onclick="setHighlightColor('blue')"   data-color="blue"   title="Blue"></button>
                 <button class="swatch" style="background:#ffd6e8"  onclick="setHighlightColor('pink')"   data-color="pink"   title="Pink"></button>
                 <label class="swatch swatch-picker" id="swatchPicker" data-color="custom" title="Custom colour">
+                    <svg class="picker-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8-3 3"/></svg>
                     <input type="color" id="customColorPicker" value="#d4ed91" oninput="setCustomColor(this.value)">
                 </label>
             </div>
 
-            <div class="prop-dates">
+            <div class="prop-dates" id="propDates">
                 <span class="prop-dates-label">Date ranges</span>
                 <textarea id="dateInput" placeholder="Jan 1 yellow&#10;2-5 Feb blue&#10;Mar 10-15 pink" oninput="parseDateInput()"></textarea>
             </div>
@@ -148,6 +190,10 @@
     <button onclick="zoomOut()" title="Zoom out">−</button>
 </div>
 
+<button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark mode">
+    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+</button>
 <button class="about-btn" onclick="document.getElementById('aboutModal').classList.add('open')" title="About">?</button>
 
 <div class="modal-overlay" id="aboutModal" onclick="if(event.target===this)this.classList.remove('open')">
@@ -160,5 +206,92 @@
 </div>
 
 <script src="calendar.js"></script>
+
+<!-- ─── Colour tweak panel (debug only) ───
+     Live-edit the theme's CSS variables and copy the result back into
+     calendar-theme.css. Not loaded for normal use — open with ?debug=1
+     appended to the URL, e.g. index.html?debug=1 ─── -->
+<script type="module">
+if (new URLSearchParams(location.search).has('debug')) {
+  const { Pane } = await import('https://cdn.jsdelivr.net/npm/tweakpane@4.0.5/dist/tweakpane.min.js');
+
+  const pane = new Pane({ title: 'Colour variables' });
+  pane.element.parentElement.style.zIndex = '9999';
+
+  // Reads whatever theme is currently active (light or dark) so edits
+  // apply on top of it. Values are set directly on <body>, which beats
+  // the body[data-theme="dark"] rule so it works in either mode.
+  const cssVars = [
+    'accent', 'accent-hover', 'accent-light', 'accent-text',
+    'canvas-bg', 'sidebar-bg', 'surface', 'hover-bg',
+    'text', 'label', 'border', 'input-bg', 'placeholder'
+  ];
+
+  const toCamel = s => s.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+  const toKebab = s => '--' + s.replace(/[A-Z]/g, c => '-' + c.toLowerCase());
+
+  const PARAMS = { cssText: '' };
+  cssVars.forEach(v => {
+    PARAMS[toCamel(v)] = getComputedStyle(document.body).getPropertyValue(`--${v}`).trim();
+  });
+
+  function applyVar(kebabKey, value) {
+    document.body.style.setProperty(kebabKey, value);
+  }
+
+  function updateCssText() {
+    const lines = cssVars.map(v => `  --${v}: ${PARAMS[toCamel(v)]};`);
+    PARAMS.cssText = lines.join('\n');
+    cssMonitor.refresh();
+  }
+
+  function bindColor(folder, varName, label) {
+    const key = toCamel(varName);
+    folder.addBinding(PARAMS, key, { view: 'color', label }).on('change', ev => {
+      applyVar(`--${varName}`, ev.value);
+      updateCssText();
+    });
+  }
+
+  const accentFolder = pane.addFolder({ title: 'Accent' });
+  bindColor(accentFolder, 'accent', 'Accent');
+  bindColor(accentFolder, 'accent-hover', 'Accent hover');
+  bindColor(accentFolder, 'accent-light', 'Accent light');
+  bindColor(accentFolder, 'accent-text', 'Accent text');
+
+  const surfaceFolder = pane.addFolder({ title: 'Surfaces' });
+  bindColor(surfaceFolder, 'canvas-bg', 'Canvas bg');
+  bindColor(surfaceFolder, 'sidebar-bg', 'Sidebar bg');
+  bindColor(surfaceFolder, 'surface', 'Surface');
+  bindColor(surfaceFolder, 'hover-bg', 'Hover bg');
+
+  const textFolder = pane.addFolder({ title: 'Text & UI' });
+  bindColor(textFolder, 'text', 'Text');
+  bindColor(textFolder, 'label', 'Label');
+  bindColor(textFolder, 'border', 'Border');
+  bindColor(textFolder, 'input-bg', 'Input bg');
+  bindColor(textFolder, 'placeholder', 'Placeholder');
+
+  const outputFolder = pane.addFolder({ title: 'CSS (copy this back)', expanded: true });
+  const cssMonitor = outputFolder.addBinding(PARAMS, 'cssText', {
+    readonly: true,
+    multiline: true,
+    rows: 14,
+    label: ''
+  });
+  outputFolder.addButton({ title: 'Copy CSS' }).on('click', () => {
+    navigator.clipboard.writeText(`:root {\n${PARAMS.cssText}\n}`);
+  });
+  outputFolder.addButton({ title: 'Reset to stylesheet defaults' }).on('click', () => {
+    cssVars.forEach(v => document.body.style.removeProperty(`--${v}`));
+    cssVars.forEach(v => { PARAMS[toCamel(v)] = getComputedStyle(document.body).getPropertyValue(`--${v}`).trim(); });
+    pane.refresh();
+    updateCssText();
+  });
+
+  updateCssText();
+}
+</script>
+
 </body>
 </html>
