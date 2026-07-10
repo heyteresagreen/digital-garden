@@ -11,7 +11,7 @@ layout: layouts/base.njk
 {%- if pagination.items.length %}
 <ul class="post-list {{ listClass }}">
   {%- for post in pagination.items %}
-  {{ postCard(post, { showImage: showImages, showSection: showSections, hideExcerpt: hideExcerpts }) }}
+  {{ postCard(post, { showImage: showImages, showSection: showSections, hideExcerpt: hideExcerpts, hideImageSections: hideImageSections, bodyImageFallback: bodyImageFallback }) }}
   {%- endfor %}
 </ul>
 {%- else %}

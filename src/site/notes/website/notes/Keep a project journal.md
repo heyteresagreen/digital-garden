@@ -1,7 +1,7 @@
 ---
 title: "Keep a project journal"
 publish: true
-section: writing
+section: notes
 date: 2025-11-29
 tags:
   - writing

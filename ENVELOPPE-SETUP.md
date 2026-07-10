@@ -18,7 +18,7 @@ before doing anything in bulk.
 | Setting | Value | Why |
 |---|---|---|
 | File to publish: share key | `publish` | Only notes with `publish: true` upload. Index notes (Posts.md etc.) keep only dataview queries — never give them this key |
-| Folder behaviour | Obsidian path (mirror vault structure) | Vault paths already match the site's content folder |
+| Folder behaviour | Obsidian path (mirror vault structure) | Vault `website/…` paths mirror into `src/site/notes/website/…` |
 | Root/default folder | `src/site/notes` | Vault root maps here |
 | Attachments / images | Send embedded files, keep vault structure | |
 | Attachment root folder | `src/site/img/user` | So `assets/foo.jpeg` lands at `src/site/img/user/assets/foo.jpeg`, matching `/img/user/assets/…` URLs |
@@ -29,6 +29,12 @@ before doing anything in bulk.
   `[[wiki links]]` and `![[image embeds]]` itself)
 - Dataview query conversion: **off** (dataview notes aren't published)
 - Frontmatter key removal: **off** (the site needs all keys)
+
+## What uploads
+
+Only vault notes under `website/` carry `publish: true`, so nothing from
+`inbox/`, `notes/`, `life/` or elsewhere can ever upload — the share key is
+the gate, the folder structure is a second belt-and-braces.
 
 ## First-note test
 

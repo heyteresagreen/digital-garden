@@ -1,7 +1,7 @@
 ---
 title: "Sewing patterns for a chill wardrobe"
 publish: true
-section: writing
+section: notes
 date: 2025-07-30
 tags:
   - sewing

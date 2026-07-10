@@ -1,7 +1,7 @@
 ---
 title: "Build tools using AI"
 publish: true
-section: writing
+section: notes
 date: 2025-12-02
 tags:
   - design

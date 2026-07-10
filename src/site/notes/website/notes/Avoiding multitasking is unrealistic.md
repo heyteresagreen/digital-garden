@@ -1,7 +1,7 @@
 ---
 title: "Avoiding multitasking is unrealistic"
 publish: true
-section: writing
+section: notes
 date: 2025-02-16
 tags:
   - productivity

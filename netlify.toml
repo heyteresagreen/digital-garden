@@ -2,6 +2,12 @@
   publish = "dist"
   command = "npm install && npm run build"
 
+# Keep generated webp images between builds (first build is slow, then cached)
+[[plugins]]
+  package = "netlify-plugin-cache"
+  [plugins.inputs]
+    paths = ["dist/img/optimized", ".cache"]
+
 [[headers]]
   for = "/img/*"
   [headers.values]
@@ -34,7 +40,7 @@
 
 [[redirects]]
   from = "/do-one-thing-at-a-time/"
-  to = "/writing/do-one-thing-at-a-time/"
+  to = "/notes/do-one-thing-at-a-time/"
   status = 301
 
 [[redirects]]
@@ -94,7 +100,7 @@
 
 [[redirects]]
   from = "/optimise-for-curiosity-not-productivity/"
-  to = "/writing/optimise-for-curiosity-not-productivity/"
+  to = "/notes/optimise-for-curiosity-not-productivity/"
   status = 301
 
 [[redirects]]
@@ -258,53 +264,8 @@
   status = 301
 
 [[redirects]]
-  from = "/notes/avoiding-multitasking-is-unrealistic/"
-  to = "/writing/avoiding-multitasking-is-unrealistic/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/build-tools-using-ai/"
-  to = "/writing/build-tools-using-ai/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/dailyish/"
-  to = "/writing/dailyish/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/digital-gardening/"
-  to = "/writing/digital-gardening/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/do-one-thing-at-a-time/"
-  to = "/writing/do-one-thing-at-a-time/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/evergreen-notes/"
-  to = "/writing/evergreen-notes/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/keep-a-project-journal/"
-  to = "/writing/keep-a-project-journal/"
-  status = 301
-
-[[redirects]]
   from = "/notes/notes/"
-  to = "/writing/notes/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/optimise-for-curiosity-not-productivity/"
-  to = "/writing/optimise-for-curiosity-not-productivity/"
-  status = 301
-
-[[redirects]]
-  from = "/notes/sewing-patterns-for-a-chill-wardrobe/"
-  to = "/writing/sewing-patterns-for-a-chill-wardrobe/"
+  to = "/posts/"
   status = 301
 
 [[redirects]]

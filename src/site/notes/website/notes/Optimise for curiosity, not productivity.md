@@ -1,7 +1,7 @@
 ---
 title: "Optimise for curiosity, not productivity"
 publish: true
-section: writing
+section: notes
 date: 2023-01-03
 tags:
   - systems

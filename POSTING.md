@@ -6,7 +6,7 @@
 ---
 title: Watercolour magpies
 publish: true
-section: art          # writing | art | sketching | sketchbooks | books | letters | projects
+section: art          # writing | notes | art | sketching | sketchbooks | books | letters | projects
 date: 2026-07-15
 tags: [art, watercolour]
 description: Optional one-line summary shown on index cards
@@ -32,9 +32,10 @@ That's it. Notes:
 
 ## Publishing — two ways
 
-**Until Enveloppe is set up:** add the `.md` file to `src/site/notes/art/`
-in this repo (any folder works — the `section` field decides where it appears,
-folders are just for your own organisation). Add images to
+**Until Enveloppe is set up:** add the `.md` file under
+`src/site/notes/website/art/` in this repo (any folder under `notes/` works —
+the `section` field decides where it appears on the site; folders are just
+organisation). Add images to
 `src/site/img/user/assets/`. Commit and push via VSCode Source Control;
 Netlify rebuilds in ~2 min.
 
@@ -50,6 +51,12 @@ cd ~/Projects/TW\ 2023/digital-garden-v2
 npm start          # → http://localhost:8080, live-reloads on save
 ```
 
+## Updating "In progress" on the Books page
+
+Edit the **"Books in progress"** note in Obsidian (it's embedded in your Books
+dashboard) and publish it like any other note. Its `snippet: books-in-progress`
+frontmatter means it renders at the top of /books/ instead of becoming a post.
+
 ## Special pages
 
 - **About** and **Now** live at `src/site/notes/About.md` and `Now.md`. They have
@@ -59,3 +66,14 @@ npm start          # → http://localhost:8080, live-reloads on save
   the old Obsidian index notes with dataview tables are no longer published.
   Keep them in your vault if they're useful there, but don't give them
   `publish: true`.
+
+## Vault structure (July 2026 reorganisation)
+
+Only notes under **`website/`** in the vault ever publish (they carry
+`publish:` frontmatter). `inbox/` (unprocessed captures), `notes/` (private
+evergreen + sources), `life/` and everything else never reach the site.
+The full move log from the reorganisation is in the vault at `_reorg-log.md`.
+
+Typical flow: Instapaper highlight lands in `inbox/` (`status: inbox`) →
+processed into a note in `notes/` (set `status: growing` if it might publish)
+→ moved to `website/notes/` with `publish: true, section: notes` when ready.

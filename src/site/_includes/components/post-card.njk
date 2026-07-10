@@ -1,5 +1,7 @@
 {% macro postCard(post, opts = {}) %}
-{%- set thumb = post | cardImage if opts.showImage else null %}
+{%- set thumb = null %}
+{%- if opts.showImage %}{% set thumb = post | cardImageAny if opts.bodyImageFallback else post | cardImage %}{% endif %}
+{%- if opts.hideImageSections and post.data.section in opts.hideImageSections %}{% set thumb = null %}{% endif %}
 <li class="post-card{% if thumb %} has-thumb{% endif %}">
   {%- if thumb %}
   <a class="post-card-thumb" href="{{ post.url }}">

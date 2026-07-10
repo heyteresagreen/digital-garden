@@ -8,7 +8,7 @@ tags:
   - sketching
   - speaking
 image: "[[IMG_4492.jpeg]]"
-imageUrl: /img/user/assets/IMG_4492.jpeg
+imageUrl: /img/user/assets/sketching/IMG_4492.jpeg
 slug: starting-with-sketchnotes
 ---
 This post is essentially a talk I gave at [UX Camp Perth 2023](http://uxcamp.co). It doesn't have quite the same effect when it's not live, but I wanted to share it with anyone who couldn't be there for it.

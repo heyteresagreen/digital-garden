@@ -1,7 +1,7 @@
 {
     "name": "teresawatts-com",
     "version": "2.0.0",
-    "description": "teresawatts.com \u2014 custom Eleventy site (replaces Digital Garden plugin)",
+    "description": "teresawatts.com — custom Eleventy site (replaces Digital Garden plugin)",
     "scripts": {
         "start": "npm-run-all build:sass --parallel watch:*",
         "watch:sass": "sass --watch src/site/styles:dist/styles",
@@ -20,6 +20,7 @@
         "sass": "1.77.8"
     },
     "dependencies": {
+        "@11ty/eleventy-img": "^6.0.4",
         "@sindresorhus/slugify": "^1.1.2",
         "gray-matter": "^4.0.3",
         "luxon": "^3.4.4",

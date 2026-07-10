@@ -31,7 +31,7 @@ src/site/
 ├── tags.njk                      Generates one page per tag (/tags/<tag>/)
 ├── 404.njk                       Not-found page
 ├── feed.njk                      RSS (rarely needs touching)
-└── notes/                        Content (from Obsidian) — don't edit templates-wise
+└── notes/website/…               Content (mirrors the vault's website/ folder)
 ```
 
 `.eleventy.js` (project root) is build config: collections, filters, wiki-link
@@ -63,14 +63,16 @@ resolution. You shouldn't need it for styling work.
 | Key | Effect |
 |---|---|
 | `listClass` | CSS class on the `<ul>` — this is the main styling hook per section |
-| `showImages: true` | Cards get thumbnails (auto: first image in the note) |
+| `showImages: true` | Cards get thumbnails from `image`/`imageUrl` frontmatter |
+| `bodyImageFallback: true` | …also fall back to the first image in the note body (Writing uses this) |
 | `showSections: true` | Cards get the small uppercase section label (Posts feed) |
 | `hideExcerpts: true` | No summary text on cards |
 | `intro` | The line under the index heading |
 | `pagination.size` | Posts per page (12 everywhere currently) |
 
-Current `listClass` values: `posts-mosaic` (Posts), `writing-list`,
-`art-grid` (Art, Sketching, Sketchbooks), `book-list`, `letters-list`.
+Current `listClass` values: `posts-mosaic` (Posts), `writing-list` (small left
+thumbnails), `notes-list` (garden-style, undated), `art-grid` (Art, Sketching,
+Sketchbooks), `book-list`, `letters-list`.
 
 ## Card anatomy (post-card.njk → SCSS hooks)
 
@@ -149,3 +151,16 @@ NOTE AND POST ELEMENTS styles.
   the error names the file.
 - `sass` compiles on save in `npm start`; a SCSS syntax error shows in the
   terminal, not the browser.
+
+## Image optimisation (added July 2026)
+
+Every `<img>` in the built HTML is automatically converted to webp (max
+1400px wide) by `@11ty/eleventy-img` — configured in `.eleventy.js`. Nothing
+to do per-post; drop originals in as always. Notes:
+
+- **First build is slow** (several minutes while ~500 images convert).
+  After that, generated files are cached in `dist/img/optimized/` and
+  rebuilds take seconds. Same on Netlify (cached via netlify-plugin-cache).
+- Relative image paths in notes (`assets/foo.jpeg`) are rewritten to
+  `/img/user/assets/foo.jpeg` at build time — write them however Obsidian
+  prefers.

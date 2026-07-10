@@ -1,7 +1,7 @@
 ---
 title: "Digital Gardening"
 publish: true
-section: writing
+section: notes
 date: 2022-12-11
 tags:
   - writing

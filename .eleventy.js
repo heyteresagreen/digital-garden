@@ -9,10 +9,11 @@ const markdownItAttrs = require("markdown-it-attrs");
 const markdownItFootnote = require("markdown-it-footnote");
 const markdownItTaskCheckbox = require("markdown-it-task-checkbox");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 const NOTES_DIR = path.join(__dirname, "src/site/notes");
 const IMG_DIR = path.join(__dirname, "src/site/img/user");
-const SECTIONS = ["writing", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
+const SECTIONS = ["writing", "notes", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
 
 // Top-level pages that wiki links may point at
 const BUILTIN_LINKS = {
@@ -58,6 +59,7 @@ function buildLinkMap() {
       const base = path.basename(rel);
       const url = noteUrl(data, base);
       map[rel.toLowerCase()] = url;
+      if (rel.toLowerCase().startsWith("website/")) map[rel.toLowerCase().slice(8)] = url;
       map[base.toLowerCase()] = url;
       if (data.title) map[String(data.title).toLowerCase()] = url;
     }
@@ -100,6 +102,11 @@ function replaceWikiSyntax(content) {
     const altText = (alt || "").replace(/"/g, "&quot;").trim();
     return `<img src="${src}" alt="${altText}">`;
   });
+  // Markdown images with vault-relative paths (Obsidian needs these relative
+  // for local preview; the site needs them rooted at /img/user/)
+  content = content.replace(/(!\[[^\]]*\]\()(?!\/|https?:|data:)([^)]+)(\))/g, (m, pre, src, post) => {
+    return pre + resolveEmbedSrc(decodeURI(src)) + post;
+  });
   // Wiki links: [[note path|alias]] / [[note]]
   content = content.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, alias) => {
     const text = (alias || target).trim();
@@ -114,6 +121,22 @@ function replaceWikiSyntax(content) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
+
+  // Automatic image optimisation: every <img> in the output HTML is converted
+  // to webp (max 1400px wide, original kept as fallback for the few formats
+  // webp can't beat). Generated files are content-hashed, so unchanged images
+  // are skipped on rebuilds.
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    formats: ["webp"],
+    widths: [1400],
+    urlPath: "/img/optimized/",
+    outputDir: "./dist/img/optimized/",
+    htmlOptions: {
+      imgAttributes: { loading: "lazy", decoding: "async" }
+    },
+    sharpOptions: { animated: true },
+    failOnError: false
+  });
 
   // Markdown
   const md = markdownIt({ html: true, breaks: true, linkify: true })
@@ -140,7 +163,7 @@ module.exports = function (eleventyConfig) {
   // Collections
   const published = (api) =>
     api.getFilteredByGlob("src/site/notes/**/*.md")
-      .filter((p) => p.data.publish && !p.data.standalone)
+      .filter((p) => p.data.publish && !p.data.standalone && !p.data.snippet)
       .sort((a, b) => (b.data.date ? b.date : 0) - (a.data.date ? a.date : 0));
 
   SECTIONS.forEach((section) => {
@@ -151,6 +174,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("allPosts", (api) => published(api));
 
+  // Content snippets: notes with `snippet: <name>` embedded into templates
+  eleventyConfig.addCollection("snippets", (api) =>
+    api.getFilteredByGlob("src/site/notes/**/*.md").filter((p) => p.data.publish && p.data.snippet)
+  );
+
   eleventyConfig.addCollection("tagList", (api) => {
     const tags = new Set();
     published(api).forEach((p) => (p.data.tags || []).forEach((t) => tags.add(String(t).toLowerCase())));
@@ -159,10 +187,26 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
 
+  // Tag images that are genuinely wider than the text column so CSS can
+  // bleed them out slightly (runs after the image plugin adds width attrs)
+  eleventyConfig.addTransform("wide-images", function (content) {
+    if (!this.page.outputPath || !String(this.page.outputPath).endsWith(".html")) return content;
+    return content.replace(/<img\b[^>]*\bwidth="(\d+)"[^>]*>/g, (tag, w) => {
+      if (parseInt(w, 10) <= 800) return tag;
+      if (tag.includes('class="')) return tag.replace('class="', 'class="img-wide ');
+      return tag.replace("<img ", '<img class="img-wide" ');
+    });
+  });
+
   // Filters
   eleventyConfig.addFilter("dateFormat", (dateObj) => {
     if (!dateObj) return "";
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("d LLLL yyyy");
+  });
+
+  eleventyConfig.addFilter("dateLong", (dateObj) => {
+    if (!dateObj) return "";
+    return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat("d LLLL, yyyy");
   });
 
   eleventyConfig.addFilter("isoDate", (dateObj) => {
@@ -208,30 +252,41 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", () => excerptCache.clear());
 
 
-  // Card thumbnail: image frontmatter, else first image in the note body
-  const cardImageCache = new Map();
+  // Card thumbnail: from imageUrl / image frontmatter only
   eleventyConfig.addFilter("cardImage", (post) => {
+    if (!post || !post.data) return null;
+    if (post.data.imageUrl) return { src: encodeURI(post.data.imageUrl), alt: post.data.imageAlt || "" };
+    if (post.data.image && String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
+    return null;
+  });
+
+  // Like cardImage, but falls back to the first image in the note body
+  // (used by the Writing index)
+  const bodyImageCache = new Map();
+  eleventyConfig.addFilter("cardImageAny", (post) => {
     if (!post || !post.data) return null;
     if (post.data.imageUrl) return { src: encodeURI(post.data.imageUrl), alt: post.data.imageAlt || "" };
     if (post.data.image && String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
     const inputPath = post.page ? post.page.inputPath : null;
     if (!inputPath) return null;
-    if (cardImageCache.has(inputPath)) return cardImageCache.get(inputPath);
+    if (bodyImageCache.has(inputPath)) return bodyImageCache.get(inputPath);
     let out = null;
     try {
       const body = matter(fs.readFileSync(inputPath, "utf8")).content;
       let m = body.match(/!\[([^\]]*)\]\(([^)]+)\)/);
       if (m) {
-        out = { src: m[2].trim(), alt: (m[1].split("|").pop() || "").trim() };
+        let src = m[2].trim();
+        if (!src.startsWith("/") && !/^https?:/.test(src)) src = resolveEmbedSrc(decodeURI(src));
+        out = { src: encodeURI(decodeURI(src)), alt: (m[1].split("|").pop() || "").trim() };
       } else {
         m = body.match(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/);
         if (m) out = { src: resolveEmbedSrc(m[1]), alt: (m[2] || "").trim() };
       }
     } catch { /* noop */ }
-    cardImageCache.set(inputPath, out);
+    bodyImageCache.set(inputPath, out);
     return out;
   });
-  eleventyConfig.on("eleventy.before", () => cardImageCache.clear());
+  eleventyConfig.on("eleventy.before", () => bodyImageCache.clear());
 
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
 

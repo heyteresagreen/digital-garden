@@ -1,7 +1,6 @@
 ---
 layout: layouts/index.njk
 title: Books
-intro: What I've been reading, with occasional notes.
 pagination:
   data: collections.books
   size: 12
@@ -10,4 +9,9 @@ permalink: "/books/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumb
 showImages: true
 listClass: book-list
 eleventyExcludeFromCollections: true
+eleventyImport:
+  collections: ["snippets"]
 ---
+{%- for snip in collections.snippets %}{% if snip.data.snippet == "books-in-progress" %}{{ snip.templateContent | safe }}{% endif %}{% endfor %}
+<hr>
+<h2>Completed</h2>

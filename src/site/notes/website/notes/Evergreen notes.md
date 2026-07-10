@@ -1,7 +1,7 @@
 ---
 title: "Evergreen notes"
 publish: true
-section: writing
+section: notes
 date: 2025-11-29
 tags:
   - reading

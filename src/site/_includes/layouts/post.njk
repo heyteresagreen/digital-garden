@@ -8,12 +8,12 @@ layout: layouts/base.njk
     {%- endif %}
     <h1>{{ title }}</h1>
     {%- if page.date %}
-    <time datetime="{{ page.date | isoDate }}">{{ page.date | dateFormat }}</time>
+    <time datetime="{{ page.date | isoDate }}">Published on {{ page.date | dateLong }}</time>
     {%- endif %}
     {%- if tags and tags.length %}
     <div class="header-tags">
       {%- for tag in tags %}
-      <a class="tag" href="{{ tag | tagUrl }}">{{ tag }}</a>
+      <a class="tag" href="{{ tag | tagUrl }}">#{{ tag }}</a>
       {%- endfor %}
     </div>
     {%- endif %}

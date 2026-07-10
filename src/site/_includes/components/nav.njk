@@ -7,7 +7,7 @@
       { label: "Letters", url: "/letters/" }
     ] -%}
     {%- for item in navItems %}
-    {%- set isActive = page.url == item.url or (item.url != "/" and page.url.startsWith(item.url)) %}
+    {%- set isActive = page.url == item.url or (item.url != "/" and page.url and page.url.startsWith(item.url)) %}
     <li><a href="{{ item.url }}"{% if isActive %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a></li>
     {%- endfor %}
   </ul>

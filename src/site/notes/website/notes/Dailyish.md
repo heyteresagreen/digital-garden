@@ -1,7 +1,7 @@
 ---
 title: Dailyish
 publish: true
-section: writing
+section: notes
 date: 2025-02-17
 tags:
   - productivity

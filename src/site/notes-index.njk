@@ -1,0 +1,13 @@
+---
+layout: layouts/index.njk
+title: Notes
+pagination:
+  data: collections.notes
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/notes/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+listClass: notes-list
+eleventyExcludeFromCollections: true
+---
+<p class="index-intro">I've made a few attempts to take notes for things that I read, hear or have ideas about. These have always been private, but I'm tentatively trying to put them here publicly.</p>
+<p class="index-intro">There is very little that is original here — it is mostly based on various sources. Some notes are extremely brief, which helps keep them atomic. All are opinionated but loosely held. These should evolve over time, if I'm continuing this practice.</p>

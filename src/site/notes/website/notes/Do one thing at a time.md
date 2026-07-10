@@ -1,7 +1,7 @@
 ---
 title: "Do one thing at a time"
 publish: true
-section: writing
+section: notes
 date: 2025-02-16
 tags:
   - productivity

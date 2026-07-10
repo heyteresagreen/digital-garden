@@ -188,3 +188,14 @@ Duplicates found in the vault/repo during this pass:
 Redirect updates: `/do-one-thing-at-a-time/` and
 `/optimise-for-curiosity-not-productivity/` → `/writing/…`;
 `/remote-sketching/` → `/writing/remote-sketching-tools-for-ux-designers/`.
+
+## Vault reorganisation (10 July 2026)
+
+923 files moved into the new structure: `website/` (all publishable content,
+by section), `inbox/` (134 unprocessed captures, ex-`raw/`, now tagged
+`status: inbox` and `source: instapaper` + `url` where identifiable),
+`notes/` (private evergreen; `topics/` MOCs; `sources/` course + literature
+notes, ex-`raw/` subfolders), `life/` (recipes, exercise, finances, ex-scattered).
+Dataview dashboards re-pointed. Site URLs unaffected (section + slug drive
+permalinks). Full log: vault `_reorg-log.md`. Empty old folders and superseded
+duplicates are in the vault's `_to-delete/` — empty it from Finder.

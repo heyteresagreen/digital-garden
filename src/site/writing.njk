@@ -7,6 +7,8 @@ pagination:
   size: 12
   generatePageOnEmptyData: true
 permalink: "/writing/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+bodyImageFallback: true
 listClass: writing-list
 eleventyExcludeFromCollections: true
 ---

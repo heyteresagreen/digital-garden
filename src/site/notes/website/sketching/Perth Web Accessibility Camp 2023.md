@@ -7,7 +7,7 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/sketching/Pwac23.jpg]]"
-imageUrl: /img/user/assets/sketching/Pwac23.jpg
+imageUrl: /img/user/assets/sketching/Pwac23-1.jpg
 imageAlt: "Perth Web Accessibility Camp 2023"
 slug: perth-web-accessibility-camp-2023
 ---
