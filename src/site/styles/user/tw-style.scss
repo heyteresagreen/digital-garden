@@ -243,7 +243,7 @@ nav.filetree-sidebar, nav.navbar {
   max-width: 700px;
   margin: 0 auto;
   font-family: $font-family !important;
-  font-size:20px;
+  font-size: 1.25rem;
 }
 
 content {
@@ -547,7 +547,7 @@ HOMEPAGE
 }
 
 .simple .header-meta,
-.simple .header-meta + aside {
+main.simple ~ aside {
   display: none;
 }
 
