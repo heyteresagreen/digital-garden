@@ -6,11 +6,6 @@
    tables) removed; new component styles added at the bottom.
    ============================================================ */
 
-:root {
-  /* --- TIER 1: PRIMITIVES (The Source) --- */
-  --p-pink-100: #fcf4f2; /* Lightest */
-}
-
 $pink: #ffb4a3;
 $pink-light: #ffe3dc;
 $pink-lightest: #fcf4f2;
@@ -110,7 +105,6 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1.3;
   margin-bottom: 0;
   padding-bottom: 0;
   line-height: 1;
@@ -152,7 +146,7 @@ h3 {
 code {
   background: white;
   padding: 0.1em 0.2em;
-  border-radius: 4px;
+  border-radius: $border-radius;
 }
 
 /* ----------------------
@@ -171,7 +165,6 @@ nav.navbar {
   a#logo {
     display: block;
     text-decoration: none;
-    border: 0;
     width: 180px;
 
     @media (min-width: 720px) {
@@ -202,7 +195,6 @@ nav.navbar {
         display: block;
         padding: 0;
         font-family: $font-family-sans-serif;
-        border-bottom: 0;
         color: $color-text;
         text-decoration: none;
         &:hover {
@@ -307,10 +299,11 @@ a.tag {
   font-size: 0.85rem;
   border-radius: $border-radius;
   text-decoration: none;
-  &:hover {
-    color: white !important;
-    background-color: $color-secondary;
-  }
+}
+
+.content a.tag:hover {
+  color: white;
+  background-color: $color-secondary;
 }
 
 /* v2: previous / next post navigation */
@@ -352,33 +345,6 @@ img.two-col {
     float: left;
     margin-bottom: 1em;
     border-right: 2px solid $color-background;
-  }
-}
-
-#recently {
-  clear: both;
-  padding-top: 2em;
-}
-
-.boxes {
-  list-style-type: none;
-  padding-left: 0;
-  margin-bottom: 1em;
-  li {
-    margin: 1.5em 0;
-  }
-}
-
-.superwide {
-  @media (min-width: 720px) {
-    width: 720px;
-    max-width: none;
-    margin-left: -35px;
-  }
-  @media (min-width: 1050px) {
-    width: 1050px;
-    max-width: none;
-    margin-left: -200px;
   }
 }
 
@@ -425,8 +391,7 @@ HOMEPAGE
 FORMS
 ---------------------- */
 
-form,
-.box {
+form {
   padding: 1em;
   background: $color-secondary;
   color: #fff;
