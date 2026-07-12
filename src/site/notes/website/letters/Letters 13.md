@@ -1,7 +1,9 @@
 ---
 title: "Letters 13"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2025-02-19
 description: "Reading less, but better"
 slug: letters-13

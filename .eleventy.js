@@ -41,7 +41,8 @@ let linkMap = null;
 
 function noteUrl(data, fileSlug) {
   const slug = data.slug || slugify(fileSlug);
-  const section = SECTIONS.includes(data.section) ? data.section : "posts";
+  const rawSection = Array.isArray(data.section) ? data.section[0] : data.section;
+  const section = SECTIONS.includes(rawSection) ? rawSection : "posts";
   return `/${section}/${slug}/`;
 }
 
@@ -168,7 +169,10 @@ module.exports = function (eleventyConfig) {
 
   SECTIONS.forEach((section) => {
     eleventyConfig.addCollection(section, (api) =>
-      published(api).filter((p) => p.data.section === section)
+      published(api).filter((p) => {
+        const s = p.data.section;
+        return Array.isArray(s) ? s.includes(section) : s === section;
+      })
     );
   });
 

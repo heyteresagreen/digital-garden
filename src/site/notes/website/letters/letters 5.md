@@ -1,7 +1,9 @@
 ---
 title: "letters 5"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2023-04-28
 tags:
   - letters

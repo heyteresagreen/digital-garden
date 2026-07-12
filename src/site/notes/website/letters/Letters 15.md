@@ -1,7 +1,9 @@
 ---
 title: "Letters 15"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2025-11-06
 tags:
   - letters

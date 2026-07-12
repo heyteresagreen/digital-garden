@@ -1,7 +1,9 @@
 ---
 title: "letters 9"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2024-02-27
 tags:
   - letters

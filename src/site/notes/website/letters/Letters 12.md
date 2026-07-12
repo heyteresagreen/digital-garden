@@ -1,7 +1,9 @@
 ---
 title: "Letters 12"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2024-12-21
 description: "Choosing from the pile of unread books"
 slug: letters-12

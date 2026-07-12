@@ -1,7 +1,9 @@
 ---
 title: "Letters 17"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2026-04-24
 tags:
   - letters

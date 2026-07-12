@@ -1,7 +1,9 @@
 ---
 title: "Letters 14"
 publish: true
-section: letters
+section:
+  - letters
+  - writing
 date: 2025-08-07
 tags:
   - letters
