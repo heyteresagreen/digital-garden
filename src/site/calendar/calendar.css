@@ -41,23 +41,54 @@ body {
     user-select: none;
 }
 
-/* ─── App shell ─── */
+/* ─── App shell ───
+   Flex (not grid) so the sidebar can slide out via negative margin
+   without its content squishing mid-transition. */
 .app {
-    display: grid;
-    grid-template-columns: 264px 1fr;
+    display: flex;
     height: 100vh;
 }
 
 /* ─── Sidebar ─── */
 .sidebar {
     width: 264px;
+    flex: 0 0 264px;
     background: var(--sidebar-bg);
     border-right: 1px solid var(--border);
     overflow-y: auto;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    transition: margin-left 0.25s ease;
 }
+
+/* Desktop collapse: slide the whole panel off; preview takes the width */
+body.sidebar-collapsed .sidebar { margin-left: -265px; }
+
+/* Mobile-only close affordances — hidden on desktop */
+.sidebar-close { display: none; }
+.sidebar-scrim { display: none; }
+
+.sidebar-toggle {
+    position: fixed;
+    top: 12px;
+    left: 276px;
+    z-index: 600;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: var(--sidebar-bg);
+    border: 1.5px solid var(--border);
+    color: var(--label);
+    padding: 0;
+    transition: left 0.25s ease, background 0.12s, color 0.12s;
+}
+.sidebar-toggle:hover { background: var(--hover-bg); color: var(--text); }
+body.sidebar-collapsed .sidebar-toggle { left: 12px; }
 
 /* ─── Sections ─── */
 .prop-section {
@@ -361,18 +392,23 @@ body {
 
 .action-btn--secondary:hover { background: var(--hover-bg); }
 
-/* ─── Mobile hamburger ─── */
+/* ─── Mobile hamburger (same panel icon as the desktop sidebar toggle) ─── */
 .hamburger {
     display: none;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
     background: none;
     border: none;
-    font-size: 22px;
     cursor: pointer;
-    padding: 4px;
+    padding: 0;
 }
 
 /* ─── Preview area ─── */
 .preview-area {
+    flex: 1;
+    min-width: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -513,9 +549,11 @@ body[data-view="month"] .overflow-date span { color: rgba(0,0,0,0.18); }
 }
 
 .mvh-year-text {
-    font-size: calc(var(--month-giant-size) * 0.35);
+    /* driven by the Year styling row; default derived from the fitted
+       title size in updateDimensions (0.35×) */
+    font-size: var(--year-title-size, calc(var(--month-giant-size) * 0.35));
     font-weight: 900;
-    color: var(--month-color);
+    color: var(--year-color, var(--month-color));
     opacity: 0.28;
     line-height: 0.9;
     text-align: right;
@@ -537,7 +575,13 @@ body[data-view="month"] .month-only-section { display: block; }
     display: none;
     align-items: center;
     gap: 10px;
+    /* clear separation between the pagination and the page below —
+       adds to the page-frame's own 12px gap */
+    margin-bottom: 14px;
 }
+
+/* month view: the nav + page block sits higher up the screen */
+body[data-view="month"] .preview-scroll { padding-top: 20px; }
 
 body[data-view="month"] #monthNavBar { display: flex; }
 
@@ -645,6 +689,20 @@ body[data-view="month"] #monthNavBar { display: flex; }
 .eye-btn:hover { background: var(--hover-bg); color: var(--text); }
 .eye-btn.active { color: var(--accent); border-color: var(--accent-light); background: var(--accent-light); }
 
+/* Eye icon opens/closes with its toggle: open (outline + pupil) when the
+   button is .active, closed (single lower-lid curve) when it's off.
+   Pupil squashes vertically as the lid comes down — a small blink. */
+.eye-icon .eye-outline,
+.eye-icon .eye-pupil,
+.eye-icon .eye-lid {
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    transform-origin: 8px 8px;
+}
+.eye-icon .eye-lid { opacity: 0; }
+.eye-btn:not(.active) .eye-icon .eye-outline { opacity: 0; }
+.eye-btn:not(.active) .eye-icon .eye-pupil { opacity: 0; transform: scaleY(0.1); }
+.eye-btn:not(.active) .eye-icon .eye-lid { opacity: 1; }
+
 .month h3 {
     margin: 0 0 1mm;
     font-size: var(--month-title-size);
@@ -717,7 +775,9 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
 
 /* ─── Mobile ─── */
 @media (max-width: 768px) {
-    .app { grid-template-columns: 1fr; }
+    /* desktop collapse doesn't apply — hamburger drives the off-canvas panel */
+    .sidebar-toggle { display: none; }
+    body.sidebar-collapsed .sidebar { margin-left: 0; }
 
     .sidebar {
         position: fixed;
@@ -732,8 +792,38 @@ body[data-active-mode="highlight"][data-highlight-color="black"]  td { cursor: u
 
     .sidebar.open { left: 0; }
 
-    .hamburger {
+    /* close button pinned to the open panel's top-right corner */
+    .sidebar.open .sidebar-close {
+        display: flex;
+        position: fixed;
+        top: 12px;
+        left: 218px;
+        z-index: 1001;
+        width: 34px;
+        height: 34px;
+        align-items: center;
+        justify-content: center;
+        background: var(--input-bg);
+        border: 1.5px solid var(--border);
+        border-radius: 8px;
+        color: var(--label);
+        cursor: pointer;
+        padding: 0;
+    }
+    .sidebar.open .sidebar-close:hover { background: var(--hover-bg); color: var(--text); }
+
+    /* tap anywhere outside the panel to close it */
+    .sidebar.open ~ .sidebar-scrim,
+    .sidebar.open + .sidebar-scrim {
         display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 999;
+    }
+
+    .hamburger {
+        display: flex;
         position: fixed;
         top: 12px;
         left: 12px;
@@ -861,6 +951,64 @@ body[data-theme="dark"] {
 body:not([data-theme="dark"]) .theme-btn .icon-sun { display: block; }
 body[data-theme="dark"] .theme-btn .icon-moon { display: block; }
 
+/* ─── Entrance animations (load only) ───
+   "Paper drop": the page settles down onto the desk from slightly above,
+   its cast shadow landing with it. All tunables are CSS variables —
+   adjust them live with the tweak panel in dev-entrance-preview.html and
+   paste the result over the :root block below.
+   Control state set during boot (seg thumbs, eye icons) must NOT animate —
+   that's gated by the body.booted class, added by calendar.js one frame
+   after init. */
+:root {
+    /* Teresa's tuned values, 2026-07-12 (via ?debug=1 panel) */
+    --drop-duration: 0.75s;
+    --drop-delay: 0.2s;
+    --drop-y: -60px;         /* how far above the desk it starts */
+    --drop-scale: 1.04;      /* starting size (closer to the eye) */
+    --drop-rot: 2.4deg;      /* starting tilt */
+    --drop-shadow-x: 17px;   /* cast shadow offset while airborne */
+    --drop-shadow-y: 22px;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+    @keyframes page-drop {
+        from {
+            opacity: 0;
+            transform: translateY(var(--drop-y)) scale(var(--drop-scale)) rotate(var(--drop-rot));
+        }
+    }
+    /* from-only keyframes: the end state is whatever the cascade says, so
+       theme/dark-mode shadows are never overwritten by the animation */
+    @keyframes page-shadow-land {
+        from {
+            box-shadow:
+                0 0 0 1.5px var(--page-ring, rgba(0,0,0,0.4)),
+                var(--drop-shadow-x) var(--drop-shadow-y) 0 var(--page-cast-soft, rgba(0,0,0,0.1));
+        }
+    }
+    @keyframes sidebar-enter { from { opacity: 0; transform: translateX(-14px); } }
+    /* animate the page only — the month nav controls stay put */
+    .page {
+        animation:
+            page-drop        var(--drop-duration) cubic-bezier(0.3, 0.9, 0.4, 1) var(--drop-delay) both,
+            page-shadow-land var(--drop-duration) cubic-bezier(0.3, 0.9, 0.4, 1) var(--drop-delay) both;
+    }
+    .sidebar    { animation: sidebar-enter 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+    /* no entrance if the sidebar loads collapsed */
+    body.sidebar-collapsed .sidebar { animation: none; }
+    @media (max-width: 768px) {
+        /* mobile sidebar is an off-canvas panel with its own slide transition */
+        .sidebar { animation: none; }
+    }
+}
+
+/* No load-time transitions on boot-synced controls */
+body:not(.booted) .seg-thumb,
+body:not(.booted) .eye-icon .eye-outline,
+body:not(.booted) .eye-icon .eye-pupil,
+body:not(.booted) .eye-icon .eye-lid {
+    transition: none !important;
+}
+
 /* ─── Print ─── */
 @media print {
     @page {
@@ -874,7 +1022,7 @@ body[data-theme="dark"] .theme-btn .icon-moon { display: block; }
         padding: 0 !important;
     }
 
-    .sidebar, .preview-controls, .hamburger, .zoom-widget, #monthNavBar {
+    .sidebar, .preview-controls, .hamburger, .zoom-widget, #monthNavBar, .sidebar-toggle {
         display: none !important;
     }
 

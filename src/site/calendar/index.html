@@ -10,10 +10,19 @@
 </head>
 <body data-paper="A6" data-layout="portrait" data-view="year">
 
-<button class="hamburger" onclick="toggleSidebar()">☰</button>
+<button class="hamburger" onclick="toggleSidebar()" title="Show controls" aria-label="Show controls">
+    <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M6.2 2.5v11"/></svg>
+</button>
+
+<button class="sidebar-toggle" id="sidebarToggle" onclick="toggleSidebarCollapsed()" title="Hide sidebar" aria-label="Hide sidebar">
+    <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M6.2 2.5v11"/></svg>
+</button>
 
 <div class="app">
     <div class="sidebar">
+        <button class="sidebar-close" onclick="toggleSidebar()" title="Close controls" aria-label="Close controls">
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="m4 4 8 8M12 4l-8 8"/></svg>
+        </button>
         <!-- Layout -->
         <div class="prop-section">
             <div class="prop-section-head">Layout</div>
@@ -26,16 +35,19 @@
             </div>
             <div class="prop-row">
                 <span class="prop-label">Year</span>
-                <input type="number" id="year" value="2026" oninput="applyAdvanced()">
-            </div>
-            <div class="prop-row">
-                <span class="prop-label">Year title</span>
-                <button class="eye-btn" id="yearTitleToggle" onclick="toggleYearTitle()" title="Show/hide printed year title">
-                    <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" id="eyeIcon">
-                        <path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/>
-                        <circle cx="8" cy="8" r="2"/>
-                    </svg>
-                </button>
+                <div class="year-input-group">
+                    <input type="number" id="year" value="2026" oninput="applyAdvanced()">
+                    <button class="eye-btn" id="yearTitleToggle" onclick="toggleYearTitle()" title="Show/hide printed year title">
+                        <svg class="eye-icon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" id="eyeIcon">
+                            <path class="eye-outline" d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/>
+                            <circle class="eye-pupil" cx="8" cy="8" r="2"/>
+                            <g class="eye-lid">
+                                <path d="M1 8s2.5 5 7 5 7-5 7-5"/>
+                                <path d="M3.7 12.1 2.8 13.5M8 13v1.6M12.3 12.1l.9 1.4"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
             </div>
             <input type="checkbox" id="showYearTitle" style="display:none" onchange="applyAdvanced()">
             <div class="prop-row">
@@ -127,7 +139,7 @@
                         <input type="text" class="hexf" id="hexGrid" value="#C9C9C9" maxlength="7" spellcheck="false" oninput="typeColor(this, 'dayGridColor')" title="Day grid colour (hex)">
                     </span>
                     <button class="eye-btn" id="dayGridBtn" onclick="toggleDayGrid()" title="Show/hide day grid lines">
-                        <svg viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle cx="8" cy="8" r="2"/></svg>
+                        <svg class="eye-icon" viewBox="0 0 16 16" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path class="eye-outline" d="M1 8s2.5-5 7-5 7 5 7 5-2.5 5-7 5-7-5-7-5z"/><circle class="eye-pupil" cx="8" cy="8" r="2"/><g class="eye-lid"><path d="M1 8s2.5 5 7 5 7-5 7-5"/><path d="M3.7 12.1 2.8 13.5M8 13v1.6M12.3 12.1l.9 1.4"/></g></svg>
                     </button>
                 </div>
             </div>
@@ -146,7 +158,6 @@
                 <button class="swatch" style="background:#cde8ff"  onclick="setHighlightColor('blue')"   data-color="blue"   title="Blue"></button>
                 <button class="swatch" style="background:#ffd6e8"  onclick="setHighlightColor('pink')"   data-color="pink"   title="Pink"></button>
                 <label class="swatch swatch-picker" id="swatchPicker" data-color="custom" title="Custom colour">
-                    <svg class="picker-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 22 1-1h3l9-9"/><path d="M3 21v-3l9-9"/><path d="m15 6 3.4-3.4a2.1 2.1 0 1 1 3 3L18 9l.4.4a2.1 2.1 0 1 1-3 3l-3.8-3.8-3 3"/></svg>
                     <input type="color" id="customColorPicker" value="#d4ed91" oninput="setCustomColor(this.value)">
                 </label>
             </div>
@@ -167,13 +178,19 @@
         </div>
     </div>
 
+    <div class="sidebar-scrim" onclick="toggleSidebar()"></div>
+
     <div class="preview-area">
         <div class="preview-scroll">
             <div class="page-frame">
                 <div id="monthNavBar">
-                    <button class="month-nav-btn" onclick="changeMonth(-1)">‹</button>
+                    <button class="month-nav-btn" onclick="changeMonth(-1)" title="Previous month" aria-label="Previous month">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.8 4.2 6 8l3.8 3.8"/></svg>
+                    </button>
                     <span id="currentMonthDisplay"></span>
-                    <button class="month-nav-btn" onclick="changeMonth(1)">›</button>
+                    <button class="month-nav-btn" onclick="changeMonth(1)" title="Next month" aria-label="Next month">
+                        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6.2 4.2 10 8l-3.8 3.8"/></svg>
+                    </button>
                 </div>
                 <div class="page" id="captureTarget">
                     <div id="yearTitleHeader">2026</div>
@@ -185,22 +202,29 @@
 </div>
 
 <div class="zoom-widget">
-    <button onclick="zoomIn()" title="Zoom in">+</button>
+    <button onclick="zoomIn()" title="Zoom in" aria-label="Zoom in">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5v9M3.5 8h9"/></svg>
+    </button>
     <span id="zoomLevel">100%</span>
-    <button onclick="zoomOut()" title="Zoom out">−</button>
+    <button onclick="zoomOut()" title="Zoom out" aria-label="Zoom out">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 8h9"/></svg>
+    </button>
 </div>
 
 <button class="theme-btn" onclick="toggleTheme()" title="Toggle light/dark mode">
-    <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-    <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+    <svg class="icon-sun" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="2.6"/><path d="M8 1.4v1.9M8 12.7v1.9M3.3 3.3l1.35 1.35M11.35 11.35l1.35 1.35M1.4 8h1.9M12.7 8h1.9M4.65 11.35 3.3 12.7M12.7 3.3l-1.35 1.35"/></svg>
+    <svg class="icon-moon" width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2a4 4 0 0 0 6 6 6 6 0 1 1-6-6Z"/></svg>
 </button>
-<button class="about-btn" onclick="document.getElementById('aboutModal').classList.add('open')" title="About">?</button>
+<button class="about-btn" onclick="document.getElementById('aboutModal').classList.add('open')" title="About" aria-label="About">
+    <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.9 5.8a2.15 2.15 0 0 1 4.25.5c0 1.5-2.15 1.9-2.15 3.1"/><path d="M8 12.3h.01"/></svg>
+</button>
 
 <div class="modal-overlay" id="aboutModal" onclick="if(event.target===this)this.classList.remove('open')">
     <div class="modal">
         <h2>Calendar Printer</h2>
-        <p>Print or save a clean year or monthly calendar. Adjust paper size, layout and styling, then highlight dates by clicking or drag-painting directly on the calendar.</p>
-        <p>Date ranges can also be typed in the Highlighting section — e.g. <code style="font-size:11px;background:var(--input-bg);padding:1px 4px;border-radius:4px;">Jan 1 yellow</code> or <code style="font-size:11px;background:var(--input-bg);padding:1px 4px;border-radius:4px;">Mar 10-15 green</code>.</p>
+        <p>Make a clean, printable calendar — a full year on one page, or one month at a time. Choose a paper size and layout, tune the type and colours, then mark the dates that matter by clicking or dragging straight onto the page.</p>
+        <p>Prefer typing? Enter ranges in the Highlighting section — <code style="font-size:11px;background:var(--input-bg);padding:1px 4px;border-radius:4px;">Jan 1 yellow</code>, <code style="font-size:11px;background:var(--input-bg);padding:1px 4px;border-radius:4px;">Mar 10-15 green</code> — and they'll paint onto the calendar as you go.</p>
+        <p>When it looks right, print to PDF or save a PNG. Everything you set lives in the page URL, so bookmark it to keep your setup or share it with someone else.</p>
         <button class="modal-close" onclick="document.getElementById('aboutModal').classList.remove('open')">Close</button>
     </div>
 </div>
@@ -271,6 +295,47 @@ if (new URLSearchParams(location.search).has('debug')) {
   bindColor(textFolder, 'border', 'Border');
   bindColor(textFolder, 'input-bg', 'Input bg');
   bindColor(textFolder, 'placeholder', 'Placeholder');
+
+  // ── Entrance (paper drop) tuning — drives the --drop-* vars the
+  //    animation in calendar.css reads. Replay restarts it in place.
+  const DROP = { duration: 0.75, delay: 0.2, dropY: -60, scale: 1.04, rotation: 2.4, shadowX: 17, shadowY: 22, cssText: '' };
+  const dropVars = () => ({
+    '--drop-duration': DROP.duration + 's',
+    '--drop-delay':    DROP.delay + 's',
+    '--drop-y':        DROP.dropY + 'px',
+    '--drop-scale':    String(DROP.scale),
+    '--drop-rot':      DROP.rotation + 'deg',
+    '--drop-shadow-x': DROP.shadowX + 'px',
+    '--drop-shadow-y': DROP.shadowY + 'px'
+  });
+  function applyDrop() {
+    Object.entries(dropVars()).forEach(([k, v]) => document.documentElement.style.setProperty(k, v));
+    DROP.cssText = ':root {\n' + Object.entries(dropVars()).map(([k, v]) => `    ${k}: ${v};`).join('\n') + '\n}';
+    dropMonitor.refresh();
+    replayDrop();
+  }
+  function replayDrop() {
+    const page = document.getElementById('captureTarget');
+    if (!page) return;
+    page.style.animation = 'none';
+    void page.offsetWidth;
+    page.style.removeProperty('animation');
+  }
+  const dropFolder = pane.addFolder({ title: 'Entrance (paper drop)', expanded: false });
+  dropFolder.addBinding(DROP, 'duration', { min: 0.2, max: 1.2,  step: 0.05,  label: 'Duration (s)' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'delay',    { min: 0,   max: 0.5,  step: 0.05,  label: 'Delay (s)' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'dropY',    { min: -60, max: 0,    step: 1,     label: 'Drop height (px)' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'scale',    { min: 1,   max: 1.15, step: 0.005, label: 'Start scale' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'rotation', { min: -4,  max: 4,    step: 0.1,   label: 'Tilt (deg)' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'shadowX',  { min: 0,   max: 40,   step: 1,     label: 'Air shadow x' }).on('change', applyDrop);
+  dropFolder.addBinding(DROP, 'shadowY',  { min: 0,   max: 40,   step: 1,     label: 'Air shadow y' }).on('change', applyDrop);
+  dropFolder.addButton({ title: 'Replay' }).on('click', replayDrop);
+  const dropMonitor = dropFolder.addBinding(DROP, 'cssText', { readonly: true, multiline: true, rows: 9, label: '' });
+  dropFolder.addButton({ title: 'Copy CSS (paste over :root block in calendar.css)' }).on('click', () => {
+    navigator.clipboard.writeText(DROP.cssText);
+  });
+  DROP.cssText = ':root {\n' + Object.entries(dropVars()).map(([k, v]) => `    ${k}: ${v};`).join('\n') + '\n}';
+  dropMonitor.refresh();
 
   const outputFolder = pane.addFolder({ title: 'CSS (copy this back)', expanded: true });
   const cssMonitor = outputFolder.addBinding(PARAMS, 'cssText', {

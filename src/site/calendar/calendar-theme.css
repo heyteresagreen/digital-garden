@@ -276,9 +276,9 @@ body[data-theme="dark"] .sidebar select {
 .orient-icons button:disabled { opacity: 0.35; cursor: not-allowed; background: none; }
 .orient-icons button:disabled:hover { background: none; }
 
-/* ── Swatches: ring-only selection ── */
+/* ── Swatches: circles (option F), ring-only selection ── */
 .swatch, .swatch-picker {
-    border-radius: 6px;
+    border-radius: 50%;
     border: 1.5px solid var(--border);
     position: relative;
     transition: transform 0.1s, box-shadow 0.1s;
@@ -289,7 +289,25 @@ body[data-theme="dark"] .sidebar select {
     border-color: var(--border);
     box-shadow: 0 0 0 2px var(--sidebar-bg), 0 0 0 3.5px var(--text);
 }
-.swatch-picker { background: var(--input-bg); }
+/* custom-colour picker: full rainbow circle until a colour is chosen
+   (setCustomColor then sets an inline background) */
+.swatch-picker {
+    background: conic-gradient(#f66 0deg, #fc3 60deg, #9d5 120deg, #4cc 180deg, #59f 240deg, #b6e 300deg, #f66 360deg);
+}
+/* once a custom colour is active, a small rainbow dot keeps the
+   "any colour" affordance discoverable */
+.swatch-picker.has-custom::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: conic-gradient(#f66, #fc3, #9d5, #4cc, #59f, #b6e, #f66);
+    box-shadow: 0 0 0 1.5px var(--sidebar-bg);
+    pointer-events: none;
+}
 
 /* ── Styling grid: label | colour+hex combo | size — no header row.
       The Grid row lives in the same grid; its eye takes the size
@@ -453,7 +471,7 @@ body[data-theme="dark"] .action-btn--primary:hover { background: #f6b5a3; }
 .link-btn:hover { color: var(--text); background: var(--hover-bg); }
 
 /* ── Floating chrome ── */
-.zoom-widget, .theme-btn, .about-btn, .month-nav-btn, .hamburger {
+.zoom-widget, .theme-btn, .about-btn, .month-nav-btn, .hamburger, .sidebar-toggle {
     background: var(--sidebar-bg);
     border: 1.5px solid var(--border);
     box-shadow: 2px 2px 0 var(--shadow-ink);
@@ -462,17 +480,49 @@ body[data-theme="dark"] .action-btn--primary:hover { background: #f6b5a3; }
 .zoom-widget { border-radius: var(--r-btn); height: 34px; align-items: center; padding: 0 3px; }
 .zoom-widget button { color: var(--text); border-radius: var(--r-ctrl); }
 .zoom-widget span { color: var(--text); font-variant-numeric: tabular-nums; }
-.zoom-widget button:hover, .theme-btn:hover, .about-btn:hover, .month-nav-btn:hover { background: var(--hover-bg); color: var(--text); }
-.theme-btn, .about-btn, .month-nav-btn { border-radius: var(--r-btn); }
+.zoom-widget button:hover { background: var(--hover-bg); color: var(--text); }
+.theme-btn, .about-btn, .month-nav-btn, .sidebar-toggle { border-radius: var(--r-btn); }
+/* consistent size: match the zoom widget's 34px height */
+.theme-btn, .about-btn, .sidebar-toggle { width: 34px; height: 34px; }
+
+/* Consistent hover/press across the floating buttons — same lift + hard
+   shadow language as the action buttons and swatches. The zoom widget
+   stays put (its inner buttons get the hover fill instead). */
+.theme-btn, .about-btn, .month-nav-btn, .hamburger {
+    transition: transform 0.08s, box-shadow 0.08s, background 0.12s, color 0.12s;
+}
+.sidebar-toggle {
+    /* keep the base left-position slide alongside the lift */
+    transition: left 0.25s ease, transform 0.08s, box-shadow 0.08s, background 0.12s, color 0.12s;
+}
+.theme-btn:hover, .about-btn:hover, .month-nav-btn:hover, .hamburger:hover, .sidebar-toggle:hover {
+    background: var(--hover-bg);
+    color: var(--text);
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--shadow-ink);
+}
+.theme-btn:active, .about-btn:active, .month-nav-btn:active, .hamburger:active, .sidebar-toggle:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0 var(--shadow-ink);
+}
 
 /* ── Page frame ── */
 @media screen {
     .page {
-        box-shadow: 0 0 0 1.5px var(--shadow-ink), 6px 6px 0 rgba(42,47,91,0.35);
+        /* ring/cast exposed as vars so the entrance animation (paper drop)
+           can render a theme-correct airborne shadow */
+        --page-ring: var(--shadow-ink);
+        --page-cast: rgba(42,47,91,0.35);
+        --page-cast-soft: rgba(42,47,91,0.12);
+        box-shadow: 0 0 0 1.5px var(--page-ring), 6px 6px 0 var(--page-cast);
         border-radius: 2px;
     }
-    body[data-theme="dark"] .page { box-shadow: 0 0 0 1.5px rgba(246,231,226,0.6), 6px 6px 0 rgba(246,231,226,0.3); }
-    body.is-capturing .page { box-shadow: none; border-radius: 0; }
+    body[data-theme="dark"] .page {
+        --page-ring: rgba(246,231,226,0.6);
+        --page-cast: rgba(246,231,226,0.3);
+        --page-cast-soft: rgba(246,231,226,0.1);
+    }
+    body.is-capturing .page { box-shadow: none; border-radius: 0; animation: none; }
 }
 
 /* ── Modal ── */

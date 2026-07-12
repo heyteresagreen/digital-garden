@@ -94,6 +94,31 @@ function toggleSidebar() {
     document.querySelector('.sidebar').classList.toggle('open');
 }
 
+/* Desktop sidebar collapse — UI preference, so it lives in localStorage
+   (like the theme) rather than the shareable URL state. */
+function toggleSidebarCollapsed() {
+    const collapsed = document.body.classList.toggle('sidebar-collapsed');
+    try { localStorage.setItem('calSidebar', collapsed ? 'collapsed' : 'open'); } catch (e) {}
+    syncSidebarToggleLabel();
+}
+
+function syncSidebarToggleLabel() {
+    const btn = document.getElementById('sidebarToggle');
+    if (!btn) return;
+    const label = document.body.classList.contains('sidebar-collapsed') ? 'Show sidebar' : 'Hide sidebar';
+    btn.title = label;
+    btn.setAttribute('aria-label', label);
+}
+
+function initSidebar() {
+    try {
+        if (localStorage.getItem('calSidebar') === 'collapsed') {
+            document.body.classList.add('sidebar-collapsed');
+        }
+    } catch (e) {}
+    syncSidebarToggleLabel();
+}
+
 /* input-fields: measures the actual active button's box (not a %-of-N
    guess) so the thumb lands exactly on it regardless of padding/gap —
    robust if those ever change. Called wherever .active moves. */
@@ -119,7 +144,9 @@ function setViewMode(mode) {
     syncSegThumb(el.btnViewYear.closest('.seg-ctrl'));
     el.optFolded.disabled = (mode === 'month');
     if (mode === 'month' && el.layoutSelect.value === 'folded') el.layoutSelect.value = 'portrait';
-    if (mode === 'month') el.showDayOutlines.checked = true;
+    /* grid follows the view's default: hidden in year view, shown in
+       month view (re-toggle the eye after switching to override) */
+    el.showDayOutlines.checked = (mode === 'month');
     updateDimensions();
 }
 
@@ -160,7 +187,11 @@ function updateUrl() {
             cm:  currentMonth,
         };
         if (Object.keys(activeHighlights).length) state.h = JSON.stringify(activeHighlights);
-        window.history.replaceState({}, '', '?' + new URLSearchParams(state));
+        const qs = new URLSearchParams(state);
+        /* passthrough params the app doesn't own — without this, boot-time
+           updateUrl() calls strip ?debug=1 before the debug panel loads */
+        if (new URLSearchParams(window.location.search).has('debug')) qs.set('debug', '1');
+        window.history.replaceState({}, '', '?' + qs);
     } catch (e) {}
 }
 
@@ -215,13 +246,60 @@ function updateDimensions() {
         el.adjDateSize.value    = preset.dateSize;
         el.adjDayNameSize.value = preset.daySize;
         el.adjTitleSize.value   = preset.giantTitleSize;
-    } else {
-        const base = dims[size];
-        el.adjDateSize.value    = base.dateSize;
-        el.adjDayNameSize.value = base.daySize;
-        el.adjTitleSize.value   = base.titleSize;
+        applyAdvanced();
+        /* default giant title must fit the longest month name in the
+           chosen label format — presets were tuned for 3-letter labels.
+           The year text (when shown) scales with the title, so its width
+           is part of the fit. */
+        const fitted = fitTitleDefault(preset.giantTitleSize);
+        el.adjTitleSize.value = fitted;
+        el.adjYearSize.value  = Math.round(fitted * 0.35 * 2) / 2;
+        applyAdvanced();
+        return;
     }
+    const base = dims[size];
+    el.adjDateSize.value    = base.dateSize;
+    el.adjDayNameSize.value = base.daySize;
+    el.adjTitleSize.value   = base.titleSize;
+    el.adjYearSize.value    = 24;
     applyAdvanced();
+}
+
+/* Largest default title size (pt) at which the longest month name in the
+   current format completely fits the giant month-view header. Binary
+   search on the live element at each candidate size (no ratio maths —
+   letter-spacing, font metrics and rounding are all measured for real).
+   The year text, when shown, is scaled along with each candidate (it
+   defaults to 0.35× the title) so the width it takes is accounted for.
+   Only ever shrinks the preset, never grows it. */
+function fitTitleDefault(presetSize) {
+    const nameEl = document.querySelector('.mvh-name');
+    if (!nameEl) return presetSize;
+    const yearEl = document.querySelector('.mvh-year-text');
+    const year = +el.year.value;
+    const names = Array.from({ length: 12 }, (_, m) =>
+        new Date(year, m).toLocaleString('default', { month: el.monthFormat.value }).toUpperCase());
+    const longest = names.reduce((a, b) => (b.length > a.length ? b : a));
+    const savedText = nameEl.textContent;
+    nameEl.textContent = longest;
+    const fits = (size) => {
+        nameEl.style.fontSize = size + 'pt';
+        if (yearEl) yearEl.style.fontSize = (size * 0.35) + 'pt';
+        return nameEl.scrollWidth <= nameEl.clientWidth;
+    };
+    let result = presetSize;
+    if (!fits(presetSize)) {
+        let lo = 4, hi = presetSize;
+        for (let i = 0; i < 14; i++) {
+            const mid = (lo + hi) / 2;
+            if (fits(mid)) lo = mid; else hi = mid;
+        }
+        result = Math.floor(lo * 10) / 10;
+    }
+    nameEl.textContent = savedText;
+    nameEl.style.removeProperty('font-size');
+    if (yearEl) yearEl.style.removeProperty('font-size');
+    return result;
 }
 
 function clearAllHighlights() {
@@ -291,9 +369,10 @@ function applyAdvanced() {
     root.style.setProperty('--day-color',       el.adjDayColor.value);
     root.style.setProperty('--date-color',      el.adjDateColor.value);
     root.style.setProperty('--year-title-size', parseFloat(el.adjYearSize.value) + 'pt');
-    /* B6A: year styling row follows the year-title eye */
+    /* Year styling row follows the year-title eye — both views: the
+       month-view year text is styleable too */
     const yearRow = document.getElementById('styleRowYear');
-    if (yearRow) yearRow.style.display = (viewMode !== 'month' && el.showYearTitle.checked) ? '' : 'none';
+    if (yearRow) yearRow.style.display = el.showYearTitle.checked ? '' : 'none';
     syncAllHex();
     if (viewMode === 'month') {
         root.style.setProperty('--month-giant-size', titleSize + 'pt');
@@ -331,18 +410,6 @@ function buildMonthViewHeader(year, m) {
         mvh.appendChild(side);
     }
     return mvh;
-}
-
-function fitGiantTitle() {
-    const nameEl = document.querySelector('.mvh-name');
-    if (!nameEl) return;
-    const savedText = nameEl.textContent;
-    nameEl.textContent = 'SEPTEMBER';
-    nameEl.style.fontSize = '200pt';
-    const ratio = nameEl.clientWidth / nameEl.scrollWidth;
-    nameEl.textContent = savedText;
-    nameEl.style.removeProperty('font-size');
-    document.documentElement.style.setProperty('--month-giant-size', Math.floor(200 * ratio * 10) / 10 + 'pt');
 }
 
 function render() {
@@ -389,29 +456,7 @@ function render() {
             td.dataset.key = key;
             td.innerHTML = `<span>${currentDay}</span>`;
 
-            if (activeHighlights[key]) {
-                const hType     = activeHighlights[key];
-                const dayInWeek = date.getDay();
-                const prevDate  = new Date(year, m, currentDay - 1);
-                const nextDate  = new Date(year, m, currentDay + 1);
-                const prevKey   = `${prevDate.getFullYear()}-${prevDate.getMonth()}-${prevDate.getDate()}`;
-                const nextKey   = `${nextDate.getFullYear()}-${nextDate.getMonth()}-${nextDate.getDate()}`;
-                const hasPrev = (dayInWeek !== weekStart) && activeHighlights[prevKey] === hType;
-                const hasNext = (dayInWeek !== (weekStart + 6) % 7) && activeHighlights[nextKey] === hType;
-                if (!hasPrev && !hasNext) td.classList.add('round-all');
-                else if (!hasPrev && hasNext) td.classList.add('round-left');
-                else if (hasPrev && !hasNext) td.classList.add('round-right');
-                if (hType === 'outline') {
-                    td.classList.add('outline');
-                } else if (hType.startsWith('#')) {
-                    td.classList.add('highlight-custom');
-                    const span = td.querySelector('span');
-                    span.style.background = hType;
-                    span.style.color = getContrastColor(hType);
-                } else {
-                    td.classList.add(`highlight-${hType}`);
-                }
-            }
+            if (activeHighlights[key]) paintCell(td);
 
             td.onpointerdown = (e) => {
                 if (!drawMode) return;
@@ -438,17 +483,60 @@ function render() {
         monthDiv.appendChild(table);
         el.calendar.appendChild(monthDiv);
     }
-    // fitGiantTitle removed — title size is now driven directly by adjTitleSize
+    // title size is driven by adjTitleSize; its *default* is clamped to fit
+    // the longest month name via fitTitleDefault() in updateDimensions()
+}
+
+/* Applies the highlight state for a cell's key to the cell itself:
+   fill/outline class, custom colour, and pill rounding based on
+   same-colour neighbours. Used by render() for every cell and by
+   toggleCell() to paint live during a drag. */
+function paintCell(td) {
+    const key = td.dataset.key;
+    td.classList.remove('highlight-yellow','highlight-blue','highlight-pink','highlight-green','highlight-grey','highlight-black','highlight-custom','outline','round-all','round-left','round-right');
+    const span = td.querySelector('span');
+    if (span) { span.style.background = ''; span.style.color = ''; }
+    const hType = activeHighlights[key];
+    if (!hType) return;
+    const [y, m, d]  = key.split('-').map(Number);
+    const dayInWeek  = new Date(y, m, d).getDay();
+    const prevDate   = new Date(y, m, d - 1);
+    const nextDate   = new Date(y, m, d + 1);
+    const prevKey    = `${prevDate.getFullYear()}-${prevDate.getMonth()}-${prevDate.getDate()}`;
+    const nextKey    = `${nextDate.getFullYear()}-${nextDate.getMonth()}-${nextDate.getDate()}`;
+    const hasPrev = (dayInWeek !== weekStart) && activeHighlights[prevKey] === hType;
+    const hasNext = (dayInWeek !== (weekStart + 6) % 7) && activeHighlights[nextKey] === hType;
+    if (!hasPrev && !hasNext) td.classList.add('round-all');
+    else if (!hasPrev && hasNext) td.classList.add('round-left');
+    else if (hasPrev && !hasNext) td.classList.add('round-right');
+    if (hType === 'outline') {
+        td.classList.add('outline');
+    } else if (hType.startsWith('#')) {
+        td.classList.add('highlight-custom');
+        if (span) {
+            span.style.background = hType;
+            span.style.color = getContrastColor(hType);
+        }
+    } else {
+        td.classList.add(`highlight-${hType}`);
+    }
 }
 
 function toggleCell(td, forceState, fullRender = true) {
     const key = td.dataset.key;
     if (drawMode === 'highlight') {
-        td.classList.remove('highlight-yellow','highlight-blue','highlight-pink','highlight-green','highlight-grey','highlight-black','highlight-custom','outline','round-all','round-left','round-right');
-        const span = td.querySelector('span');
-        if (span) { span.style.background = ''; span.style.color = ''; }
         if (forceState) activeHighlights[key] = highlightColor;
         else delete activeHighlights[key];
+        /* live feedback while the mouse is down: paint this cell now and
+           repaint its neighbours so the pill merges as the drag grows —
+           the full render on pointerup only settles cross-month edges */
+        paintCell(td);
+        for (const nd of [ -1, 1 ]) {
+            const [y, m, d] = key.split('-').map(Number);
+            const n = new Date(y, m, d + nd);
+            const nTd = el.calendar.querySelector(`td[data-key="${n.getFullYear()}-${n.getMonth()}-${n.getDate()}"]`);
+            if (nTd) paintCell(nTd);
+        }
     }
     if (fullRender) { render(); updateTextareaFromHighlights(); }
     updateUrl();
@@ -549,7 +637,10 @@ function getContrastColor(hex) {
 function toggleYearTitle() {
     el.showYearTitle.checked = !el.showYearTitle.checked;
     el.yearTitleToggle.classList.toggle('active', el.showYearTitle.checked);
-    applyAdvanced();
+    /* month view: the year text shares the header row with the giant
+       title, so showing/hiding it changes the title's fitting size */
+    if (viewMode === 'month') updateDimensions();
+    else applyAdvanced();
 }
 
 function toggleDayGrid() {
@@ -663,6 +754,7 @@ function initTheme() {
 
 initElements();
 initTheme();
+initSidebar();
 loadFromUrl();
 updateDimensions();
 updateTextareaFromHighlights();
@@ -717,7 +809,9 @@ function syncMonthFmt() {
 }
 function setMonthFormat(v) {
     el.monthFormat.value = v;
-    applyAdvanced();
+    /* re-derive size defaults — the giant month title's fitting size
+       depends on the label format (JANUARY vs JAN) */
+    updateDimensions();
     syncMonthFmt();
 }
 
@@ -755,3 +849,9 @@ syncLayoutIcons();
 syncMonthFmt();
 syncAllHex();
 applyAdvanced();
+
+/* entrance-animations: transitions on boot-synced controls (seg thumbs,
+   eye icons) are disabled until body.booted — added after the first
+   painted frame so state restored from the URL snaps into place instead
+   of animating in. Double rAF = "after first paint", reliably. */
+requestAnimationFrame(() => requestAnimationFrame(() => document.body.classList.add('booted')));
