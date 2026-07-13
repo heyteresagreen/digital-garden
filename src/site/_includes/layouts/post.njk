@@ -1,10 +1,11 @@
 ---
 layout: layouts/base.njk
 ---
+{%- set sectionKey = section | primarySection %}
 <article>
   <header>
-    {%- if section %}
-    <p class="section-label"><a href="/{{ section }}/">&larr; {{ section | title }}</a></p>
+    {%- if sectionKey %}
+    <p class="section-label"><a href="/{{ sectionKey }}/">&larr; {{ sectionKey | title }}</a></p>
     {%- endif %}
     <h1>{{ title }}</h1>
     {%- if page.date %}
@@ -19,12 +20,12 @@ layout: layouts/base.njk
     {%- endif %}
   </header>
 {{ content | safe }}
-  {%- if section %}
-  {%- set sectionPosts = collections[section] %}
+  {%- if sectionKey %}
+  {%- set sectionPosts = collections[sectionKey] %}
   {%- set newerPost = sectionPosts | getPreviousCollectionItem %}
   {%- set olderPost = sectionPosts | getNextCollectionItem %}
   {%- if newerPost or olderPost %}
-  <nav class="post-nav" aria-label="More in {{ section }}">
+  <nav class="post-nav" aria-label="More in {{ sectionKey }}">
     {%- if newerPost %}<a class="post-nav-prev" href="{{ newerPost.url }}">&larr; {{ newerPost.data.title }}</a>{% endif %}
     {%- if olderPost %}<a class="post-nav-next" href="{{ olderPost.url }}">{{ olderPost.data.title }} &rarr;</a>{% endif %}
   </nav>

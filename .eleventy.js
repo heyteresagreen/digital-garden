@@ -296,6 +296,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("tagUrl", (tag) => `/tags/${slugify(String(tag))}/`);
 
+  // `section` in frontmatter is usually a single string, but some posts (e.g. letters/)
+  // use a list to belong to multiple sections. Templates that need one canonical section
+  // (URL, nav, collection lookup) should go through this filter rather than assuming a string.
+  eleventyConfig.addFilter("primarySection", (section) => (Array.isArray(section) ? section[0] : section));
+
   eleventyConfig.addFilter("withTag", (posts, tag) =>
     (posts || []).filter((p) => (p.data.tags || []).map((t) => String(t).toLowerCase()).includes(String(tag).toLowerCase()))
   );
