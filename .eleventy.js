@@ -97,26 +97,53 @@ function resolveEmbedSrc(name) {
   return "/img/user/" + clean.split("/").map(encodeURIComponent).join("/");
 }
 
+// Shared by every place that parses the pipe-separated part of a wiki embed
+// that comes after the target (![[target|alt]], ![[target|alt|300]],
+// ![[target|300]]). A trailing segment that's purely numeric (optionally
+// WxH, e.g. 300x200) is an Obsidian sizing hint, not alt text; any
+// remaining segment(s) are joined back together as the alt text. Kept as
+// one function so a fix here (like the width/alt mixup this was written to
+// fix) can't silently regress in one of the other call sites.
+function splitEmbedAltAndSize(rest) {
+  const parts = rest !== undefined && rest !== null ? String(rest).split("|") : [];
+  let width = null;
+  let height = null;
+  if (parts.length > 0) {
+    const sizeMatch = parts[parts.length - 1].trim().match(/^(\d+)(?:x(\d+))?$/i);
+    if (sizeMatch) {
+      width = sizeMatch[1];
+      height = sizeMatch[2] || null;
+      parts.pop();
+    }
+  }
+  return { alt: parts.join("|").trim(), width, height };
+}
+
+// Parses a frontmatter `image:` field written in Obsidian's own embed
+// syntax, e.g. image: "[[file.jpg|alt text]]" — returns null if `raw`
+// isn't in that format (e.g. it's already a resolved /img/user/... path,
+// which callers should handle separately).
+function parseImageField(raw) {
+  const match = String(raw).trim().match(/^!?\[\[([^\]]*)\]\]$/);
+  if (!match) return null;
+  const inner = match[1];
+  const pipeIndex = inner.indexOf("|");
+  const target = (pipeIndex === -1 ? inner : inner.slice(0, pipeIndex)).trim();
+  if (!target) return null;
+  const rest = pipeIndex === -1 ? undefined : inner.slice(pipeIndex + 1);
+  const { alt } = splitEmbedAltAndSize(rest);
+  return { src: resolveEmbedSrc(target), alt };
+}
+
 function replaceWikiSyntax(content) {
   // Image embeds: ![[file.jpeg|alt text]], ![[file.jpeg|alt text|300]], or
   // Obsidian's width-only shorthand ![[file.jpeg|300]] / ![[file.jpeg|300x200]]
   // (pipe separating the target from the rest may be escaped as \|).
-  // A trailing pipe segment that's purely numeric (optionally WxH) is a
-  // sizing hint, not alt text — it becomes a real width/height attribute.
-  // Any remaining segment(s) are joined back together as the alt text.
   content = content.replace(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, rest) => {
     const src = resolveEmbedSrc(target);
-    const parts = rest !== undefined ? rest.split("|") : [];
-    let sizeAttrs = "";
-    if (parts.length > 0) {
-      const sizeMatch = parts[parts.length - 1].trim().match(/^(\d+)(?:x(\d+))?$/i);
-      if (sizeMatch) {
-        const [, width, height] = sizeMatch;
-        sizeAttrs = ` width="${width}"${height ? ` height="${height}"` : ""}`;
-        parts.pop();
-      }
-    }
-    const altText = parts.join("|").replace(/"/g, "&quot;").trim();
+    const { alt, width, height } = splitEmbedAltAndSize(rest);
+    const altText = alt.replace(/"/g, "&quot;");
+    const sizeAttrs = width ? ` width="${width}"${height ? ` height="${height}"` : ""}` : "";
     return `<img src="${src}" alt="${altText}"${sizeAttrs}>`;
   });
   // Markdown images with vault-relative paths (Obsidian needs these relative
@@ -280,11 +307,21 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", () => excerptCache.clear());
 
 
-  // Card thumbnail: from imageUrl / image frontmatter only
+  // Card thumbnail: from imageUrl (preferred, already a resolved path), or
+  // image — either an already-resolved path, or Obsidian's own embed syntax
+  // (image: "[[file.jpg|alt text]]"), parsed via parseImageField so a note
+  // only needs one field, not both.
   eleventyConfig.addFilter("cardImage", (post) => {
     if (!post || !post.data) return null;
     if (post.data.imageUrl) return { src: encodeURI(post.data.imageUrl), alt: post.data.imageAlt || "" };
-    if (post.data.image && String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
+    if (post.data.image) {
+      if (String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
+      const parsed = parseImageField(post.data.image);
+      // parsed.src comes from resolveEmbedSrc, which already
+      // percent-encodes each path segment — wrapping it in encodeURI()
+      // again would double-encode it (%20 -> %2520).
+      if (parsed) return { src: parsed.src, alt: post.data.imageAlt || parsed.alt };
+    }
     return null;
   });
 
@@ -294,7 +331,14 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("cardImageAny", (post) => {
     if (!post || !post.data) return null;
     if (post.data.imageUrl) return { src: encodeURI(post.data.imageUrl), alt: post.data.imageAlt || "" };
-    if (post.data.image && String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
+    if (post.data.image) {
+      if (String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
+      const parsed = parseImageField(post.data.image);
+      // parsed.src comes from resolveEmbedSrc, which already
+      // percent-encodes each path segment — wrapping it in encodeURI()
+      // again would double-encode it (%20 -> %2520).
+      if (parsed) return { src: parsed.src, alt: post.data.imageAlt || parsed.alt };
+    }
     const inputPath = post.page ? post.page.inputPath : null;
     if (!inputPath) return null;
     if (bodyImageCache.has(inputPath)) return bodyImageCache.get(inputPath);
@@ -308,7 +352,7 @@ module.exports = function (eleventyConfig) {
         out = { src: encodeURI(decodeURI(src)), alt: (m[1].split("|").pop() || "").trim() };
       } else {
         m = body.match(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/);
-        if (m) out = { src: resolveEmbedSrc(m[1]), alt: (m[2] || "").trim() };
+        if (m) out = { src: resolveEmbedSrc(m[1]), alt: splitEmbedAltAndSize(m[2]).alt };
       }
     } catch { /* noop */ }
     bodyImageCache.set(inputPath, out);

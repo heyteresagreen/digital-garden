@@ -26,9 +26,9 @@ _Written July 2026, as Tier 3 (option 2) of `portability-plan.md`. This is docum
 
 Three related fields, and they don't do what you'd guess from the names alone:
 
-- **`imageUrl`** — the one that actually drives the post-card thumbnail and social-share image. Must be a site-rooted path (`/img/user/assets/...`).
-- **`image`** — in the notes that have it (e.g. the sketching notes), this is typically left as the raw Obsidian embed string, e.g. `"[[ux-camp-23 - 4.jpeg|alt text]]"`. The `cardImage`/`cardImageAny` filters only use `image` when it *already* starts with `/` — so in practice, if both fields are present the way they are in your existing sketching notes, `image` is inert and `imageUrl` is doing all the work. Worth knowing so a future note doesn't rely on `image` alone and get no thumbnail.
-- **`imageAlt`** — alt text paired with either of the above.
+- **`imageUrl`** — takes priority if set. Must be a site-rooted path (`/img/user/assets/...`).
+- **`image`** — either an already-resolved path (`/img/user/...`), or, as of July 2026, Obsidian's own embed syntax straight from the note (`"[[ux-camp-23 - 4.jpeg|alt text]]"`, with or without a size hint like `|300`, which is parsed but not applied to thumbnails). This means a new note only needs to set `image` — no need to also hand-compute `imageUrl`. (Historically, every existing note that set `image` also set `imageUrl` anyway, so `image` alone was inert until this was added — see the `feature/image-field-thumbnail` commit.)
+- **`imageAlt`** — if set, overrides whatever alt text `image`/`imageUrl` would otherwise produce.
 
 If neither field is set, the Writing index (`bodyImageFallback: true`) falls back to the first image found in the note body; other indexes just show no thumbnail.
 
