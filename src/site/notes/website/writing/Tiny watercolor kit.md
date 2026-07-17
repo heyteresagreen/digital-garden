@@ -5,7 +5,7 @@ section: writing
 date: 2023-04-03
 tags:
   - tools
-image: assets/watercolour2.jpeg
+image: assets/watercolour 2-06e4a6cd.jpeg
 imageAlt: "photo of my tiny watercolour kit"
 slug: tiny-watercolor-kit
 ---
