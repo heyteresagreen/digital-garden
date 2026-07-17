@@ -1,0 +1,126 @@
+/* ----------------------
+BASE
+---------------------- */
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.65;
+  color: var(--color-text);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  background-image: radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
+}
+
+/* background texture doesn't work well on ipads or mobile, so only applying to non-touch devices*/
+@media (hover: hover) {
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='1' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 15 -7'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"), radial-gradient(circle, #fbf4f3 40%, #faf0ee 90%);
+    background-blend-mode: color-burn;
+    background-size: 900px 900px, auto;
+    opacity: 1;
+  }
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.7rem;
+}
+
+time {
+  display: block;
+  color: var(--color-text);
+  margin: 0.5em 0 1em;
+  font-family: var(--font-family-sans-serif);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+.content blockquote {
+  font-size: 0.8em;
+  border-left: 3px solid var(--color-primary);
+  font-family: var(--font-family-sans-serif);
+  p {
+    margin: 0;
+  }
+}
+
+// squiggly horizontal rule
+.content hr {
+  height: auto;
+  color: var(--color-primary);
+  text-align: center;
+  border: 0;
+
+  &:after {
+    content: "◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡◠◡";
+    font-size: 0.5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--color-secondary);
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: 5px;
+
+  @media (min-width: 780px) {
+    font-size: 2.2em;
+  }
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+.content a {
+  transition: background-color 300ms;
+  color: var(--color-secondary);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.15em;
+  &:hover {
+    text-decoration-thickness: 0.1em;
+    background: var(--color-accent);
+  }
+}
+
+code {
+  background: white;
+  padding: 0.1em 0.2em;
+  border-radius: var(--border-radius);
+}

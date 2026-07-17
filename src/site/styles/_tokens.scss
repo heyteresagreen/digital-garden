@@ -1,0 +1,29 @@
+/* ============================================================
+   Design tokens — the values that drive the whole site's look.
+
+   Edit these to reskin. They're CSS custom properties, so you can
+   also preview a different palette without a Sass recompile —
+   override the same variable names via devtools, or an inline
+   <style> block targeting :root.
+
+   Three derived colours elsewhere in the stylesheet (in
+   _layout.scss and _components.scss) are precomputed static values
+   rather than living tokens, because they're built with Sass's
+   color.mix()/color.adjust() — functions that need a real Sass
+   colour at compile time, not a CSS custom property. If you change
+   --color-text or --color-secondary below, recompute those three
+   by hand (formulas are noted at each usage site) or they'll drift
+   out of sync with the new palette.
+   ============================================================ */
+
+:root {
+  --color-primary: #ffb4a3; // pink
+  --color-secondary: #314399; // blue
+  --color-text: #4e4c5e; // grey
+  --color-background: #fcf4f2; // pink-lightest
+  --color-accent: #ffe3dc; // pink-light
+  --border-radius: 4px;
+
+  --font-family: Newsreader, Georgia, -apple-system, BlinkMacSystemFont, Segoe UI, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  --font-family-sans-serif: Avenir, Helvetica, Arial, sans-serif;
+}

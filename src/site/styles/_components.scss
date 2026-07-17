@@ -1,0 +1,495 @@
+/* ----------------------
+NOTE AND POST ELEMENTS
+---------------------- */
+
+article > header {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+
+  time {
+    font-size: 0.85rem;
+  }
+}
+
+/* v2: section label / back-link above post titles */
+.section-label {
+  margin-bottom: 0.5em;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  text-align: left;
+  a {
+    text-decoration: none;
+    color: var(--color-text);
+    &:hover {
+      color: var(--color-secondary);
+      background: transparent;
+      box-shadow: inset 0px -0.25em 0px var(--color-primary);
+    }
+  }
+}
+
+.header-tags {
+  margin-top: 0.5em;
+}
+
+a.tag {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  padding: 2px 6px;
+  font-family: var(--font-family-sans-serif);
+  margin-right: 5px;
+  font-size: 0.85rem;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+}
+
+.content a.tag:hover {
+  color: white;
+  background-color: var(--color-secondary);
+}
+
+/* v2: previous / next post navigation */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  margin: 3em 0 1em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--color-accent);
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.9rem;
+  a {
+    text-decoration: none;
+    max-width: 45%;
+    &:hover {
+      background: var(--color-accent);
+    }
+  }
+  .post-nav-next {
+    margin-left: auto;
+    text-align: right;
+  }
+}
+
+/* Images wider than the text column bleed out slightly.
+   Only applies when the original is genuinely wider (class added at build
+   time) — smaller images stay their natural size. */
+@media (min-width: 1000px) {
+  .content img.img-wide {
+    max-width: 130%;
+    margin-left: -15%;
+  }
+}
+
+img.two-col {
+  @media (min-width: 720px) {
+    width: 50%;
+    float: left;
+    margin-bottom: 1em;
+    border-right: 2px solid var(--color-background);
+  }
+}
+
+figure {
+  margin: 0;
+  figcaption {
+    text-align: center;
+    font-size: 0.8em;
+  }
+}
+
+q {
+  background: var(--color-background);
+}
+
+/* ----------------------
+HOMEPAGE
+---------------------- */
+
+.homepage {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 7rem;
+  h2 {
+    font-weight: normal;
+    line-height: 1.3;
+    font-size: 1.5em;
+    font-family: var(--font-family);
+    @media (min-width: 600px) {
+      width: 70%;
+      max-width: 550px;
+    }
+  }
+  img {
+    max-width: 200px;
+    @media (min-width: 600px) {
+      width: 30%;
+      float: right;
+    }
+  }
+}
+
+/* ----------------------
+FORMS
+---------------------- */
+
+form {
+  padding: 1em;
+  background: var(--color-secondary);
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 3em;
+  @media (min-width: 720px) {
+    padding: 1em 3.6em;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+input#bd-email {
+  padding: 0.25em 0.5em;
+  margin: 0.5em 0;
+  width: 92%;
+  background: var(--color-background);
+  border: 1px solid #fff;
+  font-family: var(--font-family);
+  @media (min-width: 720px) {
+    margin: 0 0.5em 0 0.25em;
+    width: 250px;
+  }
+}
+
+input.btn {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-secondary);
+  padding: 0.25em 0.5em;
+  font-family: var(--font-family);
+  transition: 0.2s;
+
+  &:hover {
+    background: var(--color-text);
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+    cursor: pointer;
+  }
+}
+
+/* ----------------------
+INDEX PAGES (v2 components)
+---------------------- */
+
+.index-header {
+  text-align: center;
+  padding: 4rem 0 1rem;
+  margin-bottom: 2em;
+  .index-intro {
+    margin-top: 1.5em;
+  }
+}
+
+.index-empty {
+  font-family: var(--font-family-sans-serif);
+  font-size: 1rem;
+}
+
+/* base post list */
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+
+  .post-card {
+    margin-bottom: 2rem;
+  }
+  .post-card-section {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-family: var(--font-family-sans-serif);
+  }
+  .post-card-title {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    text-decoration: none;
+  }
+  .post-card-excerpt {
+    font-size: 1rem;
+    margin: 0.3rem 0 0;
+  }
+  time.posted {
+    font-size: 0.85rem;
+    margin: 0.3rem 0 0;
+  }
+}
+
+/* Writing: small thumb on the left when the post has an image */
+.writing-list {
+  .post-card-title {
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.15em;
+    &:hover {
+      text-decoration-thickness: 0.1em;
+    }
+  }
+  .post-card.has-thumb {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 1.25rem;
+    align-items: start;
+  }
+  .post-card-thumb img {
+    width: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0;
+    border-radius: var(--border-radius);
+  }
+}
+
+/* Notes: digital-garden style — quieter, undated list */
+.notes-list {
+  .post-card {
+    margin-bottom: 1.75rem;
+  }
+  .post-card-title {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.15em;
+    &:hover {
+      text-decoration-thickness: 0.1em;
+    }
+  }
+  time.posted {
+    display: none;
+  }
+  .post-card-excerpt {
+    font-size: 1rem;
+  }
+}
+
+/* Letters: bulleted list of underlined links */
+.letters-list {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  .post-card {
+    display: list-item;
+    margin-bottom: 1rem;
+  }
+  .post-card-title {
+    font-size: 1.25rem;
+    text-decoration: underline;
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.15em;
+    &:hover {
+      text-decoration-thickness: 0.1em;
+    }
+    &::after {
+      content: ": ";
+      text-decoration: none;
+      display: inline-block;
+      white-space: pre;
+    }
+  }
+  time.posted {
+    display: none;
+  }
+  .post-card-excerpt {
+    display: inline;
+    font-size: 1.1rem;
+  }
+}
+
+/* Art + Sketching: thumbnail mosaic (matches the old art index) */
+.art-grid {
+  @media (min-width: 700px) {
+    column-count: 2;
+    column-gap: 2.5rem;
+  }
+  .post-card {
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+  }
+  /* title above image, like the old dataview table order */
+  .post-card-body {
+    display: contents;
+  }
+  .post-card-section { display: none; }
+  .post-card-title { order: 1; }
+  .post-card-thumb { order: 2; }
+  .post-card-excerpt { order: 3; }
+  .post-card-title {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    padding: 0.2em 0;
+  }
+  .post-card-thumb img {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid var(--color-background);
+    transition: 300ms;
+  }
+  .post-card-thumb:hover img {
+    border: 2px solid var(--color-primary);
+    transition: 200ms;
+  }
+  time.posted {
+    display: none;
+  }
+}
+
+/* Books: cover + text grid */
+.book-list {
+  .post-card {
+    margin-bottom: 1.5rem;
+    @media (min-width: 520px) {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 1.5rem;
+      align-items: start;
+    }
+  }
+  .post-card-thumb img {
+    margin-bottom: 1rem;
+    border-radius: 2px;
+    box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  time.posted {
+    display: none;
+  }
+  @media (max-width: 519px) {
+    .post-card {
+      text-align: center;
+    }
+    .post-card-thumb img {
+      max-width: 150px;
+      margin: 0 auto 1rem;
+    }
+  }
+}
+
+/* tag chips on the Posts page */
+.tag-links {
+  padding-left: 0;
+  margin: 2rem 0 3.5rem;
+  text-align: center;
+  li {
+    list-style-type: none;
+    display: inline;
+    a {
+      font-size: 0.85rem;
+      font-family: var(--font-family-sans-serif);
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 0.25em 0.6em;
+      font-weight: bold;
+      background: var(--color-accent);
+      border: 1px solid var(--color-accent);
+      margin: 5px;
+      display: inline-block;
+      border-radius: var(--border-radius);
+      &:hover {
+        // precomputed: color.adjust(--color-secondary, $lightness: 20%) —
+        // recompute if --color-secondary changes (see _tokens.scss)
+        border: 1px solid #6375cd;
+      }
+    }
+  }
+}
+
+/* pagination */
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1em;
+  margin: 3em 0 1em;
+  padding-top: 1.5em;
+  border-top: 1px solid var(--color-accent);
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.9rem;
+
+  a {
+    text-decoration: none;
+    &:hover {
+      background: var(--color-accent);
+    }
+  }
+  .is-disabled {
+    opacity: 0.35;
+  }
+  .pagination-status {
+    font-size: 0.8rem;
+  }
+}
+
+/* ----------------------
+404
+---------------------- */
+
+.page-404 .not-found {
+  text-align: center;
+  padding: 4em 0;
+  h1 {
+    margin-bottom: 0.5em;
+  }
+}
+
+/* ----------------------
+POSTS PAGE MOSAIC (v2)
+---------------------- */
+
+.posts-mosaic {
+  @media (min-width: 700px) {
+    column-count: 2;
+    column-gap: 3.5rem;
+  }
+  .post-card {
+    break-inside: avoid;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--color-accent);
+  }
+  /* order: section label, title, image, excerpt, date */
+  .post-card-body {
+    display: contents;
+  }
+  .post-card-section { order: 1; }
+  .post-card-title { order: 2; }
+  .post-card-thumb { order: 3; }
+  .post-card-excerpt { order: 4; }
+  time.posted { order: 5; }
+  .post-card-thumb img {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid var(--color-background);
+    transition: 300ms;
+  }
+  .post-card-thumb:hover img {
+    border: 2px solid var(--color-primary);
+    transition: 200ms;
+  }
+  time.posted {
+    margin-top: 0.5rem;
+  }
+}
+
+/* index card images: never use the wide-image treatment */
+@media (min-width: 1000px) {
+  .content .post-list img,
+  .content .post-list img.img-wide {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

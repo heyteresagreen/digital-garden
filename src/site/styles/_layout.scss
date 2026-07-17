@@ -1,0 +1,109 @@
+/* ----------------------
+LAYOUT
+---------------------- */
+
+nav.navbar {
+  max-width: 490px;
+  margin: 1rem auto 3rem;
+  position: relative;
+  background: transparent;
+  font-size: 1.12rem;
+  @media (min-width: 720px) {
+    width: 100%;
+  }
+  a#logo {
+    display: block;
+    text-decoration: none;
+    width: 180px;
+
+    @media (min-width: 720px) {
+      float: left;
+      width: 180px;
+      margin: 0.75rem 0 2rem;
+    }
+    &:hover {
+      background: none;
+    }
+  }
+  ul#topnav {
+    padding-left: 0;
+    list-style-type: none;
+    margin-top: 0.5em;
+    @media (min-width: 720px) {
+      float: left;
+      padding-left: 0.95em;
+    }
+    li {
+      padding: 1em 0.8em;
+      float: left;
+      margin-bottom: 0;
+      @media (min-width: 720px) {
+        padding: 1em;
+      }
+      a {
+        display: block;
+        padding: 0;
+        font-family: var(--font-family-sans-serif);
+        color: var(--color-text);
+        text-decoration: none;
+        &:hover {
+          background-color: transparent;
+          color: var(--color-secondary);
+          box-shadow: inset 0px -0.25em 0px var(--color-primary);
+          transition: box-shadow 0.2s;
+        }
+        /* v2: active nav state */
+        &.active {
+          color: var(--color-secondary);
+          box-shadow: inset 0px -0.25em 0px var(--color-primary);
+        }
+      }
+    }
+  }
+}
+
+.wrapper {
+  clear: both;
+}
+
+.content {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+}
+
+.content.wide {
+  max-width: 800px;
+}
+
+footer {
+  display: none; /* hidden for now — Teresa to restyle later */
+  margin: 2em auto;
+  max-width: 700px;
+  font-size: 0.8em;
+  // precomputed: color.mix(--color-text, white, 80%) — recompute if
+  // --color-text changes (see _tokens.scss)
+  color: #71707e;
+  padding-top: 1em;
+  font-family: var(--font-family-sans-serif);
+  clear: both;
+  p {
+    max-width: none;
+  }
+  a {
+    // precomputed: color.mix(--color-text, white, 70%) — recompute if
+    // --color-text changes (see _tokens.scss)
+    color: #83828e;
+  }
+  /* v2: footer nav for sections not in the top nav */
+  .footer-nav {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0.5em;
+    li {
+      display: inline-block;
+      margin: 0 1.25em 0 0;
+    }
+  }
+}
