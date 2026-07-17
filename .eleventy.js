@@ -98,11 +98,26 @@ function resolveEmbedSrc(name) {
 }
 
 function replaceWikiSyntax(content) {
-  // Image embeds: ![[file.jpeg|alt text]]  (pipe may be escaped as \|)
-  content = content.replace(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, alt) => {
+  // Image embeds: ![[file.jpeg|alt text]], ![[file.jpeg|alt text|300]], or
+  // Obsidian's width-only shorthand ![[file.jpeg|300]] / ![[file.jpeg|300x200]]
+  // (pipe separating the target from the rest may be escaped as \|).
+  // A trailing pipe segment that's purely numeric (optionally WxH) is a
+  // sizing hint, not alt text — it becomes a real width/height attribute.
+  // Any remaining segment(s) are joined back together as the alt text.
+  content = content.replace(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, rest) => {
     const src = resolveEmbedSrc(target);
-    const altText = (alt || "").replace(/"/g, "&quot;").trim();
-    return `<img src="${src}" alt="${altText}">`;
+    const parts = rest !== undefined ? rest.split("|") : [];
+    let sizeAttrs = "";
+    if (parts.length > 0) {
+      const sizeMatch = parts[parts.length - 1].trim().match(/^(\d+)(?:x(\d+))?$/i);
+      if (sizeMatch) {
+        const [, width, height] = sizeMatch;
+        sizeAttrs = ` width="${width}"${height ? ` height="${height}"` : ""}`;
+        parts.pop();
+      }
+    }
+    const altText = parts.join("|").replace(/"/g, "&quot;").trim();
+    return `<img src="${src}" alt="${altText}"${sizeAttrs}>`;
   });
   // Markdown images with vault-relative paths (Obsidian needs these relative
   // for local preview; the site needs them rooted at /img/user/)
