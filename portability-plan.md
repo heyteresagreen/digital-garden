@@ -65,8 +65,15 @@ The six tokens are CSS custom properties on `:root` rather than Sass variables, 
 
 **Verification:** compiled the old single-file stylesheet and the new partials-based one to expanded CSS and diffed them line-by-line. Every difference is either a literal value replaced by `var(--x)`, or the new `:root` token block — every computed value, including the three precomputed derived colours, matches exactly.
 
-## Tier 3 — content-model decoupling (scoped, deliberately not started)
+## Tier 3 — content-model decoupling
 
-- Sections would need to become config objects (`{name, urlSegment, listStyle}`) instead of a flat string array, with list-view CSS (`.writing-list`, `.art-grid`, `.book-list` etc.) generalised to `listStyle` variants rather than one bespoke class per section name.
-- The deeper dependency — Obsidian frontmatter conventions and wiki-link syntax via Enveloppe — isn't really "hardcoding" so much as the actual shape of the product. Generalising it means building a content-source adapter layer, which is a different project.
-- **Not recommending this unless the goal is explicitly to open-source an Obsidian-garden starter kit for other people to run.** For a personal site plus a blog post about it, Tier 1 + Tier 2 cover what a reader would actually want to copy.
+**Correction to the original framing above:** the section→CSS coupling described when this plan was first written turned out to be looser than assumed. `listClass` is just frontmatter on each `<section>.njk` index page, not derived from the section name in code — and it's already reused in practice (`sketchbooks` and `sketching` both use `art-grid`; `projects` falls back to the plain `.post-list` styling with no dedicated class at all). Adding a section costs one line in `SECTIONS` plus one index template, which can point at an existing list style. Not the hardcoding problem it looked like.
+
+Four options were considered, narrowest to most ambitious:
+
+1. **Do nothing further** (the default, if this were just for personal use) — the remaining coupling (one `SECTIONS` array, one template file per section) is a normal amount of structure for a static site generator.
+2. **Formalise the content contract as documentation, no code changes** — ✅ **done**, see `content-contract.md`. Written from the actual frontmatter fields the code reads and real sample notes, not idealised. Documents the frontmatter schema (`publish`, `section`, `title`, `date`, `slug`, `tags`, `description`, the `image`/`imageUrl` gotcha, `standalone`, `snippet`), the section-index-page boilerplate, and the wiki-link/embed syntax including a real quirk found while writing it (Obsidian's `|300` width-hint syntax on image embeds gets swallowed into the alt text rather than interpreted as a width).
+3. **Config-driven section pages** — collapse the 8 near-identical `<section>.njk` files into one Eleventy pagination template driven by a `sections.json`. Real reduction in duplication if sections get added often; trades file-per-section duplication for Eleventy pagination/`eleventyComputed` complexity, not a clear net simplification. Not started — would need its own scoping pass given Eleventy's permalink-templating quirks.
+4. **Full content-source abstraction** — an adapter layer so the site could ingest content without Obsidian/Enveloppe's wiki-link conventions. A different project, not a refactor. Only worth it if the actual goal is for strangers to run this without installing Obsidian.
+
+**Not doing 3 or 4 unless the goal changes to "open-source this as a starter kit for other people to run."** For a personal site plus a blog post about it, Tier 1 + Tier 2 + the content contract cover what a reader would actually want to copy.
