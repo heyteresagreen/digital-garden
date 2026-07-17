@@ -55,11 +55,15 @@ This plan tackles Tier 1 now. Tiers 2 and 3 are scoped but deliberately not star
 
 ---
 
-## Tier 2 — theme portability (scoped, not started)
+## Tier 2 — theme portability (done)
 
-- Split `tw-style.scss` into `_tokens.scss` / `_base.scss` / `_layout.scss` / `_components.scss`, `@use`'d from one entry file.
-- Move the six token variables (`$pink`, `$blue`, `$grey`, two font stacks, `$border-radius`) to CSS custom properties on `:root` so reskinning doesn't require a Sass recompile.
-- Worth doing if the blog post promises "reskin this yourself" — otherwise lower priority than Tier 1.
+`tw-style.scss` is now a thin entry file that `@use`s four partials: `_tokens.scss`, `_base.scss`, `_layout.scss`, `_components.scss` — split along the file's existing section comments.
+
+The six tokens are CSS custom properties on `:root` rather than Sass variables, so reskinning means editing `_tokens.scss` — or, for a quick before-you-commit preview, overriding the same variable names via devtools or an inline `<style>` block, with no Sass recompile needed.
+
+**The wrinkle, handled:** three derived colours (footer text, footer link, tag-hover border) were built with Sass's `color.mix()`/`color.adjust()`, which need a real Sass colour at compile time — they can't reference a CSS custom property. Precomputed their exact output as static hex values, with the source formula commented at each usage site and in `_tokens.scss`, so they can be recomputed by hand if `--color-text` or `--color-secondary` ever change.
+
+**Verification:** compiled the old single-file stylesheet and the new partials-based one to expanded CSS and diffed them line-by-line. Every difference is either a literal value replaced by `var(--x)`, or the new `:root` token block — every computed value, including the three precomputed derived colours, matches exactly.
 
 ## Tier 3 — content-model decoupling (scoped, deliberately not started)
 
