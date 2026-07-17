@@ -120,19 +120,27 @@ function splitEmbedAltAndSize(rest) {
 }
 
 // Parses a frontmatter `image:` field written in Obsidian's own embed
-// syntax, e.g. image: "[[file.jpg|alt text]]" — returns null if `raw`
-// isn't in that format (e.g. it's already a resolved /img/user/... path,
-// which callers should handle separately).
+// syntax, e.g. image: "[[file.jpg|alt text]]" — or, failing that, as a bare
+// vault-relative path with no wiki brackets at all, e.g. image: assets/foo.jpg
+// (seen in a handful of older notes). Returns null if `raw` isn't in either
+// format (e.g. it's already a resolved /img/user/... path, or an external
+// http(s) URL — callers should handle those separately).
 function parseImageField(raw) {
-  const match = String(raw).trim().match(/^!?\[\[([^\]]*)\]\]$/);
-  if (!match) return null;
-  const inner = match[1];
-  const pipeIndex = inner.indexOf("|");
-  const target = (pipeIndex === -1 ? inner : inner.slice(0, pipeIndex)).trim();
-  if (!target) return null;
-  const rest = pipeIndex === -1 ? undefined : inner.slice(pipeIndex + 1);
-  const { alt } = splitEmbedAltAndSize(rest);
-  return { src: resolveEmbedSrc(target), alt };
+  const str = String(raw).trim();
+  const match = str.match(/^!?\[\[([^\]]*)\]\]$/);
+  if (match) {
+    const inner = match[1];
+    const pipeIndex = inner.indexOf("|");
+    const target = (pipeIndex === -1 ? inner : inner.slice(0, pipeIndex)).trim();
+    if (!target) return null;
+    const rest = pipeIndex === -1 ? undefined : inner.slice(pipeIndex + 1);
+    const { alt } = splitEmbedAltAndSize(rest);
+    return { src: resolveEmbedSrc(target), alt };
+  }
+  if (str && !/^https?:/.test(str)) {
+    return { src: resolveEmbedSrc(str), alt: "" };
+  }
+  return null;
 }
 
 function replaceWikiSyntax(content) {
