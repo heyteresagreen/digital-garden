@@ -6,7 +6,6 @@ date: 2024-08-01
 tags:
   - sketchbooks
 image: "[[assets/IMG_2700.jpeg]]"
-imageUrl: /img/user/assets/IMG_2700.jpeg
 imageAlt: "Gouache sketch of fruit and vegetables"
 slug: sketchbook-9
 sketchbook: "Traveler’s Journal sketchbook insert"

@@ -7,7 +7,6 @@ tags:
   - art
   - sketchbooks
 image: "[[assets/sketchbook-square.jpeg|photo of my sketchbook, with highlighter sketches]]"
-imageUrl: /img/user/assets/sketchbook-square.jpeg
 imageAlt: "photo of my sketchbook, with highlighter sketches"
 slug: sketchbook-1
 updated: 2023-08-15

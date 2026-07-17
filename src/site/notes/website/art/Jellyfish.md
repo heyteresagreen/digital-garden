@@ -6,7 +6,6 @@ date: 2023-01-24
 tags:
   - art
 image: "[[jellyfish.jpeg]]"
-imageUrl: /img/user/assets/jellyfish.jpeg
 imageAlt: "digital painting of two jellyfish"
 slug: jellyfish
 ---

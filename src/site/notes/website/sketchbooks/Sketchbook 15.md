@@ -6,7 +6,6 @@ date: 2026-04-24
 tags:
   - sketchbooks
 image: "[[assets/watercolour 5.jpeg]]"
-imageUrl: "/img/user/assets/watercolour 5.jpeg"
 imageAlt: "Mixed media sketch of a blue fairy wren"
 slug: sketchbook-15
 sketchbook: Homemade

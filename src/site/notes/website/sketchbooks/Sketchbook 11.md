@@ -6,7 +6,6 @@ date: 2024-12-22
 tags:
   - sketchbooks
 image: "[[assets/IMG_3210-a2bde539.jpeg]]"
-imageUrl: /img/user/assets/IMG_3210-a2bde539.jpeg
 imageAlt: "Watercolour sketch of a cathedral "
 slug: sketchbook-11
 sketchbook: "Stillman & Birn Beta"

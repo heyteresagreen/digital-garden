@@ -7,7 +7,6 @@ tags:
   - home
   - wfh
 image: assets/desk1.jpeg
-imageUrl: /img/user/assets/desk1.jpeg
 imageAlt: "photo of my desk"
 slug: my-cosy-working-from-home-desk-setup
 updated: 2023-01-30

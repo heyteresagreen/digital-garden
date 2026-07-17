@@ -7,7 +7,6 @@ tags:
   - sketchbooks
   - art
 image: "[[assets/IMG_5667.jpeg]]"
-imageUrl: /img/user/assets/IMG_5667.jpeg
 imageAlt: "Photo of sketch of a restaurant and dishes"
 slug: sketchbook-6
 sketchbook: "Stillman & Birn Alpha"

@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/sketching/pictionary.jpeg]]"
-imageUrl: /img/user/assets/sketching/pictionary.jpeg
 imageAlt: "Sketching & How to Win at Pictionary"
 slug: sketching-and-how-to-win-at-pictionary
 ---

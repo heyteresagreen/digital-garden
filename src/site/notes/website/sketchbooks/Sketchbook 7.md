@@ -6,7 +6,6 @@ date: 2024-05-31
 tags:
   - sketchbooks
 image: "[[assets/sketchbook7 1-8c0bd6ed.jpeg]]"
-imageUrl: /img/user/assets/sketchbook7 1-8c0bd6ed.jpeg
 imageAlt: Pencil sketch of my dog
 slug: sketchbook-7
 sketchbook: Stillman & Birn Alpha

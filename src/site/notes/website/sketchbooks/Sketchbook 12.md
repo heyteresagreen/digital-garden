@@ -6,7 +6,6 @@ date: 2025-08-06
 tags:
   - sketchbooks
 image: "[[assets/IMG_7443-8f01a31c.jpeg]]"
-imageUrl: /img/user/assets/IMG_7443-8f01a31c.jpeg
 imageAlt: "Sketchbook page from my Bali trip"
 slug: sketchbook-12
 sketchbook: "Custom - Artec Como Sketch Pad 210gsm"

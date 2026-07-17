@@ -6,7 +6,6 @@ date: 2024-10-11
 tags:
   - art
 image: "[[sketchbook11 2-225c1279.jpeg]]"
-imageUrl: "/img/user/assets/sketchbook11 2-225c1279.jpeg"
 imageAlt: "Watercolor sketch of St Mary’s Cathedral"
 slug: jury-duty-sketches
 ---

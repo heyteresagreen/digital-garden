@@ -6,7 +6,6 @@ date: 2023-11-13
 tags:
   - Stationery
 image: "[[IMG_2375.jpeg|watercolour painting of 2 fountain pens and a bottle of ink]]"
-imageUrl: /img/user/assets/IMG_2375.jpeg
 slug: fountain-pens
 updated: 2024-03-22
 ---

@@ -9,7 +9,6 @@ tags:
   - life-drawing
   - watercolour
 image: "[[assets/IMG_7514-e9068564.jpeg]]"
-imageUrl: /img/user/assets/IMG_7514-e9068564.jpeg
 imageAlt: "watercolour sketch of nude woman reclining"
 slug: even-more-life-drawing-in-watercolour
 ---

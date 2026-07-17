@@ -7,7 +7,6 @@ tags:
   - fiction
 description: "A young and idealistic American nurse signs up for the Vietnam War and discovers things aren't as rosy as the reports they get back home."
 image: "[[assets/Pasted image 20260422212255.png]]"
-imageUrl: "/img/user/assets/Pasted image 20260422212255.png"
 imageAlt: "Book cover of The Women by Kristin Hannah"
 slug: the-women-kristin-hannah-book-club
 created: 2026-04-22

@@ -6,7 +6,6 @@ date: 2022-12-02
 tags:
   - art
 image: "[[Magpie.jpeg]]"
-imageUrl: /img/user/assets/Magpie.jpeg
 imageAlt: "digital painting of a magpie"
 slug: magpie
 ---

@@ -7,7 +7,6 @@ tags:
   - art
   - not-writing
 image: "[[assets/IMG_7601-f2dcb9fb.jpeg]]"
-imageUrl: /img/user/assets/IMG_7601-f2dcb9fb.jpeg
 imageAlt: "Painting botanicals with Anya Brock"
 slug: painting-botanicals-with-anya-brock
 ---

@@ -6,7 +6,6 @@ date: 2023-04-03
 tags:
   - tools
 image: assets/watercolour2.jpeg
-imageUrl: /img/user/assets/watercolour2.jpeg
 imageAlt: "photo of my tiny watercolour kit"
 slug: tiny-watercolor-kit
 ---

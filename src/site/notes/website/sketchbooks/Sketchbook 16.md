@@ -6,7 +6,6 @@ date: 2026-07-01
 tags:
   - sketchbooks
 image: "[[assets/singapore.jpeg]]"
-imageUrl: /img/user/assets/singapore.jpeg
 imageAlt: "Cover of sketchbook 16 with watercolour sketch of the Sultan Mosque"
 slug: sketchbook-16
 sketchbook: "Homemade using Anko Sketch Artist Pad 160gsm"

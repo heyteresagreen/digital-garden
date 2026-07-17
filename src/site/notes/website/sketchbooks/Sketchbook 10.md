@@ -6,7 +6,6 @@ date: 2024-09-20
 tags:
   - sketchbooks
 image: "[[assets/sketchbook10 4.jpeg]]"
-imageUrl: "/img/user/assets/sketchbook10 4.jpeg"
 imageAlt: "Watercolour portraits of a woman and a man"
 slug: sketchbook-10
 sketchbook: Handmade

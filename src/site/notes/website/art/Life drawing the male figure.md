@@ -8,7 +8,6 @@ tags:
   - not-writing
   - life-drawing
 image: "[[assets/IMG_4498-5bbf1280.jpeg]]"
-imageUrl: /img/user/assets/IMG_4498-5bbf1280.jpeg
 imageAlt: "Male life drawing"
 slug: life-drawing-the-male-figure
 ---

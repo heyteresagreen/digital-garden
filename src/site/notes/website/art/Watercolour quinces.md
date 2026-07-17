@@ -6,7 +6,6 @@ date: 2026-03-14
 tags:
   - art
 image: "[[assets/watercolour 2-06e4a6cd.jpeg]]"
-imageUrl: "/img/user/assets/watercolour 2-06e4a6cd.jpeg"
 imageAlt: "Watercolour quinces"
 slug: watercolour-quinces
 ---

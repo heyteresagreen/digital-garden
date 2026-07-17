@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/IMG_0231 1.jpeg]]"
-imageUrl: "/img/user/assets/IMG_0231 1.jpeg"
 imageAlt: "PWAC 2025 sketchnote"
 slug: perth-web-accessibility-camp-2025-in-sketchnotes
 ---

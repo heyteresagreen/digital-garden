@@ -6,7 +6,6 @@ date: 2026-03-18
 tags:
   - art
 image: "[[assets/watercolour 1-d9b94de6.jpeg]]"
-imageUrl: "/img/user/assets/watercolour 1-d9b94de6.jpeg"
 imageAlt: "Plant shadows"
 slug: plant-shadows
 ---

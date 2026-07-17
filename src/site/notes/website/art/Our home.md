@@ -7,7 +7,6 @@ tags:
   - watercolour
   - art
 image: "[[D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg]]"
-imageUrl: /img/user/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg
 imageAlt: "watercolour painting of our house"
 slug: our-home
 ---

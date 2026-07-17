@@ -7,7 +7,6 @@ tags:
   - non-fiction
 description: "Aboriginal people in pre-colonial times engaged in grew and stored crops, made complex fish traps, sometimes lived in villages with large buildings, and cultivated the land in a way that allowed them to thrive in some of the most difficult places to live. I don't think I was ever taught this in history."
 image: "[[assets/Pasted image 20260311211725.png]]"
-imageUrl: "/img/user/assets/Pasted image 20260311211725.png"
 imageAlt: "Book cover of Dark Emu by Bruce Pascoe"
 slug: dark-emu-2014-bruce-pascoe
 created: 2026-02-24

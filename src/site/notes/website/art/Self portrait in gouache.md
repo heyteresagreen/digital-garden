@@ -6,7 +6,6 @@ date: 2026-01-18
 tags:
   - art
 image: "[[self portrait - 1.jpeg]]"
-imageUrl: "/img/user/assets/self portrait - 1.jpeg"
 imageAlt: "Self portrait in gouache"
 slug: self-portrait-in-gouache
 ---

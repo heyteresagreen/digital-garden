@@ -6,7 +6,6 @@ date: 2024-03-30
 tags:
   - sketchbooks
 image: "[[assets/sketchbook 5 2.jpeg]]"
-imageUrl: "/img/user/assets/sketchbook 5 2.jpeg"
 imageAlt: "Sketch of a tower and some pastries, watercolour"
 slug: sketchbook-5
 sketchbook: "Handbook watercolor journal"

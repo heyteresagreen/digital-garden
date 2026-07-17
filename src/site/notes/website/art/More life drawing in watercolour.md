@@ -6,7 +6,6 @@ date: 2024-07-09
 tags:
   - art
 image: "[[assets/life drawing 2.jpeg]]"
-imageUrl: "/img/user/assets/life drawing 2.jpeg"
 slug: more-life-drawing-in-watercolour
 ---
 ![[life drawing 2.jpeg|watercolour sketch of a nude woman, lying down]]

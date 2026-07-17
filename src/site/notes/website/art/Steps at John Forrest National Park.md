@@ -6,7 +6,6 @@ date: 2026-03-13
 tags:
   - art
 image: "[[assets/watercolour-170644c9.jpeg]]"
-imageUrl: /img/user/assets/watercolour-170644c9.jpeg
 imageAlt: "Steps at John Forrest National Park"
 slug: steps-at-john-forrest-national-park
 ---

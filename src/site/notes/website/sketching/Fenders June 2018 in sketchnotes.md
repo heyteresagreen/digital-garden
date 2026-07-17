@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/sketching/fenders2018.jpeg]]"
-imageUrl: /img/user/assets/sketching/fenders2018.jpeg
 imageAlt: "Fenders June 2018"
 slug: fenders-june-2018-in-sketchnotes
 ---

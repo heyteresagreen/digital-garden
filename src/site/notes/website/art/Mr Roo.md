@@ -6,7 +6,6 @@ date: 2022-12-06
 tags:
   - art
 image: "[[roo.jpeg]]"
-imageUrl: /img/user/assets/roo.jpeg
 imageAlt: "digital painting of a kangaroo"
 slug: mr-roo
 ---

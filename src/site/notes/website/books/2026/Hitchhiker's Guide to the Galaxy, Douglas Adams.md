@@ -7,7 +7,6 @@ tags:
   - fiction
 description: "Another classic"
 image: "[[assets/Pasted image 20260522212318.png]]"
-imageUrl: "/img/user/assets/Pasted image 20260522212318.png"
 imageAlt: "Book cover of Hitchhikers Guide to the Galaxy, Douglas Adams"
 slug: hitchhiker-s-guide-to-the-galaxy-douglas-adams
 created: 2026-04-22

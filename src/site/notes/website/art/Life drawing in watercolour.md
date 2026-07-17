@@ -7,7 +7,6 @@ tags:
   - art
   - Painting
 image: "[[IMG_5618.jpeg]]"
-imageUrl: /img/user/assets/IMG_5618.jpeg
 slug: life-drawing-in-watercolour
 ---
 ![[IMG_5622.jpeg|watercolour sketch of a nude woman back to us]]

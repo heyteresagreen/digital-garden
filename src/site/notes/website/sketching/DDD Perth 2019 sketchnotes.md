@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/sketching/DDD2019.jpg]]"
-imageUrl: /img/user/assets/sketching/DDD2019.jpg
 imageAlt: "DDD Perth 2019"
 slug: ddd-perth-2019-sketchnotes
 ---

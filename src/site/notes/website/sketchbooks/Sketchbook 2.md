@@ -7,7 +7,6 @@ tags:
   - sketchbooks
   - art
 image: "[[IMG_0157.jpeg]]"
-imageUrl: /img/user/assets/IMG_0157.jpeg
 imageAlt: "photo of my sketchbook, with watercolor sketches"
 slug: sketchbook-2
 ---

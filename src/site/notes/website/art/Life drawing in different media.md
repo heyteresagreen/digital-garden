@@ -6,7 +6,6 @@ date: 2024-03-19
 tags:
   - art
 image: "[[IMG_5098.jpeg]]"
-imageUrl: /img/user/assets/IMG_5098.jpeg
 slug: life-drawing-in-different-media
 ---
 I’ve gone to a couple of life drawing sessions over the past few months, and whilst I’ve mostly stuck with the provided charcoal, this time I wanted to branch out. Not because I’ve mastered any of these mediums, but I really enjoy how different tools have different personalities. Also I can be very indecisive!

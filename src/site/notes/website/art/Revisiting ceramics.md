@@ -7,7 +7,6 @@ tags:
   - art
   - ceramics
 image: "[[ceramics.jpeg]]"
-imageUrl: /img/user/assets/ceramics.jpeg
 imageAlt: "photo of some ceramic pieces I made"
 slug: revisiting-ceramics
 ---

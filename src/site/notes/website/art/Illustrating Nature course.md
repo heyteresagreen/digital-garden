@@ -6,7 +6,6 @@ date: 2023-03-07
 tags:
   - art
 image: "[[sketchbook.jpeg]]"
-imageUrl: /img/user/assets/sketchbook.jpeg
 imageAlt: "photo of my sketchbook, with watercolour paintings of mangoes"
 slug: illustrating-nature-course
 updated: 2023-04-28

@@ -7,7 +7,6 @@ tags:
   - books
   - not-writing
 image: "[[orwellsroses_rebeccasolnit.png]]"
-imageUrl: /img/user/assets/orwellsroses_rebeccasolnit.png
 slug: orwell-s-roses-2021-rebecca-solnit
 post-type: book
 finished: 2025-01-15

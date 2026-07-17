@@ -6,7 +6,6 @@ date: 2026-03-11
 tags:
   - sketchbooks
 image: "[[assets/sketchbook14 5.jpeg]]"
-imageUrl: "/img/user/assets/sketchbook14 5.jpeg"
 imageAlt: "Sketchbook with watercolour birds"
 slug: sketchbook-14
 sketchbook: "Homemade using Artec Como Sketch Pad 210gsm mixed media paper"

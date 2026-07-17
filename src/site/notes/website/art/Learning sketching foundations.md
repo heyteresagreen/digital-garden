@@ -7,7 +7,6 @@ tags:
   - art
   - learning
 image: "[[sketchbook2 2.jpeg|sketching objects in my house]]"
-imageUrl: "/img/user/assets/sketchbook2 2.jpeg"
 slug: learning-sketching-foundations
 ---
 I'm just completing Liz Steel's [Foundations course](https://sketchingnow.com/foundations2023/), having taken twice as long as intended to finish it! Even then, by "finished" I mean that I've watched the main videos and attempted each of the assignments. There's a whole lot of bonus material and livestream recordings for each lesson that I have barely scratched yet. Liz says this course is intended to be done multiple times, and now I can see why - there's far too much content to properly absorb in a single run through.

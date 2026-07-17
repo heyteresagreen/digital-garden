@@ -6,7 +6,6 @@ date: 2026-02-01
 tags:
   - art
 image: "[[assets/IMG_8824.jpeg]]"
-imageUrl: /img/user/assets/IMG_8824.jpeg
 imageAlt: Watercolour painting of pathway to the beach
 slug: workshop-with-sue-hibbert
 ---

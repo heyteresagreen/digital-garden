@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[ux-camp-23 - 4.jpeg|sketchnotes for the intro and welcome to country of UX Camp Perth 2023, as well as my to do list for the night before and the badge for speaking at UX Camp]]"
-imageUrl: "/img/user/assets/sketching/ux-camp-23 - 4.jpeg"
 slug: ux-camp-perth-2023-sketchnotes
 ---
 ![[ux-camp-23 - 4.jpeg|sketchnotes for the intro and welcome to country of UX Camp Perth 2023, as well as my to do list for the night before and the badge for speaking at UX Camp]]

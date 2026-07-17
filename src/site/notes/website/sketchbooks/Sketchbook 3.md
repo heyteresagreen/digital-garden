@@ -7,7 +7,6 @@ tags:
   - sketchbooks
   - art
 image: "[[IMG_5184.jpeg]]"
-imageUrl: /img/user/assets/IMG_5184.jpeg
 slug: sketchbook-3
 ---
 Started August 2023

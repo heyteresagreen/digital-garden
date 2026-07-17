@@ -6,7 +6,6 @@ date: 2024-02-01
 tags:
   - sketchbooks
 image: "[[IMG_4736.jpeg]]"
-imageUrl: /img/user/assets/IMG_4736.jpeg
 slug: sketchbook-4
 sketchbook: "Paper Republic drawing book"
 size: Pocket

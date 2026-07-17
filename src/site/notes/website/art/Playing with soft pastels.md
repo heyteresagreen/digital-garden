@@ -6,7 +6,6 @@ date: 2024-12-03
 tags:
   - art
 image: "[[assets/IMG_3473.jpeg]]"
-imageUrl: /img/user/assets/IMG_3473.jpeg
 slug: playing-with-soft-pastels
 ---
 I bought a set of soft pastels a couple of years ago to make some abstract art. They’ve sat in their box, barely used until I felt like braving their messy, blunt nature recently. I still have no idea what I’m doing and feel like I need larger, more appropriate paper but it is pretty fun.

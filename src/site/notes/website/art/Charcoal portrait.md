@@ -7,7 +7,6 @@ tags:
   - art
   - not-writing
 image: "[[assets/IMG_3782-5c80235a.jpeg]]"
-imageUrl: /img/user/assets/IMG_3782-5c80235a.jpeg
 imageAlt: "Charcoal portrait of a woman"
 slug: charcoal-portrait
 ---

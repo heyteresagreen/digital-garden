@@ -7,7 +7,6 @@ tags:
   - art
   - not-writing
 image: "[[assets/IMG_0366.jpeg]]"
-imageUrl: /img/user/assets/IMG_0366.jpeg
 imageAlt: "Peachtober digital sketches"
 slug: peachtober-digital-sketches
 ---

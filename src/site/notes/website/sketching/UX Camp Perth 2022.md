@@ -7,7 +7,6 @@ tags:
   - sketching
   - sketchnotes
 image: "[[assets/sketching/uxcamp2022.jpg]]"
-imageUrl: /img/user/assets/sketching/uxcamp2022.jpg
 imageAlt: "UX Camp Perth 2022"
 slug: ux-camp-perth-2022
 ---

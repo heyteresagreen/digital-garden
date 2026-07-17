@@ -6,7 +6,6 @@ date: 2024-03-19
 tags:
   - art
 image: "[[sketchbook 6 23 1.jpeg]]"
-imageUrl: "/img/user/assets/sketchbook 6 23 1.jpeg"
 slug: one-week-100-people-challenge
 ---
 This year I participated in OneWeek100People, a challenge organised by urban sketchers [Liz Steel](https://www.lizsteel.com/) and [Marc Taro Holmes](https://citizensketcher.com/) for the first week of every March. The idea is to sketch roughly 20 people a day for 5 days, or to at least sketch more people than you would otherwise. I don't usually sketch many people, so this low bar option felt achievable.

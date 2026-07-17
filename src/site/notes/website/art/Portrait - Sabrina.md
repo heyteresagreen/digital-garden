@@ -9,7 +9,6 @@ tags:
   - pencil
   - portraits
 image: "[[assets/steph-art-sessions 3-0cf7a37d.jpeg]]"
-imageUrl: "/img/user/assets/steph-art-sessions 3-0cf7a37d.jpeg"
 imageAlt: "Portrait in pencil of woman’s face"
 slug: portrait-sabrina
 ---

@@ -6,7 +6,6 @@ date: 2024-06-09
 tags:
   - sketchbooks
 image: "[[assets/IMG_5837.jpeg]]"
-imageUrl: /img/user/assets/IMG_5837.jpeg
 imageAlt: "Watercolour sketch of a pink and grey galah"
 slug: sketchbook-8
 sketchbook: "Traveler’s Journal watercolour insert"

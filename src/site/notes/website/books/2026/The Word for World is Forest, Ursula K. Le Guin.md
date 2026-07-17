@@ -8,7 +8,6 @@ tags:
   - scifi
 description: "Humans from Earth, having stripped the planet of its natural resources, have come to colonise and cut down forests of another planet, Athshe. The native people of the planet are considered primitive and inferior, and are horribly exploited, enslaved and brutalised to the point that they're forced to abandon their peaceful nature and retaliate."
 image: "[[assets/Pasted image 20260220210634.png]]"
-imageUrl: "/img/user/assets/Pasted image 20260220210634.png"
 slug: the-word-for-world-is-forest-ursula-k-le-guin
 created: 2026-01-16
 ---

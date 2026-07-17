@@ -8,7 +8,6 @@ tags:
   - sketchnotes
   - not-writing
 image: "[[assets/sketching/designresearch2018.jpeg]]"
-imageUrl: /img/user/assets/sketching/designresearch2018.jpeg
 imageAlt: "Design Research conference 2018"
 slug: design-research-2018-sketchnotes
 ---

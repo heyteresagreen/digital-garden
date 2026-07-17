@@ -8,7 +8,6 @@ tags:
   - charcoal
   - life-drawing
 image: "[[assets/life drawing 20-f319b092.jpeg]]"
-imageUrl: "/img/user/assets/life drawing 20-f319b092.jpeg"
 imageAlt: " Charcoal sketch of nude woman"
 slug: life-drawing-in-charcoal
 ---

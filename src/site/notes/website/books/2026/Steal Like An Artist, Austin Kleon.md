@@ -7,7 +7,6 @@ tags:
   - non-fiction
 description: "Just a classic, still as relevant today as it was when originally published."
 image: "[[assets/Pasted image 20260422215327.png]]"
-imageUrl: "/img/user/assets/Pasted image 20260422215327.png"
 imageAlt: "Book cover of Steal Like An Artist, Austin Kleon"
 slug: steal-like-an-artist-austin-kleon
 created: 2026-04-22
