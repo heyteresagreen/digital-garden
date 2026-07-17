@@ -3,5 +3,14 @@
     "url": "https://teresawatts.com",
     "author": "Teresa Watts",
     "email": "teresawatts@gmail.com",
-    "description": "UX designer & artist. Writing, art, sketching and other fun things."
+    "description": "UX designer & artist. Writing, art, sketching and other fun things.",
+    "logo": {
+        "src": "/img/user/assets/logo_black.png",
+        "alt": "Teresa Watts — home"
+    },
+    "nav": [
+        { "label": "About", "url": "/about/" },
+        { "label": "Posts", "url": "/posts/" },
+        { "label": "Letters", "url": "/letters/" }
+    ]
 }

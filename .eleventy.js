@@ -15,21 +15,22 @@ const NOTES_DIR = path.join(__dirname, "src/site/notes");
 const IMG_DIR = path.join(__dirname, "src/site/img/user");
 const SECTIONS = ["writing", "notes", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
 
-// Top-level pages that wiki links may point at
-const BUILTIN_LINKS = {
+// Top-level pages that wiki links may point at.
+// Section links (writing, art, sketching, etc.) are derived from SECTIONS
+// rather than hand-duplicated here — add a section to SECTIONS and its
+// wiki-link target comes for free. EXTRA_LINKS holds the handful of
+// top-level pages and aliases that aren't sections themselves.
+const EXTRA_LINKS = {
   "home": "/",
   "about": "/about/",
   "now": "/now/",
   "posts": "/posts/",
-  "writing": "/writing/",
-  "art": "/art/",
-  "sketching": "/sketching/",
   "sketchnotes": "/sketching/",
-  "sketchbooks": "/sketchbooks/",
-  "books": "/books/",
-  "letters": "/letters/",
-  "projects": "/projects/",
   "notes/notes": "/posts/"
+};
+const BUILTIN_LINKS = {
+  ...Object.fromEntries(SECTIONS.map((section) => [section, `/${section}/`])),
+  ...EXTRA_LINKS
 };
 
 /* ---------------------------------------------------------------
@@ -156,10 +157,18 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/site/img");
-  eleventyConfig.addPassthroughCopy("src/site/calendar/index.html");
-  eleventyConfig.addPassthroughCopy("src/site/calendar/calendar.css");
-  eleventyConfig.addPassthroughCopy("src/site/calendar/calendar-theme.css");
-  eleventyConfig.addPassthroughCopy("src/site/calendar/calendar.js");
+
+  // The calendar is a separate side project synced in via `npm run
+  // sync:calendar` (see package.json) — it's not core to the blog template,
+  // so these are only added if the files are actually present. A fork of
+  // this repo without the calendar files still builds cleanly.
+  const CALENDAR_FILES = ["index.html", "calendar.css", "calendar-theme.css", "calendar.js"];
+  CALENDAR_FILES.forEach((file) => {
+    const relPath = `src/site/calendar/${file}`;
+    if (fs.existsSync(path.join(__dirname, relPath))) {
+      eleventyConfig.addPassthroughCopy(relPath);
+    }
+  });
 
   // Collections
   const published = (api) =>

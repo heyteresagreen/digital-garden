@@ -1,12 +1,7 @@
 <nav class="navbar" aria-label="Main">
-  <a id="logo" class="internal-link" href="/"><img src="/img/user/assets/logo_black.png" alt="Teresa Watts — home"></a>
+  <a id="logo" class="internal-link" href="/"><img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}"></a>
   <ul id="topnav">
-    {%- set navItems = [
-      { label: "About", url: "/about/" },
-      { label: "Posts", url: "/posts/" },
-      { label: "Letters", url: "/letters/" }
-    ] -%}
-    {%- for item in navItems %}
+    {%- for item in site.nav %}
     {%- set isActive = page.url == item.url or (item.url != "/" and page.url and page.url.startsWith(item.url)) %}
     <li><a href="{{ item.url }}"{% if isActive %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a></li>
     {%- endfor %}

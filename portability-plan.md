@@ -1,0 +1,68 @@
+# Portability plan — de-hardcoding teresawatts.com
+
+_Written July 2026, ahead of a possible "how I built this" blog post. Goal: figure out what it would take for someone else to fork this site (or for future-you to reskin it) without rewriting the whole pipeline._
+
+The build has three layers, and they're portable to very different degrees:
+
+1. **Config/data** — small hand-maintained lists (nav, taxonomy, passthrough files). Cheap to fix, and some of it is a genuine duplication bug today, not just a "nice to have."
+2. **Theme** (`tw-style.scss`) — six colour/font/radius variables drive the whole look. Already close to portable; needs splitting into partials to be obviously so.
+3. **Content model** (`.eleventy.js` + Obsidian/Enveloppe conventions) — the real engineering. Sections, wiki-link resolution, and per-section list layouts are all coupled to *your* specific taxonomy. Genuinely decoupling this is a real refactor, and generalising the Obsidian dependency is a different project, not a refactor.
+
+This plan tackles Tier 1 now. Tiers 2 and 3 are scoped but deliberately not started — see "Not doing yet" below.
+
+---
+
+## Tier 1 — config/data fixes (doing now)
+
+### 1. `SECTIONS` / `BUILTIN_LINKS` duplication
+
+**Where:** `.eleventy.js` lines 16 and 19–33.
+
+**Problem:** `SECTIONS` (the array of content types) and `BUILTIN_LINKS` (the map wiki-links resolve against) both hand-list the same section names. Add a ninth section and there are three places to remember: `SECTIONS`, `BUILTIN_LINKS`, and the `SECTIONS.forEach` collections loop already reads from `SECTIONS` correctly — it's just `BUILTIN_LINKS` duplicating it. This is a live bug risk today, independent of anyone forking the repo.
+
+**Fix:** Build the section entries of `BUILTIN_LINKS` from `SECTIONS.map()` at module load, and keep only the genuinely-extra top-level pages (`home`, `about`, `now`, `posts`, `sketchnotes` alias, `notes/notes`) as a separate small hand-written map merged on top.
+
+**Risk:** None — output URLs are identical, this only removes a second hand-maintained copy of the same data.
+
+### 2. Nav items + logo hardcoded in `nav.njk`
+
+**Where:** `src/site/_includes/components/nav.njk` — the `navItems` array and the logo `<img>` src are written directly into the template. Contrast with `site.json`, which already externalises title/url/author/description.
+
+**Problem:** Changing a nav link today means editing a template. Everything else site-wide config lives in `_data/site.json`.
+
+**Fix:** Add `nav` (array of `{label, url}`) and `logoSrc`/`logoAlt` to `site.json`, loop over `site.nav` in `nav.njk`.
+
+**Risk:** None if the data matches exactly what's in the template today — verified by diffing rendered nav HTML before/after.
+
+### 3. Calendar passthrough copies unconditional
+
+**Where:** `.eleventy.js` lines 159–162 — four `addPassthroughCopy` calls for calendar files, unconditional.
+
+**Problem:** Not a bug for you (the files always exist), but it bolts an unrelated side project into the core build config with no indication it's optional. Anyone forking the blog template inherits a calendar tool they didn't ask for and can't easily omit without editing core config.
+
+**Fix:** Guard each passthrough with an `fs.existsSync` check so the build degrades gracefully if the calendar files aren't present, and add a one-line comment marking it as a bolted-on extra rather than core to the template.
+
+**Risk:** None for your build (files exist, so behaviour is identical) — purely additive safety for a forker.
+
+---
+
+## Verification before merging
+
+- `npm run build` (sass + eleventy) completes with no errors.
+- Diff `dist/` output for the homepage, one writing post, one index page (e.g. `/letters/`), and the nav markup — confirm byte-identical or intentionally-changed-only output.
+- Manual check of `/`, `/posts/`, `/letters/` in a local server (`npm start`) before merging to `main`.
+- Changes made on branch `portability/tier1`, not directly on `main` — merge only after review.
+
+---
+
+## Tier 2 — theme portability (scoped, not started)
+
+- Split `tw-style.scss` into `_tokens.scss` / `_base.scss` / `_layout.scss` / `_components.scss`, `@use`'d from one entry file.
+- Move the six token variables (`$pink`, `$blue`, `$grey`, two font stacks, `$border-radius`) to CSS custom properties on `:root` so reskinning doesn't require a Sass recompile.
+- Worth doing if the blog post promises "reskin this yourself" — otherwise lower priority than Tier 1.
+
+## Tier 3 — content-model decoupling (scoped, deliberately not started)
+
+- Sections would need to become config objects (`{name, urlSegment, listStyle}`) instead of a flat string array, with list-view CSS (`.writing-list`, `.art-grid`, `.book-list` etc.) generalised to `listStyle` variants rather than one bespoke class per section name.
+- The deeper dependency — Obsidian frontmatter conventions and wiki-link syntax via Enveloppe — isn't really "hardcoding" so much as the actual shape of the product. Generalising it means building a content-source adapter layer, which is a different project.
+- **Not recommending this unless the goal is explicitly to open-source an Obsidian-garden starter kit for other people to run.** For a personal site plus a blog post about it, Tier 1 + Tier 2 cover what a reader would actually want to copy.
