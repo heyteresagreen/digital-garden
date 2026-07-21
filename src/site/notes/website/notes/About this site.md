@@ -8,7 +8,7 @@ slug: about-this-site
 updated: 2026-07-21
 ---
 
-This site is a little experiment into writing, Indie web and digital gardening. I used to make big splashy websites but this time I wanted to make it as simple and lean a writing and reading experience as possible. 
+This site is a little experiment into writing, Indie web and digital gardening. I used to make big splashy websites but this time I wanted to make it as simple and lean a writing and reading experience as possible. Somebody once said my website had "positive and soothing vibes" which is bang on what I was going for.
 
 Most of my digital garden is not published to the web at this point - I'm working on it.
 
