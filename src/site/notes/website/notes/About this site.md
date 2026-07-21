@@ -13,4 +13,8 @@ This site is a little experiment into writing, Indie web and digital gardening. 
 Most of my digital garden is not published to the web at this point - I'm working on it.
 
 ## Colophon
-The site uses a custom Eleventy template; the content is written in [Obsidian](https://obsidian.md/) and uses the Enveloppe plugin to publish to Github + Netlify (I have only a vague understanding of how that part works). Fonts are Newsreader + Avenir (if you have it installed, Helvetica or Arial if you don't). [[I'm not using AI for personal writing or art, here's why|I don’t use AI for the content of this site]] but did use it to help me create the Eleventy templates. Here's a bit about [[My Obsidian workflow|My Obsidian workflow]].
+The site uses a custom Eleventy template; the content is written in [Obsidian](https://obsidian.md/) and uses the [Enveloppe](https://enveloppe.ovh/) plugin to publish to Github + Netlify. Fonts are Newsreader + Avenir (if you have it installed, Helvetica or Arial if you don't). [[I'm not using AI for personal writing or art, here's why|I don’t use AI for the content of this site]] but did use it to help me with the codey bits. 
+
+Previously I was using the [Obsidian Digital Garden plugin](https://docs.forestry.md/), which I definitely recommend for anyone who wants more of a digital garden than a traditional blog, or doesn't want to mess around with custom Eleventy templates.
+
+Here's a bit more about [[My Obsidian workflow|My Obsidian workflow]].
