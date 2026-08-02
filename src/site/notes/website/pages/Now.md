@@ -4,9 +4,19 @@ publish: true
 standalone: true
 permalink: /now/
 layout: layouts/page.njk
-updated: 2026-06-28
+updated: 2026-08-02
 ---
 Here's what I'm up to right now:
+
+I currently have a [[Watercolour quinces|painting]] in the [Piccolo exhibition](https://www.inglewoodartshub.org/blank-4-1) at Inglewood Arts Hub! The exhibition will run until 15 August if you're in Perth want to take a look.
+
+I've been messing around with [[My Obsidian workflow|My Obsidian workflow]], which I need to update as Obsidian now houses all of my personal and work notes as well as all the content of this website. It's definitely a [[Procrastination through process|Procrastination through process]] rabbit-hole which I've gotten a lot of satisfaction out of, although it's supposed to be to support me doing more writing which isn't really happening because I'm continuously tweaking templates.
+
+Still knitting lots, painting little. Working on slowly getting back to it, to be ready when the next opportunity to exhibit comes. Still rereading Children of Time by Adrian Tchaikovsky, it's a longer book than I remember. 
+
+---
+
+Here's what I was up to earlier:
 
 ## 1 July 2026
 I've been painting less, knitting more (although I'm still not really consistent enough to make anything I can actually wear). I do need to get back to my watercolours, as the longer I spend away the more daunting they start to feel again. I have only one spread left to complete of my Singapore trip sketchbook.
@@ -37,7 +47,7 @@ Still both fascinated and repulsed by AI. Still not convinced it’s a net posit
 
 ---
 ### December 2025
-Doing some [[Digital Gardening]] maintenance - I have over a hundred random thoughts and quotes in my digital note taking system, which I'm trying to process into a more [[Evergreen notes]] form and better integrate into my existing collection of notes. I'm slowly starting to post a collection of these here on this site, although as they are personal notes they might not make much sense to anyone else!
+Doing some [[Digital Gardening|Digital Gardening]] maintenance - I have over a hundred random thoughts and quotes in my digital note taking system, which I'm trying to process into a more [[Evergreen notes|Evergreen notes]] form and better integrate into my existing collection of notes. I'm slowly starting to post a collection of these here on this site, although as they are personal notes they might not make much sense to anyone else!
 
 In a fit of nostalgia I bought myself a "retro" handheld gaming device - a New Nintendo 2DS XL - at an exorbitant price probably driven by other nostalgic adults wanting to revisit some old beloved games. I'm picturing myself spending the lazy days between Christmas and New Years playing Pokémon and Professor Layton, but it's more likely the kids will take it off me.
 
