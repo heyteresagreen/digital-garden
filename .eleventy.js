@@ -84,17 +84,57 @@ function resolveWikiTarget(target) {
   return null;
 }
 
-function resolveEmbedSrc(name) {
-  const clean = name.trim();
+// Two places an attachment can legitimately live, because Enveloppe decides
+// the destination for us and doesn't always pick the same one. With its
+// "Structure" setting on it uploads to <notes folder>/<vault path>, i.e.
+// src/site/notes/assets/foo.jpeg; with it off, to src/site/img/user/. Rather
+// than depend on that staying put, look in both — first the historical
+// img/user tree (430-odd files), then the notes tree. Each base has its own
+// URL prefix because eleventy-img resolves a root-relative src back to disk
+// against the input directory (src/site), so the URL has to mirror the real
+// path for optimisation to find the file.
+const EMBED_BASES = [
+  { dir: IMG_DIR, urlPrefix: "/img/user/" },
+  { dir: NOTES_DIR, urlPrefix: "/notes/" }
+];
+
+// Looks an attachment up on disk and returns the URL to serve it from, or
+// null if no such file exists in either base. A leading slash is stripped
+// first: a handful of notes migrated from the old Digital Garden write
+// vault-absolute paths like /assets/foo.jpeg, which are neither site-rooted
+// URLs nor relative paths. Returning null on a miss is what lets callers
+// tell "this is a vault path I should rewrite" from "this is already a real
+// site URL, leave it alone".
+// Strips the three prefixes Obsidian writes that aren't meaningful to the
+// site: a leading slash (vault-absolute, /assets/foo.jpeg), and leading ./
+// or ../ hops (vault-relative from the note's own folder, as in
+// ../../assets/foo.jpeg). All three describe the same vault path once the
+// prefix is gone, and 25 references across 8 notes rely on the ../ form.
+function stripVaultPrefix(name) {
+  return name.trim().replace(/^\/+/, "").replace(/^(?:\.{1,2}\/)+/, "");
+}
+
+function findEmbedFile(name) {
+  const clean = stripVaultPrefix(name);
   const candidates = clean.includes("/")
     ? [clean]
     : [clean, `assets/${clean}`, `assets/sketching/${clean}`];
-  for (const c of candidates) {
-    if (fs.existsSync(path.join(IMG_DIR, c))) {
-      return "/img/user/" + c.split("/").map(encodeURIComponent).join("/");
+  for (const { dir, urlPrefix } of EMBED_BASES) {
+    for (const c of candidates) {
+      if (fs.existsSync(path.join(dir, c))) {
+        return urlPrefix + c.split("/").map(encodeURIComponent).join("/");
+      }
     }
   }
-  return "/img/user/" + clean.split("/").map(encodeURIComponent).join("/");
+  return null;
+}
+
+function resolveEmbedSrc(name) {
+  const clean = stripVaultPrefix(name);
+  return (
+    findEmbedFile(clean) ||
+    "/img/user/" + clean.split("/").map(encodeURIComponent).join("/")
+  );
 }
 
 // Shared by every place that parses the pipe-separated part of a wiki embed
@@ -155,9 +195,18 @@ function replaceWikiSyntax(content) {
     return `<img src="${src}" alt="${altText}"${sizeAttrs}>`;
   });
   // Markdown images with vault-relative paths (Obsidian needs these relative
-  // for local preview; the site needs them rooted at /img/user/)
-  content = content.replace(/(!\[[^\]]*\]\()(?!\/|https?:|data:)([^)]+)(\))/g, (m, pre, src, post) => {
-    return pre + resolveEmbedSrc(decodeURI(src)) + post;
+  // for local preview; the site needs them rooted at /img/user/). Paths with
+  // a leading slash are ambiguous — either an already-correct site URL like
+  // /img/optimized/x.webp, or a vault-absolute path like /assets/x.jpeg from
+  // an old Digital Garden migration — so those are only rewritten when the
+  // file actually turns up on disk, and otherwise passed through untouched.
+  content = content.replace(/(!\[[^\]]*\]\()(?!https?:|data:)([^)]+)(\))/g, (m, pre, src, post) => {
+    const raw = decodeURI(src);
+    if (raw.startsWith("/")) {
+      const found = findEmbedFile(raw);
+      return found ? pre + found + post : m;
+    }
+    return pre + resolveEmbedSrc(raw) + post;
   });
   // Wiki links: [[note path|alias]] / [[note]]
   content = content.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, alias) => {
@@ -187,7 +236,10 @@ module.exports = function (eleventyConfig) {
       imgAttributes: { loading: "lazy", decoding: "async" }
     },
     sharpOptions: { animated: true },
-    failOnError: false
+    // Loud, not silent: a missing image used to sail through the build and
+    // ship a page with a broken relative src (the 2 Aug charcoal portrait
+    // post). Better to fail the Netlify build and find out before deploying.
+    failOnError: true
   });
 
   // Markdown
@@ -207,6 +259,14 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/site/img");
+
+  // Attachments Enveloppe uploaded into the notes tree rather than img/user
+  // (see EMBED_BASES). Copied so the un-optimised URL still resolves if
+  // eleventy-img ever skips a file; the input dir is stripped, so this lands
+  // at /notes/assets/ — matching the URL resolveEmbedSrc hands out.
+  if (fs.existsSync(path.join(NOTES_DIR, "assets"))) {
+    eleventyConfig.addPassthroughCopy("src/site/notes/assets");
+  }
 
   // The calendar is a separate side project synced in via `npm run
   // sync:calendar` (see package.json) — it's not core to the blog template,

@@ -8,7 +8,6 @@ tags:
 image: "[[assets/IMG_9811.jpeg]]"
 imageAlt: Charcoal portrait of woman with hands on her face
 slug:
-imageUrl: https://teresawatts.com/img/user/assets/assets/IMG_9811.jpeg
 ---
 ![[assets/IMG_9811.jpeg|Charcoal portrait of woman with hands on her face|800]]
 
