@@ -1,5 +1,5 @@
 ---
-title: "My planning, writing and sketching tools"
+title: My planning, writing and sketching tools
 publish: true
 section: writing
 date: 2023-01-13
@@ -9,7 +9,9 @@ tags:
 slug: my-planning-writing-and-sketching-tools
 updated: 2023-11-06
 ---
-I've made an updated version of this: [[My planning, writing and sketching tools - 2025]]
+*I've made an updated version of this: [[My planning, writing and sketching tools - 2025|My planning, writing and sketching tools - 2025]]*
+
+---
 
 The other day I was trying to explain the various tools I use for various purposes to a friend, and one thing became clear: I use a *lot* of different things. I like to tinker with productivity tools, and it's maybe complicating things more than necessary.
 
@@ -23,13 +25,13 @@ I've switched from A5 notebooks to Pocket (just a little smaller than A6) size o
 
 * A plain notebook for **personal projects, diagrams, [[Sketchnotes|sketchnotes]], to-dos and thoughts**. Currently using the [Paper Republic plain refill](https://www.paper-republic.com/collections/write/products/notebook-refills) in the Pocket size.
 * A loose folded sheet to log notable **moments from the week**, which I'm planning to bind together into a little book at the end of the year. It's just a loose sheet to avoid adding extra bulk and because it's a new thing I'm not sure I'll continue.
-* A notebook for **[[Morning Pages]]**. Currently using up my stash of Field Notes and Moleskine Cahiers, as I'm getting through a couple each month. 
+* A notebook for **[[Morning Pages|Morning Pages]]**. Currently using up my stash of Field Notes and Moleskine Cahiers, as I'm getting through a couple each month. 
 * A [[Sketchbooks|sketchbook]] with smooth mixed media paper nice for **sketching and painting**. Currently using [Paper Republic drawing book](https://www.paper-republic.com/products/drawing-book) in the Pocket size.
 * A cream coloured Lamy Safari **[[Fountain pens|fountain pen]]** with blue ink for writing (I also use various other art materials but this is the one always with the notebook)
 
 I mostly use digital tools for work, but also have a Rhodia A5 notebook for work doodles, wireframes and mind maps.
 ### Previously
-I started [[Sketchbook 1]] at the beginning of 2023 intending it to be notes, journalling and sketching. I finished it in June 2023 becoming almost entirely a sketchbook, and have used dedicated [[Sketchbooks]] since then.
+I started [[Sketchbook 1|Sketchbook 1]] at the beginning of 2023 intending it to be notes, journalling and sketching. I finished it in June 2023 becoming almost entirely a sketchbook, and have used dedicated [[Sketchbooks|Sketchbooks]] since then.
 
 Before this I was solidly Bullet Journalling in Leuchtturm1917 notebooks for years, but dropped right off after having kids and pretty much not having any spare time to plan for. I'm still following some Bullet Journal ideas but not rigidly or as any kind of planner.
 
@@ -45,7 +47,7 @@ Before this I was solidly Bullet Journalling in Leuchtturm1917 notebooks for yea
 **Daily-ish notes**. Bear makes it really easy to add highlighted content to notes, so I usually create a new daily note at the start of the day and chuck in quotes from articles that I read or podcasts that I listen to. Ideally these should be turned into evergreen notes on a regular basis, but it doesn't always happen. It feels good to have a place to put them though.
 
 ### Obsidian
-**Website writing.** I landed on Obsidian when looking for a cross-platform Markdown editor for writing blog posts on my iDevices - here's [[My Obsidian workflow]].
+**Website writing.** I landed on Obsidian when looking for a cross-platform Markdown editor for writing blog posts on my iDevices - here's [[My Obsidian workflow|My Obsidian workflow]].
 
 Obsidian as a whole is powerful enough to replace Bear and Notion for me, but the UI and reliability of the iOS apps is just not *quite* there.
 
