@@ -1,11 +1,11 @@
 ---
-title: My art is in an exhibition!
+title: Letters 19
 publish: true
 section: letters
 date: 2026-08-02
 tags:
   - letters
-description:
+description: My art is in an exhibition!
 slug:
 ---
 Hi there,
