@@ -16,15 +16,12 @@ Charcoal on paper. Started and finished at [Stephanie Sheppard's](https://www.dr
 Those hands nearly broke me though. At first they reminded me of the hotdog hands in Everything Everywhere All At Once.
 
 ![[assets/IMG_9155.jpeg|Charcoal portrait in progress|500]]
-
 *First hour of progress*
 
 ![[assets/IMG_9196-87e27f2c.jpeg|Charcoal portrait in progress|700]]
-
-*At this point I realised I"d have to erase half the face and a hand because it was all too wide.*
+*At this point I realised I'd have to erase half the face and a hand because it was all too wide.*
 
 ![[assets/IMG_9805.jpeg|Charcoal portrait in progress|700]]
-
 *Reference comparison - not a perfect likeness, but I don't mind it*
 
 Similar work:
