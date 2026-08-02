@@ -183,17 +183,38 @@ function parseImageField(raw) {
   return null;
 }
 
+// Builds the <img> for an embed target plus its pipe-separated remainder.
+// Shared by the plain-embed and figure-with-caption passes so the two can't
+// drift apart on alt text or Obsidian's width hints.
+function buildEmbedImg(target, rest) {
+  const src = resolveEmbedSrc(target);
+  const { alt, width, height } = splitEmbedAltAndSize(rest);
+  const altText = alt.replace(/"/g, "&quot;");
+  const sizeAttrs = width ? ` width="${width}"${height ? ` height="${height}"` : ""}` : "";
+  return `<img src="${src}" alt="${altText}"${sizeAttrs}>`;
+}
+
 function replaceWikiSyntax(content) {
+  // Figures: an embed alone on its line with a single *italic* line directly
+  // beneath it, which is how captions are written in the vault (and how
+  // Obsidian previews them). Must run before the plain-embed pass and must
+  // consume both lines at once, because a line starting with a raw <img>
+  // opens a CommonMark HTML block that swallows everything up to the next
+  // blank line — which is why these captions used to render with their
+  // asterisks showing instead of in italics. A blank line between the two
+  // means they aren't associated and the caption stays an ordinary
+  // paragraph. Caption text is emitted as-is: no markdown inside it.
+  content = content.replace(
+    /^!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\][ \t]*\r?\n\*([^*\n]+)\*[ \t]*$/gm,
+    (m, target, rest, caption) =>
+      `<figure>${buildEmbedImg(target, rest)}<figcaption>${caption.trim()}</figcaption></figure>`
+  );
   // Image embeds: ![[file.jpeg|alt text]], ![[file.jpeg|alt text|300]], or
   // Obsidian's width-only shorthand ![[file.jpeg|300]] / ![[file.jpeg|300x200]]
   // (pipe separating the target from the rest may be escaped as \|).
-  content = content.replace(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, rest) => {
-    const src = resolveEmbedSrc(target);
-    const { alt, width, height } = splitEmbedAltAndSize(rest);
-    const altText = alt.replace(/"/g, "&quot;");
-    const sizeAttrs = width ? ` width="${width}"${height ? ` height="${height}"` : ""}` : "";
-    return `<img src="${src}" alt="${altText}"${sizeAttrs}>`;
-  });
+  content = content.replace(/!\[\[([^\]|\\]+?)(?:\\?\|([^\]]*))?\]\]/g, (m, target, rest) =>
+    buildEmbedImg(target, rest)
+  );
   // Markdown images with vault-relative paths (Obsidian needs these relative
   // for local preview; the site needs them rooted at /img/user/). Paths with
   // a leading slash are ambiguous — either an already-correct site URL like
