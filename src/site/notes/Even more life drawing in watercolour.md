@@ -26,35 +26,35 @@ Some things I've been playing around with:
 I feel like a combination of more confidence with watercolour, diving in rather than sketching, and working with larger brushes have made a huge difference to the results I'm getting. I'm embracing watercolour's unpredictability and moving away from drawing an outline that I then colour in, which I think means for more lively and interesting abstractions rather than tightly controlled sketches. I'm spending less time trying to accurately capture what I see and more on thinking about the design, composition, and how I want it to feel. It's looser and better fits the beauty of being able to paint a live model.
 
 
-
+![[assets/IMG_7512-f67a7625.jpeg|Watercolour sketch of nude woman]]
 *Model: Sharna*
 
-
+![[assets/IMG_7513-58f08170.jpeg|Watercolour sketch of nude woman]]
 *Model: Sharna*
 
-
+![[assets/IMG_7516-987f2a1a.jpeg|Watercolour sketch of nude woman]]
 *Model: Sharna*
 
-
+![[assets/IMG_7517-239b1f91.jpeg|Watercolour sketch of nude woman]]
 *Model: Sharna. I think taking on a portrait was a bit too much of a challenge for me at this point!*
 
-
+![[assets/IMG_7635.jpeg|Watercolour sketch of woman]]
 *Model: Sharna, wearing fairy wings for Halloween*
 
-
+![[assets/IMG_7486.jpeg|Watercolour life drawing]]
 *Model: Sabrina + Kiki the dog*
 
-
+![[assets/IMG_7475.jpeg|Watercolour life drawing]]
 *Model: Sabrina*
 
+![[assets/IMG_7489.jpeg|Watercolour life drawing]]
+*Model: Gila*
 
+![[assets/IMG_7488.jpeg|Watercolour life drawing]]
 *Model: Gila*
 
 
-*Model: Gila*
-
-
-
+![[assets/IMG_5669.jpeg|Watercolour life drawing]]
 *One time all the painters were sitting together (most of the group uses charcoal or pencils)*
 
 More life drawing:
