@@ -12,7 +12,7 @@ imageAlt: PWAC 2025 sketchnote
 slug: perth-web-accessibility-camp-2025-in-sketchnotes
 ---
 
-
+![[IMG_0231 1.jpeg|Sketchnote from PWAC 2025]]
 
 Another great [Perth Web Accessibility Camp](http://www.a11yperth.com/events/perth-web-accessibility-camp-2025.php)!
 
