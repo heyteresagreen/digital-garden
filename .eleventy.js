@@ -81,6 +81,18 @@ function resolveWikiTarget(target) {
   const key = name.toLowerCase();
   if (BUILTIN_LINKS[key]) return BUILTIN_LINKS[key] + anchor;
   if (linkMap[key]) return linkMap[key] + anchor;
+  // Fallback for links written with a folder prefix, e.g. [[writing/Morning Pages]].
+  // Obsidian adds these automatically whenever two notes share a basename (there's
+  // a published "writing/Morning Pages" and an unpublished "notes/Morning pages"),
+  // and it rewrites existing links on any folder move. Since the upload is flat,
+  // linkMap is keyed on basename, so an exact lookup misses and the link would
+  // silently render as plain text. Retry on the last path segment. Only published
+  // notes are in linkMap, so an ambiguous basename resolves to the published one.
+  if (key.includes("/")) {
+    const base = key.slice(key.lastIndexOf("/") + 1);
+    if (BUILTIN_LINKS[base]) return BUILTIN_LINKS[base] + anchor;
+    if (linkMap[base]) return linkMap[base] + anchor;
+  }
   return null;
 }
 
