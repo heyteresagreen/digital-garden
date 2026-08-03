@@ -16,13 +16,13 @@ How are you friend? It's been a while.
 
 I've been on the hunt for the perfect sketchbook, and I suspect I'm not the only one. The trouble is "perfect" is a moving target when you're still learning and experimenting. My latest is one I bound myself, which has cheap watercolour paper bought from the local shops. It only has 20 pages and doesn't have a cover, but it's light and cute and means I get to that finished sketchbook feeling faster. There's something satisfying about being able to fill a need by just making the damn thing yourself, even if it's a little rougher than something store-bought. 
 
-
+![[binding-sketchbook - 1.jpeg|photo of my hand bound sketchbook]]
 
 In another act of book surgery, I spliced a thick Stillman & Birn Beta sketchbook into two much thinner ones that fit more nicely into my [[My notebook system|notebook system]]. Hacking up a (very expensive) sketchbook felt very wrong, but the pages haven't fallen out and it's now much more usable. I'm still deciding whether binding my own sketchbooks or bisecting store-bought ones is the best approach for me, probably a mixture of both depending on what I'm doing. 
 
+![[IMG_6007.jpeg|Watercolour portrait of model Gila and her snake Slinky Malinky]]
 
-
-
+![[IMG_2616.jpeg|Watercolour painting of koi fish]]
 
 Lately I've been getting more into watercolour, working a bit more traditionally and learning to not rely on having ink line art so much. I go to sleep with my head full of colour mixes on paintbrushes and lovely paint names like “Opera Pink”. Progress is not linear but it is there, slowly reaching more confident brush strokes, stronger values, and leaning more into the unique nature of watercolor. I’m trying to not think about where I'm going with this, if anywhere at all, and just enjoy the journey.
 
