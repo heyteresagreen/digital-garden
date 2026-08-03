@@ -13,7 +13,7 @@ This is why for ages I've been a fan of RSS readers and read later apps. Yes I'm
 
 I used to use [[A better way to read email newsletters|Omnivore app for saving articles and newsletters to read later]], but it was bought out by another company and shut down 🥲 After much testing out of different options, I've landed with [Instapaper](https://www.instapaper.com/). It isn't quite as good and made me appreciate just how fully featured Omnivore was, but it does the job and its longevity hopefully speaks to its continued future.
 
-
+![[IMG_3870 1.png|screenshot of Instapaper on my phone|300]]
 *A peek at what my reading list looks like at the moment*
 
 Essential for me:
