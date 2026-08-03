@@ -24,8 +24,8 @@ Here are some of my favourite assignments from this course:
 
 ![[sketchbook2 2.jpeg|sketching objects in my house]]
 
-
-
-
-
-
+![[sketchbook2 1.jpeg|3 ways of visual thinking]]
+![[sketchbook2 6.jpeg|sketch of a pile of 3 books]]![[sketchbook2 10.jpeg|sketch of a cherry blossom tree]]
+![[sketchbook2 11.jpeg|sketches of my gumboots]]
+![[sketchbook3 8.jpeg|watercolour sketch of a view down the street]]
+![[sketchbook3 10.jpeg|sketch of my living room]]![[sketchbook3 7.jpeg|sketch of a forest path and some thumbnails]]
