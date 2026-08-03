@@ -14,11 +14,11 @@ Hi there,
 
 How's the weather where you are? Here in Boorloo/Perth the nights and mornings are starting to get cold, and I've been mending holes in shorts before putting them away and wool knits as I bring them out. I like to paint with natural light where possible, but I've bought myself a daylight easel lamp so I can keep making art on cloudy days and in the evenings.
 
-![[assets/IMG_9671-414c31cc.jpeg||photo of my studio setup with easel lamp]]
+
 
 This year I set myself a project to submit a painting to a local community exhibition. The only criteria for this exhibition are that the artist be more than seven years old, and the painting be less than 20x20cm. This is quite small for a painting, but large compared to my [[Sketchbooks|Sketchbooks]] so it was a nice challenge to do something a bit different.
 
-![[assets/IMG_8979.jpeg|A temporary gallery wall of my watercolour paintings]]
+
 
 A piece of art intended for hanging on a wall or on a shelf has a very different viewing experience compared to in my sketchbook. Instead of being at that intimate scale, and mostly private to just me leafing through the pages, a more "complete" piece of art on display needs to make sense at a distance, with other things and maybe other art around it. The composition needs more thought to fit nicely within the chosen frame, and framing is a whole other bag of decisions in itself. 
 
@@ -28,7 +28,7 @@ Although I started sketching and painting purely for fun, it feels good to be ta
 
 I have still been working in my sketchbooks too - here's another self portrait from [[Sketchbook 15|Sketchbook 15]].
 
-![[assets/sketchbook 15 6-9702983d.jpeg|Watercolour self portrait]]
+
 
 Other things:
 * I completed [[Sketchbook 14|Sketchbook 14]] and [[Sketchbook 15|Sketchbook 15]] (quick ones with only a few spreads).

@@ -1,0 +1,38 @@
+---
+title: Sketchbook 11
+publish: true
+section: sketchbooks
+date: 2024-12-22
+tags:
+  - sketchbooks
+image: "[[assets/IMG_3210-a2bde539.jpeg]]"
+imageUrl: /img/user/assets/IMG_3210-a2bde539.jpeg
+imageAlt: "Watercolour sketch of a cathedral "
+slug: sketchbook-11
+sketchbook: Stillman & Birn Beta
+size: Pocket
+type: Mixed media
+started: September 2024
+finished: In progress
+---
+I started this sketchbook in September 2024 and it’s currently in progress. I cut this into 2 halves to better fit into [[My notebook system|My notebook system]].
+
+📖 Stillman & Birn Beta
+🎨 Daniel Smith watercolours 
+✏️ Prismacolor Premier pencils 
+✒️ Lamy Safari, Kaweco Sport 
+...plus other random materials
+
+![[assets/IMG_3210-a2bde539.jpeg|Watercolour sketch of a cathedral ]]
+
+
+
+
+
+
+
+
+
+
+
+
