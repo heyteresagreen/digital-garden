@@ -14,13 +14,13 @@ Hi there,
 
 How is your year going? Are you a resolutions person, or is the start of a new year a hectic time for you? I always thought that Lunar New Year was a better time for starting over with big ambitions (or little ones). I don’t make resolutions anymore, but I have a few ideas to explore in mind…
 
-
+![[IMG_8813.jpeg|IMG_8813.jpeg]]
 
 At the end of 2025 I did my [[End of year journaling|End of year journaling]] and bound it up into a little book, as I’ve done for the past few years. Last year didn’t go the way I’d intended (does it ever?) and had a lot of work-related growth for me, but did not leave with me with much mental energy for making art. This year I’m hoping to find more of a balance.
 
 It will help that my part time work schedule, originally so I could look after my kids when they were little, will remain even now they are both in full time school. This means that for one or two days a week, during school hours, I won’t be working at my job or working caregiving. I’ll be completely free to do… what? I’m not quite sure yet. Art, time outside, social time maybe. All that time will be mine, unless I let things creep in. Having created this space for myself, I’m keen to use it wisely.
 
-
+![[IMG_8953.jpeg|IMG_8953.jpeg]]
 
 I’ve painted a few self-portraits so far this year, and slowly edging closer to the achieving the look that I want. I hope that when I repeat this exercise at the end of the year, I'll be able to see some improvement. Watercolour is such a strange medium, even after three or so years I still don’t quite get it.
 
