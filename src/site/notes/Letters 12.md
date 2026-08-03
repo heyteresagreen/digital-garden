@@ -14,15 +14,15 @@ Is there a word for when all of your library holds come in at once, and you want
 
 Similarly the amount of things I want to do next year is piling up, and if I don’t consciously choose what to pull back on I know it’s going to shove out something that I probably would prefer not to sacrifice, like sleep. Unfortunately unlike the library books, some things you can’t just reserve again and hope it comes at a less busy time. But then again, having too many worthy options to choose from is a pretty lucky problem to have.
 
-
+![[steph-art-sessions 1.jpeg|pencil sketch of a hand in a realistic style]]
 
 I’ve been making a lot o [[Art|art]] since I last wrote, and even did a few one-on-one classes [[Portrait - Sabrina|with a local artist]]. It’s a leap of faith to invest (more) real money into a hobby that I don’t expect to ever give any meaningful income, but it makes such a difference having someone believe in me and push me to go further. These classes are likely to be something I have to pull back on next year, but I’m hoping that sporadic sessions will be enough to keep the momentum going. 
 
-
+![[steph-art-sessions 2.jpeg|charcoal portrait of a woman looking over her shoulder]]
 
 I spent a little time updating my page of [[Sketchbooks|Sketchbooks]] recently. 2024 seems to have been a year of experimenting with different sketchbooks - I’ve completed 5 and have another 2 in progress, all in a variety of different sizes, brands and paper types. I don’t love every page, and I don’t work in them every day anymore, but they’re still such an important outlet for me that I can’t see myself stopping. I’ll probably keep experimenting with buying and making sketchbooks to shift with the medium I’m interested in.
 
-
+![[IMG_3512 1.jpeg|Photo of a sketchbook showing 2 portraits in gouache]]
 
 Will 2025 be the year I start actually writing more, or will it have to continue being something on the back burner with just some sporadic letters? I haven’t decided yet. But thank you for being here with me, reading my emails if you’ve gotten this far. I hope you have a wonderful end to the year, however you choose to honour it. Tell me if you have any good [[End of year journaling|journaling prompts]] - [Sandy](https://sanlive.com/softsignal/) has me considering doing [Year Compass](https://yearcompass.com/) again, time consuming as it is.
 
