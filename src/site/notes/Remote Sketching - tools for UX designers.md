@@ -9,14 +9,14 @@ tags:
   - sketching
 slug: remote-sketching-tools-for-ux-designers
 ---
-
+![[IMG_2396.jpeg|IMG_2396.jpeg]]
 Back when I worked alongside my team in an office, we'd grab some paper or use a whiteboard to sketch ideas and designs together. It always stretched my brain and rarely looked pretty, but it was a useful method to get alignment quickly without getting bogged down in detail or technology.
 
 These days I’m working from home and sketching together isn't as straightforward as it used to be. I've fallen out of the practice in favour of diagramming in white boarding tools or sketching on my own to share later. I still think there's value in real-time drawing alongside these methods, it just needs to be adapted for remote work.
 
 If you've struggled with the practical aspects of taking visual collaboration digital like I have, here's three different methods I've been trying out.
 
-
+![[IMG_2388.jpeg|IMG_2388.jpeg]]
 ## Use a sketching app on a tablet
 [Procreate](https://procreate.com/) on the iPad is my go-to for sketching digitally, so it's where I have the most muscle memory in sketching ideas. I plug in my iPad and use Quicktime with "New Movie recording" of the iPad screen so that it's displaying on my computer, which I can then screen share in Meet or Teams. I'm sure there are similar Android and Windows tablet options that will work too.
 
@@ -30,7 +30,7 @@ If you've struggled with the practical aspects of taking visual collaboration di
 * Requires sharing a screen shared from the tablet, which feels like an unnecessary step - why can't Meet just share an iPad screen?
 * Adding text isn't straightforward on a tablet without a keyboard
 
-
+![[IMG_2387.jpeg|IMG_2387.jpeg]]
 ## Use a phone or camera
 Sometimes going analog just feels right, especially for early ideation. The easiest way I've found to share sketching on paper in real-time is to use my phone pointed down at the page, capturing what my hands are doing as they sketch. 
 
@@ -50,7 +50,7 @@ Getting your phone or camera pointing directly down whilst still allowing you sp
 * Some messing around if you don't have continuity camera
 * Extra equipment to hold the phone or camera in position
 
-
+![[IMG_2392.jpeg|IMG_2392.jpeg]]
 ## Use a white boarding tool on a tablet
 As a user experience designer, these days I spend more of my time in whiteboarding tools like Miro more than I do in drawing or UI design tools. When I'm working with others, often it's in Miro with all of us contributing.
 
@@ -71,7 +71,7 @@ I've also started to add illustrations to boards that I'm preparing before a mee
 * Sometimes laggy when sharing over a video call, which can be disorienting when working quickly
 * I've found [[Using an iPad as a second screen|Using an iPad as a second screen]] sometimes struggles a bit with the connection, which is a risk when presenting
 
-
+![[IMG_2395.jpeg|IMG_2395.jpeg]]
 ## Sketch and share
 Sometimes it makes more sense to sketch ideas separately, then come together to talk through them. Although this won't show drawings happening in real-time, it does give space for everyone to get a chance to draw and come up with ideas independently without any one person dominating the discussion.
 
