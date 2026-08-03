@@ -36,14 +36,15 @@ Here's some of my favourite spreads:
 
 ![sketches using my water brushes, one with ink and one with water](../../assets/IMG_0162.jpeg)
 
+![[sketchbook2 2 1.jpeg|thumbnail sketches and watercolour sketch of Osaka Castle]]
 
 
+![[sketchbook2 9.jpeg|watercolour sketches of two of my bags]]
 
+![[sketchbook2 6 1.jpeg|watercolour sketch of 3 stacked books]]
 
+![[sketchbook2 10 1.jpeg|watercolour sketch of cherry blossoms at my son's school]]
 
+![[sketchbook2 11 1.jpeg|watercolour sketches of my gumboots]]
 
-
-
-
-
-
+![[sketchbook2 12.jpeg|watercolour sketch of my house]]
