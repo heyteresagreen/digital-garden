@@ -18,8 +18,8 @@ Something I'm playing around with is reading less non-fiction, but more deeply. 
 
 I save quotes from things that resonate, but have fallen out of the habit of then weaving that new information into things I've already noted to reinforce them in my memory and allow new ideas and connections to brew. If I don't remember anything from a book or an article that I've read, was there any point in reading it at all? Maybe it's better to read far less, but get more out of it. At least, that's what I'm hoping to do. I'm currently revisiting all my unsorted notes, which will keep me busy for a while without reading anything new.
 
-
-
+![[IMG_6207.jpeg|sketchbook with 4 gouache portraits]]
+![[IMG_6202 1.jpeg|photo of a sketchbook on a drawing board, on a table]]
 
 I wanted to "use up" some dried gouache on an old palette, and was surprised by how far it went. Gouache is still mostly a mystery to me, but I'm enjoying messing around with it like this when I have no expectation of making anything good. It helped that I now have a [[To the drawing board|drawing board]], my Christmas present to myself, so there's less distortion when doing the initial sketch.
 
