@@ -25,13 +25,14 @@ I started this sketchbook in August 2024 and completed it in September 2024. I m
 ![[assets/sketchbook10 4.jpeg|Watercolour portraits of a woman and a man]]
 
 
+![[assets/sketchbook10 2.jpeg|Watercolour portraits]]
 
+![[assets/sketchbook10 5.jpeg|Watercolour portraits]]
 
+![[assets/sketchbook10 6.jpeg|Watercolour portraits]]
 
+![[assets/IMG_3512.jpeg|Watercolour portraits]]
 
+![[assets/sketchbook10 7.jpeg|Watercolour portraits]]
 
-
-
-
-
-
+![[assets/IMG_6006.jpeg|Watercolour portraits]]
