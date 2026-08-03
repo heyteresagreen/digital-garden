@@ -26,13 +26,14 @@ I started this sketchbook in September 2024 and it’s currently in progress. I 
 ![[assets/IMG_3210-a2bde539.jpeg|Watercolour sketch of a cathedral ]]
 
 
+![[assets/sketchbook11 4.jpeg|Watercolour sketch]]
 
+![[assets/sketchbook11 3-9fc07e28.jpeg|Watercolour sketch]]
 
+![[assets/sketchbook11 2-225c1279.jpeg|Watercolour sketch]]
 
+![[assets/sketchbook11 1-931c71a3.jpeg|Watercolour sketch]]
 
+![[assets/sketchbook11-58fe868d.jpeg|Watercolour sketch]]
 
-
-
-
-
-
+![[assets/sketchbook-26b2529f.jpeg|Watercolour sketch]]
