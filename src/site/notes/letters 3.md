@@ -10,7 +10,7 @@ tags:
 description: Am I doing self-care right?
 slug: letters-3
 ---
-
+![[sketchbook25.jpeg|sketchbook25.jpeg]]
 
 Hey there!
 
@@ -21,9 +21,9 @@ I personally find the typical suggestions for “self-care for busy mums” in t
 Right now I'm spending my precious kid-free lunch break writing this email, which is using a lot of brainpower and is not really relaxing. But I'm sitting in the sunshine, thinking and writing about interesting things to lovely people and I know I'll feel good when it's done. I don't know if I'm doing self-care right, but it feels right enough to me.
 
 ## I've been creating
-
-
-
+![[sketchbook24.jpeg|sketchbook24.jpeg]]
+![[sketchbook23.jpeg|sketchbook23.jpeg]]
+![[sketchbook21.jpeg|sketchbook21.jpeg]]
 
 1. <strong>Daily(ish) sketchbook sketches</strong>. If this were a strict goal then I suppose I’ve already failed, but since I’m taking the approach of being a person who draws every day, I know that I’ll keep going and doing my best. I’d like to get better at accepting that some days my drawing effort will look a bit shit, and that’s okay.
 
