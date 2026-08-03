@@ -12,7 +12,7 @@ Here's what's in my stack currently:
 
 ## Analog writing and sketching
 
-
+![[../../assets/IMG_2365.jpeg|my notebook cover with 3 notebooks inside]]
 
 I'm still using my pocket (A6) sized Paper Republic leather cover - more on [[My notebook system|my notebook system here]]. Inside I have:
 
