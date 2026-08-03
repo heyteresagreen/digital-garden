@@ -25,10 +25,9 @@ I started this sketchbook in March 2026 and completed it in April 2026. It only 
 ![[assets/watercolour 5.jpeg|Watercolour sketch]]
 
 
-![[assets/sketchbook 15 1.jpeg|Watercolour sketch]]
 
-![[assets/sketchbook 15 2.jpeg|Watercolour sketch]]
 
-![[assets/sketchbook 15 5.jpeg|Watercolour sketch]]
 
-![[assets/sketchbook 15 6-49e1b72b.jpeg|Watercolour sketch]]
+
+
+
