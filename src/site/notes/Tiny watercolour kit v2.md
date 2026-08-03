@@ -14,7 +14,7 @@ I've had a few false starts with my first  [[Tiny watercolor kit|Tiny watercolor
 
 
 
-
+![[IMG_5205.jpeg|Photo of my tiny watercolour palette attached to business card holder, with a painting of gum tree flowers]]
 ## Better colours and paints
 I was frustrated with the 4 Cotman watercolour pans that I chose initially from what I had available. The blue and the red mixed a muddy brown, it was hard to get any decent darks and I've since discovered that student grade watercolours ironically need a lot more skill and effort to get working nicely - not ideal for a palette that needs to be convenient for quick painting on location with limited mixing space.
 
