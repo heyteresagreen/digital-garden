@@ -17,3 +17,4 @@ Although I've done a fair bit of life drawing over the past year or so, I haven'
 ![[assets/IMG_4498-5bbf1280.jpeg|male drawn in charcoal]]
 
 
+![[assets/IMG_4497.jpeg|Nude male figure charcoal]]
