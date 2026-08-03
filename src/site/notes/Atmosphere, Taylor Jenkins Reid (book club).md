@@ -12,7 +12,7 @@ imageAlt: Book cover of Atmosphere by Taylor Jenkins Reid
 slug: atmosphere-taylor-jenkins-reid-book-club
 created: 2026-02-24
 ---
-
+![[Pasted image 20260224210702.png|Book cover of Atmosphere by Taylor Jenkins Reid|200]]
 
 Set in the 1980s, a cohort of astronauts in training includes some of the first women to go into space. Also there's a love story.
 
