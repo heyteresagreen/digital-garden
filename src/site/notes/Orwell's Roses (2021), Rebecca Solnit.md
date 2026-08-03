@@ -16,7 +16,7 @@ genre:
   - non-fiction
   - essays
 ---
-
+![[assets/orwellsroses_rebeccasolnit.png|250]]
   
 For some reason I was expecting fiction rather than a collection of meandering essays following George Orwell's interest in gardening and how it relates to his writing, his politics, and the state of the world then and now. Beautifully written with each chapter weaving in from the previous ones. Makes me want to revisit Orwell's novels and pay some more attention to my poor garden.  ^df72d7
   

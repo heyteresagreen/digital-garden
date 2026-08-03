@@ -16,7 +16,7 @@ Just a quick on to say that I have a painting in an exhibition for the first tim
 
 All the artworks are displayed anonymously until sold, but since mine was sold on the opening day (!!!) I can share it with you here.
 
-
+![[assets/watercolour 2-06e4a6cd.jpeg|Watercolour quinces]]
 [[Watercolour quinces|Watercolour quinces]]
 *20x20cm
 Watercolour on Laquarelle paper*

@@ -12,7 +12,7 @@ imageAlt: Book cover of The Women by Kristin Hannah
 slug: the-women-kristin-hannah-book-club
 created: 2026-04-22
 ---
-
+![[Pasted image 20260422212255.png|200]]
 
 A young and idealistic American nurse signs up for the Vietnam War and discovers things aren't as rosy as the reports they get back home. The war that was supposed to just last a few weeks stretches out for years.
 

@@ -19,7 +19,7 @@ So here's what's in my stack currently:
 
 ## Analog writing and sketching
 
-
+![[../../assets/IMG_2365.jpeg|my notebook cover with 3 notebooks inside]]
 
 I've switched from A5 notebooks to Pocket (just a little smaller than A6) size ones with soft covers and fewer pages to keep lightweight. At the moment I have my Pocket notebooks together inside a [leather cover by Paper Republic](https://www.paper-republic.com/products/grand-voyageur-leather-journal?variant=46708728856917), so altogether it feels like one book. Inside I have:
 

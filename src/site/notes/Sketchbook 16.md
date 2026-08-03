@@ -26,25 +26,26 @@ I didn't have high hopes for this Kmart paper that I made the sketchbook from as
 
 ![[assets/singapore.jpeg|Cover of sketchbook 16 with watercolour sketch of the Sultan Mosque]]
 
+![[assets/singapore 2.jpeg|Watercolour sketch]]
 
+![[assets/singapore 3.jpeg|Watercolour sketch]]
 
+![[assets/singapore 4.jpeg|Watercolour sketch]]
 
+![[assets/singapore 5.jpeg|Watercolour sketch]]
 
+![[assets/singapore 6.jpeg|Watercolour sketch]]
 
+![[assets/singapore 7.jpeg|Watercolour sketch]]
 
+![[assets/singapore 8.jpeg|Watercolour sketch]]
 
+![[assets/singapore 9.jpeg|Watercolour sketch]]
 
+![[assets/singapore 10.jpeg|Watercolour sketch]]
 
+![[assets/singapore 11.jpeg|Watercolour sketch]]
 
+![[assets/singapore 12.jpeg|Watercolour sketch]]
 
-
-
-
-
-
-
-
-
-
-
-
+![[assets/singapore 13.jpeg|Watercolour sketch]]

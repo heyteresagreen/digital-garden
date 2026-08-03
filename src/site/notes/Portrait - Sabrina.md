@@ -21,5 +21,6 @@ Because I usually work quite small and quick in little [[Sketchbooks|sketchbooks
 
 I came across Sabrina again, modelling for [[Life drawing in Charcoal|life drawing]], always a pleasure to draw.
 
+![[assets/IMG_3246.jpeg|Portrait in progress]]
 
-
+![[assets/IMG_3272.jpeg|Portrait in progress]]

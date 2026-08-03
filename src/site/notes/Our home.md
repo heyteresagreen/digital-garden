@@ -14,5 +14,5 @@ slug: our-home
 
 ![](/assets/D7648E91-85C2-4373-AAE5-8FF534C0FF8E.jpeg)
 
-
+![[/assets/IMG_4175.jpeg|/assets/IMG_4175.jpeg]]
 

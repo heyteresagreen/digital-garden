@@ -13,3 +13,4 @@ I bought a set of soft pastels a couple of years ago to make some abstract art. 
 
 I wonder if I’m in love with the messy start of learning a new medium or art form, where I don’t have to be scared of being bad at it because it’s almost guaranteed. At least I didn’t spend any extra money on new materials this time!
 
+![[IMG_3473.jpeg|IMG_3473.jpeg]]

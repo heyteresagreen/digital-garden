@@ -28,12 +28,12 @@ She had a cool trick where she could knot a thread seemingly by rolling it with 
 
 She passed away a bit over two years ago, and I've inherited (amongst other things) her old overlocker, a container of sewing pins that were almost certainly bought at a garage sale before I was born, and a general sense that "proper" sewing technique is entirely optional as long as you get where wanted to go in the end.
 
-
+![[IMG_1344 1.jpeg|front and back photos of my rectangle sleeve jacket]]
 
 
 All this to say that I'm pretty rubbish at following a sewing pattern, and will avoid pressing, measuring, even pinning wherever possible. So I was pretty excited to find [a book of "patterns"](https://www.diydaisy.com/book) which are really just simple shapes drawn up to your own body shape and preferences and fit the comfy, elasticated-waistband lifestyle that I currently have. 
 
-
+![[IMG_2284 1.jpeg|photo of me wearing my Trapezoid skirt in black and white gingham]]
 
 So far I have made the Trapazoid Skirt ([free pattern here](https://www.diydaisy.com/blog/trapezoid-skirt) and a jacket, and they're far from perfect but they feel very *me*. I made them to fill specific gaps in my wardrobe and chose patterns and colours to complement what I already have. Despite being simple they did take me some time, but still less than the many hours I’ve spent window shopping online, and far more worthwhile. 
 

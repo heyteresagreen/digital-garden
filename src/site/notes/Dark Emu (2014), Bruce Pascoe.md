@@ -12,7 +12,7 @@ imageAlt: Book cover of Dark Emu by Bruce Pascoe
 slug: dark-emu-2014-bruce-pascoe
 created: 2026-02-24
 ---
-
+![[Pasted image 20260311211725.png|book cover of Dark Emu|200]]
 
 Aboriginal people in pre-colonial times engaged in grew and stored crops, made complex fish traps, sometimes lived in villages with large buildings, and cultivated the land in a way that allowed them to thrive in some of the most difficult places to live. I don't think I was ever taught this in history.
 

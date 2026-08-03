@@ -36,9 +36,10 @@ This course is all about creative experimentation, making mistakes, playing with
 
 ![Photo of a sketchbook page - mango study, markers](assets/sketchbook_mangoes.jpeg)
 
+![[mangoes - 1.jpeg|Photo of a sketchbook page - mango study, crayons]]
 
+![[mangoes - 2.jpeg|Photo of a sketchbook page - mango study, watercolour]]
 
+![[mangoes - 3.jpeg|mangoes in watercolour]]
 
-
-
-
+![[mangoes - 4.jpeg|mangoes in watercolour]]

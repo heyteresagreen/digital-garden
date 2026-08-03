@@ -26,15 +26,16 @@ I started this sketchbook in May 2024 and completed it in August 2024. It had ju
 ![[assets/IMG_2700.jpeg|Gouache sketch of fruit and vegetables]]
 
 
+![[assets/sketchbook9-972f94b5.jpeg|Mixed media sketches ]]
 
+![[assets/sketchbook9 1.jpeg|Mixed media sketches ]]
 
+![[assets/sketchbook9 5.jpeg|Mixed media sketches ]]
 
+![[assets/sketchbook9 7.jpeg|Mixed media sketches ]]
 
+![[assets/IMG_5914.jpeg|Mixed media sketches ]]
 
+![[assets/IMG_2616-96b2140e.jpeg|Mixed media sketches ]]
 
-
-
-
-
-
-
+![[assets/sketchbook9 9.jpeg|Mixed media sketches ]]

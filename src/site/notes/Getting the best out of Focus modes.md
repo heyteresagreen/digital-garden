@@ -13,11 +13,11 @@ I'm well aware that strategies like this for curbing phone is similar to organis
 
 Here’s what my setup looks like:
 
- 
+![[IMG_3267.png|400]] 
 
 **In general**
 I have learned from experience that having social media or work related apps on my phone is simply too much temptation for me to "just check quickly" at completely the wrong times. I use different devices for different activities, and try to set up my focus modes to support that. I only get push notifications from my calendar app, chat app and SMS because I don’t have anything else I need to pay attention to immediately. I like using art I’ve made as wallpapers, with different ones for different modes.
-
+![[IMG_3266 1.png|IMG_3266 1.png]]
 ## Work
 When I’m working, I have app notifications turned off and only my calendar widget with upcoming work meetings on my phone home screen. I don't have any work related apps on my phone in general, so I don't have a reason to be on my phone and try to keep it as boring as possible. This one switches on for my normal working hours, and switches off when I’m having a lunch break and can check back on any personal chats or emails.
 ## Fitness
@@ -28,11 +28,11 @@ This is literally because I need to scan a QR code when arriving at my kids swim
 ## Evening
 After the kids are in bed, I have a precious hour or so to myself. I’m trying to gently nudge myself to paint or draw during this time, so my Lock Screen background is a painting I did, and I don’t have any widgets displaying upcoming calendar events so I’m not pulled into thinking about work. 
 
-
+![[IMG_3288.png|IMG_3288.png]]
 ## Do not disturb
 Pretty straightforward, I used this default focus mode long before trying any other ones. Notifications are silenced and phone calls blocked aside from immediate family members. There are no apps on my Home Screen at all. The wallpaper is a photo of a sunset to remind me that it’s time to sleep. I know there’s a default sleep mode but this works for me.
 
-
+![[IMG_3270 1.png|IMG_3270 1.png]]
 
 This one turns on automatically at 9:30pm until 6am, although I can trigger it manually if I don’t want to be disturbed by my phone at another time. If I'm still on my phone, iPad or laptop when this mode switches on, it's my signal to pack up and get ready for bed.
 

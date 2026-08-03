@@ -18,8 +18,8 @@ I spent a lot of time preparing for my talk, on [[Starting with Sketchnotes|Star
 Although I usually sketchnote on my iPad, this time I decided to go fully analog, to see if I still can. I missed being able to undo and move things around, but overall being constrained to one pen and an A6 page was somehow freeing? Maybe it's because it's harder to try and be a perfectionist. Usually I get to the end of a conference day drained, but this time I left feeling happy and energised. I might stick to simple pen and paper more often.
 
 As usual, these notes will make more sense to me than anyone else! Check with [UXCamp Perth | Boorloo](https://www.uxcamp.co/) for recordings and slides when they are released.
+![[ux-camp-23 - 1.jpeg|sketchnotes for talks Pathfinding in life and complex product design by Georgia and 7 ways to AI can boost your creativity and productivity AI by Trent ]]
 
-
-
-
+![[ux-camp-23 - 2.jpeg|sketchnotes for Games games games by meg and Sabotage! by Nick]]
+![[ux-camp-23 - 3.jpeg|sketchnotes for Is being a UX designer just a professional form of people pleasing? By Min]]
 
