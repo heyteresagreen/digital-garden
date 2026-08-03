@@ -11,3 +11,4 @@ imageAlt: Book cover of Practicing Simplicity, Jodi Wilson
 slug: practicing-simplicity-2022-jodi-wilson
 created: 2026-04-22
 ---
+![[Pasted image 20260522212917.png|200]]
