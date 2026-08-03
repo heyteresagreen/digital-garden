@@ -1,0 +1,19 @@
+---
+title: Project Hail Mary, Andy Weir (audiobook relisten)
+publish: true
+section: books
+date: 2026-04-22
+tags:
+  - fiction
+description: Waking up on a space ship alone with no memories, a school teacher has to figure out who he is, how he got there, and how he's supposed to save Earth, with science. Also there's an alien. And a lot of science.
+image: "[[assets/Pasted image 20260422214456.png]]"
+imageUrl: /img/user/assets/Pasted image 20260422214456.png
+imageAlt: Book cover of Project Hail Mary, Andy Weir
+slug: project-hail-mary-andy-weir-audiobook-relisten
+created: 2026-04-22
+---
+
+
+Waking up on a space ship alone with no memories, a school teacher has to figure out who he is, how he got there, and how he's supposed to save Earth, with science. Also there's an alien. And a lot of science.
+
+I haven't had a chance to see the movie yet, so making do with a re-listen to the audiobook. This book is the example I usually give when talking about great ebooks that really use the medium well - I can't imagine how Rocky's musical communication could be captured on paper. The science sometimes gets tedious, but there's enough action and suspense to keep things interesting.
