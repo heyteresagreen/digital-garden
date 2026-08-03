@@ -25,16 +25,15 @@ I started this sketchbook in October 2025 and completed it in March 2026. I unin
 ![[assets/sketchbook14 5.jpeg|Sketchbook with watercolour birds]]
 
 
-![[assets/sketchbook14 10.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 8.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 6.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 4.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 3.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 2.jpeg|Sketchbook pages]]
 
-![[assets/sketchbook14 1.jpeg|Sketchbook pages]]
+
+
+
+
+
+
