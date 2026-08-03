@@ -26,12 +26,12 @@ I started this sketchbook in May 2024 and completed it in June 2024. It has only
 ![[assets/IMG_5837.jpeg|Watercolour sketch of a pink and grey galah]]
 
 
+![[assets/IMG_5814.jpeg|Watercolour sketches of birds]]
 
+![[assets/IMG_5815.jpeg|Watercolour sketches of birds]]
 
+![[assets/IMG_5816.jpeg|Watercolour sketches of birds]]
 
+![[assets/IMG_5817.jpeg|Watercolour sketches of birds]]
 
-
-
-
-
-
+![[assets/IMG_5818.jpeg|Watercolour sketches of birds]]
