@@ -18,7 +18,7 @@ To help me remember this, every Thursday (the end of my work week), I would go t
 
 Now I have a script that looks through my calendar for the next week, puts it into an email in list form, and totals up the number of hours I'll be spending in meetings for each day and for the whole week. It also shows when I have a non-working day, so I don't accidentally plan anything for it.
 
-
+![[Pasted image 20260219123814.png|500]]
 
 Creating this script was more difficult than I originally thought, especially using a free version of ChatGPT. Some things I had to account for:
 
