@@ -12,7 +12,7 @@ imageAlt: Book cover of Project Hail Mary, Andy Weir
 slug: project-hail-mary-andy-weir-audiobook-relisten
 created: 2026-04-22
 ---
-
+![[Pasted image 20260422214456.png|200]]
 
 Waking up on a space ship alone with no memories, a school teacher has to figure out who he is, how he got there, and how he's supposed to save Earth, with science. Also there's an alien. And a lot of science.
 
