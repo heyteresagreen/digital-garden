@@ -10,7 +10,7 @@ image: "[[IMG_5618.jpeg]]"
 imageUrl: /img/user/assets/IMG_5618.jpeg
 slug: life-drawing-in-watercolour
 ---
-
+![[IMG_5622.jpeg|watercolour sketch of a nude woman back to us]]
 
 I’ve been attending more life drawing sessions, and exploring how to use watercolours and watercolour pencils. I’m still struggling in the short poses, but I feel like I’m getting a little better at 10 or 20 minute poses. Some thoughts on this so far:
 
@@ -21,11 +21,12 @@ I’ve been attending more life drawing sessions, and exploring how to use water
 * I’m very reliant on my watercolour pencil sketch to guide my painting and also show edges. I’d like to move away from this and work just in paint, for looseness and speed.
 * Drawing a live model in a room with other artists is SO different to drawing from a photo. I feel like my sketches have so much more life when drawing from life, I’m so in awe of what the awesome models bring to their craft, and the creative energy of everyone capturing the moment in their own way. 
 
-
+![[IMG_5620.jpeg|watercolour sketch of a nude woman, lying down]]
 
 ![[IMG_5618.jpeg|watercolour sketches of a nude woman]]
 
+![[IMG_5632.jpeg|watercolour sketch of a nude woman lying down]]
 
+![[IMG_5629.jpeg|watercolour sketch of a nude woman lying]]
 
-
-
+![[IMG_5628 1.jpeg|watercolour sketch of sketching materials]]
