@@ -23,7 +23,7 @@ This year I'm trying something a little different - writing a few notes for each
 
 <div>
 
-![[IMG_7652.jpeg|book cover|150]]
+
 <div>
 
 ### Babel, or the Necessity of Violence, R F Kuang
@@ -38,7 +38,7 @@ This was interesting to read after other books featuring magic schools (albeit m
 </div>
 <div>
 
-![[IMG_7651.jpeg|book cover|150]]
+
 
 <div>
 
@@ -50,7 +50,7 @@ Short stories have such a small amount of time to hit you hard, and this is what
 </div>
 <div>
 
-![[IMG_7649.jpeg|book cover|150]]
+
 
 <div>
 
@@ -61,7 +61,7 @@ I rounded out all my Becky Chambers books with this novella about four explorers
 </div>
 <div>
 
-![[IMG_7648.jpeg|book cover|150]]
+
 <div>
 
 ### Norwegian Wood, Haruki Murakami
@@ -71,7 +71,7 @@ The book that made Murakami famous in Japan, but in my opinion not one of his be
 </div>
 <div>
 
-![[IMG_5986.jpeg|book cover|150]]
+
 <div>
 
 ### The Husbands, Holly Gramazio (book club)
@@ -82,7 +82,7 @@ The premise of having an attic that keeps spawning new husbands (one at a time, 
 </div>
 <div>
 
-![[IMG_6049.jpeg|book cover|150]]
+
 <div>
 
 ### Bindi, Kirli Sanders
@@ -93,7 +93,7 @@ My first ever verse novel! Apparently its intended audience is mid to upper prim
 </div>
 <div>
 
-![[IMG_0395 1.jpeg|book cover|150]]
+
 <div>
 
 ### It Lasts Forever and Then It’s Over, Ann de Marcken
@@ -105,7 +105,7 @@ It's been a while since I've read a book about zombies! I found this one via [Ce
 
 <div>
 
-![[IMG_0394.jpeg|book cover|150]]
+
 <div>
 
 ### The Other Wind (Books of Earthsea \#6), Ursula K. Le Guin
@@ -115,7 +115,7 @@ A satisfying end to these trilogies, with dragons, the dead, wizards, a king, a 
 
 <div>
 
-![[IMG_0393.jpeg|book cover|150]]
+
 <div>
 
 ### Tales from Earthsea (Books of Earthsea #5), Ursula K. Le Guin
@@ -128,7 +128,7 @@ I'm finding myself really enjoying short stories and novellas lately. The ones i
 
 <div>
 
-![[IMG_0391.jpeg|book cover|150]]
+
 <div>
 
 ### Tehanu (Books of Earthsea #4), Ursula K. Le Guin
@@ -140,7 +140,7 @@ I was surprised to read reviews of this book afterwards that pointed out nothing
 
 <div>
 
-![[IMG_0392.jpeg|book cover|150]]
+
 <div>
 
 ### American Dirt, Jeanine Cummins (book club)
@@ -152,7 +152,7 @@ A thriller (or crime?) story about a mother and son on the run from a cartel, fl
 
 <div>
 
-![[IMG_0314.jpeg|book cover|150]]
+
 <div>
 
 ### Ranma 1/2 (Volumes 1 and 2), Rumiko Takahashi
@@ -163,7 +163,7 @@ Ranma was the first manga I ever read, found in the local library in my early te
 
 <div>
 
-![[IMG_0312.jpeg|book cover|150]]
+
 <div>
 
 ### The Paper Menagerie, Ken Liu
@@ -174,7 +174,7 @@ These sci-fi short stories hit hard. All have elements, characters or settings f
 
 <div>
 
-![[IMG_0311.jpeg|book cover|150]]
+
 <div>
 
 ### The Farthest Shore (Books of Earthsea #3), Ursula K. Le Guin
@@ -185,7 +185,7 @@ Another time skip and more sailing around the ends of the world for the hero of 
 
 <div>
 
-![[IMG_0310.jpeg|book cover|150]]
+
 <div>
 
 ### The Tombs of Atuan (Books of Earthsea #2), Ursula K. Le Guin
@@ -196,7 +196,7 @@ I wasn’t expecting the series to shift focus to a completely different charact
 
 <div>
 
-![[IMG_0309.jpeg|book cover|150]]
+
 <div>
 
 ### Everyday Permaculture (2025), Anna Matilda
@@ -207,7 +207,7 @@ I spotted this one at the library and was intrigued. I thought I sort of knew wh
 
 <div>
 
-![[IMG_0308.jpeg|book cover|150]]
+
 <div>
 
 ### A Wizard of Earthsea (Books of Earthsea #1), Ursula K. Le Guin
@@ -219,7 +219,7 @@ Diving into some classic fantasy, I can see how this story of a boy wizard (alle
 
 <div>
 
-![[IMG_0307.jpeg|book cover|150]]
+
 <div>
 
 ### The City and It’s Uncertain Walls, Haruki Murakami
@@ -230,7 +230,7 @@ Strange and dream-like, which is what I expect of Murakami. There’s a tension 
 
 <div>
 
-![[IMG_0306.jpeg|book cover|150]]
+
 <div>
 
 ### Understanding Comics, Scott McCloud
@@ -240,7 +240,7 @@ I bought this book because I saw it mentioned in a few different contexts, and I
 </div>
 <div>
 
-![[IMG_0305.jpeg|book cover|150]]
+
 <div>
 
 ### Record of a Spaceborn Few (Wayfarers #3), Becky Chambers
@@ -251,7 +251,7 @@ Again there’s not a whole lot that actually happens in this book, but each of 
 
 <div>
 
-![[Pasted image 20250701212556.png|book cover|150]]
+
 
 <div>
 
@@ -262,7 +262,7 @@ Julie Zhuo pulls together advice from her newsletter about her experiences as a 
 </div>
 <div>
 
-![[Pasted image 20250701212741.png|book cover|150]]
+
 
 <div>
 
@@ -273,7 +273,7 @@ A man travels through a desolate landscape with a young girl who doesn't speak, 
 </div>
 <div>
 
-![[Pasted image 20250701212831.png|book cover|150]]
+
 
 <div>
 
@@ -285,7 +285,7 @@ The second in this series, focused on characters briefly mentioned in the first.
 
 <div>
 
-![[IMG_0292 1.jpeg|book cover|150]]
+
 
 <div>
 
@@ -297,7 +297,7 @@ A human woman joins a long-haul space mission with a multi-species crew. After r
 
 <div>
 
-![[IMG_0282.jpeg|book cover|150]]
+
 
 <div>
 
@@ -310,7 +310,7 @@ A reread of this book that got me started actually taking notes on things that I
 
 <div>
 
-![[book.jpeg|book cover|150]]
+
 
 <div>
 
@@ -323,7 +323,7 @@ A sweet sci-fi story centering on a group of aliens unexpectedly stranded in tra
 
 <div>
 
-![[IMG_0281.jpeg|book cover|150]]
+
 
 <div>
 
@@ -337,7 +337,7 @@ A book club pick. My favourite so far! A young woman makes a deal with the darkn
 
 <div>
 
-![[IMG_0280.jpeg|book cover|150]]
+
 
 <div>
 
@@ -350,7 +350,7 @@ I’ve been a fan of Oliver Burkeman’s Imperfectionist newsletter for some tim
 
 <div>
 
-![[Pasted image 20250306092538.png|book cover|150]]
+
 
 <div>
 
@@ -363,7 +363,7 @@ Revisiting a classic "fairy story" that lives on my shelf. It's a lot more bruta
 
 <div>
 
-![[Pasted image 20250306092054.png|book cover|150]]
+
 
 <div>
 
@@ -376,7 +376,7 @@ The authors, both from Stanford, apply design thinking techniques to planning yo
 
 <div>
 
-![[Pasted image 20250213205234.png|book cover|150]]
+
 
 <div>
 
@@ -388,7 +388,7 @@ Two combatants on opposite sides in a war amongst time travellers slowly build u
 
 <div>
 
-![[Pasted image 20250213210556.png|book cover|150]]   ![[Pasted image 20250213210623.png|book cover|150]]
+   
 
 <div>
 
@@ -400,7 +400,7 @@ I don't usually put the books I read to my kids in here, but this made-for-kids 
 
 <div>
 
-![[Pasted image 20250213205105.png|book cover of The Nightingale|150]]
+
 
 <div>
 
@@ -412,7 +412,7 @@ This historical fiction story follows a pair of estranged sisters living in occu
 </div>
 <div>
 
-![[IMG_0228 1.jpeg|The Name of the Wind book cover|150]]
+
 
 <div>
 
@@ -424,7 +424,7 @@ This epic fantasy novel started out strong for me with its premise of the main c
 </div>
 <div>
 
-![[assets/orwellsroses_rebeccasolnit.png|150]]
+
 
 <div>
 
