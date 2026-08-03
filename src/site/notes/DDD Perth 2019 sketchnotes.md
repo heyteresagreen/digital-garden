@@ -20,13 +20,13 @@ slug: ddd-perth-2019-sketchnotes
 <li>made a new file for each talk in Procreate with the header and footer set up </li>
 </ul>
 <p>Setting up in advance meant that I could spend more time doing little portraits of each speaker based on their bio pics, rather than scrambling during the talk or having to remember afterwards. </p>
+![[img_1346.jpg|Sketchnote of the talk &quot;AI for Earth&quot;]]
 
+![[img_1354.jpg|img_1354.jpg]]
 
-
-
-
-   
-   
-   
+![[assets/sketching/img_1354.jpg|assets/sketching/img_1354.jpg]]
+   ![[assets/sketching/img_1352.jpg|assets/sketching/img_1352.jpg]]
+   ![[assets/sketching/img_1350.jpg|assets/sketching/img_1350.jpg]]
+   ![[assets/sketching/img_1349.jpg|Sketchnote of Design Ops talk]]
 
 <p>You can see the <a href="https://dddperth.com/agenda/2019">2019 program for DDD Perth</a>, which also has links to <a href="https://www.youtube.com/watch?reload=9&amp;v=rDzlITb-Ro8&amp;list=PLkLJSte3oodR5ibzOgr7LsGsVXPdP70kE" target="_blank" rel="noreferrer noopener">videos of the talks</a>, if you&#8217;re interested in the topics above.</p>
