@@ -10,7 +10,7 @@ imageUrl: /img/user/assets/sketchbook11 2-225c1279.jpeg
 imageAlt: Watercolor sketch of St Mary’s Cathedral
 slug: jury-duty-sketches
 ---
-
+![[assets/sketchbook11 2.jpeg|Plein air sketch of St Mary’s Cathedral]]
 
 My second time doing jury duty. I got a 4 day trial, which I think is not bad in the scheme of things. It wasn’t gory or complicated but was mostly incredibly dull, and I was so grateful that we were allowed to have a pen and paper to “take notes”, because otherwise it would have been hard to not fall asleep. 
 
@@ -18,5 +18,6 @@ Obviously I couldn’t keep or take photos of my court notes, but I made use of 
 
 Sketches done with Daniel Smith watercolors in Sketchbook 11, a Stillman & Birn Alpha in pocket size.
 
+![[assets/sketchbook11 1.jpeg|Watercolor sketch]]
 
-
+![[assets/sketchbook11-77d2d0d4.jpeg|Watercolor sketch]]
