@@ -28,11 +28,11 @@ I chose the black because I like to read in dark mode and it’s nice to have th
 
 I wish the edges were a little more rounded to make it more ergonomic to hold in one hand. The battery life is not as ridiculously good as a Kindle, but I get about 1-2 weeks out of the Boox which is infrequent enough to not bother me. I got the Onyx magnetic case to go with it, something I didn’t bother with with my Kindle as it felt more indestructible, but it doesn’t add much weight or bulk.
 
-
+![[IMG_7617.jpeg|photo of my hand holding my Boox Go 7]]
 
 ## The reading experience
 I’ve side-loaded all my purchased e-books, liberated of any DRM (quite the process), and use the default reading app for Onyx, called NeoReader. I did try some more powerful and customisable reading apps like KOReader, but they felt like too much work - possibly because I’d already spent so much time messing with the Boox settings and just wanted to actually start using it. NeoReader does a decent job for my needs, which don’t really require much in the way of highlighting and notes (although it’s also not bad for these things). Unsurprisingly it also works with the least amount of messing around with settings, even for dark themes which I’ve found trickier to configure. And although NeoReader isn’t specifically designed for reading comics, the manga I’ve tried reading on it looks great and handles the reversed reading direction well. It was delightful to be able to screenshot a title page, crop it and set it to my lock screen, something that isn’t possible on my Kindle. 
 
-
+![[IMG_7622.jpeg|IMG_7622.jpeg]]
 
 Overall I'm really happy with my Boox, and even if moving away from the Kindle ecosystem wasn't enough, the number of library books I've already read with it is making it worth me purchasing the new device. The complex setup is now behind me, and updates to the firmware do seem to be improving the overall experience. 
