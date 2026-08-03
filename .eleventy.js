@@ -207,6 +207,17 @@ function buildEmbedImg(target, rest) {
 }
 
 function replaceWikiSyntax(content) {
+  // Enveloppe rewrites [[X]] as [[X|X]] on upload — a side effect of keeping
+  // wikilinks rather than converting them to markdown links, with no setting to
+  // turn it off (addAltForWikilinks in the plugin, which fires whenever wikilink
+  // conversion is disabled). Harmless on a prose link, where the alias and the
+  // target read the same. Not harmless on an embed: the second segment becomes
+  // alt text, so ![[sketchbook4 2 1.jpeg]] ships as alt="sketchbook4 2 1.jpeg".
+  // Drop a segment that only repeats the target, before any other pass sees it.
+  content = content.replace(
+    /(!?\[\[)([^\]|\\]+?)\\?\|([^\]]*)\]\]/g,
+    (m, open, target, rest) => (rest.trim() === target.trim() ? `${open}${target}]]` : m)
+  );
   // Figures: an embed alone on its line with a single *italic* line directly
   // beneath it, which is how captions are written in the vault (and how
   // Obsidian previews them). Must run before the plain-embed pass and must
