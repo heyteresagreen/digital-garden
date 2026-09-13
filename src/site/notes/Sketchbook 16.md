@@ -13,15 +13,27 @@ sketchbook: Homemade using Anko Sketch Artist Pad 160gsm
 size: Pocket
 type: Watercolour
 started: April 2026
-finished: 2026-07-01
+finished: 2026-08-01
 ---
-I started this sketchbook in April 2026 and am almost finished. I had meant to sketch whilst on my family trip to Singapore, but found it too hard whilst travelling. These have all been painted back home based on my photos.
+I started this sketchbook in April 2026 and finished in August 2026. I had meant to sketch whilst on my family trip to Singapore, but found it too hard whilst travelling. These have all been painted back home based on my photos.
 
 I didn't have high hopes for this Kmart paper that I made the sketchbook from as it's cheap, thin and not made for watercolour. It requires some adjustment (mainly using less water) but holds up impressively for the price.
 
 📖 Homemade sketchbook using Anko (Kmart) Sketch Artist Pad 160gsm paper
 🎨 Daniel Smith watercolours 
 ✒️ Sailor Fude pen with D'Atramentis Document Ink in black
+
+<div style="position: relative; width: 100%; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe 
+    src="https://www.youtube.com/embed/CT2ZJXSeWrI?si=osCREzhkV1ICO9ns" 
+    title="YouTube video player"
+    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+</div>
 
 
 ![[assets/singapore.jpeg|Cover of sketchbook 16 with watercolour sketch of the Sultan Mosque]]
