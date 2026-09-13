@@ -4,19 +4,26 @@ publish: true
 standalone: true
 permalink: /now/
 layout: layouts/page.njk
-updated: 2026-08-02
+updated: 2026-09-13
 ---
 Here's what I'm up to right now:
 
+Finally finished [[Sketchbook 16|Sketchbook 16]] (my post-Singapore trip travel journal), and filmed a little video flip through. That involved a lot of messing around with tripods and learning how to use Da Vinci Resolve for editing! I've now hand bound a new little sketchbook from the same paper, and trying to be a little more loose and less precious with this one.
+
+I've *almost* finished knitting the [Sabai Top](https://www.ravelry.com/patterns/library/sabai-top), my first ever knit garment. I had to restart it a bunch of times because I kept making mistakes - my final version has taken a bit over 3 weeks so far, with a few more rows and finishing and blocking to go. Knitting is a slow process and I'm not sure I would do it again, but I think when I've finished this project I will miss knitting.
+
+I'm currently reading *The Complete Robot* by Isaac Asimov and *Games: Agency as Art* by C. Thi Nguyen.
+
+---
+
+Here's what I was up to earlier:
+
+## August 2026
 I currently have a [[Watercolour quinces|painting]] in the [Piccolo exhibition](https://www.inglewoodartshub.org/blank-4-1) at Inglewood Arts Hub! The exhibition will run until 15 August if you're in Perth want to take a look.
 
 I've been messing around with [[My Obsidian workflow|My Obsidian workflow]], which I need to update as Obsidian now houses all of my personal and work notes as well as all the content of this website. It's definitely a [[Procrastination through process|Procrastination through process]] rabbit-hole which I've gotten a lot of satisfaction out of, although it's supposed to be to support me doing more writing which isn't really happening because I'm continuously tweaking templates.
 
 Still knitting lots, painting little. Working on slowly getting back to it, to be ready when the next opportunity to exhibit comes. Still rereading Children of Time by Adrian Tchaikovsky, it's a longer book than I remember. 
-
----
-
-Here's what I was up to earlier:
 
 ## 1 July 2026
 I've been painting less, knitting more (although I'm still not really consistent enough to make anything I can actually wear). I do need to get back to my watercolours, as the longer I spend away the more daunting they start to feel again. I have only one spread left to complete of my Singapore trip sketchbook.
