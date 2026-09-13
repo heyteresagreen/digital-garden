@@ -4,5 +4,5 @@ publish: true
 snippet: books-in-progress
 ---
 ## In progress
-### The Staff Designer (2025), Catt Small
-### Children of Time, Adrian Tchaikovsky
+### *The Complete Robot* by Isaac Asimov 
+### *Games: Agency as Art* by C. Thi Nguyen
