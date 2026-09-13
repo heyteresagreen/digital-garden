@@ -35,6 +35,7 @@ I didn't have high hopes for this Kmart paper that I made the sketchbook from as
   </iframe>
 </div>
 
+---
 
 ![[assets/singapore.jpeg|Cover of sketchbook 16 with watercolour sketch of the Sultan Mosque]]
 
