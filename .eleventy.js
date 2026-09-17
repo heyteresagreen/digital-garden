@@ -303,6 +303,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/site/img");
+  eleventyConfig.addPassthroughCopy("src/site/favicon.png");
 
   // Attachments Enveloppe uploaded into the notes tree rather than img/user
   // (see EMBED_BASES). Copied so the un-optimised URL still resolves if
