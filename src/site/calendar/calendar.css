@@ -1022,7 +1022,7 @@ body:not(.booted) .eye-icon .eye-lid {
         padding: 0 !important;
     }
 
-    .sidebar, .preview-controls, .hamburger, .zoom-widget, #monthNavBar, .sidebar-toggle {
+    .sidebar, .preview-controls, .hamburger, .zoom-widget, #monthNavBar, .sidebar-toggle, button {
         display: none !important;
     }
 
