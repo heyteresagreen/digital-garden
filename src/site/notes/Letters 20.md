@@ -2,7 +2,7 @@
 title: Letters 20
 publish: true
 section: letters
-date: 2026-09-16
+date: 2026-09-24
 tags:
   - letters
 description: Going backwards to go forwards
@@ -31,7 +31,7 @@ Have you been making fun anything lately?
 **Other things**
 * I have been reading Isaac Asimov's *The Complete Robot*, which feels very relevant despite most of the short stories being written over 50 years ago. 
 * I finally finished [[Sketchbook 16|Sketchbook 16]], my Singapore travel journal, and filmed a flip through video!
-[![Photo of me looking at my sketchbook|600](<assets/sketchbook - 1.jpeg>)](<Sketchbook 16.md>)
+[![Photo of me looking at my sketchbook|600](assets/sketchbook%20-%201.jpeg)](Sketchbook%2016.md)
 
 * Earlier this year I really wanted a simple, printable calendar to stick on my fridge. I couldn't find what I wanted so I made a little web app with some customisable bits that I've had fund experimenting with. I did use generative AI for the code side of things, as a bit of an experiment. You can play around with it here: [T's Calendar](https://teresawatts.com/calendar/)
   ![[Pasted image 20260924213441.png|screenshot of my calendar|600]]
