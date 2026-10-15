@@ -70,6 +70,7 @@ I made the drawing on this page using Procreate and an Apple Pencil on my iPad A
 ---
 
 ![[assets/Untitled_Artwork 5.png|Teresa's self portrait|100]]
+
 ## About Teresa
 I'm a part-time UX Design Lead at Moodle, part-time artist living in Boorloo, Perth. [[About|You can read more about me here]].
 
