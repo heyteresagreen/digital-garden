@@ -69,10 +69,11 @@ I made the drawing on this page using Procreate and an Apple Pencil on my iPad A
 
 ---
 
-![[assets/Untitled_Artwork 5.png|Teresa's self portrait|100]]
 
 ## About Teresa
 I'm a part-time UX Design Lead at Moodle, part-time artist living in Boorloo, Perth. [[About|You can read more about me here]].
+
+![[assets/Untitled_Artwork 5.png|Teresa's self portrait|100]]
 
 ### Want to talk to me more about sketching?
 If you're interested in commissioning a sketch or bringing someone in to lead a workshop on sketching in your work place, please get in touch! My email address is teresawatts@gmail.com
