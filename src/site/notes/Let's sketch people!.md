@@ -5,7 +5,7 @@ section: sketching
 date: 2026-10-15
 tags:
   - sketching
-image: assets/stickfigs.jpg
+image: assets/poses.jpg
 imageAlt: 3 stick figures
 slug: uxc26
 description: Think you can only draw stick figures? This one is for you!
