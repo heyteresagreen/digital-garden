@@ -5,10 +5,10 @@ section: sketching
 date: 2026-10-15
 tags:
   - sketching
-image:
-imageAlt:
+image: assets/stickfigs.jpg
+imageAlt: 3 stick figures
 slug: uxc26
-description:
+description: Think you can only draw stick figures? This one is for you!
 ---
 *Hi! If you're reading this you might be in my workshop at UXCamp Perth 2026. It's more fun watching me demo this live and trying to draw along with me, but you can come back to this reference later. Or share it with your friends. No pressure.*
 
@@ -18,19 +18,17 @@ There's nothing wrong with stick figures exactly (I love xkcd!). But if you want
 
 ## Level up your stick figures with simple shapes
 
+The simplest thing you can do is to use a geometric shape like a rectangle to represent the body. This gives something to hang the arms and legs from, rather than directly coming off of the spine, which makes more poses possible.
 
 ![[stickfigs.jpg|3 stick figures - a basic one, one where there is a rectangle for the body, and one with hands, feet and more style]]
-
-The simplest thing you can do is to use a geometric shape like a rectangle to represent the body. This gives something to hang the arms and legs from, rather than directly coming off of the spine, which makes more poses possible.
 
 Stepping up again, you can make your lines more expressive with slight curves and a few more shapes for feet and hands. These extra bits of information can help you capture even more emotion and action - still just with geometric shapes and curved lines.
 
 ## Choose proportions wisely
 
+Many "how to draw" tutorials and books will reference the seven heads proportions, where the head to full height ratio is 1:7, with the body and legs 3 heads in length each. This is intended for an idealised human figure, and can be a useful guideline when drawing people to look realistic.
 
 ![[proportions.jpg|left figure shows a standard 7 head proportion person, right figure is my chibi style person with a huge head and tiny body]]
-
-Many "how to draw" tutorials and books will reference the seven heads proportions, where the head to full height ratio is 1:7, with the body and legs 3 heads in length each. This is intended for an idealised human figure, and can be a useful guideline when drawing people to look realistic.
 
 For sketching to get across ideas or emotions though, I find these proportions a bit too serious and without enough space to draw much of a face.
 
@@ -38,10 +36,9 @@ Instead I like to sketch with cartoony, chibi proportions - a massive head that 
 
 ## More on (cartoony) faces
 
+Since I'm not concerned with being too realistic or serious, any shape can be a head - so don't worry if your circles are wonky! Humans are wired to recognise facial expressions even where none exist, so a weird shaped head will probably still read as a head.
 
 ![[heads.jpg|multiple faces with different shaped heads and varying expressions, all in a cartoony style]]
-
-Since I'm not concerned with being too realistic or serious, any shape can be a head - so don't worry if your circles are wonky! Humans are wired to recognise facial expressions even where none exist, so a weird shaped head will probably still read as a head.
 
 I like to use simple oval eyes, minimal noses and mouths, and simple ears and hair. Think emoji faces but with ears (the ear placement compared to the eyes/nose can give clues to the angle of the face, so can be useful to include). I don't always bother with eyebrows but for some expressions (anger, fear) they can really help.
 
@@ -49,10 +46,9 @@ Try sketching faces using different base shapes, eye placement and hairstyles!
 
 ## Some simple poses
 
+Here are some simple poses you can try. These are are quite simple, front-on poses but hopefully give you some ideas of elements that you can mix up to express different things. For figures to include in sketchnotes or describe a user flow, they don't need to be complex or realistic. Used in context with words, even simple hand-drawn sketches like these can be powerful.
 
 ![[poses.jpg|A cartoon figure waving, another pointing and gesturing, and another scratching their head as if confused]]
-
-Here are some simple poses you can try. These are are quite simple, front-on poses but hopefully give you some ideas of elements that you can mix up to express different things. For figures to include in sketchnotes or describe a user flow, they don't need to be complex or realistic. Used in context with words, even simple hand-drawn sketches like these can be powerful.
 
 To go from the boxy levelled-up stick figure to something like this, try giving some width to the arms and legs, and hinting at a neckline and clothing. And of course a big facial expression. That's it!
 
@@ -73,7 +69,12 @@ I made the drawing on this page using Procreate and an Apple Pencil on my iPad A
 
 ---
 
-## Want to talk to me more about sketching?
+## About Teresa
+
+![[assets/Untitled_Artwork 5.png|Teresa's self portrait|100]]
+I'm a part-time UX Design Lead at Moodle, part-time artist living in Boorloo, Perth. [[About|You can read more about me here]].
+
+### Want to talk to me more about sketching?
 If you're interested in commissioning a sketch or bringing someone in to lead a workshop on sketching in your work place, please get in touch! My email address is teresawatts@gmail.com
 
 ---
