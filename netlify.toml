@@ -298,3 +298,8 @@
   to = "/"
   status = 301
 
+  [[redirects]]
+  from = "/uxc26/"
+  to = "/sketching/let-s-sketch-people/"
+  status = 301
+
