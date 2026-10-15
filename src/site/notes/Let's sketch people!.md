@@ -18,7 +18,8 @@ There's nothing wrong with stick figures exactly (I love xkcd!). But if you want
 
 ## Level up your stick figures with simple shapes
 
-![[stickfigs.jpg|stickfigs.jpg]]
+
+![[stickfigs.jpg|3 stick figures - a basic one, one where there is a rectangle for the body, and one with hands, feet and more style]]
 
 The simplest thing you can do is to use a geometric shape like a rectangle to represent the body. This gives something to hang the arms and legs from, rather than directly coming off of the spine, which makes more poses possible.
 
@@ -26,7 +27,8 @@ Stepping up again, you can make your lines more expressive with slight curves an
 
 ## Choose proportions wisely
 
-![[proportions.jpg|proportions.jpg]]
+
+![[proportions.jpg|left figure shows a standard 7 head proportion person, right figure is my chibi style person with a huge head and tiny body]]
 
 Many "how to draw" tutorials and books will reference the seven heads proportions, where the head to full height ratio is 1:7, with the body and legs 3 heads in length each. This is intended for an idealised human figure, and can be a useful guideline when drawing people to look realistic.
 
@@ -36,7 +38,8 @@ Instead I like to sketch with cartoony, chibi proportions - a massive head that 
 
 ## More on (cartoony) faces
 
-![[heads.jpg|heads.jpg]]
+
+![[heads.jpg|multiple faces with different shaped heads and varying expressions, all in a cartoony style]]
 
 Since I'm not concerned with being too realistic or serious, any shape can be a head - so don't worry if your circles are wonky! Humans are wired to recognise facial expressions even where none exist, so a weird shaped head will probably still read as a head.
 
@@ -46,7 +49,8 @@ Try sketching faces using different base shapes, eye placement and hairstyles!
 
 ## Some simple poses
 
-![[poses.jpg|poses.jpg]]
+
+![[poses.jpg|A cartoon figure waving, another pointing and gesturing, and another scratching their head as if confused]]
 
 Here are some simple poses you can try. These are are quite simple, front-on poses but hopefully give you some ideas of elements that you can mix up to express different things. For figures to include in sketchnotes or describe a user flow, they don't need to be complex or realistic. Used in context with words, even simple hand-drawn sketches like these can be powerful.
 
