@@ -10,7 +10,7 @@ imageAlt: 3 stick figures
 slug:
 description: Think you can only draw stick figures? This one is for you!
 ---
-*Hi! If you're reading this you might be in my workshop at UXCamp Perth 2026. It's more fun watching me demo this live and trying to draw along with me, but you can come back to this reference later. Or share it with your friends. No pressure.*
+*This was originally presented as a workshop at [UXCamp Perth 2026](https://uxcamp.au/). I asked people to draw along with me, and encourage you to do the same!*
 
 Think you can only draw stick figures? This one is for you! 
 
