@@ -5,12 +5,16 @@ section: sketching
 date: 2026-10-15
 tags:
   - sketching
+  - speaking
 image: assets/poses.jpg
 imageAlt: 3 stick figures
 slug:
 description: Think you can only draw stick figures? This one is for you!
 ---
-*This was originally presented as a workshop at [UXCamp Perth 2026](https://uxcamp.au/). I asked people to draw along with me, and encourage you to do the same!*
+*This was originally presented as a workshop at [UXCamp Boorloo Perth 2026](https://uxcamp.au/). I asked people to draw along with me, and encourage you to do the same!*
+
+![[uxcamp - 1 (1).jpeg|uxcamp - 1 (1).jpeg]]
+*Me presenting this workshop at UXCamp Boorloo Perth*
 
 Think you can only draw stick figures? This one is for you! 
 
