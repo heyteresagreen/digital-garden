@@ -12,5 +12,13 @@
         { "label": "About", "url": "/about/" },
         { "label": "Posts", "url": "/posts/" },
         { "label": "Letters", "url": "/letters/" }
+    ],
+    "footer": [
+        { "label": "About", "url": "/about/" },
+        { "label": "Now", "url": "/now/" },
+        { "label": "RSS", "url": "/feed.xml", "icon": "rss" },
+        { "label": "YouTube", "url": "https://www.youtube.com/@Teresa_Watts", "icon": "youtube" },
+        { "label": "Instagram", "url": "https://www.instagram.com/teresa_watts/", "icon": "instagram" },
+        { "label": "LinkedIn", "url": "https://www.linkedin.com/in/teresawatts1", "icon": "linkedin" }
     ]
 }

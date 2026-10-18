@@ -108,7 +108,9 @@ h3 {
   font-size: 1.2em;
 }
 
-.content a {
+// footer sits outside .content but uses the same link style
+.content a,
+footer a {
   transition: background-color 300ms;
   color: var(--color-secondary);
   text-decoration-thickness: 0.05em;
