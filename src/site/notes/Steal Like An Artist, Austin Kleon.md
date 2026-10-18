@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260422215327.png
 imageAlt: Book cover of Steal Like An Artist, Austin Kleon
 slug: steal-like-an-artist-austin-kleon
 created: 2026-04-22
+hardcover: steal-like-an-artist
 ---
 ![[Pasted image 20260422215327.png|200]]
 
