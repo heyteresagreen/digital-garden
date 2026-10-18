@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260311211725.png
 imageAlt: Book cover of Dark Emu by Bruce Pascoe
 slug: dark-emu-2014-bruce-pascoe
 created: 2026-02-24
+hardcover: dark-emu
 ---
 ![[Pasted image 20260311211725.png|book cover of Dark Emu|200]]
 
