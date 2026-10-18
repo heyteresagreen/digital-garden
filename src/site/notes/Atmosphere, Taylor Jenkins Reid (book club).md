@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260224210702.png
 imageAlt: Book cover of Atmosphere by Taylor Jenkins Reid
 slug: atmosphere-taylor-jenkins-reid-book-club
 created: 2026-02-24
+hardcover: atmosphere-a-love-story
 ---
 ![[Pasted image 20260224210702.png|Book cover of Atmosphere by Taylor Jenkins Reid|200]]
 

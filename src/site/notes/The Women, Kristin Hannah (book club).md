@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260422212255.png
 imageAlt: Book cover of The Women by Kristin Hannah
 slug: the-women-kristin-hannah-book-club
 created: 2026-04-22
+hardcover: the-women-2024
 ---
 ![[Pasted image 20260422212255.png|200]]
 

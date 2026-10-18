@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260422212825.png
 imageAlt: Book cover of I Who Have Never Known Men, Jacqueline Harpman
 slug: i-who-have-never-known-men-jacqueline-harpman
 created: 2026-04-22
+hardcover: i-who-have-never-known-men
 ---
 ![[Pasted image 20260422212825.png|200]]
 
