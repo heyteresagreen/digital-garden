@@ -11,6 +11,7 @@ imageUrl: /img/user/assets/Pasted image 20260422214456.png
 imageAlt: Book cover of Project Hail Mary, Andy Weir
 slug: project-hail-mary-andy-weir-audiobook-relisten
 created: 2026-04-22
+hardcover: project-hail-mary
 ---
 ![[Pasted image 20260422214456.png|200]]
 
