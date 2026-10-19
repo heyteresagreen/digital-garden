@@ -20,7 +20,8 @@ cd "${0:A:h}/.." || exit 1
 # launchd starts with a bare PATH; add Homebrew's so `node` is found
 export PATH="/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:/usr/local/bin:$PATH"
 echo "--- $(date '+%Y-%m-%d %H:%M')"
-node scripts/sync-hardcover.mjs --vault "$VAULT_BOOKS" --link --since "$SINCE" "$@"
+# Hardcover is PAUSED (Oct 2026): remove the # on the next line to restart it.
+# node scripts/sync-hardcover.mjs --vault "$VAULT_BOOKS" --link --since "$SINCE" "$@"
 # Covers for book notes that don't have one (Hardcover's, or Open Library's).
 # Doesn't need Hardcover — keep this line if Hardcover is ever removed.
 node scripts/book-covers.mjs --vault "$VAULT_BOOKS" "$@"

@@ -7,9 +7,9 @@
   <header>
     <p class="section-label"><a href="/books/">&larr; Books</a></p>
     <h1>{{ title or (book | bookTitle) }}</h1>
-    {#- Hardcover's dates if linked, else the note's own dateFinished/dateStarted #}
-    {%- set finished = (book and book.dateFinished) or dateFinished %}
-    {%- set started = (book and book.dateStarted) or dateStarted %}
+    {#- The note's own dateFinished/dateStarted, else Hardcover's #}
+    {%- set finished = dateFinished or (book and book.dateFinished) %}
+    {%- set started = dateStarted or (book and book.dateStarted) %}
     {%- if date %}
     <time datetime="{{ page.date | isoDate }}">Published on {{ page.date | dateLong }}</time>
     {%- elif finished %}

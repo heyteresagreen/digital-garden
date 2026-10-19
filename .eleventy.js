@@ -98,7 +98,7 @@ function getShelf() {
   try { books = JSON.parse(fs.readFileSync(HARDCOVER_FILE, "utf8")).books || []; } catch { /* no data yet */ }
   const linked = {};
   eachPublishedNote((data, rel, base) => {
-    if (data.hardcover) linked[String(data.hardcover)] = { url: noteUrl(data, base), title: data.title };
+    if (data.hardcover) linked[String(data.hardcover)] = { url: noteUrl(data, base), title: data.title, data };
   });
   // Books tracked only in Obsidian: a published book note with `status:`
   // (reading, read, ...) and no Hardcover data behind it. Lets the site work
@@ -120,6 +120,14 @@ function getShelf() {
   books = books.map((b) => {
     if (b.noteOnly) return { ...b, noteTitle: b._noteTitle, noteUrl: b._noteUrl, pageUrl: b._noteUrl };
     const note = linked[b.slug];
+    // A linked note's own status and dates win over Hardcover's, so the note
+    // stays the source of truth (and the site keeps working if Hardcover is
+    // paused). Hardcover's fill in whatever the note doesn't say.
+    const ymd = (d) => (d instanceof Date ? d.toISOString().slice(0, 10) : d ? String(d) : null);
+    const own = note && [].concat(note.data.section || []).includes("books") ? note.data : {};
+    if (own.status) b = { ...b, status: String(own.status) };
+    if (own.dateStarted) b = { ...b, dateStarted: ymd(own.dateStarted) };
+    if (own.dateFinished) b = { ...b, dateFinished: ymd(own.dateFinished) };
     // a linked note's own title wins over Hardcover's
     return { ...b, noteTitle: note ? note.title : null, noteUrl: note ? note.url : null, pageUrl: note ? note.url : `/books/${b.pageSlug}/` };
   });
@@ -442,7 +450,7 @@ module.exports = function (eleventyConfig) {
   const bookDate = (p) => {
     if (p.data.date) return p.date;
     const b = p.data.hardcover && getShelf().bySlug[p.data.hardcover];
-    const d = (b && (b.dateFinished || b.dateStarted)) || p.data.dateFinished || p.data.dateStarted;
+    const d = p.data.dateFinished || p.data.dateStarted || (b && (b.dateFinished || b.dateStarted));
     return d ? new Date(d) : null;
   };
   const completedBooks = (api) => {
@@ -450,7 +458,7 @@ module.exports = function (eleventyConfig) {
     const notes = published(api).filter((p) => {
       if ((!inBooks(p) && !p.data.hardcover) || isRoundup(p)) return false;
       const b = p.data.hardcover && bySlug[p.data.hardcover];
-      const status = (b && !b.noteOnly && b.status) || p.data.status;
+      const status = p.data.status || (b && b.status);
       return !status || status === "read";
     });
     const extras = books.filter((b) => b.status === "read" && !b.noteUrl).map(bookItem);

@@ -25,13 +25,15 @@ jobs:
 
       - run: npm ci
 
-      - name: Sync books from Hardcover
-        run: node scripts/sync-hardcover.mjs
-        env:
-          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+      # Hardcover is PAUSED (Oct 2026): src/site/_data/hardcover-books.json
+      # keeps its last data, and book notes' own status/dates win over it.
+      # To restart, put back this step:
+      #   - name: Sync books from Hardcover
+      #     run: node scripts/sync-hardcover.mjs
+      #     env:
+      #       HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
 
-      # Public profile data, no secret needed. Runs even if Hardcover failed,
-      # so one service being down doesn't hold up the other.
+      # Public profile data, no secret needed.
       - name: Sync liked articles from Instapaper
         if: ${{ !cancelled() }}
         run: node scripts/sync-instapaper.mjs

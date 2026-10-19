@@ -60,8 +60,10 @@ node scripts/sync-hardcover.mjs --vault "<vault>/books" --link    # …and link 
 
 **Books without Hardcover:** a published book note can carry its own
 `status:` (reading, read, paused, dnf), `dateStarted:` and `dateFinished:`;
-the site uses them when Hardcover has no data for that note (getShelf in
-`.eleventy.js`). **Covers:** `scripts/book-covers.mjs --vault "<vault>/books"`
+they win over Hardcover's when present (getShelf in `.eleventy.js`).
+**Hardcover syncing is paused** (Oct 2026): the workflow's Hardcover step and
+the `sync-hardcover.mjs` line in `scripts/obsidian-sync.sh` are commented out;
+`hardcover-books.json` keeps its last data. **Covers:** `scripts/book-covers.mjs --vault "<vault>/books"`
 adds a cover to book notes without one (Hardcover's if linked, else Open
 Library), saved to the vault's `assets/` and embedded like the review notes.
 
