@@ -42,4 +42,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
           git add src/site/_data/hardcover-books.json src/site/_data/instapaper.json
-          git diff --staged --quiet || (git commit -m "Sync reading data" && git push)
+          git diff --staged --quiet && exit 0
+          git commit -m "Sync reading data"
+          # main may have moved since checkout (an Enveloppe publish during the
+          # run, or a re-run, which replays the original commit), so put this
+          # commit on top of the latest main. Only these two data files are
+          # touched here, so the rebase can't conflict with notes.
+          git pull --rebase origin main
+          git push origin HEAD:main
