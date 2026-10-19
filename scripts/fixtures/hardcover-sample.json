@@ -1,0 +1,124 @@
+{
+  "_comment": "SAMPLE DATA for previewing without a token (HARDCOVER_FIXTURE=scripts/fixtures/hardcover-sample.json). Shape follows the Hardcover schema; ids, slugs, dates, covers (placehold.co) and highlight text are placeholders.",
+  "data": {
+    "me": [
+      {
+        "user_books": [
+          {
+            "id": 900001,
+            "book_id": 100001,
+            "status_id": 2,
+            "rating": null,
+            "date_added": "2026-09-28",
+            "user_book_reads": [
+              {
+                "started_at": "2026-09-28",
+                "finished_at": null
+              }
+            ],
+            "reading_journals": [
+              {
+                "id": 1,
+                "event": "quote",
+                "entry": "Sample highlight one — replace by syncing with a real token.",
+                "metadata": {
+                  "page": 12
+                },
+                "action_at": "2026-10-01T09:00:00Z"
+              },
+              {
+                "id": 2,
+                "event": "quote",
+                "entry": "Sample highlight two, spanning\ntwo lines, with no page number.",
+                "metadata": {},
+                "action_at": "2026-10-03T09:00:00Z"
+              },
+              {
+                "id": 3,
+                "event": "note",
+                "entry": "Sample reading note written in Hardcover.",
+                "metadata": {
+                  "page": 40
+                },
+                "action_at": "2026-10-05T09:00:00Z"
+              }
+            ],
+            "book": {
+              "title": "Games: Agency As Art",
+              "slug": "games-agency-as-art",
+              "cached_contributors": [
+                {
+                  "author": {
+                    "name": "C. Thi Nguyen"
+                  },
+                  "contribution": null
+                }
+              ],
+              "cached_image": {
+                "url": "https://placehold.co/300x450/png?text=Games"
+              }
+            }
+          },
+          {
+            "id": 900002,
+            "book_id": 100002,
+            "status_id": 2,
+            "rating": null,
+            "date_added": "2026-10-10",
+            "user_book_reads": [
+              {
+                "started_at": "2026-10-10",
+                "finished_at": null
+              }
+            ],
+            "reading_journals": [],
+            "book": {
+              "title": "Less is More",
+              "slug": "less-is-more",
+              "cached_contributors": [
+                {
+                  "author": {
+                    "name": "Jason Hickel"
+                  },
+                  "contribution": null
+                }
+              ],
+              "cached_image": {
+                "url": "https://placehold.co/300x450/png?text=Less+is+More"
+              }
+            }
+          },
+          {
+            "id": 900003,
+            "book_id": 100003,
+            "status_id": 3,
+            "rating": "4.5",
+            "date_added": "2026-06-01",
+            "user_book_reads": [
+              {
+                "started_at": "2026-06-01",
+                "finished_at": "2026-07-15"
+              }
+            ],
+            "reading_journals": [],
+            "book": {
+              "title": "Sample Finished Book (prototype only)",
+              "slug": "sample-finished-book",
+              "cached_contributors": [
+                {
+                  "author": {
+                    "name": "Placeholder Author"
+                  },
+                  "contribution": null
+                }
+              ],
+              "cached_image": {
+                "url": "https://placehold.co/300x450/png?text=Sample"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

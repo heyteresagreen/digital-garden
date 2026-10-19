@@ -1,17 +1,43 @@
 ---
-layout: layouts/index.njk
-title: Books
+# This year's books: what's being read now (from Hardcover, marked
+# "Reading") then everything finished this year — book posts plus books
+# marked read on Hardcover (booksThisYear in .eleventy.js) — as a grid of
+# covers, the same style as the Reading page but smaller so more fit.
+# Earlier years link to the yearly round-up posts underneath.
+#
+# The text under the heading is a note written in Obsidian with
+# `snippet: books-intro` and `publish: true` in its frontmatter — edit that
+# note to change it. Nothing shows if there's no such note.
+layout: layouts/base.njk
+title: Books I've read this year
 pagination:
-  data: collections.books
-  size: 12
+  data: collections.booksThisYear
+  size: 42
   generatePageOnEmptyData: true
 permalink: "/books/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
-showImages: true
-listClass: book-list
+contentClass: wide
 eleventyExcludeFromCollections: true
 eleventyImport:
   collections: ["snippets"]
 ---
-{%- for snip in collections.snippets %}{% if snip.data.snippet == "books-in-progress" %}{{ snip.templateContent | safe }}{% endif %}{% endfor %}
-<hr>
-<h2>Completed</h2>
+{%- from "components/reading/cover.njk" import bookCover %}
+{%- from "components/pagination.njk" import pager %}
+<header class="index-header">
+  <p class="section-label"><a href="/reading/">&larr; Reading</a></p>
+  <h1>{{ title }}</h1>
+  {%- for snip in collections.snippets %}{% if snip.data.snippet == "books-intro" %}
+  <div class="index-intro">{{ snip.templateContent | safe }}</div>
+  {%- endif %}{% endfor %}
+</header>
+<ul class="cover-grid cover-grid-dense">
+  {%- if pagination.pageNumber == 0 %}
+  {%- for book in "reading" | shelfCards %}{{ bookCover(book, true) }}{% endfor %}
+  {%- endif %}
+  {%- for post in pagination.items %}{{ bookCover(post) }}{% endfor %}
+</ul>
+{{ pager(pagination) }}
+{%- if collections.bookRoundups.length %}
+<p class="book-roundups">Earlier years:
+  {%- for post in collections.bookRoundups %} <a href="{{ post.url }}">{{ post.data.title | replace("Books I've read in ", "") }}</a>{% if not loop.last %} ·{% endif %}{% endfor %}
+</p>
+{%- endif %}

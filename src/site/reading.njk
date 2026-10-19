@@ -1,0 +1,31 @@
+---
+# Reading: books (what I'm reading now, marked with a label, then the most
+# recent finished ones) and the articles I've liked on Instapaper. Data comes
+# from src/site/_data/hardcover-books.json and instapaper.json, refreshed by
+# the weekly sync (.github/workflows/sync-books.yml). The full book list,
+# with every review post, is at /books/.
+layout: layouts/base.njk
+title: Reading
+permalink: /reading/
+contentClass: wide
+eleventyExcludeFromCollections: true
+shelfCount: 6
+eleventyImport:
+  collections: ["snippets"]
+---
+{#- The text under the heading is a note written in Obsidian with
+    `snippet: reading-intro` and `publish: true` — edit that note to change
+    it. Until one exists, the sentence below is shown instead. #}
+{%- set intro = null %}
+{%- for snip in collections.snippets %}{% if snip.data.snippet == "reading-intro" %}{% set intro = snip %}{% endif %}{% endfor %}
+<header class="index-header">
+  <h1>Reading</h1>
+  {%- if intro %}
+  <div class="index-intro">{{ intro.templateContent | safe }}</div>
+  {%- else %}
+  <p class="index-intro">What I'm reading now, books I've finished, and articles worth saving.</p>
+  {%- endif %}
+</header>
+
+{% include "components/reading/shelf.njk" %}
+{% include "components/reading/articles.njk" %}

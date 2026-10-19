@@ -9,7 +9,7 @@ module.exports = {
       if (data.permalink) return data.permalink; // pages like About/Now set their own
       const slug = data.slug || slugify(data.page.fileSlug);
       const sections = ["writing", "notes", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
-      const section = sections.includes(data.section) ? data.section : "posts";
+      const section = sections.includes(data.section) ? data.section : data.hardcover ? "books" : "posts";
       return `/${section}/${slug}/`;
     },
     eleventyExcludeFromCollections: (data) => !data.publish

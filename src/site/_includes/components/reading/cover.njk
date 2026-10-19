@@ -1,0 +1,17 @@
+{#- One book as a cover in a .cover-grid, shared by the Reading page shelf and
+    the Books page. `post` is a book post or a Hardcover book shaped like one
+    (bookItem in .eleventy.js). reading: true adds the "Reading" label. The
+    title is in the link's title and the image's alt text rather than shown. #}
+{% macro bookCover(post, reading = false) %}
+{%- set thumb = post | cardImage %}
+<li{% if reading %} class="is-reading"{% endif %}>
+  <a href="{{ post.url }}" title="{{ post.data.title }}{% if reading %} — reading now{% if post.data.dateStarted %}, started {{ post.data.dateStarted | dayFormat }}{% endif %}{% endif %}">
+    {%- if reading %}<span class="cover-badge">Reading</span>{% endif %}
+    {%- if thumb %}
+    <img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>
+    {%- else %}
+    <span class="cover-placeholder">{{ post.data.title }}</span>
+    {%- endif %}
+  </a>
+</li>
+{%- endmacro %}

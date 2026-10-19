@@ -1,0 +1,197 @@
+{
+  "_generated": "by scripts/sync-hardcover.mjs — do not edit",
+  "books": [
+    {
+      "id": 318669,
+      "slug": "steal-like-an-artist",
+      "pageSlug": "steal-like-an-artist",
+      "title": "Steal Like an Artist",
+      "authors": [
+        "Austin Kleon"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-04-22",
+      "cover": "https://assets.hardcover.app/edition/30406906/f9795a41fc6e688ff97f5bffab3c82472ccead76.jpeg",
+      "url": "https://hardcover.app/books/steal-like-an-artist"
+    },
+    {
+      "id": 427578,
+      "slug": "project-hail-mary",
+      "pageSlug": "project-hail-mary",
+      "title": "Project Hail Mary",
+      "authors": [
+        "Andy Weir"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-04-22",
+      "cover": "https://assets.hardcover.app/editions/3274049/8741341047797682-91mYu67RfUL._SL1500_.jpg",
+      "url": "https://hardcover.app/books/project-hail-mary"
+    },
+    {
+      "id": 427798,
+      "slug": "the-hitchhikers-guide-to-the-galaxy",
+      "pageSlug": "the-hitchhikers-guide-to-the-galaxy",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "authors": [
+        "Douglas Adams"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-05-22",
+      "cover": "https://assets.hardcover.app/edition/21490281/d9b48333ac7a69ebe0aa5573fe0ff032e6f97508.jpeg",
+      "url": "https://hardcover.app/books/the-hitchhikers-guide-to-the-galaxy"
+    },
+    {
+      "id": 441886,
+      "slug": "the-word-for-world-is-forest",
+      "pageSlug": "the-word-for-world-is-forest",
+      "title": "The Word for World Is Forest",
+      "authors": [
+        "Ursula K. Le Guin"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-01-16",
+      "dateStarted": null,
+      "dateFinished": "2026-01-16",
+      "cover": "https://assets.hardcover.app/external_data/48546240/46c68f77957c1d44b63ac4417be290cfad35d207.jpeg",
+      "url": "https://hardcover.app/books/the-word-for-world-is-forest"
+    },
+    {
+      "id": 443212,
+      "slug": "less-is-more",
+      "pageSlug": "less-is-more",
+      "title": "Less is More: How Degrowth Will Save the World",
+      "authors": [
+        "Jason Hickel"
+      ],
+      "status": "read",
+      "rating": 4,
+      "dateAdded": "2026-10-11",
+      "dateStarted": "2026-10-11",
+      "dateFinished": "2026-10-18",
+      "cover": "https://assets.hardcover.app/edition/12733283/c05eff5c-1ada-4450-aa5b-eb21026cf7ca.jpg",
+      "url": "https://hardcover.app/books/less-is-more"
+    },
+    {
+      "id": 485481,
+      "slug": "dark-emu",
+      "pageSlug": "dark-emu",
+      "title": "Dark Emu",
+      "authors": [
+        "Bruce Pascoe"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-02-24",
+      "dateStarted": null,
+      "dateFinished": "2026-02-24",
+      "cover": "https://assets.hardcover.app/edition/30426665/78728779282bee84292a1c7a18f871cd2310022a.jpeg",
+      "url": "https://hardcover.app/books/dark-emu"
+    },
+    {
+      "id": 498097,
+      "slug": "i-who-have-never-known-men",
+      "pageSlug": "i-who-have-never-known-men",
+      "title": "I Who Have Never Known Men",
+      "authors": [
+        "Jacqueline Harpman"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-04-22",
+      "cover": "https://assets.hardcover.app/edition/30584481/30b8077a24fe1e99055ff4e2c9a0fc0f73104b4a.jpeg",
+      "url": "https://hardcover.app/books/i-who-have-never-known-men"
+    },
+    {
+      "id": 500080,
+      "slug": "games-agency-as-art",
+      "pageSlug": "games-agency-as-art",
+      "title": "Games",
+      "authors": [
+        "C. Thi Nguyen"
+      ],
+      "status": "reading",
+      "rating": null,
+      "dateAdded": "2026-10-11",
+      "dateStarted": "2026-10-11",
+      "dateFinished": null,
+      "cover": "https://assets.hardcover.app/edition/30449746/48765399._SX98_.jpg",
+      "url": "https://hardcover.app/books/games-agency-as-art"
+    },
+    {
+      "id": 641729,
+      "slug": "practising-simplicity",
+      "pageSlug": "practising-simplicity",
+      "title": "Practising Simplicity",
+      "authors": [
+        "Jodi Wilson"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-04-22",
+      "cover": "https://assets.hardcover.app/edition/30620200/58951070._SX98_.jpg",
+      "url": "https://hardcover.app/books/practising-simplicity"
+    },
+    {
+      "id": 881140,
+      "slug": "the-women-2024",
+      "pageSlug": "the-women-2024",
+      "title": "The Women",
+      "authors": [
+        "Kristin Hannah"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-04-22",
+      "cover": "https://assets.hardcover.app/external_data/60539568/4782256d471ce11f7f32411b1a2fbb6a75c53c11.jpeg",
+      "url": "https://hardcover.app/books/the-women-2024"
+    },
+    {
+      "id": 1561653,
+      "slug": "atmosphere-a-love-story",
+      "pageSlug": "atmosphere-a-love-story",
+      "title": "Atmosphere: A Love Story",
+      "authors": [
+        "Taylor Jenkins Reid"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-02-24",
+      "dateStarted": null,
+      "dateFinished": "2026-02-24",
+      "cover": "https://assets.hardcover.app/edition/31625541/d80d0f61-d2a6-488f-a93c-a5dfc5a32faa.jpg",
+      "url": "https://hardcover.app/books/atmosphere-a-love-story"
+    },
+    {
+      "id": 1892886,
+      "slug": "my-husbands-wife-2026",
+      "pageSlug": "my-husbands-wife-2026",
+      "title": "My Husband's Wife",
+      "authors": [
+        "Alice Feeney"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-04-22",
+      "dateStarted": null,
+      "dateFinished": "2026-05-22",
+      "cover": "https://assets.hardcover.app/edition/32034744/9cf8bfd20ae051c35f45ce75734bfd7049270d7f.jpeg",
+      "url": "https://hardcover.app/books/my-husbands-wife-2026"
+    }
+  ]
+}

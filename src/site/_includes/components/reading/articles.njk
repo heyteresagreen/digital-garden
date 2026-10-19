@@ -1,0 +1,15 @@
+{#- Saved articles: liked on Instapaper (src/site/_data/instapaper.json) #}
+{%- if instapaper and instapaper.items.length %}
+<section class="reading-section">
+  <h2>Saved articles</h2>
+  <ul class="article-list">
+    {%- for a in instapaper.items %}
+    <li>
+      <a href="{{ a.url }}">{{ a.title }}</a>
+      <span class="reading-meta">{{ a.site }}{% if a.date %} · {{ a.date | dayFormat }}{% endif %}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  <p class="reading-more"><a href="https://www.instapaper.com/p/teresawatts">More on Instapaper &rarr;</a></p>
+</section>
+{%- endif %}

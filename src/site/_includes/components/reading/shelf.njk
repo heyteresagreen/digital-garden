@@ -1,0 +1,14 @@
+{#- One row of books: what's being read now (up to 3, from Hardcover) first,
+    marked with a "Reading" label, then the most recent finished books (book
+    posts plus books marked read on Hardcover). shelfCount sets the total. #}
+{%- from "components/reading/cover.njk" import bookCover %}
+{%- set total = shelfCount or 6 %}
+{%- set current = "reading" | shelfCards | head(3) %}
+<section class="reading-section">
+  <h2>Books</h2>
+  <ul class="cover-grid">
+    {%- for book in current %}{{ bookCover(book, true) }}{% endfor %}
+    {%- for post in collections.completedBooks | head(total - current.length) %}{{ bookCover(post) }}{% endfor %}
+  </ul>
+  <p class="reading-more"><a href="/books/">This year's books &rarr;</a></p>
+</section>

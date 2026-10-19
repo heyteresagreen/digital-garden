@@ -5,7 +5,7 @@
 <li class="post-card{% if thumb %} has-thumb{% endif %}">
   {%- if thumb %}
   <a class="post-card-thumb" href="{{ post.url }}">
-    <img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy">
+    <img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>
   </a>
   {%- endif %}
   <div class="post-card-body">

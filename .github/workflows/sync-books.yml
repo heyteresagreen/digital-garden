@@ -1,0 +1,45 @@
+# Weekly reading data sync for the Reading page: books from Hardcover
+# (src/site/_data/hardcover-books.json) and liked articles from Instapaper
+# (src/site/_data/instapaper.json). Never touches notes. See "Reading page
+# data" in README.md.
+name: Sync reading data
+
+on:
+  schedule:
+    - cron: "0 22 * * 0" # Sundays 22:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Sync books from Hardcover
+        run: node scripts/sync-hardcover.mjs
+        env:
+          HARDCOVER_TOKEN: ${{ secrets.HARDCOVER_TOKEN }}
+
+      # Public profile data, no secret needed. Runs even if Hardcover failed,
+      # so one service being down doesn't hold up the other.
+      - name: Sync liked articles from Instapaper
+        if: ${{ !cancelled() }}
+        run: node scripts/sync-instapaper.mjs
+
+      - name: Commit if the reading data changed
+        if: ${{ !cancelled() }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898699+github-actions[bot]@users.noreply.github.com"
+          git add src/site/_data/hardcover-books.json src/site/_data/instapaper.json
+          git diff --staged --quiet || (git commit -m "Sync reading data" && git push)

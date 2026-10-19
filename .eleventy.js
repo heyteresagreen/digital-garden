@@ -26,6 +26,10 @@ const EXTRA_LINKS = {
   "now": "/now/",
   "posts": "/posts/",
   "sketchnotes": "/sketching/",
+  // Books became Reading: [[Books]] links in notes go to the Reading page.
+  // The full list is still at /books/ (linked from Reading as "All books").
+  "books": "/reading/",
+  "reading": "/reading/",
   "notes/notes": "/posts/"
 };
 const BUILTIN_LINKS = {
@@ -43,12 +47,14 @@ let linkMap = null;
 function noteUrl(data, fileSlug) {
   const slug = data.slug || slugify(fileSlug);
   const rawSection = Array.isArray(data.section) ? data.section[0] : data.section;
-  const section = SECTIONS.includes(rawSection) ? rawSection : "posts";
+  const section = SECTIONS.includes(rawSection) ? rawSection : data.hardcover ? "books" : "posts";
   return `/${section}/${slug}/`;
 }
 
-function buildLinkMap() {
-  const map = {};
+// Calls fn(data, rel, base) for every published note, reading frontmatter
+// straight off disk (shared by the wiki-link map and the Hardcover shelf,
+// which both need note URLs before Eleventy has built its collections).
+function eachPublishedNote(fn) {
   const walk = (dir) => {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
       const full = path.join(dir, entry.name);
@@ -58,16 +64,72 @@ function buildLinkMap() {
       try { data = matter(fs.readFileSync(full, "utf8")).data; } catch { continue; }
       if (!data.publish) continue;
       const rel = path.relative(NOTES_DIR, full).replace(/\.md$/, "");
-      const base = path.basename(rel);
-      const url = noteUrl(data, base);
-      map[rel.toLowerCase()] = url;
-      if (rel.toLowerCase().startsWith("website/")) map[rel.toLowerCase().slice(8)] = url;
-      map[base.toLowerCase()] = url;
-      if (data.title) map[String(data.title).toLowerCase()] = url;
+      fn(data, rel, path.basename(rel));
     }
   };
   if (fs.existsSync(NOTES_DIR)) walk(NOTES_DIR);
+}
+
+function buildLinkMap() {
+  const map = {};
+  eachPublishedNote((data, rel, base) => {
+    const url = noteUrl(data, base);
+    map[rel.toLowerCase()] = url;
+    if (rel.toLowerCase().startsWith("website/")) map[rel.toLowerCase().slice(8)] = url;
+    map[base.toLowerCase()] = url;
+    if (data.title) map[String(data.title).toLowerCase()] = url;
+  });
   return map;
+}
+
+/* ---------------------------------------------------------------
+   Hardcover bookshelf
+   src/site/_data/hardcover-books.json is written by scripts/sync-hardcover.mjs
+   (Hardcover owns it: status, rating, dates, cover). Notes stay Obsidian's:
+   a published note with `hardcover: <slug>` in its frontmatter becomes that
+   book's page; books without one get a generated page at /books/<slug>/.
+---------------------------------------------------------------- */
+const HARDCOVER_FILE = path.join(__dirname, "src/site/_data/hardcover-books.json");
+let shelf = null;
+
+function getShelf() {
+  if (shelf) return shelf;
+  let books = [];
+  try { books = JSON.parse(fs.readFileSync(HARDCOVER_FILE, "utf8")).books || []; } catch { /* no data yet */ }
+  const linked = {};
+  eachPublishedNote((data, rel, base) => {
+    if (data.hardcover) linked[String(data.hardcover)] = { url: noteUrl(data, base), title: data.title };
+  });
+  books = books.map((b) => {
+    const note = linked[b.slug];
+    // a linked note's own title wins over Hardcover's
+    return { ...b, noteTitle: note ? note.title : null, noteUrl: note ? note.url : null, pageUrl: note ? note.url : `/books/${b.pageSlug}/` };
+  });
+  shelf = {
+    books,
+    unlinked: books.filter((b) => !b.noteUrl),
+    bySlug: Object.fromEntries(books.map((b) => [b.slug, b]))
+  };
+  return shelf;
+}
+
+// "Title, Author" — the convention book review posts use for their titles.
+// A linked note's own title is used as-is.
+function bookTitle(b) {
+  if (!b) return "";
+  if (b.noteTitle) return b.noteTitle;
+  return b.authors && b.authors.length ? `${b.title}, ${b.authors.join(" & ")}` : b.title;
+}
+
+// A Hardcover book shaped like a collection item, so the same postCard
+// macro (and .book-list styles) render it exactly like a book review post.
+function bookItem(b) {
+  const date = new Date(b.dateFinished || b.dateStarted || b.dateAdded || 0);
+  return {
+    url: b.pageUrl,
+    date,
+    data: { title: bookTitle(b), date, dateStarted: b.dateStarted, imageUrl: b.cover, imageAlt: `Book cover of ${b.title}` }
+  };
 }
 
 function resolveWikiTarget(target) {
@@ -299,7 +361,7 @@ module.exports = function (eleventyConfig) {
     if (linkMap === null) linkMap = buildLinkMap();
     return replaceWikiSyntax(content);
   });
-  eleventyConfig.on("eleventy.before", () => { linkMap = null; });
+  eleventyConfig.on("eleventy.before", () => { linkMap = null; shelf = null; });
 
   // Passthrough copy
   eleventyConfig.addPassthroughCopy("src/site/img");
@@ -341,6 +403,38 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("allPosts", (api) => published(api));
+
+  // Books index "Completed" list: book posts, plus books marked read on
+  // Hardcover that have no note of their own. A note linked to a Hardcover
+  // book (`hardcover:`) only counts once Hardcover says it's read — until
+  // then it sits on the in-progress shelf instead.
+  eleventyConfig.addGlobalData("bookshelf", () => getShelf());
+  // Yearly round-up posts ("Books I've read in 2025") are in the books
+  // section but aren't single books, so the cover grids list them separately.
+  const isRoundup = (p) => /^books i['’]ve read in \d{4}/i.test(String(p.data.title || ""));
+  const inBooks = (p) => {
+    const s = p.data.section;
+    return Array.isArray(s) ? s.includes("books") : s === "books";
+  };
+  eleventyConfig.addCollection("bookRoundups", (api) => published(api).filter((p) => inBooks(p) && isRoundup(p)));
+  const completedBooks = (api) => {
+    const { books, bySlug } = getShelf();
+    const notes = published(api).filter((p) => {
+      if ((!inBooks(p) && !p.data.hardcover) || isRoundup(p)) return false;
+      const b = p.data.hardcover && bySlug[p.data.hardcover];
+      return !b || b.status === "read";
+    });
+    const extras = books.filter((b) => b.status === "read" && !b.noteUrl).map(bookItem);
+    return [...notes, ...extras].sort((a, b) => (b.data.date ? b.date : 0) - (a.data.date ? a.date : 0));
+  };
+  eleventyConfig.addCollection("completedBooks", completedBooks);
+  // The Books page: this year's finished books (by post date, or Hardcover
+  // finish date for books without a post). Earlier years are reached
+  // through the round-up posts. "This year" is the year of the build.
+  eleventyConfig.addCollection("booksThisYear", (api) => {
+    const year = new Date().getUTCFullYear();
+    return completedBooks(api).filter((p) => p.date instanceof Date && p.date.getUTCFullYear() === year);
+  });
 
   // Content snippets: notes with `snippet: <name>` embedded into templates
   eleventyConfig.addCollection("snippets", (api) =>
@@ -426,6 +520,9 @@ module.exports = function (eleventyConfig) {
   // only needs one field, not both.
   eleventyConfig.addFilter("cardImage", (post) => {
     if (!post || !post.data) return null;
+    // Remote (Hardcover) covers are hotlinked: `remote` tells postCard to
+    // mark the <img> eleventy:ignore so eleventy-img doesn't download it.
+    if (/^https?:/.test(post.data.imageUrl || "")) return { src: post.data.imageUrl, alt: post.data.imageAlt || "", remote: true };
     if (post.data.imageUrl) return { src: encodeURI(post.data.imageUrl), alt: post.data.imageAlt || "" };
     if (post.data.image) {
       if (String(post.data.image).startsWith("/")) return { src: post.data.image, alt: post.data.imageAlt || "" };
@@ -435,6 +532,9 @@ module.exports = function (eleventyConfig) {
       // again would double-encode it (%20 -> %2520).
       if (parsed) return { src: parsed.src, alt: post.data.imageAlt || parsed.alt };
     }
+    // A note linked to a Hardcover book falls back to Hardcover's cover
+    const book = post.data.hardcover && getShelf().bySlug[post.data.hardcover];
+    if (book && book.cover) return { src: book.cover, alt: `Book cover of ${book.title}`, remote: true };
     return null;
   });
 
@@ -472,6 +572,20 @@ module.exports = function (eleventyConfig) {
     return out;
   });
   eleventyConfig.on("eleventy.before", () => bodyImageCache.clear());
+
+  // Hardcover dates are plain YYYY-MM-DD strings, not Date objects
+  eleventyConfig.addFilter("dayFormat", (str) => {
+    if (!str) return "";
+    const d = DateTime.fromISO(String(str), { zone: "utc" });
+    return d.isValid ? d.toFormat("d LLLL yyyy") : String(str);
+  });
+
+  // Hardcover books with a given status, as postCard-ready items
+  eleventyConfig.addFilter("shelfCards", (status) =>
+    getShelf().books.filter((b) => b.status === status).map(bookItem).sort((a, b) => b.date - a.date)
+  );
+  eleventyConfig.addFilter("hardcoverBook", (slug) => getShelf().bySlug[String(slug)] || null);
+  eleventyConfig.addFilter("bookTitle", bookTitle);
 
   eleventyConfig.addFilter("head", (arr, n) => (n < 0 ? arr.slice(n) : arr.slice(0, n)));
 

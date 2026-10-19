@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
+{%- if hardcover %}{% set book = hardcover | hardcoverBook %}{% include "components/book-page.njk" %}{% else %}
 {%- set sectionKey = section | primarySection %}
 <article>
   <header>
@@ -32,3 +33,4 @@ layout: layouts/base.njk
   {%- endif %}
   {%- endif %}
 </article>
+{%- endif %}

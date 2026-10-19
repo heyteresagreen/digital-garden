@@ -1,0 +1,15 @@
+---
+# One page per Hardcover book that has no note of its own (see getShelf in
+# .eleventy.js). Once a published note says `hardcover: <slug>`, that note
+# becomes the book's page instead and this one stops being generated.
+layout: layouts/base.njk
+pagination:
+  data: bookshelf.unlinked
+  size: 1
+  alias: book
+permalink: "/books/{{ book.pageSlug }}/"
+eleventyComputed:
+  title: "{{ book | bookTitle }}"
+eleventyExcludeFromCollections: true
+---
+{% include "components/book-page.njk" %}

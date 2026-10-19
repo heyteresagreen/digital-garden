@@ -1,0 +1,41 @@
+{#- A book's page, in the same markup as a book review post (layouts/post.njk).
+    `book` is its Hardcover data (null if the slug isn't on Hardcover). Used by
+    post.njk for a note linked with `hardcover: <slug>` — `content` is the
+    note — and by hardcover-books.njk for a book with no note (no content). -#}
+{%- set sectionKey = section | primarySection %}
+<article>
+  <header>
+    <p class="section-label"><a href="/books/">&larr; Books</a></p>
+    <h1>{{ title or (book | bookTitle) }}</h1>
+    {%- if date %}
+    <time datetime="{{ page.date | isoDate }}">Published on {{ page.date | dateLong }}</time>
+    {%- elif book and book.dateFinished %}
+    <time datetime="{{ book.dateFinished }}">Finished on {{ book.dateFinished | dayFormat }}</time>
+    {%- elif book and book.dateStarted %}
+    <time datetime="{{ book.dateStarted }}">Started on {{ book.dateStarted | dayFormat }}</time>
+    {%- endif %}
+    {%- if tags and tags.length %}
+    <div class="header-tags">
+      {%- for tag in tags %}
+      <a class="tag" href="{{ tag | tagUrl }}">#{{ tag }}</a>
+      {%- endfor %}
+    </div>
+    {%- endif %}
+  </header>
+{#- A note that embeds its own cover keeps it; otherwise Hardcover's, hotlinked #}
+{%- if book and book.cover and not image and not imageUrl %}
+<img src="{{ book.cover }}" alt="Book cover of {{ book.title }}" width="200" loading="lazy" eleventy:ignore>
+{%- endif %}
+{{ content | safe }}
+  {%- if sectionKey and content %}
+  {%- set sectionPosts = collections[sectionKey] %}
+  {%- set newerPost = sectionPosts | getPreviousCollectionItem %}
+  {%- set olderPost = sectionPosts | getNextCollectionItem %}
+  {%- if newerPost or olderPost %}
+  <nav class="post-nav" aria-label="More in {{ sectionKey }}">
+    {%- if newerPost %}<a class="post-nav-prev" href="{{ newerPost.url }}">&larr; {{ newerPost.data.title }}</a>{% endif %}
+    {%- if olderPost %}<a class="post-nav-next" href="{{ olderPost.url }}">{{ olderPost.data.title }} &rarr;</a>{% endif %}
+  </nav>
+  {%- endif %}
+  {%- endif %}
+</article>

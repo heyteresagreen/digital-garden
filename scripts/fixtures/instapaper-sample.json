@@ -1,0 +1,11 @@
+{
+  "_comment": "SAMPLE DATA for testing without network (INSTAPAPER_FIXTURE=scripts/fixtures/instapaper-sample.json). Shape follows instapaper.com/data/profile/<user>; titles and links are placeholders.",
+  "user": { "username": "example" },
+  "page": 1,
+  "has_next": false,
+  "bookmarks": [
+    { "id": 1, "title": "Sample liked article (placeholder)", "url": "https://example.com/one", "author": "A. Writer", "description": "Placeholder excerpt.", "time": 1791157491, "liked": true, "private_source": "" },
+    { "id": 2, "title": "Sample newsletter from email (placeholder)", "url": "https://example.com/private", "author": "", "description": "", "time": 1791100000, "liked": true, "private_source": "email" },
+    { "id": 3, "title": "Sample unliked article (placeholder)", "url": "https://example.org/three", "author": "", "description": "", "time": 1791000000, "liked": false, "private_source": "" }
+  ]
+}
