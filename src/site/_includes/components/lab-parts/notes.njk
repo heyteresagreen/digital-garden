@@ -1,0 +1,11 @@
+{%- from "components/lab.njk" import book, more, envelope %}
+  <section class="lab-s">
+    <header class="lab-s-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+    <div class="lab-s-body">
+      <ul class="lab-b-notes">
+        {%- for post in collections.notes | head(6) %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>

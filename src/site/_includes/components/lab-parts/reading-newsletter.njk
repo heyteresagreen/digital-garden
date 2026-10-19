@@ -1,0 +1,25 @@
+{#- Lab: Reading and Newsletter side by side, half width each #}
+{%- from "components/lab.njk" import book, more, envelope %}
+  <section class="lab-s is-pair">
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+      <div class="lab-s-body">
+        <div class="lab-b-books">
+          {%- for b in "reading" | shelfCards | head(3) %}{{ book(b, "Now") }}{% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Newsletter</h2>{{ more("/letters/", "Past letters") }}</header>
+      <div class="lab-s-body lab-b-letter">
+        {%- set latest = collections.letters | first %}
+        <p class="lab-b-letter-latest">{{ envelope() }} Latest: <a href="{{ latest.url }}">{{ latest.data.title }}</a> — {{ latest | postExcerpt }}</p>
+        <p>Letters from me to you, delivered to your inbox very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+        <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-subscribe">
+          <label class="visually-hidden" for="bd-email">Your email</label>
+          <input type="email" name="email" id="bd-email" placeholder="you@example.com">
+          <input type="submit" value="Subscribe" class="btn">
+        </form>
+      </div>
+    </div>
+  </section>

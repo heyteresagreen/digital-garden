@@ -3,6 +3,7 @@ const path = require("path");
 const matter = require("gray-matter");
 const slugify = require("@sindresorhus/slugify");
 const { DateTime } = require("luxon");
+const { imageSize } = require("image-size");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
@@ -637,6 +638,34 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("withTag", (posts, tag) =>
     (posts || []).filter((p) => (p.data.tags || []).map((t) => String(t).toLowerCase()).includes(String(tag).toLowerCase()))
   );
+
+  // Keep (or drop) posts in any of the given sections — handles the list
+  // form of `section` too. Used by the homepage to mix/split collections.
+  const sectionsOf = (p) => [].concat(p.data.section || []);
+  eleventyConfig.addFilter("inSections", (posts, list) =>
+    (posts || []).filter((p) => sectionsOf(p).some((s) => list.includes(s)))
+  );
+  eleventyConfig.addFilter("notInSections", (posts, list) =>
+    (posts || []).filter((p) => !sectionsOf(p).some((s) => list.includes(s)))
+  );
+
+  // Width ÷ height of a local image, from its URL (which mirrors its path
+  // under src/site/). Lets galleries size each piece at its real shape
+  // instead of cropping. Phone photos stored rotated (EXIF orientation 5–8)
+  // have their sides swapped. Remote images or missing files → 1.
+  const ratioCache = new Map();
+  eleventyConfig.addFilter("imageRatio", (src) => {
+    if (!src || /^https?:/.test(src)) return 1;
+    if (ratioCache.has(src)) return ratioCache.get(src);
+    let ratio = 1;
+    try {
+      const { width, height, orientation } = imageSize(path.join(__dirname, "src/site", decodeURIComponent(src)));
+      ratio = orientation >= 5 ? height / width : width / height;
+    } catch { /* noop */ }
+    ratio = Math.round(ratio * 1000) / 1000;
+    ratioCache.set(src, ratio);
+    return ratio;
+  });
 
   eleventyConfig.setServerOptions({ showAllHosts: true });
 

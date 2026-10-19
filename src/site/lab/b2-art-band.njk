@@ -1,0 +1,60 @@
+---
+title: B2 · Art band
+---
+{#- B, with Making moved up to sit right under the intro as a big
+    gallery (newest two large, every piece at its real shape), then the quieter word sections. #}
+{%- from "components/lab.njk" import heroBig, streamItem, tile, book, more, envelope %}
+{%- set nowPage = null %}
+{%- for p in collections.all %}{% if p.url == "/now/" %}{% set nowPage = p %}{% endif %}{% endfor %}
+{{ heroBig(nowPage) }}
+
+<section class="lab-b-band lab-b2-making">
+  <header><h2 class="lab-h">Making</h2>{{ more("/art/", "All art") }}</header>
+  {%- set art = collections.allPosts | inSections(making) %}
+  <div class="lab-jrow is-tall">
+    {%- for post in art.slice(0, 2) %}{{ tile(post) }}{% endfor %}
+  </div>
+  {%- for row in art.slice(2, 8) | batch(3) %}
+  <div class="lab-jrow">
+    {%- for post in row %}{{ tile(post) }}{% endfor %}
+  </div>
+  {%- endfor %}
+</section>
+
+<section class="lab-b-band">
+  <header><h2 class="lab-h">Writing</h2>{{ more("/writing/", "All writing") }}</header>
+  <ul class="lab-b-writing">
+    {%- for post in collections.writing | notInSections(["letters"]) | head(3) %}
+    {{ streamItem(post) }}
+    {%- endfor %}
+  </ul>
+</section>
+
+<div class="lab-b-pair">
+  <section class="lab-b-band">
+    <header><h2 class="lab-h">Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+    <div class="lab-b-books">
+      {%- for b in "reading" | shelfCards | head(3) %}{{ book(b, "Now") }}{% endfor %}
+    </div>
+  </section>
+  <section class="lab-b-band lab-b-letter">
+    <header><h2 class="lab-h">Newsletter</h2></header>
+    {%- set latest = collections.letters | first %}
+    <p class="lab-b-letter-latest">{{ envelope() }} Latest: <a href="{{ latest.url }}">{{ latest.data.title }}</a>, {{ latest.date | dateFormat }}</p>
+    <p>Letters from me to you, delivered to your inbox very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-subscribe">
+      <label class="visually-hidden" for="bd-email">Your email</label>
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com">
+      <input type="submit" value="Subscribe" class="btn">
+    </form>
+  </section>
+</div>
+
+<section class="lab-b-band">
+  <header><h2 class="lab-h">Notes</h2>{{ more("/notes/", "The garden") }}</header>
+  <ul class="lab-b-notes">
+    {%- for post in collections.notes | head(5) %}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>

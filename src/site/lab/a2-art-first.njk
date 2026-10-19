@@ -1,0 +1,51 @@
+---
+title: A2 · Art first
+---
+{#- A, flipped: art gets the wide column (a featured piece, then a grid),
+    words move to the narrow side column with the current book. #}
+{%- from "components/lab.njk" import heroBig, streamItem, tile, book, more %}
+{%- set nowPage = null %}
+{%- for p in collections.all %}{% if p.url == "/now/" %}{% set nowPage = p %}{% endif %}{% endfor %}
+{%- set art = collections.allPosts | inSections(making) %}
+{{ heroBig(nowPage) }}
+
+{%- set feat = art | first %}{% set ft = feat | cardImageAny %}
+<section class="lab-feature">
+  <a class="lab-feature-img" href="{{ feat.url }}"><img src="{{ ft.src }}" alt="{{ ft.alt or feat.data.title }}"></a>
+  <div class="lab-feature-cap">
+    <time class="lab-date">{{ feat.date | dateFormat }} · Latest art</time>
+    <a class="lab-title" href="{{ feat.url }}">{{ feat.data.title }}</a>
+    <p class="lab-excerpt">{{ feat | postExcerpt }}</p>
+    <a class="lab-more" href="{{ feat.url }}">See it &rarr;</a>
+  </div>
+</section>
+
+<div class="lab-a2-cols">
+  <section>
+    <header class="lab-row"><h2 class="lab-h">Making</h2>{{ more("/art/", "All art") }}</header>
+    {%- for row in art.slice(1, 7) | batch(2) %}
+    <div class="lab-jrow">
+      {%- for post in row %}{{ tile(post) }}{% endfor %}
+    </div>
+    {%- endfor %}
+  </section>
+
+  <aside class="lab-a2-side">
+    <section>
+      <h2 class="lab-h">Latest posts</h2>
+      <ul class="lab-stream is-compact">
+        {%- for post in collections.allPosts | notInSections(making.concat(["books"])) | head(5) %}
+        {{ streamItem(post) }}
+        {%- endfor %}
+      </ul>
+      {{ more("/posts/", "Everything") }}
+    </section>
+    <section>
+      <h2 class="lab-h">Reading</h2>
+      {%- for b in "reading" | shelfCards | head(2) %}
+      {{ book(b, "Reading now") }}
+      {%- endfor %}
+      {{ more("/reading/", "Bookshelf") }}
+    </section>
+  </aside>
+</div>

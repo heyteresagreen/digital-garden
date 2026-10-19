@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} — homepage lab</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
+  <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
+</head>
+<body class="lab lab-{{ page.fileSlug }}">
+  <nav class="lab-nav" aria-label="Main">
+    <a class="lab-logo" href="/"><img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}"></a>
+    <ul>
+      {%- for item in labNav %}
+      <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  <main class="lab-main">
+{{ content | safe }}
+  </main>
+  {% include "components/footer.njk" %}
+  <div class="lab-switcher" aria-label="Layout variants">
+    <a href="/">Current</a>
+    {%- for v in labVariants %}
+    <a href="/lab/{{ v.slug }}/"{% if v.slug == page.fileSlug %} aria-current="page"{% endif %}>{{ v.label }}</a>
+    {%- endfor %}
+    <button type="button" class="lab-switcher-hide" aria-label="Hide the layout switcher">&times;</button>
+  </div>
+  <button type="button" class="lab-switcher-show" aria-label="Show the layout switcher">Layouts</button>
+  <script>
+    // lab only: hide/show the switcher, remembered in this browser
+    (function () {
+      var key = "lab-switcher-hidden";
+      function set(hidden) {
+        document.body.classList.toggle("lab-switcher-off", hidden);
+        try { hidden ? localStorage.setItem(key, "1") : localStorage.removeItem(key); } catch (e) {}
+      }
+      try { if (localStorage.getItem(key)) document.body.classList.add("lab-switcher-off"); } catch (e) {}
+      document.querySelector(".lab-switcher-hide").addEventListener("click", function () { set(true); });
+      document.querySelector(".lab-switcher-show").addEventListener("click", function () { set(false); });
+    })();
+  </script>
+</body>
+</html>

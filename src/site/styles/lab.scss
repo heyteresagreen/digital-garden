@@ -1,0 +1,682 @@
+/* ============================================================
+   Homepage lab — styles for the layout experiments in src/site/lab/
+   (dev-only pages). Only uses the tokens from _tokens.scss, so
+   whichever variant wins can move into _components.scss as-is.
+   ============================================================ */
+
+$wide: 980px;
+$narrow: 640px;
+
+.lab {
+  --lab-max: #{$wide};
+  &.lab-d-timeline { --lab-max: #{$narrow}; }
+  padding-bottom: 5rem; // room for the switcher
+}
+
+.lab a { color: var(--color-secondary); text-decoration-thickness: 0.05em; text-underline-offset: 0.15em; }
+.lab a:hover { background: var(--color-accent); }
+
+.lab-main {
+  min-width: 0;
+  overflow-wrap: break-word;
+  max-width: var(--lab-max);
+  margin: 0 auto 4rem;
+  font-size: 1.15rem;
+}
+.lab footer { max-width: var(--lab-max) !important; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* ---------- nav: logo left, links right (wraps under on mobile) ---------- */
+.lab-nav {
+  max-width: var(--lab-max);
+  margin: 1.25rem auto 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 2rem;
+  font-family: var(--font-family-sans-serif);
+  .lab-logo { width: 160px; &:hover { background: none; } img { margin: 0; } }
+  ul { display: flex; flex-wrap: wrap; gap: 0.25rem 1.4rem; list-style: none; margin: 0; padding: 0; min-width: 0; }
+  @media (max-width: 600px) { ul { flex-basis: 100%; gap: 0.25rem 1rem; } }
+  li { margin: 0; }
+  a {
+    color: var(--color-text);
+    text-decoration: none;
+    &:hover { background: none; color: var(--color-secondary); box-shadow: inset 0 -0.25em 0 var(--color-primary); }
+  }
+}
+
+/* ---------- shared bits ---------- */
+.lab-h {
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-text);
+  margin: 0 0 1.25rem;
+  padding: 0;
+  // hand-drawn-ish underline, like the sketch's squiggle
+  &::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 6px;
+    margin-top: 0.4rem;
+    background: radial-gradient(circle at 3px 0, transparent 2.5px, var(--color-primary) 3px, var(--color-primary) 4px, transparent 4.5px) 0 0 / 6px 6px repeat-x;
+  }
+}
+
+.lab-hero {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 1rem 0 4rem;
+  h1 { font-weight: 400; margin-bottom: 0.75rem; }
+  p { font-size: 1.15em; margin: 0; max-width: 34em; }
+  .lab-portrait { width: 190px; flex-shrink: 0; margin: 0; }
+  &.is-compact {
+    margin-bottom: 3rem;
+    .lab-portrait { width: 120px; }
+    p { font-size: 1em; }
+  }
+  @media (max-width: 600px) {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 1rem;
+    .lab-portrait { width: 130px; }
+  }
+}
+
+.lab-date {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0 0 0.2rem;
+  opacity: 0.85;
+}
+
+.lab-stream { list-style: none; padding: 0; margin: 0; }
+.lab-item {
+  margin: 0 0 2.25rem;
+  .lab-title { display: block; font-size: 1.45em; line-height: 1.2; text-decoration: none; margin-bottom: 0.5rem; }
+  .lab-title:hover { background: none; text-decoration: underline; }
+  .lab-excerpt { font-size: 0.9em; margin: 0.5rem 0 0; }
+  .lab-thumb { display: block; margin: 0.75rem 0; &:hover { background: none; } }
+  .lab-thumb img { margin: 0; width: 100%; max-height: 340px; object-fit: cover; }
+  &.is-writing .lab-thumb img, &.is-note .lab-thumb img { max-height: 220px; }
+  // art keeps its real shape; tall pieces are capped by height instead of cropped
+  &.is-making .lab-thumb img { max-height: 640px; width: auto; max-width: 100%; object-fit: contain; }
+}
+
+// a letter: a light row — envelope in a pink circle, title, subject line
+.lab-letter {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-text) !important;
+  > .lab-envelope { width: 2.6rem; height: 2.6rem; padding: 0.55rem; box-sizing: border-box; border-radius: 50%; background: var(--color-accent); }
+  strong { color: var(--color-secondary); font-weight: 500; font-size: 1.15em; }
+  .lab-excerpt { display: inline; margin: 0; &::before { content: " — "; } }
+  &:hover { background: none !important; strong { text-decoration: underline; } }
+  + .lab-date { margin: 0.3rem 0 0 3.5rem; }
+}
+.lab-item.is-letter { margin-bottom: 1.75rem; }
+.lab-envelope { width: 2rem; height: 2rem; flex-shrink: 0; color: var(--color-secondary); }
+
+.lab-tile {
+  display: block;
+  margin-bottom: 1.5rem;
+  text-decoration: none;
+  img { margin: 0; width: 100%; height: auto; transition: transform 200ms; } // real shape, never cropped
+  span { display: block; font-size: 0.85em; margin-top: 0.35rem; }
+  &:hover { background: none; img { transform: translateY(-3px); } }
+}
+
+.lab-book {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  img, .lab-book-blank {
+    width: 90px; flex-shrink: 0; margin: 0;
+    aspect-ratio: 2 / 3; object-fit: cover;
+    border-radius: 2px; box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2);
+  }
+  .lab-book-text { font-size: 0.9em; line-height: 1.35; }
+  em { display: block; font-style: normal; font-family: var(--font-family-sans-serif); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text); margin-bottom: 0.3rem; }
+  &:hover { background: none; }
+}
+
+.lab-more {
+  display: inline-block;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+}
+
+.lab-button {
+  display: inline-block;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.55rem 1.1rem;
+  border: 1.5px solid var(--color-secondary);
+  border-radius: 999px;
+  &:hover { background: var(--color-secondary) !important; color: white !important; }
+}
+
+/* ---------- A · Wireframe ---------- */
+.lab-a-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 4rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+}
+.lab-a-side section { margin-bottom: 3rem; }
+
+/* ---------- B · Sections ---------- */
+.lab-b-band {
+  margin-bottom: 3.5rem;
+  > header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    border-top: 1px dashed rgba(0, 0, 0, 0.12);
+    padding-top: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+}
+.lab-b-writing {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); gap: 2rem;
+  .lab-item { margin: 0; }
+  .lab-title { font-size: 1.2em; }
+  .lab-thumb img { aspect-ratio: 3 / 2; max-height: none; }
+}
+.lab-b-pair {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 3rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 0; }
+}
+.lab-b-books {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem;
+  .lab-book { flex-direction: column; gap: 0.5rem; img, .lab-book-blank { width: 100%; } .lab-book-text { font-size: 0.75em; } }
+}
+.lab-b-letter {
+  p { font-size: 0.95em; margin-bottom: 1rem; }
+  .lab-envelope { display: inline-block; vertical-align: middle; width: 1.5rem; height: 1.5rem; margin-right: 0.25rem; }
+}
+.lab-b-letter-latest { font-family: var(--font-family-sans-serif); font-size: 0.85rem !important; }
+.lab-subscribe {
+  display: flex; gap: 0.5rem; margin: 0 !important; padding-bottom: 0 !important;
+  input[type=email] {
+    flex: 1; min-width: 0; padding: 0.5rem 0.75rem; font: inherit; font-size: 0.95rem;
+    border: 1.5px solid var(--color-primary); border-radius: var(--border-radius); background: white;
+  }
+  .btn { margin: 0; }
+}
+.lab-b-notes {
+  columns: 2 220px; column-gap: 3rem; padding-left: 1.1rem; margin: 0.5rem 0;
+  li { margin-bottom: 0.5rem; break-inside: avoid; }
+}
+
+/* ---------- C · Bento ---------- */
+.lab-c-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 200px;
+  grid-auto-flow: dense;
+  gap: 1rem;
+  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 520px) { grid-template-columns: minmax(0, 1fr); grid-auto-rows: auto; }
+}
+.lab-c-tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background: white;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--color-text) !important;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  transition: transform 200ms;
+  p { font-size: 0.9em; margin: 0.4rem 0 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  strong { display: block; color: var(--color-secondary); font-weight: 500; font-size: 1.25em; line-height: 1.2; }
+}
+a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
+.lab-c-kicker {
+  display: block;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+}
+.lab-c-hello {
+  grid-column: span 2; grid-row: span 2;
+  background: transparent; box-shadow: none; padding: 0.5rem 1rem 0 0;
+  .lab-portrait { width: 150px; margin: 0 0 1rem; }
+  h1 { font-weight: 400; }
+  p { font-size: 1.15em; -webkit-line-clamp: unset; }
+  @media (max-width: 520px) { grid-column: auto; grid-row: auto; }
+}
+.lab-c-big { grid-column: span 2; grid-row: span 2; @media (max-width: 520px) { grid-column: auto; grid-row: auto; } }
+.lab-c-image {
+  padding: 0;
+  img { width: 100%; height: 100%; object-fit: cover; margin: 0; border-radius: 0; }
+  @media (max-width: 520px) { aspect-ratio: 4 / 3; }
+}
+.lab-c-label {
+  position: absolute; left: 0.6rem; bottom: 0.6rem; right: 0.6rem;
+  width: fit-content;
+  font-family: var(--font-family-sans-serif); font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.9); padding: 0.25rem 0.5rem; border-radius: 4px;
+}
+.lab-c-now { background: var(--color-secondary); color: white !important; grid-column: span 2; p { font-size: 1em; -webkit-line-clamp: 5; } @media (max-width: 520px) { grid-column: auto; } }
+.lab-c-letter {
+  background: var(--color-accent);
+  .lab-envelope { position: absolute; top: 1rem; right: 1rem; }
+}
+.lab-c-reading {
+  grid-row: span 2;
+  display: flex; flex-direction: column;
+  .lab-c-covers { display: flex; flex-direction: column; gap: 0.6rem; flex: 1; }
+  .lab-c-covers a { display: flex; &:hover { background: none; } }
+  .lab-c-covers img { height: 96px; width: auto; margin: 0; border-radius: 2px; box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2); }
+  .lab-c-foot { font-family: var(--font-family-sans-serif); font-size: 0.8rem; color: var(--color-secondary) !important; }
+  @media (max-width: 520px) { grid-row: auto; .lab-c-covers { flex-direction: row; } }
+}
+.lab-c-writing { grid-column: span 2; @media (max-width: 520px) { grid-column: auto; } }
+.lab-c-all { text-align: center; margin-top: 2.5rem; }
+
+/* ---------- D · Timeline ---------- */
+.lab-d-reading {
+  font-size: 0.95em;
+  padding: 0.9rem 1.1rem;
+  border: 1.5px dashed var(--color-primary);
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+}
+.lab-d-month {
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--color-text);
+  display: flex; align-items: center; gap: 0.75rem;
+  margin: 3rem 0 1.5rem;
+  &::after { content: ""; flex: 1; border-top: 1px dashed rgba(0, 0, 0, 0.15); }
+}
+.lab-d-feed {
+  .lab-item.is-book {
+    // books: compact, with the cover floated beside the title
+    font-size: 0.9em;
+    display: flow-root;
+    .lab-title { font-size: 1.15em; }
+    .lab-cover { float: left; margin: 0 1rem 0.5rem 0; &:hover { background: none; } }
+    .lab-cover img { width: 64px; margin: 0; border-radius: 2px; box-shadow: 3px 2px 2px rgba(0, 0, 0, 0.2); }
+  }
+}
+
+
+/* ---------- roomier intro (A2, B2) ---------- */
+.lab-hero-big {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  align-items: center;
+  gap: 3.5rem;
+  padding: 3.5rem 0 5.5rem;
+  .lab-portrait { width: 100%; margin: 0; }
+  h1 { font-weight: 400; font-size: 3.4rem; margin-bottom: 1rem; }
+  .lab-hero-lede { font-size: 1.55em; line-height: 1.45; margin: 0 0 1.5rem; max-width: 26em; }
+  .lab-hero-now {
+    font-size: 1em; margin: 0 0 1.5rem; max-width: 34em;
+    padding-left: 1rem; border-left: 3px solid var(--color-primary);
+    a { text-decoration: none; display: block; }
+    span { font-family: var(--font-family-sans-serif); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; }
+  }
+  .lab-hero-links { margin: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; font-family: var(--font-family-sans-serif); font-size: 0.9rem; }
+  @media (max-width: 760px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding: 1rem 0 3.5rem;
+    .lab-portrait { width: 170px; }
+    h1 { font-size: 2.6rem; }
+    .lab-hero-lede { font-size: 1.3em; }
+  }
+}
+
+.lab-row { display: flex; justify-content: space-between; align-items: baseline; }
+
+/* ---------- A2 · Art first ---------- */
+.lab-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 4.5rem;
+  .lab-feature-img { display: block; &:hover { background: none; img { transform: translateY(-3px); } } }
+  img { width: 100%; max-height: 560px; object-fit: contain; margin: 0; border-radius: 6px; transition: transform 200ms; }
+  .lab-title { display: block; font-size: 2em; line-height: 1.15; text-decoration: none; margin: 0.25rem 0 0.75rem; }
+  .lab-excerpt { font-size: 1em; margin: 0 0 1rem; }
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+}
+.lab-a2-cols {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 4rem;
+  @media (max-width: 860px) { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+}
+.lab-a2-side section { margin-bottom: 3rem; }
+.lab-stream.is-compact {
+  .lab-item { margin-bottom: 1.4rem; }
+  .lab-title { font-size: 1.1em; }
+  .lab-letter { gap: 0.7rem; strong { font-size: 1em; } > .lab-envelope { width: 2.1rem; height: 2.1rem; padding: 0.45rem; } }
+  .lab-letter + .lab-date { margin-left: 2.8rem; }
+  .lab-excerpt { font-size: 0.85em; }
+}
+
+/* ---------- justified art rows (A, A2, B, B2) ----------
+   Each tile grows in proportion to its image's width÷height (--r, set by
+   the imageRatio filter), so every piece in a row ends up the same height
+   with nothing cropped. */
+.lab-jrow {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  align-items: flex-start;
+  .lab-tile { flex: var(--r, 1) 1 0; min-width: 0; margin: 0; }
+  // phones: let a row wrap. Basis and grow are both proportional to --r,
+  // so each wrapped line still shares one height (~130px)
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    .lab-tile { flex: var(--r, 1) 1 calc(var(--r, 1) * 130px); }
+  }
+}
+.lab-b2-making .lab-jrow {
+  gap: 1rem;
+  .lab-tile { position: relative; }
+  .lab-tile span {
+    position: absolute; left: 0.5rem; bottom: 0.5rem; margin: 0;
+    font-family: var(--font-family-sans-serif); font-size: 0.75rem;
+    background: rgba(255, 255, 255, 0.92); padding: 0.2rem 0.5rem; border-radius: 4px;
+    opacity: 0; transition: opacity 200ms;
+  }
+  .lab-tile:hover span, .lab-tile:focus span { opacity: 1; }
+  &.is-tall .lab-tile span { opacity: 1; font-size: 0.85rem; }
+  @media (max-width: 600px) { .lab-tile span { opacity: 1; } }
+}
+
+
+/* ---------- B3 · smaller intro, more air ---------- */
+.lab-hero-mid {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5.5rem 0 7rem;
+  .lab-portrait { width: 100%; margin: 0; }
+  h1 { font-weight: 400; font-size: 2.4rem; margin-bottom: 0.6rem; }
+  p { font-size: 1.15em; margin: 0; }
+  @media (max-width: 600px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 2.5rem 0 4.5rem;
+    .lab-portrait { width: 140px; }
+  }
+}
+.lab-b3-books {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  @media (max-width: 700px) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ---------- B3 · sections ---------- */
+.lab-s { padding: 2.5rem 0 3rem; }
+.lab-s-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  margin-bottom: 1.5rem;
+  h2 {
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--color-text); margin: 0; padding: 0;
+  }
+}
+
+// a solid pink hairline between sections
+.lab-s + .lab-s { border-top: 1px solid var(--color-primary); }
+
+/* ---------- B3/B4 · paired sections (half and half) ---------- */
+.lab-s.is-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3.5rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
+}
+// art gets a touch more than half
+.lab-s.is-art-pair { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); } }
+
+// B4: compact writing list — title + two-line excerpt, small thumb right
+.lab-wlist {
+  list-style: none; padding: 0; margin: 0;
+  li {
+    display: flex; gap: 1rem; align-items: flex-start;
+    margin: 0; padding: 0 0 1.1rem; margin-bottom: 1.1rem;
+    border-bottom: 1px solid var(--color-primary);
+    &:last-child { border-bottom: 0; margin-bottom: 0; }
+  }
+  .lab-wlist-text {
+    flex: 1; min-width: 0; text-decoration: none; color: var(--color-text) !important;
+    &:hover { background: none; strong { text-decoration: underline; } }
+  }
+  strong { display: block; font-weight: 400; font-size: 1.15em; line-height: 1.25; color: var(--color-secondary); margin-bottom: 0.25rem; }
+  span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; font-size: 0.85em; line-height: 1.5; }
+  .lab-wlist-thumb { flex-shrink: 0; &:hover { background: none; } }
+  .lab-wlist-thumb img { width: 84px; height: 84px; object-fit: cover; margin: 0; }
+}
+
+/* ---------- E · Magazine (after psyche.co) ---------- */
+.lab-e-magazine {
+  --lab-max: 1120px;
+  // logo and links clustered together in the centre
+  .lab-nav { justify-content: center; gap: 0.75rem 2.5rem; }
+}
+
+.lab-e-tag {
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+  color: #e0806b; // --color-primary darkened enough to read as text
+  margin: 0 0 0.4rem;
+}
+.lab-e-tag a {
+  color: inherit !important; text-decoration: none;
+  &:hover { background: none; text-decoration: underline; }
+}
+.lab-e-date { display: block; font-family: var(--font-family-sans-serif); font-size: 0.7rem; margin-top: 0.6rem; opacity: 0.75; }
+
+// cards
+.lab-e-card {
+  margin: 0;
+  .lab-e-img { display: block; overflow: hidden; margin-bottom: 0.9rem; &:hover { background: none; } }
+  .lab-e-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; display: block; transition: transform 300ms; }
+  .lab-e-img:hover img { transform: scale(1.03); }
+  h3 { font-family: var(--font-family); font-weight: 400; font-size: 1.15em; line-height: 1.25; margin: 0; padding: 0; }
+  h3 a { color: var(--color-secondary); text-decoration: none; &:hover { text-decoration: underline; background: none; } }
+  .lab-e-excerpt { font-size: 0.85em; line-height: 1.5; margin: 0.5rem 0 0; }
+}
+
+// a row that keeps every image's real shape: each card grows in proportion
+// to its --r (width÷height), so the images all end up the same height.
+// Stacks on phones, where each image just runs full width.
+.lab-e-ratio-row {
+  display: flex; align-items: flex-start; gap: 2.5rem;
+  > .lab-e-card { flex: var(--r, 1) 1 0; min-width: 0; }
+  .lab-e-img img { aspect-ratio: auto; object-fit: initial; height: auto; }
+  &.is-four { gap: 1.25rem; }
+  @media (max-width: 760px) {
+    flex-direction: column; gap: 2rem;
+    > .lab-e-card { flex: none; width: 100%; }
+  }
+}
+// E's top: making as two rows of big pairs
+.lab-e-top {
+  padding: 0 0 3rem;
+  h3 { font-size: 1.45em; }
+}
+// E's Making title: a link, hidden until the page is scrolled, then fades
+// in (only when JS is running — .lab-js — so it's never lost without it)
+.lab-e-head h2 a { color: inherit !important; text-decoration: none; &:hover { background: none; text-decoration: underline; } }
+.lab-js .lab-e-reveal {
+  opacity: 0; transform: translateY(10px);
+  transition: opacity 700ms ease, transform 700ms ease;
+  &.is-shown { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) { transform: none; transition: opacity 300ms; }
+}
+
+// E's writing band: three columns of compact cards, small image beside the text
+.lab-e-wgrid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 2.5rem;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 600px) { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .is-compact {
+    display: flex; gap: 1rem; align-items: flex-start;
+    .lab-e-img { flex: 0 0 110px; margin: 0; }
+    .lab-e-img img { aspect-ratio: 1; }
+    .lab-e-text { min-width: 0; }
+    .lab-e-excerpt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  }
+}
+
+// two uneven stories side by side, small (4:3) + wide (16:9) — B3's Writing
+.lab-e-two {
+  .is-small .lab-e-img img { aspect-ratio: 4 / 3; }
+  .is-wide .lab-e-img img { aspect-ratio: 16 / 9; }
+  .is-small h3, .is-wide h3 { font-size: 1.45em; }
+}
+.lab-e-two {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 3rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+}
+
+// full-width bands; the tinted ones bleed to the window edges
+.lab-e-band {
+  padding: 3.5rem 0 4rem;
+  &.is-tint {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 0 100vmax rgba(255, 255, 255, 0.6);
+    clip-path: inset(0 -100vmax);
+  }
+}
+.lab-e-head {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+  margin-bottom: 1.75rem;
+  h2 { font-family: var(--font-family); font-weight: 400; font-size: 2rem; color: var(--color-text); margin: 0; padding: 0; }
+  .lab-more { font-size: 0.75rem; }
+}
+.lab-e-notes {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 2rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); }
+  li { margin: 0; padding: 1rem 0; border-top: 1px solid var(--color-primary); }
+  .lab-e-tag { display: block; }
+  // one column (B3's half-width Notes)
+  &.is-list { grid-template-columns: minmax(0, 1fr); li:first-child { border-top: 0; padding-top: 0; } }
+  a { text-decoration: none; font-size: 1.05em; &:hover { text-decoration: underline; background: none; } }
+}
+
+// E's Reading: covers only, a fixed size, left-aligned
+.lab-e-covers {
+  display: flex; flex-wrap: wrap; gap: 1.25rem;
+  a { display: block; width: 110px; text-decoration: none; &:hover { background: none; img { transform: translateY(-3px); } } }
+  img, .lab-e-cover-blank {
+    width: 100%; aspect-ratio: 2 / 3; object-fit: cover; margin: 0; display: block;
+    border-radius: 2px; box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.18); transition: transform 200ms;
+  }
+  .lab-e-cover-blank { background: var(--color-accent); padding: 0.75rem; box-sizing: border-box; font-size: 0.8em; line-height: 1.3; }
+}
+
+// a B3-style section sitting inside a band (E's Reading + Notes)
+.lab-e-band > .lab-s { padding: 0; }
+
+// closing newsletter band, in the site's pink (E, B3)
+.lab-e-band.is-letter {
+  text-align: center;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 100vmax var(--color-accent);
+  clip-path: inset(0 -100vmax);
+  h2 { font-family: var(--font-family); font-weight: 400; font-size: 2rem; margin: 0 0 0.5rem; padding: 0; }
+  p { max-width: 34em; margin: 0 auto 1.5rem; font-size: 0.95em; }
+}
+.lab-e-subscribe {
+  // undo the site-wide blue form box
+  background: none !important; color: inherit; padding: 0 !important; border-radius: 0; margin: 0 auto !important;
+  display: flex; justify-content: center; gap: 0.5rem; max-width: 420px;
+  input[type=email] { flex: 1; min-width: 0; padding: 0.6rem 0.9rem; font: inherit; font-size: 0.9rem; border: 1px solid var(--color-primary); border-radius: 0; background: white; }
+  button {
+    border: 0; cursor: pointer; padding: 0.6rem 1.2rem;
+    font-family: var(--font-family-sans-serif); font-size: 0.85rem;
+    background: var(--color-secondary); color: white;
+    &:hover { opacity: 0.9; }
+  }
+}
+
+// two-column version (E): sign-up left, recent letters right
+.lab-e-band.is-letter.is-split {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4rem; align-items: start;
+  text-align: left; padding: 3rem 0;
+  h2 { font-size: 1.75rem; }
+  p { margin: 0 0 1.25rem; }
+  .lab-e-subscribe { margin: 0 !important; justify-content: flex-start; }
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; }
+}
+.lab-e-past {
+  ul { list-style: none; padding: 0; margin: 0.6rem 0 1rem; }
+  li { margin: 0; padding: 0.7rem 0; border-top: 1px solid var(--color-primary); &:first-child { border-top: 0; padding-top: 0; } }
+  li a {
+    display: flex; gap: 0.75rem; align-items: center; text-decoration: none; color: var(--color-text);
+    &:hover { background: none; strong { text-decoration: underline; } }
+  }
+  .lab-envelope { width: 2rem; height: 2rem; padding: 0.4rem; flex-shrink: 0; border-radius: 50%; background: white; color: var(--color-secondary); }
+  strong { font-weight: 400; color: var(--color-secondary); }
+  .lab-e-past-excerpt { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.8em; line-height: 1.4; }
+  .lab-e-past-text { min-width: 0; flex: 1; }
+  .lab-e-past-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+  .lab-e-date { margin: 0; flex-shrink: 0; }
+}
+// beat the band's own `p` size so the label matches the others
+.lab-e-band .lab-e-past .lab-e-tag { font-size: 0.65rem; margin: 0; }
+
+/* ---------- variant switcher (lab only) ---------- */
+.lab-switcher {
+  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%);
+  display: flex; gap: 0.25rem; flex-wrap: nowrap; overflow-x: auto; max-width: calc(100vw - 2rem);
+  padding: 0.35rem; border-radius: 999px;
+  background: var(--color-text); box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-family-sans-serif); font-size: 0.8rem;
+  a { color: white !important; text-decoration: none; padding: 0.35rem 0.8rem; border-radius: 999px; white-space: nowrap; }
+  a:hover { background: rgba(255, 255, 255, 0.15) !important; }
+  a[aria-current] { background: var(--color-primary) !important; color: var(--color-text) !important; }
+}
+.lab-switcher-hide {
+  border: 0; background: none; color: white; cursor: pointer;
+  font-size: 1.1rem; line-height: 1; padding: 0.2rem 0.6rem; border-radius: 999px;
+  &:hover { background: rgba(255, 255, 255, 0.15); }
+}
+// once hidden: just a small tab in the corner to bring it back
+.lab-switcher-show {
+  display: none;
+  position: fixed; right: 1rem; bottom: 1rem;
+  border: 0; cursor: pointer; padding: 0.3rem 0.7rem; border-radius: 999px;
+  background: var(--color-text); color: white; opacity: 0.35;
+  font-family: var(--font-family-sans-serif); font-size: 0.7rem;
+  &:hover, &:focus { opacity: 1; }
+}
+.lab-switcher-off {
+  .lab-switcher { display: none; }
+  .lab-switcher-show { display: block; }
+}

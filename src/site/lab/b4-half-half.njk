@@ -1,0 +1,42 @@
+---
+title: B4 · Half and half
+---
+{#- B3 with Making and Writing side by side: art (rows of two, real
+    shapes) on the left, a compact writing list on the right. Then the
+    same Reading + Newsletter pair and Notes. #}
+{%- from "components/lab.njk" import tile, more %}
+{%- include "components/lab-parts/hero.njk" %}
+
+<div class="lab-sections">
+  <section class="lab-s is-pair is-art-pair">
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Making</h2>{{ more("/art/", "All art") }}</header>
+      <div class="lab-s-body">
+        {%- for row in collections.allPosts | inSections(making) | head(6) | batch(2) %}
+        <div class="lab-jrow">
+          {%- for post in row %}{{ tile(post, false) }}{% endfor %}
+        </div>
+        {%- endfor %}
+      </div>
+    </div>
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Writing</h2>{{ more("/writing/", "All writing") }}</header>
+      <ul class="lab-s-body lab-wlist">
+        {%- for post in collections.writing | notInSections(["letters"]) | head(5) %}
+        {%- set thumb = post | cardImageAny %}
+        <li>
+          <a class="lab-wlist-text" href="{{ post.url }}">
+            <time class="lab-date">{{ post.date | dateFormat }}</time>
+            <strong>{{ post.data.title }}</strong>
+            <span>{{ post | postExcerpt }}</span>
+          </a>
+          {%- if thumb %}<a class="lab-wlist-thumb" href="{{ post.url }}" tabindex="-1"><img src="{{ thumb.src }}" alt="" loading="lazy"></a>{% endif %}
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+
+{% include "components/lab-parts/reading-newsletter.njk" %}
+{% include "components/lab-parts/notes.njk" %}
+</div>

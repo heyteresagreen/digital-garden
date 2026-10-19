@@ -1,0 +1,26 @@
+---js
+{
+  layout: "layouts/index.njk",
+  title: "Making",
+  contentClass: "wide",
+  // Everything made by hand, in one list: art, sketching (sketchnotes live
+  // there too), sketchbooks and crafts (no crafts section yet; it'll show up
+  // here once there is one). allPosts is already newest first.
+  pagination: {
+    data: "collections.allPosts",
+    size: 12,
+    generatePageOnEmptyData: true,
+    before: (posts) => {
+      const making = ["art", "sketching", "sketchbooks", "crafts"];
+      return posts.filter((p) => [].concat(p.data.section || []).some((s) => making.includes(s)));
+    }
+  },
+  permalink: (data) => `/making/${data.pagination.pageNumber > 0 ? `page/${data.pagination.pageNumber + 1}/` : ""}`,
+  showImages: true,
+  showSections: true,
+  hideExcerpts: true,
+  listClass: "art-grid",
+  eleventyExcludeFromCollections: true
+}
+---
+<p class="index-intro">Things I've made, sketched or painted: <a href="/art/">art</a>, <a href="/sketching/">sketches and sketchnotes</a>, and pages from my <a href="/sketchbooks/">sketchbooks</a>.</p>

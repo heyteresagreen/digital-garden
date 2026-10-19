@@ -1,0 +1,87 @@
+---
+title: E · Magazine
+---
+{#- After psyche.co, converging with B3: B3's nav and intro, then making
+    as two rows of big pairs under a "Making" title that fades in on scroll, writing in its own band with small images,
+    Reading + Notes side by side (as on B3), and a two-column newsletter
+    band that also lists recent letters. Art is never cropped: each card in
+    a row grows in proportion to its image's width÷height (--r), so a row
+    shares one height and every image keeps its real shape. #}
+{%- from "components/lab.njk" import more, storyCard as card %}
+
+{#- making here = art, sketching (sketchnotes live there too), sketchbooks
+    and crafts (no crafts section yet; it'll be picked up once there is one) #}
+{%- set eMaking = ["art", "sketching", "sketchbooks", "crafts"] %}
+
+{#- the big pairs: the four newest pieces with a picture, newest first #}
+{%- set arts = [] %}
+{%- for post in collections.allPosts | inSections(eMaking) %}
+  {%- if arts.length < 4 and (post | cardImageAny) %}{% set arts = (arts.push(post), arts) %}{% endif %}
+{%- endfor %}
+
+{%- include "components/lab-parts/hero.njk" %}
+
+{#- the Making title stays hidden until you start scrolling, then fades in
+    (script at the bottom; without JS it's simply there) #}
+<script>document.documentElement.classList.add("lab-js");</script>
+<header class="lab-e-head lab-e-reveal"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
+{%- for pair in arts | batch(2) %}
+<section class="lab-e-top lab-e-ratio-row">
+  {%- for post in pair %}{{ card(post, "", true) }}{% endfor %}
+</section>
+{%- endfor %}
+
+{#- writing: its own band, small images (a pasted screenshot shows as text
+    only), each labelled with its first tag rather than "Writing" every time #}
+<section class="lab-e-band is-tint">
+  <header class="lab-e-head"><h2>Writing</h2>{{ more("/writing/", "View all") }}</header>
+  <div class="lab-e-wgrid">
+    {%- for post in collections.writing | notInSections(["letters"]) | head(3) %}
+    {%- set t = post | cardImageAny %}
+    {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), true) }}
+    {%- endfor %}
+  </div>
+</section>
+
+{#- Reading and Notes side by side, as on B3 #}
+<section class="lab-e-band">
+  <div class="lab-s is-pair">
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+      <div class="lab-s-body">
+        {#- covers only, side by side and left-aligned, so one or two books
+            look as settled as three; the title is in the alt text and tooltip #}
+        <div class="lab-e-covers">
+          {%- for b in "reading" | shelfCards | head(3) %}
+          {%- set thumb = b | cardImage %}
+          <a href="{{ b.url }}" title="{{ b.data.title }}">
+            {%- if thumb %}<img src="{{ thumb.src }}" alt="{{ b.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="lab-e-cover-blank">{{ b.data.title }}</span>{% endif -%}
+          </a>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+      <ul class="lab-s-body lab-e-notes is-list">
+        {%- for post in collections.notes | head(5) %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{%- set pastLetters = true %}
+{% include "components/lab-parts/letter-band.njk" %}
+
+<script>
+  // lab only: fade the Making title in once the page has been scrolled a little
+  (function () {
+    var el = document.querySelector(".lab-e-reveal");
+    if (!el) return;
+    function show() { el.classList.add("is-shown"); window.removeEventListener("scroll", onScroll); }
+    function onScroll() { if (window.scrollY > 40) show(); }
+    if (window.scrollY > 40) show(); else window.addEventListener("scroll", onScroll, { passive: true });
+  })();
+</script>

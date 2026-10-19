@@ -1,0 +1,35 @@
+{#- Lab: closing newsletter band, full-width pink (E, B3).
+    Set pastLetters = true before including it for the two-column version:
+    sign-up on the left, the three latest letters + archive link right (E). #}
+{%- from "components/lab.njk" import more, envelope %}
+{%- set latest = collections.letters | first %}
+<section class="lab-e-band is-letter{% if pastLetters %} is-split{% endif %}">
+  <div class="lab-e-letter-main">
+    <h2>Get my letters</h2>
+    <p>Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.{% if not pastLetters %} Latest: <a href="{{ latest.url }}">{{ latest.data.title }}</a>{% endif %}</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
+      <label class="visually-hidden" for="bd-email">Your email</label>
+      <input type="email" name="email" id="bd-email" placeholder="Enter email address">
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+  {%- if pastLetters %}
+  <div class="lab-e-past">
+    <p class="lab-e-tag">Recent letters</p>
+    <ul>
+      {%- for letter in collections.letters | head(3) %}
+      <li>
+        <a href="{{ letter.url }}">
+          {{ envelope() }}
+          <span class="lab-e-past-text">
+            <span class="lab-e-past-head"><strong>{{ letter.data.title }}</strong><time class="lab-e-date">{{ letter.date | dateFormat }}</time></span>
+            <span class="lab-e-past-excerpt">{{ letter | postExcerpt }}</span>
+          </span>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+    {{ more("/letters/", "Read all past letters") }}
+  </div>
+  {%- endif %}
+</section>

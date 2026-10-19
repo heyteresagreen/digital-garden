@@ -85,12 +85,13 @@ footer {
   // --color-text changes (see _tokens.scss)
   color: #71707e;
   padding-top: 2em;
-  border-top: 1px solid var(--color-accent);
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
   font-family: var(--font-family-sans-serif);
   clear: both;
+  position: relative; // anchors the scissors below
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.75em 1.5em;
   // match the content column's width so the divider lines up with it
@@ -100,6 +101,19 @@ footer {
   }
   body:has(.homepage) & {
     max-width: 640px;
+  }
+  // "cut here" scissors sitting on the divider's left end, blades
+  // pointing along the line
+  &::before {
+    content: "✁";
+    position: absolute;
+    top: -4px;
+    left: 50%;
+    transform: translateY(-52%);
+    font-size: 1.6em;
+    line-height: 1;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+    pointer-events: none;
   }
   .footer-home {
     margin-right: 0.5em;
@@ -125,16 +139,18 @@ footer {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 0.75em 1.5em;
     li {
       margin: 0;
     }
   }
-  // on mobile, socials always get their own line below About / Now / RSS
+  // socials: icon-only, pushed to the right edge (stays right if it wraps)
   .footer-social {
-    @media (max-width: 719px) {
-      flex-basis: 100%;
+    margin-left: auto;
+    gap: 0.75em 1em;
+    svg {
+      width: 1.4em;
+      height: 1.4em;
     }
   }
 }

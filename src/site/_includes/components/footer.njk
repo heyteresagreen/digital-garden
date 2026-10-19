@@ -8,12 +8,17 @@
 } %}
 <footer>
   <a class="footer-home" href="/"><img src="/favicon.png" alt="{{ site.title }} — home" width="64" height="64"></a>
-  {#- site links first, then external profiles as their own group, so the
-      socials wrap onto a line together on narrow screens #}
+  {#- site links on the left, external profiles as their own group pushed
+      to the right #}
   {%- for group in [{ external: false, label: "More" }, { external: true, label: "Elsewhere" }] %}
   <ul class="footer-links{% if group.external %} footer-social{% endif %}" aria-label="{{ group.label }}">
     {%- for item in site.footer %}{% if item.url and ("://" in item.url) == group.external %}
+    {#- socials are icon-only; the label moves to aria-label/title -#}
+    {%- if group.external and item.icon %}
+    <li><a href="{{ item.url }}" rel="me noopener" aria-label="{{ item.label }}" title="{{ item.label }}">{{ icons[item.icon] | safe }}</a></li>
+    {%- else %}
     <li><a href="{{ item.url }}"{% if group.external %} rel="me noopener"{% endif %}>{% if item.icon %}{{ icons[item.icon] | safe }}{% endif %}{{ item.label }}</a></li>
+    {%- endif %}
     {%- endif %}{% endfor %}
   </ul>
   {%- endfor %}

@@ -1,0 +1,54 @@
+---
+title: B · Sections
+---
+{#- A shelf per nav item, so the homepage doubles as a table of contents:
+    Writing, Making, Reading + Newsletter side by side, then Notes. #}
+{%- from "components/lab.njk" import hero, streamItem, tile, book, more, envelope %}
+{{ hero(true) }}
+
+<section class="lab-b-band">
+  <header><h2 class="lab-h">Writing</h2>{{ more("/writing/", "All writing") }}</header>
+  <ul class="lab-b-writing">
+    {%- for post in collections.writing | notInSections(["letters"]) | head(3) %}
+    {{ streamItem(post) }}
+    {%- endfor %}
+  </ul>
+</section>
+
+<section class="lab-b-band">
+  <header><h2 class="lab-h">Making</h2>{{ more("/art/", "All art") }}</header>
+  {%- for row in collections.allPosts | inSections(making) | head(8) | batch(4) %}
+  <div class="lab-jrow">
+    {%- for post in row %}{{ tile(post, false) }}{% endfor %}
+  </div>
+  {%- endfor %}
+</section>
+
+<div class="lab-b-pair">
+  <section class="lab-b-band">
+    <header><h2 class="lab-h">Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+    <div class="lab-b-books">
+      {%- for b in "reading" | shelfCards | head(3) %}{{ book(b, "Now") }}{% endfor %}
+    </div>
+  </section>
+  <section class="lab-b-band lab-b-letter">
+    <header><h2 class="lab-h">Newsletter</h2></header>
+    {%- set latest = collections.letters | first %}
+    <p class="lab-b-letter-latest">{{ envelope() }} Latest: <a href="{{ latest.url }}">{{ latest.data.title }}</a>, {{ latest.date | dateFormat }}</p>
+    <p>Letters from me to you, delivered to your inbox very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-subscribe">
+      <label class="visually-hidden" for="bd-email">Your email</label>
+      <input type="email" name="email" id="bd-email" placeholder="you@example.com">
+      <input type="submit" value="Subscribe" class="btn">
+    </form>
+  </section>
+</div>
+
+<section class="lab-b-band">
+  <header><h2 class="lab-h">Notes</h2>{{ more("/notes/", "The garden") }}</header>
+  <ul class="lab-b-notes">
+    {%- for post in collections.notes | head(5) %}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor %}
+  </ul>
+</section>

@@ -1,0 +1,71 @@
+---
+title: C · Bento
+---
+{#- "Lately": one tile per thing going on, each pulled live from its
+    collection — the homepage as a little /now dashboard. #}
+{%- from "components/lab.njk" import envelope %}
+{%- set art = collections.allPosts | inSections(["art", "sketching"]) %}
+{%- set writingPost = collections.writing | notInSections(["letters"]) | first %}
+{%- set letter = collections.letters | first %}
+{%- set sketchbook = collections.sketchbooks | first %}
+{%- set reading = "reading" | shelfCards %}
+{%- set nowPage = null %}
+{%- for p in collections.all %}{% if p.url == "/now/" %}{% set nowPage = p %}{% endif %}{% endfor %}
+
+<div class="lab-c-grid">
+  <section class="lab-c-tile lab-c-hello">
+    <img class="lab-portrait" src="/img/user/assets/portraitv2.png" alt="Illustrated self-portrait of Teresa Watts">
+    <h1>Hi there!</h1>
+    <p>I’m a UX designer &amp; artist, who sometimes writes, makes art, sketches and other fun things.</p>
+  </section>
+
+  {%- set a = art | first %}{% set t = a | cardImageAny %}
+  <a class="lab-c-tile lab-c-image lab-c-big" href="{{ a.url }}">
+    <img src="{{ t.src }}" alt="{{ t.alt or a.data.title }}">
+    <span class="lab-c-label">Latest art · {{ a.data.title }}</span>
+  </a>
+
+  {%- if nowPage %}
+  <a class="lab-c-tile lab-c-now" href="/now/">
+    <span class="lab-c-kicker">Now{% if nowPage.data.updated %} · {{ nowPage.data.updated | dayFormat }}{% endif %}</span>
+    <p>{{ nowPage | postExcerpt }}</p>
+  </a>
+  {%- endif %}
+
+  <section class="lab-c-tile lab-c-reading">
+    <span class="lab-c-kicker">Reading now</span>
+    <div class="lab-c-covers">
+      {%- for b in reading | head(3) %}{% set c = b | cardImage %}
+      <a href="{{ b.url }}" title="{{ b.data.title }}"><img src="{{ c.src }}" alt="{{ c.alt }}" eleventy:ignore></a>
+      {%- endfor %}
+    </div>
+    <a class="lab-c-foot" href="/books/">{{ collections.booksThisYear.length }} books finished this year &rarr;</a>
+  </section>
+
+  <a class="lab-c-tile lab-c-letter" href="{{ letter.url }}">
+    {{ envelope() }}
+    <span class="lab-c-kicker">Newsletter</span>
+    <strong>{{ letter.data.title }}</strong>
+    <p>{{ letter | postExcerpt }}</p>
+  </a>
+
+  <a class="lab-c-tile lab-c-writing" href="{{ writingPost.url }}">
+    <span class="lab-c-kicker">Writing · {{ writingPost.date | dateFormat }}</span>
+    <strong>{{ writingPost.data.title }}</strong>
+    <p>{{ writingPost | postExcerpt }}</p>
+  </a>
+
+  {%- set st = sketchbook | cardImageAny %}
+  <a class="lab-c-tile lab-c-image" href="{{ sketchbook.url }}">
+    <img src="{{ st.src }}" alt="{{ st.alt or sketchbook.data.title }}">
+    <span class="lab-c-label">{{ sketchbook.data.title }} · {{ collections.sketchbooks.length }} filled</span>
+  </a>
+
+  {%- for p in art.slice(1, 5) %}{% set pt = p | cardImageAny %}
+  <a class="lab-c-tile lab-c-image" href="{{ p.url }}">
+    <img src="{{ pt.src }}" alt="{{ pt.alt or p.data.title }}">
+    <span class="lab-c-label">{{ p.data.title }}</span>
+  </a>
+  {%- endfor %}
+</div>
+<p class="lab-c-all"><a class="lab-button" href="/posts/">Everything, newest first &rarr;</a></p>

@@ -1,0 +1,59 @@
+---
+title: B3 · Separators
+---
+{#- B2, refined: a smaller intro with more air around it (Now stays a link,
+    not a quote), art in rows of four. Writing is two uneven story cards
+    (from E), Reading + Notes side by side, and the newsletter closes the
+    page as a pink band. Sections are split by a thin solid pink rule. #}
+{%- from "components/lab.njk" import tile, book, more, storyCard %}
+{%- include "components/lab-parts/hero.njk" %}
+
+{#- the two newest pieces of writing with a real picture
+    (pasted screenshots don't make good cards) #}
+{%- set pictured = [] %}
+{%- for post in collections.writing | notInSections(["letters"]) %}
+  {%- set thumb = post | cardImageAny %}
+  {%- if pictured.length < 2 and thumb and not ("Pasted" in thumb.src) %}{% set pictured = (pictured.push(post), pictured) %}{% endif %}
+{%- endfor %}
+
+<div class="lab-sections">
+  <section class="lab-s">
+    <header class="lab-s-head"><h2>Making</h2>{{ more("/art/", "All art") }}</header>
+    <div class="lab-s-body">
+      {%- for row in collections.allPosts | inSections(making) | head(8) | batch(4) %}
+      <div class="lab-jrow">
+        {%- for post in row %}{{ tile(post, false) }}{% endfor %}
+      </div>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <section class="lab-s">
+    <header class="lab-s-head"><h2>Writing</h2>{{ more("/writing/", "All writing") }}</header>
+    <div class="lab-s-body lab-e-two">
+      {%- if pictured[0] %}{{ storyCard(pictured[0], "is-small", true) }}{% endif %}
+      {%- if pictured[1] %}{{ storyCard(pictured[1], "is-wide", true) }}{% endif %}
+    </div>
+  </section>
+
+  <section class="lab-s is-pair">
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+      <div class="lab-s-body">
+        <div class="lab-b-books">
+          {%- for b in "reading" | shelfCards | head(3) %}{{ book(b, "Now") }}{% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="lab-sub">
+      <header class="lab-s-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+      <ul class="lab-s-body lab-e-notes is-list">
+        {%- for post in collections.notes | head(5) %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </section>
+</div>
+
+{% include "components/lab-parts/letter-band.njk" %}
