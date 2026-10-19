@@ -2,7 +2,12 @@
   <a id="logo" class="internal-link" href="/"><img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}"></a>
   <ul id="topnav">
     {%- for item in site.nav %}
-    {%- set isActive = page.url == item.url or (item.url != "/" and page.url and page.url.startsWith(item.url)) %}
+    {#- active on the page itself, anything under it, and any extra paths
+        listed in `also` (Making covers art, sketching and sketchbooks) #}
+    {%- set isActive = false %}
+    {%- for prefix in [item.url].concat(item.also or []) %}
+    {%- if page.url and (page.url == prefix or (prefix != "/" and page.url.startsWith(prefix))) %}{% set isActive = true %}{% endif %}
+    {%- endfor %}
     <li><a href="{{ item.url }}"{% if isActive %} class="active" aria-current="page"{% endif %}>{{ item.label }}</a></li>
     {%- endfor %}
   </ul>

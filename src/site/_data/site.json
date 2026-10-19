@@ -9,7 +9,7 @@
         "alt": "Teresa Watts — home"
     },
     "nav": [
-        { "label": "Making", "url": "/making/" },
+        { "label": "Making", "url": "/making/", "also": ["/art/", "/sketching/", "/sketchbooks/"] },
         { "label": "Writing", "url": "/writing/" },
         { "label": "Letters", "url": "/letters/" },
         { "label": "About", "url": "/about/" }

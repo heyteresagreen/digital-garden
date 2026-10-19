@@ -16,16 +16,7 @@
   <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
 </head>
 <body class="lab lab-home">
-  {#- the lab's nav markup (logo, links clustered in the centre) with the
-      real site nav from site.json #}
-  <nav class="lab-nav" aria-label="Main">
-    <a class="lab-logo" href="/"><img src="{{ site.logo.src }}" alt="{{ site.logo.alt }}"></a>
-    <ul>
-      {%- for item in site.nav %}
-      <li><a href="{{ item.url }}">{{ item.label }}</a></li>
-      {%- endfor %}
-    </ul>
-  </nav>
+  {% include "components/nav.njk" %}
   <main class="lab-main">
 {{ content | safe }}
   </main>
