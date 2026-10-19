@@ -2,6 +2,71 @@
   "_generated": "by scripts/sync-hardcover.mjs — do not edit",
   "books": [
     {
+      "id": 7236,
+      "slug": "the-artists-way",
+      "pageSlug": "the-artists-way",
+      "title": "The Artist's Way: A Spiritual Path to Higher Creativity",
+      "authors": [
+        "Julia Cameron"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2022-08-26",
+      "dateStarted": "2022-08-26",
+      "dateFinished": "2022-08-26",
+      "cover": "https://assets.hardcover.app/edition/30406895/aaf905c8a55789b6beb8fd8b433495fff2875525.jpeg",
+      "url": "https://hardcover.app/books/the-artists-way"
+    },
+    {
+      "id": 67395,
+      "slug": "baby-led-weaning",
+      "pageSlug": "baby-led-weaning",
+      "title": "Baby-led Weaning: Helping Your Baby To Love Good Food",
+      "authors": [
+        "Gill Rapley",
+        "Tracey Murkett"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2019-10-04",
+      "dateStarted": "2019-10-04",
+      "dateFinished": "2019-10-04",
+      "cover": "https://assets.hardcover.app/external_data/3497781/a9823331a04328dd66cfe21da38d8d34d5345f37.jpeg",
+      "url": "https://hardcover.app/books/baby-led-weaning"
+    },
+    {
+      "id": 206342,
+      "slug": "in-praise-of-shadows",
+      "pageSlug": "in-praise-of-shadows",
+      "title": "In Praise of Shadows",
+      "authors": [
+        "Jun'ichirō Tanizaki"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-05-08",
+      "dateStarted": "2024-05-08",
+      "dateFinished": "2024-05-08",
+      "cover": "https://assets.hardcover.app/external_data/41583475/6299fd0d1815e69643b3bc6f5ca571236596a910.jpeg",
+      "url": "https://hardcover.app/books/in-praise-of-shadows"
+    },
+    {
+      "id": 266607,
+      "slug": "klara-and-the-sun",
+      "pageSlug": "klara-and-the-sun",
+      "title": "Klara and the Sun",
+      "authors": [
+        "Kazuo Ishiguro"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-01-19",
+      "dateStarted": "2023-01-19",
+      "dateFinished": "2023-01-19",
+      "cover": "https://assets.hardcover.app/edition/30399733/66fac4de-272a-40e1-a4e6-32693d78f936.jpg",
+      "url": "https://hardcover.app/books/klara-and-the-sun"
+    },
+    {
       "id": 318669,
       "slug": "steal-like-an-artist",
       "pageSlug": "steal-like-an-artist",
@@ -16,6 +81,22 @@
       "dateFinished": "2026-04-22",
       "cover": "https://assets.hardcover.app/edition/30406906/f9795a41fc6e688ff97f5bffab3c82472ccead76.jpeg",
       "url": "https://hardcover.app/books/steal-like-an-artist"
+    },
+    {
+      "id": 337236,
+      "slug": "the-alchemist",
+      "pageSlug": "the-alchemist",
+      "title": "The Alchemist",
+      "authors": [
+        "Paulo Coelho"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2022-09-27",
+      "dateStarted": "2022-09-27",
+      "dateFinished": "2022-09-27",
+      "cover": "https://assets.hardcover.app/editions/30399646/6724991536065856.jpg",
+      "url": "https://hardcover.app/books/the-alchemist"
     },
     {
       "id": 347190,
@@ -34,6 +115,102 @@
       "url": "https://hardcover.app/books/the-complete-robot"
     },
     {
+      "id": 374328,
+      "slug": "brave-new-world",
+      "pageSlug": "brave-new-world",
+      "title": "Brave New World",
+      "authors": [
+        "Aldous Huxley"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2022-11-23",
+      "dateStarted": "2022-11-23",
+      "dateFinished": "2022-11-23",
+      "cover": "https://assets.hardcover.app/edition/3299811/3e542fb1d6aed92c0f4e9cd0ac9b2f6892ca97a3.jpeg",
+      "url": "https://hardcover.app/books/brave-new-world"
+    },
+    {
+      "id": 375938,
+      "slug": "fahrenheit-451",
+      "pageSlug": "fahrenheit-451",
+      "title": "Fahrenheit 451",
+      "authors": [
+        "Ray Bradbury"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2025-11-26",
+      "dateStarted": "2025-11-26",
+      "dateFinished": "2025-11-26",
+      "cover": "https://assets.hardcover.app/edition/6336191/3d353406f14fd36043a8bdfb8c3288f90ee4f96c.jpeg",
+      "url": "https://hardcover.app/books/fahrenheit-451"
+    },
+    {
+      "id": 379619,
+      "slug": "the-city-of-brass",
+      "pageSlug": "the-city-of-brass",
+      "title": "The City of Brass",
+      "authors": [
+        "S. A. Chakraborty"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-07-07",
+      "dateStarted": "2023-07-07",
+      "dateFinished": "2023-07-07",
+      "cover": "https://assets.hardcover.app/edition/30400336/3e426305-0273-4007-ad29-55d686eed763.jpg",
+      "url": "https://hardcover.app/books/the-city-of-brass"
+    },
+    {
+      "id": 427444,
+      "slug": "four-thousand-weeks-time-and-how-to-use-it-2021",
+      "pageSlug": "four-thousand-weeks-time-and-how-to-use-it-2021",
+      "title": "Four Thousand Weeks: Time and How to Use It",
+      "authors": [
+        "Oliver Burkeman"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2022-10-14",
+      "dateStarted": "2022-10-14",
+      "dateFinished": "2022-10-14",
+      "cover": "https://assets.hardcover.app/edition/30455079/b336540f0267efbbd708b24934817f227d660666.jpeg",
+      "url": "https://hardcover.app/books/four-thousand-weeks-time-and-how-to-use-it-2021"
+    },
+    {
+      "id": 427537,
+      "slug": "artificial-condition",
+      "pageSlug": "artificial-condition",
+      "title": "Artificial Condition",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-10-02",
+      "dateStarted": "2023-10-02",
+      "dateFinished": "2023-10-02",
+      "cover": "https://assets.hardcover.app/external_data/43328916/fa176120b21cfbaafcd9a26fe6f4252433a53f1f.jpeg",
+      "url": "https://hardcover.app/books/artificial-condition"
+    },
+    {
+      "id": 427560,
+      "slug": "rogue-protocol",
+      "pageSlug": "rogue-protocol",
+      "title": "Rogue Protocol",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-12-22",
+      "dateStarted": "2023-12-22",
+      "dateFinished": "2023-12-22",
+      "cover": "https://assets.hardcover.app/book_mappings/7332654/d29ec327867b45eaa6838d359475917d6e9cabbc.jpeg",
+      "url": "https://hardcover.app/books/rogue-protocol"
+    },
+    {
       "id": 427578,
       "slug": "project-hail-mary",
       "pageSlug": "project-hail-mary",
@@ -50,6 +227,23 @@
       "url": "https://hardcover.app/books/project-hail-mary"
     },
     {
+      "id": 427624,
+      "slug": "designing-your-life",
+      "pageSlug": "designing-your-life",
+      "title": "Designing Your Life: How to Build a Well-Lived, Joyful Life",
+      "authors": [
+        "Bill Burnett",
+        "Dave Evans"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2025-02-20",
+      "dateStarted": "2025-02-20",
+      "dateFinished": "2025-02-20",
+      "cover": "https://assets.hardcover.app/external_data/24955354/943e984f3f20d96224cfafc22e662046ad08b302.jpeg",
+      "url": "https://hardcover.app/books/designing-your-life"
+    },
+    {
       "id": 427798,
       "slug": "the-hitchhikers-guide-to-the-galaxy",
       "pageSlug": "the-hitchhikers-guide-to-the-galaxy",
@@ -64,6 +258,184 @@
       "dateFinished": "2026-05-22",
       "cover": "https://assets.hardcover.app/edition/21490281/d9b48333ac7a69ebe0aa5573fe0ff032e6f97508.jpeg",
       "url": "https://hardcover.app/books/the-hitchhikers-guide-to-the-galaxy"
+    },
+    {
+      "id": 427917,
+      "slug": "the-testaments",
+      "pageSlug": "the-testaments",
+      "title": "The Testaments",
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-10-19",
+      "dateStarted": "2026-04-18",
+      "dateFinished": "2026-04-18",
+      "cover": "https://assets.hardcover.app/external_data/61890236/42b53df0e91682f7485d9bb84a5a52951ce6b593.jpeg",
+      "url": "https://hardcover.app/books/the-testaments"
+    },
+    {
+      "id": 427971,
+      "slug": "all-systems-red",
+      "pageSlug": "all-systems-red",
+      "title": "All Systems Red",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-09-25",
+      "dateStarted": "2023-09-25",
+      "dateFinished": "2023-09-25",
+      "cover": "https://assets.hardcover.app/edition/31608045/3c51e2999ec8dc7e94fdd569d083d45f2d46dd3b.jpeg",
+      "url": "https://hardcover.app/books/all-systems-red"
+    },
+    {
+      "id": 428295,
+      "slug": "the-paper-menagerie-and-other-stories",
+      "pageSlug": "the-paper-menagerie-and-other-stories",
+      "title": "The Paper Menagerie and Other Stories",
+      "authors": [
+        "Ken Liu"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2025-07-26",
+      "dateStarted": "2025-07-26",
+      "dateFinished": "2025-07-26",
+      "cover": "https://assets.hardcover.app/book_mappings/7333263/cd28a33edacc7b0f4c6fdb8ef54b62a7833343a4.jpeg",
+      "url": "https://hardcover.app/books/the-paper-menagerie-and-other-stories"
+    },
+    {
+      "id": 430000,
+      "slug": "the-phoenix-project",
+      "pageSlug": "the-phoenix-project",
+      "title": "The Phoenix Project: A Novel About IT, DevOps, and Helping Your Business Win",
+      "authors": [
+        "Gene Kim",
+        "Kevin Behr",
+        "George Spafford"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-05-07",
+      "dateStarted": "2026-05-07",
+      "dateFinished": "2026-05-07",
+      "cover": "https://assets.hardcover.app/editions/30403884/1666172632471852.jpg",
+      "url": "https://hardcover.app/books/the-phoenix-project"
+    },
+    {
+      "id": 430937,
+      "slug": "the-penelopiad",
+      "pageSlug": "the-penelopiad",
+      "title": "The Penelopiad",
+      "authors": [
+        "Margaret Atwood"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2021-12-24",
+      "dateStarted": "2021-12-24",
+      "dateFinished": "2021-12-24",
+      "cover": "https://assets.hardcover.app/external_data/60913190/217ec2c5cb7a220e1721ebc67f1175ce6c9069f4.jpeg",
+      "url": "https://hardcover.app/books/the-penelopiad"
+    },
+    {
+      "id": 432107,
+      "slug": "american-dirt",
+      "pageSlug": "american-dirt",
+      "title": "American Dirt",
+      "authors": [
+        "Jeanine Cummins"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2025-08-13",
+      "dateStarted": "2025-08-13",
+      "dateFinished": "2025-08-13",
+      "cover": "https://assets.hardcover.app/edition/30401770/7295a9d6721db0d754b9aa8ad5554ac97adcf9af.jpeg",
+      "url": "https://hardcover.app/books/american-dirt"
+    },
+    {
+      "id": 432448,
+      "slug": "exit-strategy",
+      "pageSlug": "exit-strategy",
+      "title": "Exit Strategy",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-01-22",
+      "dateStarted": "2024-01-22",
+      "dateFinished": "2024-01-22",
+      "cover": "https://assets.hardcover.app/external_data/28317885/6d679483b8d3f62ce170e56ef2b82b3997eadea9.jpeg",
+      "url": "https://hardcover.app/books/exit-strategy"
+    },
+    {
+      "id": 435167,
+      "slug": "fugitive-telemetry",
+      "pageSlug": "fugitive-telemetry",
+      "title": "Fugitive Telemetry",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-12-27",
+      "dateStarted": "2024-12-27",
+      "dateFinished": "2024-12-27",
+      "cover": "https://assets.hardcover.app/book_mappings/7333079/1dd5f1cc67a36104185d7cc0c9967729fc44bf18.jpeg",
+      "url": "https://hardcover.app/books/fugitive-telemetry"
+    },
+    {
+      "id": 438708,
+      "slug": "show-your-work",
+      "pageSlug": "show-your-work",
+      "title": "Show Your Work!: 10 Ways to Share Your Creativity and Get Discovered",
+      "authors": [
+        "Austin Kleon"
+      ],
+      "status": "reading",
+      "rating": null,
+      "dateAdded": "2026-10-15",
+      "dateStarted": "2026-10-15",
+      "dateFinished": null,
+      "cover": "https://assets.hardcover.app/edition/17570769/5eb4e149177f3c022f5ab0e2bc1025a65d662020.jpeg",
+      "url": "https://hardcover.app/books/show-your-work"
+    },
+    {
+      "id": 439935,
+      "slug": "home-habitat-range-niche-territory",
+      "pageSlug": "home-habitat-range-niche-territory",
+      "title": "Home: Habitat, Range, Niche, Territory",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-10-25",
+      "dateStarted": "2024-10-25",
+      "dateFinished": "2024-10-25",
+      "cover": "https://assets.hardcover.app/edition/27175138/88fbdf6b-bbfd-4b2a-8ca2-4a8c6d4474e4.jpg",
+      "url": "https://hardcover.app/books/home-habitat-range-niche-territory"
+    },
+    {
+      "id": 440171,
+      "slug": "network-effect",
+      "pageSlug": "network-effect",
+      "title": "Network Effect",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-06-15",
+      "dateStarted": "2024-06-15",
+      "dateFinished": "2024-06-15",
+      "cover": "https://assets.hardcover.app/book_mappings/7332803/487291b01ddc8783710e7f90bd42666090e43d9f.jpeg",
+      "url": "https://hardcover.app/books/network-effect"
     },
     {
       "id": 441886,
@@ -96,6 +468,104 @@
       "dateFinished": "2026-10-18",
       "cover": "https://assets.hardcover.app/edition/12733283/c05eff5c-1ada-4450-aa5b-eb21026cf7ca.jpg",
       "url": "https://hardcover.app/books/less-is-more"
+    },
+    {
+      "id": 445011,
+      "slug": "a-psalm-for-the-wild-built",
+      "pageSlug": "a-psalm-for-the-wild-built",
+      "title": "A Psalm for the Wild-Built",
+      "authors": [
+        "Becky Chambers"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-07-11",
+      "dateStarted": "2024-07-11",
+      "dateFinished": "2024-07-11",
+      "cover": "https://assets.hardcover.app/editions/28452919/1694923853483346.jpg",
+      "url": "https://hardcover.app/books/a-psalm-for-the-wild-built"
+    },
+    {
+      "id": 455735,
+      "slug": "there-is-no-antimemetics-division",
+      "pageSlug": "there-is-no-antimemetics-division",
+      "title": "There Is No Antimemetics Division",
+      "authors": [
+        "qntm"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-08-25",
+      "dateStarted": "2026-08-25",
+      "dateFinished": "2026-08-25",
+      "cover": "https://assets.hardcover.app/external_data/193765/b3af02e08dc537afe1627e9cc6a20131874e056d.jpeg",
+      "url": "https://hardcover.app/books/there-is-no-antimemetics-division"
+    },
+    {
+      "id": 460092,
+      "slug": "a-prayer-for-the-crown-shy",
+      "pageSlug": "a-prayer-for-the-crown-shy",
+      "title": "A Prayer for the Crown-Shy",
+      "authors": [
+        "Becky Chambers"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-07-18",
+      "dateStarted": "2024-07-18",
+      "dateFinished": "2024-07-18",
+      "cover": "https://assets.hardcover.app/editions/30501405/6462135535022699.jpeg",
+      "url": "https://hardcover.app/books/a-prayer-for-the-crown-shy"
+    },
+    {
+      "id": 462038,
+      "slug": "system-collapse",
+      "pageSlug": "system-collapse",
+      "title": "System Collapse",
+      "authors": [
+        "Martha Wells"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-12-30",
+      "dateStarted": "2024-12-30",
+      "dateFinished": "2024-12-30",
+      "cover": "https://assets.hardcover.app/editions/30845693/9ef45cef-6b2b-44a8-9d1c-1b625bb863fd.jpg",
+      "url": "https://hardcover.app/books/system-collapse"
+    },
+    {
+      "id": 465295,
+      "slug": "the-future-we-choose-surviving-the-climate-crisis",
+      "pageSlug": "the-future-we-choose-surviving-the-climate-crisis",
+      "title": "The Future We Choose: Surviving the Climate Crisis",
+      "authors": [
+        "Christiana Figueres",
+        "Tom Rivett-Carnac"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2021-09-30",
+      "dateStarted": "2021-09-30",
+      "dateFinished": "2021-09-30",
+      "cover": "https://assets.hardcover.app/external_data/59523673/b03c65c45aeddcc1633bf067c1b12554ed8c4c67.jpeg",
+      "url": "https://hardcover.app/books/the-future-we-choose-surviving-the-climate-crisis"
+    },
+    {
+      "id": 474804,
+      "slug": "the-art-of-frugal-hedonism",
+      "pageSlug": "the-art-of-frugal-hedonism",
+      "title": "The Art of Frugal Hedonism",
+      "authors": [
+        "Annie Raser-Rowland",
+        "Adam Grubb"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2022-11-19",
+      "dateStarted": "2022-11-19",
+      "dateFinished": "2022-11-19",
+      "cover": "https://assets.hardcover.app/edition/30396000/content.jpeg",
+      "url": "https://hardcover.app/books/the-art-of-frugal-hedonism"
     },
     {
       "id": 485481,
@@ -146,6 +616,22 @@
       "url": "https://hardcover.app/books/games-agency-as-art"
     },
     {
+      "id": 590689,
+      "slug": "yellowface",
+      "pageSlug": "yellowface",
+      "title": "Yellowface",
+      "authors": [
+        "R.F. Kuang"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-10-19",
+      "dateStarted": "2026-10-03",
+      "dateFinished": "2026-10-03",
+      "cover": "https://assets.hardcover.app/editions/30634192/886596728607296.jpg",
+      "url": "https://hardcover.app/books/yellowface"
+    },
+    {
       "id": 641729,
       "slug": "practising-simplicity",
       "pageSlug": "practising-simplicity",
@@ -162,6 +648,39 @@
       "url": "https://hardcover.app/books/practising-simplicity"
     },
     {
+      "id": 776952,
+      "slug": "norwegian-wood",
+      "pageSlug": "norwegian-wood",
+      "title": "Norwegian Wood",
+      "authors": [
+        "Haruki Murakami"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2025-08-10",
+      "dateStarted": "2025-08-10",
+      "dateFinished": "2025-08-10",
+      "cover": "https://assets.hardcover.app/edition/11016885/93eb5a84-c963-4cd6-8599-593c6c792f5c.jpg",
+      "url": "https://hardcover.app/books/norwegian-wood"
+    },
+    {
+      "id": 880346,
+      "slug": "homes-a-refugee-story-2017",
+      "pageSlug": "homes-a-refugee-story-2017",
+      "title": "Homes A Refugee Story",
+      "authors": [
+        "Abu Bakr al Rabeeah",
+        "Winnie Yeung"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-01-19",
+      "dateStarted": "2023-01-19",
+      "dateFinished": "2023-01-19",
+      "cover": "https://assets.hardcover.app/edition/30899092/15399abe1d1729338956f4212d3954fca4baa31c.jpeg",
+      "url": "https://hardcover.app/books/homes-a-refugee-story-2017"
+    },
+    {
       "id": 881140,
       "slug": "the-women-2024",
       "pageSlug": "the-women-2024",
@@ -176,6 +695,55 @@
       "dateFinished": "2026-04-22",
       "cover": "https://assets.hardcover.app/external_data/60539568/4782256d471ce11f7f32411b1a2fbb6a75c53c11.jpeg",
       "url": "https://hardcover.app/books/the-women-2024"
+    },
+    {
+      "id": 1024548,
+      "slug": "the-baby-led-weaning-cookbook",
+      "pageSlug": "the-baby-led-weaning-cookbook",
+      "title": "The Baby-Led Weaning Cookbook: 130 Easy, Nutritious Recipes That Will Help Your Baby Learn to Eat (and Love!) a Variety of Solid Foods―and That the Whole Family Will Enjoy",
+      "authors": [
+        "Tracey Murkett",
+        "Gill Rapley"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2019-11-01",
+      "dateStarted": "2019-11-01",
+      "dateFinished": "2019-11-01",
+      "cover": "https://assets.hardcover.app/external_data/60191457/4289ca6068a9af9941b42da32c927f6baf38cf8b.jpeg",
+      "url": "https://hardcover.app/books/the-baby-led-weaning-cookbook"
+    },
+    {
+      "id": 1083718,
+      "slug": "listen-for-the-lie",
+      "pageSlug": "listen-for-the-lie",
+      "title": "Listen for the Lie",
+      "authors": [
+        "Amy Tintera"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2026-10-19",
+      "dateStarted": "2026-06-18",
+      "dateFinished": "2026-06-18",
+      "cover": "https://assets.hardcover.app/edition/31107754/99ed69113dfe07655d1880a95fba10dcc6d05c76.jpeg",
+      "url": "https://hardcover.app/books/listen-for-the-lie"
+    },
+    {
+      "id": 1370422,
+      "slug": "sew-it-yourself-with-diy-daisy",
+      "pageSlug": "sew-it-yourself-with-diy-daisy",
+      "title": "Sew It Yourself with DIY Daisy: 20 Pattern-Free Projects (and Infinite Variations) To Make Your Dream Wardrobe",
+      "authors": [
+        "Daisy Braid"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2023-12-28",
+      "dateStarted": "2023-12-28",
+      "dateFinished": "2023-12-28",
+      "cover": "https://assets.hardcover.app/external_data/60495967/914e409f03d191b8c12caf02e99289241ba7a8f8.jpeg",
+      "url": "https://hardcover.app/books/sew-it-yourself-with-diy-daisy"
     },
     {
       "id": 1561653,
@@ -208,6 +776,38 @@
       "dateFinished": "2026-05-22",
       "cover": "https://assets.hardcover.app/edition/32034744/9cf8bfd20ae051c35f45ce75734bfd7049270d7f.jpeg",
       "url": "https://hardcover.app/books/my-husbands-wife-2026"
+    },
+    {
+      "id": 3054541,
+      "slug": "the-skeleton-house",
+      "pageSlug": "the-skeleton-house",
+      "title": "The Skeleton House",
+      "authors": [
+        "Katherine Allum"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2024-09-26",
+      "dateStarted": "2024-09-26",
+      "dateFinished": "2024-09-26",
+      "cover": null,
+      "url": "https://hardcover.app/books/the-skeleton-house"
+    },
+    {
+      "id": 3054542,
+      "slug": "real-food-for-babies-and-toddlers",
+      "pageSlug": "real-food-for-babies-and-toddlers",
+      "title": "Real Food for Babies and Toddlers: Baby-led weaning and beyond, with over 80 wholefood recipes the whole family will love",
+      "authors": [
+        "Vanessa Clarkson"
+      ],
+      "status": "read",
+      "rating": null,
+      "dateAdded": "2019-09-24",
+      "dateStarted": "2019-09-24",
+      "dateFinished": "2019-09-24",
+      "cover": "https://assets.hardcover.app/external_data/4434005/52d6e393e46444fce6cdd625a3a4f39527fed41e.jpeg",
+      "url": "https://hardcover.app/books/real-food-for-babies-and-toddlers"
     }
   ]
 }
