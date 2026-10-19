@@ -15,6 +15,9 @@
 //    already looks like the same book, in which case it says so and leaves
 //    you to link it (--link adds the `hardcover:` key to that note for you,
 //    touching nothing else). Want-to-read books are skipped until you start them.
+//    --since YYYY-MM-DD limits new notes to books being read now or finished
+//    on/after that date (linking and highlights still cover every book).
+//    scripts/obsidian-sync.sh runs this daily on the Mac; see its comments.
 //    Reading-journal quotes and notes are copied into the note's
 //    "## Highlights". Import-only: each entry's id is recorded in
 //    `hardcoverImported`, so it's added once and then belongs to the note —
@@ -41,6 +44,12 @@ const vaultArg = process.argv.indexOf('--vault');
 const VAULT_DIR = vaultArg === -1 ? null : process.argv[vaultArg + 1];
 const DRY_RUN = process.argv.includes('--dry-run');
 const LINK = process.argv.includes('--link');
+// --since YYYY-MM-DD: only make new notes for books being read now, or
+// finished on/after that date (so past reads don't flood the vault).
+// Without it, every started book gets a note.
+const sinceArg = process.argv.indexOf('--since');
+const SINCE = sinceArg === -1 ? null : process.argv[sinceArg + 1];
+if (SINCE !== null && !/^\d{4}-\d{2}-\d{2}$/.test(SINCE || '')) { console.error('--since needs a date like 2026-10-19'); process.exit(1); }
 const API = 'https://api.hardcover.app/v1/graphql';
 const STATUS = { 1: 'want-to-read', 2: 'reading', 3: 'read', 4: 'paused', 5: 'dnf' };
 const UUID_TAIL = /-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/;
@@ -295,6 +304,8 @@ function syncVault(userBooks) {
         body = m ? m[2] : prev;
         unlinked.splice(unlinked.indexOf(match), 1);
       } else {
+        const wanted = !SINCE || book.status === 'reading' || (book.status === 'read' && book.dateFinished && book.dateFinished >= SINCE);
+        if (!wanted) continue;
         const n = newNote(book);
         file = path.join(dir, n.file);
         if (fs.existsSync(file)) {

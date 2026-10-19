@@ -57,6 +57,12 @@ node scripts/sync-hardcover.mjs --vault "<vault>/books"           # pull books i
 node scripts/sync-hardcover.mjs --vault "<vault>/books" --link    # …and link matching notes
 ```
 
+**Daily on the Mac:** `scripts/obsidian-sync.sh` runs the `--vault` sync with
+`--link --since 2026-10-19` every morning via a LaunchAgent
+(`~/Library/LaunchAgents/com.teresawatts.obsidian-book-sync.plist`, log in
+`~/Library/Logs/obsidian-book-sync.log`). `--since` limits new notes to books
+being read now or finished on/after that date. See the script's comments.
+
 The `--vault` sync gives every Hardcover book you've started a note in Obsidian. A
 missing note is created as `<year>/Title, Author.md` (`publish: false`, so nothing
 goes on the site until you've written it up and published it). If an unlinked note
