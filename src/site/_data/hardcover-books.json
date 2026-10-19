@@ -18,6 +18,22 @@
       "url": "https://hardcover.app/books/steal-like-an-artist"
     },
     {
+      "id": 347190,
+      "slug": "the-complete-robot",
+      "pageSlug": "the-complete-robot",
+      "title": "The Complete Robot",
+      "authors": [
+        "Isaac Asimov"
+      ],
+      "status": "reading",
+      "rating": null,
+      "dateAdded": "2026-10-19",
+      "dateStarted": "2026-10-19",
+      "dateFinished": null,
+      "cover": "https://assets.hardcover.app/external_data/35431684/213c234597d2736eaea9037ddfc1bcd8373d9872.jpeg",
+      "url": "https://hardcover.app/books/the-complete-robot"
+    },
+    {
       "id": 427578,
       "slug": "project-hail-mary",
       "pageSlug": "project-hail-mary",
