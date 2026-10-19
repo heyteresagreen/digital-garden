@@ -3,7 +3,7 @@
 # Makes notes for books being read now or finished since SINCE, links notes
 # that clearly match a Hardcover book (adds only the `hardcover:` line), and
 # copies new Hardcover quotes into ## Highlights. Never touches the website
-# data — the weekly GitHub Action does that.
+# data — the daily GitHub Action does that.
 #
 # Schedule: ~/Library/LaunchAgents/com.teresawatts.obsidian-book-sync.plist
 # Log:      ~/Library/Logs/obsidian-book-sync.log

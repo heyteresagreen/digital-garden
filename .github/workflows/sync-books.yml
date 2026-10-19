@@ -1,4 +1,4 @@
-# Weekly reading data sync for the Reading page: books from Hardcover
+# Daily reading data sync for the Reading page: books from Hardcover
 # (src/site/_data/hardcover-books.json) and liked articles from Instapaper
 # (src/site/_data/instapaper.json). Never touches notes. See "Reading page
 # data" in README.md.
@@ -6,7 +6,7 @@ name: Sync reading data
 
 on:
   schedule:
-    - cron: "0 22 * * 0" # Sundays 22:00 UTC
+    - cron: "0 21 * * *" # daily 21:00 UTC = 5am Perth, before the Mac's 7am Obsidian sync
   workflow_dispatch:
 
 permissions:

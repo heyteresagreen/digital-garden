@@ -42,9 +42,10 @@ Hardcover and Obsidian each own their own files, so they never overwrite each ot
   own profile page uses, not an official API, so if the format changes the
   sync stops with an error and keeps the articles already there.
 
-**Weekly sync:** `.github/workflows/sync-books.yml` runs Sundays 22:00 UTC (or
-on demand: repo → Actions → "Sync reading data" → Run workflow) and commits
-only if the data changed. It needs a `HARDCOVER_TOKEN` repository secret.
+**Daily sync:** `.github/workflows/sync-books.yml` runs every day at 21:00 UTC
+(5am Perth), or on demand (repo → Actions → "Sync reading data" → Run
+workflow), and commits only if the data changed — which also triggers a
+Netlify deploy. It needs a `HARDCOVER_TOKEN` repository secret.
 Run the Instapaper part locally with `node scripts/sync-instapaper.mjs`.
 
 **Run locally:** put `HARDCOVER_TOKEN=...` in `.env` (gitignored; token from

@@ -1,7 +1,7 @@
 // Hardcover.app sync. Two jobs, kept apart so nothing is ever owned by two
 // writers:
 //
-// 1. Site data (default; what the weekly GitHub Action runs):
+// 1. Site data (default; what the daily GitHub Action runs):
 //      node scripts/sync-hardcover.mjs
 //    Writes src/site/_data/hardcover-books.json — status, rating, dates, authors and
 //    cover for every book. Hardcover is the source of truth for these: the

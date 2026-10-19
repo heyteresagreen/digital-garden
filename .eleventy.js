@@ -417,6 +417,16 @@ module.exports = function (eleventyConfig) {
     return Array.isArray(s) ? s.includes("books") : s === "books";
   };
   eleventyConfig.addCollection("bookRoundups", (api) => published(api).filter((p) => inBooks(p) && isRoundup(p)));
+  // When a book was read, for ordering: the post's `date:` if it has one,
+  // otherwise (e.g. a note the vault sync created) its Hardcover finish or
+  // start date. Without this, an undated note would sort to the bottom, and
+  // on Netlify its file date is just the build date.
+  const bookDate = (p) => {
+    if (p.data.date) return p.date;
+    const b = p.data.hardcover && getShelf().bySlug[p.data.hardcover];
+    const d = b && (b.dateFinished || b.dateStarted);
+    return d ? new Date(d) : null;
+  };
   const completedBooks = (api) => {
     const { books, bySlug } = getShelf();
     const notes = published(api).filter((p) => {
@@ -425,7 +435,7 @@ module.exports = function (eleventyConfig) {
       return !b || b.status === "read";
     });
     const extras = books.filter((b) => b.status === "read" && !b.noteUrl).map(bookItem);
-    return [...notes, ...extras].sort((a, b) => (b.data.date ? b.date : 0) - (a.data.date ? a.date : 0));
+    return [...notes, ...extras].sort((a, b) => (bookDate(b) || 0) - (bookDate(a) || 0));
   };
   eleventyConfig.addCollection("completedBooks", completedBooks);
   // The Books page: this year's finished books (by post date, or Hardcover
@@ -433,7 +443,7 @@ module.exports = function (eleventyConfig) {
   // through the round-up posts. "This year" is the year of the build.
   eleventyConfig.addCollection("booksThisYear", (api) => {
     const year = new Date().getUTCFullYear();
-    return completedBooks(api).filter((p) => p.date instanceof Date && p.date.getUTCFullYear() === year);
+    return completedBooks(api).filter((p) => { const d = bookDate(p); return d && d.getUTCFullYear() === year; });
   });
 
   // Content snippets: notes with `snippet: <name>` embedded into templates
