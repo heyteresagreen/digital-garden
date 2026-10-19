@@ -100,7 +100,25 @@ function getShelf() {
   eachPublishedNote((data, rel, base) => {
     if (data.hardcover) linked[String(data.hardcover)] = { url: noteUrl(data, base), title: data.title };
   });
+  // Books tracked only in Obsidian: a published book note with `status:`
+  // (reading, read, ...) and no Hardcover data behind it. Lets the site work
+  // with or without Hardcover — see the "Reading page and books" guide.
+  const known = new Set(books.map((b) => b.slug));
+  eachPublishedNote((data, rel, base) => {
+    const isBook = [].concat(data.section || []).includes("books") || data.hardcover;
+    if (!isBook || !data.status || (data.hardcover && known.has(String(data.hardcover)))) return;
+    const ymd = (d) => (d instanceof Date ? d.toISOString().slice(0, 10) : d ? String(d) : null);
+    const url = noteUrl(data, base);
+    books.push({
+      slug: data.hardcover ? String(data.hardcover) : `note:${url}`,
+      title: String(data.title || base), authors: [], status: String(data.status),
+      dateStarted: ymd(data.dateStarted), dateFinished: ymd(data.dateFinished),
+      cover: null, image: data.image || null, url: null, noteOnly: true,
+      _noteUrl: url, _noteTitle: data.title || base
+    });
+  });
   books = books.map((b) => {
+    if (b.noteOnly) return { ...b, noteTitle: b._noteTitle, noteUrl: b._noteUrl, pageUrl: b._noteUrl };
     const note = linked[b.slug];
     // a linked note's own title wins over Hardcover's
     return { ...b, noteTitle: note ? note.title : null, noteUrl: note ? note.url : null, pageUrl: note ? note.url : `/books/${b.pageSlug}/` };
@@ -128,7 +146,7 @@ function bookItem(b) {
   return {
     url: b.pageUrl,
     date,
-    data: { title: bookTitle(b), date, dateStarted: b.dateStarted, imageUrl: b.cover, imageAlt: `Book cover of ${b.title}` }
+    data: { title: bookTitle(b), date, dateStarted: b.dateStarted, imageUrl: b.cover, image: b.image || undefined, imageAlt: `Book cover of ${b.title}` }
   };
 }
 
@@ -424,7 +442,7 @@ module.exports = function (eleventyConfig) {
   const bookDate = (p) => {
     if (p.data.date) return p.date;
     const b = p.data.hardcover && getShelf().bySlug[p.data.hardcover];
-    const d = b && (b.dateFinished || b.dateStarted);
+    const d = (b && (b.dateFinished || b.dateStarted)) || p.data.dateFinished || p.data.dateStarted;
     return d ? new Date(d) : null;
   };
   const completedBooks = (api) => {
@@ -432,7 +450,8 @@ module.exports = function (eleventyConfig) {
     const notes = published(api).filter((p) => {
       if ((!inBooks(p) && !p.data.hardcover) || isRoundup(p)) return false;
       const b = p.data.hardcover && bySlug[p.data.hardcover];
-      return !b || b.status === "read";
+      const status = (b && !b.noteOnly && b.status) || p.data.status;
+      return !status || status === "read";
     });
     const extras = books.filter((b) => b.status === "read" && !b.noteUrl).map(bookItem);
     return [...notes, ...extras].sort((a, b) => (bookDate(b) || 0) - (bookDate(a) || 0));
@@ -586,6 +605,7 @@ module.exports = function (eleventyConfig) {
   // Hardcover dates are plain YYYY-MM-DD strings, not Date objects
   eleventyConfig.addFilter("dayFormat", (str) => {
     if (!str) return "";
+    if (str instanceof Date) return DateTime.fromJSDate(str, { zone: "utc" }).toFormat("d LLLL yyyy");
     const d = DateTime.fromISO(String(str), { zone: "utc" });
     return d.isValid ? d.toFormat("d LLLL yyyy") : String(str);
   });

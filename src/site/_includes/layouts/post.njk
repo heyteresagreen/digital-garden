@@ -1,7 +1,7 @@
 ---
 layout: layouts/base.njk
 ---
-{%- if hardcover %}{% set book = hardcover | hardcoverBook %}{% include "components/book-page.njk" %}{% else %}
+{%- if hardcover or (status and (section | primarySection) == "books") %}{% set book = hardcover | hardcoverBook if hardcover else null %}{% include "components/book-page.njk" %}{% else %}
 {%- set sectionKey = section | primarySection %}
 <article>
   <header>

@@ -2,7 +2,8 @@
 # Daily Hardcover -> Obsidian sync, run by macOS (launchd) at 7am.
 # Makes notes for books being read now or finished this year, links notes
 # that clearly match a Hardcover book (adds only the `hardcover:` line), and
-# copies new Hardcover quotes into ## Highlights. Never touches the website
+# copies new Hardcover quotes into ## Highlights, then adds covers to book
+# notes that have none (scripts/book-covers.mjs). Never touches the website
 # data — the daily GitHub Action does that.
 #
 # Schedule: ~/Library/LaunchAgents/com.teresawatts.obsidian-book-sync.plist
@@ -20,3 +21,6 @@ cd "${0:A:h}/.." || exit 1
 export PATH="/opt/homebrew/bin:/opt/homebrew/opt/node@18/bin:/usr/local/bin:$PATH"
 echo "--- $(date '+%Y-%m-%d %H:%M')"
 node scripts/sync-hardcover.mjs --vault "$VAULT_BOOKS" --link --since "$SINCE" "$@"
+# Covers for book notes that don't have one (Hardcover's, or Open Library's).
+# Doesn't need Hardcover — keep this line if Hardcover is ever removed.
+node scripts/book-covers.mjs --vault "$VAULT_BOOKS" "$@"

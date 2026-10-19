@@ -58,6 +58,13 @@ node scripts/sync-hardcover.mjs --vault "<vault>/books"           # pull books i
 node scripts/sync-hardcover.mjs --vault "<vault>/books" --link    # …and link matching notes
 ```
 
+**Books without Hardcover:** a published book note can carry its own
+`status:` (reading, read, paused, dnf), `dateStarted:` and `dateFinished:`;
+the site uses them when Hardcover has no data for that note (getShelf in
+`.eleventy.js`). **Covers:** `scripts/book-covers.mjs --vault "<vault>/books"`
+adds a cover to book notes without one (Hardcover's if linked, else Open
+Library), saved to the vault's `assets/` and embedded like the review notes.
+
 **Daily on the Mac:** `scripts/obsidian-sync.sh` runs the `--vault` sync with
 `--link --since <1 January this year>` every morning via a LaunchAgent
 (`~/Library/LaunchAgents/com.teresawatts.obsidian-book-sync.plist`, log in
