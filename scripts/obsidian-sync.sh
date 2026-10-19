@@ -1,6 +1,6 @@
 #!/bin/zsh
 # Daily Hardcover -> Obsidian sync, run by macOS (launchd) at 7am.
-# Makes notes for books being read now or finished since SINCE, links notes
+# Makes notes for books being read now or finished this year, links notes
 # that clearly match a Hardcover book (adds only the `hardcover:` line), and
 # copies new Hardcover quotes into ## Highlights. Never touches the website
 # data — the daily GitHub Action does that.
@@ -13,7 +13,7 @@
 # Needs HARDCOVER_TOKEN in the repo's .env file.
 
 VAULT_BOOKS="$HOME/Notes/teresawatts v2/books"
-SINCE="2026-10-19"   # books finished before this date don't get new notes
+SINCE="$(date +%Y)-01-01"   # books finished in earlier years don't get new notes
 
 cd "${0:A:h}/.." || exit 1
 # launchd starts with a bare PATH; add Homebrew's so `node` is found

@@ -59,7 +59,7 @@ node scripts/sync-hardcover.mjs --vault "<vault>/books" --link    # …and link 
 ```
 
 **Daily on the Mac:** `scripts/obsidian-sync.sh` runs the `--vault` sync with
-`--link --since 2026-10-19` every morning via a LaunchAgent
+`--link --since <1 January this year>` every morning via a LaunchAgent
 (`~/Library/LaunchAgents/com.teresawatts.obsidian-book-sync.plist`, log in
 `~/Library/Logs/obsidian-book-sync.log`). `--since` limits new notes to books
 being read now or finished on/after that date. See the script's comments.
