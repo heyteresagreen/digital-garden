@@ -9,9 +9,10 @@
         "alt": "Teresa Watts — home"
     },
     "nav": [
-        { "label": "About", "url": "/about/" },
-        { "label": "Posts", "url": "/posts/" },
-        { "label": "Letters", "url": "/letters/" }
+        { "label": "Making", "url": "/making/" },
+        { "label": "Writing", "url": "/writing/" },
+        { "label": "Letters", "url": "/letters/" },
+        { "label": "About", "url": "/about/" }
     ],
     "footer": [
         { "label": "About", "url": "/about/" },

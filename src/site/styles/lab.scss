@@ -478,9 +478,11 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
   .lab-wlist-thumb img { width: 84px; height: 84px; object-fit: cover; margin: 0; }
 }
 
-/* ---------- E · Magazine (after psyche.co) ---------- */
-.lab-e-magazine {
+/* ---------- E · Magazine (after psyche.co) — now the real homepage,
+   src/site/index.njk + layouts/home.njk ---------- */
+.lab-home {
   --lab-max: 1120px;
+  padding-bottom: 0; // no lab switcher here
   // logo and links clustered together in the centre
   .lab-nav { justify-content: center; gap: 0.75rem 2.5rem; }
 }

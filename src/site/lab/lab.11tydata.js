@@ -17,12 +17,12 @@ module.exports = {
     { label: "Notes", url: "/notes/" },
     { label: "Newsletter", url: "/letters/" }
   ],
-  // only B3, B4 and E are still in play; the other variants' pages still
-  // build at /lab/<file>/, they're just off the switcher
+  // E became the real homepage (src/site/index.njk, "Current" on the
+  // switcher). B3 and B4 stay for comparison; the other variants' pages
+  // still build at /lab/<file>/, they're just off the switcher
   labVariants: [
     { slug: "b3-separators", label: "B3" },
-    { slug: "b4-half-half", label: "B4" },
-    { slug: "e-magazine", label: "E · Magazine" }
+    { slug: "b4-half-half", label: "B4" }
   ],
   making: ["art", "sketching", "sketchbooks", "projects"]
 };
