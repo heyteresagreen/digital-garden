@@ -5,12 +5,14 @@ eleventyExcludeFromCollections: true
 eleventyImport:
   collections: ["allPosts", "writing", "notes", "letters"]
 ---
-{#- The homepage — started as lab version E (Oct 2026). After psyche.co, converging with B3: B3's nav and intro, then making
-    as two rows of big pairs under a "Making" title that fades in on scroll, writing in its own band with small images,
-    Reading + Notes side by side (as on B3), and a two-column newsletter
-    band that also lists recent letters. Art is never cropped: each card in
-    a row grows in proportion to its image's width÷height (--r), so a row
-    shares one height and every image keeps its real shape. #}
+{#- The homepage — started as lab version E (Oct 2026), after psyche.co:
+    the intro, then making as two rows of big pairs under a "Making" title
+    that fades in on scroll, writing (and letters) in its own band, Reading +
+    Notes side by side, and a small cut-out sign-up card for the letters.
+    Art is never cropped: each card in a row grows in proportion to its
+    image's width÷height (--r), so a row shares one height and every image
+    keeps its real shape. Cards below the fold fade in as they scroll into
+    view (script at the bottom). #}
 {%- from "components/lab.njk" import more, storyCard as card %}
 
 {#- making here = art, sketching (sketchnotes live there too), sketchbooks
@@ -23,12 +25,20 @@ eleventyImport:
   {%- if arts.length < 4 and (post | cardImageAny) %}{% set arts = (arts.push(post), arts) %}{% endif %}
 {%- endfor %}
 
+{#- writing: the three newest of writing + letters together. If they're all
+    letters, the third slot goes to the newest piece of writing instead #}
+{%- set writes = collections.allPosts | inSections(["writing", "letters"]) | head(3) %}
+{%- set latestWriting = (collections.writing | notInSections(["letters"]))[0] %}
+{%- if latestWriting and not (writes | notInSections(["letters"])).length %}
+  {%- set writes = (writes | head(2)).concat([latestWriting]) %}
+{%- endif %}
+
 {%- include "components/lab-parts/hero.njk" %}
 
 {#- the Making title stays hidden until you start scrolling, then fades in
     (script at the bottom; without JS it's simply there) #}
 <script>document.documentElement.classList.add("lab-js");</script>
-<header class="lab-e-head lab-e-reveal"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
+<header class="lab-e-head lab-e-reveal"><h2><a href="/making/">Making</a></h2></header>
 {%- for pair in arts | batch(2) %}
 <section class="lab-e-top lab-e-ratio-row">
   {%- for post in pair %}{{ card(post, "", true) }}{% endfor %}
@@ -36,22 +46,27 @@ eleventyImport:
 {%- endfor %}
 
 {#- writing: its own band, small images (a pasted screenshot shows as text
-    only), each labelled with its first tag rather than "Writing" every time #}
+    only), each labelled with its first tag rather than "Writing" every
+    time. Letters are text only, labelled "Letters" #}
 <section class="lab-e-band is-tint">
   <header class="lab-e-head"><h2>Writing</h2>{{ more("/writing/", "View all") }}</header>
   <div class="lab-e-wgrid">
-    {%- for post in collections.writing | notInSections(["letters"]) | head(3) %}
+    {%- for post in writes %}
+    {%- if "letters" in post.data.section %}
+    {{- card(post, "is-compact", true, false) }}
+    {%- else %}
     {%- set t = post | cardImageAny %}
     {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), true) }}
+    {%- endif %}
     {%- endfor %}
   </div>
 </section>
 
-{#- Reading and Notes side by side, as on B3 #}
+{#- Reading and Notes side by side #}
 <section class="lab-e-band">
   <div class="lab-s is-pair">
     <div class="lab-sub">
-      <header class="lab-s-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+      <header class="lab-e-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
       <div class="lab-s-body">
         {#- covers only, side by side and left-aligned, so one or two books
             look as settled as three; the title is in the alt text and tooltip #}
@@ -66,18 +81,31 @@ eleventyImport:
       </div>
     </div>
     <div class="lab-sub">
-      <header class="lab-s-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+      <header class="lab-e-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+      {#- one row per note: title, with its first topic tag on the right #}
       <ul class="lab-s-body lab-e-notes is-list">
         {%- for post in collections.notes | head(5) %}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+        {%- set topic = false %}
+        {%- for t in post.data.tags or [] %}{% if not topic and t != "notes" %}{% set topic = t %}{% endif %}{% endfor %}
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a>{% if topic %}<span class="lab-e-notes-topic">{{ topic }}</span>{% endif %}</li>
         {%- endfor %}
       </ul>
     </div>
   </div>
 </section>
 
-{%- set pastLetters = true %}
-{% include "components/lab-parts/letter-band.njk" %}
+{#- letters: a small sign-up card, outlined with the footer's dashed
+    "cut here" line #}
+<section class="home-letters">
+  <h2>Get my letters</h2>
+  <p>Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+  <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
+    <label class="visually-hidden" for="bd-email">Your email</label>
+    <input type="email" name="email" id="bd-email" placeholder="Enter email address">
+    <button type="submit">Sign up</button>
+  </form>
+  {{ more("/letters/", "Read past letters") }}
+</section>
 
 <script>
   // fade the Making title in once the page has been scrolled a little
@@ -87,5 +115,26 @@ eleventyImport:
     function show() { el.classList.add("is-shown"); window.removeEventListener("scroll", onScroll); }
     function onScroll() { if (window.scrollY > 40) show(); }
     if (window.scrollY > 40) show(); else window.addEventListener("scroll", onScroll, { passive: true });
+  })();
+
+  // cards below the fold fade in as they scroll into view; whatever's
+  // already on screen at load is left alone. The style comes from
+  // data-reveal on <html> (fade-up, fade or off), see lab.scss
+  (function () {
+    var mode = document.documentElement.dataset.reveal;
+    if (!mode || mode === "off" || !("IntersectionObserver" in window)) return;
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".lab-main .lab-e-card, .lab-e-covers > a, .lab-e-notes li, .home-letters").forEach(function (el) {
+      if (el.getBoundingClientRect().top < window.innerHeight) return;
+      // a small stagger between neighbours in a row
+      var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+      el.style.setProperty("--rv-delay", (i % 3) * 90 + "ms");
+      el.classList.add("rv");
+      io.observe(el);
+    });
   })();
 </script>

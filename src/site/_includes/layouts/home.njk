@@ -1,5 +1,9 @@
+{#- data-hover / data-arrow / data-reveal: the homepage's chosen styles for
+    image hover, "View all" arrows and the scroll fade-in (see lab.scss).
+    Under npm start they can be tried live with the design options panel. -#}
+{%- set homeOptions = { hover: "zoom", arrow: "short", reveal: "fade-up" } -%}
 <!doctype html>
-<html lang="en">
+<html lang="en" data-hover="{{ homeOptions.hover }}" data-arrow="{{ homeOptions.arrow }}" data-reveal="{{ homeOptions.reveal }}"{% if build.dev %} data-defaults='{{ homeOptions | dump }}'{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +18,11 @@
   <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
   {#- the homepage grew out of the lab (version E), so it still uses its styles #}
   <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
+  {%- if build.dev %}
+  {#- dev only: apply options picked in the design options panel before
+      anything draws #}
+  <script>try { ["hover", "arrow", "reveal"].forEach(function (k) { var v = localStorage.getItem("opt-" + k); if (v) document.documentElement.dataset[k] = v; }); } catch (e) {}</script>
+  {%- endif %}
 </head>
 <body class="lab lab-home">
   {% include "components/nav.njk" %}
@@ -21,6 +30,7 @@
 {{ content | safe }}
   </main>
   {% include "components/footer.njk" %}
+  {%- if build.dev %}{% include "components/design-options.njk" %}{% endif %}
   <script data-goatcounter="https://teresawatts.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </body>

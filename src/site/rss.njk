@@ -1,0 +1,44 @@
+---
+layout: layouts/page.njk
+title: Follow along by RSS
+permalink: /rss/
+eleventyExcludeFromCollections: true
+---
+{#- A friendlier landing page for the footer's RSS link than the raw XML.
+    Feed readers still find /feed.xml on their own through the
+    <link rel="alternate"> in every page's <head>. #}
+{%- set feedUrl = site.url + "/feed.xml" %}
+<p>RSS lets you follow sites in a feed reader app, so new posts come to you, with no algorithm and no inbox. Everything I publish here (writing, art, sketches and letters) goes into the feed.</p>
+
+<h2>Copy the feed address</h2>
+<p>Paste this into your feed reader:</p>
+<p class="rss-copy">
+  <input type="text" readonly value="{{ feedUrl }}" aria-label="Feed address" onclick="this.select()">
+  <button type="button" hidden>Copy</button>
+</p>
+
+<h2>Or follow in one click</h2>
+<ul>
+  <li><a href="https://feedly.com/i/subscription/feed/{{ feedUrl | urlencode }}">Feedly</a></li>
+  <li><a href="https://www.inoreader.com/?add_feed={{ feedUrl | urlencode }}">Inoreader</a></li>
+</ul>
+
+<h2>New to RSS?</h2>
+<p>You need a feed reader app first. A few free ones to try: <a href="https://netnewswire.com/">NetNewsWire</a> (Mac and iPhone), <a href="https://feedly.com/">Feedly</a> or <a href="https://www.inoreader.com/">Inoreader</a> (web, phone and tablet).</p>
+<p>Prefer email? <a href="/letters/">Get my letters</a>. They're more occasional, and more personal.</p>
+
+<script>
+  // the copy button only appears where the browser can copy
+  (function () {
+    var btn = document.querySelector(".rss-copy button");
+    var input = document.querySelector(".rss-copy input");
+    if (!navigator.clipboard) return;
+    btn.hidden = false;
+    btn.addEventListener("click", function () {
+      navigator.clipboard.writeText(input.value).then(function () {
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = "Copy"; }, 2000);
+      });
+    });
+  })();
+</script>

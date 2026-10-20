@@ -160,6 +160,15 @@ $narrow: 640px;
   font-family: var(--font-family-sans-serif);
   font-size: 0.85rem;
 }
+// the arrow after "View all" etc. — a long → by default; the homepage
+// switches style with data-arrow on <html> (see the homepage block below)
+.lab-more-arrow {
+  display: inline-block;
+  margin-left: 0.3em;
+  transition: transform 200ms;
+  &::after { content: "\2192"; }
+}
+.lab-more:hover .lab-more-arrow { transform: translateX(2px); }
 
 .lab-button {
   display: inline-block;
@@ -497,7 +506,9 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
   color: inherit !important; text-decoration: none;
   &:hover { background: none; text-decoration: underline; }
 }
-.lab-e-date { display: block; font-family: var(--font-family-sans-serif); font-size: 0.7rem; margin-top: 0.6rem; opacity: 0.75; }
+// full text colour, not faded: 7.7:1 on the page background (WCAG AA
+// needs 4.5:1; the old 75% opacity came out at 4.1:1)
+.lab-e-date { display: block; font-family: var(--font-family-sans-serif); font-size: 0.8rem; margin-top: 0.6rem; color: var(--color-text); }
 
 // cards
 .lab-e-card {
@@ -681,4 +692,137 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 .lab-switcher-off {
   .lab-switcher { display: none; }
   .lab-switcher-show { display: block; }
+}
+
+/* ============================================================
+   The real homepage (src/site/index.njk + layouts/home.njk) — grew out
+   of E above. Everything here is scoped to .lab-home or to the
+   data-hover / data-arrow / data-reveal options set on <html>.
+   ============================================================ */
+
+// more air between the intro and Making
+.lab-home .lab-hero-mid {
+  padding-bottom: 9rem;
+  @media (max-width: 600px) { padding-bottom: 6rem; }
+}
+
+// section titles with their "View all" link sitting just after them, on
+// the left, rather than pushed to the far edge
+.lab-home .lab-e-head { justify-content: flex-start; gap: 1.25rem; }
+
+// Notes: one quiet row per note, title left and topic right, with the
+// light pink between rows
+.lab-home .lab-e-notes.is-list {
+  li {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: 0.65rem 0; border-top: 1px solid var(--color-accent);
+    &:first-child { border-top: 0; padding-top: 0; }
+  }
+  a { min-width: 0; }
+  .lab-e-notes-topic {
+    flex-shrink: 0;
+    font-family: var(--font-family-sans-serif); font-size: 0.75rem; color: var(--color-text);
+  }
+}
+
+// Letters: a small sign-up card, outlined with the footer's dashed "cut
+// here" line, scissors on its top edge
+.home-letters {
+  position: relative;
+  max-width: 560px;
+  margin: 2.5rem auto 5rem;
+  padding: 2.5rem 2rem 2rem;
+  text-align: center;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  &::before {
+    content: "✁";
+    position: absolute; top: 0; left: 1.5rem;
+    transform: translateY(-55%);
+    padding: 0 0.3em;
+    font-size: 1.6em; line-height: 1;
+    color: #71707e; // the footer's colour
+    background: var(--color-background);
+  }
+  h2 { font-family: var(--font-family); font-weight: 400; font-size: 1.75rem; margin: 0 0 0.5rem; padding: 0; }
+  p { max-width: 30em; margin: 0 auto 1.25rem; font-size: 0.95em; }
+  .lab-e-subscribe { margin-bottom: 1.25rem !important; }
+}
+
+/* ---------- image hover options (data-hover) ----------
+   Triggered by hovering anywhere on the card, not just the picture. */
+html[data-hover] .lab-e-img:hover img { transform: none; } // drop E's default zoom
+html[data-hover] .lab-e-img { transition: transform 250ms ease, box-shadow 250ms ease, outline-color 200ms; }
+html[data-hover="zoom"] .lab-e-card:hover .lab-e-img img { transform: scale(1.03); }
+html[data-hover="lift"] .lab-e-card:hover .lab-e-img {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 24px -12px rgba(78, 76, 94, 0.45);
+}
+html[data-hover="frame"] {
+  .lab-e-img { outline: 2px solid transparent; outline-offset: 5px; }
+  .lab-e-card:hover .lab-e-img { outline-color: var(--color-primary); }
+}
+html[data-hover="tint"] {
+  .lab-e-img { position: relative; }
+  .lab-e-img::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: var(--color-primary); mix-blend-mode: multiply;
+    opacity: 0; transition: opacity 250ms;
+  }
+  .lab-e-card:hover .lab-e-img::after { opacity: 0.3; }
+}
+html[data-hover="dim"] {
+  .lab-e-img img { transition: opacity 250ms; }
+  .lab-e-card:hover .lab-e-img img { opacity: 0.8; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-hover] .lab-e-card:hover .lab-e-img,
+  html[data-hover] .lab-e-card:hover .lab-e-img img { transform: none; }
+}
+
+/* ---------- "View all" arrow options (data-arrow) ---------- */
+html[data-arrow="short"] .lab-more-arrow::after {
+  content: "";
+  display: inline-block; width: 0.8em; height: 0.8em; vertical-align: -0.08em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+html[data-arrow="chevron"] .lab-more-arrow::after { content: "\203A"; font-size: 1.35em; line-height: 0; }
+html[data-arrow="circle"] .lab-more-arrow::after {
+  content: "\2192";
+  display: inline-grid; place-items: center; width: 1.6em; height: 1.6em;
+  border: 1px solid currentColor; border-radius: 50%;
+  font-size: 0.75em; line-height: 1; vertical-align: 0.1em;
+}
+html[data-arrow="none"] .lab-more-arrow { display: none; }
+
+/* ---------- scroll fade-in options (data-reveal) ----------
+   .rv is only added by the homepage script, to cards that start below
+   the fold, so nothing is ever hidden without JS. */
+html[data-reveal="fade-up"] .rv,
+html[data-reveal="fade"] .rv {
+  opacity: 0;
+  transition: opacity 700ms ease var(--rv-delay, 0ms), transform 700ms ease var(--rv-delay, 0ms);
+}
+html[data-reveal="fade-up"] .rv { transform: translateY(14px); }
+html[data-reveal] .rv.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html[data-reveal] .rv { transform: none; transition: opacity 300ms; }
+}
+
+/* ---------- design options panel (dev only, npm start) ---------- */
+.design-options {
+  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 10;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; align-items: center;
+  max-width: calc(100vw - 2rem); box-sizing: border-box;
+  padding: 0.45rem 0.6rem 0.45rem 1rem; border-radius: 999px;
+  background: rgba(40, 39, 50, 0.92); color: white;
+  font-family: var(--font-family-sans-serif); font-size: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  label { display: flex; align-items: center; gap: 0.4rem; }
+  select { font: inherit; padding: 0.2rem 0.3rem; border-radius: 4px; border: 0; }
+  button {
+    font: inherit; cursor: pointer; padding: 0.25rem 0.7rem; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.4); background: none; color: white;
+  }
 }

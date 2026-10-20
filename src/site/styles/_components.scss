@@ -586,3 +586,35 @@ POSTS PAGE MOSAIC (v2)
     margin-left: 0;
   }
 }
+
+/* ----------------------
+RSS PAGE (/rss/)
+---------------------- */
+
+// the feed address with a copy button beside it
+.rss-copy {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 32rem;
+  input {
+    flex: 1;
+    min-width: 0;
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.9rem;
+    color: var(--color-text);
+    border: 1px solid var(--color-primary);
+    border-radius: 0;
+    background: white;
+  }
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1.1rem;
+    border: 0;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.85rem;
+    color: white;
+    background: var(--color-secondary);
+    &:hover { opacity: 0.9; }
+  }
+}

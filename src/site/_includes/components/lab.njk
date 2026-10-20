@@ -85,7 +85,7 @@
     showImage = false (or no image at all) gives a text-only card;
     useTag = true labels it with its first tag instead of its section #}
 {% macro storyCard(post, cls = "", excerpt = false, showImage = true, useTag = false) %}
-{%- set labels = { writing: "Writing", notes: "Notes", art: "Art", sketching: "Sketching", sketchbooks: "Sketchbook", projects: "Project" } %}
+{%- set labels = { writing: "Writing", notes: "Notes", art: "Art", sketching: "Sketching", sketchbooks: "Sketchbook", projects: "Project", letters: "Letters" } %}
 {%- set section = post.data.section | primarySection %}
 {#- useTag: label with the post's first tag that isn't just its section
     (falls back to the section) #}
@@ -107,4 +107,6 @@
 </article>
 {% endmacro %}
 
-{% macro more(url, text) %}<a class="lab-more" href="{{ url }}">{{ text }} &rarr;</a>{% endmacro %}
+{#- "View all →" style link. The arrow is drawn in CSS (.lab-more-arrow)
+    so its style can be switched — see data-arrow in lab.scss #}
+{% macro more(url, text) %}<a class="lab-more" href="{{ url }}">{{ text }}<span class="lab-more-arrow" aria-hidden="true"></span></a>{% endmacro %}
