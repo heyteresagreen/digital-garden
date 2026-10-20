@@ -786,7 +786,7 @@ $home-wash: rgba(255, 255, 255, 0.6);
 .home-letters {
   position: relative;
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem 3rem; align-items: center;
-  margin: 3rem 0 1.5rem;
+  margin: 0 0 3.5rem;
   padding: 2.25rem 2.5rem 2.5rem;
   @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2rem 1.25rem; }
   &::before {
@@ -799,6 +799,9 @@ $home-wash: rgba(255, 255, 255, 0.6);
   p { margin: 0; font-size: 0.9em; line-height: 1.5; }
   .lab-more { margin-top: 0.75rem; }
 }
+// less of a gap above the letters panel (the Reading/Notes band's own
+// bottom padding)
+.lab-home .lab-e-band:has(+ .home-letters) { padding-bottom: 2rem; }
 // on the homepage the letters panel sits just above the footer
 .lab-home .lab-main { margin-bottom: 0; }
 .lab-home footer { margin-top: 0; }

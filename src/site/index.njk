@@ -44,18 +44,15 @@ eleventyImport:
 {%- endfor %}
 
 {#- writing: its own full-width band, small images (a pasted screenshot shows as text
-    only), each labelled with its first tag rather than "Writing" every
-    time. Letters are text only, labelled "Letters" #}
+    only; letters use the first picture in the letter), each labelled with
+    its first tag rather than "Writing" every time — letters are labelled
+    "Letters" #}
 <section class="lab-e-band is-tint">
   <header class="lab-e-head"><h2>Writing</h2>{{ more("/writing/", "View all") }}</header>
   <div class="lab-e-wgrid">
     {%- for post in writes %}
-    {%- if "letters" in post.data.section %}
-    {{- card(post, "is-compact", true, false) }}
-    {%- else %}
     {%- set t = post | cardImageAny %}
-    {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), true) }}
-    {%- endif %}
+    {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), not ("letters" in post.data.section)) }}
     {%- endfor %}
   </div>
 </section>
