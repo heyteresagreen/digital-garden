@@ -45,7 +45,7 @@ eleventyImport:
 </section>
 {%- endfor %}
 
-{#- writing: its own band, small images (a pasted screenshot shows as text
+{#- writing: its own band with torn-paper edges, small images (a pasted screenshot shows as text
     only), each labelled with its first tag rather than "Writing" every
     time. Letters are text only, labelled "Letters" #}
 <section class="lab-e-band is-tint">
@@ -94,19 +94,21 @@ eleventyImport:
   </div>
 </section>
 
-{#- letters: a full-width white band with a cut-line or torn-paper edge
-    (data-letters on <html>, see lab.scss) #}
+{#- letters: a compact cut-out coupon above the footer — heading and
+    blurb on one side, the sign-up on the other #}
 <section class="home-letters">
-  <h2>Get my letters</h2>
-  <p>Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+  <div>
+    <h2>Get my letters</h2>
+    <p>Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
+  </div>
   <div class="home-signup">
     <label for="bd-email">Your email address</label>
     <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
       <input type="email" name="email" id="bd-email" autocomplete="email" required>
       <button type="submit">Sign up</button>
     </form>
+    {{ more("/letters/", "Read past letters") }}
   </div>
-  {{ more("/letters/", "Read past letters") }}
 </section>
 
 <script>

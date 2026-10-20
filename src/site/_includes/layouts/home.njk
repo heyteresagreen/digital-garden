@@ -1,9 +1,5 @@
-{#- data-labels / data-letters: styles still being tried out for the card
-    section labels and the letters sign-up (see lab.scss). Under npm start
-    they can be switched live with the design options panel. -#}
-{%- set homeOptions = { labels: "dark", letters: "cut" } -%}
 <!doctype html>
-<html lang="en" data-labels="{{ homeOptions.labels }}" data-letters="{{ homeOptions.letters }}"{% if build.dev %} data-defaults='{{ homeOptions | dump }}'{% endif %}>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,14 +14,9 @@
   <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
   {#- the homepage grew out of the lab (version E), so it still uses its styles #}
   <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
-  {%- if build.dev %}
-  {#- dev only: apply options picked in the design options panel before
-      anything draws #}
-  <script>try { ["labels", "letters"].forEach(function (k) { var v = localStorage.getItem("opt-" + k); if (v) document.documentElement.dataset[k] = v; }); } catch (e) {}</script>
-  {%- endif %}
 </head>
 <body class="lab lab-home">
-  {#- torn-paper edges for the letters band (data-letters="torn"): ragged
+  {#- torn-paper edges for the Writing band (see lab.scss): ragged
       noise displacing the edges of a plain white box — the filter the old
       site used on its backlinks box -#}
   <svg width="0" height="0" style="position: absolute" aria-hidden="true">
@@ -39,7 +30,6 @@
 {{ content | safe }}
   </main>
   {% include "components/footer.njk" %}
-  {%- if build.dev %}{% include "components/design-options.njk" %}{% endif %}
   <script data-goatcounter="https://teresawatts.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </body>

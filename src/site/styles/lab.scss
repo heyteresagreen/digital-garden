@@ -696,9 +696,7 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 
 /* ============================================================
    The real homepage (src/site/index.njk + layouts/home.njk) — grew out
-   of E above. Everything here is scoped to .lab-home, or to the
-   data-labels / data-letters options set on <html> (still being tried
-   out with the dev-only design options panel).
+   of E above. Everything here is scoped to .lab-home or .home-*.
    ============================================================ */
 
 // the full-width bands below draw past the column's edges; clip that so
@@ -763,92 +761,71 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
   }
 }
 
-/* ---------- section labels (data-labels) ----------
-   pink: E's original (only 2.6:1 contrast — fails WCAG)
-   dark: a darker terracotta, 4.6:1 on the page
-   tag:  like the tag chips on posts, without the #
-   tag-caps: the same chip, keeping the small uppercase lettering */
-html[data-labels="dark"] .lab-home .lab-e-tag { color: #b5523a; }
-html[data-labels="tag"] .lab-home .lab-e-tag { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; }
-html[data-labels="tag-caps"] .lab-home .lab-e-tag a { padding: 2px 6px 1px; }
-html[data-labels^="tag"] .lab-home .lab-e-tag {
-  margin-bottom: 0.5rem;
-  a {
-    display: inline-block; padding: 1px 6px; border-radius: var(--border-radius);
-    background: var(--color-accent); color: var(--color-secondary) !important;
-    &:hover { text-decoration: none; background: var(--color-secondary); color: white !important; }
-  }
-}
+/* ---------- section labels ----------
+   E's light pink only reached 2.6:1 contrast (fails WCAG); this darker
+   terracotta is 4.6:1 on the page */
+.lab-home .lab-e-tag { color: #b5523a; }
 
-/* ---------- letters sign-up ----------
-   A white panel, the width of the content column. data-letters picks its
-   edges:
-   cut:  outlined with the footer's dashed "cut here" line, scissors on top
-   torn: torn-paper edges, from the SVG filter in layouts/home.njk (the
-         effect the old site used on its backlinks box) */
-.home-letters {
+// the light white wash behind Writing and the letters sign-up
+$home-wash: rgba(255, 255, 255, 0.6);
+
+/* ---------- Writing: full-width band with torn-paper edges ----------
+   The wash is drawn by ::before, full width, roughened by the SVG filter
+   in layouts/home.njk (the effect the old site used on its backlinks
+   box) — this replaces E's straight-edged tint */
+.lab-home .lab-e-band.is-tint {
   position: relative;
-  margin: 3rem 0 4rem;
-  padding: 3.5rem 0;
-  text-align: center;
-  padding-left: 1.5rem; padding-right: 1.5rem;
-  // the white panel, drawn behind the content
-  &::after {
-    content: ""; position: absolute; z-index: -1; inset: 0;
-    background: white;
-  }
-  > * { max-width: 30rem; margin-left: auto; margin-right: auto; }
-  h2 { font-family: var(--font-family); font-weight: 400; font-size: 1.75rem; margin-top: 0; margin-bottom: 0.5rem; padding: 0; }
-  p { margin-top: 0; margin-bottom: 1.5rem; font-size: 0.95em; }
-}
-html[data-letters="cut"] .home-letters {
-  &::after { border: 1px dashed rgba(0, 0, 0, 0.15); }
-  // the footer's scissors, sitting on the top line in the middle
+  margin: 1.5rem 0;
+  background: none; box-shadow: none; clip-path: none;
   &::before {
-    content: "✁";
-    position: absolute; top: -4px; left: 50%;
-    transform: translateY(-52%);
-    font-size: 1.6em; line-height: 1;
-    color: #71707e;
-  }
-}
-html[data-letters="torn"] .home-letters {
-  margin: 4rem 0 5rem;
-  &::after {
-    background: rgba(255, 255, 255, 0.85);
+    content: ""; position: absolute; z-index: -1;
+    top: 0; bottom: 0; left: -100vmax; right: -100vmax;
+    background: $home-wash;
     filter: url(#torn-edge);
     box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
   }
 }
 
+/* ---------- letters sign-up: a compact cut-out coupon ----------
+   The width of the content column, the same wash as Writing, outlined
+   with the footer's dashed "cut here" line. No bottom line: it sits right
+   on the footer, whose own cut line closes it off. Heading and blurb on
+   the left, the form on the right; stacked on phones */
+.home-letters {
+  position: relative;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem 3rem; align-items: center;
+  margin: 3rem 0 0;
+  padding: 2rem 2rem 1.75rem;
+  background: $home-wash;
+  border: 1px dashed rgba(0, 0, 0, 0.15);
+  border-bottom: 0;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 1.75rem 1.25rem 1.5rem; }
+  // the footer's scissors, smaller, sitting on the top line in the middle
+  &::before {
+    content: "✁";
+    position: absolute; top: -3px; left: 50%;
+    transform: translateY(-52%);
+    font-size: 1.15em; line-height: 1;
+    color: #71707e;
+  }
+  h2 { font-family: var(--font-family); font-weight: 400; font-size: 1.5rem; margin: 0 0 0.35rem; padding: 0; }
+  p { margin: 0; font-size: 0.9em; line-height: 1.5; }
+  .lab-more { margin-top: 0.75rem; }
+}
+// on the homepage the coupon runs straight into the footer
+.lab-home .lab-main { margin-bottom: 0; }
+.lab-home footer { margin-top: 0; }
+
 // sign-up form: a visible label, and a field outline dark enough to see
 // (#71707e on white is 4.8:1; WCAG asks 3:1 for form borders)
 .home-signup {
-  text-align: left;
-  label { display: block; font-family: var(--font-family-sans-serif); font-size: 0.85rem; margin-bottom: 0.35rem; }
+  label { display: block; font-family: var(--font-family-sans-serif); font-size: 0.8rem; margin-bottom: 0.3rem; }
   .lab-e-subscribe {
-    margin: 0 0 1.5rem !important;
+    margin: 0 !important;
     max-width: none;
     input[type=email] {
       border: 1px solid #71707e;
       &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
     }
-  }
-}
-
-/* ---------- design options panel (dev only, npm start) ---------- */
-.design-options {
-  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 10;
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; align-items: center;
-  max-width: calc(100vw - 2rem); box-sizing: border-box;
-  padding: 0.45rem 0.6rem 0.45rem 1rem; border-radius: 999px;
-  background: rgba(40, 39, 50, 0.92); color: white;
-  font-family: var(--font-family-sans-serif); font-size: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  label { display: flex; align-items: center; gap: 0.4rem; }
-  select { font: inherit; padding: 0.2rem 0.3rem; border-radius: 4px; border: 0; }
-  button {
-    font: inherit; cursor: pointer; padding: 0.25rem 0.7rem; border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.4); background: none; color: white;
   }
 }
