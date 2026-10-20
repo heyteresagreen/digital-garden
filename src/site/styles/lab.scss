@@ -711,7 +711,10 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 
 // section titles with their "View all" link sitting just after them, on
 // the left, rather than pushed to the far edge
-.lab-home .lab-e-head { justify-content: flex-start; gap: 1.25rem; }
+.lab-home .lab-e-head {
+  justify-content: flex-start; gap: 1.25rem;
+  .lab-more { font-size: 0.9rem; }
+}
 
 // "View all" arrows: a short drawn arrow instead of the long → glyph
 .lab-home .lab-more-arrow::after {
@@ -772,40 +775,41 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
    terracotta is 4.6:1 on the page */
 .lab-home .lab-e-tag { color: #b5523a; }
 
-// the light white wash behind Writing and the letters sign-up
+// the light white wash behind Writing
 $home-wash: rgba(255, 255, 255, 0.6);
 
-/* ---------- Writing: full-width band with torn-paper edges ----------
-   The wash is drawn by ::before, full width, roughened by the SVG filter
+/* ---------- Writing: a panel with torn-paper edges ----------
+   The width of the content column. The wash is drawn by ::before,
+   roughened by the SVG filter
    in layouts/home.njk (the effect the old site used on its backlinks
    box) — this replaces E's straight-edged tint */
 .lab-home .lab-e-band.is-tint {
   position: relative;
   margin: 1.5rem 0;
+  padding-left: 2.5rem; padding-right: 2.5rem;
+  @media (max-width: 600px) { padding-left: 1.25rem; padding-right: 1.25rem; }
   background: none; box-shadow: none; clip-path: none;
   &::before {
     content: ""; position: absolute; z-index: -1;
-    top: 0; bottom: 0; left: -100vmax; right: -100vmax;
+    inset: 0;
     background: $home-wash;
     filter: url(#torn-edge);
     box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
   }
 }
 
-/* ---------- letters sign-up: a compact cut-out coupon ----------
-   The width of the content column, the same wash as Writing, outlined
-   with the footer's dashed "cut here" line. No bottom line: it sits right
-   on the footer, whose own cut line closes it off. Heading and blurb on
-   the left, the form on the right; stacked on phones */
+/* ---------- letters sign-up: a compact strip above the footer ----------
+   The width of the content column, on the page background, with the
+   footer's dashed "cut here" line along the top only (the footer's own
+   cut line sits right under it). Heading and blurb on the left, the form
+   on the right; stacked on phones */
 .home-letters {
   position: relative;
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem 3rem; align-items: center;
   margin: 3rem 0 0;
-  padding: 2rem 2rem 1.75rem;
-  background: $home-wash;
-  border: 1px dashed rgba(0, 0, 0, 0.15);
-  border-bottom: 0;
-  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 1.75rem 1.25rem 1.5rem; }
+  padding: 2.25rem 0 2.5rem;
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2rem 0; }
   // the footer's scissors, smaller, sitting on the top line in the middle
   &::before {
     content: "✁";
@@ -829,7 +833,12 @@ $home-wash: rgba(255, 255, 255, 0.6);
   .lab-e-subscribe {
     margin: 0 !important;
     max-width: none;
-    input[type=email] {
+    // by id, to beat the site-wide input#bd-email in _components.scss
+    // (white border, page background, fixed width)
+    input#bd-email {
+      width: auto; margin: 0;
+      font-family: var(--font-family-sans-serif);
+      background: white;
       border: 1px solid #71707e;
       &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
     }
