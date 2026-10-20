@@ -766,10 +766,12 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 /* ---------- section labels (data-labels) ----------
    pink: E's original (only 2.6:1 contrast — fails WCAG)
    dark: a darker terracotta, 4.6:1 on the page
-   tag:  like the tag chips on posts, without the # */
+   tag:  like the tag chips on posts, without the #
+   tag-caps: the same chip, keeping the small uppercase lettering */
 html[data-labels="dark"] .lab-home .lab-e-tag { color: #b5523a; }
-html[data-labels="tag"] .lab-home .lab-e-tag {
-  text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem;
+html[data-labels="tag"] .lab-home .lab-e-tag { text-transform: none; letter-spacing: 0; font-weight: 400; font-size: 0.8rem; }
+html[data-labels="tag-caps"] .lab-home .lab-e-tag a { padding: 2px 6px 1px; }
+html[data-labels^="tag"] .lab-home .lab-e-tag {
   margin-bottom: 0.5rem;
   a {
     display: inline-block; padding: 1px 6px; border-radius: var(--border-radius);
@@ -779,8 +781,9 @@ html[data-labels="tag"] .lab-home .lab-e-tag {
 }
 
 /* ---------- letters sign-up ----------
-   A full-width white band. data-letters picks its edges:
-   cut:  the footer's dashed "cut here" line top and bottom, scissors on top
+   A white panel, the width of the content column. data-letters picks its
+   edges:
+   cut:  outlined with the footer's dashed "cut here" line, scissors on top
    torn: torn-paper edges, from the SVG filter in layouts/home.njk (the
          effect the old site used on its backlinks box) */
 .home-letters {
@@ -788,10 +791,10 @@ html[data-labels="tag"] .lab-home .lab-e-tag {
   margin: 3rem 0 4rem;
   padding: 3.5rem 0;
   text-align: center;
-  // the white, drawn full width behind the content
+  padding-left: 1.5rem; padding-right: 1.5rem;
+  // the white panel, drawn behind the content
   &::after {
-    content: ""; position: absolute; z-index: -1;
-    top: 0; bottom: 0; left: -100vmax; right: -100vmax;
+    content: ""; position: absolute; z-index: -1; inset: 0;
     background: white;
   }
   > * { max-width: 30rem; margin-left: auto; margin-right: auto; }
@@ -799,7 +802,7 @@ html[data-labels="tag"] .lab-home .lab-e-tag {
   p { margin-top: 0; margin-bottom: 1.5rem; font-size: 0.95em; }
 }
 html[data-letters="cut"] .home-letters {
-  &::after { border-top: 1px dashed rgba(0, 0, 0, 0.1); border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }
+  &::after { border: 1px dashed rgba(0, 0, 0, 0.15); }
   // the footer's scissors, sitting on the top line in the middle
   &::before {
     content: "✁";
@@ -807,7 +810,6 @@ html[data-letters="cut"] .home-letters {
     transform: translateY(-52%);
     font-size: 1.6em; line-height: 1;
     color: #71707e;
-    border-top: 1px dashed rgba(0, 0, 0, 0.1);
   }
 }
 html[data-letters="torn"] .home-letters {
