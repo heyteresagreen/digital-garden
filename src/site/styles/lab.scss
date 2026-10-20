@@ -736,14 +736,20 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
   }
 }
 
-// scroll fade-in: .rv is only added by the homepage script, to cards that
-// start below the fold, so nothing is ever hidden without JS
-.lab-home .rv {
-  opacity: 0;
-  transform: translateY(14px);
-  transition: opacity 700ms ease var(--rv-delay, 0ms), transform 700ms ease var(--rv-delay, 0ms);
-  &.is-in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) { transform: none; transition: opacity 300ms; }
+// scroll fade-in: cards fade up as they scroll into view. Pure CSS — a
+// scroll-driven animation tied to each card's position on screen, so it
+// can't leave anything hidden: cards already on screen (or above) are
+// simply shown, and browsers without support, or with reduced motion
+// turned on, show everything as normal
+@keyframes home-rise { from { opacity: 0; transform: translateY(14px); } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .lab-home :is(.home-making-head, .lab-main .lab-e-card, .lab-e-covers > a, .lab-e-notes li, .home-letters) {
+      animation: home-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 60%;
+    }
+  }
 }
 
 // Notes: one quiet row per note, title left and topic right, with the
