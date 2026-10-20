@@ -38,7 +38,7 @@ eleventyImport:
 {#- the Making title stays hidden until you start scrolling, then fades in
     (script at the bottom; without JS it's simply there) #}
 <script>document.documentElement.classList.add("lab-js");</script>
-<header class="lab-e-head lab-e-reveal"><h2><a href="/making/">Making</a></h2></header>
+<header class="lab-e-head lab-e-reveal"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
 {%- for pair in arts | batch(2) %}
 <section class="lab-e-top lab-e-ratio-row">
   {%- for post in pair %}{{ card(post, "", true) }}{% endfor %}
@@ -94,16 +94,18 @@ eleventyImport:
   </div>
 </section>
 
-{#- letters: a small sign-up card, outlined with the footer's dashed
-    "cut here" line #}
+{#- letters: a full-width white band with a cut-line or torn-paper edge
+    (data-letters on <html>, see lab.scss) #}
 <section class="home-letters">
   <h2>Get my letters</h2>
   <p>Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
-  <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
-    <label class="visually-hidden" for="bd-email">Your email</label>
-    <input type="email" name="email" id="bd-email" placeholder="Enter email address">
-    <button type="submit">Sign up</button>
-  </form>
+  <div class="home-signup">
+    <label for="bd-email">Your email address</label>
+    <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
+      <input type="email" name="email" id="bd-email" autocomplete="email" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
   {{ more("/letters/", "Read past letters") }}
 </section>
 
@@ -118,11 +120,9 @@ eleventyImport:
   })();
 
   // cards below the fold fade in as they scroll into view; whatever's
-  // already on screen at load is left alone. The style comes from
-  // data-reveal on <html> (fade-up, fade or off), see lab.scss
+  // already on screen at load is left alone (styles: .rv in lab.scss)
   (function () {
-    var mode = document.documentElement.dataset.reveal;
-    if (!mode || mode === "off" || !("IntersectionObserver" in window)) return;
+    if (!("IntersectionObserver" in window)) return;
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }

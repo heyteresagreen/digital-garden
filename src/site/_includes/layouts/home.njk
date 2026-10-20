@@ -1,9 +1,9 @@
-{#- data-hover / data-arrow / data-reveal: the homepage's chosen styles for
-    image hover, "View all" arrows and the scroll fade-in (see lab.scss).
-    Under npm start they can be tried live with the design options panel. -#}
-{%- set homeOptions = { hover: "zoom", arrow: "short", reveal: "fade-up" } -%}
+{#- data-labels / data-letters: styles still being tried out for the card
+    section labels and the letters sign-up (see lab.scss). Under npm start
+    they can be switched live with the design options panel. -#}
+{%- set homeOptions = { labels: "dark", letters: "cut" } -%}
 <!doctype html>
-<html lang="en" data-hover="{{ homeOptions.hover }}" data-arrow="{{ homeOptions.arrow }}" data-reveal="{{ homeOptions.reveal }}"{% if build.dev %} data-defaults='{{ homeOptions | dump }}'{% endif %}>
+<html lang="en" data-labels="{{ homeOptions.labels }}" data-letters="{{ homeOptions.letters }}"{% if build.dev %} data-defaults='{{ homeOptions | dump }}'{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,10 +21,19 @@
   {%- if build.dev %}
   {#- dev only: apply options picked in the design options panel before
       anything draws #}
-  <script>try { ["hover", "arrow", "reveal"].forEach(function (k) { var v = localStorage.getItem("opt-" + k); if (v) document.documentElement.dataset[k] = v; }); } catch (e) {}</script>
+  <script>try { ["labels", "letters"].forEach(function (k) { var v = localStorage.getItem("opt-" + k); if (v) document.documentElement.dataset[k] = v; }); } catch (e) {}</script>
   {%- endif %}
 </head>
 <body class="lab lab-home">
+  {#- torn-paper edges for the letters band (data-letters="torn"): ragged
+      noise displacing the edges of a plain white box — the filter the old
+      site used on its backlinks box -#}
+  <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+    <filter id="torn-edge" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="4" seed="25" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="10" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
   {% include "components/nav.njk" %}
   <main class="lab-main">
 {{ content | safe }}

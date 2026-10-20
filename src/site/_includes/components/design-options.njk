@@ -1,12 +1,11 @@
 {#- Dev only (npm start): a little panel for trying homepage options live —
-    image hover, "View all" arrows and the scroll fade-in. Each choice sets
-    data-hover / data-arrow / data-reveal on <html> (styles in lab.scss) and
+    currently the card section labels and the letters band. Each choice sets
+    data-labels / data-letters on <html> (styles in lab.scss) and
     is remembered in this browser. Production uses the defaults written on
     <html> in layouts/home.njk; once you've picked, change them there. -#}
 {%- set designOptions = [
-  { key: "hover", label: "Hover", values: ["zoom", "lift", "frame", "tint", "dim", "none"] },
-  { key: "arrow", label: "Arrows", values: ["short", "chevron", "circle", "long", "none"] },
-  { key: "reveal", label: "Fade-in", values: ["fade-up", "fade", "off"] }
+  { key: "labels", label: "Labels", values: ["dark", "tag", "pink"] },
+  { key: "letters", label: "Letters", values: ["cut", "torn"] }
 ] %}
 <div class="design-options" aria-label="Design options (dev only)">
   {%- for opt in designOptions %}
@@ -28,8 +27,6 @@
       sel.addEventListener("change", function () {
         root.dataset[key] = sel.value;
         try { localStorage.setItem("opt-" + key, sel.value); } catch (e) {}
-        // the fade-in is set up on load, so reload to see a new one
-        if (key === "reveal") location.reload();
       });
     });
     document.querySelector(".design-options-reset").addEventListener("click", function () {
