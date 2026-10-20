@@ -775,54 +775,31 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
    terracotta is 4.6:1 on the page */
 .lab-home .lab-e-tag { color: #b5523a; }
 
-// the light white wash behind Writing
+// the light white wash behind the letters panel (as on Writing)
 $home-wash: rgba(255, 255, 255, 0.6);
 
-/* ---------- Writing: a panel with torn-paper edges ----------
+/* ---------- letters sign-up: a torn-paper panel above the footer ----------
    The width of the content column. The wash is drawn by ::before,
-   roughened by the SVG filter
-   in layouts/home.njk (the effect the old site used on its backlinks
-   box) — this replaces E's straight-edged tint */
-.lab-home .lab-e-band.is-tint {
-  position: relative;
-  margin: 1.5rem 0;
-  padding-left: 2.5rem; padding-right: 2.5rem;
-  @media (max-width: 600px) { padding-left: 1.25rem; padding-right: 1.25rem; }
-  background: none; box-shadow: none; clip-path: none;
-  &::before {
-    content: ""; position: absolute; z-index: -1;
-    inset: 0;
-    background: $home-wash;
-    filter: url(#torn-edge);
-    box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
-  }
-}
-
-/* ---------- letters sign-up: a compact strip above the footer ----------
-   The width of the content column, on the page background, with the
-   footer's dashed "cut here" line along the top only (the footer's own
-   cut line sits right under it). Heading and blurb on the left, the form
-   on the right; stacked on phones */
+   roughened by the SVG filter in layouts/home.njk (the effect the old
+   site used on its backlinks box). Heading and blurb on the left, the
+   form on the right; stacked on phones */
 .home-letters {
   position: relative;
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem 3rem; align-items: center;
-  margin: 3rem 0 0;
-  padding: 2.25rem 0 2.5rem;
-  border-top: 1px dashed rgba(0, 0, 0, 0.1);
-  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2rem 0; }
-  // the footer's scissors, smaller, sitting on the top line in the middle
+  margin: 3rem 0 1.5rem;
+  padding: 2.25rem 2.5rem 2.5rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2rem 1.25rem; }
   &::before {
-    content: "✁";
-    position: absolute; top: -3px; left: 50%;
-    transform: translateY(-52%);
-    font-size: 1.15em; line-height: 1;
-    color: #71707e;
+    content: ""; position: absolute; z-index: -1; inset: 0;
+    background: $home-wash;
+    filter: url(#torn-edge);
+    box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
   }
   h2 { font-family: var(--font-family); font-weight: 400; font-size: 1.5rem; margin: 0 0 0.35rem; padding: 0; }
   p { margin: 0; font-size: 0.9em; line-height: 1.5; }
   .lab-more { margin-top: 0.75rem; }
 }
-// on the homepage the coupon runs straight into the footer
+// on the homepage the letters panel sits just above the footer
 .lab-home .lab-main { margin-bottom: 0; }
 .lab-home footer { margin-top: 0; }
 
