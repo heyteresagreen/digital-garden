@@ -122,21 +122,39 @@ eleventyImport:
   })();
 
   // cards below the fold fade in as they scroll into view; whatever's
-  // already on screen at load is left alone (styles: .rv in lab.scss)
+  // already on screen at load is left alone (styles: .rv in lab.scss).
+  // A plain position check on scroll rather than an IntersectionObserver:
+  // anything that's on screen *or above it* is shown, so nothing can stay
+  // hidden — e.g. after a reload, when Chrome jumps back down the page
+  // after this script has run
   (function () {
-    if (!("IntersectionObserver" in window)) return;
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
-      });
-    }, { rootMargin: "0px 0px -8% 0px" });
+    var hidden = [];
     document.querySelectorAll(".lab-main .lab-e-card, .lab-e-covers > a, .lab-e-notes li, .home-letters").forEach(function (el) {
       if (el.getBoundingClientRect().top < window.innerHeight) return;
       // a small stagger between neighbours in a row
       var i = Array.prototype.indexOf.call(el.parentNode.children, el);
       el.style.setProperty("--rv-delay", (i % 3) * 90 + "ms");
       el.classList.add("rv");
-      io.observe(el);
+      hidden.push(el);
     });
+    var queued = false;
+    function check() {
+      queued = false;
+      var line = window.innerHeight * 0.92;
+      hidden = hidden.filter(function (el) {
+        if (el.getBoundingClientRect().top < line) { el.classList.add("is-in"); return false; }
+        return true;
+      });
+      if (!hidden.length) {
+        window.removeEventListener("scroll", queue);
+        window.removeEventListener("resize", queue);
+      }
+    }
+    function queue() { if (!queued) { queued = true; requestAnimationFrame(check); } }
+    window.addEventListener("scroll", queue, { passive: true });
+    window.addEventListener("resize", queue);
+    window.addEventListener("load", queue);
+    window.addEventListener("pageshow", queue);
+    queue();
   })();
 </script>
