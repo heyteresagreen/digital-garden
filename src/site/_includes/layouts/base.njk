@@ -12,6 +12,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
+  {#- extra stylesheets a page asks for by name, e.g. extraStyles: [lab]
+      on the style guide, which shows the homepage's components too #}
+  {%- for sheet in extraStyles or [] %}
+  <link rel="stylesheet" href="/styles/{{ sheet }}.css?v={{ build.timestamp }}">
+  {%- endfor %}
 </head>
 <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
   {% include "components/nav.njk" %}
