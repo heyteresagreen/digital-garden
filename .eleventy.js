@@ -14,7 +14,7 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 const NOTES_DIR = path.join(__dirname, "src/site/notes");
 const IMG_DIR = path.join(__dirname, "src/site/img/user");
-const SECTIONS = ["writing", "notes", "art", "sketching", "sketchbooks", "books", "letters", "projects"];
+const SECTIONS = require("./src/site/_data/sections.js").all;
 
 // Top-level pages that wiki links may point at.
 // Section links (writing, art, sketching, etc.) are derived from SECTIONS

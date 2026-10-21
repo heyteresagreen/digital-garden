@@ -3,15 +3,14 @@
   layout: "layouts/index.njk",
   title: "Making",
   contentClass: "wide",
-  // Everything made by hand, in one list: art, sketching (sketchnotes live
-  // there too), sketchbooks and crafts (no crafts section yet; it'll show up
-  // here once there is one). allPosts is already newest first.
+  // Everything made by hand, in one list: the sections in sections.making
+  // (_data/sections.js). allPosts is already newest first.
   pagination: {
     data: "collections.allPosts",
     size: 12,
     generatePageOnEmptyData: true,
-    before: (posts) => {
-      const making = ["art", "sketching", "sketchbooks", "crafts"];
+    before: (posts, data) => {
+      const making = data.sections.making; // _data/sections.js
       return posts.filter((p) => [].concat(p.data.section || []).some((s) => making.includes(s)));
     }
   },
