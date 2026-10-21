@@ -1,0 +1,452 @@
+---
+title: Design system
+layout: layouts/base.njk
+contentClass: ds-page
+hideSignup: true # the sign-up is shown in its own section instead
+eleventyImport:
+  collections: ["allPosts", "writing", "notes", "letters", "art", "completedBooks"]
+---
+{#- Dev-only design system: every token, style and component on the site,
+    on one page with a sticky section menu. Lives in src/site/dev/, so it
+    renders at /dev/design-system/ under `npm start` and is never built in
+    production (dev.11tydata.js). Examples use real content and the real
+    macros/includes, so it stays in step with the site. Colour values are
+    read live from the stylesheet. The page's own scaffolding is styled in
+    the <style> block at the bottom (prefixed ds-), so nothing extra ships.
+    Note: the sign-up examples repeat id="bd-email" — fine here, never on a
+    real page. -#}
+{%- from "components/post-card.njk" import postCard %}
+{%- from "components/reading/cover.njk" import bookCover %}
+{%- from "components/home-cards.njk" import more, storyCard as card %}
+
+{%- set menu = [
+  { group: "Foundations", items: [["colour", "Colour"], ["type", "Type"], ["shape", "Space & shape"], ["motion", "Motion"]] },
+  { group: "Content", items: [["prose", "Prose"], ["media", "Images"]] },
+  { group: "Components", items: [["links", "Links"], ["tags", "Tags & labels"], ["forms", "Form field"], ["signup", "Letters sign-up"], ["story-card", "Story card"], ["post-lists", "Post lists"], ["covers", "Book covers"], ["post-header", "Post header & nav"], ["index-header", "Index header"], ["pagination", "Pagination"]] },
+  { group: "Homepage", items: [["home-intro", "Intro"], ["home-head", "Section title"], ["home-making", "Making rows"], ["home-writing", "Writing band"], ["home-reading", "Reading & notes"]] },
+  { group: "Layout", items: [["nav", "Nav"], ["footer", "Footer"], ["widths", "Widths & breakpoints"]] }
+] %}
+
+{#- one section's header: group label, title, description, files -#}
+{%- macro head(group, title, desc, files) %}
+<header class="ds-head">
+  <p class="ds-eyebrow">{{ group }}</p>
+  <h2>{{ title }}</h2>
+  <p class="ds-desc">{{ desc | safe }}</p>
+  {%- if files %}<p class="ds-files">{% for f in files %}<code>{{ f }}</code>{% endfor %}</p>{% endif %}
+</header>
+{%- endmacro %}
+
+<div class="ds">
+  <nav class="ds-nav" aria-label="Design system sections">
+    <p class="ds-nav-title"><a href="#top">Design system</a></p>
+    {%- for g in menu %}
+    <p class="ds-nav-group">{{ g.group }}</p>
+    <ul>
+      {%- for i in g.items %}<li><a href="#{{ i[0] }}">{{ i[1] }}</a></li>{% endfor %}
+    </ul>
+    {%- endfor %}
+  </nav>
+
+  <div class="ds-main" id="top">
+    <header class="ds-intro">
+      <p class="ds-eyebrow">teresawatts.com · dev only, never published</p>
+      <h1>Design system</h1>
+      <p>Every token, style and component on the site, with where it lives and how to use it. Previews use real content and the real templates, so this page always matches the site.</p>
+      <p class="ds-files"><code>_tokens.scss</code><code>_base.scss</code><code>_layout.scss</code><code>_components.scss</code><code>_home.scss</code></p>
+    </header>
+
+    {#- ================= FOUNDATIONS ================= #}
+    <section class="ds-section" id="colour">
+      {{ head("Foundations", "Colour", "CSS custom properties in <code>_tokens.scss</code>, so a reskin can be previewed live in devtools. The palette first, then supporting colours that each do one job. Values are read from the stylesheet.", ["_tokens.scss"]) }}
+      <h3 class="ds-sub">Palette</h3>
+      <div class="ds-swatches">
+        {%- for t in [
+          ["--color-primary", "Pink", "Accents, nav underline, blockquote rule"],
+          ["--color-secondary", "Blue", "Links, headings, buttons"],
+          ["--color-text", "Grey", "Body text · 7.7:1 on the page"],
+          ["--color-background", "Pink lightest", "Page background"],
+          ["--color-accent", "Pink light", "Tags, link hover, dividers"]
+        ] %}
+        <figure class="ds-swatch"><span style="background: linear-gradient(var({{ t[0] }}), var({{ t[0] }})), var(--color-background)"></span><figcaption><strong>{{ t[1] }}</strong><code>{{ t[0] }}</code><code class="ds-value" data-token="{{ t[0] }}"></code><small>{{ t[2] }}</small></figcaption></figure>
+        {%- endfor %}
+      </div>
+      <h3 class="ds-sub">Supporting</h3>
+      <div class="ds-swatches">
+        {%- for t in [
+          ["--color-muted", "Muted grey", "Footer text, form field borders · 4.8:1 on white"],
+          ["--color-label", "Terracotta", "Homepage card labels · 4.6:1 on the page"],
+          ["--color-wash", "White wash", "Writing band, sign-up panel"]
+        ] %}
+        <figure class="ds-swatch"><span style="background: linear-gradient(var({{ t[0] }}), var({{ t[0] }})), var(--color-background)"></span><figcaption><strong>{{ t[1] }}</strong><code>{{ t[0] }}</code><code class="ds-value" data-token="{{ t[0] }}"></code><small>{{ t[2] }}</small></figcaption></figure>
+        {%- endfor %}
+      </div>
+      <pre class="ds-code"><code>color: var(--color-secondary);
+background: var(--color-wash);</code></pre>
+    </section>
+
+    <section class="ds-section" id="type">
+      {{ head("Foundations", "Type", "Two families: <strong>Newsreader</strong> (serif) for reading and headings, <strong>Avenir</strong> (sans) for interface bits — nav, labels, dates, buttons, footer.", ["_tokens.scss", "_base.scss"]) }}
+      <div class="ds-fonts">
+        <div class="ds-font"><p style="font-family: var(--font-family)">Aa Newsreader</p><code>--font-family</code><small>Body, headings, titles</small></div>
+        <div class="ds-font"><p style="font-family: var(--font-family-sans-serif)">Aa Avenir</p><code>--font-family-sans-serif</code><small>Nav, labels, dates, buttons, footer</small></div>
+      </div>
+      <h3 class="ds-sub">Scale (inside .content, base 1.25rem)</h3>
+      <div class="ds-preview content ds-type">
+        <h1>Heading 1 · page title</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <p>Body text — Newsreader at 1.25rem, line height 1.65.</p>
+        <time>A date · Avenir, &lt;time&gt;</time>
+        <p class="section-label"><a href="#type">&larr; Section label</a></p>
+        <p class="story-card-label">Card label</p>
+      </div>
+      <p class="ds-note">Phones (≤600px): page titles drop to 1.6em.</p>
+    </section>
+
+    <section class="ds-section" id="shape">
+      {{ head("Foundations", "Space & shape", "One corner radius for images and tags. Paragraphs have 1.5rem below them; list items 0.7rem.", ["_tokens.scss", "_base.scss"]) }}
+      <div class="ds-row">
+        <div class="ds-shape" style="border-radius: var(--border-radius)"></div>
+        <p><code>--border-radius: 4px</code><br><small>Images, tags, code</small></p>
+      </div>
+    </section>
+
+    <section class="ds-section" id="motion">
+      {{ head("Foundations", "Motion", "Small and quiet, and switched off for anyone with reduced motion turned on. Homepage motion is pure CSS (scroll-driven animations), so nothing can get stuck hidden.", ["_home.scss"]) }}
+      <ul class="ds-list">
+        <li><strong>Lift</strong> — hovering a story card raises its picture 2px with a soft shadow.</li>
+        <li><strong>Fade up</strong> — homepage cards, covers, notes and the sign-up fade up 14px as they scroll into view (not the first row of Making, which peeks up on load).</li>
+        <li><strong>Making title</strong> — hidden on load, fades in over the first 120px of scrolling.</li>
+        <li><strong>Arrow nudge</strong> — a <code>.more-link</code> arrow moves 2px right on hover.</li>
+      </ul>
+    </section>
+
+    {#- ================= CONTENT ================= #}
+    <section class="ds-section" id="prose">
+      {{ head("Content", "Prose", "What markdown in a post or note turns into.", ["_base.scss"]) }}
+      <div class="ds-preview content">
+        <p>A paragraph with a <a href="#prose">link</a>, <strong>bold</strong>, <em>italic</em>, <code>inline code</code> and an inline <q>quotation</q>.</p>
+        <ul><li>Unordered list item</li><li>Another item</li></ul>
+        <ol><li>Ordered list item</li><li>Second item</li></ol>
+        <blockquote><p>A blockquote: smaller sans text with a pink rule on the left.</p></blockquote>
+        <hr>
+      </div>
+      <pre class="ds-code"><code>&gt; A blockquote
+---   (a wavy rule)</code></pre>
+    </section>
+
+    <section class="ds-section" id="media">
+      {{ head("Content", "Images", "Images centre and get the 4px radius. A figure caption sits centred underneath. In notes, Obsidian embeds take alt text and an optional width: <code>![[file.jpg|alt|600]]</code>.", ["_base.scss", "_components.scss"]) }}
+      <div class="ds-preview content">
+        <figure>
+          <img src="/img/user/assets/portraitv2.png" alt="Illustrated self-portrait of Teresa Watts" style="width: 150px">
+          <figcaption>A figure with a caption</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    {#- ================= COMPONENTS ================= #}
+    <section class="ds-section" id="links">
+      {{ head("Components", "Links", "Body links are blue with a thin underline and a pink-light highlight on hover. <code>.more-link</code> is the “View all” style, with a short drawn arrow.", ["_base.scss", "_components.scss", "components/home-cards.njk"]) }}
+      <div class="ds-preview content">
+        <p>A <a href="#links">body link</a> in a sentence.</p>
+        <p>{{ more("#links", "View all") }}</p>
+      </div>
+      <pre class="ds-code"><code>{% raw %}{% from "components/home-cards.njk" import more %}
+{{ more("/writing/", "View all") }}{% endraw %}</code></pre>
+    </section>
+
+    <section class="ds-section" id="tags">
+      {{ head("Components", "Tags & labels", "<code>a.tag</code> for a post's tags; <code>.section-label</code> for the back link above a title; <code>.story-card-label</code> for the small uppercase label on homepage cards.", ["_components.scss", "_home.scss"]) }}
+      <div class="ds-preview content">
+        <div class="header-tags"><a class="tag" href="#tags">#art</a><a class="tag" href="#tags">#letters</a></div>
+        <p class="section-label"><a href="#tags">&larr; Writing</a></p>
+        <p class="story-card-label"><a href="#tags">Sketching</a></p>
+      </div>
+    </section>
+
+    <section class="ds-section" id="forms">
+      {{ head("Components", "Form field", "A visible label, a white field with a 4.8:1 outline and a blue focus ring, and a blue button beside it. Shared by the sign-up form (<code>.signup-form</code>) and the RSS copy field (<code>.rss-copy</code>).", ["_components.scss"]) }}
+      <div class="ds-preview content">
+        <div class="signup-form" style="margin: 0">
+          <label for="ds-field">Your email address</label>
+          <form action="#forms" onsubmit="return false"><input type="email" id="ds-field"><button type="submit">Sign up</button></form>
+        </div>
+        <p class="rss-copy" style="margin-top: 2rem"><input type="text" readonly value="https://teresawatts.com/feed.xml" aria-label="Feed address"><button type="button">Copy</button></p>
+      </div>
+    </section>
+
+    <section class="ds-section" id="signup">
+      {{ head("Components", "Letters sign-up", "The torn-paper panel with the lettering, a blurb and the Buttondown form. Every page ends with it (two columns, above the footer); the homepage has it stacked; the Letters page has it stacked at the top with no lettering.", ["components/letters-signup.njk", "_components.scss"]) }}
+      <p class="ds-variant">Two columns · every page</p>
+      {%- set signupLayout = "two" %}
+      {% include "components/letters-signup.njk" %}
+      <p class="ds-variant">Stacked · homepage</p>
+      {%- set signupLayout = "stacked" %}
+      {% include "components/letters-signup.njk" %}
+      <p class="ds-variant">Stacked, no lettering or past-letters link · Letters page</p>
+      {%- set signupNoTitle = true %}{% set signupNoPast = true %}
+      {% include "components/letters-signup.njk" %}
+      {%- set signupNoTitle = false %}{% set signupNoPast = false %}
+      <pre class="ds-code"><code>{% raw %}{%- set signupLayout = "stacked" %}   {# or "two" #}
+{%- set signupAtEnd = true %}         {# last thing before the footer #}
+{%- set signupNoTitle = true %}       {# no lettering #}
+{%- set signupNoPast = true %}        {# no "Read past letters" #}
+{%- set signupBlurb = "…" %}          {# replace the blurb #}
+{% include "components/letters-signup.njk" %}
+
+hideSignup: true   # front matter: leave it off a page{% endraw %}</code></pre>
+    </section>
+
+    <section class="ds-section" id="story-card">
+      {{ head("Components", "Story card", "The homepage card: picture, label, serif title, optional excerpt, date. Big in Making rows; <code>is-compact</code> (small square picture beside the text) in the Writing band; text-only when there's no picture.", ["components/home-cards.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main ds-cards">
+        {%- for post in collections.allPosts | inSections(sections.making) | head(1) %}{{ card(post, "", true) }}{% endfor %}
+        <div class="home-writing-grid ds-compact">
+          {%- for post in collections.letters | head(1) %}{{ card(post, "is-compact", true) }}{% endfor %}
+          {%- for post in collections.writing | notInSections(["letters"]) | head(1) %}{{ card(post, "is-compact", true, false, true) }}{% endfor %}
+        </div>
+      </div>
+      <pre class="ds-code"><code>{% raw %}{% from "components/home-cards.njk" import storyCard %}
+{{ storyCard(post, cls, excerpt, showImage, useTag) }}
+{{ storyCard(post, "", true) }}                  {# big, with excerpt #}
+{{ storyCard(post, "is-compact", true, true, true) }}  {# compact, labelled by first tag #}{% endraw %}</code></pre>
+    </section>
+
+    <section class="ds-section" id="post-lists">
+      {{ head("Components", "Post lists", "<code>postCard</code> inside <code>ul.post-list</code>; the index page's <code>listClass</code> picks the look.", ["components/post-card.njk", "layouts/index.njk", "_components.scss"]) }}
+      <p class="ds-variant">.writing-list · Writing</p>
+      <div class="ds-preview content"><ul class="post-list writing-list">{% for post in collections.writing | head(2) %}{{ postCard(post, { showImage: true, bodyImageFallback: true }) }}{% endfor %}</ul></div>
+      <p class="ds-variant">.notes-list · Notes</p>
+      <div class="ds-preview content"><ul class="post-list notes-list">{% for post in collections.notes | head(2) %}{{ postCard(post) }}{% endfor %}</ul></div>
+      <p class="ds-variant">.letters-list · Letters</p>
+      <div class="ds-preview content"><ul class="post-list letters-list">{% for post in collections.letters | head(3) %}{{ postCard(post) }}{% endfor %}</ul></div>
+      <p class="ds-variant">.art-grid · Art, sketching, Making</p>
+      <div class="ds-preview content wide"><ul class="post-list art-grid">{% for post in collections.art | head(2) %}{{ postCard(post, { showImage: true }) }}{% endfor %}</ul></div>
+      <p class="ds-variant">.posts-mosaic · All posts</p>
+      <div class="ds-preview content wide"><ul class="post-list posts-mosaic">{% for post in collections.allPosts | head(4) %}{{ postCard(post, { showImage: true, showSection: true }) }}{% endfor %}</ul></div>
+      <pre class="ds-code"><code>---
+layout: layouts/index.njk
+listClass: writing-list
+showImages: true
+---</code></pre>
+    </section>
+
+    <section class="ds-section" id="covers">
+      {{ head("Components", "Book covers", "<code>bookCover</code> in a <code>.cover-grid</code>: a “Reading” badge for current books, and a text placeholder when there's no cover. Saved articles use <code>.article-list</code>.", ["components/reading/cover.njk", "_components.scss"]) }}
+      <div class="ds-preview content">
+        <section class="reading-section">
+          <ul class="cover-grid">
+            {%- for book in "reading" | shelfCards | head(1) %}{{ bookCover(book, true) }}{% endfor %}
+            {%- for post in collections.completedBooks | head(2) %}{{ bookCover(post) }}{% endfor %}
+            <li><a href="#covers" title="A book with no cover"><span class="cover-placeholder">A book with no cover</span></a></li>
+          </ul>
+        </section>
+        <section class="reading-section">
+          <ul class="article-list">
+            <li><a href="#covers">An article I read and liked</a> <span class="reading-meta">example.com · 1 October 2026</span></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section class="ds-section" id="post-header">
+      {{ head("Components", "Post header & nav", "Every post, note and letter: back link, title, date, tags; previous/next at the end.", ["layouts/post.njk", "_components.scss"]) }}
+      <div class="ds-preview content">
+        <article>
+          <header>
+            <p class="section-label"><a href="#post-header">&larr; Writing</a></p>
+            <h1>A post title</h1>
+            <time>Published on 24 September 2026</time>
+            <div class="header-tags"><a class="tag" href="#post-header">#art</a></div>
+          </header>
+          <nav class="post-nav" aria-label="Example">
+            <a class="post-nav-prev" href="#post-header">&larr; Newer post</a>
+            <a class="post-nav-next" href="#post-header">Older post &rarr;</a>
+          </nav>
+        </article>
+      </div>
+    </section>
+
+    <section class="ds-section" id="index-header">
+      {{ head("Components", "Index header", "Section pages: a title and optional <code>intro</code>, or <code>titleImage</code> for a picture heading (the Letters page).", ["layouts/index.njk", "_components.scss"]) }}
+      <div class="ds-preview content"><header class="index-header"><h1>Writing</h1><p class="index-intro">Longer-form posts about design, art, tools and process.</p></header></div>
+      <div class="ds-preview content"><header class="index-header"><h1 class="index-title-image"><img src="/img/user/assets/Letters.png" alt="Letters from Teresa"></h1></header></div>
+      <pre class="ds-code"><code>intro: Longer-form posts about…
+titleImage: /img/user/assets/Letters.png
+titleImageAlt: Letters from Teresa</code></pre>
+    </section>
+
+    <section class="ds-section" id="pagination">
+      {{ head("Components", "Pagination", "Added by the index layout when a list runs to more than one page. <code>.index-empty</code> shows when a list has nothing yet.", ["components/pagination.njk", "_components.scss"]) }}
+      <div class="ds-preview content">
+        <nav class="pagination" aria-label="Example"><a class="pagination-prev" href="#pagination">&larr; Newer</a><span class="pagination-status">Page 2 of 5</span><a class="pagination-next" href="#pagination">Older &rarr;</a></nav>
+        <p class="index-empty">Nothing here yet — check back soon.</p>
+      </div>
+    </section>
+
+    {#- ================= HOMEPAGE ================= #}
+    <section class="ds-section" id="home-intro">
+      {{ head("Homepage", "Intro", "Portrait beside a short hello; centred and stacked on phones.", ["components/home-intro.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main ds-bleed">{% include "components/home-intro.njk" %}</div>
+    </section>
+
+    <section class="ds-section" id="home-head">
+      {{ head("Homepage", "Section title", "Serif title with its <code>more()</code> link just after. The Making one is hidden until you scroll.", ["index.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main"><header class="home-head"><h2>Writing</h2>{{ more("#home-head", "View all") }}</header></div>
+    </section>
+
+    <section class="ds-section" id="home-making">
+      {{ head("Homepage", "Making rows", "Two rows of big pairs. <code>.ratio-row</code> sizes each card by its picture's width÷height, so a row shares one height and nothing is cropped.", ["index.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main">
+        <section class="home-top ratio-row">{% for post in collections.allPosts | inSections(sections.making) | head(2) %}{{ card(post, "", true) }}{% endfor %}</section>
+      </div>
+    </section>
+
+    <section class="ds-section" id="home-writing">
+      {{ head("Homepage", "Writing band", "Three compact cards on the white wash: the newest writing and letters together, letters labelled “Letters”.", ["index.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main ds-wash">
+        <div class="home-writing-grid">{% for post in collections.allPosts | inSections(["writing", "letters"]) | head(3) %}{% set t = post | cardImageAny %}{{ card(post, "is-compact", true, t and not ("Pasted" in t.src), not ("letters" in post.data.section)) }}{% endfor %}</div>
+      </div>
+    </section>
+
+    <section class="ds-section" id="home-reading">
+      {{ head("Homepage", "Reading & notes", "Half and half: current book covers, and the newest notes with their topic.", ["index.njk", "_home.scss"]) }}
+      <div class="ds-preview home-main">
+        <div class="home-pair">
+          <div><div class="home-covers">{% for post in collections.completedBooks | head(3) %}{% set thumb = post | cardImage %}<a href="{{ post.url }}" title="{{ post.data.title }}">{% if thumb %}<img src="{{ thumb.src }}" alt="{{ post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="home-cover-blank">{{ post.data.title }}</span>{% endif %}</a>{% endfor %}</div></div>
+          <div><ul class="home-notes">{% for post in collections.notes | head(3) %}<li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="home-notes-topic">{{ (post.data.tags or [])[0] }}</span></li>{% endfor %}</ul></div>
+        </div>
+      </div>
+    </section>
+
+    {#- ================= LAYOUT ================= #}
+    <section class="ds-section" id="nav">
+      {{ head("Layout", "Nav", "Logo and links centred; links wrap under the logo on phones. Links come from <code>site.nav</code>; the current section gets a pink underline. <code>alsoSections</code> lights a link up for other sections too (Making → <code>sections.making</code>).", ["components/nav.njk", "_data/site.json", "_layout.scss"]) }}
+      <p class="ds-note">The real nav is at the top of this page.</p>
+    </section>
+
+    <section class="ds-section" id="footer">
+      {{ head("Layout", "Footer", "A dashed “cut here” line with scissors, site links on the left and icon-only socials on the right. Links come from <code>site.footer</code>; an entry with an empty url is skipped.", ["components/footer.njk", "_data/site.json", "_layout.scss"]) }}
+      <p class="ds-note">The real footer is at the bottom of this page.</p>
+    </section>
+
+    <section class="ds-section" id="widths">
+      {{ head("Layout", "Widths & breakpoints", "", ["_layout.scss", "_home.scss"]) }}
+      <table class="ds-table">
+        <tr><th>Reading column</th><td><code>.content</code> — 700px (800px with <code>contentClass: wide</code>)</td></tr>
+        <tr><th>Homepage</th><td><code>.home-main</code> — 1120px</td></tr>
+        <tr><th>Phones</th><td>≤600px — nav links wrap, tighter page tops, titles 1.6em, homepage intro stacks</td></tr>
+        <tr><th>Narrow</th><td>≤760px — card rows, Reading/Notes and the sign-up stack</td></tr>
+        <tr><th>Tablet</th><td>≤900px — the Writing band goes from three columns to two</td></tr>
+      </table>
+    </section>
+  </div>
+</div>
+
+{#- the design system page's own scaffolding (not site styles) -#}
+<style>
+  .content.ds-page { max-width: 1240px; font-size: 1rem; }
+  body:has(.ds-page) footer { max-width: 1240px; }
+  .ds { display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 3.5rem; align-items: start; }
+  .ds code { font-size: 0.8em; }
+
+  /* side menu: sticky on desktop, a scrolling strip on phones */
+  .ds-nav { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; font-family: var(--font-family-sans-serif); font-size: 0.8rem; line-height: 1.35; }
+  .ds-nav ul { list-style: none; margin: 0 0 0.9rem; padding: 0; }
+  .ds-nav li { margin: 0; }
+  .ds-nav a { display: block; padding: 0.15rem 0.6rem; border-left: 2px solid transparent; color: var(--color-text); text-decoration: none; }
+  .ds-nav a:hover { background: var(--color-accent); }
+  .ds-nav a[aria-current] { border-left-color: var(--color-primary); color: var(--color-secondary); font-weight: 600; }
+  .ds-nav-title { margin: 0 0 0.9rem; font-weight: 600; }
+  .ds-nav-title a { border: 0; padding: 0; color: var(--color-secondary); }
+  .ds-nav-group { margin: 0 0 0.3rem; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; opacity: 0.7; }
+
+  .ds-intro { padding-bottom: 2rem; border-bottom: 1px solid var(--color-accent); }
+  .ds-intro h1 { margin: 0.3rem 0 0.75rem; }
+  .ds-intro p { font-size: 1.1rem; margin: 0 0 1rem; max-width: 40em; }
+  .ds-intro .ds-eyebrow { font-size: 0.7rem; margin: 0; }
+
+  .ds-section { padding: 3.5rem 0 1rem; border-bottom: 1px solid var(--color-accent); scroll-margin-top: 1rem; }
+  .ds-head { margin-bottom: 1.5rem; }
+  .ds-head h2 { margin: 0.25rem 0 0.5rem; font-size: 1.9rem; }
+  .ds-eyebrow { margin: 0; font-family: var(--font-family-sans-serif); font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-label); }
+  .ds-desc { max-width: 42em; margin: 0 0 0.75rem; font-size: 1.05rem; }
+  .ds-files { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0; }
+  .ds-files code { padding: 0.15em 0.5em; background: white; border-radius: var(--border-radius); }
+  .ds-sub, .ds-variant { margin: 1.75rem 0 0.75rem; font-family: var(--font-family-sans-serif); font-size: 0.8rem; font-weight: 600; color: var(--color-text); }
+  .ds-note { font-family: var(--font-family-sans-serif); font-size: 0.85rem; }
+
+  /* a framed live preview, and a code block under it */
+  .ds-preview { margin: 0 0 1rem; padding: 1.5rem 2rem; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 8px; background: var(--color-background); }
+  .ds-preview.content { max-width: none; }
+  .ds-preview > :first-child { margin-top: 0; }
+  .ds-preview.ds-wash { background: var(--color-wash); }
+  .ds-preview.ds-bleed .home-intro { padding: 1rem 0; }
+  .ds-cards { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+  .ds-compact { grid-template-columns: minmax(0, 1fr) !important; }
+  .ds-code { margin: 0 0 1.5rem; padding: 1rem 1.25rem; overflow-x: auto; background: #2b2a35; color: #f4eeec; border-radius: 8px; font-size: 0.85rem; line-height: 1.6; }
+  .ds-code code { background: none; color: inherit; padding: 0; font-size: inherit; }
+
+  .ds-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+  .ds-swatch { margin: 0; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 8px; overflow: hidden; background: white; }
+  .ds-swatch > span { display: block; height: 84px; border-bottom: 1px solid rgba(0, 0, 0, 0.06); }
+  .ds-swatch figcaption { display: flex; flex-direction: column; gap: 0.15rem; padding: 0.7rem 0.8rem; text-align: left; font-size: 0.85rem; }
+  .ds-swatch strong { font-family: var(--font-family-sans-serif); font-size: 0.85rem; }
+  .ds-swatch code { background: none; padding: 0; font-size: 0.72rem; }
+  .ds-swatch small { font-family: var(--font-family-sans-serif); font-size: 0.72rem; line-height: 1.4; opacity: 0.85; }
+  .ds-fonts { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+  .ds-font { padding: 1rem 1.25rem; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 8px; background: white; display: flex; flex-direction: column; gap: 0.2rem; }
+  .ds-font p { margin: 0 0 0.4rem; font-size: 2.2rem; line-height: 1.1; }
+  .ds-font code { background: none; padding: 0; font-size: 0.75rem; }
+  .ds-font small { font-family: var(--font-family-sans-serif); font-size: 0.75rem; }
+  .ds-type h1, .ds-type h2, .ds-type h3, .ds-type h4 { margin: 0 0 0.75rem; }
+  .ds-row { display: flex; align-items: center; gap: 1rem; }
+  .ds-shape { width: 84px; height: 60px; background: var(--color-accent); }
+  .ds-list { font-size: 1.05rem; }
+  .ds-table { border-collapse: collapse; font-size: 0.95rem; }
+  .ds-table th, .ds-table td { text-align: left; padding: 0.6rem 1.25rem 0.6rem 0; border-bottom: 1px solid var(--color-accent); vertical-align: top; }
+  .ds-table th { font-family: var(--font-family-sans-serif); font-size: 0.85rem; white-space: nowrap; }
+
+  @media (max-width: 860px) {
+    .ds { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
+    .ds-nav { position: sticky; top: 0; z-index: 5; max-height: none; display: flex; gap: 0.25rem; overflow-x: auto; white-space: nowrap; padding: 0.5rem 0; background: var(--color-background); border-bottom: 1px solid var(--color-accent); }
+    .ds-nav ul { display: contents; }
+    .ds-nav-title, .ds-nav-group { display: none; }
+    .ds-nav a { border-left: 0; border-bottom: 2px solid transparent; }
+    .ds-nav a[aria-current] { border-bottom-color: var(--color-primary); }
+    .ds-cards { grid-template-columns: minmax(0, 1fr); }
+    .ds-preview { padding: 1rem; }
+  }
+</style>
+
+<script>
+  // fill in each colour's actual value from the stylesheet
+  document.querySelectorAll(".ds-value").forEach(function (el) {
+    el.textContent = getComputedStyle(document.documentElement).getPropertyValue(el.dataset.token).trim();
+  });
+  // highlight the menu entry for the section you're reading
+  (function () {
+    var links = {};
+    document.querySelectorAll(".ds-nav a[href^='#']").forEach(function (a) { links[a.getAttribute("href").slice(1)] = a; });
+    var sections = [].slice.call(document.querySelectorAll(".ds-section"));
+    function update() {
+      var current = sections[0];
+      sections.forEach(function (s) { if (s.getBoundingClientRect().top < window.innerHeight * 0.3) current = s; });
+      // at the very bottom the last sections can't reach that line; light up the last one
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4) current = sections[sections.length - 1];
+      Object.keys(links).forEach(function (id) { links[id].removeAttribute("aria-current"); });
+      if (current && links[current.id]) {
+        links[current.id].setAttribute("aria-current", "true");
+        // keep it in view in the phone strip (scrolls only the strip)
+        var nav = links[current.id].closest(".ds-nav");
+        if (nav.scrollWidth > nav.clientWidth) nav.scrollLeft = links[current.id].offsetLeft - 40;
+      }
+    }
+    var queued = false;
+    window.addEventListener("scroll", function () { if (!queued) { queued = true; requestAnimationFrame(function () { queued = false; update(); }); } }, { passive: true });
+    update();
+  })();
+</script>
