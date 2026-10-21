@@ -1,5 +1,9 @@
+{#- data-letters-layout: the letters panel's arrangement, still being tried
+    out (see lab.scss). Under npm start it can be switched live with the
+    design options panel. -#}
+{%- set homeOptions = { lettersLayout: "two" } -%}
 <!doctype html>
-<html lang="en">
+<html lang="en" data-letters-layout="{{ homeOptions.lettersLayout }}"{% if build.dev %} data-defaults='{{ homeOptions | dump }}'{% endif %}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +18,11 @@
   <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
   {#- the homepage grew out of the lab (version E), so it still uses its styles #}
   <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
+  {%- if build.dev %}
+  {#- dev only: apply options picked in the design options panel before
+      anything draws #}
+  <script>try { Object.keys({{ homeOptions | dump | safe }}).forEach(function (k) { var v = localStorage.getItem("opt-" + k); if (v) document.documentElement.dataset[k] = v; }); } catch (e) {}</script>
+  {%- endif %}
 </head>
 <body class="lab lab-home">
   {#- torn-paper edges for the letters panel (see lab.scss): ragged
@@ -30,6 +39,7 @@
 {{ content | safe }}
   </main>
   {% include "components/footer.njk" %}
+  {%- if build.dev %}{% include "components/design-options.njk" %}{% endif %}
   <script data-goatcounter="https://teresawatts.goatcounter.com/count"
           async src="//gc.zgo.at/count.js"></script>
 </body>

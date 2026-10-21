@@ -797,27 +797,56 @@ $home-wash: rgba(255, 255, 255, 0.6);
 /* ---------- letters sign-up: a torn-paper panel above the footer ----------
    The width of the content column. The wash is drawn by ::before,
    roughened by the SVG filter in layouts/home.njk (the effect the old
-   site used on its backlinks box). Heading and blurb on the left, the
-   form on the right; stacked on phones */
+   site used on its backlinks box). Title, blurb and sign-up are placed by
+   grid areas; data-letters-layout on <html> picks the arrangement:
+   two:     title and blurb on the left, sign-up on the right
+   three:   title, blurb, sign-up side by side
+   stacked: one centred column
+   All of them stack on phones. */
 .home-letters {
   position: relative;
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 0.5rem 3rem; align-items: center;
+  display: grid; gap: 0.6rem 3rem; align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-areas: "title signup" "blurb signup";
   margin: 0 0 3.5rem;
   padding: 2.25rem 2.5rem 2.5rem;
-  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 1.25rem; padding: 2rem 1.25rem; }
   &::before {
     content: ""; position: absolute; z-index: -1; inset: 0;
     background: $home-wash;
     filter: url(#torn-edge);
     box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
   }
-  h2 { font-family: var(--font-family); font-weight: 400; font-size: 1.5rem; margin: 0 0 0.35rem; padding: 0; }
-  p { margin: 0; font-size: 0.9em; line-height: 1.5; }
-  .lab-more { margin-top: 0.75rem; }
-  // the hand-lettered heading image
-  .home-letters-title { line-height: 0; margin-bottom: 0.6rem; }
+  .home-letters-title { grid-area: title; align-self: end; line-height: 0; margin: 0; padding: 0; }
   .home-letters-title img { display: block; width: 260px; max-width: 100%; height: auto; margin: 0; }
+  .home-letters-blurb { grid-area: blurb; align-self: start; margin: 0; font-size: 0.9em; line-height: 1.5; }
+  .home-signup { grid-area: signup; }
+  .lab-more { margin-top: 0.75rem; }
 }
+html[data-letters-layout="three"] .home-letters {
+  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1.1fr);
+  grid-template-areas: "title blurb signup";
+  gap: 1rem 2.5rem;
+  .home-letters-title, .home-letters-blurb { align-self: center; }
+  .home-letters-title img { width: 220px; }
+}
+html[data-letters-layout="stacked"] .home-letters {
+  grid-template-columns: minmax(0, 32rem);
+  grid-template-areas: "title" "blurb" "signup";
+  justify-content: center; text-align: center;
+  gap: 0.75rem;
+  .home-letters-title img { margin: 0 auto; }
+  .home-signup { margin-top: 0.75rem; text-align: left; }
+}
+// phones: always one column, left-aligned
+@media (max-width: 760px) {
+  html .home-letters, html[data-letters-layout] .home-letters {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "title" "blurb" "signup";
+    gap: 1rem; padding: 2rem 1.25rem; text-align: left;
+    .home-letters-title img { margin: 0; }
+  }
+}
+
 // less of a gap above the letters panel (the Reading/Notes band's own
 // bottom padding)
 .lab-home .lab-e-band:has(+ .home-letters) { padding-bottom: 2rem; }
@@ -841,5 +870,22 @@ $home-wash: rgba(255, 255, 255, 0.6);
       border: 1px solid #71707e;
       &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
     }
+  }
+}
+
+/* ---------- design options panel (dev only, npm start) ---------- */
+.design-options {
+  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 10;
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; align-items: center;
+  max-width: calc(100vw - 2rem); box-sizing: border-box;
+  padding: 0.45rem 0.6rem 0.45rem 1rem; border-radius: 999px;
+  background: rgba(40, 39, 50, 0.92); color: white;
+  font-family: var(--font-family-sans-serif); font-size: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  label { display: flex; align-items: center; gap: 0.4rem; }
+  select { font: inherit; padding: 0.2rem 0.3rem; border-radius: 4px; border: 0; }
+  button {
+    font: inherit; cursor: pointer; padding: 0.25rem 0.7rem; border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.4); background: none; color: white;
   }
 }
