@@ -706,9 +706,10 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 // more air between the intro and Making
 .lab-home .lab-hero-mid {
   padding-bottom: 9rem;
-  // phones: closer to the nav, portrait centred above the text
+  // phones: closer to the nav, everything centred, less space below
   @media (max-width: 600px) {
-    padding-top: 1rem; padding-bottom: 6rem;
+    padding-top: 1rem; padding-bottom: 3rem;
+    text-align: center;
     .lab-portrait { display: block; margin: 0 auto; }
   }
 }
