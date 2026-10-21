@@ -1,0 +1,17 @@
+{#- Dev only: a small button in the corner of every page under `npm start`,
+    linking to the design system (src/site/dev/design-system.njk). Never in
+    the live build (build.dev is false there), so its styles are inline. -#}
+{%- if build.dev and page.url != "/dev/design-system/" %}
+<a class="dev-link" href="/dev/design-system/" title="Design system (only shown under npm start)">Design system</a>
+<style>
+  .dev-link {
+    position: fixed; right: 1rem; bottom: 1rem; z-index: 20;
+    padding: 0.4rem 0.85rem; border-radius: 999px;
+    font-family: var(--font-family-sans-serif); font-size: 0.75rem; line-height: 1.4;
+    color: white !important; background: rgba(43, 42, 53, 0.88) !important; text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  }
+  .dev-link:hover { background: var(--color-secondary) !important; }
+  @media print { .dev-link { display: none; } }
+</style>
+{%- endif %}
