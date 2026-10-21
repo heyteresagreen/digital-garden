@@ -68,9 +68,7 @@ footer {
   margin: 5em auto 2em;
   max-width: 700px;
   font-size: 0.8em;
-  // precomputed: color.mix(--color-text, white, 80%) — recompute if
-  // --color-text changes (see _tokens.scss)
-  color: #71707e;
+  color: var(--color-muted);
   padding-top: 2em;
   border-top: 1px dashed rgba(0, 0, 0, 0.1);
   font-family: var(--font-family-sans-serif);
@@ -82,12 +80,9 @@ footer {
   align-items: center;
   gap: 0.75em 1.5em;
   // match the content column's width so the divider lines up with it
-  // (.content.wide here, .homepage in _components.scss)
+  // (.content.wide here; the homepage's in _home.scss)
   body:has(.content.wide) & {
     max-width: 800px;
-  }
-  body:has(.homepage) & {
-    max-width: 640px;
   }
   // "cut here" scissors sitting on the divider's left end, blades
   // pointing along the line

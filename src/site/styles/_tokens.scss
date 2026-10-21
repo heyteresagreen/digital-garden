@@ -6,14 +6,12 @@
    override the same variable names via devtools, or an inline
    <style> block targeting :root.
 
-   Three derived colours elsewhere in the stylesheet (in
-   _layout.scss and _components.scss) are precomputed static values
-   rather than living tokens, because they're built with Sass's
-   color.mix()/color.adjust() — functions that need a real Sass
-   colour at compile time, not a CSS custom property. If you change
-   --color-text or --color-secondary below, recompute those three
-   by hand (formulas are noted at each usage site) or they'll drift
-   out of sync with the new palette.
+   A few colours are precomputed static values rather than derived
+   live, because they'd need Sass's color.mix()/color.adjust(), which
+   can't run on a CSS custom property. --color-muted below is one; the
+   others are noted at their usage sites. If you change --color-text or
+   --color-secondary, recompute them by hand or they'll drift out of
+   sync with the new palette.
    ============================================================ */
 
 :root {
@@ -22,6 +20,18 @@
   --color-text: #4e4c5e; // grey
   --color-background: #fcf4f2; // pink-lightest
   --color-accent: #ffe3dc; // pink-light
+
+  // Supporting colours, each tuned for one job. They're fixed values, so
+  // recheck them if the palette above changes.
+  // muted grey: footer text, form field borders (4.8:1 on white).
+  // Precomputed color.mix(--color-text, white, 80%)
+  --color-muted: #71707e;
+  // dark terracotta: small homepage card labels (4.6:1 on the page;
+  // --color-primary itself is too light to read as text)
+  --color-label: #b5523a;
+  // white wash: the homepage Writing band, the letters sign-up panel
+  --color-wash: rgba(255, 255, 255, 0.6);
+
   --border-radius: 4px;
 
   --font-family: Newsreader, Georgia, -apple-system, BlinkMacSystemFont, Segoe UI, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;

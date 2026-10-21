@@ -2,21 +2,21 @@
 title: Style guide
 layout: layouts/base.njk
 contentClass: wide style-guide
-extraStyles: [lab]
 hideSignup: true # the sign-up variants are shown in the Forms section instead
 eleventyImport:
   collections: ["allPosts", "writing", "notes", "letters", "art", "sketching", "completedBooks"]
 ---
 {#- Dev-only reference for every style and component on the site. Lives in
-    src/site/lab/, so it renders at /lab/style-guide/ under `npm start` and is
-    never built in production (lab.11tydata.js). Examples use real content
+    src/site/dev/, so it renders at /dev/style-guide/ under `npm start` and is
+    never built in production (dev.11tydata.js). Examples use real content
     and the real components/macros, so this page stays in step with the site.
-    Style-guide-only styles (swatches, section labels) are under "STYLE GUIDE"
-    in lab.scss. Note: the sign-up examples repeat id="bd-email" — fine here,
-    but never put two sign-up forms on a real page. #}
+    The page's own scaffolding (swatches, section labels) is styled in the
+    <style> block at the bottom, so no extra stylesheet ships with the site.
+    Note: the sign-up examples repeat id="bd-email" — fine here, but never
+    put two sign-up forms on a real page. #}
 {%- from "components/post-card.njk" import postCard %}
 {%- from "components/reading/cover.njk" import bookCover %}
-{%- from "components/lab.njk" import more, storyCard as card %}
+{%- from "components/home-cards.njk" import more, storyCard as card %}
 
 <article>
   <header>
@@ -25,7 +25,7 @@ eleventyImport:
     <time>Dev only · never published</time>
   </header>
 
-<p>Every style and component on teresawatts.com, for reference. Each section names the template or class to use. Styles live in <code>src/site/styles/</code>: tokens in <code>_tokens.scss</code>, base elements in <code>_base.scss</code>, page frame in <code>_layout.scss</code>, components in <code>_components.scss</code>, and the homepage's own pieces in <code>lab.scss</code>.</p>
+<p>Every style and component on teresawatts.com, for reference. Each section names the template or class to use. Styles live in <code>src/site/styles/</code>: tokens in <code>_tokens.scss</code>, base elements in <code>_base.scss</code>, page frame in <code>_layout.scss</code>, components in <code>_components.scss</code>, and the homepage in <code>_home.scss</code>.</p>
 
 <nav class="sg-toc" aria-label="Sections">
   <a href="#tokens">Tokens</a> <a href="#type">Typography</a> <a href="#post">Post page</a> <a href="#index">Index pages</a> <a href="#lists">Post lists</a> <a href="#reading">Reading</a> <a href="#forms">Forms &amp; sign-up</a> <a href="#home">Homepage</a> <a href="#frame">Nav &amp; footer</a>
@@ -33,7 +33,7 @@ eleventyImport:
 
 {#- ============================================================ -#}
 <h2 id="tokens" class="sg-h">Design tokens</h2>
-<p class="sg-note"><code>_tokens.scss</code>: CSS custom properties, so a reskin can be previewed live in devtools. Below them, the fixed colours used in a few places (precomputed or chosen for contrast).</p>
+<p class="sg-note"><code>_tokens.scss</code>: CSS custom properties, so a reskin can be previewed live in devtools. The main palette, then the supporting colours, each tuned for one job.</p>
 
 <div class="sg-swatches">
   {%- for t in [
@@ -46,11 +46,11 @@ eleventyImport:
   <div class="sg-swatch"><span style="background: var({{ t.name }})"></span><code>{{ t.name }}</code><small>{{ t.note }}</small></div>
   {%- endfor %}
   {%- for t in [
-    { value: "#71707e", note: "footer text, form field border (4.8:1 on white)" },
-    { value: "#b5523a", note: "homepage card labels (4.6:1)" },
-    { value: "rgba(255,255,255,.6)", note: "white wash · Writing band, sign-up panel" }
+    { name: "--color-muted", note: "muted grey · footer text, form field borders (4.8:1 on white)" },
+    { name: "--color-label", note: "dark terracotta · homepage card labels (4.6:1)" },
+    { name: "--color-wash", note: "white wash · Writing band, sign-up panel" }
   ] %}
-  <div class="sg-swatch"><span style="background: {{ t.value }}"></span><code>{{ t.value }}</code><small>{{ t.note }}</small></div>
+  <div class="sg-swatch"><span style="background: var({{ t.name }})"></span><code>{{ t.name }}</code><small>{{ t.note }}</small></div>
   {%- endfor %}
 </div>
 
@@ -186,7 +186,7 @@ eleventyImport:
 
 {#- ============================================================ -#}
 <h2 id="forms" class="sg-h">Forms &amp; sign-up</h2>
-<p class="sg-note">The Buttondown form is <code>.signup-form</code> (visible label, white field with a 4.8:1 outline, blue button). On its own it's how the Letters page used to look; normally it comes inside the <code>components/letters-signup.njk</code> panel, set with <code>signupLayout</code> and friends (see the component's comment).</p>
+<p class="sg-note">The Buttondown form is <code>.signup-form</code> (visible label, white field with a 4.8:1 outline, blue button; the RSS copy field shares the field and button styles). On its own it's how the Letters page used to look; normally it comes inside the <code>components/letters-signup.njk</code> panel, set with <code>signupLayout</code> and friends (see the component's comment).</p>
 
 <h3 class="sg-sub">Letters panel · two columns (every page, above the footer)</h3>
 {%- set signupLayout = "two" %}
@@ -206,34 +206,31 @@ eleventyImport:
 <h3 class="sg-sub">RSS copy field · <code>.rss-copy</code> (/rss/)</h3>
 <p class="rss-copy"><input type="text" readonly value="https://teresawatts.com/feed.xml" aria-label="Feed address"><button type="button">Copy</button></p>
 
-<h3 class="sg-sub">Older site-wide form styles · <code>form</code>, <code>input.btn</code></h3>
-<p class="sg-note">Still in <code>_components.scss</code> for any form without its own styles (nothing current uses them).</p>
-<form action="#forms" onsubmit="return false"><label>Example <input type="text"></label> <input type="submit" value="Button" class="btn"></form>
 
 </article>
 
 {#- ============================================================ -#}
-{#- the homepage's pieces need its wrapper classes (.lab .lab-home) and
-    its width, so this part breaks out of the reading column #}
-<div class="lab lab-home sg-wide" id="home">
+{#- the homepage's pieces are at its width, so this part breaks out of the
+    reading column (.home-main gives them the homepage's links and size) #}
+<div class="home-main sg-wide" id="home">
   <h2 class="sg-h">Homepage</h2>
-  <p class="sg-note"><code>index.njk</code> + <code>layouts/home.njk</code>, styles in <code>lab.scss</code> (everything under <code>.lab-home</code>). Card macro: <code>storyCard</code> in <code>components/lab.njk</code>.</p>
+  <p class="sg-note"><code>index.njk</code> + <code>layouts/home.njk</code>, styles in <code>_home.scss</code>. Card macro: <code>storyCard</code> in <code>components/home-cards.njk</code>.</p>
 
-  <h3 class="sg-sub">Intro · <code>.lab-hero-mid</code> (<code>components/lab-parts/hero.njk</code>)</h3>
-  {% include "components/lab-parts/hero.njk" %}
+  <h3 class="sg-sub">Intro · <code>.home-intro</code> (<code>components/home-intro.njk</code>)</h3>
+  {% include "components/home-intro.njk" %}
 
-  <h3 class="sg-sub">Section title with "View all" · <code>.lab-e-head</code> + <code>more()</code></h3>
-  <header class="lab-e-head"><h2>Making</h2>{{ more("/making/", "View all") }}</header>
+  <h3 class="sg-sub">Section title with "View all" · <code>.home-head</code> + <code>more()</code> (<code>.more-link</code>)</h3>
+  <header class="home-head"><h2>Making</h2>{{ more("/making/", "View all") }}</header>
 
-  <h3 class="sg-sub">Big story cards in a ratio row · <code>.lab-e-top.lab-e-ratio-row</code></h3>
+  <h3 class="sg-sub">Big story cards in a ratio row · <code>.home-top.ratio-row</code> + <code>.story-card</code></h3>
   <p class="sg-note">Each card grows by its image's width÷height (<code>--r</code>), so the row shares one height and nothing is cropped. Label in dark terracotta; picture lifts on hover.</p>
-  <section class="lab-e-top lab-e-ratio-row">
+  <section class="home-top ratio-row">
     {%- for post in collections.allPosts | inSections(["art", "sketching", "sketchbooks"]) | head(2) %}{{ card(post, "", true) }}{% endfor %}
   </section>
 
-  <h3 class="sg-sub">Compact cards · <code>.lab-e-wgrid</code> in the Writing band (<code>.lab-e-band.is-tint</code>)</h3>
-  <section class="lab-e-band is-tint">
-    <div class="lab-e-wgrid">
+  <h3 class="sg-sub">Compact cards · <code>.home-writing-grid</code> in the Writing band (<code>.home-band.is-tint</code>)</h3>
+  <section class="home-band is-tint">
+    <div class="home-writing-grid">
       {%- for post in collections.allPosts | inSections(["writing", "letters"]) | head(3) %}
       {%- set t = post | cardImageAny %}
       {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), not ("letters" in post.data.section)) }}
@@ -244,20 +241,20 @@ eleventyImport:
     </div>
   </section>
 
-  <h3 class="sg-sub">Book covers and notes list · <code>.lab-e-covers</code>, <code>.lab-e-notes.is-list</code></h3>
-  <div class="lab-s is-pair">
-    <div class="lab-sub">
-      <div class="lab-e-covers">
+  <h3 class="sg-sub">Book covers and notes list · <code>.home-pair</code>, <code>.home-covers</code>, <code>.home-notes</code></h3>
+  <div class="home-pair">
+    <div>
+      <div class="home-covers">
         {%- for post in collections.completedBooks | head(3) %}
         {%- set thumb = post | cardImage %}
-        <a href="{{ post.url }}" title="{{ post.data.title }}">{% if thumb %}<img src="{{ thumb.src }}" alt="{{ post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="lab-e-cover-blank">{{ post.data.title }}</span>{% endif %}</a>
+        <a href="{{ post.url }}" title="{{ post.data.title }}">{% if thumb %}<img src="{{ thumb.src }}" alt="{{ post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="home-cover-blank">{{ post.data.title }}</span>{% endif %}</a>
         {%- endfor %}
       </div>
     </div>
-    <div class="lab-sub">
-      <ul class="lab-e-notes is-list">
+    <div>
+      <ul class="home-notes">
         {%- for post in collections.notes | head(3) %}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="lab-e-notes-topic">{{ (post.data.tags or [])[0] }}</span></li>
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a><span class="home-notes-topic">{{ (post.data.tags or [])[0] }}</span></li>
         {%- endfor %}
       </ul>
     </div>
@@ -268,3 +265,25 @@ eleventyImport:
   <h2 class="sg-h">Nav &amp; footer</h2>
   <p class="sg-note">The real ones are on this page: the nav at the top (<code>components/nav.njk</code>, links from <code>site.nav</code> in <code>site.json</code>, <code>also</code> lists extra paths that light a link up) and the footer below (<code>components/footer.njk</code>, links from <code>site.footer</code>, with the dashed cut line and scissors).</p>
 </div>
+
+{#- the style guide's own scaffolding (not site styles) #}
+<style>
+  .style-guide .sg-toc { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin: 0 0 2rem; font-family: var(--font-family-sans-serif); font-size: 0.85rem; }
+  /* section headings: a sans label with a pink rule, so they don't look like the examples they introduce */
+  .style-guide .sg-h { margin: 4rem 0 0.5rem; padding-top: 1rem; border-top: 2px solid var(--color-primary); font-family: var(--font-family-sans-serif); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text); }
+  .style-guide .sg-sub { margin: 2.5rem 0 1rem; font-family: var(--font-family-sans-serif); font-size: 0.8rem; font-weight: 600; color: var(--color-text); letter-spacing: 0; }
+  .style-guide .sg-note { font-family: var(--font-family-sans-serif); font-size: 0.8rem; line-height: 1.5; margin-bottom: 1.5rem; }
+  .style-guide .sg-frame { margin: 0 0 1.5rem; padding: 0 1.5rem; border: 1px dashed rgba(0, 0, 0, 0.15); border-radius: var(--border-radius); }
+  .style-guide .sg-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 1.25rem; margin-bottom: 2rem; }
+  .style-guide .sg-swatch, .style-guide .sg-fonts > div { display: flex; flex-direction: column; gap: 0.2rem; }
+  .style-guide .sg-swatch code, .style-guide .sg-fonts code { font-size: 0.7rem; background: none; padding: 0; }
+  .style-guide .sg-swatch small, .style-guide .sg-fonts small { font-family: var(--font-family-sans-serif); font-size: 0.7rem; line-height: 1.4; }
+  .style-guide .sg-swatch span { display: block; height: 64px; border-radius: var(--border-radius); border: 1px solid rgba(0, 0, 0, 0.08); }
+  .style-guide .sg-fonts { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.25rem; }
+  .style-guide .sg-fonts p { margin: 0; font-size: 2rem; line-height: 1.2; }
+  .style-guide .sg-font-serif { font-family: var(--font-family); }
+  .style-guide .sg-font-sans { font-family: var(--font-family-sans-serif); }
+  .style-guide .sg-radius { width: 64px; height: 48px; background: var(--color-accent); border-radius: var(--border-radius); }
+  /* the homepage section breaks out of the reading column to its real width */
+  .style-guide .sg-wide { width: min(1120px, 100vw - 2rem); margin-left: 50%; transform: translateX(-50%); }
+</style>

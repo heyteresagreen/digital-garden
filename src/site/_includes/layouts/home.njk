@@ -12,12 +12,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles/tw-style.css?v={{ build.timestamp }}">
-  {#- the homepage grew out of the lab (version E), so it still uses its styles #}
-  <link rel="stylesheet" href="/styles/lab.css?v={{ build.timestamp }}">
 </head>
-<body class="lab lab-home">
+<body class="home">
   {% include "components/nav.njk" %}
-  <main class="lab-main">
+  <main class="home-main">
 {{ content | safe }}
   </main>
   {% include "components/footer.njk" %}

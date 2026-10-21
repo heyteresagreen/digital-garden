@@ -106,83 +106,33 @@ q {
 }
 
 /* ----------------------
-HOMEPAGE
+LINKS
 ---------------------- */
 
-.homepage {
-  max-width: 640px;
-  margin: 0 auto;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
-  h2 {
-    font-weight: normal;
-    line-height: 1.3;
-    font-size: 1.5em;
-    font-family: var(--font-family);
-    @media (min-width: 600px) {
-      width: 70%;
-      max-width: 550px;
-    }
-  }
-  img {
-    max-width: 200px;
-    @media (min-width: 600px) {
-      width: 30%;
-      float: left;
-      margin-right: 20px;
-    }
-  }
-  p {
-      font-size: 1.1em;
+// "View all →" style link with a short drawn arrow (more() in
+// components/home-cards.njk): homepage section titles, the letters sign-up
+.more-link {
+  display: inline-block;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  &:hover { background: none; }
+}
+.more-link-arrow {
+  display: inline-block;
+  margin-left: 0.3em;
+  transition: transform 200ms;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 0.8em;
+    height: 0.8em;
+    vertical-align: -0.08em;
+    background: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
   }
 }
-
-/* ----------------------
-FORMS
----------------------- */
-
-form {
-  padding: 1em;
-  background: var(--color-secondary);
-  color: #fff;
-  border-radius: 4px;
-  margin-bottom: 3em;
-  @media (min-width: 720px) {
-    padding: 1em 3.6em;
-  }
-  p {
-    text-align: center;
-  }
-}
-
-input#bd-email {
-  padding: 0.25em 0.5em;
-  margin: 0.5em 0;
-  width: 92%;
-  background: var(--color-background);
-  border: 1px solid #fff;
-  font-family: var(--font-family);
-  @media (min-width: 720px) {
-    margin: 0 0.5em 0 0.25em;
-    width: 250px;
-  }
-}
-
-input.btn {
-  background: var(--color-primary);
-  border: 1px solid var(--color-primary);
-  color: var(--color-secondary);
-  padding: 0.25em 0.5em;
-  font-family: var(--font-family);
-  transition: 0.2s;
-
-  &:hover {
-    background: var(--color-text);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-    cursor: pointer;
-  }
-}
+.more-link:hover .more-link-arrow { transform: translateX(2px); }
 
 /* ----------------------
 INDEX PAGES (v2 components)
@@ -595,38 +545,19 @@ POSTS PAGE MOSAIC (v2)
 RSS PAGE (/rss/)
 ---------------------- */
 
-// the feed address with a copy button beside it
+// the feed address with a copy button beside it (field and button styles
+// are shared with the sign-up form, under LETTERS SIGN-UP)
 .rss-copy {
   display: flex;
   gap: 0.5rem;
   max-width: 32rem;
-  input {
-    flex: 1;
-    min-width: 0;
-    padding: 0.5rem 0.75rem;
-    font-family: var(--font-family-sans-serif);
-    font-size: 0.9rem;
-    color: var(--color-text);
-    border: 1px solid var(--color-primary);
-    border-radius: 0;
-    background: white;
-  }
-  button {
-    cursor: pointer;
-    padding: 0.5rem 1.1rem;
-    border: 0;
-    font-family: var(--font-family-sans-serif);
-    font-size: 0.85rem;
-    color: white;
-    background: var(--color-secondary);
-    &:hover { opacity: 0.9; }
-  }
 }
 
 /* ----------------------
 LETTERS SIGN-UP (components/letters-signup.njk)
-Used on the homepage (stacked, above the footer), single letters (two
-columns, above the footer) and the Letters page (two columns, at the top).
+Every page ends with it, two columns, above the footer (base.njk);
+the homepage has it stacked; the Letters page has it stacked at the top
+with no lettering (and hideSignup: true to skip the bottom one).
 ---------------------- */
 
 .letters-signup {
@@ -644,7 +575,7 @@ columns, above the footer) and the Letters page (two columns, at the top).
     position: absolute;
     z-index: -1;
     inset: 0;
-    background: rgba(255, 255, 255, 0.6);
+    background: var(--color-wash);
     filter: url(#torn-edge);
     box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
   }
@@ -658,30 +589,7 @@ columns, above the footer) and the Letters page (two columns, at the top).
   }
   .letters-signup-blurb { grid-area: blurb; margin: 0; line-height: 1.5; }
   .letters-signup-form { grid-area: signup; }
-  // "Read past letters" with the site's short drawn arrow
-  .lab-more {
-    display: inline-block;
-    margin-top: 0.75rem;
-    font-family: var(--font-family-sans-serif);
-    font-size: 0.9rem;
-    &:hover { background: none; }
-  }
-  .lab-more-arrow {
-    display: inline-block;
-    margin-left: 0.3em;
-    transition: transform 200ms;
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 0.8em;
-      height: 0.8em;
-      vertical-align: -0.08em;
-      background: currentColor;
-      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
-      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
-    }
-  }
-  .lab-more:hover .lab-more-arrow { transform: translateX(2px); }
+  .more-link { margin-top: 0.75rem; font-size: 0.9rem; }
 
   // two columns: lettering and blurb on the left, the form on the right
   &.is-two {
@@ -731,8 +639,7 @@ columns, above the footer) and the Letters page (two columns, at the top).
 body:has(.letters-signup.is-end) footer { margin-top: 0; }
 
 // The Buttondown sign-up form: a visible label, then the email field and
-// button side by side. Used inside the letters panel and on its own on the
-// Letters page.
+// button side by side. Used inside the letters panel, and on its own.
 .signup-form {
   max-width: 28rem;
   margin: 1.5rem 0 3rem;
@@ -742,40 +649,35 @@ body:has(.letters-signup.is-end) footer { margin-top: 0; }
     font-family: var(--font-family-sans-serif);
     font-size: 0.8rem;
   }
-  form {
-    // undo the site-wide blue form box
-    display: flex;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 0;
-    background: none;
-    color: inherit;
-    border-radius: 0;
-  }
-  // by id, to beat the site-wide input#bd-email. #71707e on white is 4.8:1
-  // (WCAG asks 3:1 for form borders)
-  input#bd-email {
-    flex: 1;
-    min-width: 0;
-    width: auto;
-    margin: 0;
-    padding: 0.6rem 0.9rem;
-    font-family: var(--font-family-sans-serif);
-    font-size: 0.9rem;
-    background: white;
-    border: 1px solid #71707e;
-    border-radius: 0;
-    &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
-  }
-  button {
-    padding: 0.6rem 1.2rem;
-    border: 0;
-    cursor: pointer;
-    font-family: var(--font-family-sans-serif);
-    font-size: 0.85rem;
-    color: white;
-    background: var(--color-secondary);
-    &:hover { opacity: 0.9; }
-  }
+  form { display: flex; gap: 0.5rem; margin: 0; }
+}
+
+// A text field with a button beside it — the sign-up form and the RSS
+// page's copy field share these. --color-muted on white is 4.8:1 (WCAG
+// asks 3:1 for form borders)
+.signup-form input[type=email],
+.rss-copy input {
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 0.6rem 0.9rem;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.9rem;
+  color: var(--color-text);
+  background: white;
+  border: 1px solid var(--color-muted);
+  border-radius: 0;
+  &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
+}
+.signup-form button,
+.rss-copy button {
+  padding: 0.6rem 1.2rem;
+  border: 0;
+  cursor: pointer;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  color: white;
+  background: var(--color-secondary);
+  &:hover { opacity: 0.9; }
 }
 .letters-signup .signup-form { max-width: none; margin: 0; }

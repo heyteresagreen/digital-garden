@@ -5,23 +5,19 @@ eleventyExcludeFromCollections: true
 eleventyImport:
   collections: ["allPosts", "writing", "notes", "letters"]
 ---
-{#- The homepage — started as lab version E (Oct 2026), after psyche.co:
-    the intro, then making as two rows of big pairs under a "Making" title
-    that fades in on scroll, writing (and letters) in its own band, Reading +
-    Notes side by side, and a small cut-out sign-up card for the letters.
-    Art is never cropped: each card in a row grows in proportion to its
-    image's width÷height (--r), so a row shares one height and every image
-    keeps its real shape. Cards fade up as they scroll into view (CSS only,
-    see "scroll fade-in" in lab.scss). #}
-{%- from "components/lab.njk" import more, storyCard as card %}
+{#- The homepage (after psyche.co): the intro, then making as two rows of
+    big pairs under a "Making" title that fades in on scroll, writing (and
+    letters) in its own band, Reading + Notes side by side, and the letters
+    sign-up above the footer. Art is never cropped: each card in a row grows
+    in proportion to its image's width÷height (--r), so a row shares one
+    height and every image keeps its real shape. Cards fade up as they
+    scroll into view (CSS only). Styles: _home.scss. #}
+{%- from "components/home-cards.njk" import more, storyCard as card %}
 
-{#- making here = art, sketching (sketchnotes live there too), sketchbooks
-    and crafts (no crafts section yet; it'll be picked up once there is one) #}
-{%- set eMaking = ["art", "sketching", "sketchbooks", "crafts"] %}
-
-{#- the big pairs: the four newest pieces with a picture, newest first #}
+{#- the big pairs: the four newest pieces of making (sections.making in
+    _data/sections.js) with a picture, newest first #}
 {%- set arts = [] %}
-{%- for post in collections.allPosts | inSections(eMaking) %}
+{%- for post in collections.allPosts | inSections(sections.making) %}
   {%- if arts.length < 4 and (post | cardImageAny) %}{% set arts = (arts.push(post), arts) %}{% endif %}
 {%- endfor %}
 
@@ -33,14 +29,14 @@ eleventyImport:
   {%- set writes = (writes | head(2)).concat([latestWriting]) %}
 {%- endif %}
 
-{%- include "components/lab-parts/hero.njk" %}
+{%- include "components/home-intro.njk" %}
 
 {#- the Making title (and View all) stay hidden at the top of the page, so
     only the pictures peek up on first load; they fade in once you scroll
-    a little (CSS, "Making title" in lab.scss) #}
-<header class="lab-e-head home-making-head"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
+    a little (CSS, "Making title" in _home.scss) #}
+<header class="home-head home-making-head"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
 {%- for pair in arts | batch(2) %}
-<section class="lab-e-top lab-e-ratio-row{% if loop.first %} home-first-row{% endif %}">
+<section class="home-top ratio-row{% if loop.first %} home-first-row{% endif %}">
   {%- for post in pair %}{{ card(post, "", true) }}{% endfor %}
 </section>
 {%- endfor %}
@@ -49,9 +45,9 @@ eleventyImport:
     only; letters use the first picture in the letter), each labelled with
     its first tag rather than "Writing" every time — letters are labelled
     "Letters" #}
-<section class="lab-e-band is-tint">
-  <header class="lab-e-head"><h2>Writing</h2>{{ more("/writing/", "View all") }}</header>
-  <div class="lab-e-wgrid">
+<section class="home-band is-tint">
+  <header class="home-head"><h2>Writing</h2>{{ more("/writing/", "View all") }}</header>
+  <div class="home-writing-grid">
     {%- for post in writes %}
     {%- set t = post | cardImageAny %}
     {{- card(post, "is-compact", true, t and not ("Pasted" in t.src), not ("letters" in post.data.section)) }}
@@ -60,31 +56,31 @@ eleventyImport:
 </section>
 
 {#- Reading and Notes side by side #}
-<section class="lab-e-band">
-  <div class="lab-s is-pair">
-    <div class="lab-sub">
-      <header class="lab-e-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
-      <div class="lab-s-body">
+<section class="home-band">
+  <div class="home-pair">
+    <div>
+      <header class="home-head"><h2>Reading</h2>{{ more("/reading/", "Bookshelf") }}</header>
+      <div>
         {#- covers only, side by side and left-aligned, so one or two books
             look as settled as three; the title is in the alt text and tooltip #}
-        <div class="lab-e-covers">
+        <div class="home-covers">
           {%- for b in "reading" | shelfCards | head(3) %}
           {%- set thumb = b | cardImage %}
           <a href="{{ b.url }}" title="{{ b.data.title }}">
-            {%- if thumb %}<img src="{{ thumb.src }}" alt="{{ b.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="lab-e-cover-blank">{{ b.data.title }}</span>{% endif -%}
+            {%- if thumb %}<img src="{{ thumb.src }}" alt="{{ b.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>{% else %}<span class="home-cover-blank">{{ b.data.title }}</span>{% endif -%}
           </a>
           {%- endfor %}
         </div>
       </div>
     </div>
-    <div class="lab-sub">
-      <header class="lab-e-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
+    <div>
+      <header class="home-head"><h2>Notes</h2>{{ more("/notes/", "The garden") }}</header>
       {#- one row per note: title, with its first topic tag on the right #}
-      <ul class="lab-s-body lab-e-notes is-list">
+      <ul class="home-notes">
         {%- for post in collections.notes | head(5) %}
         {%- set topic = false %}
         {%- for t in post.data.tags or [] %}{% if not topic and t != "notes" %}{% set topic = t %}{% endif %}{% endfor %}
-        <li><a href="{{ post.url }}">{{ post.data.title }}</a>{% if topic %}<span class="lab-e-notes-topic">{{ topic }}</span>{% endif %}</li>
+        <li><a href="{{ post.url }}">{{ post.data.title }}</a>{% if topic %}<span class="home-notes-topic">{{ topic }}</span>{% endif %}</li>
         {%- endfor %}
       </ul>
     </div>
@@ -95,4 +91,3 @@ eleventyImport:
 {%- set signupLayout = "stacked" %}
 {%- set signupAtEnd = true %}
 {% include "components/letters-signup.njk" %}
-

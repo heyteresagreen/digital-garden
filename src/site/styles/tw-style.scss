@@ -8,11 +8,13 @@
    _tokens.scss     — the six values that drive the look
    _base.scss       — element defaults (body, headings, links, etc.)
    _layout.scss     — nav, page wrapper, content column, footer
-   _components.scss — post/note elements, homepage, forms, index
-                       page layouts, 404, pagination
+   _components.scss — post/note elements, forms and the letters
+                       sign-up, index page layouts, 404, pagination
+   _home.scss       — the homepage
    ============================================================ */
 
 @use "tokens";
 @use "base";
 @use "layout";
 @use "components";
+@use "home";

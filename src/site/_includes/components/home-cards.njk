@@ -1,0 +1,34 @@
+{#- Building blocks for the homepage (index.njk), also used by the letters
+    sign-up and the style guide. Styles: _home.scss (cards) and
+    _components.scss (.more-link). #}
+
+{#- A story card: image, small label, serif title, optional excerpt, date.
+    Sized by its container's classes; --r (the image's width÷height) is
+    there for .ratio-row, which keeps every image's real shape.
+    showImage = false (or no image at all) gives a text-only card;
+    useTag = true labels it with its first tag instead of its section #}
+{% macro storyCard(post, cls = "", excerpt = false, showImage = true, useTag = false) %}
+{%- set labels = { writing: "Writing", notes: "Notes", art: "Art", sketching: "Sketching", sketchbooks: "Sketchbook", projects: "Project", letters: "Letters" } %}
+{%- set section = post.data.section | primarySection %}
+{#- useTag: label with the post's first tag that isn't just its section
+    (falls back to the section) #}
+{%- set tagged = [] %}
+{%- if useTag %}{% for t in post.data.tags or [] %}{% if t != section and t != "not-writing" %}{% set tagged = (tagged.push(t), tagged) %}{% endif %}{% endfor %}{% endif %}
+{%- set thumb = (post | cardImageAny) if showImage else false %}
+<article class="story-card {{ cls }}{% if not thumb %} is-text{% endif %}"{% if thumb %} style="--r: {{ thumb.src | imageRatio }}"{% endif %}>
+  {%- if thumb %}<a class="story-card-img" href="{{ post.url }}" tabindex="-1"><img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}></a>{% endif %}
+  <div class="story-card-text">
+    {#- the label links to its tag's page, or its section's #}
+    <p class="story-card-label">
+      {%- if tagged[0] %}<a href="{{ tagged[0] | tagUrl }}">{{ tagged[0] }}</a>
+      {%- else %}<a href="/{{ section or "writing" }}/">{{ labels[section] or "Writing" }}</a>{% endif -%}
+    </p>
+    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+    {%- if excerpt %}<p class="story-card-excerpt">{{ post | postExcerpt }}</p>{% endif %}
+    <time class="story-card-date">{{ post.date | dateFormat }}</time>
+  </div>
+</article>
+{% endmacro %}
+
+{#- "View all →" style link, with the short drawn arrow (.more-link) #}
+{% macro more(url, text) %}<a class="more-link" href="{{ url }}">{{ text }}<span class="more-link-arrow" aria-hidden="true"></span></a>{% endmacro %}

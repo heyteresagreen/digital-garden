@@ -1,0 +1,201 @@
+/* ============================================================
+   Homepage (src/site/index.njk + layouts/home.njk). Wider than the
+   reading column (1120px), with its own intro, story cards, bands and
+   lists. The letters sign-up and .more-link are in _components.scss.
+   ============================================================ */
+
+$home-max: 1120px;
+
+// the Writing band's wash draws past the column's edges; clip that so the
+// page never scrolls sideways
+.home { overflow-x: clip; }
+
+.home-main {
+  min-width: 0;
+  overflow-wrap: break-word;
+  max-width: $home-max;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  a {
+    color: var(--color-secondary);
+    text-decoration-thickness: 0.05em;
+    text-underline-offset: 0.15em;
+    &:hover { background: var(--color-accent); }
+  }
+}
+.home footer { max-width: $home-max; margin-top: 0; }
+
+/* ---------- intro (components/home-intro.njk) ---------- */
+.home-intro {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 5.5rem 0 9rem; // plenty of air between the intro and Making
+  .home-portrait { width: 100%; margin: 0; }
+  h1 { font-weight: 400; font-size: 2.4rem; margin-bottom: 0.6rem; }
+  p { font-size: 1.15em; margin: 0; }
+  // phones: closer to the nav, everything centred, less space below
+  @media (max-width: 600px) {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.25rem;
+    padding: 1rem 0 3rem;
+    text-align: center;
+    .home-portrait { display: block; width: 140px; margin: 0 auto; }
+  }
+}
+
+/* ---------- section titles, with their "View all" just after ---------- */
+.home-head {
+  display: flex; justify-content: flex-start; align-items: baseline; gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  h2 { font-family: var(--font-family); font-weight: 400; font-size: 2rem; color: var(--color-text); margin: 0; padding: 0; }
+  h2 a { color: inherit; text-decoration: none; &:hover { background: none; text-decoration: underline; } }
+  .more-link { font-size: 0.9rem; }
+}
+
+/* ---------- story cards (storyCard in components/home-cards.njk) ---------- */
+.story-card {
+  margin: 0;
+  .story-card-img {
+    display: block; overflow: hidden; margin-bottom: 0.9rem;
+    transition: transform 250ms ease, box-shadow 250ms ease;
+    &:hover { background: none; }
+  }
+  .story-card-img img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; margin: 0; display: block; }
+  // hovering anywhere on a card lifts its picture slightly
+  &:hover .story-card-img {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px -10px rgba(78, 76, 94, 0.3);
+    @media (prefers-reduced-motion: reduce) { transform: none; }
+  }
+  h3 { font-family: var(--font-family); font-weight: 400; font-size: 1.15em; line-height: 1.25; margin: 0; padding: 0; }
+  h3 a { color: var(--color-secondary); text-decoration: none; &:hover { text-decoration: underline; background: none; } }
+}
+// small uppercase label: the post's section or first tag
+.story-card-label {
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--color-label);
+  margin: 0 0 0.4rem;
+  a { color: inherit; text-decoration: none; &:hover { background: none; text-decoration: underline; } }
+}
+.story-card-excerpt { font-size: 0.85em; line-height: 1.5; margin: 0.5rem 0 0; }
+.story-card-date { display: block; font-family: var(--font-family-sans-serif); font-size: 0.8rem; margin-top: 0.6rem; color: var(--color-text); }
+
+// a row that keeps every image's real shape: each card grows in proportion
+// to its --r (width÷height), so the images all end up the same height.
+// Stacks on phones, where each image just runs full width.
+.ratio-row {
+  display: flex; align-items: flex-start; gap: 2.5rem;
+  > .story-card { flex: var(--r, 1) 1 0; min-width: 0; }
+  .story-card-img img { aspect-ratio: auto; object-fit: initial; height: auto; }
+  @media (max-width: 760px) {
+    flex-direction: column; gap: 2rem;
+    > .story-card { flex: none; width: 100%; }
+  }
+}
+// Making: two rows of big pairs
+.home-top {
+  padding: 0 0 3rem;
+  h3 { font-size: 1.45em; }
+}
+
+/* ---------- bands ---------- */
+.home-band {
+  padding: 3.5rem 0 4rem;
+  // the Writing band: a white wash bleeding to the window edges
+  &.is-tint {
+    background: var(--color-wash);
+    box-shadow: 0 0 0 100vmax var(--color-wash);
+    clip-path: inset(0 -100vmax);
+  }
+  // less of a gap above the letters panel
+  &:has(+ svg + .letters-signup) { padding-bottom: 2rem; }
+}
+
+// Writing: three columns of compact cards, small image beside the text
+.home-writing-grid {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2rem 2.5rem;
+  @media (max-width: 900px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 600px) { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+  .is-compact {
+    display: flex; gap: 1rem; align-items: flex-start;
+    .story-card-img { flex: 0 0 110px; margin: 0; }
+    .story-card-img img { aspect-ratio: 1; }
+    .story-card-text { min-width: 0; }
+    .story-card-excerpt { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  }
+}
+
+// Reading and Notes, half and half
+.home-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3.5rem;
+  @media (max-width: 760px) { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
+}
+
+// Reading: covers only, a fixed size, left-aligned
+.home-covers {
+  display: flex; flex-wrap: wrap; gap: 1.25rem;
+  a { display: block; width: 110px; text-decoration: none; &:hover { background: none; img { transform: translateY(-3px); } } }
+  img, .home-cover-blank {
+    width: 100%; aspect-ratio: 2 / 3; object-fit: cover; margin: 0; display: block;
+    border-radius: 2px; box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.18); transition: transform 200ms;
+  }
+  .home-cover-blank { background: var(--color-accent); padding: 0.75rem; box-sizing: border-box; font-size: 0.8em; line-height: 1.3; }
+}
+
+// Notes: one quiet row per note, title left and topic right, with the
+// light pink between rows
+.home-notes {
+  list-style: none; padding: 0; margin: 0;
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 2rem;
+  li {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    margin: 0; padding: 0.65rem 0; border-top: 1px solid var(--color-accent);
+    &:first-child { border-top: 0; padding-top: 0; }
+  }
+  a { min-width: 0; text-decoration: none; font-size: 1.05em; &:hover { text-decoration: underline; background: none; } }
+}
+.home-notes-topic {
+  flex-shrink: 0;
+  font-family: var(--font-family-sans-serif); font-size: 0.75rem; color: var(--color-text);
+}
+
+/* ---------- motion ---------- */
+
+// scroll fade-in: cards fade up as they scroll into view. Pure CSS — a
+// scroll-driven animation tied to each card's position on screen, so it
+// can't leave anything hidden: cards already on screen (or above) are
+// simply shown, and browsers without support, or with reduced motion
+// turned on, show everything as normal. Not the first row of Making
+// pictures: they peek up at the bottom of the first screen and should
+// look crisp there, not half-faded.
+@keyframes home-rise { from { opacity: 0; transform: translateY(14px); } }
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .home :is(.home-main .story-card:not(.home-first-row > *), .home-covers > a, .home-notes li, .letters-signup) {
+      animation: home-rise linear both;
+      animation-timeline: view();
+      animation-range: entry 10% entry 60%;
+    }
+  }
+}
+
+// Making title: hidden at the very top of the page, so only the pictures
+// peek up on first load, then fades in over the first 120px of scrolling.
+// Tied to the page's scroll position in CSS (no scroll events), and simply
+// shown where scroll-driven animations aren't supported
+@keyframes home-head-in { from { opacity: 0; transform: translateY(10px); } }
+@supports (animation-timeline: scroll()) {
+  .home .home-making-head {
+    animation: home-head-in linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 120px;
+    @media (prefers-reduced-motion: reduce) { transform: none; animation-name: none; }
+  }
+}
