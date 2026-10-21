@@ -35,10 +35,12 @@ eleventyImport:
 
 {%- include "components/lab-parts/hero.njk" %}
 
-{#- the Making title fades up with the cards as it scrolls into view #}
+{#- the Making title (and View all) stay hidden at the top of the page, so
+    only the pictures peek up on first load; they fade in once you scroll
+    a little (CSS, "Making title" in lab.scss) #}
 <header class="lab-e-head home-making-head"><h2><a href="/making/">Making</a></h2>{{ more("/making/", "View all") }}</header>
 {%- for pair in arts | batch(2) %}
-<section class="lab-e-top lab-e-ratio-row">
+<section class="lab-e-top lab-e-ratio-row{% if loop.first %} home-first-row{% endif %}">
   {%- for post in pair %}{{ card(post, "", true) }}{% endfor %}
 </section>
 {%- endfor %}

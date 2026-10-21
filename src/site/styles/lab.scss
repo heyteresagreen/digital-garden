@@ -747,11 +747,27 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
 @keyframes home-rise { from { opacity: 0; transform: translateY(14px); } }
 @supports (animation-timeline: view()) {
   @media (prefers-reduced-motion: no-preference) {
-    .lab-home :is(.home-making-head, .lab-main .lab-e-card, .lab-e-covers > a, .lab-e-notes li, .home-letters) {
+    // (not the first row of Making pictures: they peek up at the bottom
+    // of the first screen and should look crisp there, not half-faded)
+    .lab-home :is(.lab-main .lab-e-card:not(.home-first-row > *), .lab-e-covers > a, .lab-e-notes li, .home-letters) {
       animation: home-rise linear both;
       animation-timeline: view();
       animation-range: entry 10% entry 60%;
     }
+  }
+}
+
+// Making title: hidden at the very top of the page, so only the pictures
+// peek up on first load, then fades in over the first 120px of scrolling.
+// Tied to the page's scroll position in CSS (no scroll events), and simply
+// shown where scroll-driven animations aren't supported
+@keyframes home-head-in { from { opacity: 0; transform: translateY(10px); } }
+@supports (animation-timeline: scroll()) {
+  .lab-home .home-making-head {
+    animation: home-head-in linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 120px;
+    @media (prefers-reduced-motion: reduce) { transform: none; animation-name: none; }
   }
 }
 
