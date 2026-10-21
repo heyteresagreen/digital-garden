@@ -4,7 +4,13 @@ layout: layouts/base.njk
 {% from "components/post-card.njk" import postCard %}
 {% from "components/pagination.njk" import pager %}
 <header class="index-header">
+  {#- titleImage in front matter swaps the text heading for a picture
+      (the Letters page's hand-lettering); the alt text keeps it a heading #}
+  {%- if titleImage %}
+  <h1 class="index-title-image"><img src="{{ titleImage }}" alt="{{ titleImageAlt or title }}"></h1>
+  {%- else %}
   <h1>{{ title }}</h1>
+  {%- endif %}
   {%- if intro %}<p class="index-intro">{{ intro }}</p>{% endif %}
 </header>
 {{ content | safe }}

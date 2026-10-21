@@ -7,17 +7,15 @@ pagination:
   generatePageOnEmptyData: true
 permalink: "/letters/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
 listClass: letters-list
+titleImage: /img/user/assets/Letters.png
+titleImageAlt: Letters from Teresa
 eleventyExcludeFromCollections: true
 ---
-<img src="/img/user/assets/Letters.png" alt="Letters">
-<p>Letters from me to you, delivered to your email inbox very infrequently. Some rambling thoughts, things I’ve made, interesting links etc.</p>
-{#- the same sign-up form as the letters panel (components/letters-signup.njk),
-    without the panel around it; styles: .signup-form in _components.scss #}
-<div class="signup-form">
-  <label for="bd-email">Your email address</label>
-  <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')">
-    <input type="email" name="email" id="bd-email" autocomplete="email" required>
-    <button type="submit">Sign up</button>
-  </form>
-</div>
+{#- the sign-up panel, stacked, with just the intro and the form — the
+    lettering is the page heading above it #}
+{%- set signupLayout = "stacked" %}
+{%- set signupNoTitle = true %}
+{%- set signupNoPast = true %}
+{%- set signupBlurb = "Letters from me to you, delivered to your email inbox very infrequently. Some rambling thoughts, things I’ve made, interesting links etc." %}
+{% include "components/letters-signup.njk" %}
 <h2>Old letters</h2>

@@ -709,6 +709,17 @@ columns, above the footer) and the Letters page (two columns, at the top).
   }
 }
 
+// without the lettering (the Letters page): a little less padding on top
+.letters-signup.is-untitled { padding-top: 2rem; margin-top: 1rem; }
+
+// an index page heading that's a picture (the Letters page's lettering):
+// large and centred. 420px keeps the 535px-wide file fairly crisp
+.index-title-image {
+  line-height: 0;
+  text-align: center;
+  img { display: inline-block; width: 420px; max-width: 100%; height: auto; margin: 0; }
+}
+
 // when the panel is the last thing on the page, the footer tucks up under it
 body:has(.letters-signup.is-end) footer { margin-top: 0; }
 
