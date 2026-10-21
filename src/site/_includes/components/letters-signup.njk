@@ -6,9 +6,7 @@
       signupLayout   "stacked" (one centred column — the homepage) or
                      "two" (lettering and blurb left, form right)
       signupAtEnd    true when it's the last thing before the footer, so the
-                     footer tucks up under it (homepage, single letters)
-      signupNoPast   true to leave out "Read past letters" (the Letters page
-                     itself) -#}
+                     footer tucks up under it (homepage, single letters) -#}
 {%- from "components/lab.njk" import more %}
 {#- the torn edge: ragged noise displacing the edges of the panel's wash —
     the filter the old site used on its backlinks box -#}
@@ -24,14 +22,12 @@
       screens #}
   <h2 class="letters-signup-title"><img src="/img/user/assets/Letters.png" alt="Letters from Teresa"></h2>
   <p class="letters-signup-blurb">Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
-  <div class="letters-signup-form">
+  <div class="letters-signup-form signup-form">
     <label for="bd-email">Your email address</label>
     <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')">
       <input type="email" name="email" id="bd-email" autocomplete="email" required>
       <button type="submit">Sign up</button>
     </form>
-    {%- if not signupNoPast %}
     {{ more("/letters/", "Read past letters") }}
-    {%- endif %}
   </div>
 </section>

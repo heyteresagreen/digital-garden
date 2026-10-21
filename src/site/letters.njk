@@ -9,9 +9,15 @@ permalink: "/letters/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNu
 listClass: letters-list
 eleventyExcludeFromCollections: true
 ---
-{#- the sign-up panel, in its usual place at the top of the page (no "Read
-    past letters" link — they're right below) #}
-{%- set signupLayout = "two" %}
-{%- set signupNoPast = true %}
-{% include "components/letters-signup.njk" %}
+<img src="/img/user/assets/Letters.png" alt="Letters">
+<p>Letters from me to you, delivered to your email inbox very infrequently. Some rambling thoughts, things I’ve made, interesting links etc.</p>
+{#- the same sign-up form as the letters panel (components/letters-signup.njk),
+    without the panel around it; styles: .signup-form in _components.scss #}
+<div class="signup-form">
+  <label for="bd-email">Your email address</label>
+  <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')">
+    <input type="email" name="email" id="bd-email" autocomplete="email" required>
+    <button type="submit">Sign up</button>
+  </form>
+</div>
 <h2>Old letters</h2>
