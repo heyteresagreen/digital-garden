@@ -1,5 +1,7 @@
 # Portability plan — de-hardcoding teresawatts.com
 
+> **Historical (July 2026).** This audit was worked through in tiers, with some parts deliberately left alone (noted below). For how things work now see `README.md` and `content-contract.md`; since then the section list moved to `src/site/_data/sections.js` and the styles gained `_home.scss`.
+
 _Written July 2026, ahead of a possible "how I built this" blog post. Goal: figure out what it would take for someone else to fork this site (or for future-you to reskin it) without rewriting the whole pipeline._
 
 The build has three layers, and they're portable to very different degrees:

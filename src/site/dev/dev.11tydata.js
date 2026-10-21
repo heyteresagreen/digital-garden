@@ -1,4 +1,4 @@
-// Dev-only pages (the style guide), viewable at /dev/<file>/ while running
+// Dev-only pages (the design system), viewable at /dev/<file>/ while running
 // `npm start`. Never built in production (ELEVENTY_ENV=prod), so nothing in
 // this folder can go live.
 module.exports = {

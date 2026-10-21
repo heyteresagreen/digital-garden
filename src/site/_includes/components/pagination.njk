@@ -1,3 +1,5 @@
+{#- Newer / Older links under a list, added by layouts/index.njk when a list
+    runs to more than one page. -#}
 {% macro pager(pagination) %}
 {%- if pagination.pages.length > 1 %}
 <nav class="pagination" aria-label="Pagination">

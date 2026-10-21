@@ -4,8 +4,10 @@
    v3: split into partials (July 2026) — tokens are now CSS custom
    properties, so a reskin means editing _tokens.scss (or overriding
    the same variables at runtime), not reading this whole file.
+   v4: homepage styles moved in from the old lab stylesheet (Oct 2026).
+   Every token and component is shown at /dev/design-system/ (npm start).
 
-   _tokens.scss     — the six values that drive the look
+   _tokens.scss     — colours, fonts and radius as CSS custom properties
    _base.scss       — element defaults (body, headings, links, etc.)
    _layout.scss     — nav, page wrapper, content column, footer
    _components.scss — post/note elements, forms and the letters

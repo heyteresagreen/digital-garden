@@ -2,16 +2,22 @@
 
 Custom Eleventy (v3) build — replaced the Obsidian Digital Garden plugin in July 2026.
 
-- Content: `src/site/notes/` (published from Obsidian via Enveloppe — see ENVELOPPE-SETUP.md)
-- Templates: `src/site/_includes/` (Nunjucks, fully owned — no plugin)
-- Styles: `src/site/styles/tw-style.scss` (single file)
-- Build: `npm install` once, then `npm start` for local dev at http://localhost:8080, Netlify runs `npm run build`
+- Content: `src/site/notes/` (published from Obsidian via Enveloppe, flat — one file per note) with attachments in `src/site/img/user/`
+- Templates: `src/site/_includes/` (Nunjucks). Top-level pages and section indexes: `src/site/*.njk`; the homepage is `src/site/index.njk`. Every template starts with a comment saying what it does
+- Styles: `src/site/styles/` — `tw-style.scss` `@use`s `_tokens.scss` (colours, fonts, radius as CSS custom properties), `_base.scss`, `_layout.scss`, `_components.scss`, `_home.scss`
+- Sections: `src/site/_data/sections.js` is the one list of sections (and of what counts as Making); nav, logo and footer links are in `src/site/_data/site.json`
+- Build: `npm install` once, then `npm start` for local dev at http://localhost:8080 (Sass and Eleventy both watch and reload). Netlify runs `npm run build` on every push to `main`
+- **Design system:** with `npm start` running, http://localhost:8080/dev/design-system/ shows every token, style and component, with the file it lives in and how to use it. It's in `src/site/dev/`, which is never built for the live site
 
-URL structure: `/writing/`, `/art/`, `/sketching/`, `/books/`, `/letters/`,
-`/projects/` section indexes; `/posts/` mixed feed; `/tags/tag-name/` archives.
+URL structure: `/writing/`, `/art/`, `/sketching/`, `/sketchbooks/`, `/notes/`,
+`/books/`, `/letters/`, `/projects/` section indexes; `/making/` (art,
+sketching and sketchbooks together); `/posts/` everything; `/reading/`;
+`/tags/tag-name/` archives; `/rss/` explains the feed at `/feed.xml`.
 Old Digital Garden URLs 301-redirect via `netlify.toml`.
 
-See MIGRATION-NOTES.md for the content migration log.
+Day-to-day guides (posting, templates, Enveloppe, the Reading page) live in
+the Obsidian vault under `projects/Website/`. `content-contract.md` here is
+the frontmatter and wiki-link reference.
 
 ## Reading page data
 

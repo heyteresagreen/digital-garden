@@ -1,3 +1,7 @@
+{#- One post in a list (postCard macro), used by every index page and tag
+    page. opts switch parts on and off — see the options in
+    layouts/index.njk. Styles: .post-card and the list classes in
+    _components.scss. -#}
 {% macro postCard(post, opts = {}) %}
 {%- set thumb = null %}
 {%- if opts.showImage %}{% set thumb = post | cardImageAny if opts.bodyImageFallback else post | cardImage %}{% endif %}

@@ -1,4 +1,7 @@
 ---
+# A single post, note or letter: back link to its section, title, date,
+# tags, the note's content, then links to the newer/older post in the same
+# section. Book posts get the book page instead (components/book-page.njk).
 layout: layouts/base.njk
 ---
 {%- if hardcover or (status and (section | primarySection) == "books") %}{% set book = hardcover | hardcoverBook if hardcover else null %}{% include "components/book-page.njk" %}{% else %}

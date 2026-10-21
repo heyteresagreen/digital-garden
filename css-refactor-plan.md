@@ -1,4 +1,6 @@
 # CSS refactor plan — tw-style.scss
+
+> **Historical (July 2026).** These changes were made. Line numbers refer to the old single-file stylesheet; the styles are now split into partials (see `README.md`), and the old form styles mentioned here were removed in October 2026.
 _Audit date: July 2026. Zero visual changes intended._
 
 The old `tw-style.css` had ~20+ `!important` declarations because it had to fight the Digital Garden plugin's base theme. Post-refactor, there's only one stylesheet (`tw-style.css`) and no competing base — so almost all of those are already gone. The SCSS is in decent shape. The changes below clean up what's left.

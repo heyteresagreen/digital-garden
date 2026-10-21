@@ -1,4 +1,19 @@
 ---
+# The shared layout for section index pages (Writing, Art, Letters…).
+# A section page is mostly front matter; these options pick the look:
+#   listClass          CSS class on the list: writing-list, notes-list,
+#                      letters-list, art-grid, posts-mosaic (styles in
+#                      _components.scss) — the main styling hook
+#   showImages         cards get thumbnails (from each note's image:)
+#   bodyImageFallback  …or the first picture in the note if it has none
+#   showSections       cards show their section in small capitals
+#   hideExcerpts       no summary text on cards
+#   hideImageSections  sections whose cards never show a picture
+#   intro              a line under the heading
+#   titleImage(+Alt)   a picture instead of the text heading (Letters)
+#   pagination.size    posts per page
+# Anything written below a section page's front matter appears between the
+# heading and the list.
 layout: layouts/base.njk
 ---
 {% from "components/post-card.njk" import postCard %}
