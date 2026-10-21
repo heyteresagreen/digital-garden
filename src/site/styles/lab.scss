@@ -749,7 +749,7 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
   @media (prefers-reduced-motion: no-preference) {
     // (not the first row of Making pictures: they peek up at the bottom
     // of the first screen and should look crisp there, not half-faded)
-    .lab-home :is(.lab-main .lab-e-card:not(.home-first-row > *), .lab-e-covers > a, .lab-e-notes li, .home-letters) {
+    .lab-home :is(.lab-main .lab-e-card:not(.home-first-row > *), .lab-e-covers > a, .lab-e-notes li, .letters-signup) {
       animation: home-rise linear both;
       animation-timeline: view();
       animation-range: entry 10% entry 60%;
@@ -791,101 +791,10 @@ a.lab-c-tile:hover { transform: translateY(-3px); background: white; }
    terracotta is 4.6:1 on the page */
 .lab-home .lab-e-tag { color: #b5523a; }
 
-// the light white wash behind the letters panel (as on Writing)
-$home-wash: rgba(255, 255, 255, 0.6);
-
-/* ---------- letters sign-up: a torn-paper panel above the footer ----------
-   The width of the content column. The wash is drawn by ::before,
-   roughened by the SVG filter in layouts/home.njk (the effect the old
-   site used on its backlinks box). Title, blurb and sign-up are placed by
-   grid areas; data-letters-layout on <html> picks the arrangement:
-   two:     title and blurb on the left, sign-up on the right
-   three:   title, blurb, sign-up side by side
-   stacked: one centred column
-   All of them stack on phones. */
-.home-letters {
-  position: relative;
-  display: grid; gap: 0.6rem 3rem; align-items: center;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  grid-template-areas: "title signup" "blurb signup";
-  margin: 0 0 3.5rem;
-  padding: 2.25rem 2.5rem 2.5rem;
-  &::before {
-    content: ""; position: absolute; z-index: -1; inset: 0;
-    background: $home-wash;
-    filter: url(#torn-edge);
-    box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
-  }
-  .home-letters-title { grid-area: title; align-self: end; line-height: 0; margin: 0; padding: 0; }
-  .home-letters-title img { display: block; width: 260px; max-width: 100%; height: auto; margin: 0; }
-  .home-letters-blurb { grid-area: blurb; align-self: start; margin: 0; font-size: 0.9em; line-height: 1.5; }
-  .home-signup { grid-area: signup; }
-  .lab-more { margin-top: 0.75rem; }
-}
-html[data-letters-layout="three"] .home-letters {
-  grid-template-columns: auto minmax(0, 1fr) minmax(0, 1.1fr);
-  grid-template-areas: "title blurb signup";
-  gap: 1rem 2.5rem;
-  .home-letters-title, .home-letters-blurb { align-self: center; }
-  .home-letters-title img { width: 220px; }
-}
-html[data-letters-layout="stacked"] .home-letters {
-  grid-template-columns: minmax(0, 32rem);
-  grid-template-areas: "title" "blurb" "signup";
-  justify-content: center; text-align: center;
-  gap: 0.75rem;
-  .home-letters-title img { margin: 0 auto; }
-  .home-signup { margin-top: 0.75rem; text-align: left; }
-}
-// phones: always one column, left-aligned
-@media (max-width: 760px) {
-  html .home-letters, html[data-letters-layout] .home-letters {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "title" "blurb" "signup";
-    gap: 1rem; padding: 2rem 1.25rem; text-align: left;
-    .home-letters-title img { margin: 0; }
-  }
-}
 
 // less of a gap above the letters panel (the Reading/Notes band's own
 // bottom padding)
-.lab-home .lab-e-band:has(+ .home-letters) { padding-bottom: 2rem; }
-// on the homepage the letters panel sits just above the footer
+.lab-home .lab-e-band:has(+ svg + .letters-signup) { padding-bottom: 2rem; }
+// on the homepage the letters panel (components/letters-signup.njk,
+// styles in _components.scss) sits just above the footer
 .lab-home .lab-main { margin-bottom: 0; }
-.lab-home footer { margin-top: 0; }
-
-// sign-up form: a visible label, and a field outline dark enough to see
-// (#71707e on white is 4.8:1; WCAG asks 3:1 for form borders)
-.home-signup {
-  label { display: block; font-family: var(--font-family-sans-serif); font-size: 0.8rem; margin-bottom: 0.3rem; }
-  .lab-e-subscribe {
-    margin: 0 !important;
-    max-width: none;
-    // by id, to beat the site-wide input#bd-email in _components.scss
-    // (white border, page background, fixed width)
-    input#bd-email {
-      width: auto; margin: 0;
-      font-family: var(--font-family-sans-serif);
-      background: white;
-      border: 1px solid #71707e;
-      &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
-    }
-  }
-}
-
-/* ---------- design options panel (dev only, npm start) ---------- */
-.design-options {
-  position: fixed; left: 50%; bottom: 1rem; transform: translateX(-50%); z-index: 10;
-  display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem; align-items: center;
-  max-width: calc(100vw - 2rem); box-sizing: border-box;
-  padding: 0.45rem 0.6rem 0.45rem 1rem; border-radius: 999px;
-  background: rgba(40, 39, 50, 0.92); color: white;
-  font-family: var(--font-family-sans-serif); font-size: 0.75rem;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-  label { display: flex; align-items: center; gap: 0.4rem; }
-  select { font: inherit; padding: 0.2rem 0.3rem; border-radius: 4px; border: 0; }
-  button {
-    font: inherit; cursor: pointer; padding: 0.25rem 0.7rem; border-radius: 999px;
-    border: 1px solid rgba(255, 255, 255, 0.4); background: none; color: white;
-  }
-}

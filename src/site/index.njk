@@ -91,22 +91,8 @@ eleventyImport:
   </div>
 </section>
 
-{#- letters: a compact torn-paper panel above the footer. Title, blurb and
-    sign-up are separate grid items so the layout can be switched in CSS
-    (data-letters-layout on <html>, see lab.scss) #}
-<section class="home-letters">
-  {#- the hand-lettered "Letters from Teresa" as the heading. Shown 260px
-      wide by CSS; no width attribute here, or the image transform would
-      shrink the file to 260px and it'd go soft on retina screens #}
-  <h2 class="home-letters-title"><img src="/img/user/assets/Letters.png" alt="Letters from Teresa"></h2>
-  <p class="home-letters-blurb">Letters from me to you, delivered very infrequently. Rambling thoughts, things I’ve made, interesting links.</p>
-  <div class="home-signup">
-    <label for="bd-email">Your email address</label>
-    <form action="https://buttondown.email/api/emails/embed-subscribe/Teresa" method="post" target="popupwindow" onsubmit="window.open('https://buttondown.email/Teresa', 'popupwindow')" class="lab-e-subscribe">
-      <input type="email" name="email" id="bd-email" autocomplete="email" required>
-      <button type="submit">Sign up</button>
-    </form>
-    {{ more("/letters/", "Read past letters") }}
-  </div>
-</section>
+{#- letters: the sign-up panel, one centred column, above the footer #}
+{%- set signupLayout = "stacked" %}
+{%- set signupAtEnd = true %}
+{% include "components/letters-signup.njk" %}
 

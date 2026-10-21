@@ -618,3 +618,137 @@ RSS PAGE (/rss/)
     &:hover { opacity: 0.9; }
   }
 }
+
+/* ----------------------
+LETTERS SIGN-UP (components/letters-signup.njk)
+Used on the homepage (stacked, above the footer), single letters (two
+columns, above the footer) and the Letters page (two columns, at the top).
+---------------------- */
+
+.letters-signup {
+  position: relative;
+  display: grid;
+  gap: 0.6rem 3rem;
+  align-items: center;
+  margin: 2rem 0 3.5rem;
+  padding: 2.25rem 2.5rem 2.5rem;
+  font-size: 1.05rem; // the same size in any column (.content sets 1.25rem)
+  // the torn-paper wash, drawn behind the content and roughened by the SVG
+  // filter in the component
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    filter: url(#torn-edge);
+    box-shadow: 1px 0 3px rgba(185, 140, 129, 0.2);
+  }
+  .letters-signup-title {
+    grid-area: title;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    img { display: block; width: 260px; max-width: 100%; height: auto; margin: 0; }
+  }
+  .letters-signup-blurb { grid-area: blurb; margin: 0; line-height: 1.5; }
+  .letters-signup-form { grid-area: signup; }
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.8rem;
+  }
+  form {
+    // undo the site-wide blue form box
+    display: flex;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    background: none;
+    color: inherit;
+    border-radius: 0;
+  }
+  // by id, to beat the site-wide input#bd-email. #71707e on white is 4.8:1
+  // (WCAG asks 3:1 for form borders)
+  input#bd-email {
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    margin: 0;
+    padding: 0.6rem 0.9rem;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.9rem;
+    background: white;
+    border: 1px solid #71707e;
+    border-radius: 0;
+    &:focus { outline: 2px solid var(--color-secondary); outline-offset: 1px; }
+  }
+  button {
+    padding: 0.6rem 1.2rem;
+    border: 0;
+    cursor: pointer;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.85rem;
+    color: white;
+    background: var(--color-secondary);
+    &:hover { opacity: 0.9; }
+  }
+  // "Read past letters" with the site's short drawn arrow
+  .lab-more {
+    display: inline-block;
+    margin-top: 0.75rem;
+    font-family: var(--font-family-sans-serif);
+    font-size: 0.9rem;
+    &:hover { background: none; }
+  }
+  .lab-more-arrow {
+    display: inline-block;
+    margin-left: 0.3em;
+    transition: transform 200ms;
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 0.8em;
+      height: 0.8em;
+      vertical-align: -0.08em;
+      background: currentColor;
+      -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
+      mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 8h10M9 4l4 4-4 4'/%3E%3C/svg%3E") center / contain no-repeat;
+    }
+  }
+  .lab-more:hover .lab-more-arrow { transform: translateX(2px); }
+
+  // two columns: lettering and blurb on the left, the form on the right
+  &.is-two {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "title signup" "blurb signup";
+    .letters-signup-title { align-self: end; }
+    .letters-signup-blurb { align-self: start; }
+  }
+  // stacked: one centred column
+  &.is-stacked {
+    grid-template-columns: minmax(0, 32rem);
+    grid-template-areas: "title" "blurb" "signup";
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+    .letters-signup-title img { margin: 0 auto; }
+    .letters-signup-form { margin-top: 0.75rem; text-align: left; }
+  }
+  // phones: always one column, left-aligned
+  @media (max-width: 760px) {
+    &.is-two, &.is-stacked {
+      grid-template-columns: minmax(0, 1fr);
+      grid-template-areas: "title" "blurb" "signup";
+      gap: 1rem;
+      padding: 2rem 1.25rem;
+      text-align: left;
+      .letters-signup-title img { margin: 0; }
+    }
+  }
+}
+
+// when the panel is the last thing on the page, the footer tucks up under it
+body:has(.letters-signup.is-end) footer { margin-top: 0; }
