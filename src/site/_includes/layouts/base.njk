@@ -18,6 +18,14 @@
   <div class="wrapper">
     <main class="content{% if contentClass %} {{ contentClass }}{% endif %}">
 {{ content | safe }}
+      {#- every page ends with the letters sign-up, just above the footer —
+          except pages that already have it (hideSignup: true, e.g. the
+          Letters page). The homepage has its own layout and version. #}
+      {%- if not hideSignup %}
+      {%- set signupLayout = "two" %}
+      {%- set signupAtEnd = true %}
+      {% include "components/letters-signup.njk" %}
+      {%- endif %}
     </main>
   </div>
   {% include "components/footer.njk" %}

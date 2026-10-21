@@ -33,10 +33,4 @@ layout: layouts/base.njk
   {%- endif %}
   {%- endif %}
 </article>
-{%- if sectionKey == "letters" %}
-{#- single letters end with the sign-up panel, just above the footer #}
-{%- set signupLayout = "two" %}
-{%- set signupAtEnd = true %}
-{% include "components/letters-signup.njk" %}
-{%- endif %}
 {%- endif %}
