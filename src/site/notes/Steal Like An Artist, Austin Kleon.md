@@ -12,6 +12,8 @@ imageAlt: Book cover of Steal Like An Artist, Austin Kleon
 slug: steal-like-an-artist-austin-kleon
 created: 2026-04-22
 hardcover: steal-like-an-artist
+status: read
+dateFinished: 2026-04-22
 ---
 ![[Pasted image 20260422215327.png|200]]
 
