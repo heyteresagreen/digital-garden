@@ -5,7 +5,7 @@ section: letters
 date: 2026-10-31
 tags:
   - letters
-description: Going backwards to go forwards
+description: Romanticising growing (as an artist) and weeding (literally)
 slug:
 ---
 Hi hi,
