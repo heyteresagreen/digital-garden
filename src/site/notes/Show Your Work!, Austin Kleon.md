@@ -7,8 +7,9 @@ tags:
 created: 2026-10-19
 image: "[[assets/cover-show-your-work.jpg]]"
 imageAlt: Book cover of Show Your Work!, Austin Kleon
-status: reading
+status: read
 dateStarted: 2026-10-15
+dateFinished: 2026-10-26
 ---
 ![[cover-show-your-work.jpg|Book cover of Show Your Work!, Austin Kleon|200]]
 
