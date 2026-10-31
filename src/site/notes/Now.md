@@ -8,15 +8,20 @@ updated: 2026-09-13
 ---
 Here's what I'm up to right now:
 
+Trying to do a painting a week, [[Letters 21|going through some artistic growing pains]] as my ambitions outpace my skills. Battling weeds in the garden. Playing around with frame by frame animation and improving my website. Just wrapped up the UXCamp Boorloo Perth conference, for which I was on the organising committee and ran a workshop, [[Let's sketch people!|Let's sketch people!]] I'm making tentative steps towards reviving my presence on social media, but considering it eats into my art-making time and is presumably being used to train AI it's been sitting in the too-hard basket
+
+I'm back to [reading](https://teresawatts.com/reading/) *The Complete Robot* by Isaac Asimov and *Games: Agency as Art* by C. Thi Nguyen, after some detours to finish library books before they were due.
+
+---
+
+Here's what I was up to earlier:
+
+## September 2026
 Finally finished [[Sketchbook 16|Sketchbook 16]] (my post-Singapore trip travel journal), and filmed a little video flip through. That involved a lot of messing around with tripods and learning how to use Da Vinci Resolve for editing! I've now hand bound a new little sketchbook from the same paper, and trying to be a little more loose and less precious with this one.
 
 I've *almost* finished knitting the [Sabai Top](https://www.ravelry.com/patterns/library/sabai-top), my first ever knit garment. I had to restart it a bunch of times because I kept making mistakes - my final version has taken a bit over 3 weeks so far, with a few more rows and finishing and blocking to go. Knitting is a slow process and I'm not sure I would do it again, but I think when I've finished this project I will miss knitting.
 
 I'm currently reading *The Complete Robot* by Isaac Asimov and *Games: Agency as Art* by C. Thi Nguyen.
-
----
-
-Here's what I was up to earlier:
 
 ## August 2026
 I currently have a [[Watercolour quinces|painting]] in the [Piccolo exhibition](https://www.inglewoodartshub.org/blank-4-1) at Inglewood Arts Hub! The exhibition will run until 15 August if you're in Perth want to take a look.
