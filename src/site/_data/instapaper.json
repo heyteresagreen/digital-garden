@@ -2,6 +2,14 @@
   "_generated": "by scripts/sync-instapaper.mjs — do not edit",
   "items": [
     {
+      "title": "Best of Design Matters: C. Thi Nguyen",
+      "url": "https://podcasts.apple.com/au/podcast/best-of-design-matters-c-thi-nguyen/id328074695?i=1000786941013",
+      "site": "podcasts.apple.com",
+      "author": "",
+      "date": "2026-11-08",
+      "description": "Search Home New Top Charts 31 August Design Matters with Debbie Millman C. Thi Nguyen—philosopher, professor, and author of Games: Agency as Art—joins to discuss his new book, The Score: How to Stop Playing Somebody Else’s Game, and how metrics, from grades to likes, quietly reshape what we value and who we become. Together, they explore games as “libraries of agency,” the allure of scoring system"
+    },
+    {
       "title": "How LEGO Engineered the Perfect Plaything",
       "url": "https://thereader.mitpress.mit.edu/how-lego-engineered-the-perfect-plaything/",
       "site": "thereader.mitpress.mit.edu",
@@ -32,14 +40,6 @@
       "author": "Elizabeth Oldfield",
       "date": "2026-11-03",
       "description": "Photo by Jon Tyson on Unsplash Recently I was with a gathering of people working on a range of humanity’s most pressing challenges. Climate change, regenerative agriculture, migration policy, the erosion of democratic norms. I always feel a bit of a fraud in those settings. I am no longer working directly in policy, and though I am chair of Larger Us, most of my work involves writing, speaking, co"
-    },
-    {
-      "title": "How I work",
-      "url": "https://substack.com/inbox/post/221535275",
-      "site": "substack.com",
-      "author": "MC Dean",
-      "date": "2026-10-26",
-      "description": "Photo Credit Google Deepmind Many of you have asked me over the past year how I work, and I’ve never properly answered, so here is the post finally. One caveat before I start. I’m a designer at Google, inside a very specific environment that won’t look like yours, so take this with a pinch of salt. I’m also not claiming we’ve got it all figured out, that isn’t the point, and this isn’t how everyon"
     }
   ]
 }
