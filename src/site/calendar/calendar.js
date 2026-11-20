@@ -479,7 +479,9 @@ function render() {
                 row.appendChild(td);
             }
         }
-        table.appendChild(row);
+        // a month ending on the last day of the week leaves this row empty —
+        // skip it, or month view shares the page height with a blank row
+        if (row.children.length > 0) table.appendChild(row);
         monthDiv.appendChild(table);
         el.calendar.appendChild(monthDiv);
     }
