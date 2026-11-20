@@ -12,6 +12,7 @@
         { "label": "Making", "url": "/making/", "alsoSections": "making" },
         { "label": "Writing", "url": "/writing/" },
         { "label": "Letters", "url": "/letters/" },
+        { "label": "Tools", "url": "/tools/" },
         { "label": "About", "url": "/about/" }
     ],
     "footer": [
