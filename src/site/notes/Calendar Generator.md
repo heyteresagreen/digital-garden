@@ -3,7 +3,7 @@ title: Calendar Generator
 publish: true
 section: tools
 date: 2026-11-21
-image: "[[assets/tool-calendar.jpg|The calendar maker, showing a year on an A6 page]]"
+image: "[[assets/tool-calendar.jpg|The calendar generator, showing a month calendar for March 2027]]"
 link: /calendar/
 description: Make and customise your own printable yearly or monthly calendar. I put these on my fridge and in my journal to help me plan.
 ---
