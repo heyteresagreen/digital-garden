@@ -8,7 +8,7 @@
     showImage = false (or no image at all) gives a text-only card;
     useTag = true labels it with its first tag instead of its section #}
 {% macro storyCard(post, cls = "", excerpt = false, showImage = true, useTag = false) %}
-{%- set labels = { writing: "Writing", notes: "Notes", art: "Art", sketching: "Sketching", sketchbooks: "Sketchbook", projects: "Project", letters: "Letters" } %}
+{%- set labels = { writing: "Writing", notes: "Notes", art: "Art", sketching: "Sketching", sketchbooks: "Sketchbook", projects: "Project", tools: "Tools", letters: "Letters" } %}
 {%- set section = post.data.section | primarySection %}
 {#- useTag: label with the post's first tag that isn't just its section
     (falls back to the section) #}

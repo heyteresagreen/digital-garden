@@ -208,6 +208,26 @@ INDEX PAGES (v2 components)
   }
 }
 
+/* Tools: a screenshot on top of each card, two across on wider screens */
+.tools-list {
+  display: grid;
+  gap: 2.5rem;
+  @media (min-width: 700px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  .post-card-thumb img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: top left;
+    margin: 0 0 0.75rem;
+    border-radius: var(--border-radius);
+  }
+  .post-card-title {
+    font-size: 1.25rem;
+  }
+}
+
 /* Notes: digital-garden style — quieter, undated list */
 .notes-list {
   .post-card {

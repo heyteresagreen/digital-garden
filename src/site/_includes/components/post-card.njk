@@ -6,9 +6,12 @@
 {%- set thumb = null %}
 {%- if opts.showImage %}{% set thumb = post | cardImageAny if opts.bodyImageFallback else post | cardImage %}{% endif %}
 {%- if opts.hideImageSections and post.data.section in opts.hideImageSections %}{% set thumb = null %}{% endif %}
+{#- link: in a note's front matter sends the card somewhere other than the
+    note (a tool's card opens the tool) #}
+{%- set href = post.data.link or post.url %}
 <li class="post-card{% if thumb %} has-thumb{% endif %}">
   {%- if thumb %}
-  <a class="post-card-thumb" href="{{ post.url }}">
+  <a class="post-card-thumb" href="{{ href }}">
     <img src="{{ thumb.src }}" alt="{{ thumb.alt or post.data.title }}" loading="lazy"{% if thumb.remote %} eleventy:ignore{% endif %}>
   </a>
   {%- endif %}
@@ -16,7 +19,7 @@
     {%- if opts.showSection and post.data.section %}
     <span class="post-card-section">{{ post.data.section }}</span>
     {%- endif %}
-    <a class="post-card-title" href="{{ post.url }}">{{ post.data.title }}</a>
+    <a class="post-card-title" href="{{ href }}">{{ post.data.title }}</a>
     {%- set summary = post | postExcerpt %}
     {%- if summary and not opts.hideExcerpt %}
     <p class="post-card-excerpt">{{ summary }}</p>

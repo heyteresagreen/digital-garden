@@ -1,0 +1,17 @@
+---
+# /tools/ — small apps and tools I've made. Each is a note with
+# `section: tools`; its `link:` (e.g. /calendar/) is where the card goes,
+# so the card opens the tool itself rather than the note. Index page
+# options are explained in _includes/layouts/index.njk.
+layout: layouts/index.njk
+title: Tools
+intro: Little apps I've made for myself. Free to use.
+pagination:
+  data: collections.tools
+  size: 12
+  generatePageOnEmptyData: true
+permalink: "/tools/{% if pagination.pageNumber > 0 %}page/{{ pagination.pageNumber + 1 }}/{% endif %}"
+showImages: true
+listClass: tools-list
+eleventyExcludeFromCollections: true
+---
