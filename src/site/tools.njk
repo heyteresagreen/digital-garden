@@ -1,11 +1,16 @@
 ---
 # /tools/ — small apps and tools I've made. Each is a note with
 # `section: tools`; its `link:` (e.g. /calendar/) is where the card goes,
-# so the card opens the tool itself rather than the note. Index page
-# options are explained in _includes/layouts/index.njk.
+# so the card opens the tool itself rather than the note. The text under
+# the heading is the Obsidian note with `snippet: tools-intro` (intro below
+# is the fallback until it exists). Index page options are explained in
+# _includes/layouts/index.njk.
 layout: layouts/index.njk
 title: Tools
+introSnippet: tools-intro
 intro: Little apps I've made for myself. Free to use.
+eleventyImport:
+  collections: ["snippets"]
 pagination:
   data: collections.tools
   size: 12

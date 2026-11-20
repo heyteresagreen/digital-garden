@@ -10,6 +10,8 @@
 #   hideExcerpts       no summary text on cards
 #   hideImageSections  sections whose cards never show a picture
 #   intro              a line under the heading
+#   introSnippet       …or the text of the Obsidian note with this
+#                      `snippet:` name (needs eleventyImport snippets)
 #   titleImage(+Alt)   a picture instead of the text heading (Letters)
 #   pagination.size    posts per page
 # Anything written below a section page's front matter appears between the
@@ -26,7 +28,10 @@ layout: layouts/base.njk
   {%- else %}
   <h1>{{ title }}</h1>
   {%- endif %}
-  {%- if intro %}<p class="index-intro">{{ intro }}</p>{% endif %}
+  {%- set introNote = null %}
+  {%- if introSnippet %}{% for snip in collections.snippets %}{% if snip.data.snippet == introSnippet %}{% set introNote = snip %}{% endif %}{% endfor %}{% endif %}
+  {%- if introNote %}<div class="index-intro">{{ introNote.templateContent | safe }}</div>
+  {%- elif intro %}<p class="index-intro">{{ intro }}</p>{% endif %}
 </header>
 {{ content | safe }}
 {%- if pagination.items.length %}
