@@ -24,8 +24,11 @@
     {%- if summary and not opts.hideExcerpt %}
     <p class="post-card-excerpt">{{ summary }}</p>
     {%- endif %}
-    {%- if post.date %}
+    {%- if post.date and not opts.hideDate %}
     <time datetime="{{ post.date | isoDate }}" class="posted">{{ post.date | dateFormat }}</time>
+    {%- endif %}
+    {%- if opts.button %}
+    <a class="post-card-button" href="{{ href }}">{{ opts.button }}</a>
     {%- endif %}
   </div>
 </li>

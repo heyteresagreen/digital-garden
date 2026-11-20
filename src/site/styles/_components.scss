@@ -208,24 +208,48 @@ INDEX PAGES (v2 components)
   }
 }
 
-/* Tools: a screenshot on top of each card, two across on wider screens */
+/* Tools: one tool per row, screenshot on the left and the description and
+   a "Check it out" button on the right (stacked on phones) */
 .tools-list {
-  display: grid;
-  gap: 2.5rem;
-  @media (min-width: 700px) {
-    grid-template-columns: 1fr 1fr;
+  .post-card {
+    margin-bottom: 3rem;
+  }
+  .post-card.has-thumb {
+    @media (min-width: 700px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
   }
   .post-card-thumb img {
     width: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
     object-position: top left;
-    margin: 0 0 0.75rem;
+    margin: 0 0 1rem;
     border-radius: var(--border-radius);
+    @media (min-width: 700px) {
+      margin: 0;
+    }
   }
   .post-card-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
+}
+
+/* the card's button (cardButton on an index page): the same look as the
+   sign-up button. .content in front so it beats the site's link colour */
+.content .post-card-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-family-sans-serif);
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+  background: var(--color-secondary);
+  &:hover { background: var(--color-secondary); opacity: 0.9; }
 }
 
 /* Notes: digital-garden style — quieter, undated list */

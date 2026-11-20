@@ -8,6 +8,8 @@
 #   bodyImageFallback  …or the first picture in the note if it has none
 #   showSections       cards show their section in small capitals
 #   hideExcerpts       no summary text on cards
+#   hideDates          no date on cards
+#   cardButton         a button on each card with this text (Tools)
 #   hideImageSections  sections whose cards never show a picture
 #   intro              a line under the heading
 #   introSnippet       …or the text of the Obsidian note with this
@@ -37,7 +39,7 @@ layout: layouts/base.njk
 {%- if pagination.items.length %}
 <ul class="post-list {{ listClass }}">
   {%- for post in pagination.items %}
-  {{ postCard(post, { showImage: showImages, showSection: showSections, hideExcerpt: hideExcerpts, hideImageSections: hideImageSections, bodyImageFallback: bodyImageFallback }) }}
+  {{ postCard(post, { showImage: showImages, showSection: showSections, hideExcerpt: hideExcerpts, hideImageSections: hideImageSections, bodyImageFallback: bodyImageFallback, hideDate: hideDates, button: cardButton }) }}
   {%- endfor %}
 </ul>
 {%- else %}
