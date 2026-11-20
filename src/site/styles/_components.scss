@@ -211,6 +211,7 @@ INDEX PAGES (v2 components)
 /* Tools: one tool per row, screenshot on the left and the description and
    a "Check it out" button on the right (stacked on phones) */
 .tools-list {
+  margin-bottom: 5rem; // room before the letters sign-up below
   .post-card {
     margin-bottom: 3rem;
   }
